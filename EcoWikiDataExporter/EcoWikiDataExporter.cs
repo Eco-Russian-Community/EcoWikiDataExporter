@@ -3,6 +3,7 @@ using Eco.Core.Utils;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
+	[LocDisplayName(nameof(EcoWikiDataExporter))]
 	public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IInitializablePlugin
 	{
 		public const string Version = "0.1.0";
