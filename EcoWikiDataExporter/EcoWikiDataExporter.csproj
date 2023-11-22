@@ -5,15 +5,23 @@
 		<RootNamespace>Eco.Mods.EcoWikiDataExporter</RootNamespace>
 		<AssemblyName>EcoWikiDataExporter</AssemblyName>
 		<PackageId>EcoWikiDataExporter</PackageId>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Authors>StalEF</Authors>
 		<Company>ERC</Company>
 		<Product>EcoWikiDataExporter</Product>
 		<Copyright>FREE</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://play-eco.ru/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Eco-Russian-Community/EcoWikiDataExporter</RepositoryUrl>
 		<RepositoryType>Github</RepositoryType>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>none</DebugType>
 	</PropertyGroup>
 
 	<ItemGroup>
