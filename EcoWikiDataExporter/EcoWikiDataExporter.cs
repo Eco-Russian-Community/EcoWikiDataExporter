@@ -6,7 +6,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 	[LocDisplayName(nameof(EcoWikiDataExporter))]
 	public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IInitializablePlugin
 	{
-		public const string Version = "0.1.0";
+		public const string Version = "0.0.1";
 
 		public void Initialize(TimedTask timer)
 		{
