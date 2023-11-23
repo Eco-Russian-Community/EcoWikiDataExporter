@@ -24,19 +24,22 @@ using Eco.Gameplay.Components;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Shared.Icons;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Eco.Gameplay.Systems;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	[LocDisplayName(nameof(EcoWikiDataExporter))]
     public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IInitializablePlugin, ICommandablePlugin
     {
-		public const string Version = "0.0.2";
+		public const string Version = "0.0.3";
         public const string EWDEFolder = "EWDE";
-
+        
         public void Initialize(TimedTask timer)
 		{
 			
@@ -49,7 +52,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public void GetCommands(Dictionary<string, Action> nameToFunction)
         {
-            nameToFunction.Add(Localizer.DoStr("Export Wiki"), this.Exportwiki);
+            nameToFunction.Add(Localizer.DoStr("Export Wiki Data"), this.Exportwiki);
         }
 
 		void Exportwiki()
@@ -59,6 +62,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                 Directory.Delete(EWDEFolder, true);
 
             Directory.CreateDirectory(EWDEFolder);
+
+            try { WikiData.ExportCommands(); } catch (Exception e) { };
 
         }
     }

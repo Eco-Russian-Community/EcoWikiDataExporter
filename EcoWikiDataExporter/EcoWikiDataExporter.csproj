@@ -5,7 +5,7 @@
 		<RootNamespace>Eco.Mods.EcoWikiDataExporter</RootNamespace>
 		<AssemblyName>EcoWikiDataExporter</AssemblyName>
 		<PackageId>EcoWikiDataExporter</PackageId>
-		<Version>0.0.2</Version>
+		<Version>0.0.3</Version>
 		<Authors>StalEF</Authors>
 		<Company>ERC</Company>
 		<Product>EcoWikiDataExporter</Product>
