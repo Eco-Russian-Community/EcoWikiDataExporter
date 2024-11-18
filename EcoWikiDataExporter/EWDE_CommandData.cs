@@ -39,9 +39,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 	public partial class WikiData
     {
 
-     private static SortedDictionary<string, Dictionary<string, string>> EveryCommand = new SortedDictionary<string, Dictionary<string, string>>();
+     private static SortedDictionary<string, Dictionary<string, string>> CommandData = new SortedDictionary<string, Dictionary<string, string>>();
 
-        public static void ExportCommands()
+        public static void ExportCommandData()
         {
             // dictionary of commands
             Dictionary<string, string> commandDetails = new Dictionary<string, string>()
@@ -64,17 +64,17 @@ namespace Eco.Mods.EcoWikiDataExporter
                     continue;
 
                 var command = $"/{Localizer.DoStr(com.ParentKey)}{(Localizer.DoStr(com.ParentKey) == "" ? Localizer.DoStr(com.Name) : " " + Localizer.DoStr(com.Name))}";
-                if (!EveryCommand.ContainsKey(command))
+                if (!CommandData.ContainsKey(command))
                 {
-                    EveryCommand.Add(command, new Dictionary<string, string>(commandDetails));
-                    EveryCommand[command]["command"] = "'" + Localizer.DoStr(com.Key) + "'";
+                    CommandData.Add(command, new Dictionary<string, string>(commandDetails));
+                    CommandData[command]["command"] = "'" + Localizer.DoStr(com.Key) + "'";
 
                     if (com.ParentKey != null && com.ParentKey != "")
-                        EveryCommand[command]["parent"] = "'" + Localizer.DoStr(com.ParentKey) + "'";
+                        CommandData[command]["parent"] = "'" + Localizer.DoStr(com.ParentKey) + "'";
 
-                    EveryCommand[command]["helpText"] = "'" + Localizer.DoStr(EcoWikiDataManager.JSONStringSafe(com.HelpText)) + "'";
-                    EveryCommand[command]["shortCut"] = "'" + Localizer.DoStr(com.ShortCut) + "'";
-                    EveryCommand[command]["level"] = "'" + Localizer.DoStr(com.AuthLevel.ToString()) + "'";
+                    CommandData[command]["helpText"] = "'" + Localizer.DoStr(EcoWikiDataManager.JSONStringSafe(com.HelpText)) + "'";
+                    CommandData[command]["shortCut"] = "'" + Localizer.DoStr(com.ShortCut) + "'";
+                    CommandData[command]["level"] = "'" + Localizer.DoStr(com.AuthLevel.ToString()) + "'";
 
 
                     MethodInfo method = com.Method;
@@ -99,12 +99,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                         if (p.HasDefaultValue)
                             pars[pos] += ", '" + p.DefaultValue + "'";
                     }
-                    EveryCommand[command]["parameters"] = EcoWikiDataManager.WriteDictionaryAsSubObject(pars, 1);
+                    CommandData[command]["parameters"] = EcoWikiDataManager.WriteDictionaryAsSubObject(pars, 1);
                 }
             }
 
             // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("CommandData", "commands", EveryCommand);
+            EcoWikiDataManager.WriteDictionaryToFile("CommandData", "commands", CommandData);
         }
 
 

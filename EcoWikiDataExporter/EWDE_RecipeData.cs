@@ -33,35 +33,30 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
+using Eco.Gameplay.Items.Recipes;
+using System.Collections;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
 
-      private static SortedDictionary<string, Dictionary<string, string>> Details = new SortedDictionary<string, Dictionary<string, string>>();
-
-        public static void ExportVersion()
+        public static void RecipeData()
         {
-         
-		    // dictionary of commands
-            Dictionary<string, string> EcoDetails = new Dictionary<string, string>()
+            IEnumerable<TagList> valuePairs = 
+            private static SortedDictionary<string, Dictionary<string, string>> RecipeData = new SortedDictionary<string, Dictionary<string, string>>();
+
+            Dictionary<string, string> recipeDetails = new Dictionary<string, string>()
             {
-                { "Version", "nil" },
-                { "VersionNumber", "nil" },
-                { "FullInfo", "nil" },
+
+
             };
+            var famalies = RecipeManager.AllRecipes;
 
-            Details["eco"] = EcoDetails;
+            foreach (RecipeManager family in famalies)
+            {
 
-            Details["eco"]["Version"] = $"'{EcoVersion.Version}'";
-            Details["eco"]["VersionNumber"] = $"'{EcoVersion.VersionNumber}'";
-            Details["eco"]["FullInfo"] = $"'{EcoVersion.FullInfo.Replace("\r\n", " ")}'";
-            
-            // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("EcoVersionData", "eco", Details);
+            }
         }
-
-
     }
 }

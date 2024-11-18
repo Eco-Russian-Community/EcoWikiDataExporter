@@ -31,13 +31,14 @@ using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
+using Eco.Shared.Logging;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	[LocDisplayName(nameof(EcoWikiDataExporter))]
     public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IInitializablePlugin, ICommandablePlugin
     {
-		public const string Version = "0.0.3";
+        public static readonly string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         public const string EWDEFolder = "EWDE";
         
         public void Initialize(TimedTask timer)
@@ -52,10 +53,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public void GetCommands(Dictionary<string, Action> nameToFunction)
         {
-            nameToFunction.Add(Localizer.DoStr("Export Wiki Data"), this.Exportwiki);
+            nameToFunction.Add(Localizer.DoStr("Export Wiki Data"), this.ExportWiki);
         }
 
-		void Exportwiki()
+		void ExportWiki()
 		{
             // Create EWDE Folder
             if (Directory.Exists(EWDEFolder))
@@ -63,7 +64,15 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             Directory.CreateDirectory(EWDEFolder);
 
-            try { WikiData.ExportCommands(); } catch (Exception e) { };
+            try { WikiData.ExportCommandData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export commands error: {e.Message}"); };
+            try { WikiData.ExportVersionData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export version error: {e.Message}"); };
+            try { WikiData.ExportSkillData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export skills error: {e.Message}"); };
+            try { WikiData.ExportPlantData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export plants error: {e.Message}"); };
+            try { WikiData.ExportTreeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export trees error: {e.Message}"); };
+            try { WikiData.ExportAnimalData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export animals error: {e.Message}"); };
+            try { WikiData.ExportTagData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export tags error: {e.Message}"); };
+            //
+            //
 
         }
     }
