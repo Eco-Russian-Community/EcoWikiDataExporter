@@ -55,17 +55,17 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             foreach (Tag tag in tags)
             {
-
-                if (!TreeData.ContainsKey(tag.Name))
+                string tagName = tag.Name;
+                if (!TagData.ContainsKey(tagName))
                 {
-                    string tagName = tag.Name;
-                    
+                    TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
+                    TreeData[tagName]["Name"] = $"'{tagName}'";
                 }
 
             }
 
         // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("TagData", "tag", TagData);
+        EcoWikiDataManager.WriteDictionaryToFile("TagData", "tags", TagData);
         }
     }
 }

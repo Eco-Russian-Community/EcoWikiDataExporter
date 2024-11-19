@@ -40,23 +40,23 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-
-        public static void RecipeData()
+        private static SortedDictionary<string, Dictionary<string, string>> RecipeData = new SortedDictionary<string, Dictionary<string, string>>();
+        public static void ExportRecipeData()
         {
-            IEnumerable<TagList> valuePairs = 
-            private static SortedDictionary<string, Dictionary<string, string>> RecipeData = new SortedDictionary<string, Dictionary<string, string>>();
-
+                        
             Dictionary<string, string> recipeDetails = new Dictionary<string, string>()
             {
 
 
             };
+
             var famalies = RecipeManager.AllRecipes;
 
-            foreach (RecipeManager family in famalies)
-            {
+            //foreach (RecipeManager family in famalies)
+            
 
-            }
+        // writes to txt file
+        EcoWikiDataManager.WriteDictionaryToFile("RecipeData", "recipes", RecipeData);
         }
     }
 }

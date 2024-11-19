@@ -46,12 +46,15 @@ namespace Eco.Mods.EcoWikiDataExporter
             // dictionary of plant properties
             Dictionary<string, string> plantDetails = new Dictionary<string, string>()
             {
-                Name
-                Height
-
-                StartBiomes
+                { "Name","nil" },
+                { "MaturityAgeDays","nil" },
+                { "StartBiomes","nil" },
+                { "Height","nil" }
             };
 
+
+        // writes to txt file
+        EcoWikiDataManager.WriteDictionaryToFile("PlantData", "plants", PlantData);
         }
     }
 }
