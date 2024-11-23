@@ -40,54 +40,54 @@ using Eco.Core.Items;
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
-    {
-        // Dictionary of tags
-        private static SortedDictionary<string, Dictionary<string, string>> TagData = new SortedDictionary<string, Dictionary<string, string>>();
+	{
+		// Dictionary of tags
+		private static SortedDictionary<string, Dictionary<string, string>> TagData = new SortedDictionary<string, Dictionary<string, string>>();
 
-        public static void ExportTagData()
-        {
-            // Dictionary of tags properties
-            Dictionary<string, string> tagDetails = new Dictionary<string, string>()
-            {
-                { "Name","nil" },
-                { "LocalizedName","nil" },
-                { "Items","nil" }
-            };
+		// Dictionary of tags properties
+		private static Dictionary<string, string> tagDetails = new Dictionary<string, string>()
+		{
+			{ "Name","nil" },
+			{ "LocalizedName","nil" },
+			{ "Items","nil" }
+		};
 
-            IEnumerable<Tag> tags = TagManager.AllTags;
+		public static void ExportTagData()
+		{
+			IEnumerable<Tag> tags = TagManager.AllTags;
 
-            foreach (Tag tag in tags )
-            {
-                string tagName = tag.Name;
-                string LocalizedName = tag.DisplayName;
-                
-                if (!TagData.ContainsKey(tagName))
-                {
-                    TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
-                    TagData[tagName]["Name"] = $"'{tagName}'";
-                    TagData[tagName]["LocalizedName"] = $"'{LocalizedName}'";
+			foreach (Tag tag in tags)
+			{
+				string tagName = tag.Name;
+				string LocalizedName = tag.DisplayName;
 
-                    Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
+				if (!TagData.ContainsKey(tagName))
+				{
+					TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
+					TagData[tagName]["Name"] = $"'{tagName}'";
+					TagData[tagName]["LocalizedName"] = $"'{LocalizedName}'";
+
+					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 
 					string[] associatedItems = Item.AllItemsExceptHidden.Where(x => x.Tags().Contains(tag)).Select(i => $"'{i.DisplayName}'").ToArray();
-					string tagItems = string.Empty;
+					//string tagItems = string.Empty;
 					//foreach (Item item in associatedItems)
 					//{
 					//	tagItems = tagItems + item.DisplayName;
 					//	Log.WriteWarningLineLoc($"Export tag item: {item.DisplayName}");
 					//}
-					if(associatedItems.Any())
+					if (associatedItems.Any())
 					{
 						TagData[tagName]["Items"] = $"[{string.Join(',', associatedItems)}]";
 					}
-					
+
 					Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
 
-                }
-            }
+				}
+			}
 
-        // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("TagData", "tags", TagData);
-        }
-    }
+			// writes to txt file
+			EcoWikiDataManager.WriteDictionaryToFile("TagData", "tags", TagData);
+		}
+	}
 }
