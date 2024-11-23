@@ -58,7 +58,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             VersionData["eco"]["FullInfo"] = $"'{EcoVersion.FullInfo.Replace("\r\n", " ")}'";
             
             // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("EcoVersionData", "eco", VersionData);
+            EcoWikiDataManager.WriteDictionaryToFile("EcoVersionData", "game", VersionData);
         }
     }
 }

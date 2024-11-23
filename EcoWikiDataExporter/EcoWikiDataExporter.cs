@@ -72,7 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             try { WikiData.ExportAnimalData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export animals error: {e.Message}"); };
             try { WikiData.ExportTagData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export tags error: {e.Message}"); };
             try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); };
-            //
+            
 
         }
     }
