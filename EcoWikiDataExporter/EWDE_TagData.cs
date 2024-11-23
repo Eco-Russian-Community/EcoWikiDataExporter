@@ -62,32 +62,24 @@ namespace Eco.Mods.EcoWikiDataExporter
 				string tagName = tag.Name;
 				string LocalizedName = tag.DisplayName;
 
-				if (!TagData.ContainsKey(tagName))
+				Dictionary<string, string> tagInfo = new(tagDetails); //New info for the tag based on template
+				tagInfo["Name"] = $"'{tagName}'";
+				tagInfo["LocalizedName"] = $"'{LocalizedName}'";
+
+				//Fetch and populate associated items
+				string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
+				bool tagHasItems = associatedItems.Any();
+				if (tagHasItems)
 				{
-					TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
-					TagData[tagName]["Name"] = $"'{tagName}'";
-					TagData[tagName]["LocalizedName"] = $"'{LocalizedName}'";
+					tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
+					Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
+				}
 
+				//Add tag to global dictionary
+				if (!TagData.ContainsKey(tagName) && tagHasItems)
+				{
+					TagData.Add(tagName, tagInfo);
 					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
-
-					string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
-					
-					if (associatedItems.Any())
-					{
-
-                        //StringBuilder sb = new StringBuilder();
-                        //sb.AppendLine(" {");
-                        //sb.AppendLine(string.Join(", ", associatedItems));
-                        //sb.Append("}");
-
-                        //TagData[tagName]["Items"] = $"{sb}";
-
-
-                        TagData[tagName]["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
-
-
-                        Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
-                    }
 				}
 			}
 
