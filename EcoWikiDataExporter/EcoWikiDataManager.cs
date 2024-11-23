@@ -32,6 +32,7 @@ using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
+using Eco.Simulation.Types;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -99,5 +100,15 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             return sb.ToString();
         }
+
+        public static string WriteDictionaryAsSub(string dict)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(" {");
+            sb.AppendLine(string.Join(", ", dict));
+            sb.Append("}");
+            return sb.ToString();
+        }
+
     }
 }

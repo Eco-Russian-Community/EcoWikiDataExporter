@@ -36,6 +36,7 @@ using Eco.Shared.IoC;
 using Eco.Simulation.Agents;
 using Eco.Shared.Logging;
 using Eco.Core.Items;
+using Eco.Simulation.Types;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -70,19 +71,23 @@ namespace Eco.Mods.EcoWikiDataExporter
 					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 
 					string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
-					//string tagItems = string.Empty;
-					//foreach (Item item in associatedItems)
-					//{
-					//	tagItems = tagItems + item.DisplayName;
-					//	Log.WriteWarningLineLoc($"Export tag item: {item.DisplayName}");
-					//}
+					
 					if (associatedItems.Any())
 					{
-						TagData[tagName]["Items"] = $"[{string.Join(',', associatedItems)}]";
-					}
 
-					Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
+                        //StringBuilder sb = new StringBuilder();
+                        //sb.AppendLine(" {");
+                        //sb.AppendLine(string.Join(", ", associatedItems));
+                        //sb.Append("}");
 
+                        //TagData[tagName]["Items"] = $"{sb}";
+
+
+                        TagData[tagName]["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
+
+
+                        Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
+                    }
 				}
 			}
 
