@@ -69,7 +69,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 
-					string[] associatedItems = Item.AllItemsExceptHidden.Where(x => x.Tags().Contains(tag)).Select(i => $"'{i.DisplayName}'").ToArray();
+					string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
 					//string tagItems = string.Empty;
 					//foreach (Item item in associatedItems)
 					//{
