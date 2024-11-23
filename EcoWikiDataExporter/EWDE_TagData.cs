@@ -48,8 +48,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 		// Dictionary of tags properties
 		private static Dictionary<string, string> tagDetails = new Dictionary<string, string>()
 		{
-			{ "Name","nil" },
-			{ "LocalizedName","nil" },
+			{ "ID","nil" },
 			{ "Items","nil" }
 		};
 
@@ -63,9 +62,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 				string LocalizedName = tag.DisplayName;
 
 				Dictionary<string, string> tagInfo = new(tagDetails); //New info for the tag based on template
-				tagInfo["Name"] = $"'{tagName}'";
-				tagInfo["LocalizedName"] = $"'{LocalizedName}'";
-
+				tagInfo["ID"] = $"'{tagName}'";
+				
 				//Fetch
 				string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
 
@@ -76,9 +74,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 				Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
 
 				//Add tag to global dictionary
-				if (!TagData.ContainsKey(tagName))
+				if (!TagData.ContainsKey(LocalizedName))
 				{
-					TagData.Add(tagName, tagInfo);
+					TagData.Add(LocalizedName, tagInfo);
 					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 				}
 			}
