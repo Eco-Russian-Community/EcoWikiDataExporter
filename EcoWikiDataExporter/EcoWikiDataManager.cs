@@ -48,7 +48,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             using (StreamWriter streamWriter = new StreamWriter(path, false))
             {
-                streamWriter.WriteLine("-- Eco Version : " + EcoVersion.Version);
+                streamWriter.WriteLine("-- Eco Version : " + EcoVersion.VersionNumber);
                 streamWriter.WriteLine("-- Export Language: " + lang);
                 streamWriter.WriteLine();
                 streamWriter.WriteLine("return {\n    " + type + " = {");

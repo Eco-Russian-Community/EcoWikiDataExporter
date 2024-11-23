@@ -34,6 +34,8 @@ using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
 using Eco.Simulation.Agents;
+using Eco.Shared.Logging;
+using Eco.Core.Items;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -47,21 +49,36 @@ namespace Eco.Mods.EcoWikiDataExporter
             // Dictionary of tags properties
             Dictionary<string, string> tagDetails = new Dictionary<string, string>()
             {
-                { "Name","nil" }
+                { "Name","nil" },
+                { "LocalizedName","nil" },
+                { "Items","nil" }
             };
-
 
             IEnumerable<Tag> tags = TagManager.AllTags;
 
-            foreach (Tag tag in tags)
+            foreach (Tag tag in tags )
             {
                 string tagName = tag.Name;
+                string LocalizedName = tag.DisplayName;
+                
                 if (!TagData.ContainsKey(tagName))
                 {
                     TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
-                    TreeData[tagName]["Name"] = $"'{tagName}'";
-                }
+                    TagData[tagName]["Name"] = $"'{tagName}'";
+                    TagData[tagName]["LocalizedName"] = $"'{LocalizedName}'";
 
+                    Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
+                    //Array AssociatedItems = Item.AllItemsExceptHidden.Where(x => x.Tags().Contains(tag)).Select(x => x.Name).ToArray();
+                    //string tagItems ="";
+                    //foreach (Tag item in AssociatedItems)
+                    //{
+                    //    tagItems = tagItems + item.DisplayName;
+                    //    Log.WriteWarningLineLoc($"Export tag item: {item.DisplayName}");
+                    //}
+                    //TagData[tagName]["Items"] = $"'{tagItems}'";
+                    Log.WriteWarningLineLoc($"Export tag item: {ItemUtils.GetItemsByTag(tagName)}");
+
+                }
             }
 
         // writes to txt file

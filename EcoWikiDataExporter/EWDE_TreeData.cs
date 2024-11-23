@@ -42,10 +42,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Name","nil" },
                 { "MaturityAgeDays","nil" },
                 { "StartBiomes","nil" },
-                { "Height","nil" },
-                { "Height","nil" },
-                { "Height","nil" },
-                { "Height","nil" },
                 { "Height","nil" }
             };
 
