@@ -69,15 +69,19 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 
-					IEnumerable<Item> associatedItems = Item.AllItemsExceptHidden.Where(x => x.Tags().Contains(tag));
-					string tagItems = "";
-					foreach (Item item in associatedItems)
+					string[] associatedItems = Item.AllItemsExceptHidden.Where(x => x.Tags().Contains(tag)).Select(i => $"'{i.DisplayName}'").ToArray();
+					string tagItems = string.Empty;
+					//foreach (Item item in associatedItems)
+					//{
+					//	tagItems = tagItems + item.DisplayName;
+					//	Log.WriteWarningLineLoc($"Export tag item: {item.DisplayName}");
+					//}
+					if(associatedItems.Any())
 					{
-						tagItems = tagItems + item.DisplayName;
-						Log.WriteWarningLineLoc($"Export tag item: {item.DisplayName}");
+						TagData[tagName]["Items"] = $"[{string.Join(',', associatedItems)}]";
 					}
-					TagData[tagName]["Items"] = $"'{tagItems}'";
-					Log.WriteWarningLineLoc($"Export tag item: {ItemUtils.GetItemsByTag(tagName)}");
+					
+					Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
 
                 }
             }
