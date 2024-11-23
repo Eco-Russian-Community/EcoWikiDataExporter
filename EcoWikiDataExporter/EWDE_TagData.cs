@@ -66,17 +66,17 @@ namespace Eco.Mods.EcoWikiDataExporter
 				tagInfo["Name"] = $"'{tagName}'";
 				tagInfo["LocalizedName"] = $"'{LocalizedName}'";
 
-				//Fetch and populate associated items
+				//Fetch
 				string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
-				bool tagHasItems = associatedItems.Any();
-				if (tagHasItems)
-				{
-					tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
-					Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
-				}
+
+				if (!associatedItems.Any()) continue; //Skip this tag if no associated items
+
+				//Populate associated items
+				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
+				Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
 
 				//Add tag to global dictionary
-				if (!TagData.ContainsKey(tagName) && tagHasItems)
+				if (!TagData.ContainsKey(tagName))
 				{
 					TagData.Add(tagName, tagInfo);
 					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
