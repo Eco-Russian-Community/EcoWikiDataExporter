@@ -62,7 +62,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                         TreeData[treeName]["Height"] = "'" + tree.Height.ToString("F1", CultureInfo.InvariantCulture) + "'";
                         TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
 
-
                     }
                 }
             }

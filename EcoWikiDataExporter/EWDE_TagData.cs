@@ -71,13 +71,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 				//Populate associated items
 				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
-				Log.WriteWarningLineLoc($"Export tag item: {string.Join(", ", associatedItems)}");
-
+				
 				//Add tag to global dictionary
 				if (!TagData.ContainsKey(LocalizedName))
 				{
 					TagData.Add(LocalizedName, tagInfo);
-					Log.WriteWarningLineLoc($"Export tag: {LocalizedName}");
 				}
 			}
 
