@@ -33,6 +33,7 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Simulation.Types;
+using Eco.Core.Items;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -110,5 +111,19 @@ namespace Eco.Mods.EcoWikiDataExporter
             return sb.ToString();
         }
 
+        public static string CleanText(string Text)
+        {
+            Regex regexTag = new Regex("<[^>]*>");
+            Text = regexTag.Replace(Text, "");
+            Regex regexFeed = new Regex("[\t\n\v\f\r]");
+            Text = regexFeed.Replace(Text, "");
+            Text = Text.Replace("'", "\\'");
+            return Text;
+        }
+
+        public static string CleanItemID(string ItemName)
+        {
+            return ItemName.ToString().Substring(ItemName.ToString().LastIndexOf('.') + 1);
+        }
     }
 }

@@ -33,14 +33,52 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
+using static Eco.Shared.Utils.Singleton<T>;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
+    
+        // dictionary of items and their dictionary of stats
+        private static SortedDictionary<string, Dictionary<string, string>> ItemData = new();
 
-       
+        public static void ExportItemData()
+        {
+            // dictionary of item properties
+            Dictionary<string, string> itemDetails = new Dictionary<string, string>()
+            {
+                { "ID", "nil" },
+                { "Category", "nil" },
+                { "Group", "nil" },
+                { "Description", "nil" },
+                { "Weight", "nil" }
+            };
+
+            string ItemName;
+            foreach (Item item in Item.AllItemsIncludingHidden)
+            {
+                ItemName = item.DisplayName;
+
+                if (!ItemData.ContainsKey(ItemName))
+                {
+
+                    ItemData.Add(ItemName, new Dictionary<string, string>(itemDetails));
+
+                    ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
+                    ItemData[ItemName]["Category"] = $"'{item.Category}'";
+                    ItemData[ItemName]["Group"] = $"'{item.Group}'";
+                    ItemData[ItemName]["Description"] = $"'{EcoWikiDataManager.CleanText(item.GetDescription)}'";
+                    if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'";
+
+                }
 
 
+            }
+
+         // writes to txt file
+         EcoWikiDataManager.WriteDictionaryToFile("ItemData", "items", ItemData);
+
+        }
     }
 }

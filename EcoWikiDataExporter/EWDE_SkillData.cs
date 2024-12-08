@@ -65,7 +65,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     string SkillName = skill.DisplayName;
                     SkillData.Add(SkillName, new Dictionary<string, string>(skillsDetails));
                     SkillData[SkillName]["Name"] = $"'{skill.DisplayName}'";
-                    SkillData[SkillName]["Description"] = $"'{skill.GetDescription}'";
+                    SkillData[SkillName]["Description"] = $"'{EcoWikiDataManager.CleanText(skill.GetDescription)}'";
                     SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
                     SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";
                     SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
