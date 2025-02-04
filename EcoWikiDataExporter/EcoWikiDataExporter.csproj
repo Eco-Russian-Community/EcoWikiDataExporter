@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
 		<RootNamespace>Eco.Mods.EcoWikiDataExporter</RootNamespace>
 		<AssemblyName>EcoWikiDataExporter</AssemblyName>
 		<PackageId>EcoWikiDataExporter</PackageId>
-		<Version>0.0.8</Version>
+		<Version>0.0.9</Version>
 		<Authors>StalEF</Authors>
 		<Company>ERC</Company>
 		<Product>EcoWikiDataExporter</Product>
@@ -14,6 +14,7 @@
 		<PackageProjectUrl>https://play-eco.ru/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Eco-Russian-Community/EcoWikiDataExporter</RepositoryUrl>
 		<RepositoryType>Github</RepositoryType>
+		<PlatformTarget>x64</PlatformTarget>
 	</PropertyGroup>
 	
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -25,7 +26,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.4-beta-release-802" />
+		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.8-beta-release-831" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
