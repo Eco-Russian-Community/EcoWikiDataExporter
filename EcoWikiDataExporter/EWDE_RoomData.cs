@@ -33,14 +33,22 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
+using Eco.Gameplay.Items.Recipes;
+using System.Collections;
+using Eco.Gameplay.Rooms;
+using Eco.Mods.TechTree;
+using Eco.Gameplay.Housing.PropertyValues;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
+        private static SortedDictionary<string, Dictionary<string, string>> RoomData = new SortedDictionary<string, Dictionary<string, string>>();
+        public static void ExportRoomData()
+        {
+            //HousingConfig.AllCategories;
+            
 
-       
-
-
+        }
     }
 }

@@ -44,12 +44,24 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static void ExportRecipeData()
         {
             var craftingTables = RecipeManager.AllRecipes.Where(r => r.Family?.CraftingTable is not null).Select(r => r.Family.CraftingTable).Distinct().ToList();
+            // dictionary of recipe properties
+            Dictionary<string, string> recipeDetails = new Dictionary<string, string>()
+            {
+
+            };
+
+            // RecipeManager.AllRecipeFamilies.SelectMany(recipeFamily => recipeFamily.Recipes.Select(recipe => new RecipeExported(recipeFamily, recipe))).ToList()
+
+            
+
+
+
 
 
 
         }
 
-    
-     
+
+
     }
 }

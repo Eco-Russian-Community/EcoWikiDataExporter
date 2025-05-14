@@ -26,7 +26,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.8-beta-release-831" />
+		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.11-beta-release-866" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

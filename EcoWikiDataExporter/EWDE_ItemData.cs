@@ -33,7 +33,8 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
-using static Eco.Shared.Utils.Singleton<T>;
+using Eco.Gameplay.Systems.EcoMarketplace;
+using System.Globalization;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -51,16 +52,27 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "ID", "nil" },
                 { "Category", "nil" },
                 { "Group", "nil" },
+                { "Name", "nil" },
                 { "Description", "nil" },
-                { "Weight", "nil" }
+                { "Weight", "nil" },
+                { "MaxStackSize", "nil" },
+                { "Tags", "nil" },
+                { "PaidItem", "nil" },
+                { "IsTool", "nil" },
+                { "CanBeCurrency", "nil" },
+                { "Compostable", "nil" },
+                { "IsWasteProduct", "nil" },
+                { "IsFuel", "nil" },
+                { "IsStackable", "nil" }
+
             };
 
             string ItemName;
             foreach (Item item in Item.AllItemsIncludingHidden)
             {
-                ItemName = item.DisplayName;
+                ItemName = item.Name;
 
-                if (!ItemData.ContainsKey(ItemName))
+                if (!ItemData.ContainsKey(ItemName) && (item.DisplayName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
                 {
 
                     ItemData.Add(ItemName, new Dictionary<string, string>(itemDetails));
@@ -68,16 +80,36 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
-                    ItemData[ItemName]["Description"] = $"'{EcoWikiDataManager.CleanText(item.GetDescription)}'";
-                    if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'";
+                    ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.DisplayName), 1);
 
+                    ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.GetDescription),1);
+
+                    if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
+                    ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
+                    ItemData[ItemName]["Tags"] = $"{EcoWikiDataManager.GetItemTags(item)}";
+                    if (MarketplaceExtensions.IsPaidItem(item)) { ItemData[ItemName]["PaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
+
+                    if (item.IsTool) { ItemData[ItemName]["IsTool"] = $"'True'"; }
+                    if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
+                    if (item.Compostable) { ItemData[ItemName]["Compostable"] = $"'True'"; }
+                    if (item.IsWasteProduct) { ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
+                    if (item.IsFuel) { ItemData[ItemName]["IsFuel"] = $"'True'"; }
+                    if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
+
+                    if (item is FoodItem foodItem)
+                    {
+                        ItemData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
+                        ItemData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
+                        ItemData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
+                        ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
+                        ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
+                    }
+                    
                 }
-
-
             }
 
-         // writes to txt file
-         EcoWikiDataManager.WriteDictionaryToFile("ItemData", "items", ItemData);
+            // writes to txt file
+            EcoWikiDataManager.WriteDictionaryToFile("ItemData", "items", ItemData);
 
         }
     }

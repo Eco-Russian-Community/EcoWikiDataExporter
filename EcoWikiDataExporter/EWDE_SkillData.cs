@@ -34,6 +34,7 @@ using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
 using Eco.Gameplay.Skills;
+using Eco.Core.Items;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -60,11 +61,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             foreach (var skill in Skill.AllSkills)
             {
-                if (!SkillData.ContainsKey(skill.DisplayName))
-                {
-                    string SkillName = skill.DisplayName;
+                string SkillName = skill.DisplayName;
+                if (!SkillData.ContainsKey(SkillName))
+                {                    
                     SkillData.Add(SkillName, new Dictionary<string, string>(skillsDetails));
-                    SkillData[SkillName]["Name"] = $"'{skill.DisplayName}'";
+                    SkillData[SkillName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(skill.DisplayName), 1);
                     SkillData[SkillName]["Description"] = $"'{EcoWikiDataManager.CleanText(skill.GetDescription)}'";
                     SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
                     SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";

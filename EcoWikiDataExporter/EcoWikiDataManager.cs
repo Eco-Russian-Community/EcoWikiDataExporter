@@ -37,24 +37,26 @@ using Eco.Core.Items;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
-	internal class EcoWikiDataManager
-	{
+    internal class EcoWikiDataManager
+    {
         private static string space2 = "        ";
         private static string space3 = "            ";
 
         public static void WriteDictionaryToFile(string filename, string type, SortedDictionary<string, Dictionary<string, string>> dictionary, bool final = true)
         {
             var lang = LocalizationPlugin.Config.Language;
-            
-            string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}_" + filename + $@".txt";
+
+            //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}"  + $@"\" + $@"{lang}_" + filename + $@".txt";
+            //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}_" + filename + $@".txt";
+            string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".txt";
 
             using (StreamWriter streamWriter = new StreamWriter(path, false))
             {
                 streamWriter.WriteLine("-- Eco Version : " + EcoVersion.VersionNumber);
-                streamWriter.WriteLine("-- Export Language: " + lang);
+                //streamWriter.WriteLine("-- Export Language: " + lang);
                 streamWriter.WriteLine();
                 streamWriter.WriteLine("return {\n    " + type + " = {");
-                
+
                 foreach (string key in dictionary.Keys)
                 {
                     streamWriter.WriteLine(string.Format("{0}['{1}'] = {{", space2, key));
@@ -124,6 +126,32 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static string CleanItemID(string ItemName)
         {
             return ItemName.ToString().Substring(ItemName.ToString().LastIndexOf('.') + 1);
+        }
+
+        public static string GetItemTags(Item Item)
+        {
+            StringBuilder tags = new StringBuilder();
+            tags.Append('{');
+            foreach (Tag tag in Item.Tags())
+            {
+                tags.Append($"'{tag.DisplayName}'");
+                if (tag != Item.Tags().Last()) tags.Append(", ");
+            }
+            tags.Append('}');
+            return tags.ToString();
+        }
+
+        public static Dictionary<string, string> Localization(string name)
+        {
+            var localizedString = new Dictionary<string, string>();
+
+            localizedString.Add("English", name);
+            localizedString.Add("Russian", Localizer.LocalizeString(name, SupportedLanguage.Russian));
+            localizedString.Add("German", Localizer.LocalizeString(name, SupportedLanguage.German));
+            localizedString.Add("French", Localizer.LocalizeString(name, SupportedLanguage.French));
+
+
+            return localizedString;
         }
     }
 }

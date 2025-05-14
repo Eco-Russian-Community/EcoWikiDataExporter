@@ -33,6 +33,10 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
+using Eco.Simulation.Types;
+using Eco.Simulation;
+using System.Globalization;
+using Eco.Simulation.Agents;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -44,6 +48,33 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static void ExportAnimalData()
         {
 
+        Dictionary<string, string> animalDetails = new Dictionary<string, string>()
+        {
+            { "untranslated", "nil" }
+
+        };
+
+         IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is AnimalSpecies);
+            foreach (Species s in species)
+            {
+                AnimalSpecies animal = s as AnimalSpecies;
+                string animalName = animal.DisplayName;
+                if (!AnimalData.ContainsKey(animalName))
+                {
+                    AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
+                    AnimalData[animalName]["MaturityAgeDays"] = $"'{animal.MaturityAgeDays}'";
+                    AnimalData[animalName]["isSwimming"] = $"'{animal.Swimming}'";
+                    AnimalData[animalName]["isFlying"] = $"'{animal.Flying}'";
+                    AnimalData[animalName]["IsPredator"] = $"'{animal.IsPredator}'";
+                    AnimalData[animalName]["IsFishable"] = $"'{animal.IsFishable}'";
+
+
+                    // Climate
+                    AnimalData[animalName]["ReleasesCO2TonsPerDay"] = $"'{animal.ReleasesCO2TonsPerDay}'";
+                }
+            }
+        // writes to txt file
+        EcoWikiDataManager.WriteDictionaryToFile("AnimalData", "animals", AnimalData);
         }
 
     }

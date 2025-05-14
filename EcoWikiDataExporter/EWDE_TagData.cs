@@ -49,8 +49,13 @@ namespace Eco.Mods.EcoWikiDataExporter
 		private static Dictionary<string, string> tagDetails = new Dictionary<string, string>()
 		{
 			{ "ID","nil" },
-			{ "Items","nil" }
-		};
+            { "Name","nil" },
+            { "Hidden","nil" },
+            { "IsVisibleInTooltip","nil" },
+            { "IsVisibleInEcopedia","nil" },
+            { "IsVisibleInFilter","nil" },
+            { "Items","nil" }
+        };
 
 		public static void ExportTagData()
 		{
@@ -63,9 +68,14 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 				Dictionary<string, string> tagInfo = new(tagDetails); //New info for the tag based on template
 				tagInfo["ID"] = $"'{tagName}'";
-				
-				//Fetch
-				string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
+                tagInfo["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tag.DisplayName), 1);
+                tagInfo["Hidden"] = $"'{tag.Hidden}'";
+                tagInfo["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
+                tagInfo["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
+                tagInfo["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";
+
+                //Fetch
+                string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
 
 				if (!associatedItems.Any()) continue; //Skip this tag if no associated items
 

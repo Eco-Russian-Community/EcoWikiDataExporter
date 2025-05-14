@@ -25,6 +25,8 @@ using Eco.Simulation.Agents;
 using Eco.Simulation.WorldLayers;
 using Eco.World;
 using Organism = Eco.Simulation.Agents.Organism;
+using static Eco.Simulation.Types.PlantSpecies;
+using Eco.Core.Items;
 
 
 namespace Eco.Mods.EcoWikiDataExporter
@@ -41,28 +43,59 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 { "Name","nil" },
                 { "MaturityAgeDays","nil" },
-                { "StartBiomes","nil" },
-                { "Height","nil" }
+                { "StartBiomes","nil" }               
             };
 
-        IEnumerable<Species> species = EcoSim.AllSpecies;
+            IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is TreeSpecies);
 
             foreach (Species s in species)
             {
-                if (s is TreeSpecies)
+                TreeSpecies tree = s as TreeSpecies;
+                string treeName = tree.DisplayName;
+                if (!TreeData.ContainsKey(treeName))
                 {
-                    TreeSpecies tree = s as TreeSpecies;
-                    if (!TreeData.ContainsKey(tree.DisplayName))
-                    {
-                        string treeName = tree.DisplayName;
-                        TreeData.Add(treeName, new Dictionary<string, string>(treeDetails));
+                    TreeData.Add(treeName, new Dictionary<string, string>(treeDetails));
 
-                        TreeData[treeName]["Name"] = $"'{tree.DisplayName.NotTranslated}'";
-                        TreeData[treeName]["MaturityAgeDays"] = "'" + tree.MaturityAgeDays.ToString("F1", CultureInfo.InvariantCulture) + "'";
-                        TreeData[treeName]["Height"] = "'" + tree.Height.ToString("F1", CultureInfo.InvariantCulture) + "'";
-                        TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
+                    TreeData[treeName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tree.DisplayName), 1);
+                    // Lifetime
+                    TreeData[treeName]["MaturityAgeDays"] = $"'{tree.MaturityAgeDays}'";
+                    // Seeding
+                    TreeData[treeName]["SeedingTime"] = $"'{tree.SeedingTime}'";
+                    TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
+                    TreeData[treeName]["PlantAgeToSeed"] = $"'{tree.PlantAgeToSeed}'";
+                    TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
 
-                    }
+
+
+                    TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
+
+                    //tree.ResourceConstraints.LayerName
+                    //tree.ResourceConstraints.HalfSpeedConcentration
+                    //tree.ResourceConstraints.MaxResourceContent
+
+
+                    // Capacity
+                    TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{tree.IdealTemperatureRange.Min}'";
+                    TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{tree.IdealTemperatureRange.Max}'";
+                    TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{tree.TemperatureExtremes.Min}'";
+                    TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{tree.TemperatureExtremes.Max}'";
+
+                    TreeData[treeName]["IdealMoistureRangeMin"] = $"'{tree.IdealMoistureRange.Min}'";
+                    TreeData[treeName]["IdealMoistureRangeMax"] = $"'{tree.IdealMoistureRange.Max}'";
+                    TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{tree.MoistureExtremes.Min}'";
+                    TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{tree.MoistureExtremes.Max}'";
+
+                    TreeData[treeName]["IdealWaterRangeMin"] = $"'{tree.IdealWaterRange.Min}'";
+                    TreeData[treeName]["IdealWaterRangeMax"] = $"'{tree.IdealWaterRange.Max}'";
+                    TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{tree.WaterExtremes.Min}'";
+                    TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{tree.WaterExtremes.Max}'";
+
+                    TreeData[treeName]["PollutionDensityTolerance"] = $"'{tree.PollutionDensityTolerance}'";
+                    TreeData[treeName]["PollutionDensityMax"] = $"'{tree.MaxPollutionDensity}'";
+
+                    // Climate
+                    TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{tree.ReleasesCO2TonsPerDay}'";
+
                 }
             }
         // writes to txt file

@@ -40,7 +40,7 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
         public static readonly string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         public const string EWDEFolder = "EWDE";
-        
+       
         public void Initialize(TimedTask timer)
 		{
 			
@@ -58,9 +58,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 		void ExportWiki()
 		{
-            // Create EWDE Folder
-            if (Directory.Exists(EWDEFolder))
-                Directory.Delete(EWDEFolder, true);
+
+            // Create EWDE Lang Folder
+            //if (Directory.Exists(EWDEFolder))
+            //    Directory.Delete(EWDEFolder, true);
 
             Directory.CreateDirectory(EWDEFolder);
 
@@ -73,7 +74,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             try { WikiData.ExportTagData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export tags error: {e.Message}"); };
             try { WikiData.ExportItemData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export items error: {e.Message}"); };
             try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); };
-            
+            try { WikiData.ExportBiomeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export biomes error: {e.Message}"); };
 
         }
     }
