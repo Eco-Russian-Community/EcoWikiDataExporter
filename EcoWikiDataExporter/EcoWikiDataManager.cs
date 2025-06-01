@@ -1,4 +1,24 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Items;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using Eco.Simulation.Types;
+using Eco.Stats;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,25 +35,6 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Simulation.Types;
-using Eco.Core.Items;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -84,7 +85,32 @@ namespace Eco.Mods.EcoWikiDataExporter
             return sb.ToString();
         }
 
-        public static string WriteDictionaryAsSubObject(Dictionary<string, string> dict, int depth)
+		public static string WriteDictionaryAsSubObject(SortedDictionary<string, Dictionary<string, string>> dictionary, int depth)
+		{
+			string spaces = space2 + space3;
+
+			for (int i = 0; i < depth; i++)
+			{
+				spaces += space2;
+			}
+
+			StringBuilder sb = new StringBuilder();
+			sb.AppendLine(" {");
+			foreach (KeyValuePair<string, Dictionary<string, string>> kvp in dictionary)
+			{
+				sb.AppendLine(spaces + "['" + kvp.Key + "'] = {");
+				foreach (KeyValuePair<string, string> innerKvp in kvp.Value)
+				{
+					sb.AppendLine(spaces + "['" + innerKvp.Key + "'] = {" + innerKvp.Value + "},");
+				}
+				sb.Append(spaces + "},");
+			}
+			sb.Append(spaces + "}");
+
+			return sb.ToString();
+		}
+
+		public static string WriteDictionaryAsSubObject(Dictionary<string, string> dict, int depth)
         {
             string spaces = space2 + space3;
 

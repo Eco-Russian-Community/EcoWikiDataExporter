@@ -113,7 +113,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
                             if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"true";  }
 
-                            RecipeData[RecipeID]["Ingredients"] = Ingredients.ToString();
+                            RecipeData[RecipeID]["Ingredients"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Ingredients, 1);
 
                         }
 
