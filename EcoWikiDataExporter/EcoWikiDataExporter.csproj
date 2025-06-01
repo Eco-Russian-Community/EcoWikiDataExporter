@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<RootNamespace>Eco.Mods.EcoWikiDataExporter</RootNamespace>
 		<AssemblyName>EcoWikiDataExporter</AssemblyName>
 		<PackageId>EcoWikiDataExporter</PackageId>
-		<Version>0.0.9</Version>
+		<Version>0.0.10</Version>
 		<Authors>StalEF</Authors>
 		<Company>ERC</Company>
 		<Product>EcoWikiDataExporter</Product>
@@ -26,11 +26,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.11-beta-release-866" />
+		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.12-beta-release-881" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="cd $(TargetDir)&#xD;&#xA;del *.pdb&#xD;&#xA;del *.config&#xD;&#xA;del *.json&#xD;&#xA;del A*&#xD;&#xA;del B*&#xD;&#xA;del C*&#xD;&#xA;del D*&#xD;&#xA;del F*&#xD;&#xA;del G*&#xD;&#xA;del H*&#xD;&#xA;del I*&#xD;&#xA;del J*&#xD;&#xA;del K*&#xD;&#xA;del L*&#xD;&#xA;del M*&#xD;&#xA;del N*&#xD;&#xA;del O*&#xD;&#xA;del P*&#xD;&#xA;del Q*&#xD;&#xA;del R*&#xD;&#xA;del S*&#xD;&#xA;del T*&#xD;&#xA;del U*&#xD;&#xA;del V*&#xD;&#xA;del X*&#xD;&#xA;del Y*&#xD;&#xA;del Z*" />
+    <Exec Command="cd $(TargetDir)&#xD;&#xA;del *.config&#xD;&#xA;del *.json" />
 	</Target>
 
 </Project>

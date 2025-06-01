@@ -44,7 +44,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public static void WriteDictionaryToFile(string filename, string type, SortedDictionary<string, Dictionary<string, string>> dictionary, bool final = true)
         {
-            var lang = LocalizationPlugin.Config.Language;
+            //var lang = LocalizationPlugin.Config.Language;
 
             //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}"  + $@"\" + $@"{lang}_" + filename + $@".txt";
             //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}_" + filename + $@".txt";
