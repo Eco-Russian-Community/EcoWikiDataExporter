@@ -5,6 +5,7 @@ using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
+using Eco.Gameplay.DynamicValues;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Objects;
@@ -38,12 +39,14 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
         private static SortedDictionary<string, Dictionary<string, string>> RecipeData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
         public static void ExportRecipeData()
         {
             // dictionary of recipe properties
@@ -63,6 +66,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Type", "nil" },
                 { "Name", "nil" },
                 { "Quantity", "nil" },
+                { "isStatic", "false" },
             };
 
 
@@ -87,23 +91,32 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
-                            
-                            
+
+                            //var Ingredients = new Dictionary<string, string>();
+                            string Ingredienttype;
+                            string Ingredientname;
+                            bool isStatic = false;
+
                             if (recipeingredient.IsSpecificItem) { 
-                                string ingredienttype = "ITEM"; 
-                                string Ingredient = recipeingredient.Item.DisplayName.NotTranslated;
-                                RecipeData[RecipeID]["Ingredients"].Add(Ingredient, new Dictionary<string, string>(recipeIngredientsDetails));
+                                Ingredienttype = "ITEM"; 
+                                Ingredientname = recipeingredient.Item.DisplayName.NotTranslated;     
                             } else {
-                                string ingredienttype = "TAG"; 
+                                Ingredienttype = "TAG";
+                                Ingredientname = recipeingredient.Tag.DisplayName.NotTranslated;
                             }
-
-                            //RecipeData[RecipeID]["Ingredients"][""]["Name"] =
+                            string IngredientQuantity = recipeingredient.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
                             
-                           
-                            
-                            RecipeData[RecipeID]["Ingredients"]["bb"]["Type"] = $"'{ingredienttype}'";
-                            RecipeData[RecipeID]["Ingredients"]["bbb"]["Quantity"] = ;
 
+                            Ingredients.Add(Ingredientname, new Dictionary<string, string>(recipeIngredientsDetails));
+
+                            Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
+                            Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
+                            Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
+                            if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"true";  }
+                                
+
+                            RecipeData[RecipeID]["Ingredients"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Ingredients, 1);
+                                                        
                         }
 
 
