@@ -91,7 +91,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
 
-                            var Ingredient = new Dictionary<string, string>();
+                            //var Ingredient = new Dictionary<string, string>();
                             string Ingredienttype;
                             string Ingredientname;
                             bool isStatic = false;
@@ -111,9 +111,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
                             Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
-                            if (recipeingredient.Quantity is ConstantValue) { Ingredient["isStatic"] = $"true";  }
+                            if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"true";  }
 
-                            RecipeData[RecipeID]["ingredients"] = Ingredients.ToString();
+                            RecipeData[RecipeID]["Ingredients"] = Ingredients.ToString();
 
                         }
 
