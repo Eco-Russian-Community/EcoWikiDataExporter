@@ -87,7 +87,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 		public static string WriteDictionaryAsSubObject(SortedDictionary<string, Dictionary<string, string>> dictionary, int depth)
 		{
-			string spaces = space2 + space3;
+			string spaces = space2 + space2 + space3;
 
 			for (int i = 0; i < depth; i++)
 			{
@@ -175,7 +175,6 @@ namespace Eco.Mods.EcoWikiDataExporter
             localizedString.Add("Russian", Localizer.LocalizeString(name, SupportedLanguage.Russian));
             localizedString.Add("German", Localizer.LocalizeString(name, SupportedLanguage.German));
             localizedString.Add("French", Localizer.LocalizeString(name, SupportedLanguage.French));
-
 
             return localizedString;
         }

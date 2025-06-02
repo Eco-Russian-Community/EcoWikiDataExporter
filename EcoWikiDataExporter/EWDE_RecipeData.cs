@@ -56,6 +56,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "ExperienceOnCraft", "nil" },
                 { "LaborInCalories", "nil" },
                 { "RequiredSkill", "nil" },
+                { "CraftingTables", "nil" },
                 { "Ingredients", "nil" },
                 { "Products", "nil" },
             };
@@ -64,6 +65,15 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 { "Type", "nil" },
                 { "Name", "nil" },
+                { "ID", "nil" },
+                { "Quantity", "nil" },
+                { "isStatic", "false" },
+            };
+
+            Dictionary<string, string> recipeProductsDetails = new Dictionary<string, string>()
+            {
+                { "Name", "nil" },
+                { "ID", "nil" },
                 { "Quantity", "nil" },
                 { "isStatic", "false" },
             };
@@ -87,6 +97,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["ExperienceOnCraft"] = recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture);
                         RecipeData[RecipeID]["LaborInCalories"] = recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
 
+                        var skill = recipe.RequiredSkills.FirstOrDefault();
+                        string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
+                        int RequiredSkillLevel = skill?.Level ?? 0;
+
+                        RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
+
+
+
                         SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
@@ -107,7 +125,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                             Ingredients.Add(Ingredientname, new Dictionary<string, string>(recipeIngredientsDetails));
 
-
                             Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
                             Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
@@ -117,7 +134,21 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         }
 
+                        SortedDictionary<string, Dictionary<string, string>> Products = new SortedDictionary<string, Dictionary<string, string>>();
+                        foreach (var recipeproduct in recipevariant.Products)
+                        {
+                            string Productname = recipeproduct.Item.DisplayName.NotTranslated;
+                            string ProductQuantity = recipeproduct.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
+                            Products.Add(Productname, new Dictionary<string, string>(recipeProductsDetails));
 
+                            Products[Productname]["Type"] = $"ITEM";
+                            Products[Productname]["Name"] = $"'{Productname}'";
+                            Products[Productname]["ID"] = $"'{recipeproduct.Item.Type.Name}'";
+                            Products[Productname]["Quantity"] = $"'{ProductQuantity}'";
+                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["isStatic"] = $"true"; }
+
+                            RecipeData[RecipeID]["Products"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Products, 1);
+                        }
                     }
                 }
             }
