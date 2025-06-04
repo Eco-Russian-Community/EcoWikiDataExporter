@@ -80,7 +80,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 				if (!associatedItems.Any()) continue; //Skip this tag if no associated items
 
 				//Populate associated items
-				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryAsSub(string.Join(", ", associatedItems));
+				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryToLine(string.Join(", ", associatedItems));
 				
 				//Add tag to global dictionary
 				if (!TagData.ContainsKey(LocalizedName))

@@ -1,4 +1,21 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Shared.Icons;
+using Eco.Shared.Localization;
+using Eco.Shared.Logging;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,23 +32,7 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared.Logging;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -40,11 +41,12 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
         public static readonly string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         public const string EWDEFolder = "EWDE";
-       
+        public const bool DebugMode = true;
+
         public void Initialize(TimedTask timer)
-		{
-			
-		}
+        {
+            if (DebugMode is true) { ExportWiki(); }
+        }
 
         public string GetStatus() => string.Empty;
 
@@ -76,6 +78,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); };
             try { WikiData.ExportBiomeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export biomes error: {e.Message}"); };
 
+            if (DebugMode is true) { Eco.Server.PluginManager.Obj.FireShutdown();
+            }
         }
     }
 }

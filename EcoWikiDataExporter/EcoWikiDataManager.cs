@@ -6,6 +6,7 @@ using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
 using Eco.Gameplay.Items;
+using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Players;
 using Eco.Gameplay.Systems;
@@ -110,7 +111,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 			return sb.ToString();
 		}
 
-		public static string WriteDictionaryAsSubObject(Dictionary<string, string> dict, int depth)
+		public static string WriteDictionaryAsSubObject(Dictionary<string, string> dictionary, int depth)
         {
             string spaces = space2 + space3;
 
@@ -121,7 +122,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(" {");
-            foreach (KeyValuePair<string, string> kvp in dict)
+            foreach (KeyValuePair<string, string> kvp in dictionary)
             {
                 sb.AppendLine(spaces + "['" + kvp.Key + "'] = {" + kvp.Value + "},");
             }
@@ -130,11 +131,11 @@ namespace Eco.Mods.EcoWikiDataExporter
             return sb.ToString();
         }
 
-        public static string WriteDictionaryAsSub(string dict)
+        public static string WriteDictionaryToLine(string dictionary)
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(" {");
-            sb.AppendLine(string.Join(", ", dict));
+            sb.AppendLine(string.Join(", ", dictionary));
             sb.Append("}");
             return sb.ToString();
         }
@@ -171,10 +172,10 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             var localizedString = new Dictionary<string, string>();
 
-            localizedString.Add("English", name);
-            localizedString.Add("Russian", Localizer.LocalizeString(name, SupportedLanguage.Russian));
-            localizedString.Add("German", Localizer.LocalizeString(name, SupportedLanguage.German));
-            localizedString.Add("French", Localizer.LocalizeString(name, SupportedLanguage.French));
+            localizedString["English"] = '"' + $"{name}" + '"';
+            localizedString["Russian"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.Russian)}" + '"';
+            localizedString["German"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.German)}" + '"';
+            localizedString["French"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.French)}" + '"';
 
             return localizedString;
         }

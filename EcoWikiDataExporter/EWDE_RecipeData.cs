@@ -18,6 +18,7 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using System;
@@ -67,7 +68,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Name", "nil" },
                 { "ID", "nil" },
                 { "Quantity", "nil" },
-                { "isStatic", "false" },
+                { "isStatic", "'false'" },
             };
 
             Dictionary<string, string> recipeProductsDetails = new Dictionary<string, string>()
@@ -93,15 +94,16 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         RecipeData.Add(RecipeID, new Dictionary<string, string>(recipeDetails));
                         RecipeData[RecipeID]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RecipeName), 1);
-                        RecipeData[RecipeID]["CraftTime"] = (recipe.CraftMinutes.GetBaseValue * 60).ToString("G", CultureInfo.InvariantCulture);
-                        RecipeData[RecipeID]["ExperienceOnCraft"] = recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture);
-                        RecipeData[RecipeID]["LaborInCalories"] = recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
+                        RecipeData[RecipeID]["CraftTime"] = $"'{(recipe.CraftMinutes.GetBaseValue * 60).ToString("G", CultureInfo.InvariantCulture)}'";
+                        RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
+                        RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
 
                         var skill = recipe.RequiredSkills.FirstOrDefault();
                         string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
                         int RequiredSkillLevel = skill?.Level ?? 0;
 
                         RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
+                        RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable}'";
 
 
 
@@ -141,11 +143,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                             string ProductQuantity = recipeproduct.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
                             Products.Add(Productname, new Dictionary<string, string>(recipeProductsDetails));
 
-                            Products[Productname]["Type"] = $"ITEM";
+                            Products[Productname]["Type"] = $"'ITEM'";
                             Products[Productname]["Name"] = $"'{Productname}'";
                             Products[Productname]["ID"] = $"'{recipeproduct.Item.Type.Name}'";
                             Products[Productname]["Quantity"] = $"'{ProductQuantity}'";
-                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["isStatic"] = $"true"; }
+                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["isStatic"] = $"'true'"; }
 
                             RecipeData[RecipeID]["Products"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Products, 1);
                         }
