@@ -68,7 +68,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Name", "nil" },
                 { "ID", "nil" },
                 { "Quantity", "nil" },
-                { "isStatic", "'false'" },
+                { "isStatic", "'False'" },
             };
 
             Dictionary<string, string> recipeProductsDetails = new Dictionary<string, string>()
@@ -76,7 +76,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Name", "nil" },
                 { "ID", "nil" },
                 { "Quantity", "nil" },
-                { "isStatic", "false" },
+                { "isStatic", "'False'" },
             };
 
             var EcoRecipes = RecipeManager.AllRecipeFamilies;
@@ -105,8 +105,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
                         RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable}'";
 
-
-
                         SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
@@ -130,10 +128,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
                             Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
-                            if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"true";  }
+                            if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"'True'";  }
 
                             RecipeData[RecipeID]["Ingredients"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Ingredients, 1);
-
                         }
 
                         SortedDictionary<string, Dictionary<string, string>> Products = new SortedDictionary<string, Dictionary<string, string>>();
@@ -147,7 +144,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Products[Productname]["Name"] = $"'{Productname}'";
                             Products[Productname]["ID"] = $"'{recipeproduct.Item.Type.Name}'";
                             Products[Productname]["Quantity"] = $"'{ProductQuantity}'";
-                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["isStatic"] = $"'true'"; }
+                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["isStatic"] = $"'True'"; }
 
                             RecipeData[RecipeID]["Products"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Products, 1);
                         }

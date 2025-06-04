@@ -80,9 +80,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
-                    ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.DisplayName), 1);
+                    ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.DisplayName.NotTranslated), 1);
 
-                    ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.GetDescription),1);
+                    ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.GetDescription.NotTranslated),1);
 
                     if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
                     ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
@@ -104,7 +104,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                         ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
                         ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
                     }
-                    
                 }
             }
 
