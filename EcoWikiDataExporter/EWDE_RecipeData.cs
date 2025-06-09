@@ -94,7 +94,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         RecipeData.Add(RecipeID, new Dictionary<string, string>(recipeDetails));
                         RecipeData[RecipeID]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RecipeName), 1);
-                        RecipeData[RecipeID]["CraftTime"] = $"'{(recipe.CraftMinutes.GetBaseValue * 60).ToString("G", CultureInfo.InvariantCulture)}'";
+                        RecipeData[RecipeID]["CraftTime"] = $"'{(Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
 
@@ -112,14 +112,17 @@ namespace Eco.Mods.EcoWikiDataExporter
                             //var Ingredient = new Dictionary<string, string>();
                             string Ingredienttype;
                             string Ingredientname;
+                            string IngredientID;
                             bool isStatic = false;
 
                             if (recipeingredient.IsSpecificItem) { 
                                 Ingredienttype = "ITEM"; 
-                                Ingredientname = recipeingredient.Item.DisplayName.NotTranslated;     
+                                Ingredientname = recipeingredient.Item.DisplayName.NotTranslated;
+                                IngredientID = recipeingredient.Item.Type.Name;
                             } else {
                                 Ingredienttype = "TAG";
                                 Ingredientname = recipeingredient.Tag.DisplayName.NotTranslated;
+                                IngredientID = recipeingredient.Tag.Name;
                             }
                             string IngredientQuantity = recipeingredient.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
 
@@ -127,6 +130,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                             Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
                             Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
+                            Ingredients[Ingredientname]["ID"] = $"'{IngredientID}'";
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
                             if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["isStatic"] = $"'True'";  }
 

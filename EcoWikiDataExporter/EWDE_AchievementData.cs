@@ -38,8 +38,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-
-       
+        //allAchievements
+        //GetServerAchievementNames
 
 
     }

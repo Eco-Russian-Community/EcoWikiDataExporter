@@ -1,10 +1,31 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.EcoMarketplace;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Mods.TechTree;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.IoC;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -15,26 +36,6 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Shared.IoC;
-using Eco.Gameplay.Systems.EcoMarketplace;
-using System.Globalization;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -70,9 +71,9 @@ namespace Eco.Mods.EcoWikiDataExporter
             string ItemName;
             foreach (Item item in Item.AllItemsIncludingHidden)
             {
-                ItemName = item.Name;
+                ItemName = item.DisplayName.NotTranslated;
 
-                if (!ItemData.ContainsKey(ItemName) && (item.DisplayName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
+                if (!ItemData.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
                 {
 
                     ItemData.Add(ItemName, new Dictionary<string, string>(itemDetails));
@@ -80,9 +81,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
-                    ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.DisplayName.NotTranslated), 1);
+                    ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(ItemName), 1);
 
-                    ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(item.GetDescription.NotTranslated),1);
+                    ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.CleanText(item.GetDescription.NotTranslated)),1);
 
                     if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
                     ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
@@ -96,13 +97,32 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item.IsFuel) { ItemData[ItemName]["IsFuel"] = $"'True'"; }
                     if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
-                    if (item is FoodItem foodItem)
-                    {
-                        ItemData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
-                        ItemData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
-                        ItemData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
-                        ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
-                        ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
+                    if (item is FoodItem) { ItemData[ItemName]["FoodItem"] = $"'True'"; }
+                    if (item is BlockItem) { ItemData[ItemName]["BlockItem"] = $"'True'"; }
+                    if (item is SeedItem) { ItemData[ItemName]["SeedItem"] = $"'True'"; }
+                    if (item is ModuleItem) { ItemData[ItemName]["ModuleItem"] = $"'True'"; }
+                    if (item is PartItem) { ItemData[ItemName]["PartItem"] = $"'True'"; }
+                    if (item is ClothingItem) { ItemData[ItemName]["ClothingItem"] = $"'True'"; }
+                    if (item is VehicleToolItem) { ItemData[ItemName]["VehicleToolItem"] = $"'True'"; }
+                    if (item is WorldObjectItem) { ItemData[ItemName]["WorldObjectItem"] = $"'True'"; }
+                    if (item is FertilizerItem) { ItemData[ItemName]["FertilizerItem"] = $"'True'"; }
+                    if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
+                    if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
+                    if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
+                    if (item is ToolItem) { 
+                        ItemData[ItemName]["ToolItem"] = $"'True'";
+
+                        if (item is AxeItem) { ItemData[ItemName]["AxeItem"] = $"'True'"; }
+                        if (item is PickaxeItem) { ItemData[ItemName]["PickaxeItem"] = $"'True'"; }
+                        if (item is ShovelItem) { ItemData[ItemName]["ShovelItem"] = $"'True'"; }
+                        if (item is HammerItem) { ItemData[ItemName]["HammerItem"] = $"'True'"; }
+                        if (item is HoeItem) { ItemData[ItemName]["HoeItem"] = $"'True'"; }
+                        if (item is MacheteItem) { ItemData[ItemName]["MacheteItem"] = $"'True'"; }
+                        if (item is PaintToolItem) { ItemData[ItemName]["PaintToolItem"] = $"'True'"; }
+                        if (item is DrillItem) { ItemData[ItemName]["DrillItem"] = $"'True'"; }
+                        if (item is DetonatorBaseItem) { ItemData[ItemName]["DetonatorBaseItem"] = $"'True'"; }
+                        if (item is BowItem) { ItemData[ItemName]["BowItem"] = $"'True'"; }
+                        if (item is SickleItem) { ItemData[ItemName]["SickleItem"] = $"'True'"; }
                     }
                 }
             }

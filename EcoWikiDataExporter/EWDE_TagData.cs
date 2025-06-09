@@ -63,19 +63,19 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 			foreach (Tag tag in tags)
 			{
-				string tagName = tag.Name;
-				string LocalizedName = tag.DisplayName;
+				string tagID = tag.Name;
+				string tagName = tag.DisplayName.NotTranslated;
 
 				Dictionary<string, string> tagInfo = new(tagDetails); //New info for the tag based on template
-				tagInfo["ID"] = $"'{tagName}'";
-                tagInfo["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tag.DisplayName), 1);
+				tagInfo["ID"] = $"'{tagID}'";
+                tagInfo["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tagName), 1);
                 tagInfo["Hidden"] = $"'{tag.Hidden}'";
                 tagInfo["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
                 tagInfo["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
                 tagInfo["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";
 
                 //Fetch
-                string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName}'").ToArray();
+                string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName.NotTranslated}'").ToArray();
 
 				if (!associatedItems.Any()) continue; //Skip this tag if no associated items
 
@@ -83,9 +83,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryToLine(string.Join(", ", associatedItems));
 				
 				//Add tag to global dictionary
-				if (!TagData.ContainsKey(LocalizedName))
+				if (!TagData.ContainsKey(tagName))
 				{
-					TagData.Add(LocalizedName, tagInfo);
+					TagData.Add(tagName, tagInfo);
 				}
 			}
 
