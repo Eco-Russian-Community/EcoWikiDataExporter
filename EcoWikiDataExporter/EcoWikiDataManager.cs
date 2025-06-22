@@ -102,11 +102,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 				sb.AppendLine(spaces + "['" + kvp.Key + "'] = {");
 				foreach (KeyValuePair<string, string> innerKvp in kvp.Value)
 				{
-					sb.AppendLine(spaces + "['" + innerKvp.Key + "'] = {" + innerKvp.Value + "},");
+					sb.AppendLine(spaces + space2 + "['" + innerKvp.Key + "'] = " + innerKvp.Value + ",");
 				}
-				sb.Append(spaces + "},");
+				sb.AppendLine(spaces + "},");
 			}
-			sb.Append(spaces + "}");
+			sb.AppendLine(spaces + "}");
 
 			return sb.ToString();
 		}
@@ -124,7 +124,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             sb.AppendLine(" {");
             foreach (KeyValuePair<string, string> kvp in dictionary)
             {
-                sb.AppendLine(spaces + "['" + kvp.Key + "'] = {" + kvp.Value + "},");
+                sb.AppendLine(spaces + "['" + kvp.Key + "'] = " + kvp.Value + ",");
+                //sb.AppendLine(spaces + "['" + kvp.Key + "'] = {" + kvp.Value + "},");
             }
             sb.Append(spaces + "}");
 

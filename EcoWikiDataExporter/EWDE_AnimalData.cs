@@ -50,7 +50,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         Dictionary<string, string> animalDetails = new Dictionary<string, string>()
         {
-            { "untranslated", "nil" }
+            { "Name", "nil" }
 
         };
 
@@ -62,6 +62,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!AnimalData.ContainsKey(animalName))
                 {
                     AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
+                    AnimalData[animalName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(animalName), 1);
                     AnimalData[animalName]["MaturityAgeDays"] = $"'{animal.MaturityAgeDays}'";
                     AnimalData[animalName]["isSwimming"] = $"'{animal.Swimming}'";
                     AnimalData[animalName]["isFlying"] = $"'{animal.Flying}'";
