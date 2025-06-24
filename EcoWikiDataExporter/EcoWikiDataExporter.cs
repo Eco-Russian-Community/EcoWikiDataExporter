@@ -37,52 +37,56 @@ using static System.Net.Mime.MediaTypeNames;
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	[LocDisplayName(nameof(EcoWikiDataExporter))]
-    public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IInitializablePlugin, ICommandablePlugin
-    {
-        public static readonly string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        public const string EWDEFolder = "EWDE";
-        public const bool DebugMode = true;
+	public class EcoWikiDataExporter : IModKitPlugin, IServerPlugin, IThreadedPlugin, ICommandablePlugin
+	{
+		public static readonly string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+		public const string EWDEFolder = "EWDE";
+		public const bool DebugMode = true;
 
-        public void Initialize(TimedTask timer)
-        {
-            if (DebugMode is true) { ExportWiki(); }
-        }
+		public string GetStatus() => string.Empty;
 
-        public string GetStatus() => string.Empty;
+		public string GetCategory() => Localizer.DoStr("Mods");
+		public override string ToString() => Localizer.DoStr("EWDE");
 
-        public string GetCategory() => Localizer.DoStr("Mods");
-        public override string ToString() => Localizer.DoStr("EWDE");
+		public void GetCommands(Dictionary<string, Action> nameToFunction)
+		{
+			nameToFunction.Add(Localizer.DoStr("Export Wiki Data"), this.ExportWiki);
+		}
 
-        public void GetCommands(Dictionary<string, Action> nameToFunction)
-        {
-            nameToFunction.Add(Localizer.DoStr("Export Wiki Data"), this.ExportWiki);
-        }
-
-		void ExportWiki()
+		private void ExportWiki()
 		{
 
-            // Create EWDE Lang Folder
-            //if (Directory.Exists(EWDEFolder))
-            //    Directory.Delete(EWDEFolder, true);
+			// Create EWDE Lang Folder
+			//if (Directory.Exists(EWDEFolder))
+			//    Directory.Delete(EWDEFolder, true);
 
-            Directory.CreateDirectory(EWDEFolder);
+			Directory.CreateDirectory(EWDEFolder);
 
-            try { WikiData.ExportCommandData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export commands error: {e.Message}"); };
-            try { WikiData.ExportVersionData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export version error: {e.Message}"); };
-            try { WikiData.ExportSkillData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export skills error: {e.Message}"); };
-            try { WikiData.ExportPlantData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export plants error: {e.Message}"); };
-            try { WikiData.ExportTreeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export trees error: {e.Message}"); };
-            try { WikiData.ExportAnimalData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export animals error: {e.Message}"); };
-            try { WikiData.ExportTagData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export tags error: {e.Message}"); };
-            try { WikiData.ExportItemData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export items error: {e.Message}"); };
-            try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); };
-            try { WikiData.ExportBiomeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export biomes error: {e.Message}"); };
-            try { WikiData.ExportEcopediaData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export ecopedia error: {e.Message}"); };
-            try { WikiData.ExportAchievementsData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export achievement error: {e.Message}"); }
-            ;
+			try { WikiData.ExportCommandData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export commands error: {e.Message}"); }
+			try { WikiData.ExportVersionData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export version error: {e.Message}"); }
+			try { WikiData.ExportSkillData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export skills error: {e.Message}"); }
+			try { WikiData.ExportPlantData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export plants error: {e.Message}"); }
+			try { WikiData.ExportTreeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export trees error: {e.Message}"); }
+			try { WikiData.ExportAnimalData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export animals error: {e.Message}"); }
+			try { WikiData.ExportTagData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export tags error: {e.Message}"); }
+			try { WikiData.ExportItemData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export items error: {e.Message}"); }
+			try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); }
+			try { WikiData.ExportBiomeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export biomes error: {e.Message}"); }
+			try { WikiData.ExportEcopediaData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export ecopedia error: {e.Message}"); }
+			try { WikiData.ExportAchievementsData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export achievement error: {e.Message}"); }
+		}
 
-            if (DebugMode is true) { Eco.Server.PluginManager.Obj.FireShutdown();
-            }
-        }
-    }
+		public void Run()
+		{
+			if (DebugMode is true)
+			{
+				Log.WriteWarningLineLocStr("Start auto exporting");
+				this.ExportWiki();
+				Log.WriteWarningLineLocStr("Auto exporting done, shutdown server.");
+				Eco.Server.PluginManager.Obj.FireShutdown();
+			}
+		}
+
+		public Task ShutdownAsync() => Task.CompletedTask; //Dummy but can have file closing, etc.
+	}
 }
