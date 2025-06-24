@@ -66,18 +66,17 @@ namespace Eco.Mods.EcoWikiDataExporter
 				string tagID = tag.Name;
 				string tagName = tag.DisplayName.NotTranslated;
 
-				Dictionary<string, string> tagInfo = new(tagDetails); //New info for the tag based on template
+				Dictionary<string, string> tagInfo = new(tagDetails); 
 				tagInfo["ID"] = $"'{tagID}'";
                 tagInfo["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tagName), 1);
-                tagInfo["Hidden"] = $"'{tag.Hidden}'";
+                tagInfo["IsHidden"] = $"'{tag.Hidden}'";
                 tagInfo["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
                 tagInfo["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
                 tagInfo["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";
 
-                //Fetch
                 string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName.NotTranslated}'").ToArray();
 
-				if (!associatedItems.Any()) continue; //Skip this tag if no associated items
+				if (!associatedItems.Any()) continue; 
 
 				//Populate associated items
 				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryToLine(string.Join(", ", associatedItems));

@@ -41,6 +41,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             // Dictionary of trees properties
             Dictionary<string, string> treeDetails = new Dictionary<string, string>()
             {
+                { "ID","nil" },
                 { "Name","nil" },
                 { "MaturityAgeDays","nil" },
                 { "StartBiomes","nil" }               
@@ -51,12 +52,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             foreach (Species s in species)
             {
                 TreeSpecies tree = s as TreeSpecies;
-                string treeName = tree.DisplayName;
+                string treeName = tree.DisplayName.NotTranslated;
                 if (!TreeData.ContainsKey(treeName))
                 {
                     TreeData.Add(treeName, new Dictionary<string, string>(treeDetails));
-
-                    TreeData[treeName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tree.DisplayName), 1);
+                    TreeData[treeName]["ID"] = $"'{tree.Name}" + "Species'";
+                    TreeData[treeName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(treeName), 1);
                     // Lifetime
                     TreeData[treeName]["MaturityAgeDays"] = $"'{tree.MaturityAgeDays}'";
                     // Seeding

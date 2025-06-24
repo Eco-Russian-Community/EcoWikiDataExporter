@@ -66,12 +66,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                 {                    
                     SkillData.Add(SkillName, new Dictionary<string, string>(skillsDetails));
                     SkillData[SkillName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(skill.DisplayName), 1);
-                    //SkillData[SkillName]["Description"] = $"'{EcoWikiDataManager.CleanText(skill.GetDescription)}'";
                     SkillData[SkillName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.CleanText(skill.GetDescription)), 1);
                     SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
                     SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";
                     SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
-                    SkillData[SkillName]["Root"] = $"'{skill.IsRoot}'";
+                    SkillData[SkillName]["IsRoot"] = $"'{skill.IsRoot}'";
                     SkillData[SkillName]["RootSkill"] = $"'{skill.RootSkillTree.StaticSkill}'";
                 }
             }

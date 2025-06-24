@@ -78,6 +78,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             try { WikiData.ExportRecipeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export recipes error: {e.Message}"); };
             try { WikiData.ExportBiomeData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export biomes error: {e.Message}"); };
             try { WikiData.ExportEcopediaData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export ecopedia error: {e.Message}"); };
+            try { WikiData.ExportAchievementsData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export achievement error: {e.Message}"); }
+            ;
 
             if (DebugMode is true) { Eco.Server.PluginManager.Obj.FireShutdown();
             }

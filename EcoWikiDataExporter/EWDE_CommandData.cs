@@ -67,15 +67,13 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!CommandData.ContainsKey(command))
                 {
                     CommandData.Add(command, new Dictionary<string, string>(commandDetails));
-                    CommandData[command]["command"] = "'" + Localizer.DoStr(com.Key) + "'";
+                    CommandData[command]["command"] = $"'{com.Key}'";
 
-                    if (com.ParentKey != null && com.ParentKey != "")
-                        CommandData[command]["parent"] = "'" + Localizer.DoStr(com.ParentKey) + "'";
-
-                    CommandData[command]["helpText"] = "'" + Localizer.DoStr(EcoWikiDataManager.JSONStringSafe(com.HelpText)) + "'";
-                    CommandData[command]["shortCut"] = "'" + Localizer.DoStr(com.ShortCut) + "'";
-                    CommandData[command]["level"] = "'" + Localizer.DoStr(com.AuthLevel.ToString()) + "'";
-
+                    if (com.ParentKey != null && com.ParentKey != "") { CommandData[command]["parent"] = $"'{com.ParentKey}'"; }
+                        
+                    CommandData[command]["helpText"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.JSONStringSafe(com.HelpText)), 1);
+                    CommandData[command]["shortCut"] = $"'{com.ShortCut}'";
+                    CommandData[command]["level"] = $"'{com.AuthLevel}'";
 
                     MethodInfo method = com.Method;
                     if (method == null)
@@ -94,10 +92,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                             continue;
 
                         string pos = "Arg" + p.Position.ToString();
-                        pars[pos] = "'" + p.Name + "', '" + p.ParameterType.Name + "'";
+                        pars[pos] = "{";
+                        pars[pos] += "'" + p.Name + "', '" + p.ParameterType.Name + "'";
 
-                        if (p.HasDefaultValue)
-                            pars[pos] += ", '" + p.DefaultValue + "'";
+                        if (p.HasDefaultValue) { pars[pos] += ", '" + p.DefaultValue + "'"; }
+                        pars[pos] += "}";
                     }
                     CommandData[command]["parameters"] = EcoWikiDataManager.WriteDictionaryAsSubObject(pars, 1);
                 }

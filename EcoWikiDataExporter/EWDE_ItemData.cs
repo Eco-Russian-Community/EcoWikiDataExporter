@@ -58,7 +58,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Weight", "nil" },
                 { "MaxStackSize", "nil" },
                 { "Tags", "nil" },
-                { "PaidItem", "nil" },
+                { "IsPaidItem", "nil" },
                 { "IsTool", "nil" },
                 { "CanBeCurrency", "nil" },
                 { "Compostable", "nil" },
@@ -82,13 +82,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
                     ItemData[ItemName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(ItemName), 1);
-
                     ItemData[ItemName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.CleanText(item.GetDescription.NotTranslated)),1);
 
                     if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
                     ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
                     ItemData[ItemName]["Tags"] = $"{EcoWikiDataManager.GetItemTags(item)}";
-                    if (MarketplaceExtensions.IsPaidItem(item)) { ItemData[ItemName]["PaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
+                    if (MarketplaceExtensions.IsPaidItem(item)) { ItemData[ItemName]["IsPaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
 
                     if (item.IsTool) { ItemData[ItemName]["IsTool"] = $"'True'"; }
                     if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }

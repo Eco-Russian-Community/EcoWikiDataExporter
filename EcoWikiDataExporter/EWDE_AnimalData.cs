@@ -37,6 +37,7 @@ using Eco.Simulation.Types;
 using Eco.Simulation;
 using System.Globalization;
 using Eco.Simulation.Agents;
+using Eco.Gameplay.Utils;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -50,24 +51,36 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         Dictionary<string, string> animalDetails = new Dictionary<string, string>()
         {
-            { "Name", "nil" }
-
+            { "ID", "nil" },
+            { "Name", "nil" },
+            { "Description", "nil" }
         };
 
          IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is AnimalSpecies);
             foreach (Species s in species)
             {
                 AnimalSpecies animal = s as AnimalSpecies;
-                string animalName = animal.DisplayName;
+                string animalName = animal.DisplayName.NotTranslated;
                 if (!AnimalData.ContainsKey(animalName))
                 {
                     AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
+                    AnimalData[animalName]["ID"] = $"'{animal.Name}" + "Species'";
                     AnimalData[animalName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(animalName), 1);
+                    AnimalData[animalName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(animal.DisplayDescription.NotTranslated), 1);
+                    // Behavior
                     AnimalData[animalName]["MaturityAgeDays"] = $"'{animal.MaturityAgeDays}'";
-                    AnimalData[animalName]["isSwimming"] = $"'{animal.Swimming}'";
-                    AnimalData[animalName]["isFlying"] = $"'{animal.Flying}'";
+                    AnimalData[animalName]["IsSwimming"] = $"'{animal.Swimming}'";
+                    
+                    AnimalData[animalName]["IsFlying"] = $"'{animal.Flying}'";
                     AnimalData[animalName]["IsPredator"] = $"'{animal.IsPredator}'";
                     AnimalData[animalName]["IsFishable"] = $"'{animal.IsFishable}'";
+                    //Food
+                    AnimalData[animalName]["CalorieValue"] = $"'{animal.CalorieValue}'";
+
+                    // Movement
+
+
+                    // Resources
 
 
                     // Climate

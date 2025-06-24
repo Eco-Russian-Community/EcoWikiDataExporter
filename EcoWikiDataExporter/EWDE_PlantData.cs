@@ -50,29 +50,32 @@ namespace Eco.Mods.EcoWikiDataExporter
             // dictionary of plant properties
             Dictionary<string, string> plantDetails = new Dictionary<string, string>()
             {
+                { "ID","nil" },
                 { "Name","nil" },
                 { "MaturityAgeDays","nil" },
                 { "StartBiomes","nil" },
                 { "Height","nil" },
-                { "isReapable","nil" },
-                { "isDiggable","nil" }
+                { "IsReapable","nil" },
+                { "IsDiggable","nil" }
             };
 
             IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is PlantSpecies && s is not TreeSpecies);
             foreach (Species s in species)
             {
                 PlantSpecies plant = s as PlantSpecies;
-                string plantName = plant.DisplayName;
+                string plantName = plant.DisplayName.NotTranslated;
                 if (!PlantData.ContainsKey(plantName))
                 {
                         
                     PlantData.Add(plantName, new Dictionary<string, string>(plantDetails));
+                    PlantData[plantName]["ID"] = $"'{plant.Name}" + "Species'";
+                    PlantData[plantName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(plantName), 1);
                     PlantData[plantName]["MaturityAgeDays"] = $"'{plant.MaturityAgeDays}'";
                     PlantData[plantName]["StartBiomes"] = $"'{plant.GenerationDefinitions.StartBiomes}'";
-                    PlantData[plantName]["isWater"] = plant.Water ? $"'True'" : "nil";
-                    PlantData[plantName]["isHarvestable"] = plant.RequireHarvestable ? $"'True'" : "nil";
-                    if (Block.Is<Reapable>(plant.BlockType)) { PlantData[plantName]["isReapable"] = $"'True'"; }
-                    if (Block.Is<Diggable>(plant.BlockType)) { PlantData[plantName]["isDiggable"] = $"'True'"; }
+                    PlantData[plantName]["IsWater"] = plant.Water ? $"'True'" : "nil";
+                    PlantData[plantName]["IsHarvestable"] = plant.RequireHarvestable ? $"'True'" : "nil";
+                    if (Block.Is<Reapable>(plant.BlockType)) { PlantData[plantName]["IsReapable"] = $"'True'"; }
+                    if (Block.Is<Diggable>(plant.BlockType)) { PlantData[plantName]["IsDiggable"] = $"'True'"; }
                     PlantData[plantName]["Height"] = $"'{plant.Height}'";
                     PlantData[plantName]["CalorieValue"] = $"'{plant.CalorieValue}'";
 
