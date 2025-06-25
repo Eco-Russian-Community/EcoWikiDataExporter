@@ -5,7 +5,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Eco.Simulation.Types;
 using Eco.Simulation;
-//using static Eco.Simulation.Types.PlantSpecies;
 using Eco.World.Blocks;
 using Eco.Shared.Utils;
 using System.Linq;

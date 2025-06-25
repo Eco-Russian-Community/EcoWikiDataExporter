@@ -54,7 +54,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "SkillID", "nil" },
                 { "MaxLevel", "nil" },
                 { "Tier", "nil" },
-                { "Root", "nil" },
+                { "IsRoot", "nil" },
                 { "RootSkill", "nil" }
             };
 
