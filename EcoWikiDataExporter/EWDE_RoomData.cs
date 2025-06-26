@@ -30,6 +30,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -41,6 +42,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Eco.Gameplay.Housing.PropertyValues.Internal.RoomTierUtils;
+using Eco.Gameplay.Systems.TextLinks;
+using Eco.Gameplay.Systems.NewTooltip;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -52,6 +55,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             Dictionary<string, string> roomDetails = new Dictionary<string, string>()
             {
                 { "Name", "nil" },
+                { "IsRoom", "nil" },
+                { "SupportingRooms", "nil" },
             };
 
             IEnumerable<RoomCategory> rooms = HousingConfig.AllCategories;
@@ -62,13 +67,21 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!RoomData.ContainsKey(RoomName) && (RoomName != "Uncategorized")) {
                     RoomData.Add(RoomName, new Dictionary<string, string>(roomDetails));
                     RoomData[RoomName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RoomName), 1);
-                    RoomData[RoomName]["Color"] = roomCategory.DisplayNameColored.ToString();
-                    RoomData[RoomName]["CanBeRoomCategory"] = roomCategory.CanBeRoomCategory.ToString();
-                    RoomData[RoomName]["SupportForAnyRoomType"] = roomCategory.SupportForAnyRoomType.ToString();
-                    RoomData[RoomName]["MaxSupportPercentOfPrimary"] = roomCategory.MaxSupportPercentOfPrimary.ToString();
-                    RoomData[RoomName]["SupportingRooms"] = roomCategory.SupportingRoomCategoryNames.ToString();
-                    RoomData[RoomName]["NegatesValue"] = roomCategory.NegatesValue.ToString();
-                    RoomData[RoomName]["PropertyType"] = roomCategory.AffectsPropertyTypes.ToString();
+                    RoomData[RoomName]["Color"] = $"'{roomCategory.DisplayNameColored.ToString().Substring(7, 9)}'";
+                    RoomData[RoomName]["IsRoom"] = $"'{roomCategory.CanBeRoomCategory.ToString()}'";
+                    RoomData[RoomName]["SupportForAnyRoom"] = $"'{roomCategory.SupportForAnyRoomType.ToString()}'";
+                    RoomData[RoomName]["MaxSupportPercentOfPrimary"] = $"'{(Math.Round(roomCategory.MaxSupportPercentOfPrimary * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    RoomData[RoomName]["NegatesValue"] = $"'{roomCategory.NegatesValue.ToString()}'";
+                    RoomData[RoomName]["CapFromMaterials"] = $"'{roomCategory.ShouldCapFromRoomMaterials.ToString()}'";
+                    var SupportRooms = HousingConfig.AllCategories.Where(x => x.SupportingRoomCategoryNames?.Contains(roomCategory.Name) ?? false);
+                    string canSupport = "";
+                        foreach (var supportRoom in SupportRooms)
+                        {
+                            canSupport += "'" + supportRoom.DisplayName.NotTranslated + "',";
+                        }
+                    if (canSupport != "") { RoomData[RoomName]["SupportingRooms"] = "{" + $"{canSupport}" + "}"; }
+                    
+                    //RoomData[RoomName]["PropertyType"] = $"{RoomPropertyType}";
                 }
             }
 
