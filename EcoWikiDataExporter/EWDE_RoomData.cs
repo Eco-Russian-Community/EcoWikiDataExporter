@@ -1,4 +1,29 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Housing.PropertyValues;
+using Eco.Gameplay.Housing.PropertyValues.Internal;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Items.Recipes;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Rooms;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Mods.TechTree;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.IoC;
+using Eco.Shared.Items;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,30 +40,6 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Shared.IoC;
-using Eco.Gameplay.Items.Recipes;
-using System.Collections;
-using Eco.Gameplay.Rooms;
-using Eco.Mods.TechTree;
-using Eco.Gameplay.Housing.PropertyValues;
-using Eco.Gameplay.Housing.PropertyValues.Internal;
 using static Eco.Gameplay.Housing.PropertyValues.Internal.RoomTierUtils;
 
 namespace Eco.Mods.EcoWikiDataExporter
@@ -65,12 +66,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                     RoomData[RoomName]["CanBeRoomCategory"] = roomCategory.CanBeRoomCategory.ToString();
                     RoomData[RoomName]["SupportForAnyRoomType"] = roomCategory.SupportForAnyRoomType.ToString();
                     RoomData[RoomName]["MaxSupportPercentOfPrimary"] = roomCategory.MaxSupportPercentOfPrimary.ToString();
-                    RoomData[RoomName]["AffectsPropertyTypes"] = roomCategory.AffectsPropertyTypes.ToString();
+                    RoomData[RoomName]["SupportingRooms"] = roomCategory.SupportingRoomCategoryNames.ToString();
                     RoomData[RoomName]["NegatesValue"] = roomCategory.NegatesValue.ToString();
+                    RoomData[RoomName]["PropertyType"] = roomCategory.AffectsPropertyTypes.ToString();
                 }
             }
-
-            
 
         // writes to txt file
         EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
