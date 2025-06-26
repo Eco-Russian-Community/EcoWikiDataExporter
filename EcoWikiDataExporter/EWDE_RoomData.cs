@@ -80,8 +80,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                             canSupport += "'" + supportRoom.DisplayName.NotTranslated + "',";
                         }
                     if (canSupport != "") { RoomData[RoomName]["SupportingRooms"] = "{" + $"{canSupport}" + "}"; }
+
+                    string RoomPropertyType = "";
+                    foreach (var PropertyType in roomCategory.AffectsPropertyTypes) { RoomPropertyType = PropertyType.ToString(); }
+                    RoomData[RoomName]["PropertyType"] = $"{RoomPropertyType}";
                     
-                    //RoomData[RoomName]["PropertyType"] = $"{RoomPropertyType}";
                 }
             }
 
