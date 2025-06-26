@@ -38,6 +38,8 @@ using System.Collections;
 using Eco.Gameplay.Rooms;
 using Eco.Mods.TechTree;
 using Eco.Gameplay.Housing.PropertyValues;
+using Eco.Gameplay.Housing.PropertyValues.Internal;
+using static Eco.Gameplay.Housing.PropertyValues.Internal.RoomTierUtils;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -46,13 +48,32 @@ namespace Eco.Mods.EcoWikiDataExporter
         private static SortedDictionary<string, Dictionary<string, string>> RoomData = new SortedDictionary<string, Dictionary<string, string>>();
         public static void ExportRoomData()
         {
-            //HousingConfig.AllCategories;
+            Dictionary<string, string> roomDetails = new Dictionary<string, string>()
+            {
+                { "Name", "nil" },
+            };
+
+            IEnumerable<RoomCategory> rooms = HousingConfig.AllCategories;
+
+            foreach (RoomCategory roomCategory in rooms)
+            {
+                string RoomName = roomCategory.DisplayName.NotTranslated;
+                if (!RoomData.ContainsKey(RoomName) && (RoomName != "Uncategorized")) {
+                    RoomData.Add(RoomName, new Dictionary<string, string>(roomDetails));
+                    RoomData[RoomName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RoomName), 1);
+                    RoomData[RoomName]["Color"] = roomCategory.DisplayNameColored.ToString();
+                    RoomData[RoomName]["CanBeRoomCategory"] = roomCategory.CanBeRoomCategory.ToString();
+                    RoomData[RoomName]["SupportForAnyRoomType"] = roomCategory.SupportForAnyRoomType.ToString();
+                    RoomData[RoomName]["MaxSupportPercentOfPrimary"] = roomCategory.MaxSupportPercentOfPrimary.ToString();
+                    RoomData[RoomName]["AffectsPropertyTypes"] = roomCategory.AffectsPropertyTypes.ToString();
+                    RoomData[RoomName]["NegatesValue"] = roomCategory.NegatesValue.ToString();
+                }
+            }
+
             
 
-
-
-
-
+        // writes to txt file
+        EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
         }
     }
 }
