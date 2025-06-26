@@ -73,20 +73,21 @@ namespace Eco.Mods.EcoWikiDataExporter
                     RoomData[RoomName]["MaxSupportPercentOfPrimary"] = $"'{(Math.Round(roomCategory.MaxSupportPercentOfPrimary * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
                     RoomData[RoomName]["NegatesValue"] = $"'{roomCategory.NegatesValue.ToString()}'";
                     RoomData[RoomName]["CapFromMaterials"] = $"'{roomCategory.ShouldCapFromRoomMaterials.ToString()}'";
+                    
                     var SupportRooms = HousingConfig.AllCategories.Where(x => x.SupportingRoomCategoryNames?.Contains(roomCategory.Name) ?? false);
                     string canSupport = "";
-                        foreach (var supportRoom in SupportRooms)
-                        {
-                            canSupport += "'" + supportRoom.DisplayName.NotTranslated + "',";
-                        }
+                    foreach (var supportRoom in SupportRooms) { canSupport += "'" + supportRoom.DisplayName.NotTranslated + "',"; }
                     if (canSupport != "") { RoomData[RoomName]["SupportingRooms"] = "{" + $"{canSupport}" + "}"; }
 
                     string RoomPropertyType = "";
-                    foreach (var PropertyType in roomCategory.AffectsPropertyTypes) { RoomPropertyType = PropertyType.ToString(); }
-                    RoomData[RoomName]["PropertyType"] = $"{RoomPropertyType}";
+                    foreach (var PropertyType in roomCategory.AffectsPropertyTypes) { RoomPropertyType += "'" + PropertyType.ToString() + "',"; }
+                    RoomData[RoomName]["PropertyType"] = "{" + $"{RoomPropertyType}" + "}";
                     
                 }
             }
+
+            //HousingConfig.GetRoomTier(1);
+
 
         // writes to txt file
         EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
