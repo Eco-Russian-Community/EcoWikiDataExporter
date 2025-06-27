@@ -50,6 +50,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 	public partial class WikiData
     {
         private static SortedDictionary<string, Dictionary<string, string>> RoomData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> RoomTierData = new SortedDictionary<string, Dictionary<string, string>>();
         public static void ExportRoomData()
         {
             Dictionary<string, string> roomDetails = new Dictionary<string, string>()
@@ -57,6 +58,13 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Name", "nil" },
                 { "IsRoom", "nil" },
                 { "SupportingRooms", "nil" },
+            };
+
+            Dictionary<string, string> roomTierDetails = new Dictionary<string, string>()
+            {
+                { "SoftCap", "nil" },
+                { "HardCap", "nil" },
+                { "Percent", "nil" },
             };
 
             IEnumerable<RoomCategory> rooms = HousingConfig.AllCategories;
@@ -86,11 +94,19 @@ namespace Eco.Mods.EcoWikiDataExporter
                 }
             }
 
-            //HousingConfig.GetRoomTier(1);
-
-
-        // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
+            for (int i = 0; i <= 5; i++)
+            {
+                var Roomtier = HousingConfig.GetRoomTier(i);
+                string t = i.ToString();
+                RoomTierData.Add(t, new Dictionary<string, string>(roomTierDetails));
+                RoomTierData[t]["SoftCap"] = $"'{(Math.Round(Roomtier.SoftCap)).ToString("G", CultureInfo.InvariantCulture)}'";
+                RoomTierData[t]["HardCap"] = $"'{(Math.Round(Roomtier.HardCap)).ToString("G", CultureInfo.InvariantCulture)}'";
+                RoomTierData[t]["Percent"] = $"'{(Math.Round(Roomtier.DiminishingReturnPercent * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+            }
+            
+            // writes to txt file
+            EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
+            EcoWikiDataManager.WriteDictionaryToFile("RoomTierData", "roomstiers", RoomTierData);
         }
     }
 }

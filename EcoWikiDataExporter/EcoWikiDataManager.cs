@@ -26,6 +26,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -167,6 +168,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             }
             tags.Append('}');
             return tags.ToString();
+        }
+
+        public static string WorldTemp(float ServerTemp)
+        {
+            var temp = Math.Round(ServerTemp * 40 - 10);
+            return temp.ToString("G", CultureInfo.InvariantCulture);
         }
 
         public static Dictionary<string, string> Localization(string name)

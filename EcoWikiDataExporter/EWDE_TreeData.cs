@@ -64,10 +64,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
                     TreeData[treeName]["PlantAgeToSeed"] = $"'{tree.PlantAgeToSeed}'";
                     TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
-
-
-
                     TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
+
 
                     //tree.ResourceConstraints.LayerName
                     //tree.ResourceConstraints.HalfSpeedConcentration
@@ -75,23 +73,23 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
                     // Capacity
-                    TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{tree.IdealTemperatureRange.Min}'";
-                    TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{tree.IdealTemperatureRange.Max}'";
-                    TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{tree.TemperatureExtremes.Min}'";
-                    TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{tree.TemperatureExtremes.Max}'";
+                    TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{EcoWikiDataManager.WorldTemp(tree.IdealTemperatureRange.Min)}'";
+                    TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{EcoWikiDataManager.WorldTemp(tree.IdealTemperatureRange.Max)}'";
+                    TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{EcoWikiDataManager.WorldTemp(tree.TemperatureExtremes.Min)}'";
+                    TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{EcoWikiDataManager.WorldTemp(tree.TemperatureExtremes.Max)}'";
 
-                    TreeData[treeName]["IdealMoistureRangeMin"] = $"'{tree.IdealMoistureRange.Min}'";
-                    TreeData[treeName]["IdealMoistureRangeMax"] = $"'{tree.IdealMoistureRange.Max}'";
-                    TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{tree.MoistureExtremes.Min}'";
-                    TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{tree.MoistureExtremes.Max}'";
+                    TreeData[treeName]["IdealMoistureRangeMin"] = $"'{(Math.Round(tree.IdealMoistureRange.Min * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["IdealMoistureRangeMax"] = $"'{(Math.Round(tree.IdealMoistureRange.Max * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{(Math.Round(tree.MoistureExtremes.Min * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{(Math.Round(tree.MoistureExtremes.Max * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
 
-                    TreeData[treeName]["IdealWaterRangeMin"] = $"'{tree.IdealWaterRange.Min}'";
-                    TreeData[treeName]["IdealWaterRangeMax"] = $"'{tree.IdealWaterRange.Max}'";
-                    TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{tree.WaterExtremes.Min}'";
-                    TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{tree.WaterExtremes.Max}'";
+                    TreeData[treeName]["IdealWaterRangeMin"] = $"'{(Math.Round(tree.IdealWaterRange.Min * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["IdealWaterRangeMax"] = $"'{(Math.Round(tree.IdealWaterRange.Max * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{(Math.Round(tree.WaterExtremes.Min * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{(Math.Round(tree.WaterExtremes.Max * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
 
-                    TreeData[treeName]["PollutionDensityTolerance"] = $"'{tree.PollutionDensityTolerance}'";
-                    TreeData[treeName]["PollutionDensityMax"] = $"'{tree.MaxPollutionDensity}'";
+                    TreeData[treeName]["PollutionDensityTolerance"] = $"'{(Math.Round(tree.PollutionDensityTolerance * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                    TreeData[treeName]["PollutionDensityMax"] = $"'{(Math.Round(tree.MaxPollutionDensity * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
 
                     // Climate
                     TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{tree.ReleasesCO2TonsPerDay}'";
