@@ -40,7 +40,7 @@ using System.Threading.Tasks;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
-    internal class EcoWikiDataManager
+    public partial class WikiData
     {
         private static string space2 = "        ";
         private static string space3 = "            ";

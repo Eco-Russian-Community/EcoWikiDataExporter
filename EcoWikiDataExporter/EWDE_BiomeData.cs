@@ -75,7 +75,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
                 if (BiomeExtensions.IsOcean(BiomeItem)) { BiomeData[BiomeName]["IsOcean"] = $"'True'"; }
 
-                BiomeData[BiomeName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(BiomeNameLoc), 1);
+                BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
                 BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType}'";
                 BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
                 BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
@@ -90,7 +90,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             }
 
          // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("BiomeData", "biomes", BiomeData);
+        WriteDictionaryToFile("BiomeData", "biomes", BiomeData);
         }
     }
 }

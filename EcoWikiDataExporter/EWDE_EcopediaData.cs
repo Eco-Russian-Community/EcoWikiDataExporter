@@ -58,7 +58,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string ChapterName = Chapters.DisplayName.NotTranslated;
                 if (ChapterName == "Development") continue;
                 EcopediaData.Add(ChapterName, new Dictionary<string, string>(EcopediaChaptersDetails));
-                EcopediaData[ChapterName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(ChapterName), 1);
+                EcopediaData[ChapterName]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
 
 
                 foreach (var Categories in Chapters.Categories)
@@ -72,7 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
                 // writes to txt file
-                EcoWikiDataManager.WriteDictionaryToFile("EcopediaMenuData", "ecopediapages", EcopediaData);
+                WriteDictionaryToFile("EcopediaMenuData", "ecopediapages", EcopediaData);
         }
     }
 }

@@ -60,14 +60,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!AchievementData.ContainsKey(achievementName))
                 {
                     AchievementData.Add(achievementName, new Dictionary<string, string>(achievementDetails));
-                    AchievementData[achievementName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(achievementName), 1);
-                    AchievementData[achievementName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(achievement.Description.NotTranslated), 1);
+                    AchievementData[achievementName]["Name"] = WriteDictionaryAsSubObject(Localization(achievementName), 1);
+                    AchievementData[achievementName]["Description"] = WriteDictionaryAsSubObject(Localization(achievement.Description.NotTranslated), 1);
                     AchievementData[achievementName]["IconName"] = $"'{achievement.IconName}'";
                 }
             }
 
         // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("AchievementsData", "achievements", AchievementData);
+        WriteDictionaryToFile("AchievementsData", "achievements", AchievementData);
 
 
         }

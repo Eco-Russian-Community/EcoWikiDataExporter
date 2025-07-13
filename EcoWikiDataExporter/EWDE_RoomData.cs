@@ -74,7 +74,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string RoomName = roomCategory.DisplayName.NotTranslated;
                 if (!RoomData.ContainsKey(RoomName) && (RoomName != "Uncategorized")) {
                     RoomData.Add(RoomName, new Dictionary<string, string>(roomDetails));
-                    RoomData[RoomName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RoomName), 1);
+                    RoomData[RoomName]["Name"] = WriteDictionaryAsSubObject(Localization(RoomName), 1);
                     RoomData[RoomName]["Color"] = $"'{roomCategory.DisplayNameColored.ToString().Substring(7, 9)}'";
                     RoomData[RoomName]["IsRoom"] = $"'{roomCategory.CanBeRoomCategory.ToString()}'";
                     RoomData[RoomName]["SupportForAnyRoom"] = $"'{roomCategory.SupportForAnyRoomType.ToString()}'";
@@ -105,8 +105,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             }
             
             // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("RoomData", "rooms", RoomData);
-            EcoWikiDataManager.WriteDictionaryToFile("RoomTierData", "roomstiers", RoomTierData);
+            WriteDictionaryToFile("RoomData", "rooms", RoomData);
+            WriteDictionaryToFile("RoomTierData", "roomstiers", RoomTierData);
         }
     }
 }

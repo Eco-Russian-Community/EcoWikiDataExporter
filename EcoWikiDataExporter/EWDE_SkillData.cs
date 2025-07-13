@@ -65,8 +65,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!SkillData.ContainsKey(SkillName))
                 {                    
                     SkillData.Add(SkillName, new Dictionary<string, string>(skillsDetails));
-                    SkillData[SkillName]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(skill.DisplayName), 1);
-                    SkillData[SkillName]["Description"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.CleanText(skill.GetDescription)), 1);
+                    SkillData[SkillName]["Name"] = WriteDictionaryAsSubObject(Localization(skill.DisplayName), 1);
+                    SkillData[SkillName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(skill.GetDescription.NotTranslated)), 1);
                     SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
                     SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";
                     SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
@@ -75,7 +75,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 }
             }
         // writes to txt file
-        EcoWikiDataManager.WriteDictionaryToFile("SkillData", "skills", SkillData);
+        WriteDictionaryToFile("SkillData", "skills", SkillData);
         }
 
 

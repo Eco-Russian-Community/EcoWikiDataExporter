@@ -71,7 +71,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     if (com.ParentKey != null && com.ParentKey != "") { CommandData[command]["parent"] = $"'{com.ParentKey}'"; }
                         
-                    CommandData[command]["helpText"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(EcoWikiDataManager.JSONStringSafe(com.HelpText)), 1);
+                    CommandData[command]["helpText"] = WriteDictionaryAsSubObject(Localization(JSONStringSafe(com.HelpText)), 1);
                     CommandData[command]["shortCut"] = $"'{com.ShortCut}'";
                     CommandData[command]["level"] = $"'{com.AuthLevel}'";
 
@@ -98,12 +98,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                         if (p.HasDefaultValue) { pars[pos] += ", '" + p.DefaultValue + "'"; }
                         pars[pos] += "}";
                     }
-                    CommandData[command]["parameters"] = EcoWikiDataManager.WriteDictionaryAsSubObject(pars, 1);
+                    CommandData[command]["parameters"] = WriteDictionaryAsSubObject(pars, 1);
                 }
             }
 
             // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("CommandData", "commands", CommandData);
+            WriteDictionaryToFile("CommandData", "commands", CommandData);
         }
 
 

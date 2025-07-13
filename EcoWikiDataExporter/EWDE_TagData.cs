@@ -68,7 +68,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 				Dictionary<string, string> tagInfo = new(tagDetails); 
 				tagInfo["ID"] = $"'{tagID}'";
-                tagInfo["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(tagName), 1);
+                tagInfo["Name"] = WriteDictionaryAsSubObject(Localization(tagName), 1);
                 tagInfo["IsHidden"] = $"'{tag.Hidden}'";
                 tagInfo["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
                 tagInfo["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
@@ -79,7 +79,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 				if (!associatedItems.Any()) continue; 
 
 				//Populate associated items
-				tagInfo["Items"] = EcoWikiDataManager.WriteDictionaryToLine(string.Join(", ", associatedItems));
+				tagInfo["Items"] = WriteDictionaryToLine(string.Join(", ", associatedItems));
 				
 				//Add tag to global dictionary
 				if (!TagData.ContainsKey(tagName))
@@ -89,7 +89,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 			}
 
 			// writes to txt file
-			EcoWikiDataManager.WriteDictionaryToFile("TagData", "tags", TagData);
+			WriteDictionaryToFile("TagData", "tags", TagData);
 		}
 	}
 }

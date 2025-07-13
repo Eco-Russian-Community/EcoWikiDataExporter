@@ -93,7 +93,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         string RecipeID = RecipeName.Replace(" ", "");
 
                         RecipeData.Add(RecipeID, new Dictionary<string, string>(recipeDetails));
-                        RecipeData[RecipeID]["Name"] = EcoWikiDataManager.WriteDictionaryAsSubObject(EcoWikiDataManager.Localization(RecipeName), 1);
+                        RecipeData[RecipeID]["Name"] = WriteDictionaryAsSubObject(Localization(RecipeName), 1);
                         RecipeData[RecipeID]["CraftTime"] = $"'{(Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
@@ -134,7 +134,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
                             if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["IsStatic"] = $"'True'";  }
 
-                            RecipeData[RecipeID]["Ingredients"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Ingredients, 1);
+                            RecipeData[RecipeID]["Ingredients"] = WriteDictionaryAsSubObject(Ingredients, 1);
                         }
 
                         SortedDictionary<string, Dictionary<string, string>> Products = new SortedDictionary<string, Dictionary<string, string>>();
@@ -150,14 +150,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Products[Productname]["Quantity"] = $"'{ProductQuantity}'";
                             if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["IsStatic"] = $"'True'"; }
 
-                            RecipeData[RecipeID]["Products"] = EcoWikiDataManager.WriteDictionaryAsSubObject(Products, 1);
+                            RecipeData[RecipeID]["Products"] = WriteDictionaryAsSubObject(Products, 1);
                         }
                     }
                 }
             }
 
             // writes to txt file
-            EcoWikiDataManager.WriteDictionaryToFile("RecipesData", "recipes", RecipeData);
+            WriteDictionaryToFile("RecipesData", "recipes", RecipeData);
 
         }
 
