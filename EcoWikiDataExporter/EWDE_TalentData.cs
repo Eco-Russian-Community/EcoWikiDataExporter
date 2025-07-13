@@ -47,7 +47,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 { "Name" , "nil" },
                 { "Description", "nil" },
-                { "OwningSkill", "nil" },
+                { "IconName", "nil" },
+                { "SkillID", "nil" },
                 { "Level", "nil" },
             };
 
@@ -63,7 +64,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                         TalentData.Add(TalentName, new Dictionary<string, string>(TalentDetails));
                         TalentData[TalentName]["Name"] = WriteDictionaryAsSubObject(Localization(TalentName), 1);
                         TalentData[TalentName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(talentGroup.GetDescription.NotTranslated)), 1);
-                        TalentData[TalentName]["OwningSkill"] = $"'{talentGroup.OwningSkill.Name}'";
+                        TalentData[TalentName]["IconName"] = $"'{talentGroup.IconName}'";
+                        TalentData[TalentName]["SkillID"] = $"'{talentGroup.OwningSkill.Name}'";
                         TalentData[TalentName]["Level"] = $"'{talentGroup.Level}'";
                     }
                 }
