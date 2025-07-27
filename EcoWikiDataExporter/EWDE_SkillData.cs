@@ -55,9 +55,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "MaxLevel", "nil" },
                 { "Tier", "nil" },
                 { "IsRoot", "nil" },
-                { "RootSkill", "nil" }
+                { "RootSkill", "nil" },
+                { "PlayerDefaultSkill", "nil" }
             };
 
+            IEnumerable<Type> PlayerDefaultSkills = PlayerDefaults.GetDefaultSkills();
 
             foreach (var skill in Skill.AllSkills)
             {
@@ -72,6 +74,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
                     SkillData[SkillName]["IsRoot"] = $"'{skill.IsRoot}'";
                     SkillData[SkillName]["RootSkill"] = $"'{skill.RootSkillTree.StaticSkill}'";
+                    SkillData[SkillName]["PlayerDefaultSkill"] = $"'{PlayerDefaultSkills.Contains(skill.Type)}'";
+                    SkillData[SkillName]["TypeID"] = $"'{skill.TypeID}'";
                 }
             }
         // writes to txt file
