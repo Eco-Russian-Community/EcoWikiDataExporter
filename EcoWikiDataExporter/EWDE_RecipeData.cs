@@ -58,6 +58,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "LaborInCalories", "nil" },
                 { "RequiredSkill", "nil" },
                 { "CraftingTables", "nil" },
+                { "RequiresStrangeBlueprint", "nil" },
                 { "Ingredients", "nil" },
                 { "Products", "nil" },
             };
@@ -104,6 +105,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
                         RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable}'";
+                        RecipeData[RecipeID]["RequiresStrangeBlueprint"] = $"'{recipevariant.RequiresStrangeBlueprint}'";
 
                         SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
@@ -113,7 +115,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                             string Ingredienttype;
                             string Ingredientname;
                             string IngredientID;
-                            bool isStatic = false;
 
                             if (recipeingredient.IsSpecificItem) { 
                                 Ingredienttype = "ITEM"; 
