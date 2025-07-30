@@ -17,7 +17,10 @@ using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
+using Eco.Shared.StrangeCloudShared;
 using Eco.Shared.Utils;
+using Eco.World.Blocks;
+using StrangeCloud.Service.Client;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -52,6 +55,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 { "ID", "nil" },
                 { "Category", "nil" },
+                { "Hidden", "nil" },
                 { "Group", "nil" },
                 { "Name", "nil" },
                 { "Description", "nil" },
@@ -80,6 +84,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
+                    if (item.Category == "Hidden") { ItemData[ItemName]["Hidden"] = $"'True'"; }
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
                     ItemData[ItemName]["Name"] = WriteDictionaryAsSubObject(Localization(ItemName), 1);
                     ItemData[ItemName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(item.GetDescription.NotTranslated)),1);
@@ -96,7 +101,24 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item.IsFuel) { ItemData[ItemName]["IsFuel"] = $"'True'"; }
                     if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
-                    if (item is FoodItem) { ItemData[ItemName]["FoodItem"] = $"'True'"; }
+                    //item.IsCarried
+                    //item.IsPaidItem
+                    
+                    
+                    if (item is FoodItem) { 
+                        ItemData[ItemName]["FoodItem"] = $"'True'";
+                        if (item is FoodItem foodItem)
+                        {
+                            ItemData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
+                            ItemData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
+                            ItemData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
+                            ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
+                            ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
+                            ItemData[ItemName]["SpoilageTime"] = $"'{foodItem.SpoilageTime.Expired}'";
+
+                           
+                        }
+                    }
                     if (item is BlockItem) { ItemData[ItemName]["BlockItem"] = $"'True'"; }
                     if (item is SeedItem) { ItemData[ItemName]["SeedItem"] = $"'True'"; }
                     if (item is ModuleItem) { ItemData[ItemName]["ModuleItem"] = $"'True'"; }
@@ -122,6 +144,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                         if (item is DetonatorBaseItem) { ItemData[ItemName]["DetonatorBaseItem"] = $"'True'"; }
                         if (item is BowItem) { ItemData[ItemName]["BowItem"] = $"'True'"; }
                         if (item is SickleItem) { ItemData[ItemName]["SickleItem"] = $"'True'"; }
+                        if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
+                        if (item is RepairingItem) { ItemData[ItemName]["RepairingItem"] = $"'True'"; }
+
+                        item.MakesRoads
                     }
                 }
             }
