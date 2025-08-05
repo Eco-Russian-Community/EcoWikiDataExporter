@@ -6,6 +6,7 @@ using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Objects;
+using Eco.Gameplay.Pipes.Gases;
 using Eco.Gameplay.Players;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.EcoMarketplace;
@@ -94,7 +95,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData[ItemName]["Tags"] = $"{GetItemTags(item)}";
                     if (MarketplaceExtensions.IsPaidItem(item)) { ItemData[ItemName]["IsPaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
 
-                    if (item.IsTool) { ItemData[ItemName]["IsTool"] = $"'True'"; }
+
                     if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
                     if (item.Compostable) { ItemData[ItemName]["Compostable"] = $"'True'"; }
                     if (item.IsWasteProduct) { ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
@@ -102,7 +103,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
                     //item.IsCarried
-                    //item.IsPaidItem
+
                     
                     
                     if (item is FoodItem) { 
@@ -114,11 +115,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                             ItemData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
                             ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
                             ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
-                            ItemData[ItemName]["SpoilageTime"] = $"'{foodItem.SpoilageTime.Expired}'";
+                            //ItemData[ItemName]["BaseShelfLife"] = $"'{foodItem.BaseShelfLife}'";
 
-                           
+
                         }
                     }
+
                     if (item is BlockItem) { ItemData[ItemName]["BlockItem"] = $"'True'"; }
                     if (item is SeedItem) { ItemData[ItemName]["SeedItem"] = $"'True'"; }
                     if (item is ModuleItem) { ItemData[ItemName]["ModuleItem"] = $"'True'"; }
@@ -130,24 +132,32 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
                     if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
                     if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
-                    if (item is ToolItem) { 
-                        ItemData[ItemName]["ToolItem"] = $"'True'";
+                    if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
+                    
 
-                        if (item is AxeItem) { ItemData[ItemName]["AxeItem"] = $"'True'"; }
-                        if (item is PickaxeItem) { ItemData[ItemName]["PickaxeItem"] = $"'True'"; }
-                        if (item is ShovelItem) { ItemData[ItemName]["ShovelItem"] = $"'True'"; }
-                        if (item is HammerItem) { ItemData[ItemName]["HammerItem"] = $"'True'"; }
-                        if (item is HoeItem) { ItemData[ItemName]["HoeItem"] = $"'True'"; }
-                        if (item is MacheteItem) { ItemData[ItemName]["MacheteItem"] = $"'True'"; }
-                        if (item is PaintToolItem) { ItemData[ItemName]["PaintToolItem"] = $"'True'"; }
-                        if (item is DrillItem) { ItemData[ItemName]["DrillItem"] = $"'True'"; }
-                        if (item is DetonatorBaseItem) { ItemData[ItemName]["DetonatorBaseItem"] = $"'True'"; }
-                        if (item is BowItem) { ItemData[ItemName]["BowItem"] = $"'True'"; }
-                        if (item is SickleItem) { ItemData[ItemName]["SickleItem"] = $"'True'"; }
-                        if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
-                        if (item is RepairingItem) { ItemData[ItemName]["RepairingItem"] = $"'True'"; }
+                    if (item.IsTool) {
+                        ItemData[ItemName]["IsTool"] = $"'True'";
+                        ItemData[ItemName]["ToolType"] = $"'ToolItem'";
 
-                        item.MakesRoads
+                        if (item is AxeItem) { ItemData[ItemName]["ToolType"] = $"'AxeItem'"; }
+                        if (item is PickaxeItem) { ItemData[ItemName]["ToolType"] = $"'PickaxeItem'"; }
+                        if (item is ShovelItem) { ItemData[ItemName]["ToolType"] = $"'ShovelItem'"; }
+                        if (item is HammerItem) { ItemData[ItemName]["ToolType"] = $"'HammerItem'"; }
+                        if (item is HoeItem) { ItemData[ItemName]["ToolType"] = $"'HoeItem'"; }
+                        if (item is MacheteItem) { ItemData[ItemName]["ToolType"] = $"'MacheteItem'"; }
+                        if (item is PaintToolItem) { ItemData[ItemName]["ToolType"] = $"'PaintToolItem'"; }
+                        if (item is DrillItem) { ItemData[ItemName]["ToolType"] = $"'DrillItem'"; }
+                        if (item is DetonatorBaseItem) { ItemData[ItemName]["ToolType"] = $"'DetonatorBaseItem'"; }
+                        if (item is BowItem) { ItemData[ItemName]["ToolType"] = $"'BowItem'"; }
+                        if (item is SickleItem) { ItemData[ItemName]["ToolType"] = $"'SickleItem'"; }
+                        if (item is RoadToolItem) { ItemData[ItemName]["ToolType"] = $"'RoadToolItem'"; }
+
+                        if (item is WeaponItem) { ItemData[ItemName]["WeaponItem"] = $"'True'"; }
+
+                        //if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
+
+
+
                     }
                 }
             }
