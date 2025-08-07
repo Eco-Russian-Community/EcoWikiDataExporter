@@ -49,7 +49,8 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static void ExportPlayerData()
         {
 
-            //PlayerData["PlayerSkills"] = PlayerDefaults.GetDefaultSkills;
+            
+            //PlayerDefaults.GetDefaultInventory
 
 
 

@@ -76,6 +76,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 			try { WikiData.ExportAchievementsData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export achievement error: {e.Message}"); }
             try { WikiData.ExportRoomData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export room error: {e.Message}"); }
             try { WikiData.ExportTalentData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export talent error: {e.Message}"); }
+            try { WikiData.ExportGeologyData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export geology error: {e.Message}"); }
         }
 
 		public void Run()
