@@ -58,9 +58,37 @@ namespace Eco.Mods.EcoWikiDataExporter
 			WorldSettings worldSettings = config.Config;
 			TerrainModule terrainModule = worldSettings.TerrainModule as TerrainModule;
 
-			foreach(ITerrainModule module in terrainModule.Modules)
+			foreach (ITerrainModule module in terrainModule.Modules)
 			{
-				Log.WriteWarningLineLoc($"Got TerrainModule of type [{module.GetType()}]");
+				
+				switch (module)
+				{
+					case BiomeTerrainModule biomeTerrainModule:
+						{
+							LocStringBuilder lsb = new LocStringBuilder();
+							lsb.AppendLineLoc($"BiomeName: {biomeTerrainModule.BiomeName}");
+
+							TerrainDepthModule terrainDepthModule = biomeTerrainModule.Module;
+							foreach(BlockDepthRange blockDepthRange in terrainDepthModule.BlockDepthRanges)
+							{
+								lsb.AppendDashLineLocStr(string.Empty);
+								lsb.AppendLineLoc($"BlockType: {blockDepthRange.BlockType.ToString()}");
+								lsb.AppendLineLoc($"Min: {blockDepthRange.Min}");
+								lsb.AppendLineLoc($"Max: {blockDepthRange.Max}");
+								lsb.AppendLineLoc($"NoiseFrequency: {blockDepthRange.NoiseFrequency}");
+								lsb.AppendDashLineLocStr(string.Empty);
+
+								foreach(ITerrainModule sub in blockDepthRange.SubModules)
+								{
+									Log.WriteWarningLineLoc($"Got TerrainModule of type [{sub.GetType()}]");
+								}
+
+								lsb.AppendDashLineLocStr(string.Empty);
+							}
+						}
+					break;
+					default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{module.GetType()}]"); break;
+				}
 			}
 
 
