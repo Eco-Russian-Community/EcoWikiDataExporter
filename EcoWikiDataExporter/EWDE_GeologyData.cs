@@ -37,6 +37,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Reflection;
 using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
@@ -50,6 +51,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
 	{
+		private static LocStringBuilder lsb = new LocStringBuilder();
+
 		private static SortedDictionary<string, Dictionary<string, string>> GeologyData = new SortedDictionary<string, Dictionary<string, string>>();
 		public static void ExportGeologyData()
 		{
@@ -60,16 +63,16 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 			foreach (ITerrainModule module in terrainModule.Modules)
 			{
-				
+
 				switch (module)
 				{
 					case BiomeTerrainModule biomeTerrainModule:
 						{
-							LocStringBuilder lsb = new LocStringBuilder();
+							
 							lsb.AppendLineLoc($"BiomeName: {biomeTerrainModule.BiomeName}");
 
 							TerrainDepthModule terrainDepthModule = biomeTerrainModule.Module;
-							foreach(BlockDepthRange blockDepthRange in terrainDepthModule.BlockDepthRanges)
+							foreach (BlockDepthRange blockDepthRange in terrainDepthModule.BlockDepthRanges)
 							{
 								lsb.AppendDashLineLocStr(string.Empty);
 								lsb.AppendLineLoc($"BlockType: {blockDepthRange.BlockType.ToString()}");
@@ -78,22 +81,63 @@ namespace Eco.Mods.EcoWikiDataExporter
 								lsb.AppendLineLoc($"NoiseFrequency: {blockDepthRange.NoiseFrequency}");
 								lsb.AppendDashLineLocStr(string.Empty);
 
-								foreach(ITerrainModule sub in blockDepthRange.SubModules)
+								foreach (ITerrainModule subModule in blockDepthRange.SubModules)
 								{
-									Log.WriteWarningLineLoc($"Got TerrainModule of type [{sub.GetType()}]");
+									ParseTerrainModule(subModule);
 								}
 
 								lsb.AppendDashLineLocStr(string.Empty);
 							}
 						}
-					break;
+						break;
 					default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{module.GetType()}]"); break;
 				}
 			}
 
+			Log.Write(lsb.ToLocString());
+
 
 			// writes to txt file
 			WriteDictionaryToFile("GeologyData", "geology", GeologyData);
+		}
+
+		private static void ParseTerrainModule(ITerrainModule terrainModule)
+		{
+			Log.WriteWarningLineLoc($"Got TerrainModule of type [{terrainModule.GetType()}]");
+			switch (terrainModule)
+			{
+				case StandardTerrainModule standardTerrainModule:
+					{
+						lsb.AppendLineLoc($"BlockType: {standardTerrainModule.BlockType.ToString()}");
+						lsb.AppendLineLoc($"HeightRange: {standardTerrainModule.HeightRange.ToString()}");
+						lsb.AppendLineLoc($"DepthRange: {standardTerrainModule.DepthRange.ToString()}");
+						lsb.AppendLineLoc($"PercentChance: {standardTerrainModule.PercentChance.ToString()}");
+						lsb.AppendLineLoc($"NoiseFrequency: {standardTerrainModule.NoiseFrequency.ToString()}");
+						lsb.AppendLineLoc($"NoiseType: {standardTerrainModule.NoiseType.ToString()}");
+						lsb.AppendLineLoc($"NoiseDistributionType: {standardTerrainModule.NoiseDistributionType.ToString()}");
+					}
+					break;
+				case DepositTerrainModule depositTerrainModule:
+					{
+						lsb.AppendLineLoc($"BlockType: {depositTerrainModule.BlockType.ToString()}");
+						lsb.AppendLineLoc($"DepthRange: {depositTerrainModule.DepthRange.ToString()}");
+						lsb.AppendLineLoc($"DepositDepthRange: {depositTerrainModule.DepositDepthRange.ToString()}");
+						lsb.AppendLineLoc($"BlocksCountRange: {depositTerrainModule.BlocksCountRange.ToString()}");
+
+						foreach(Vector3 weight in depositTerrainModule.DirectionWeights)
+						{
+							lsb.AppendLineLoc($"DirectionWeights: {weight}");
+						}
+
+						lsb.AppendLineLoc($"SpawnAtLeastOne: {depositTerrainModule.SpawnAtLeastOne}");
+						lsb.AppendLineLoc($"SpawnPercentChance: {depositTerrainModule.SpawnPercentChance}");
+						lsb.AppendLineLoc($"WeightVariance: {depositTerrainModule.WeightVariance.ToString()}");
+
+						lsb.AppendLineLocStr(depositTerrainModule.ToString());
+					}
+					break;
+				default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{terrainModule.GetType()}]"); break;
+			}
 		}
 
 		class WGMain
