@@ -17,6 +17,7 @@ using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
 using Eco.ModKit.Internal;
 using Eco.Mods.TechTree;
+using Eco.Server;
 using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
@@ -48,41 +49,30 @@ using System.Threading.Tasks;
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
-    {
-        private static SortedDictionary<string, Dictionary<string, string>> GeologyData = new SortedDictionary<string, Dictionary<string, string>>();
-        public static void ExportGeologyData()
-        {
+	{
+		private static SortedDictionary<string, Dictionary<string, string>> GeologyData = new SortedDictionary<string, Dictionary<string, string>>();
+		public static void ExportGeologyData()
+		{
 
-            string WGFile = "WorldGenerator.eco";
-            string filePath = "Configs" + $@"\" + WGFile;
+			PluginConfig<WorldSettings> config = new PluginConfig<WorldSettings>("WorldGenerator", true);
+			WorldSettings worldSettings = config.Config;
+			TerrainModule terrainModule = worldSettings.TerrainModule as TerrainModule;
 
-            // Read the JSON file
-            string jsonArrayContent = File.ReadAllText(filePath);
+			foreach(ITerrainModule module in terrainModule.Modules)
+			{
+				Log.WriteWarningLineLoc($"Got TerrainModule of type [{module.GetType()}]");
+			}
 
 
+			// writes to txt file
+			WriteDictionaryToFile("GeologyData", "geology", GeologyData);
+		}
 
+		class WGMain
+		{
+			public string ConfigVersion { get; set; }
 
-
-        // Deserialize the JSON array into a List of objects
-        var objectList = JsonConvert.DeserializeObject<List<WGMain>>(jsonArrayContent);
-
-            foreach (var obj in objectList)
-            {
-                Log.WriteWarningLineLoc($"Test Export Geology: {obj.ConfigVersion}");
-                // Add additional parsing logic as needed
-            }
-
-           
-
-            // writes to txt file
-            WriteDictionaryToFile("GeologyData", "geology", GeologyData);
-        }
-
-        class WGMain
-        {
-            public string ConfigVersion { get; set; }
-
-            // Add additional properties as needed
-        }
-    }
+			// Add additional properties as needed
+		}
+	}
 }
