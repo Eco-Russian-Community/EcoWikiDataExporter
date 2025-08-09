@@ -5,7 +5,7 @@
 		<RootNamespace>Eco.Mods.EcoWikiDataExporter</RootNamespace>
 		<AssemblyName>EcoWikiDataExporter</AssemblyName>
 		<PackageId>EcoWikiDataExporter</PackageId>
-		<Version>0.0.10</Version>
+		<Version>0.5.1</Version>
 		<Authors>StalEF</Authors>
 		<Company>ERC</Company>
 		<Product>EcoWikiDataExporter</Product>
@@ -26,8 +26,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.12-beta-release-881" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.11.1.13-beta-release-887" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

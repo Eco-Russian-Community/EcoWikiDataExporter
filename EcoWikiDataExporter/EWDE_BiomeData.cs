@@ -48,7 +48,7 @@ namespace Eco.Mods.EcoWikiDataExporter
         // Dictionary of tags
         private static SortedDictionary<string, Dictionary<string, string>> BiomeData = new SortedDictionary<string, Dictionary<string, string>>();
 
-        // Dictionary of tags properties
+        // Dictionary of biomes properties
         private static Dictionary<string, string> biomeDetails = new Dictionary<string, string>()
         {
             { "ID","nil" },
@@ -69,7 +69,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                 BiomeData.Add(BiomeName, new Dictionary<string, string>(biomeDetails));
                 
-                BiomeData[BiomeName]["ID"] = $"'{BiomeItem.GetType}'";
+                BiomeData[BiomeName]["ID"] = $"'{BiomeName.Replace(" ", "")}'";
                 BiomeData[BiomeName]["Color"] = $"'{BiomeItem.Color.Name}'";
 
                 if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
