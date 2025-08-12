@@ -176,6 +176,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             return temp.ToString("G", CultureInfo.InvariantCulture);
         }
 
+        public static string Percent(float Percent)
+        {
+            var NewPercent = Math.Round(Percent * 100000) / 1000;
+            return NewPercent.ToString("G", CultureInfo.InvariantCulture);
+        }
+
         public static Dictionary<string, string> Localization(string name)
         {
             var localizedString = new Dictionary<string, string>();

@@ -25,8 +25,8 @@ using Eco.Shared.Localization;
 using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Eco.World.Blocks;
 using Eco.WorldGenerator;
-using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -35,6 +35,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Numerics;
@@ -54,7 +55,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 		private static LocStringBuilder lsb = new LocStringBuilder();
 
 		private static SortedDictionary<string, Dictionary<string, string>> GeologyData = new SortedDictionary<string, Dictionary<string, string>>();
-		public static void ExportGeologyData()
+
+        // Dictionary of biomes properties
+        private static Dictionary<string, string> geologybiomeDetails = new Dictionary<string, string>() {};
+
+        public static void ExportGeologyData()
 		{
 
 			PluginConfig<WorldSettings> config = new PluginConfig<WorldSettings>("WorldGenerator", true);
@@ -68,83 +73,75 @@ namespace Eco.Mods.EcoWikiDataExporter
 				{
 					case BiomeTerrainModule biomeTerrainModule:
 						{
-							
-							lsb.AppendLineLoc($"BiomeName: {biomeTerrainModule.BiomeName}");
 
-							TerrainDepthModule terrainDepthModule = biomeTerrainModule.Module;
+							string BiomeName = biomeTerrainModule.BiomeName;
+
+                            GeologyData.Add(BiomeName, new Dictionary<string, string>(geologybiomeDetails));
+
+                            TerrainDepthModule terrainDepthModule = biomeTerrainModule.Module;
 							foreach (BlockDepthRange blockDepthRange in terrainDepthModule.BlockDepthRanges)
 							{
-								lsb.AppendDashLineLocStr(string.Empty);
-								lsb.AppendLineLoc($"BlockType: {blockDepthRange.BlockType.ToString()}");
-								lsb.AppendLineLoc($"Min: {blockDepthRange.Min}");
-								lsb.AppendLineLoc($"Max: {blockDepthRange.Max}");
-								lsb.AppendLineLoc($"NoiseFrequency: {blockDepthRange.NoiseFrequency}");
-								lsb.AppendDashLineLocStr(string.Empty);
 
+								var BiomeLayer = new Dictionary<string, string>();
+                                
+
+                                string BiomeLayerName = blockDepthRange.BlockType.ToString();
+                                
+                                //BiomeLayer["BlockType"] = $"'{BiomeLayerName}'";
+                                BiomeLayer["DepthRangeMin"] = $"'{blockDepthRange.Min}'";
+                                BiomeLayer["DepthRangeMax"] = $"'{blockDepthRange.Max}'";
+                                //BiomeLayer["NoiseFrequency"] = $"'{blockDepthRange.NoiseFrequency}'";
+								
 								foreach (ITerrainModule subModule in blockDepthRange.SubModules)
 								{
-									ParseTerrainModule(subModule);
-								}
+                                    SortedDictionary<string, Dictionary<string, string>> LayerResources = new SortedDictionary<string, Dictionary<string, string>>();
 
-								lsb.AppendDashLineLocStr(string.Empty);
-							}
+                                    switch (subModule)
+                                    {
+                                        case StandardTerrainModule standardTerrainModule:
+                                            {
+                                                string LayerResourceName = standardTerrainModule.BlockType.ToString();
+                                                LayerResources.Add(LayerResourceName, new Dictionary<string, string>(geologybiomeDetails));
+                                                LayerResources[LayerResourceName]["LayerResourceType"] = "'Standard'";
+                                                LayerResources[LayerResourceName]["DepthRangeMin"] = $"'{standardTerrainModule.DepthRange.Min.ToString()}'";
+                                                LayerResources[LayerResourceName]["DepthRangeMax"] = $"'{standardTerrainModule.DepthRange.Max.ToString()}'";
+                                                LayerResources[LayerResourceName]["PercentChance"] = $"'{Percent(standardTerrainModule.PercentChance)}'";
+
+                                            }
+                                            break;
+                                        case DepositTerrainModule depositTerrainModule:
+                                            {
+                                                string LayerResourceName = depositTerrainModule.BlockType.ToString();
+                                                LayerResources.Add(LayerResourceName, new Dictionary<string, string>(geologybiomeDetails));
+                                                LayerResources[LayerResourceName]["LayerResourceType"] = "'Deposit'";
+                                                LayerResources[LayerResourceName]["DepthRangeMin"] = $"'{depositTerrainModule.DepthRange.Min.ToString()}'";
+                                                LayerResources[LayerResourceName]["DepthRangeMax"] = $"'{depositTerrainModule.DepthRange.Max.ToString()}'";
+
+                                                LayerResources[LayerResourceName]["DepositDepthRangeMin"] = $"'{depositTerrainModule.DepositDepthRange.Min.ToString()}'";
+                                                LayerResources[LayerResourceName]["DepositDepthRangeMax"] = $"'{depositTerrainModule.DepositDepthRange.Max.ToString()}'";
+
+                                                LayerResources[LayerResourceName]["BlocksCountRangeMin"] = $"'{depositTerrainModule.BlocksCountRange.Min.ToString()}'";
+                                                LayerResources[LayerResourceName]["BlocksCountRangeMax"] = $"'{depositTerrainModule.BlocksCountRange.Max.ToString()}'";
+
+                                                LayerResources[LayerResourceName]["SpawnAtLeastOne"] = $"'{depositTerrainModule.SpawnAtLeastOne}'";
+                                                LayerResources[LayerResourceName]["PercentChance"] = $"'{Percent(depositTerrainModule.SpawnPercentChance)}'";
+                                            }
+                                            break;
+                                        default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{terrainModule.GetType()}]"); break;
+                                    }
+                                    BiomeLayer["LayerResources"] = WriteDictionaryAsSubObject(LayerResources, 2);
+                                }
+
+                                GeologyData[BiomeName][BiomeLayerName] = WriteDictionaryAsSubObject(BiomeLayer, 1);
+                            }
 						}
 						break;
 					default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{module.GetType()}]"); break;
 				}
 			}
 
-			Log.Write(lsb.ToLocString());
-
-
-			// writes to txt file
-			WriteDictionaryToFile("GeologyData", "geology", GeologyData);
-		}
-
-		private static void ParseTerrainModule(ITerrainModule terrainModule)
-		{
-			Log.WriteWarningLineLoc($"Got TerrainModule of type [{terrainModule.GetType()}]");
-			switch (terrainModule)
-			{
-				case StandardTerrainModule standardTerrainModule:
-					{
-						lsb.AppendLineLoc($"BlockType: {standardTerrainModule.BlockType.ToString()}");
-						lsb.AppendLineLoc($"HeightRange: {standardTerrainModule.HeightRange.ToString()}");
-						lsb.AppendLineLoc($"DepthRange: {standardTerrainModule.DepthRange.ToString()}");
-						lsb.AppendLineLoc($"PercentChance: {standardTerrainModule.PercentChance.ToString()}");
-						lsb.AppendLineLoc($"NoiseFrequency: {standardTerrainModule.NoiseFrequency.ToString()}");
-						lsb.AppendLineLoc($"NoiseType: {standardTerrainModule.NoiseType.ToString()}");
-						lsb.AppendLineLoc($"NoiseDistributionType: {standardTerrainModule.NoiseDistributionType.ToString()}");
-					}
-					break;
-				case DepositTerrainModule depositTerrainModule:
-					{
-						lsb.AppendLineLoc($"BlockType: {depositTerrainModule.BlockType.ToString()}");
-						lsb.AppendLineLoc($"DepthRange: {depositTerrainModule.DepthRange.ToString()}");
-						lsb.AppendLineLoc($"DepositDepthRange: {depositTerrainModule.DepositDepthRange.ToString()}");
-						lsb.AppendLineLoc($"BlocksCountRange: {depositTerrainModule.BlocksCountRange.ToString()}");
-
-						foreach(Vector3 weight in depositTerrainModule.DirectionWeights)
-						{
-							lsb.AppendLineLoc($"DirectionWeights: {weight}");
-						}
-
-						lsb.AppendLineLoc($"SpawnAtLeastOne: {depositTerrainModule.SpawnAtLeastOne}");
-						lsb.AppendLineLoc($"SpawnPercentChance: {depositTerrainModule.SpawnPercentChance}");
-						lsb.AppendLineLoc($"WeightVariance: {depositTerrainModule.WeightVariance.ToString()}");
-
-						lsb.AppendLineLocStr(depositTerrainModule.ToString());
-					}
-					break;
-				default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{terrainModule.GetType()}]"); break;
-			}
-		}
-
-		class WGMain
-		{
-			public string ConfigVersion { get; set; }
-
-			// Add additional properties as needed
+            // writes to txt file
+            WriteDictionaryToFile("GeologyData", "geology", GeologyData);
 		}
 	}
 }
