@@ -80,20 +80,20 @@ namespace Eco.Mods.EcoWikiDataExporter
                     PlantData[plantName]["CalorieValue"] = $"'{plant.CalorieValue}'";
 
                     // Capacity
-                    PlantData[plantName]["IdealTemperatureRangeMin"] = $"'{plant.IdealTemperatureRange.Min}'";
-                    PlantData[plantName]["IdealTemperatureRangeMax"] = $"'{plant.IdealTemperatureRange.Max}'";
-                    PlantData[plantName]["ExtremeTemperatureRangeMin"] = $"'{plant.TemperatureExtremes.Min}'";
-                    PlantData[plantName]["ExtremeTemperatureRangeMax"] = $"'{plant.TemperatureExtremes.Max}'";
+                    PlantData[plantName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(plant.IdealTemperatureRange.Min)}'";
+                    PlantData[plantName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(plant.IdealTemperatureRange.Max)}'";
+                    PlantData[plantName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(plant.TemperatureExtremes.Min)}'";
+                    PlantData[plantName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(plant.TemperatureExtremes.Max)}'";
 
-                    PlantData[plantName]["IdealMoistureRangeMin"] = $"'{plant.IdealMoistureRange.Min}'";
-                    PlantData[plantName]["IdealMoistureRangeMax"] = $"'{plant.IdealMoistureRange.Max}'";
-                    PlantData[plantName]["ExtremeMoistureRangeMin"] = $"'{plant.MoistureExtremes.Min}'";
-                    PlantData[plantName]["ExtremeMoistureRangeMax"] = $"'{plant.MoistureExtremes.Max}'";
+                    PlantData[plantName]["IdealMoistureRangeMin"] = $"'{Percent(plant.IdealMoistureRange.Min)}'";
+                    PlantData[plantName]["IdealMoistureRangeMax"] = $"'{Percent(plant.IdealMoistureRange.Max)}'";
+                    PlantData[plantName]["ExtremeMoistureRangeMin"] = $"'{Percent(plant.MoistureExtremes.Min)}'";
+                    PlantData[plantName]["ExtremeMoistureRangeMax"] = $"'{Percent(plant.MoistureExtremes.Max)}'";
 
-                    PlantData[plantName]["IdealWaterRangeMin"] = $"'{plant.IdealWaterRange.Min}'";
-                    PlantData[plantName]["IdealWaterRangeMax"] = $"'{plant.IdealWaterRange.Max}'";
-                    PlantData[plantName]["ExtremeWaterRangeMin"] = $"'{plant.WaterExtremes.Min}'";
-                    PlantData[plantName]["ExtremeWaterRangeMax"] = $"'{plant.WaterExtremes.Max}'";
+                    PlantData[plantName]["IdealWaterRangeMin"] = $"'{Percent(plant.IdealWaterRange.Min)}'";
+                    PlantData[plantName]["IdealWaterRangeMax"] = $"'{Percent(plant.IdealWaterRange.Max)}'";
+                    PlantData[plantName]["ExtremeWaterRangeMin"] = $"'{Percent(plant.WaterExtremes.Min)}'";
+                    PlantData[plantName]["ExtremeWaterRangeMax"] = $"'{Percent(plant.WaterExtremes.Max)}'";
 
                     PlantData[plantName]["PollutionDensityTolerance"] = $"'{plant.PollutionDensityTolerance}'";
                     PlantData[plantName]["PollutionDensityMax"] = $"'{plant.MaxPollutionDensity}'";

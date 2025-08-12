@@ -76,13 +76,13 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeExtensions.IsOcean(BiomeItem)) { BiomeData[BiomeName]["IsOcean"] = $"'True'"; }
 
                 BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
-                BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType}'";
+                BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType.Name}'";
                 BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
                 BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
-                BiomeData[BiomeName]["TemperatureRangeMin"] = $"'{BiomeItem.TemperatureRange.Min}'";
-                BiomeData[BiomeName]["TemperatureRangeMax"] = $"'{BiomeItem.TemperatureRange.Max}'";
-                BiomeData[BiomeName]["MoistureRangeMin"] = $"'{(Math.Round(BiomeItem.MoistureRange.Min * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
-                BiomeData[BiomeName]["MoistureRangeMax"] = $"'{(Math.Round(BiomeItem.MoistureRange.Max * 100)).ToString("G", CultureInfo.InvariantCulture)}'";
+                BiomeData[BiomeName]["TemperatureRangeMin"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Min)}'";
+                BiomeData[BiomeName]["TemperatureRangeMax"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Max)}'";
+                BiomeData[BiomeName]["MoistureRangeMin"] = $"'{Percent(BiomeItem.MoistureRange.Min)}'";
+                BiomeData[BiomeName]["MoistureRangeMax"] = $"'{Percent(BiomeItem.MoistureRange.Max)}'";
                 BiomeData[BiomeName]["UpperHeight"] = $"'{BiomeItem.UpperHeight}'";
                 //BiomeData[BiomeName]["BadNeighbors"] = $"'{BiomeItem.BadNeighbors}'";
 
