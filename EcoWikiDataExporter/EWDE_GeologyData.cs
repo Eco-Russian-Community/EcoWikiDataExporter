@@ -81,10 +81,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                             TerrainDepthModule terrainDepthModule = biomeTerrainModule.Module;
 							foreach (BlockDepthRange blockDepthRange in terrainDepthModule.BlockDepthRanges)
 							{
-
 								var BiomeLayer = new Dictionary<string, string>();
-                                
-
                                 string BiomeLayerName = blockDepthRange.BlockType.ToString();
                                 
                                 //BiomeLayer["BlockType"] = $"'{BiomeLayerName}'";
@@ -95,7 +92,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 								foreach (ITerrainModule subModule in blockDepthRange.SubModules)
 								{
                                     SortedDictionary<string, Dictionary<string, string>> LayerResources = new SortedDictionary<string, Dictionary<string, string>>();
-
+                                    
                                     switch (subModule)
                                     {
                                         case StandardTerrainModule standardTerrainModule:
@@ -106,7 +103,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                                                 LayerResources[LayerResourceName]["DepthRangeMin"] = $"'{standardTerrainModule.DepthRange.Min.ToString()}'";
                                                 LayerResources[LayerResourceName]["DepthRangeMax"] = $"'{standardTerrainModule.DepthRange.Max.ToString()}'";
                                                 LayerResources[LayerResourceName]["PercentChance"] = $"'{Percent(standardTerrainModule.PercentChance)}'";
-
                                             }
                                             break;
                                         case DepositTerrainModule depositTerrainModule:

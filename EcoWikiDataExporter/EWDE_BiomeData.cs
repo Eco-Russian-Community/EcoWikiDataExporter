@@ -85,8 +85,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                 BiomeData[BiomeName]["MoistureRangeMax"] = $"'{Percent(BiomeItem.MoistureRange.Max)}'";
                 BiomeData[BiomeName]["UpperHeight"] = $"'{BiomeItem.UpperHeight}'";
                 //BiomeData[BiomeName]["BadNeighbors"] = $"'{BiomeItem.BadNeighbors}'";
-
-                
             }
 
          // writes to txt file

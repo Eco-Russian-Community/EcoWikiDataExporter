@@ -51,7 +51,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}"  + $@"\" + $@"{lang}_" + filename + $@".txt";
             //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}_" + filename + $@".txt";
-            string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".txt";
+            string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".lua";
 
             using (StreamWriter streamWriter = new StreamWriter(path, false))
             {

@@ -91,7 +91,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     foreach (Recipe recipevariant in recipe.Recipes)
                     {
                         string RecipeName = recipevariant.DisplayName.NotTranslated;
-                        string RecipeID = RecipeName.Replace(" ", "");
+                        string RecipeID = RecipeName.Replace(" ", "") + "Recipe";
 
                         RecipeData.Add(RecipeID, new Dictionary<string, string>(recipeDetails));
                         RecipeData[RecipeID]["Name"] = WriteDictionaryAsSubObject(Localization(RecipeName), 1);
@@ -158,7 +158,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             }
 
             // writes to txt file
-            WriteDictionaryToFile("RecipesData", "recipes", RecipeData);
+            WriteDictionaryToFile("RecipeData", "recipes", RecipeData);
 
         }
 
