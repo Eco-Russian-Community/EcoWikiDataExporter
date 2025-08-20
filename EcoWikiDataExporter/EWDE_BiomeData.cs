@@ -69,16 +69,20 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 var BiomeItem = Activator.CreateInstance(Biometype) as Biome;
                 string BiomeName = Biometype.GetLocDisplayName();
+                string BiomeID = BiomeName.Replace(" ", "") + "Biome";
                 //string BiomeNameLoc = BiomeName + " Biome";
 
-                var WorldLayer = WorldLayerManager.Obj.GetLayer(Biometype.Name);
+                
+                var WorldLayer = WorldLayerManager.Obj.GetLayer(BiomeID);
                 BiomeLayerSettings WorldLayerSettings = WorldLayer.Settings as BiomeLayerSettings;
                 string BiomeNameLoc = WorldLayerSettings.MinimapName;
+
+
                 Log.WriteWarningLineLoc($"Biome Layer: {BiomeNameLoc}");
 
                 BiomeData.Add(BiomeName, new Dictionary<string, string>(biomeDetails));
                 
-                BiomeData[BiomeName]["ID"] = $"'{BiomeName.Replace(" ", "")}'";
+                BiomeData[BiomeName]["ID"] = $"'{BiomeID}'";
                 BiomeData[BiomeName]["Color"] = $"'{BiomeItem.Color.Name}'";
 
                 if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
