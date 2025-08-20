@@ -21,6 +21,9 @@ using Eco.Shared.Localization;
 using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Eco.Simulation.Types;
+using Eco.Simulation.WorldLayers;
+using Eco.Simulation.WorldLayers.Layers;
 using Eco.WorldGenerator;
 using System;
 using System.Collections.Generic;
@@ -33,6 +36,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
@@ -65,7 +69,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 var BiomeItem = Activator.CreateInstance(Biometype) as Biome;
                 string BiomeName = Biometype.GetLocDisplayName();
-                string BiomeNameLoc = BiomeName + " Biome";
+                //string BiomeNameLoc = BiomeName + " Biome";
+
+                var WorldLayer = WorldLayerManager.Obj.GetLayer(Biometype.Name);
+                BiomeLayerSettings WorldLayerSettings = WorldLayer.Settings as BiomeLayerSettings;
+                string BiomeNameLoc = WorldLayerSettings.MinimapName;
+                Log.WriteWarningLineLoc($"Biome Layer: {BiomeNameLoc}");
 
                 BiomeData.Add(BiomeName, new Dictionary<string, string>(biomeDetails));
                 
