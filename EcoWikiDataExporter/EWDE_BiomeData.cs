@@ -69,20 +69,25 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 var BiomeItem = Activator.CreateInstance(Biometype) as Biome;
                 string BiomeName = Biometype.GetLocDisplayName();
-                string BiomeID = BiomeName.Replace(" ", "") + "Biome";
-                //string BiomeNameLoc = BiomeName + " Biome";
+                string BiomeID = Biometype.Name;
+                string BiomeLayer = BiomeID + "Biome";
+                string BiomeNameLoc = "";
 
+                if ((BiomeLayer != "CoastBiome") && (BiomeLayer != "ColdCoastBiome") && (BiomeLayer != "WarmCoastBiome") && (BiomeLayer != "HighDesertBiome") && (BiomeLayer != "SteppeBiome"))
+                {
+                    var WorldLayer = WorldLayerManager.Obj.GetLayer(BiomeLayer);
+                    BiomeLayerSettings WorldLayerSettings = WorldLayer.Settings as BiomeLayerSettings;
+                    BiomeNameLoc = WorldLayerSettings.MinimapName;
+                }
+                else
+                {
+                    BiomeNameLoc = BiomeName + " Biome";
+                }
                 
-                var WorldLayer = WorldLayerManager.Obj.GetLayer(BiomeID);
-                BiomeLayerSettings WorldLayerSettings = WorldLayer.Settings as BiomeLayerSettings;
-                string BiomeNameLoc = WorldLayerSettings.MinimapName;
-
-
-                Log.WriteWarningLineLoc($"Biome Layer: {BiomeNameLoc}");
-
                 BiomeData.Add(BiomeName, new Dictionary<string, string>(biomeDetails));
                 
                 BiomeData[BiomeName]["ID"] = $"'{BiomeID}'";
+                BiomeData[BiomeName]["WorldLayer"] = $"'{BiomeLayer}'";
                 BiomeData[BiomeName]["Color"] = $"'{BiomeItem.Color.Name}'";
 
                 if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
