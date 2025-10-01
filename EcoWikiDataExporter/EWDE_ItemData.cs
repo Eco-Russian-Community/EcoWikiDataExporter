@@ -142,12 +142,15 @@ namespace Eco.Mods.EcoWikiDataExporter
                         //WorldObject.GetOccupancyInfo((item as WorldObjectItem).WorldObjectType);
                     }
 
-                    if (item is FertilizerItem) 
+                    if (item is FertilizerItem fertilizerItem) 
                     {
                         ItemData[ItemName]["FertilizerItem"] = $"'True'";
-                        var Fertilizer = item as FertilizerItem;
-                        ItemData[ItemName]["FertilizerNutrients"] = $"'{Fertilizer.Nutrients}'";
-                    }
+                        ItemData[ItemName]["FertilizerNutrients"] = $"'{fertilizerItem.Nutrients}'";
+                        float nitrogen = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Nitrogen");
+                        float phosphorus = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Phosphorus");
+                        float potassium = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Potassium");
+
+					}
                     if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
                     if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
                     if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
