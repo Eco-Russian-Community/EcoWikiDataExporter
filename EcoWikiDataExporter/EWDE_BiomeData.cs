@@ -57,6 +57,7 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             { "ID","nil" },
             { "Name","nil" },
+            { "Description","nil" },
             { "Color","nil" },
             { "CanSpawnLake","nil" },
             { "IsOcean","nil" }
@@ -71,6 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string BiomeName = Biometype.GetLocDisplayName();
                 string BiomeID = Biometype.Name;
                 string BiomeLayer = BiomeID + "Biome";
+                if (BiomeLayer == "RainForestBiome") { BiomeLayer = "RainforestBiome"; }
                 string BiomeNameLoc = "";
 
                 if ((BiomeLayer != "CoastBiome") && (BiomeLayer != "ColdCoastBiome") && (BiomeLayer != "WarmCoastBiome") && (BiomeLayer != "HighDesertBiome") && (BiomeLayer != "SteppeBiome"))
@@ -94,14 +96,34 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeExtensions.IsOcean(BiomeItem)) { BiomeData[BiomeName]["IsOcean"] = $"'True'"; }
 
                 BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
+
+                string BiomeDescription = "";
+                if (BiomeID == "Coast") { BiomeDescription = "Beaches and shallow waters."; }
+                if (BiomeID == "ColdCoast") { BiomeDescription = "Beaches and shallow waters in colder climates."; }
+                if (BiomeID == "ColdForest") { BiomeDescription = "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate."; }
+                if (BiomeID == "DeepOcean") { BiomeDescription = "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish."; }
+                if (BiomeID == "Desert") { BiomeDescription = "The dryest biome, and in Eco currently the hottest as well."; }
+                if (BiomeID == "Grassland") { BiomeDescription = "A biome where there is enough water to support grasses but not many trees."; }
+                if (BiomeID == "HighDesert") { BiomeDescription = "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion."; }
+                if (BiomeID == "Ice") { BiomeDescription = "The coldest areas of the land, covered by glacial ice."; }
+                if (BiomeID == "Ocean") { BiomeDescription = "The parts of the ocean on the continental shelves, abundant with life."; }
+                if (BiomeID == "RainForest") { BiomeDescription = "A wet and warm biome that supports a forest abundant with plant and animal life."; }
+                if (BiomeID == "Steppe") { BiomeDescription = "A slightly colder grassland, often characterized by even fewer trees and larger open spaces."; }
+                if (BiomeID == "Taiga") { BiomeDescription = "A cold and somewhat dry biome that supports a sparse forest of conniferous trees."; }
+                if (BiomeID == "Tundra") { BiomeDescription = "A very cold biome that cannot support trees but is host to a unique plant and animal community."; }
+                if (BiomeID == "WarmCoast") { BiomeDescription = "Beaches and shallow waters in warmer climates."; }
+                if (BiomeID == "WarmForest") { BiomeDescription = "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate."; }
+                if (BiomeID == "Wetland") { BiomeDescription = "A unique biome characterized by a saturation of the soil with fresh or brackish water."; }
+
+                BiomeData[BiomeName]["Description"] = WriteDictionaryAsSubObject(Localization(BiomeDescription), 1);
                 BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType.Name}'";
-                BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
-                BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
+                //BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
+                //BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
                 BiomeData[BiomeName]["TemperatureRangeMin"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Min)}'";
                 BiomeData[BiomeName]["TemperatureRangeMax"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Max)}'";
                 BiomeData[BiomeName]["MoistureRangeMin"] = $"'{Percent(BiomeItem.MoistureRange.Min)}'";
                 BiomeData[BiomeName]["MoistureRangeMax"] = $"'{Percent(BiomeItem.MoistureRange.Max)}'";
-                BiomeData[BiomeName]["UpperHeight"] = $"'{BiomeItem.UpperHeight}'";
+                //BiomeData[BiomeName]["UpperHeight"] = $"'{BiomeItem.UpperHeight}'";
                 //BiomeData[BiomeName]["BadNeighbors"] = $"'{BiomeItem.BadNeighbors}'";
             }
 

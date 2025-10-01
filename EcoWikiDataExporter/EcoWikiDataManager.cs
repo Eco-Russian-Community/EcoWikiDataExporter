@@ -56,8 +56,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             using (StreamWriter streamWriter = new StreamWriter(path, false))
             {
                 streamWriter.WriteLine("-- Eco Version : " + EcoVersion.VersionNumber);
-                //streamWriter.WriteLine("-- Export Language: " + lang);
-                streamWriter.WriteLine();
+                streamWriter.WriteLine("-- EWDE Version : " + EcoWikiDataExporter.Version);
+                streamWriter.WriteLine("-- Date of export : " + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss"));
+               //streamWriter.WriteLine("-- Export Language: " + lang);
+               streamWriter.WriteLine();
                 streamWriter.WriteLine("return {\n    " + type + " = {");
 
                 foreach (string key in dictionary.Keys)

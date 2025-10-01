@@ -17,6 +17,7 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Math;
 using Eco.Shared.Networking;
 using Eco.Shared.StrangeCloudShared;
 using Eco.Shared.Utils;
@@ -127,15 +128,32 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item is PartItem) { ItemData[ItemName]["PartItem"] = $"'True'"; }
                     if (item is ClothingItem) { ItemData[ItemName]["ClothingItem"] = $"'True'"; }
                     if (item is VehicleToolItem) { ItemData[ItemName]["VehicleToolItem"] = $"'True'"; }
-                    if (item is WorldObjectItem) { ItemData[ItemName]["WorldObjectItem"] = $"'True'"; }
-                    if (item is FertilizerItem) { ItemData[ItemName]["FertilizerItem"] = $"'True'"; }
+                    if (item is WorldObjectItem) { 
+                        ItemData[ItemName]["WorldObjectItem"] = $"'True'";
+
+                        var occupancy = WorldObject.GetOccupancy((item as WorldObjectItem).WorldObjectType).Select(x => x.Offset).ToList();
+                        var size = Vector3i.One + new Vector3i(occupancy.Max(i => i.x) - occupancy.Min(i => i.x),
+                                                               occupancy.Max(i => i.y) - occupancy.Min(i => i.y),
+                                                               occupancy.Max(i => i.z) - occupancy.Min(i => i.z));
+                        string fullsize = size.z + "," + size.x + "," + size.y;
+                        ItemData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
+
+                        //WorldObject.GetOccupancy((item as WorldObjectItem).WorldObjectType).Select(x => x.Rotation).ToList();
+                        //WorldObject.GetOccupancyInfo((item as WorldObjectItem).WorldObjectType);
+                    }
+
+                    if (item is FertilizerItem) 
+                    {
+                        ItemData[ItemName]["FertilizerItem"] = $"'True'";
+                        var Fertilizer = item as FertilizerItem;
+                        ItemData[ItemName]["FertilizerNutrients"] = $"'{Fertilizer.Nutrients}'";
+                    }
                     if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
                     if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
                     if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
-                    
 
-                    if (item.IsTool) {
+                if (item.IsTool) {
                         ItemData[ItemName]["IsTool"] = $"'True'";
                         ItemData[ItemName]["ToolType"] = $"'ToolItem'";
 

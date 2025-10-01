@@ -19,6 +19,7 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using System;
@@ -48,31 +49,44 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static void ExportEcopediaData()
         {
             // dictionary of recipe properties
-            Dictionary<string, string> EcopediaChaptersDetails = new Dictionary<string, string>()
+            Dictionary<string, string> EcopediaMenuDetails = new Dictionary<string, string>()
             {
                 { "Name", "nil" },
             };
 
-            foreach (var Chapters in Ecopedia.Obj.Chapters.Values)
+            foreach (var Chapter in Ecopedia.Obj.Chapters.Values)
             {
-                string ChapterName = Chapters.DisplayName.NotTranslated;
+                string ChapterName = Chapter.DisplayName.NotTranslated;
                 if (ChapterName == "Development") continue;
-                EcopediaData.Add(ChapterName, new Dictionary<string, string>(EcopediaChaptersDetails));
+                EcopediaData.Add(ChapterName, new Dictionary<string, string>(EcopediaMenuDetails));
                 EcopediaData[ChapterName]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
+                EcopediaData[ChapterName]["Type"] = $"'Chapter'";
+                EcopediaData[ChapterName]["Chapter"] = $"'{ChapterName}'";
 
-
-                foreach (var Categories in Chapters.Categories)
+                foreach (var Category in Chapter.Categories)
                 {
+                    string CategoryName = Category.DisplayName.NotTranslated;
+                    if (CategoryName == "World Index") continue;
+                    EcopediaData.Add(CategoryName, new Dictionary<string, string>(EcopediaMenuDetails));
+                    EcopediaData[CategoryName]["Name"] = WriteDictionaryAsSubObject(Localization(CategoryName), 1);
+                    EcopediaData[CategoryName]["Type"] = $"'Category'";
+                    EcopediaData[CategoryName]["Chapter"] = $"'{ChapterName}'";
+                    EcopediaData[CategoryName]["Icon"] = $"'{Category.IconName}'";
 
-
+                    //string PagesList = "";
+                    //foreach (var Page in Category.Pages.Values)
+                    //{
+                    //    string PageName = Page.DisplayName.NotTranslated;
+                    //    if (PagesList == "") { PagesList = PageName; } else { PagesList = PagesList + ", " + PageName; }
+                    //}
+                    //PagesList = "{" + PagesList + "}";
+                    //EcopediaData[CategoryName]["Pages"] = $"{PagesList}";
 
                 }
             }
 
-
-
-                // writes to txt file
-                WriteDictionaryToFile("EcopediaMenuData", "ecopediapages", EcopediaData);
+         // writes to txt file
+         WriteDictionaryToFile("EcopediaMenuData", "ecopediapages", EcopediaData);
         }
     }
 }

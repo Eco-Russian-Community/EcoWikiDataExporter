@@ -41,6 +41,7 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using StrangeCloud.Service.Client.Contracts;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -49,14 +50,33 @@ namespace Eco.Mods.EcoWikiDataExporter
         private static SortedDictionary<string, Dictionary<string, string>> MarketplaceData = new SortedDictionary<string, Dictionary<string, string>>();
         public static void ExportMarketplaceData()
         {
+            // dictionary of marketplace item properties
+            Dictionary<string, string> marketplaceitemDetails = new Dictionary<string, string>()
+            {
+                { "Category", "nil" },
+                { "Price", "nil" },
+                { "Quantity", "nil" },
+                { "Achievement", "nil" }
+            };
 
-            MarketplaceCategory
+            foreach (MarketplaceCategory Category in GameData.Obj.EcoMarketplaceManager.Categories)
+            {
+                if ((Category.Name != "StrangeLoop") && (Category.Name != "Currency"))
+                {
+                    foreach (MarketplaceItem Item in Category.Items)
+                    {
+                        string MarketplaceItemName = Item.DisplayName;
 
+                        MarketplaceData.Add(MarketplaceItemName, new Dictionary<string, string>(marketplaceitemDetails));
 
-
-
-
-
+                        MarketplaceData[MarketplaceItemName]["Category"] = $"'{Category.Name}'";
+                        MarketplaceData[MarketplaceItemName]["Price"] = $"'{Item.Price}'";
+                        MarketplaceData[MarketplaceItemName]["Quantity"] = $"'{Item.Quantity}'";
+                        MarketplaceData[MarketplaceItemName]["Achievement"] = $"'{Item.AchievementRequired}'";
+                    }
+                }
+            }
+                
             // writes to txt file
             WriteDictionaryToFile("MarketplaceData", "blueprints", MarketplaceData);
         }
