@@ -184,6 +184,11 @@ namespace Eco.Mods.EcoWikiDataExporter
             return NewPercent.ToString("G", CultureInfo.InvariantCulture);
         }
 
+        public static string WikiFloat(float Float)
+        {
+            return Float.ToString("G", CultureInfo.InvariantCulture);
+        }
+
         public static Dictionary<string, string> Localization(string name)
         {
             var localizedString = new Dictionary<string, string>();

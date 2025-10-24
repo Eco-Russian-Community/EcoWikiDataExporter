@@ -21,9 +21,11 @@ using Eco.Shared.Math;
 using Eco.Shared.Networking;
 using Eco.Shared.StrangeCloudShared;
 using Eco.Shared.Utils;
+using Eco.Simulation.Agents;
 using Eco.World.Blocks;
 using StrangeCloud.Service.Client;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -41,6 +43,7 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Simulation.Types.PlantSpecies;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -48,8 +51,14 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
     
         // dictionary of items and their dictionary of stats
-        private static SortedDictionary<string, Dictionary<string, string>> ItemData = new();
-
+        private static SortedDictionary<string, Dictionary<string, string>> ItemData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> FoodData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> SeedData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> FertilizerData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> FuelData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> ToolData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> ClothingData = new SortedDictionary<string, Dictionary<string, string>>();
+        
         public static void ExportItemData()
         {
             // dictionary of item properties
@@ -74,6 +83,49 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             };
 
+            Dictionary<string, string> foodDetails = new Dictionary<string, string>()
+            {
+                { "Calories", "nil" },
+                { "Carbs", "nil" },
+                { "Protein", "nil" },
+                { "Fat", "nil" },
+                { "Vitamins", "nil" },
+                { "ShelfLife", "nil" }
+            };
+
+            Dictionary<string, string> fertilizerDetails = new Dictionary<string, string>()
+            {
+                { "Nitrogen", "nil" },
+                { "Phosphorus", "nil" },
+                { "Potassium", "nil" }
+            };
+
+            Dictionary<string, string> seedDetails = new Dictionary<string, string>()
+            {
+                { "Species", "nil" }
+            };
+
+            Dictionary<string, string> fuelDetails = new Dictionary<string, string>()
+            {
+                { "Power", "nil" }
+            };
+
+            Dictionary<string, string> toolDetails = new Dictionary<string, string>()
+            {
+                { "ToolType", "nil" },
+                { "Tier", "nil" },
+                { "MaxTake", "nil" },
+                { "Weapon", "'False'" },
+                { "WeaponDamage", "'0'" }
+            };
+
+            Dictionary<string, string> clothingDetails = new Dictionary<string, string>()
+            {
+                { "ClothingSlot", "nil" },
+                { "StartClothing", "nil" },
+                { "FlatStats", "nil" },
+            };
+
             string ItemName;
             foreach (Item item in Item.AllItemsIncludingHidden)
             {
@@ -85,9 +137,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ItemData.Add(ItemName, new Dictionary<string, string>(itemDetails));
 
                     ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
+
                     ItemData[ItemName]["Category"] = $"'{item.Category}'";
                     if (item.Category == "Hidden") { ItemData[ItemName]["Hidden"] = $"'True'"; }
                     ItemData[ItemName]["Group"] = $"'{item.Group}'";
+
                     ItemData[ItemName]["Name"] = WriteDictionaryAsSubObject(Localization(ItemName), 1);
                     ItemData[ItemName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(item.GetDescription.NotTranslated)),1);
 
@@ -100,35 +154,62 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
                     if (item.Compostable) { ItemData[ItemName]["Compostable"] = $"'True'"; }
                     if (item.IsWasteProduct) { ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
-                    if (item.IsFuel) { ItemData[ItemName]["IsFuel"] = $"'True'"; }
+
+                    if (item.IsFuel) { 
+                        ItemData[ItemName]["IsFuel"] = $"'True'";
+
+                        FuelData.Add(ItemName, new Dictionary<string, string>(fuelDetails));
+                        FuelData[ItemName]["Power"] = $"'{item.Fuel}'";
+                    }
+
                     if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
                     //item.IsCarried
 
-                    
-                    
-                    if (item is FoodItem) { 
+                    if (item is FoodItem) {
                         ItemData[ItemName]["FoodItem"] = $"'True'";
                         if (item is FoodItem foodItem)
                         {
-                            ItemData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
-                            ItemData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
-                            ItemData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
-                            ItemData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
-                            ItemData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
-                            //ItemData[ItemName]["BaseShelfLife"] = $"'{foodItem.BaseShelfLife}'";
-
-
+                            FoodData.Add(ItemName, new Dictionary<string, string>(foodDetails));
+                            FoodData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
+                            FoodData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
+                            FoodData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
+                            FoodData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
+                            FoodData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
+                            FoodData[ItemName]["ShelfLife"] = $"'{foodItem.GetPropertyValueByName<float>("BaseShelfLife")}'";
                         }
                     }
 
-                    if (item is BlockItem) { ItemData[ItemName]["BlockItem"] = $"'True'"; }
-                    if (item is SeedItem) { ItemData[ItemName]["SeedItem"] = $"'True'"; }
+                    if (item is BlockItem Block) { 
+                        ItemData[ItemName]["BlockItem"] = $"'True'"; 
+                        ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
+                    }
+                    if (item is SeedItem Seed) { 
+                        ItemData[ItemName]["SeedItem"] = $"'True'";
+
+                        SeedData.Add(ItemName, new Dictionary<string, string>(seedDetails));
+                        SeedData[ItemName]["Species"] = $"'{Seed.SpeciesName.NotTranslated.AddSpacesBetweenCapitals()}'";
+                    }
+
                     if (item is ModuleItem) { ItemData[ItemName]["ModuleItem"] = $"'True'"; }
-                    if (item is PartItem) { ItemData[ItemName]["PartItem"] = $"'True'"; }
-                    if (item is ClothingItem) { ItemData[ItemName]["ClothingItem"] = $"'True'"; }
+                    if (item is PartItem Part) { 
+                        ItemData[ItemName]["PartItem"] = $"'True'";
+                        ItemData[ItemName]["MaxDurability"] = $"'{Part.IntegrityAmount}'"; 
+                    }
+                    if (item is ClothingItem Clothing) { 
+                        ItemData[ItemName]["ClothingItem"] = $"'True'";
+
+                        ClothingData.Add(ItemName, new Dictionary<string, string>(clothingDetails));
+                        ClothingData[ItemName]["ClothingSlot"] = $"'{Clothing.Slot}'";
+                        ClothingData[ItemName]["StartClothing"] = $"'{Clothing.Starter}'";
+                        
+                        Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
+                        //ClothingData[ItemName]["FlatStats"] = $"{FlatStatString}";
+
+
+                    }
                     if (item is VehicleToolItem) { ItemData[ItemName]["VehicleToolItem"] = $"'True'"; }
-                    if (item is WorldObjectItem) { 
+                    if (item is WorldObjectItem WO) { 
                         ItemData[ItemName]["WorldObjectItem"] = $"'True'";
 
                         var occupancy = WorldObject.GetOccupancy((item as WorldObjectItem).WorldObjectType).Select(x => x.Offset).ToList();
@@ -138,42 +219,55 @@ namespace Eco.Mods.EcoWikiDataExporter
                         string fullsize = size.z + "," + size.x + "," + size.y;
                         ItemData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
 
-                        //WorldObject.GetOccupancy((item as WorldObjectItem).WorldObjectType).Select(x => x.Rotation).ToList();
-                        //WorldObject.GetOccupancyInfo((item as WorldObjectItem).WorldObjectType);
+                        
                     }
 
-                    if (item is FertilizerItem fertilizerItem) 
-                    {
+                    if (item is FertilizerItem Fertilizer) {
                         ItemData[ItemName]["FertilizerItem"] = $"'True'";
-                        ItemData[ItemName]["FertilizerNutrients"] = $"'{fertilizerItem.Nutrients}'";
-                        float nitrogen = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Nitrogen");
-                        float phosphorus = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Phosphorus");
-                        float potassium = fertilizerItem.Nutrients.GetPropertyValueByName<float>("Potassium");
 
-					}
+                        FertilizerData.Add(ItemName, new Dictionary<string, string>(fertilizerDetails));
+                        float Nitrogen = Fertilizer.Nutrients.GetPropertyValueByName<float>("Nitrogen");
+                        float Phosphorus = Fertilizer.Nutrients.GetPropertyValueByName<float>("Phosphorus");
+                        float Potassium = Fertilizer.Nutrients.GetPropertyValueByName<float>("Potassium");
+                        FertilizerData[ItemName]["Nitrogen"] = $"'{WikiFloat(Nitrogen)}'";
+                        FertilizerData[ItemName]["Phosphorus"] = $"'{WikiFloat(Phosphorus)}'";
+                        FertilizerData[ItemName]["Potassium"] = $"'{WikiFloat(Potassium)}'";
+                    }
+
                     if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
                     if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
                     if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
-                if (item.IsTool) {
+                    if (item is ToolItem toolItem ) {
                         ItemData[ItemName]["IsTool"] = $"'True'";
-                        ItemData[ItemName]["ToolType"] = $"'ToolItem'";
 
-                        if (item is AxeItem) { ItemData[ItemName]["ToolType"] = $"'AxeItem'"; }
-                        if (item is PickaxeItem) { ItemData[ItemName]["ToolType"] = $"'PickaxeItem'"; }
-                        if (item is ShovelItem) { ItemData[ItemName]["ToolType"] = $"'ShovelItem'"; }
-                        if (item is HammerItem) { ItemData[ItemName]["ToolType"] = $"'HammerItem'"; }
-                        if (item is HoeItem) { ItemData[ItemName]["ToolType"] = $"'HoeItem'"; }
-                        if (item is MacheteItem) { ItemData[ItemName]["ToolType"] = $"'MacheteItem'"; }
-                        if (item is PaintToolItem) { ItemData[ItemName]["ToolType"] = $"'PaintToolItem'"; }
-                        if (item is DrillItem) { ItemData[ItemName]["ToolType"] = $"'DrillItem'"; }
-                        if (item is DetonatorBaseItem) { ItemData[ItemName]["ToolType"] = $"'DetonatorBaseItem'"; }
-                        if (item is BowItem) { ItemData[ItemName]["ToolType"] = $"'BowItem'"; }
-                        if (item is SickleItem) { ItemData[ItemName]["ToolType"] = $"'SickleItem'"; }
-                        if (item is RoadToolItem) { ItemData[ItemName]["ToolType"] = $"'RoadToolItem'"; }
+                        ToolData.Add(ItemName, new Dictionary<string, string>(toolDetails));
 
-                        if (item is WeaponItem) { ItemData[ItemName]["WeaponItem"] = $"'True'"; }
+                        ToolData[ItemName]["ToolType"] = $"'Tool'";
+
+                        ToolData[ItemName]["MaxTake"] = $"'{toolItem.MaxTake}'";
+                        ToolData[ItemName]["Tier"] = $"'{toolItem.Tier.GetBaseValue}'";
+
+                        if (item is AxeItem) { ToolData[ItemName]["ToolType"] = $"'Axe'"; }
+                        if (item is PickaxeItem) { ToolData[ItemName]["ToolType"] = $"'Pickaxe'"; }
+                        if (item is ShovelItem) { ToolData[ItemName]["ToolType"] = $"'Shovel'"; }
+                        if (item is HammerItem) { ToolData[ItemName]["ToolType"] = $"'Hammer'"; }
+                        if (item is HoeItem) { ToolData[ItemName]["ToolType"] = $"'Hoe'"; }
+                        if (item is MacheteItem) { ToolData[ItemName]["ToolType"] = $"'Machete'"; }
+                        if (item is PaintToolItem) { ToolData[ItemName]["ToolType"] = $"'PaintTool'"; }
+                        if (item is DrillItem) { ToolData[ItemName]["ToolType"] = $"'Drill'"; }
+                        if (item is DetonatorBaseItem) { ToolData[ItemName]["ToolType"] = $"'Detonator'"; }
+                        if (item is BowItem) { ToolData[ItemName]["ToolType"] = $"'Bow'"; }
+                        if (item is SickleItem) { ToolData[ItemName]["ToolType"] = $"'Sickle'"; }
+                        if (item is RoadToolItem) { ToolData[ItemName]["ToolType"] = $"'RoadTool'"; }
+
+
+
+                        if (item is WeaponItem Weapon) {
+                            ToolData[ItemName]["Weapon"] = $"'True'";
+                            ToolData[ItemName]["WeaponDamage"] = $"'{Weapon.Damage.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
+                        }
 
                         //if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
 
@@ -185,6 +279,12 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             // writes to txt file
             WriteDictionaryToFile("ItemData", "items", ItemData);
+            WriteDictionaryToFile("FoodData", "foods", FoodData);
+            WriteDictionaryToFile("SeedData", "seeds", SeedData);
+            WriteDictionaryToFile("FuelData", "fuels", FuelData);
+            WriteDictionaryToFile("ToolData", "tools", ToolData); 
+            WriteDictionaryToFile("ClothingData", "clothing", ClothingData);
+            WriteDictionaryToFile("FertilizerData", "fertilizers", FertilizerData);
 
         }
     }
