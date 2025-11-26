@@ -193,10 +193,18 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             var localizedString = new Dictionary<string, string>();
 
+            String RussianLang = Localizer.LocalizeString(name, SupportedLanguage.Russian);
+            String GermanLang = Localizer.LocalizeString(name, SupportedLanguage.German);
+            String FrenchLang = Localizer.LocalizeString(name, SupportedLanguage.French);
+
+            if (RussianLang == "") { RussianLang = name; }
+            if (GermanLang == "") { GermanLang = name; }
+            if (FrenchLang == "") { FrenchLang = name; }
+
             localizedString["English"] = '"' + $"{name}" + '"';
-            localizedString["Russian"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.Russian)}" + '"';
-            localizedString["German"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.German)}" + '"';
-            localizedString["French"] = '"' + $"{Localizer.LocalizeString(name, SupportedLanguage.French)}" + '"';
+            localizedString["Russian"] = '"' + $"{RussianLang}" + '"';
+            localizedString["German"] = '"' + $"{GermanLang}" + '"';
+            localizedString["French"] = '"' + $"{FrenchLang}" + '"';
 
             return localizedString;
         }
