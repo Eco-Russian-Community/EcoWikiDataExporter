@@ -98,6 +98,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["CraftTime"] = $"'{(Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
+                        RecipeData[RecipeID]["RequiredModules"] = $"'{recipe.RequiredModules}'";
 
                         var skill = recipe.RequiredSkills.FirstOrDefault();
                         string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
@@ -106,6 +107,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
                         RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable}'";
                         RecipeData[RecipeID]["RequiresStrangeBlueprint"] = $"'{recipevariant.RequiresStrangeBlueprint}'";
+
 
                         SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
@@ -116,8 +118,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                             string Ingredientname;
                             string IngredientID;
 
-                            if (recipeingredient.IsSpecificItem) { 
-                                Ingredienttype = "ITEM"; 
+                            if (recipeingredient.IsSpecificItem) {
+                                Ingredienttype = "ITEM";
                                 Ingredientname = recipeingredient.Item.DisplayName.NotTranslated;
                                 IngredientID = recipeingredient.Item.Type.Name;
                             } else {

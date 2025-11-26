@@ -51,6 +51,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             Dictionary<string, string> LocDetails = new Dictionary<string, string>() { };
             string[] LocStrings =
                 {
+                    "Tags",
                     "{0} Tag",
                     "Items in Tag",
                     "Tags Applying to",
@@ -69,6 +70,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Eco Credits",
                     "Quantity",
                     "Requires",
+                    "Host Cut",
+                    "Modder Cut",
+                    "Streamer Cut",
+                    "Settlement Cut",
+                    "Charity Cut",
 
                     "Produces",
                     "Harvested from Species",
@@ -95,7 +101,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Skill Benefits",
 
                     "Biomes",
-
                 };
 
             foreach (string Loc in LocStrings)
