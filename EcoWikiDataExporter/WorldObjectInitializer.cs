@@ -18,8 +18,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 			try
 			{
 				WorldObject worldObject = WorldObjectManager.ForceAdd(worldObjectType, null, Vector3.Zero, Quaternion.Identity);
+				worldObject.DoInitializationSteps();
 				return worldObject;
-				//worldObject.DoInitializationSteps();
 			}
 			catch (Exception ex)
 			{

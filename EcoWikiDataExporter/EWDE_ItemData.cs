@@ -254,6 +254,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 							{
 								Log.WriteWarningLineLoc($"Component: {component.Name}");
 							}
+							WorldObjectManager.DestroyPermanently(worldObject);
 						}
 						catch (Exception ex) { Log.WriteException(ex); }
 					}
