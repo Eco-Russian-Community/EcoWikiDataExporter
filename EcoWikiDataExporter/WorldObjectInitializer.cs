@@ -9,7 +9,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 	{
 		public WorldObject Init(WorldObjectItem item)
 		{
-			ArgumentNullException.ThrowIfNull(item);
+			//ArgumentNullException.ThrowIfNull(item);
 			Type worldObjectType = item.WorldObjectType;
 			WorldObject worldObject = (WorldObject)Activator.CreateInstance(worldObjectType, true) ?? throw new Exception($"Error create instance of worldObject: {worldObjectType}");
 			try
