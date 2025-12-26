@@ -1,6 +1,7 @@
 ﻿using System;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Objects;
+using Eco.Shared.Logging;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -17,7 +18,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 			}
 			catch (Exception ex)
 			{
-				throw;
+				Log.WriteException(ex);
 			}
 			return worldObject;
 		}
