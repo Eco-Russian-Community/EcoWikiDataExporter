@@ -209,7 +209,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     }
                     if (item is VehicleToolItem) { ItemData[ItemName]["VehicleToolItem"] = $"'True'"; }
-                    if (item is WorldObjectItem WO) { 
+                    if (item is WorldObjectItem worldObjectItem) {
+                        Type worldObjecttype = WorldObjectItem.worldObjectItem;
                         ItemData[ItemName]["WorldObjectItem"] = $"'True'";
 
                         var occupancy = WorldObject.GetOccupancy((item as WorldObjectItem).WorldObjectType).Select(x => x.Offset).ToList();
@@ -219,7 +220,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                         string fullsize = size.z + "," + size.x + "," + size.y;
                         ItemData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
 
-                        
+                        //WorldObjec components
+
+
                     }
 
                     if (item is FertilizerItem Fertilizer) {

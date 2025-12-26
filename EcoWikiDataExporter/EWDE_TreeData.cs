@@ -131,7 +131,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
                      // Capacity
-                     TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(tree.IdealTemperatureRange.Min)}'";
+                    TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(tree.IdealTemperatureRange.Min)}'";
                     TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(tree.IdealTemperatureRange.Max)}'";
                     TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(tree.TemperatureExtremes.Min)}'";
                     TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(tree.TemperatureExtremes.Max)}'";
