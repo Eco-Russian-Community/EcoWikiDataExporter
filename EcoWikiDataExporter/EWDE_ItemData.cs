@@ -245,13 +245,17 @@ namespace Eco.Mods.EcoWikiDataExporter
 						//                  {
 
 						//                  }
-						
-						WorldObject worldObject = objectInitializer.Init(worldObjectItem);
-						Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
-						foreach (WorldObjectComponent component in worldObject.Components)
+
+						try
 						{
-							Log.WriteWarningLineLoc($"Component: {component.Name}");
+							WorldObject worldObject = objectInitializer.Init(worldObjectItem);
+							Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
+							foreach (WorldObjectComponent component in worldObject.Components)
+							{
+								Log.WriteWarningLineLoc($"Component: {component.Name}");
+							}
 						}
+						catch (Exception ex) { Log.WriteException(ex); }
 					}
 
 					if (item is FertilizerItem Fertilizer)
