@@ -248,7 +248,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 						try
 						{
-							WorldObject worldObject = objectInitializer.Init(worldObjectItem);
+							WorldObject? worldObject = objectInitializer.Init(worldObjectItem) ?? throw new Exception($"Initializer error for WorldObjectItem: {worldObjectItem.Name}");
 							Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
 							foreach (WorldObjectComponent component in worldObject.Components)
 							{
