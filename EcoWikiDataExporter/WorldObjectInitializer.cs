@@ -1,15 +1,19 @@
-﻿using System;
-using System.Numerics;
-using Eco.Gameplay.Items;
+﻿using Eco.Gameplay.Items;
+using Eco.Gameplay.Players;
 using Eco.Gameplay.Objects;
 using Eco.Shared.Logging;
+using Eco.Shared.Math;
+using System;
+using System.Numerics;
 using Quaternion = Eco.Shared.Math.Quaternion;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	internal class WorldObjectInitializer
 	{
-		public WorldObject? Init(WorldObjectItem item)
+        private static User dummy;
+        static Vector3i spawnPoint = new Vector3i(0, 75, 0);
+        public WorldObject? Init(WorldObjectItem item)
 		{
 			ArgumentNullException.ThrowIfNull(item);
 			Type worldObjectType = item.WorldObjectType;
@@ -17,7 +21,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 			
 			try
 			{
-				WorldObject worldObject = WorldObjectManager.ForceAdd(worldObjectType, null, Vector3.Zero, Quaternion.Identity);
+				WorldObject worldObject = WorldObjectManager.ForceAdd(worldObjectType, dummy, spawnPoint, Quaternion.Identity, false);
 				worldObject.DoInitializationSteps();
 				return worldObject;
 			}
