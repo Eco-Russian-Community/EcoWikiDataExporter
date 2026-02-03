@@ -101,13 +101,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
                         
-
                         var skill = recipe.RequiredSkills.FirstOrDefault();
                         string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
                         int RequiredSkillLevel = skill?.Level ?? 0;
 
                         var module = recipe.RequiredModules.FirstOrDefault();
-                        string RequiredModule = module != null ? module.ModuleName : "nil";
+                        string RequiredModule = module != null ? Item.CreatingItem(module.ModuleType).DisplayName.NotTranslated : "nil";
 
                         RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
                         RecipeData[RecipeID]["RequiresModule"] = $"'{RequiredModule}'";
