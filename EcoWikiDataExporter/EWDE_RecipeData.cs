@@ -14,6 +14,7 @@ using Eco.Gameplay.Skills;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Gameplay.Utils;
 using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
@@ -57,6 +58,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "ExperienceOnCraft", "nil" },
                 { "LaborInCalories", "nil" },
                 { "RequiredSkill", "nil" },
+                { "RequiresModule", "nil" },
                 { "CraftingTables", "nil" },
                 { "RequiresStrangeBlueprint", "nil" },
                 { "Ingredients", "nil" },
@@ -98,22 +100,23 @@ namespace Eco.Mods.EcoWikiDataExporter
                         RecipeData[RecipeID]["CraftTime"] = $"'{(Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
                         RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
-                        RecipeData[RecipeID]["RequiredModules"] = $"'{recipe.RequiredModules}'";
+                        
 
                         var skill = recipe.RequiredSkills.FirstOrDefault();
                         string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
                         int RequiredSkillLevel = skill?.Level ?? 0;
 
-                        RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
-                        RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable}'";
-                        RecipeData[RecipeID]["RequiresStrangeBlueprint"] = $"'{recipevariant.RequiresStrangeBlueprint}'";
+                        var module = recipe.RequiredModules.FirstOrDefault();
+                        string RequiredModule = module != null ? module.ModuleName : "nil";
 
+                        RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
+                        RecipeData[RecipeID]["RequiresModule"] = $"'{RequiredModule}'";
+                        RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable.DisplayName.NotTranslated}'";
+                        RecipeData[RecipeID]["RequiresStrangeBlueprint"] = $"'{recipevariant.RequiresStrangeBlueprint}'";
 
                         SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
-
-                            //var Ingredient = new Dictionary<string, string>();
                             string Ingredienttype;
                             string Ingredientname;
                             string IngredientID;
