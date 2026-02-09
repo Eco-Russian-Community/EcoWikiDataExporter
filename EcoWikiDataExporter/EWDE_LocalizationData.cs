@@ -54,6 +54,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Tags",
                     "{0} Tag",
                     "Items in Tag",
+                    "Items",
                     "Tags Applying to",
                     "Used in",
                     "Crafted At",
@@ -66,7 +67,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Experience",
                     "None",
                     "Recipes",
-
+                    "Unlocks",
+                    
                     "Eco Credits",
                     "Quantity",
                     "Requires",
@@ -82,6 +84,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Requirements",
                     "Pluggable Modules",
                     "Housing Value",
+
                     "Air Pollution",
 
                     "Calories",
@@ -91,16 +94,36 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Vitamins",
 
                     "Skills",
+                    "Profession",
                     "Professions",
                     "{0} Profession",
+                    "Specialty",
                     "Specialties",
                     "{0} Specialty",
                     "Talents",
                     "Level",
                     "Specialty Experience Per Level",
                     "Skill Benefits",
-
+                    "{0} is {1}",
+                    "Biome",
                     "Biomes",
+                    "Animals",
+                    "Trees",
+                    "Plants",
+                    "Marketplace",
+                    "Achievements",
+                    "Government",
+                    "Getting Started",
+                    "Housing",
+                    "Settlements",
+                    "Laws",
+                    "Twitch Drops",
+                    "Server",
+
+                    "Admin",
+                    "User",
+                    "DevTier",
+
                 };
 
             foreach (string Loc in LocStrings)
