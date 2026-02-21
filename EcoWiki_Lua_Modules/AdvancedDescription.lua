@@ -1,0 +1,36 @@
+local p = {}
+local Utils = require('Module:Utils')
+
+function p.main(description)
+	local description = string.gsub(description," culture", " [[Culture]]")
+	local description = string.gsub(description," vehicle", " [[Vehicles|Vehicle]]")
+	local description = string.gsub(description,"Meteor", "[[Meteor]]")
+	local description = string.gsub(description," meteor", " [[Meteor]]")
+	local description = string.gsub(description," currency", " Currency")
+	local description = string.gsub(description," Currency exchange", " [[Currency exchange]]")
+	local description = string.gsub(description," Currency", " [[Currency]]")
+	local description = string.gsub(description," tools", " [[Tools]]")
+	local description = string.gsub(description," tree", " [[Trees|Tree]]")
+	local description = string.gsub(description," store", " [[Store]]")
+	local description = string.gsub(description," deer", " [[Deer]]")
+	local description = string.gsub(description," wolf", " [[Wolf]]")
+	local description = string.gsub(description," fox", " [[Fox]]")
+	local description = string.gsub(description," food", " [[Food]]")
+	local description = string.gsub(description," bison", " [[Bison]]")
+	local description = string.gsub(description," clothing", " [[Clothing]]")
+	local description = string.gsub(description," food", " [[Food]]")
+	local description = string.gsub(description," blocks", " [[Blocks]]")
+	local description = string.gsub(description," masonry", " [[Masonry]]")
+	local description = string.gsub(description," government", " [[Government]]")
+	local description = string.gsub(description," dinner party", " [[Dinner party]]")
+	local description = string.gsub(description," dinner parties", " [[Dinner party|Dinner parties]]")
+	local description = string.gsub(description,"constitution", "Constitution")
+	local description = string.gsub(description,"Constitution", "[[Constitution]]")
+	local description = string.gsub(description," ore", " [[Ore_Tag|Ore]]")
+	local description = string.gsub(description," seeds", " [[Seeds_Tag|Seeds]]")
+	local description = string.gsub(description," boat", " [[Vehicles|Boat]]")
+	local description = string.gsub(description," contract", " [[Contract]]")
+	return description
+end 
+
+return p
