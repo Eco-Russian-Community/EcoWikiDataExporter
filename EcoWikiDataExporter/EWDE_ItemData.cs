@@ -4,16 +4,23 @@ using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
+using Eco.Gameplay.Components.Storage;
+using Eco.Gameplay.Housing;
+using Eco.Gameplay.Housing.PropertyValues;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Objects;
+using Eco.Gameplay.Occupancy;
 using Eco.Gameplay.Pipes.Gases;
+using Eco.Gameplay.Pipes.LiquidComponents;
 using Eco.Gameplay.Players;
+using Eco.Gameplay.Property;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.EcoMarketplace;
 using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
 using Eco.Mods.TechTree;
 using Eco.Shared;
+using Eco.Shared.Services;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
@@ -59,8 +66,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 		private static SortedDictionary<string, Dictionary<string, string>> FuelData = new SortedDictionary<string, Dictionary<string, string>>();
 		private static SortedDictionary<string, Dictionary<string, string>> ToolData = new SortedDictionary<string, Dictionary<string, string>>();
 		private static SortedDictionary<string, Dictionary<string, string>> ClothingData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, Dictionary<string, string>> WorldObjectData = new SortedDictionary<string, Dictionary<string, string>>();
 
-		public static void ExportItemData()
+        public static void ExportItemData()
 		{
 			// dictionary of item properties
 			Dictionary<string, string> itemDetails = new Dictionary<string, string>()
@@ -80,9 +88,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 				{ "Compostable", "nil" },
 				{ "IsWasteProduct", "nil" },
 				{ "IsFuel", "nil" },
-				{ "IsStackable", "nil" }
+				{ "IsStackable", "nil" },
+                { "WorldObjectItem", "nil" }
 
-			};
+            };
 
 			Dictionary<string, string> foodDetails = new Dictionary<string, string>()
 			{
@@ -127,7 +136,19 @@ namespace Eco.Mods.EcoWikiDataExporter
 				{ "FlatStats", "nil" },
 			};
 
-			WorldObjectInitializer objectInitializer = new WorldObjectInitializer();
+            Dictionary<string, string> worldobjectDetails = new Dictionary<string, string>()
+            {
+                { "CraftingComponent", "'False'" },
+                { "MountComponent", "'False'" },
+                { "ForSaleComponent", "'False'" },
+                { "RoomRequirementsComponent", "'False'" },
+                { "HousingComponent", "'False'" },
+                { "BedComponent", "'False'" },
+				{ "MintComponent", "'False'" },
+                { "DoorComponent", "'False'" }
+            };
+
+            WorldObjectInitializer objectInitializer = new WorldObjectInitializer();
 
 			string ItemName;
 			foreach (Item item in Item.AllItemsIncludingHidden)
@@ -225,38 +246,184 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
 					}
-					if (item is VehicleToolItem)
-					{ ItemData[ItemName]["VehicleToolItem"] = $"'True'"; }
+
+					if (item is VehicleToolItem vehicleToolItem)
+					{ 
+						ItemData[ItemName]["VehicleToolItem"] = $"'True'";
+                        //vehicleToolItem.
+
+                    }
+
 					if (item is WorldObjectItem worldObjectItem)
 					{
 						Type worldObjecttype = worldObjectItem.WorldObjectType;
 						ItemData[ItemName]["WorldObjectItem"] = $"'True'";
+                        
+						WorldObjectData.Add(ItemName, new Dictionary<string, string>(worldobjectDetails));
+                        WorldObjectData[ItemName]["WorldObjectName"] = $"'{worldObjecttype.Name}'";
 
-						var occupancy = WorldObject.GetOccupancy(worldObjecttype).Select(x => x.Offset).ToList();
+                        var occupancy = WorldObject.GetOccupancy(worldObjecttype).Select(x => x.Offset).ToList();
 						var size = Vector3i.One + new Vector3i(occupancy.Max(i => i.x) - occupancy.Min(i => i.x),
 															   occupancy.Max(i => i.y) - occupancy.Min(i => i.y),
 															   occupancy.Max(i => i.z) - occupancy.Min(i => i.z));
 						string fullsize = size.z + "," + size.x + "," + size.y;
-						ItemData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
-
-						//WorldObjec components
-						//IEnumerable<Type> woComponentsTypes = WorldObjectUtil.RecursiveRequiredComponents(worldObjecttype);
-						//                  foreach (Type componentType in woComponentsTypes)
-						//                  {
-
-						//                  }
-
-						try
+                        WorldObjectData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
+						if (item.Category == "WorldObject")
 						{
-							WorldObject? worldObject = objectInitializer.Init(worldObjectItem) ?? throw new Exception($"Initializer error for WorldObjectItem: {worldObjectItem.Name}");
-							Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
-							foreach (WorldObjectComponent component in worldObject.Components)
+							try
 							{
-								Log.WriteWarningLineLoc($"Component: {component.Name}");
+								WorldObject? worldObject = objectInitializer.Init(worldObjectItem) ?? throw new Exception($"Initializer error for WorldObjectItem: {worldObjectItem.Name}");
+								//Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
+								//Log.WriteLineLoc($"Category: {item.Category} Group: {item.Group}");
+
+								if (worldObject != null)
+								{
+									WorldObjectData[ItemName]["WorldObjectTier"] = $"'{worldObject.Tier}'";
+
+									if (worldObject.HasComponent<CraftingComponent>())
+									{
+										var CraftingComponent = worldObject.GetComponent<CraftingComponent>();
+										WorldObjectData[ItemName]["CraftingComponent"] = "'True'";
+									}
+
+									if (worldObject.HasComponent<RoomRequirementsComponent>())
+									{
+										var RoomRequirementsComponent = worldObject.GetComponent<RoomRequirementsComponent>();
+										WorldObjectData[ItemName]["RoomRequirementsComponent"] = "'True'";
+
+										var roomrequirements = RoomRequirements.Get(worldObject.GetType());
+
+										if (roomrequirements != null)
+										{
+											foreach (RoomRequirementAttribute Attribute in roomrequirements.Requirements)
+											{
+												if (Attribute.GetType() == typeof(RequireRoomContainmentAttribute))
+												{
+													//Log.WriteLineLoc($"Need Room: True");
+												}
+												if (Attribute.GetType() == typeof(RequireRoomMaterialTierAttribute))
+												{
+													//Log.WriteLineLoc($"Need Room Tier: {(Attribute as RequireRoomMaterialTierAttribute).Tier}");
+												}
+												if (Attribute.GetType() == typeof(RequireRoomVolumeAttribute))
+												{
+													//Log.WriteLineLoc($"Need Room Free Volume: {(Attribute as RequireRoomVolumeAttribute).Volume}");
+												}
+                                                if (Attribute.GetType() == typeof(PropertyTypeRoomRequirementAttribute)) 
+												{
+                                                    //Log.WriteLineLoc($"Need Deed Type: !!!");
+                                                }
+
+                                            }
+										}
+									}
+
+									if (worldObject.HasComponent<MountComponent>())
+									{
+										var MountComponent = worldObject.GetComponent<MountComponent>();
+										WorldObjectData[ItemName]["MountComponent"] = "'True'";
+										WorldObjectData[ItemName]["MountSeats"] = $"'{MountComponent.Seats}'";
+									}
+
+									if (worldObject.HasComponent<ForSaleComponent>())
+									{
+										var ForSaleComponent = worldObject.GetComponent<ForSaleComponent>();
+										WorldObjectData[ItemName]["ForSaleComponent"] = "'True'";
+									}
+
+                                    if (worldObject.HasComponent<BedComponent>())
+                                    {
+                                        var BedComponent = worldObject.GetComponent<BedComponent>();
+                                        WorldObjectData[ItemName]["BedComponent"] = "'True'";
+                                    }
+
+                                    if (worldObject.HasComponent<MintComponent>())
+                                    {
+                                        var MintComponent = worldObject.GetComponent<MintComponent>();
+                                        WorldObjectData[ItemName]["MintComponent"] = "'True'";
+                                    }
+
+                                    if (worldObject.HasComponent<DoorComponent>())
+                                    {
+                                        var DoorComponent = worldObject.GetComponent<DoorComponent>();
+                                        WorldObjectData[ItemName]["DoorComponent"] = "'True'";
+                                    }
+
+                                    if (worldObject.HasComponent<PublicStorageComponent>())
+									{
+                                        var PublicStorageComponent = worldObject.GetComponent<PublicStorageComponent>();
+                                        WorldObjectData[ItemName]["PublicStorageComponent"] = "'True'";
+                                        WorldObjectData[ItemName]["StorageStacks"] = $"'{PublicStorageComponent.Storage.Stacks}'";
+                                        WorldObjectData[ItemName]["ShelfLifeMultiplier"] = $"'{PublicStorageComponent.ShelfLifeMultiplier}'";
+
+                                    }
+
+                                    if (worldObject.HasComponent<HousingComponent>())
+									{
+										WorldObjectData[ItemName]["HousingComponent"] = "'True'";
+										var HousingComponent = worldObject.GetComponent<HousingComponent>().HomeValue;
+										
+										if (HousingComponent.Category != RoomCategory.Industrial)
+										{
+                                            WorldObjectData[ItemName]["RoomCategory"] = $"'{HousingComponent.Category.DisplayName.NotTranslated}'";
+                                            WorldObjectData[ItemName]["HomeBaseValue"] = $"'{WikiFloat(HousingComponent.BaseValue)}'";
+                                            WorldObjectData[ItemName]["TypeForRoomLimit"] = $"'{HousingComponent.TypeForRoomLimit}'";
+                                            WorldObjectData[ItemName]["DiminishingReturnMultiplier"] = $"'{WikiFloat(HousingComponent.DiminishingReturnMultiplier)}'";											                                         
+										}
+									}
+
+									if (worldObject.HasComponent<PowerGridComponent>())
+									{
+										//Log.WriteLineLoc($"WO Component: PowerGridComponent");
+										var PowerGridComponent = worldObject.GetComponent<PowerGridComponent>();
+										//Log.WriteLineLoc($"EnergyType {PowerGridComponent.EnergyType.Name.NotTranslated}");
+										//Log.WriteLineLoc($"Radius {PowerGridComponent.Radius}");
+										//Log.WriteLineLoc($"EnergySupply {PowerGridComponent.EnergySupply}");
+										//Log.WriteLineLoc($"EnergySelfSupply {PowerGridComponent.EnergySelfSupply}");
+										//Log.WriteLineLoc($"EnergyDemand {PowerGridComponent.EnergyDemand}");
+									}
+
+									if (worldObject.HasComponent<LiquidConsumerComponent>())
+									{
+										//Log.WriteLineLoc($"WO Component: LiquidConsumerComponent");
+										var LiquidConsumerComponent = worldObject.GetComponent<LiquidConsumerComponent>();
+
+
+
+									}
+
+									if (worldObject.HasComponent<LiquidConverterComponent>())
+									{
+										//Log.WriteLineLoc($"WO Component: LiquidConverterComponent");
+										var LiquidConverterComponent = worldObject.GetComponent<LiquidConverterComponent>();
+
+
+
+									}
+
+									if (worldObject.HasComponent<FuelSupplyComponent>())
+									{
+										//Log.WriteLineLoc($"WO Component: FuelSupplyComponent");
+										var FuelSupplyComponent = worldObject.GetComponent<FuelSupplyComponent>();
+
+
+
+									}
+
+
+
+
+
+								}
+								else
+								{
+									Log.WriteLineLoc($"{worldObject.Name} Not Init");
+								}
+								WorldObjectManager.DestroyPermanently(worldObject);
 							}
-							WorldObjectManager.DestroyPermanently(worldObject);
+							catch (Exception ex) { Log.WriteException(ex); }
 						}
-						catch (Exception ex) { Log.WriteException(ex); }
+
 					}
 
 					if (item is FertilizerItem Fertilizer)
@@ -322,7 +489,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 						if (item is WeaponItem Weapon)
 						{
 							ToolData[ItemName]["Weapon"] = $"'True'";
-							ToolData[ItemName]["WeaponDamage"] = $"'{Weapon.Damage.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
+							ToolData[ItemName]["WeaponDamage"] = $"'{WikiFloat(Weapon.Damage.GetBaseValue)}'";
 						}
 
 						//if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
@@ -341,7 +508,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 			WriteDictionaryToFile("ToolData", "tools", ToolData);
 			WriteDictionaryToFile("ClothingData", "clothing", ClothingData);
 			WriteDictionaryToFile("FertilizerData", "fertilizers", FertilizerData);
+            WriteDictionaryToFile("WorldObjectData", "WorldObjects", WorldObjectData);
 
-		}
+        }
 	}
 }
