@@ -7,7 +7,7 @@ local IconUtils = require('Module:IconUtils')
 function p.main()
    	
     -- load lists
-    local skillData = require( "Module:SkillData" )
+    local skillData = mw.loadData('Module:SkillData')
     local skillList = skillData.skills
 	local text = '<div class="col-lg-12"><Center><h2 class="title">' .. Utils.Translate("Skills") .. '</h2></Center></div>';
 	local Lang = Utils.getLanguageName()
@@ -21,7 +21,8 @@ function p.main()
 		text = text .. '[[File:Banner4k.jpg|class=card-img-top|link=]]';
 		text = text .. '<div class="card-body"><p class="card-title">';
 		text = text .. IconUtils.main{id = Pdata.SkillID , size = 48, style = 1, link = ProfessionName} .. '  '
-		text = text .. '[[' .. ProfessionName .. '|' .. ProfessionName ..' Profession]]</p><p class="card-subtitle mb-2 text-muted">' .. Pdata.Description[Lang] .. '</p><p class="card-text">';
+		local ProfessionTitle = Utils.VSTranslate('{0} Profession', ProfessionName)
+		text = text .. '[[' .. ProfessionName .. '|' .. ProfessionTitle .. ']]</p><p class="card-subtitle mb-2 text-muted">' .. Pdata.Description[Lang] .. '</p><p class="card-text">';
 		text = text .. '<div class="card"> <div class="card-body">';
 
 		for Sname,Sdata in pairs(skillList) do

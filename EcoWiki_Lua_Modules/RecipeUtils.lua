@@ -1,9 +1,9 @@
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
-local RecipesData = require('Module:RecipeData')
-local ItemsData = require('Module:ItemData')
-local TagsData = require('Module:TagData')
-local SkillsData = require('Module:SkillData')
+local RecipesData = mw.loadData('Module:RecipeData')
+local ItemsData = mw.loadData('Module:ItemData')
+local TagsData = mw.loadData('Module:TagData')
+local SkillsData = mw.loadData('Module:SkillData')
 local Lang = Utils.getLanguageName()
 local p = {}
 

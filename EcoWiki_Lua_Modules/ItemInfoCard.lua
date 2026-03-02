@@ -3,13 +3,14 @@ local p = {}
 local Utils = require('Module:Utils')
 local RecipeUtils = require('Module:RecipeUtils')
 local IconUtils = require('Module:IconUtils')
+local InfoCardUtils = require('Module:InfoCardUtils')
 
 local Lang = Utils.getLanguageName()
 
 function p.main(frame)
 	local PageName = frame.args[1]
 	if (Lang == 'English') then ItemName = PageName else ItemName = Utils.ItemSearch(PageName) end
-	local ItemData = require( "Module:ItemData" )
+	local ItemData = mw.loadData( "Module:ItemData" )
     local Item = ItemData.items[ItemName]
 	local WikiText =''
 	
@@ -50,9 +51,7 @@ function p.main(frame)
 		WikiText =  WikiText .. RecipeUtils.CraftTable(RecipeTagsIngredient)
 	end
 	
-	if (Item.WorldObjectItem == "True") then
-		WikiText =  WikiText .. 'WorldObject test  => True';
-	end	
+	if (Item.WorldObjectItem == "True") then WikiText =  WikiText .. InfoCardUtils.WorldObjectModule(ItemName) end	
 	
 	
 	WikiText =  WikiText .. '<h3>How use Icon:</h3>'

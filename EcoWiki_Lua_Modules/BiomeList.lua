@@ -8,7 +8,7 @@ local Lang = Utils.getLanguageName()
 function p.main()
    	
     -- load lists
-    local biomeData = require( "Module:BiomeData" )
+    local biomeData = mw.loadData( "Module:BiomeData" )
     local biomesList = biomeData.biomes
     
 	local text = '<div class="col-lg-12"><Center><h2 class="title">' .. Utils.Translate("Biomes") ..'</h2></Center><p>Biomes are the unique natural environments found within Eco. Each one has different characteristics that affect the growth of various crops in-game.</p></div>';

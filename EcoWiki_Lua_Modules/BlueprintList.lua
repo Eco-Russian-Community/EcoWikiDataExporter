@@ -6,11 +6,11 @@ local p = {}
 
 function p.main()
 	local WikiText = ""
-	local MarketplaceData = require( "Module:MarketplaceData" )
+	local MarketplaceData = mw.loadData( "Module:MarketplaceData" )
 	local BlueprintsList = MarketplaceData.blueprints
-	local ItemData = require( "Module:ItemData" )
+	local ItemData = mw.loadData( "Module:ItemData" )
 	local ItemList = ItemData.items
-	local AchievementsData = require( "Module:AchievementsData" )
+	local AchievementsData = mw.loadData( "Module:AchievementsData" )
 	local AchievementsList = AchievementsData.achievements
 	WikiText = WikiText .. '<div class="row">'
 	

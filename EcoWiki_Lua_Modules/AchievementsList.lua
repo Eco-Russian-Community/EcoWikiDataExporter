@@ -7,7 +7,7 @@ function p.main()
 	local wiki = ''
 	
 	-- import the required modules
-	local AchievementsData = require( "Module:AchievementsData" )
+	local AchievementsData = mw.loadData('Module:AchievementsData')
 	local ADescription = require('Module:AdvancedDescription')
 	local achievements = AchievementsData.achievements
 	

@@ -85,7 +85,7 @@ end
 
 function p.SkillSearch(PageName)
 	local SkillName = ''
-	local skillData = require( "Module:SkillData" )
+	local skillData = mw.loadData( "Module:SkillData" )
     local skillList = skillData.skills
     local Lang = p.getLanguageName()
     	for Sname,Sdata in pairs(skillList) do
@@ -96,7 +96,7 @@ end
 
 function p.SkillSearchByID(SkillID)
 	local SkillName = 'None'
-	local skillData = require( "Module:SkillData" )
+	local skillData = mw.loadData( "Module:SkillData" )
     local skillList = skillData.skills
     local Lang = p.getLanguageName()
     	for Sname,Sdata in pairs(skillList) do
@@ -107,7 +107,7 @@ end
 
 function p.ItemSearch(PageName)
 	local ItemName = 'None'
-	local ItemData = require( "Module:ItemData" )
+	local ItemData = mw.loadData( "Module:ItemData" )
     local ItemList = ItemData.items
     local Lang = p.getLanguageName()
     	for Iname,Idata in pairs(ItemList) do
@@ -118,7 +118,7 @@ end
 
 function p.TagSearch(PageName)
 	local TagName = 'None'
-	local TagData = require( "Module:TagData" )
+	local TagData = mw.loadData( "Module:TagData" )
     local TagList = TagData.tags
     local Lang = p.getLanguageName()
     	for Tname,Tdata in pairs(TagList) do
@@ -129,7 +129,7 @@ end
 
 function p.BiomeSearch(PageName)
 	local BiomeName = 'None'
-	local BiomeData = require( "Module:BiomeData" )
+	local BiomeData = mw.loadData( "Module:BiomeData" )
     local BiomeList = BiomeData.biomes
     local Lang = p.getLanguageName()
     	for Bname,Bdata in pairs(BiomeList) do
@@ -140,7 +140,7 @@ end
 
 function p.AnimalSearch(PageName)
 	local AnimalName = 'None'
-	local AnimalData = require( "Module:AnimalData" )
+	local AnimalData = mw.loadData( "Module:AnimalData" )
     local AnimalList = AnimalData.animals
     local Lang = p.getLanguageName()
     	for Aname,Adata in pairs(AnimalList) do
@@ -163,7 +163,7 @@ end
 function p.Translate(String)
 	local Translate = String
 	local Lang = p.getLanguageName()
-	local TranslateData = require( "Module:LocalizationData" )
+	local TranslateData = mw.loadData( "Module:LocalizationData" )
 	local TranslateList = TranslateData.locales
 		for Tname,Tdata in pairs(TranslateList) do
     		if ( Tname == String) then Translate = Tdata.Translate[Lang] end
@@ -177,7 +177,7 @@ function p.ItemTags(TagsList)
 	local WikiTagText = ""
 	local Lang = p.getLanguageName()
 	local TagString = p.Translate("{0} Tag");
-	local TagData = require( "Module:TagData" )
+	local TagData = mw.loadData( "Module:TagData" )
 	local IconUtils = require('Module:IconUtils')
 		for Count,Tname in pairs(TagsList) do
 			TagName = TagData.tags[Tname];

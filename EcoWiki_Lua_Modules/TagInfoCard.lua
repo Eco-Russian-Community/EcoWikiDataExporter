@@ -11,8 +11,8 @@ function p.main(frame)
 	local TagLoc = string.gsub(Utils.Translate("{0} Tag"),"{0}","")
 	PageName = string.gsub(PageName,TagLoc,"")
 	if (Lang == 'English') then TagName = PageName else TagName = Utils.TagSearch(PageName) end
-	local TagData = require( "Module:TagData" )
-	local ItemData = require( "Module:ItemData" )
+	local TagData = mw.loadData( "Module:TagData" )
+	local ItemData = mw.loadData( "Module:ItemData" )
     local Tag = TagData.tags[TagName]
     local TagID = Tag.ID
     local ItemList = Tag.Items

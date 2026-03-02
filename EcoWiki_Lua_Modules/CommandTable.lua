@@ -10,7 +10,7 @@ function p.main()
 	local wikidev = ''
 
 	-- import the required modules
-	local commandsData = require( "Module:CommandData" )	
+	local commandsData = mw.loadData( "Module:CommandData" )	
 	
 	local commands = commandsData.commands
 
