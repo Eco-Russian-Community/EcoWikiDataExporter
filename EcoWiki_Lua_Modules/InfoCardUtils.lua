@@ -1,5 +1,7 @@
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
+local RecipeUtils = require('Module:RecipeUtils')
+
 local WorldObjectData = mw.loadData( "Module:WorldObjectData" )
 local Lang = Utils.getLanguageName()
 local p = {}
@@ -19,14 +21,20 @@ function p.WorldObjectModule(ItemName)
     return WikiText
 end
 
-
 function p.CraftingComponentModule(ItemName)
     local WikiText = ''
+    local CraftingTableRecipes = RecipeUtils.CraftingTableRecipes(ItemName)
+	if (CraftingTableRecipes ~= "") then
+		WikiText = WikiText .. '<h3>Crafting</h3>'
+		WikiText =  WikiText .. RecipeUtils.CraftTable(CraftingTableRecipes);
+	end
+	
     return WikiText
 end
 
 function p.ForSaleComponentModule(ItemName)
     local WikiText = ''
+    WikiText = WikiText .. '<h3>For Sale</h3>'
     return WikiText
 end
 
@@ -37,11 +45,13 @@ end
 
 function p.BedComponentModule(ItemName)
     local WikiText = ''
+    WikiText = WikiText .. '<h3>Bed</h3>'
     return WikiText
 end
 
 function p.MintComponentModule(ItemName)
     local WikiText = ''
+    WikiText = WikiText .. '<h3>Mint</h3>'
     return WikiText
 end
 
