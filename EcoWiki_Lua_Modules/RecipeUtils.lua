@@ -72,19 +72,21 @@ function p.CraftTable(RecipeList)
             local RecipeProducts = "";
             for ProductName,ProductData in pairs(RecipeData.Products) do
             	local Item = ItemsData.items[ProductName]
-                RecipeProducts = RecipeProducts .. "<span>" .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 2, link = Item.Name[Lang] } .. "</span>";
+            	if ProductData.IsStatic == 'True' then ItemBorder = 'yellow' else ItemBorder = 'green' end
+                RecipeProducts = RecipeProducts .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = ProductData.Quantity } .. '</span>';
             end
             CraftTableRow = CraftTableRow .. "<td>" .. RecipeProducts .. "</td>";
 
             local RecipeIngredients = "";
             local TagString = Utils.Translate("{0} Tag");
             for IngredientName,IngredientData in pairs(RecipeData.Ingredients) do
-            	if (IngredientData['Type'] == "TAG") then local Tag = TagsData.tags[IngredientName]; local TagLink = Utils.VSTranslate(TagString,Tag.Name[Lang]); RecipeIngredients = RecipeIngredients .. "<span>" .. IconUtils.main{ name = Tag.Name[Lang], id = Tag.ID, size = 48, style = 2, link = TagLink } .. "</span>"; 
-            	else  local Item = ItemsData.items[IngredientName]; RecipeIngredients = RecipeIngredients .. "<span>" .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 2, link = Item.Name[Lang] } .. "</span>";
+            	if IngredientData.IsStatic == 'True' then ItemBorder = 'yellow' else ItemBorder = 'green' end
+            	if (IngredientData['Type'] == "TAG") then local Tag = TagsData.tags[IngredientName]; local TagLink = Utils.VSTranslate(TagString,Tag.Name[Lang]); RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Tag.Name[Lang], id = Tag.ID, size = 48, style = 5, link = TagLink, border = ItemBorder, count = IngredientData.Quantity } .. '</span>'; 
+            	else  local Item = ItemsData.items[IngredientName]; RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = IngredientData.Quantity } .. '</span>';
             	end
             	
             end
-            if (RecipeData.RequiresStrangeBlueprint == "True") then RecipeIngredients = RecipeIngredients .. "<span>" .. IconUtils.main{ name = "Blueprint", id = "BlueprintItem", size = 48, style = 3, link = "Marketplace"} .. "</span>"; end
+            if (RecipeData.RequiresStrangeBlueprint == "True") then RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = "Blueprint", id = "BlueprintItem", size = 48, style = 6, link = "Marketplace"} .. '</span>'; end
             CraftTableRow = CraftTableRow .. "<td>" .. RecipeIngredients .. "</td>";
             local CraftTime = tonumber(RecipeData.CraftTime)
 			CraftTableRow = CraftTableRow .. "<td><span>" .. p.CraftTime(CraftTime) .. "</span></td>";
