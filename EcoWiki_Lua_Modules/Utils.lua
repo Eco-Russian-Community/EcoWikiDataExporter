@@ -202,4 +202,10 @@ function p.gallery(context)
 	local gallery = frame:callParserFunction{ name = '#tag:gallery', args = { mode = 'slideshow', widths = '100%', ''.. context:getParent().args[1] .. '' , showthumbnails = 'true'} }
 	return gallery
 end
+
+function p.FoodsShelfLife(ShelfLife)
+	local WikiText = tonumber(ShelfLife)/86400 .. ' days'
+	return WikiText
+end
+
 return p

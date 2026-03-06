@@ -17,7 +17,7 @@ function p.WorldObjectModule(ItemName)
     if WorldObject.HousingComponent == 'True' then WikiText = WikiText .. p.HousingComponentModule(ItemName) end
     if WorldObject.BedComponent == 'True' then WikiText = WikiText .. p.BedComponentModule(ItemName) end
     if WorldObject.MintComponent == 'True' then WikiText = WikiText .. p.MintComponentModule(ItemName) end
-      
+    
     return WikiText
 end
 
@@ -52,6 +52,21 @@ end
 function p.MintComponentModule(ItemName)
     local WikiText = ''
     WikiText = WikiText .. '<h3>Mint</h3>'
+    return WikiText
+end
+
+function p.FoodDetailsModule(ItemName)
+    local WikiText = ''
+    local FoodData = mw.loadData( "Module:FoodData" )
+    local FoodItem = FoodData.foods[ItemName]
+    WikiText = WikiText .. '<h3>Food</h3>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Calories") .. ': ' .. FoodItem.Calories .. '</p>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Protein") .. ': ' .. FoodItem.Protein .. '</p>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Carbs") .. ': ' .. FoodItem.Carbs .. '</p>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Fat") .. ': ' .. FoodItem.Fat .. '</p>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Vitamins") .. ': ' .. FoodItem.Vitamins .. '</p>'
+    WikiText = WikiText .. '<p>' .. Utils.Translate("Shelf Life") .. ': ' .. Utils.FoodsShelfLife(FoodItem.ShelfLife) .. '</p>'
+
     return WikiText
 end
 

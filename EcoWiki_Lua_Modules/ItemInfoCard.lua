@@ -27,6 +27,9 @@ function p.main(frame)
 	
 	WikiText =  WikiText ..'</div></div></div></div>'
 	
+	if (Item.FoodItem == "True") then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
+
+
 	local RecipeItemCraft = RecipeUtils.ItemCraft(ItemName)
 	if (RecipeItemCraft ~= "") then
 		WikiText =  WikiText .. '<h3>' .. Utils.Translate("Crafted At") .. ':</h3>';
