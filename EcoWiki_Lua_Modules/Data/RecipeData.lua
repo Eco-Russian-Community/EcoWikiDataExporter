@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
+-- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:56
+-- Date of export : 30.03.2026 19:47:24
 
 return {
     recipes = {
@@ -1118,6 +1118,27 @@ return {
                     ['CraftingTables'] = 'Electric Machinist Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Advanced Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Advanced Circuit',
+                                            ['ID'] = 'AdvancedCircuitItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Lubricant'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Lubricant',
+                                            ['ID'] = 'LubricantItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Lumber'] = {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Lumber',
@@ -1136,7 +1157,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Steel Saw Blade',
                                             ['ID'] = 'SteelSawBladeItem',
-                                            ['Quantity'] = '6',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -1475,6 +1496,27 @@ return {
                     ['CraftingTables'] = 'Electric Machinist Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Advanced Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Advanced Circuit',
+                                            ['ID'] = 'AdvancedCircuitItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Lubricant'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Lubricant',
+                                            ['ID'] = 'LubricantItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Steel Plate'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Steel Plate',
@@ -1486,7 +1528,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Steel Saw Blade',
                                             ['ID'] = 'SteelSawBladeItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -1641,6 +1683,13 @@ return {
                                             ['Name'] = 'Basic Circuit',
                                             ['ID'] = 'BasicCircuitItem',
                                             ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Steel Plate'] = {
@@ -2358,7 +2407,7 @@ return {
                             },
                     ['CraftTime'] = '6',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '30',
+                    ['LaborInCalories'] = '80',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -2602,10 +2651,10 @@ return {
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Steel Bar'] = {
+                                    ['Rebar'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
@@ -2833,10 +2882,10 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Steel Bar'] = {
+                                    ['Rebar'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
@@ -3064,10 +3113,10 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Steel Bar'] = {
+                                    ['Rebar'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
@@ -3540,10 +3589,10 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Steel Bar'] = {
+                                    ['Rebar'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
@@ -3764,18 +3813,18 @@ return {
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Rebar'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Sandstone'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Sandstone',
                                             ['ID'] = 'SandstoneItem',
                                             ['Quantity'] = '20',
-                                            ['IsStatic'] = 'False',
-                                    },
-                                    ['Steel Bar'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
-                                            ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -3995,18 +4044,18 @@ return {
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Rebar'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Rebar',
+                                            ['ID'] = 'RebarItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Shale'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Shale',
                                             ['ID'] = 'ShaleItem',
                                             ['Quantity'] = '20',
-                                            ['IsStatic'] = 'False',
-                                    },
-                                    ['Steel Bar'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Steel Bar',
-                                            ['ID'] = 'SteelBarItem',
-                                            ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -4658,6 +4707,13 @@ return {
                                             ['Name'] = 'Basic Circuit',
                                             ['ID'] = 'BasicCircuitItem',
                                             ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Steel Plate'] = {
@@ -5682,11 +5738,11 @@ return {
                                             ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Substrate'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Substrate',
-                                            ['ID'] = 'SubstrateItem',
-                                            ['Quantity'] = '2',
+                                    ['Wood Board'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Wood Board',
+                                            ['ID'] = 'WoodBoard',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -10049,6 +10105,48 @@ return {
                                     }
 ,
         },
+        ['CeramicFuseRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Ceramic Fuse",
+                            ['Russian'] = "Ceramic Fuse",
+                            ['German'] = "Ceramic Fuse",
+                            ['French'] = "Ceramic Fuse",
+                            },
+                    ['CraftTime'] = '12',
+                    ['ExperienceOnCraft'] = '1',
+                    ['LaborInCalories'] = '80',
+                    ['RequiredSkill'] = {'ElectronicsSkill','1'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Electronics Assembly',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Clay'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Clay',
+                                            ['ID'] = 'ClayItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Copper Wiring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Copper Wiring',
+                                            ['ID'] = 'CopperWiringItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Fuse'] = {
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
         ['CeramicMoldRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Ceramic Mold",
@@ -10254,7 +10352,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -12109,7 +12207,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'HuntingSkill','6'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Fletching Table',
@@ -15026,6 +15124,13 @@ return {
                                             ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '100',
                                             ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '10',
+                                            ['IsStatic'] = 'True',
                                     },
                                     ['Plastic'] = {
                                             ['Type'] = 'ITEM',
@@ -20281,7 +20386,7 @@ return {
                     ['LaborInCalories'] = '300',
                     ['RequiredSkill'] = {'ElectronicsSkill','1'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Electric Machinist Table',
+                    ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Copper Wiring'] = {
@@ -20673,7 +20778,7 @@ return {
                     ['LaborInCalories'] = '65',
                     ['RequiredSkill'] = {'AdvancedBakingSkill','6'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Bakery Oven',
+                    ['CraftingTables'] = 'Stove',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Leavened Dough'] = {
@@ -20950,6 +21055,125 @@ return {
                                             ['ID'] = 'SulfurItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
+        ['EtchedAdvancedCircuitRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Etched Advanced Circuit",
+                            ['Russian'] = "Etched Advanced Circuit",
+                            ['German'] = "Etched Advanced Circuit",
+                            ['French'] = "Etched Advanced Circuit",
+                            },
+                    ['CraftTime'] = '48',
+                    ['ExperienceOnCraft'] = '8',
+                    ['LaborInCalories'] = '180',
+                    ['RequiredSkill'] = {'ElectronicsSkill','3'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Electronics Assembly',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Copper Wiring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Copper Wiring',
+                                            ['ID'] = 'CopperWiringItem',
+                                            ['Quantity'] = '8',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Gold Flakes'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Gold Flakes',
+                                            ['ID'] = 'GoldFlakesItem',
+                                            ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Gold Wiring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Gold Wiring',
+                                            ['ID'] = 'GoldWiringItem',
+                                            ['Quantity'] = '8',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Nitric Acid'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Nitric Acid',
+                                            ['ID'] = 'NitricAcidItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Substrate'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Substrate',
+                                            ['ID'] = 'SubstrateItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Advanced Circuit'] = {
+                                            ['Name'] = 'Advanced Circuit',
+                                            ['ID'] = 'AdvancedCircuitItem',
+                                            ['Quantity'] = '3',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
+        ['EtchedBasicCircuitRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Etched Basic Circuit",
+                            ['Russian'] = "Etched Basic Circuit",
+                            ['German'] = "Etched Basic Circuit",
+                            ['French'] = "Etched Basic Circuit",
+                            },
+                    ['CraftTime'] = '48',
+                    ['ExperienceOnCraft'] = '8',
+                    ['LaborInCalories'] = '90',
+                    ['RequiredSkill'] = {'ElectronicsSkill','3'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Electronics Assembly',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Copper Wiring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Copper Wiring',
+                                            ['ID'] = 'CopperWiringItem',
+                                            ['Quantity'] = '12',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Gold Flakes'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Gold Flakes',
+                                            ['ID'] = 'GoldFlakesItem',
+                                            ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Nitric Acid'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Nitric Acid',
+                                            ['ID'] = 'NitricAcidItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Wood Board'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Wood Board',
+                                            ['ID'] = 'WoodBoard',
+                                            ['Quantity'] = '6',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '3',
+                                            ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
                                     }
@@ -22262,7 +22486,7 @@ return {
                     ['LaborInCalories'] = '90',
                     ['RequiredSkill'] = {'GlassworkingSkill','1'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Electronics Assembly',
+                    ['CraftingTables'] = 'Spin Melter',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Glass'] = {
@@ -22286,6 +22510,55 @@ return {
                                             ['Name'] = 'Fiberglass',
                                             ['ID'] = 'FiberglassItem',
                                             ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
+        ['FiberReinforcedConcreteRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Fiber Reinforced Concrete",
+                            ['Russian'] = "Fiber Reinforced Concrete",
+                            ['German'] = "Fiber Reinforced Concrete",
+                            ['French'] = "Fiber Reinforced Concrete",
+                            },
+                    ['CraftTime'] = '38',
+                    ['ExperienceOnCraft'] = '1',
+                    ['LaborInCalories'] = '25',
+                    ['RequiredSkill'] = {'MasonrySkill','4'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Cement Kiln',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Cement'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Cement',
+                                            ['ID'] = 'CementItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fiberglass'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fiberglass',
+                                            ['ID'] = 'FiberglassItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Sand'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Sand',
+                                            ['ID'] = 'SandItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Reinforced Concrete'] = {
+                                            ['Name'] = 'Reinforced Concrete',
+                                            ['ID'] = 'ReinforcedConcreteItem',
+                                            ['Quantity'] = '5',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -22624,7 +22897,7 @@ return {
                     ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '20',
-                    ['RequiredSkill'] = {'MillingSkill','4'},
+                    ['RequiredSkill'] = {'MillingSkill','6'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Mill',
                     ['RequiresStrangeBlueprint'] = 'False',
@@ -23377,7 +23650,7 @@ return {
                             ['German'] = "Frittierte Prärielilien",
                             ['French'] = "Camassias frits",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'CampfireCookingSkill','2'},
@@ -23389,7 +23662,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Camas Bulb',
                                             ['ID'] = 'CamasBulbItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Fat'] = {
@@ -23405,7 +23678,7 @@ return {
                                     ['Fried Camas'] = {
                                             ['Name'] = 'Fried Camas',
                                             ['ID'] = 'FriedCamasItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -23419,7 +23692,7 @@ return {
                             ['German'] = "Frittierte Farnspitzen",
                             ['French'] = "Fougères frits",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'CampfireCookingSkill','2'},
@@ -23438,7 +23711,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Fiddleheads',
                                             ['ID'] = 'FiddleheadsItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -23447,7 +23720,7 @@ return {
                                     ['Fried Fiddleheads'] = {
                                             ['Name'] = 'Fried Fiddleheads',
                                             ['ID'] = 'FriedFiddleheadsItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -23510,7 +23783,7 @@ return {
                             ['German'] = "Frittierte Palmherzen",
                             ['French'] = "Cœurs de palmier frits",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'CampfireCookingSkill','2'},
@@ -23529,7 +23802,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Heart Of Palm',
                                             ['ID'] = 'HeartOfPalmItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -23538,7 +23811,7 @@ return {
                                     ['Fried Hearts Of Palm'] = {
                                             ['Name'] = 'Fried Hearts Of Palm',
                                             ['ID'] = 'FriedHeartsOfPalmItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -23552,7 +23825,7 @@ return {
                             ['German'] = "Frittierte Taro",
                             ['French'] = "Taro frit",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'CampfireCookingSkill','2'},
@@ -23571,7 +23844,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Taro Root',
                                             ['ID'] = 'TaroRootItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -23580,7 +23853,7 @@ return {
                                     ['Fried Taro'] = {
                                             ['Name'] = 'Fried Taro',
                                             ['ID'] = 'FriedTaroItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -23594,7 +23867,7 @@ return {
                             ['German'] = "Frittierte Tomaten",
                             ['French'] = "Tomates frites",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'CampfireCookingSkill','2'},
@@ -23613,7 +23886,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Tomato',
                                             ['ID'] = 'TomatoItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -23622,7 +23895,7 @@ return {
                                     ['Fried Tomatoes'] = {
                                             ['Name'] = 'Fried Tomatoes',
                                             ['ID'] = 'FriedTomatoesItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -23692,6 +23965,13 @@ return {
                                             ['ID'] = 'ElectricMotorItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'True',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
                                     },
                                     ['Steel Pipe'] = {
                                             ['Type'] = 'ITEM',
@@ -24537,7 +24817,7 @@ return {
                     ['LaborInCalories'] = '6000',
                     ['RequiredSkill'] = {'GlassworkingSkill','7'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Electronics Assembly',
+                    ['CraftingTables'] = 'Spin Melter',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Modern Upgrade 4'] = {
@@ -26487,10 +26767,10 @@ return {
                             },
                     ['CraftTime'] = '120',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '120',
-                    ['RequiredSkill'] = {'TailoringSkill','1'},
+                    ['LaborInCalories'] = '180',
+                    ['RequiredSkill'] = {'ShipwrightSkill','1'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Tailoring Table',
+                    ['CraftingTables'] = 'Small Shipyard',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Linen Yarn'] = {
@@ -28138,6 +28418,13 @@ return {
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'True',
                                     },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '24',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Radiator'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Radiator',
@@ -28255,6 +28542,13 @@ return {
                                             ['Name'] = 'Advanced Circuit',
                                             ['ID'] = 'AdvancedCircuitItem',
                                             ['Quantity'] = '12',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Glass'] = {
@@ -28473,6 +28767,13 @@ return {
                                             ['ID'] = 'ElectricMotorItem',
                                             ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
                                     },
                                     ['Steel Plate'] = {
                                             ['Type'] = 'ITEM',
@@ -29371,7 +29672,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '25',
+                    ['LaborInCalories'] = '125',
                     ['RequiredSkill'] = {'BasicEngineeringSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Wainwright Table',
@@ -29649,6 +29950,20 @@ return {
                                             ['ID'] = 'ElectricMotorItem',
                                             ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Lubricant'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Lubricant',
+                                            ['ID'] = 'LubricantItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
                                     },
                                     ['Steel Bar'] = {
                                             ['Type'] = 'ITEM',
@@ -33045,6 +33360,13 @@ return {
                                             ['Quantity'] = '80',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Gold Bar'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Gold Bar',
@@ -34806,7 +35128,7 @@ return {
                     ['LaborInCalories'] = '65',
                     ['RequiredSkill'] = {'AdvancedBakingSkill','5'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Bakery Oven',
+                    ['CraftingTables'] = 'Stove',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Huckleberry Extract'] = {
@@ -35214,9 +35536,9 @@ return {
                             ['German'] = "Brühe aus Fleisch",
                             ['French'] = "Bouillon de viandes",
                             },
-                    ['CraftTime'] = '480',
-                    ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '15',
+                    ['CraftTime'] = '600',
+                    ['ExperienceOnCraft'] = '4',
+                    ['LaborInCalories'] = '60',
                     ['RequiredSkill'] = {'CookingSkill','2'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Cast Iron Stove',
@@ -35226,7 +35548,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Scrap Meat',
                                             ['ID'] = 'ScrapMeatItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '32',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -35235,7 +35557,7 @@ return {
                                     ['Meat Stock'] = {
                                             ['Name'] = 'Meat Stock',
                                             ['ID'] = 'MeatStockItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -36595,7 +36917,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36700,7 +37022,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36749,7 +37071,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36798,7 +37120,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36847,7 +37169,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.1',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','6'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36903,7 +37225,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -36952,7 +37274,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -37008,7 +37330,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -37057,7 +37379,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '1000',
                     ['RequiredSkill'] = {'BlacksmithSkill','5'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -38351,11 +38673,11 @@ return {
                     ['CraftingTables'] = 'Oil Refinery',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Compost'] = {
+                                    ['Compost Fertilizer'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Compost',
-                                            ['ID'] = 'CompostItem',
-                                            ['Quantity'] = '4',
+                                            ['Name'] = 'Compost Fertilizer',
+                                            ['ID'] = 'CompostFertilizerItem',
+                                            ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Crushed Copper Ore'] = {
@@ -38387,7 +38709,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -38540,13 +38862,6 @@ return {
                     ['CraftingTables'] = 'Advanced Tailoring Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Cotton Fabric'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Cotton Fabric',
-                                            ['ID'] = 'CottonFabricItem',
-                                            ['Quantity'] = '15',
-                                            ['IsStatic'] = 'False',
-                                    },
                                     ['Lumber'] = {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Lumber',
@@ -38559,6 +38874,13 @@ return {
                                             ['Name'] = 'Nylon Fabric',
                                             ['ID'] = 'NylonFabricItem',
                                             ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Steel Spring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Steel Spring',
+                                            ['ID'] = 'SteelSpringItem',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Wood Board'] = {
@@ -38596,13 +38918,6 @@ return {
                     ['CraftingTables'] = 'Advanced Tailoring Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Cotton Fabric'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Cotton Fabric',
-                                            ['ID'] = 'CottonFabricItem',
-                                            ['Quantity'] = '15',
-                                            ['IsStatic'] = 'False',
-                                    },
                                     ['Lumber'] = {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Lumber',
@@ -38614,7 +38929,14 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Nylon Fabric',
                                             ['ID'] = 'NylonFabricItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '15',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Steel Spring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Steel Spring',
+                                            ['ID'] = 'SteelSpringItem',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Wood Board'] = {
@@ -38646,10 +38968,10 @@ return {
                             },
                     ['CraftTime'] = '120',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '120',
-                    ['RequiredSkill'] = {'TailoringSkill','3'},
+                    ['LaborInCalories'] = '220',
+                    ['RequiredSkill'] = {'ShipwrightSkill','3'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Advanced Tailoring Table',
+                    ['CraftingTables'] = 'Small Shipyard',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Nylon Thread'] = {
@@ -41606,6 +41928,13 @@ return {
                                             ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Radiator'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Radiator',
@@ -41792,7 +42121,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Raw Meat',
                                             ['ID'] = 'RawMeatItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -43595,7 +43924,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'HuntingSkill','3'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Fletching Table',
@@ -44404,6 +44733,13 @@ return {
                                             ['Name'] = 'Electric Motor',
                                             ['ID'] = 'ElectricMotorItem',
                                             ['Quantity'] = '5',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Servo'] = {
@@ -45420,6 +45756,104 @@ return {
                                     ['Scarecrow'] = {
                                             ['Name'] = 'Scarecrow',
                                             ['ID'] = 'ScarecrowItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
+        ['ScorpionRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Scorpion",
+                            ['Russian'] = "Scorpion",
+                            ['German'] = "Scorpion",
+                            ['French'] = "Scorpion",
+                            },
+                    ['CraftTime'] = '1200',
+                    ['ExperienceOnCraft'] = '24',
+                    ['LaborInCalories'] = '3000',
+                    ['RequiredSkill'] = {'IndustrySkill','2'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Robotic Assembly Line',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Advanced Combustion Engine'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Advanced Combustion Engine',
+                                            ['ID'] = 'AdvancedCombustionEngineItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Gearbox'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Gearbox',
+                                            ['ID'] = 'GearboxItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Light Bulb'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Light Bulb',
+                                            ['ID'] = 'LightBulbItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Lubricant'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Lubricant',
+                                            ['ID'] = 'LubricantItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Nylon Fabric'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Nylon Fabric',
+                                            ['ID'] = 'NylonFabricItem',
+                                            ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Radiator'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Radiator',
+                                            ['ID'] = 'RadiatorItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Rubber Wheel'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Rubber Wheel',
+                                            ['ID'] = 'RubberWheelItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Steel Axle'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Steel Axle',
+                                            ['ID'] = 'SteelAxleItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Steel Plate'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Steel Plate',
+                                            ['ID'] = 'SteelPlateItem',
+                                            ['Quantity'] = '20',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Steel Spring'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Steel Spring',
+                                            ['ID'] = 'SteelSpringItem',
+                                            ['Quantity'] = '6',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Scorpion'] = {
+                                            ['Name'] = 'Scorpion',
+                                            ['ID'] = 'ScorpionItem',
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
@@ -51875,6 +52309,13 @@ return {
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'True',
                                     },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Servo'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Servo',
@@ -51964,6 +52405,13 @@ return {
                                             ['Name'] = 'Basic Circuit',
                                             ['ID'] = 'BasicCircuitItem',
                                             ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Steel Plate'] = {
@@ -52749,6 +53197,62 @@ return {
                                     }
 ,
         },
+        ['SteamTractorTreeCutterRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Steam Tractor Tree Cutter",
+                            ['Russian'] = "Steam Tractor Tree Cutter",
+                            ['German'] = "Steam Tractor Tree Cutter",
+                            ['French'] = "Steam Tractor Tree Cutter",
+                            },
+                    ['CraftTime'] = '120',
+                    ['ExperienceOnCraft'] = '10',
+                    ['LaborInCalories'] = '120',
+                    ['RequiredSkill'] = {'MechanicsSkill','2'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Assembly Line',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Iron Gear'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Iron Gear',
+                                            ['ID'] = 'IronGearItem',
+                                            ['Quantity'] = '8',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Iron Plate'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Iron Plate',
+                                            ['ID'] = 'IronPlateItem',
+                                            ['Quantity'] = '12',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Iron Saw Blade'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Iron Saw Blade',
+                                            ['ID'] = 'IronSawBladeItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Screws'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Screws',
+                                            ['ID'] = 'ScrewsItem',
+                                            ['Quantity'] = '12',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Steam Tractor Tree Cutter'] = {
+                                            ['Name'] = 'Steam Tractor Tree Cutter',
+                                            ['ID'] = 'SteamTractorTreeCutterItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
         ['SteamTruckRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Steam Truck",
@@ -52919,7 +53423,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53311,7 +53815,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53486,7 +53990,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53591,7 +54095,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53689,7 +54193,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53899,7 +54403,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -53948,7 +54452,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '250',
+                    ['LaborInCalories'] = '750',
                     ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Blacksmith Table',
                     ['CraftingTables'] = 'Power Hammer',
@@ -54242,7 +54746,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -54319,7 +54823,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -54361,7 +54865,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -54403,7 +54907,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -54529,7 +55033,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '0.1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'BasicEngineeringSkill','1'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -54571,7 +55075,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -55204,7 +55708,7 @@ return {
                     ['LaborInCalories'] = '65',
                     ['RequiredSkill'] = {'AdvancedBakingSkill','4'},
                     ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Bakery Oven',
+                    ['CraftingTables'] = 'Stove',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Bread'] = {
@@ -57376,6 +57880,76 @@ return {
                                     }
 ,
         },
+        ['TrimmingSmallAnimalRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Trimming Small Animal",
+                            ['Russian'] = "Trimming Small Animal",
+                            ['German'] = "Trimming Small Animal",
+                            ['French'] = "Trimming Small Animal",
+                            },
+                    ['CraftTime'] = '60',
+                    ['ExperienceOnCraft'] = '3',
+                    ['LaborInCalories'] = '40',
+                    ['RequiredSkill'] = {'HuntingSkill','1'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Fish Rack',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Small Carcass'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Small Carcass',
+                                            ['ID'] = 'SmallCarcass',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Scrap Meat'] = {
+                                            ['Name'] = 'Scrap Meat',
+                                            ['ID'] = 'ScrapMeatItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
+        ['TrimmingTinyAnimalRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Trimming Tiny Animal",
+                            ['Russian'] = "Trimming Tiny Animal",
+                            ['German'] = "Trimming Tiny Animal",
+                            ['French'] = "Trimming Tiny Animal",
+                            },
+                    ['CraftTime'] = '30',
+                    ['ExperienceOnCraft'] = '2',
+                    ['LaborInCalories'] = '25',
+                    ['RequiredSkill'] = {'HuntingSkill','1'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Fish Rack',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Tiny Carcass'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Tiny Carcass',
+                                            ['ID'] = 'TinyCarcass',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Scrap Meat'] = {
+                                            ['Name'] = 'Scrap Meat',
+                                            ['ID'] = 'ScrapMeatItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+        },
         ['TripodCameraRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Tripod Camera",
@@ -58048,9 +58622,9 @@ return {
                             ['German'] = "Brühe aus Gemüse",
                             ['French'] = "Bouillon de légumes",
                             },
-                    ['CraftTime'] = '480',
-                    ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '15',
+                    ['CraftTime'] = '600',
+                    ['ExperienceOnCraft'] = '4',
+                    ['LaborInCalories'] = '60',
                     ['RequiredSkill'] = {'CookingSkill','3'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Cast Iron Stove',
@@ -58060,7 +58634,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Vegetable Medley',
                                             ['ID'] = 'VegetableMedleyItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -58069,7 +58643,7 @@ return {
                                     ['Vegetable Stock'] = {
                                             ['Name'] = 'Vegetable Stock',
                                             ['ID'] = 'VegetableStockItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '4',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -58313,6 +58887,13 @@ return {
                                             ['Name'] = 'Basic Circuit',
                                             ['ID'] = 'BasicCircuitItem',
                                             ['Quantity'] = '6',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Steel Bar'] = {
@@ -59799,6 +60380,13 @@ return {
                                             ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Fuse'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Fuse',
+                                            ['ID'] = 'FuseItem',
+                                            ['Quantity'] = '8',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Lubricant'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Lubricant',
@@ -60059,7 +60647,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -60549,7 +61137,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',
@@ -60976,7 +61564,7 @@ return {
                             },
                     ['CraftTime'] = '30',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '10',
+                    ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'nil','0'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tool Bench',

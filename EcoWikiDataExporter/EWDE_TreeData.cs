@@ -61,7 +61,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     TreeData[treeName]["Name"] = WriteDictionaryAsSubObject(Localization(treeName), 1);
                     TreeData[treeName]["IsDecorative"] = $"'{tree.Decorative}'";
                     // Lifetime
-                    TreeData[treeName]["MaturityAgeDays"] = $"'{tree.MaturityAgeDays}'";
+                    TreeData[treeName]["MaturityAgeDays"] = $"'{WikiFloat(tree.MaturityAgeDays)}'";
                     TreeData[treeName]["TreeHealth"] = $"'{tree.TreeHealth}'";
                     TreeData[treeName]["BranchCount"] = $"'{tree.BranchingDef.Count}'";
                     TreeData[treeName]["Density"] = $"'{tree.Density}'";
@@ -71,21 +71,30 @@ namespace Eco.Mods.EcoWikiDataExporter
                     TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
                     TreeData[treeName]["PlantAgeToSeed"] = $"'{tree.PlantAgeToSeed}'";
                     TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
+
                     // Generation
                     TreeData[treeName]["Height"] = $"'{tree.Height}'";
                     TreeData[treeName]["ChanceToBeSpawnOutsideOfGroup"] = $"'{tree.GenerationDefinitions.ChanceToBeSpawnOutsideOfGroup}'";
-                    TreeData[treeName]["MinDistanceBetweenGroups"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups}'";
-                    TreeData[treeName]["PlantsInGroup"] = $"'{tree.GenerationDefinitions.PlantsInGroup}'";
-                    TreeData[treeName]["CountOfClusters"] = $"'{tree.GenerationDefinitions.CountOfClusters}'";
-                    TreeData[treeName]["RadiusOfGroup"] = $"'{tree.GenerationDefinitions.RadiusOfGroup}'";
-                    TreeData[treeName]["ClusterRadiusInWorldSize"] = $"'{tree.GenerationDefinitions.ClusterRadiusInWorldSize}'";
+                    TreeData[treeName]["MinDistanceBetweenGroupsMin"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Min}'";
+                    TreeData[treeName]["MinDistanceBetweenGroupsMax"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Max}'";
+                    TreeData[treeName]["PlantsInGroupMin"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Min}'";
+                    TreeData[treeName]["PlantsInGroupMax"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Max}'";
+                    TreeData[treeName]["CountOfClustersMin"] = $"'{tree.GenerationDefinitions.CountOfClusters.Min}'";
+                    TreeData[treeName]["CountOfClustersMax"] = $"'{tree.GenerationDefinitions.CountOfClusters.Max}'";
+                    TreeData[treeName]["RadiusOfGroupMin"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Min}'";
+                    TreeData[treeName]["RadiusOfGroupMax"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Max}'";
+                    TreeData[treeName]["ClusterRadiusInWorldSizeMin"] = $"'{tree.GenerationDefinitions.ClusterRadiusInWorldSize.Min}'";
+                    TreeData[treeName]["ClusterRadiusInWorldSizeMax"] = $"'{tree.GenerationDefinitions.ClusterRadiusInWorldSize.Max}'";
+
                     TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
+
                     // as Food
                     TreeData[treeName]["CalorieValue"] = $"'{tree.CalorieValue}'";
+
                     // Resources
                     TreeData[treeName]["PostHarvestingGrowth"] = $"'{tree.PostHarvestingGrowth}'";
                     TreeData[treeName]["PickableAtPercent"] = $"'{tree.PickableAtPercent}'";
-                    TreeData[treeName]["ResourceBonusAtGrowth"] = $"'{tree.ResourceBonusAtGrowth}'";
+                    TreeData[treeName]["ResourceBonusAtGrowth"] = $"'{Percent(tree.ResourceBonusAtGrowth)}'";
                     TreeData[treeName]["LogHealth"] = $"'{tree.LogHealth}'";
                     TreeData[treeName]["ChanceToSpawnDebris"] = $"'{Percent(tree.ChanceToSpawnDebris)}'";
                     TreeData[treeName]["DebrisType"] = $"'{tree.DebrisType.Name}'";
@@ -148,7 +157,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     // Climate
                     TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{tree.ReleasesCO2TonsPerDay.ToString("G", CultureInfo.InvariantCulture)}'";
-                    TreeData[treeName]["PollutionDensityTolerance"] = $"'{Percent(tree.PollutionDensityTolerance)}'";
+                    TreeData[treeName]["PollutionDensityMin"] = $"'{Percent(tree.PollutionDensityTolerance)}'";
                     TreeData[treeName]["PollutionDensityMax"] = $"'{Percent(tree.MaxPollutionDensity)}'";
                 }
             }

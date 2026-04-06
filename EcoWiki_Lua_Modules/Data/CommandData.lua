@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
+-- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:49
+-- Date of export : 30.03.2026 19:47:17
 
 return {
     commands = {
@@ -1856,6 +1856,21 @@ return {
                     ['level'] = 'Admin',
                     ['parameters'] =  {
                             ['Arg1'] = {'amount', 'Int32', '-1'},
+                            },
+        },
+        ['/food nutrition'] = {
+                    ['command'] = 'nutrition',
+                    ['parent'] = 'food',
+                    ['helpText'] =  {
+                            ['English'] = "Sets nutrition to a value split evenly across all nutrients.",
+                            ['Russian'] = "Sets nutrition to a value split evenly across all nutrients.",
+                            ['German'] = "Sets nutrition to a value split evenly across all nutrients.",
+                            ['French'] = "Sets nutrition to a value split evenly across all nutrients.",
+                            },
+                    ['shortCut'] = 'nutrition',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'value', 'Single'},
                             },
         },
         ['/food work'] = {
@@ -4423,6 +4438,7 @@ return {
                             ['Arg1'] = {'count', 'Int32', '10'},
                             ['Arg2'] = {'receiverCount', 'Int32', '10'},
                             ['Arg3'] = {'gibberish', 'Boolean', 'True'},
+                            ['Arg4'] = {'minLength', 'Int32', '0'},
                             },
         },
         ['/qa clearplayerprefs'] = {
@@ -5930,6 +5946,7 @@ return {
                     ['shortCut'] = 'alltrees',
                     ['level'] = 'Admin',
                     ['parameters'] =  {
+                            ['Arg1'] = {'mature', 'Boolean', 'False'},
                             },
         },
         ['/sim spawnanimal'] = {
@@ -6182,20 +6199,37 @@ return {
                             ['Arg2'] = {'number', 'Int32', '10'},
                             },
         },
+        ['/skills givetalent'] = {
+                    ['command'] = 'givetalent',
+                    ['parent'] = 'skills',
+                    ['helpText'] =  {
+                            ['English'] = "Grants a talent to a player (or updates its level if already learned). Usage: /admin givetalent <talentName> [level]",
+                            ['Russian'] = "Grants a talent to a player (or updates its level if already learned). Usage: /admin givetalent <talentName> [level]",
+                            ['German'] = "Grants a talent to a player (or updates its level if already learned). Usage: /admin givetalent <talentName> [level]",
+                            ['French'] = "Grants a talent to a player (or updates its level if already learned). Usage: /admin givetalent <talentName> [level]",
+                            },
+                    ['shortCut'] = 'givetalent',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'talentName', 'String'},
+                            ['Arg2'] = {'level', 'Int32', '1'},
+                            },
+        },
         ['/skills levelup'] = {
                     ['command'] = 'levelup',
                     ['parent'] = 'skills',
                     ['helpText'] =  {
-                            ['English'] = "Levels up a string matching the passed skill\'s name to the max.",
-                            ['Russian'] = "Levels up a string matching the passed skill\'s name to the max.",
-                            ['German'] = "Levels up a string matching the passed skill\'s name to the max.",
-                            ['French'] = "Levels up a string matching the passed skill\'s name to the max.",
+                            ['English'] = "Levels up a skill to a given level (max if omitted). Example: /levelup logging, 5",
+                            ['Russian'] = "Levels up a skill to a given level (max if omitted). Example: /levelup logging, 5",
+                            ['German'] = "Levels up a skill to a given level (max if omitted). Example: /levelup logging, 5",
+                            ['French'] = "Levels up a skill to a given level (max if omitted). Example: /levelup logging, 5",
                             },
                     ['shortCut'] = 'levelup',
                     ['level'] = 'Admin',
                     ['parameters'] =  {
                             ['Arg1'] = {'skillName', 'String'},
-                            ['Arg2'] = {'targetUser', 'User', ''},
+                            ['Arg2'] = {'level', 'Int32', '-1'},
+                            ['Arg3'] = {'targetUser', 'User', ''},
                             },
         },
         ['/skills levelupall'] = {
@@ -6225,6 +6259,20 @@ return {
                     ['level'] = 'Admin',
                     ['parameters'] =  {
                             ['Arg1'] = {'name', 'String', ''},
+                            },
+        },
+        ['/skills listtalents'] = {
+                    ['command'] = 'listtalents',
+                    ['parent'] = 'skills',
+                    ['helpText'] =  {
+                            ['English'] = "Lists all available talents and your current talent levels.",
+                            ['Russian'] = "Lists all available talents and your current talent levels.",
+                            ['German'] = "Lists all available talents and your current talent levels.",
+                            ['French'] = "Lists all available talents and your current talent levels.",
+                            },
+                    ['shortCut'] = 'listtalents',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
                             },
         },
         ['/skills rate'] = {
@@ -6294,16 +6342,15 @@ return {
                     ['command'] = 'removetalent',
                     ['parent'] = 'skills',
                     ['helpText'] =  {
-                            ['English'] = "Removes talent by name for a player",
-                            ['Russian'] = "Убирает у игрока талант по его названию",
-                            ['German'] = "Entfernt ein Talent für einen Spieler anhand des Namens",
-                            ['French'] = "Supprime le talent par nom pour un joueur",
+                            ['English'] = "Removes a talent from a player. Usage: /admin removetalent <talentName>",
+                            ['Russian'] = "Removes a talent from a player. Usage: /admin removetalent <talentName>",
+                            ['German'] = "Removes a talent from a player. Usage: /admin removetalent <talentName>",
+                            ['French'] = "Removes a talent from a player. Usage: /admin removetalent <talentName>",
                             },
-                    ['shortCut'] = 'talentdel',
+                    ['shortCut'] = 'removetalent',
                     ['level'] = 'Admin',
                     ['parameters'] =  {
-                            ['Arg1'] = {'targetUser', 'User'},
-                            ['Arg2'] = {'talentName', 'String'},
+                            ['Arg1'] = {'talentName', 'String'},
                             },
         },
         ['/skills reset'] = {

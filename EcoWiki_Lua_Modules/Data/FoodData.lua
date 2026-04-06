@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
+-- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:56
+-- Date of export : 30.03.2026 19:47:24
 
 return {
     foods = {
@@ -837,7 +837,7 @@ return {
                     ['ShelfLife'] = '1382400',
         },
         ['Fried Camas'] = {
-                    ['Calories'] = '700',
+                    ['Calories'] = '750',
                     ['Carbs'] = '9',
                     ['Protein'] = '3',
                     ['Fat'] = '10',
@@ -845,7 +845,7 @@ return {
                     ['ShelfLife'] = '259200',
         },
         ['Fried Fiddleheads'] = {
-                    ['Calories'] = '700',
+                    ['Calories'] = '750',
                     ['Carbs'] = '11',
                     ['Protein'] = '3',
                     ['Fat'] = '6',
@@ -861,7 +861,7 @@ return {
                     ['ShelfLife'] = '259200',
         },
         ['Fried Hearts Of Palm'] = {
-                    ['Calories'] = '700',
+                    ['Calories'] = '750',
                     ['Carbs'] = '13',
                     ['Protein'] = '3',
                     ['Fat'] = '6',
@@ -869,7 +869,7 @@ return {
                     ['ShelfLife'] = '259200',
         },
         ['Fried Taro'] = {
-                    ['Calories'] = '700',
+                    ['Calories'] = '750',
                     ['Carbs'] = '14',
                     ['Protein'] = '1',
                     ['Fat'] = '8',
@@ -877,7 +877,7 @@ return {
                     ['ShelfLife'] = '259200',
         },
         ['Fried Tomatoes'] = {
-                    ['Calories'] = '700',
+                    ['Calories'] = '750',
                     ['Carbs'] = '11',
                     ['Protein'] = '3',
                     ['Fat'] = '8',

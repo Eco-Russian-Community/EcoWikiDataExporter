@@ -123,10 +123,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 			Dictionary<string, string> toolDetails = new Dictionary<string, string>()
 			{
 				{ "ToolType", "nil" },
-				{ "Tier", "nil" },
-				{ "MaxTake", "nil" },
-				{ "Weapon", "'False'" },
-				{ "WeaponDamage", "'0'" }
+                { "Hidden", "nil" },
+                { "Tier", "nil" },
+				{ "Weapon", "'False'" }
 			};
 
 			Dictionary<string, string> clothingDetails = new Dictionary<string, string>()
@@ -163,38 +162,33 @@ namespace Eco.Mods.EcoWikiDataExporter
 					ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
 
 					ItemData[ItemName]["Category"] = $"'{item.Category}'";
+
 					if (item.Category == "Hidden")
 					{ ItemData[ItemName]["Hidden"] = $"'True'"; }
+
 					ItemData[ItemName]["Group"] = $"'{item.Group}'";
 
 					ItemData[ItemName]["Name"] = WriteDictionaryAsSubObject(Localization(ItemName), 1);
 					ItemData[ItemName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(item.GetDescription.NotTranslated)), 1);
 
-					if (item.HasWeight)
-					{ ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
+					if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
+
 					ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
 					ItemData[ItemName]["Tags"] = $"{GetItemTags(item)}";
-					if (MarketplaceExtensions.IsPaidItem(item))
-					{ ItemData[ItemName]["IsPaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
 
+					if (MarketplaceExtensions.IsPaidItem(item))	{ ItemData[ItemName]["IsPaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
 
-					if (item.CanBeCurrency)
-					{ ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
-					if (item.Compostable)
-					{ ItemData[ItemName]["Compostable"] = $"'True'"; }
-					if (item.IsWasteProduct)
-					{ ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
+					if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
+					if (item.Compostable) { ItemData[ItemName]["Compostable"] = $"'True'"; }
+					if (item.IsWasteProduct) { ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
 
-					if (item.IsFuel)
-					{
+					if (item.IsFuel) {
 						ItemData[ItemName]["IsFuel"] = $"'True'";
-
 						FuelData.Add(ItemName, new Dictionary<string, string>(fuelDetails));
 						FuelData[ItemName]["Power"] = $"'{item.Fuel}'";
 					}
 
-					if (item.IsStackable)
-					{ ItemData[ItemName]["IsStackable"] = $"'True'"; }
+					if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
 					//item.IsCarried
 
@@ -439,52 +433,48 @@ namespace Eco.Mods.EcoWikiDataExporter
 						FertilizerData[ItemName]["Potassium"] = $"'{WikiFloat(Potassium)}'";
 					}
 
-					if (item is SkillBook)
-					{ ItemData[ItemName]["SkillBook"] = $"'True'"; }
-					if (item is SkillScroll)
-					{ ItemData[ItemName]["SkillScroll"] = $"'True'"; }
-					if (item is SuitItem)
-					{ ItemData[ItemName]["SuitItem"] = $"'True'"; }
-					if (item is ColorItem)
-					{ ItemData[ItemName]["ColorItem"] = $"'True'"; }
+					if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
+					if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
+					if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
+					if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
 					if (item is ToolItem toolItem)
 					{
 						ItemData[ItemName]["IsTool"] = $"'True'";
-
 						ToolData.Add(ItemName, new Dictionary<string, string>(toolDetails));
 
 						ToolData[ItemName]["ToolType"] = $"'Tool'";
+                        if (item.Category == "Hidden") { ToolData[ItemName]["Hidden"] = $"'True'"; }
+                        ToolData[ItemName]["Tier"] = $"'{toolItem.Tier.GetBaseValue}'";
+                        ToolData[ItemName]["CaloriesBurn"] = $"'{toolItem.CaloriesBurn.GetBaseValue}'";
 
-						ToolData[ItemName]["MaxTake"] = $"'{toolItem.MaxTake}'";
-						ToolData[ItemName]["Tier"] = $"'{toolItem.Tier.GetBaseValue}'";
+                        if (item is AxeItem) { 
+							ToolData[ItemName]["ToolType"] = $"'Axe'";
+                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
+                        }
+						if (item is PickaxeItem) { 
+							ToolData[ItemName]["ToolType"] = $"'Pickaxe'";
+                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
+                        }
 
-						if (item is AxeItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Axe'"; }
-						if (item is PickaxeItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Pickaxe'"; }
-						if (item is ShovelItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Shovel'"; }
-						if (item is HammerItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Hammer'"; }
-						if (item is HoeItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Hoe'"; }
-						if (item is MacheteItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Machete'"; }
-						if (item is PaintToolItem)
-						{ ToolData[ItemName]["ToolType"] = $"'PaintTool'"; }
-						if (item is DrillItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Drill'"; }
-						if (item is DetonatorBaseItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Detonator'"; }
-						if (item is BowItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Bow'"; }
-						if (item is SickleItem)
-						{ ToolData[ItemName]["ToolType"] = $"'Sickle'"; }
-						if (item is RoadToolItem)
-						{ ToolData[ItemName]["ToolType"] = $"'RoadTool'"; }
+						if (item is ShovelItem)	{ 
+							ToolData[ItemName]["ToolType"] = $"'Shovel'";
+                            ToolData[ItemName]["MaxTake"] = $"'{toolItem.MaxTake}'";
+                        }
+						if (item is HammerItem) { ToolData[ItemName]["ToolType"] = $"'Hammer'"; }
+						if (item is HoeItem) { ToolData[ItemName]["ToolType"] = $"'Hoe'"; }
+						if (item is MacheteItem) { 
+							ToolData[ItemName]["ToolType"] = $"'Machete'";
+                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
+                        }
+						if (item is PaintToolItem) { ToolData[ItemName]["ToolType"] = $"'PaintTool'"; }
+						if (item is DrillItem) { ToolData[ItemName]["ToolType"] = $"'Drill'"; }
+                        if (item is BlastingChargeItem) { ToolData[ItemName]["ToolType"] = $"'BlastingCharge'"; }
+                        if (item is DetonatorBaseItem) { ToolData[ItemName]["ToolType"] = $"'Detonator'"; }
+						if (item is BowItem) { ToolData[ItemName]["ToolType"] = $"'Bow'"; }
+						if (item is BlockHarvestItem) { ToolData[ItemName]["ToolType"] = $"'BlockHarvest'"; }
 
-
+						if (item is RoadToolItem) { ToolData[ItemName]["ToolType"] = $"'RoadTool'"; }
 
 						if (item is WeaponItem Weapon)
 						{
@@ -492,11 +482,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 							ToolData[ItemName]["WeaponDamage"] = $"'{WikiFloat(Weapon.Damage.GetBaseValue)}'";
 						}
 
-						//if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
+                        if (ItemName == "Fishing Pole") { ToolData[ItemName]["ToolType"] = $"'FishingPole'"; }
+                        //if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
 
-
-
-					}
+                    }
 				}
 			}
 

@@ -79,7 +79,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             try { WikiData.ExportGeologyData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export geology error: {e.Message}"); }
             try { WikiData.ExportMarketplaceData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export marketplace error: {e.Message}"); }
             try { WikiData.ExportLocalizationData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export localization error: {e.Message}"); }
-}
+            try { WikiData.ExportServerConfigData(); } catch (Exception e) { Log.WriteWarningLineLoc($"Export Server Configs error: {e.Message}"); }
+        }
 
 		public void Run()
 		{

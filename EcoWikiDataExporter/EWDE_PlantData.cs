@@ -70,7 +70,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     PlantData.Add(plantName, new Dictionary<string, string>(plantDetails));
                     PlantData[plantName]["ID"] = $"'{plant.Name}" + "Species'";
                     PlantData[plantName]["Name"] = WriteDictionaryAsSubObject(Localization(plantName), 1);
-                    PlantData[plantName]["MaturityAgeDays"] = $"'{plant.MaturityAgeDays}'";
+                    PlantData[plantName]["MaturityAgeDays"] = $"'{WikiFloat(plant.MaturityAgeDays)}'";
                     PlantData[plantName]["StartBiomes"] = $"'{plant.GenerationDefinitions.StartBiomes}'";
                     PlantData[plantName]["IsWater"] = plant.Water ? $"'True'" : "nil";
                     PlantData[plantName]["IsHarvestable"] = plant.RequireHarvestable ? $"'True'" : "nil";
@@ -95,11 +95,15 @@ namespace Eco.Mods.EcoWikiDataExporter
                     PlantData[plantName]["ExtremeWaterRangeMin"] = $"'{Percent(plant.WaterExtremes.Min)}'";
                     PlantData[plantName]["ExtremeWaterRangeMax"] = $"'{Percent(plant.WaterExtremes.Max)}'";
 
-                    PlantData[plantName]["PollutionDensityTolerance"] = $"'{plant.PollutionDensityTolerance}'";
-                    PlantData[plantName]["PollutionDensityMax"] = $"'{plant.MaxPollutionDensity}'";
+                    PlantData[plantName]["PollutionDensityMin"] = $"'{Percent(plant.PollutionDensityTolerance)}'";
+                    PlantData[plantName]["PollutionDensityMax"] = $"'{Percent(plant.MaxPollutionDensity)}'";
 
                     // Climate
-                    PlantData[plantName]["ReleasesCO2TonsPerDay"] = $"'{plant.ReleasesCO2TonsPerDay}'";
+                    PlantData[plantName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(plant.ReleasesCO2TonsPerDay)}'";
+
+
+
+
                 }
                 
              // writes to txt file

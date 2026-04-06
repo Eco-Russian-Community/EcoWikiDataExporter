@@ -192,16 +192,19 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static Dictionary<string, string> Localization(string name)
         {
             var localizedString = new Dictionary<string, string>();
+            String EnglishLang = name;
 
-            String RussianLang = Localizer.LocalizeString(name, SupportedLanguage.Russian);
-            String GermanLang = Localizer.LocalizeString(name, SupportedLanguage.German);
-            String FrenchLang = Localizer.LocalizeString(name, SupportedLanguage.French);
+            String RussianLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.Russian);
+            String GermanLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.German);
+            String FrenchLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.French);
 
-            if (RussianLang == "") { RussianLang = name; }
-            if (GermanLang == "") { GermanLang = name; }
-            if (FrenchLang == "") { FrenchLang = name; }
+            if (RussianLang == "") { RussianLang = EnglishLang; }
+            if (GermanLang == "") { GermanLang = EnglishLang; }
+            if (FrenchLang == "") { FrenchLang = EnglishLang; }
 
-            localizedString["English"] = '"' + $"{name}" + '"';
+
+
+            localizedString["English"] = '"' + $"{EnglishLang}" + '"';
             localizedString["Russian"] = '"' + $"{RussianLang}" + '"';
             localizedString["German"] = '"' + $"{GermanLang}" + '"';
             localizedString["French"] = '"' + $"{FrenchLang}" + '"';
