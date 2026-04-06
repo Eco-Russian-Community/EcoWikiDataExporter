@@ -24,7 +24,7 @@ function p.CraftingComponentModule(ItemName)
     local WikiText = ''
     local CraftingTableRecipes = RecipeUtils.CraftingTableRecipes(ItemName)
 	if (CraftingTableRecipes ~= "") then
-		WikiText = WikiText .. '<h3>Crafting</h3>'
+		WikiText = WikiText .. '<h3>' .. Utils.Translate("Crafting") .. '</h3>'
 		WikiText =  WikiText .. RecipeUtils.CraftTable(CraftingTableRecipes);
 	end
 	
@@ -33,7 +33,7 @@ end
 
 function p.ForSaleComponentModule(ItemName)
     local WikiText = ''
-    WikiText = WikiText .. '<h3>For Sale</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("For Sale") .. '</h3>'
     return WikiText
 end
 
@@ -44,13 +44,13 @@ end
 
 function p.BedComponentModule(ItemName)
     local WikiText = ''
-    WikiText = WikiText .. '<h3>Bed</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("Bed") .. '</h3>'
     return WikiText
 end
 
 function p.MintComponentModule(ItemName)
     local WikiText = ''
-    WikiText = WikiText .. '<h3>Mint</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("Mint") .. '</h3>'
     return WikiText
 end
 
