@@ -61,8 +61,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             ServerConfigData["Balance"]["ShowOilLayer"] = $"'{BalanceConfig.Obj.ShowOilLayer}'";
 
             ServerConfigData["Balance"]["SpecialtyExperiencePerLevelSquared"] = $"'{BalanceConfig.Obj.SpecialtyExperiencePerLevelSquared.ToString()}'";
-
-            //
+            ServerConfigData["Balance"]["ExperienceGrowthPercentage"] = $"'{BalanceConfig.Obj.ExperienceGrowthPercentage.ToString()}'";
+            ServerConfigData["Balance"]["ExperienceIncreaseAdditive"] = $"'{BalanceConfig.Obj.ExperienceIncreaseAdditive.ToString()}'";
+            ServerConfigData["Balance"]["StarsRequiredPerStage"] = $"'{BalanceConfig.Obj.StarsRequiredPerStage.ToString()}'";
+                     
 
 
             //EcoSim
