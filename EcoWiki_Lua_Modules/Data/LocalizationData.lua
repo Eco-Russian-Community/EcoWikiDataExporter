@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
+-- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:56
+-- Date of export : 30.03.2026 19:47:25
 
 return {
     locales = {
@@ -474,6 +474,14 @@ return {
                             ['Russian'] = "Применимые группы",
                             ['German'] = "Benutzt auch folgende Tags",
                             ['French'] = "Groupes associés",
+                            },
+        },
+        ['Tags represent a group of items.'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Tags represent a group of items.",
+                            ['Russian'] = "Группа предметов объединённых общим признаком.",
+                            ['German'] = "Tags repräsentieren eine Gruppe von Gegenständen.",
+                            ['French'] = "Les groupes représentent un ensemble d'éléments.",
                             },
         },
         ['Talents'] = {
