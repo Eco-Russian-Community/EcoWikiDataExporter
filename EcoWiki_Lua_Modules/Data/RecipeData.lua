@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
--- EWDE Version : 0.7.0.0
--- Date of export : 30.03.2026 19:47:24
+-- EWDE Version : 0.7.1.0
+-- Date of export : 07.04.2026 08:10:32
 
 return {
     recipes = {
@@ -6412,7 +6412,7 @@ return {
                     ['CraftTime'] = '120',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '50',
-                    ['RequiredSkill'] = {'MillingSkill','1'},
+                    ['RequiredSkill'] = {'MillingSkill','6'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Mill',
                     ['RequiresStrangeBlueprint'] = 'False',
@@ -22536,6 +22536,13 @@ return {
                                             ['Name'] = 'Cement',
                                             ['ID'] = 'CementItem',
                                             ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Crushed Rock'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Crushed Rock',
+                                            ['ID'] = 'CrushedRock',
+                                            ['Quantity'] = '5',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Fiberglass'] = {
@@ -42350,7 +42357,7 @@ return {
                     ['CraftTime'] = '60',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '100',
-                    ['RequiredSkill'] = {'MillingSkill','3'},
+                    ['RequiredSkill'] = {'MillingSkill','6'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Industrial Mill',
                     ['RequiresStrangeBlueprint'] = 'False',
