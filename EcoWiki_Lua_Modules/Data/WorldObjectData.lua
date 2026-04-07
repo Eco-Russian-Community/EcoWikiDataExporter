@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
--- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:56
+-- Eco Version : 0.13.0.0
+-- EWDE Version : 0.7.1.0
+-- Date of export : 07.04.2026 08:10:32
 
 return {
     WorldObjects = {
@@ -384,7 +384,7 @@ return {
                     ['WorldObjectSize'] = '1,2,1',
                     ['WorldObjectTier'] = '0',
                     ['RoomCategory'] = 'Seating',
-                    ['HomeBaseValue'] = '3.5',
+                    ['HomeBaseValue'] = '3',
                     ['TypeForRoomLimit'] = 'Table',
                     ['DiminishingReturnMultiplier'] = '0.1',
         },
@@ -8474,6 +8474,23 @@ return {
                     ['WorldObjectName'] = 'SchoolSupplyStationObject',
                     ['WorldObjectSize'] = '1,1,1',
                     ['WorldObjectTier'] = '0',
+        },
+        ['Scorpion'] = {
+                    ['CraftingComponent'] = 'False',
+                    ['MountComponent'] = 'True',
+                    ['ForSaleComponent'] = 'True',
+                    ['RoomRequirementsComponent'] = 'False',
+                    ['HousingComponent'] = 'False',
+                    ['BedComponent'] = 'False',
+                    ['MintComponent'] = 'False',
+                    ['DoorComponent'] = 'False',
+                    ['WorldObjectName'] = 'ScorpionObject',
+                    ['WorldObjectSize'] = '10,3,4',
+                    ['WorldObjectTier'] = '0',
+                    ['MountSeats'] = '1',
+                    ['PublicStorageComponent'] = 'True',
+                    ['StorageStacks'] = 'Eco.Core.Utils.ControllerList`1[Eco.Gameplay.Items.ItemStack]',
+                    ['ShelfLifeMultiplier'] = '1',
         },
         ['Screening Machine'] = {
                     ['CraftingComponent'] = 'True',
