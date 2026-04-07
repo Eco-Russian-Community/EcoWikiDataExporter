@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
--- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:49
+-- Eco Version : 0.13.0.0
+-- EWDE Version : 0.7.1.0
+-- Date of export : 07.04.2026 08:10:26
 
 return {
     animals = {
@@ -965,48 +965,6 @@ return {
                     ['ResourceMin'] = '1',
                     ['ResourceMax'] = '1',
                     ['ResourceBonusAtGrowth'] = '0.9',
-                    ['TimeTill50PercentCloserToMaxInHours'] = '24',
-                    ['MaxGrowthRatePerHour'] = '0.3',
-                    ['TimeToSpread1ToNeighborInHours'] = '12',
-                    ['ReleasesCO2TonsPerDay'] = '0.02',
-        },
-        ['Tarantula'] = {
-                    ['ID'] = 'TarantulaSpecies',
-                    ['Name'] =  {
-                            ['English'] = "Tarantula",
-                            ['Russian'] = "Паук-птицеед",
-                            ['German'] = "Tarantel",
-                            ['French'] = "Tarentule",
-                            },
-                    ['Description'] =  {
-                            ['English'] = "A large, hairy spider with a distinctive body shape and a venomous bite. Tarantulas are nocturnal and often spend the day hiding in burrows or other sheltered locations.",
-                            ['Russian'] = "Крупный волосатый паук с характерной формой тела и ядовитым укусом. Тарантулы ведут ночной образ жизни и часто проводят день, прячась в норах или других защищенных местах.",
-                            ['German'] = "Eine große, haarige Spinne mit einer charakteristischen Körperform und einem giftigen Biss. Vogelspinnen sind nachtaktiv und verbringen den Tag oft versteckt in Höhlen oder anderen geschützten Orten.",
-                            ['French'] = "Une grande araignée poilue à la forme corporelle caractéristique et à la morsure venimeuse. Les tarentules sont nocturnes et passent souvent la journée à se cacher dans des terriers ou d'autres endroits abrités.",
-                            },
-                    ['MaturityAgeDays'] = '1',
-                    ['IsSwimming'] = 'False',
-                    ['IsFishable'] = 'False',
-                    ['Nocturnal'] = 'True',
-                    ['Aquatic'] = 'False',
-                    ['Health'] = '1',
-                    ['Flags'] = 'IsPredator',
-                    ['TooCloseDistance'] = '4',
-                    ['MaxVisibilityDistance'] = '25',
-                    ['MaxVisibilityAngle'] = '110',
-                    ['AttackRange'] = '1',
-                    ['ChanceToAttack'] = '0.6',
-                    ['ChanceToAttackUnprovoked'] = '0',
-                    ['AttackUnprovokedDistance'] = '15',
-                    ['ChanceOfAlertNoise'] = '0',
-                    ['AnimalDamage'] = '1',
-                    ['PlayerDamage'] = '0',
-                    ['HerdSizeMin'] = '1',
-                    ['HerdSizeMax'] = '1',
-                    ['CalorieValue'] = '100',
-                    ['EatTags'] = '',
-                    ['FoodSourcesSpecies'] = {},
-                    ['CanSwimNearCoast'] = 'True',
                     ['TimeTill50PercentCloserToMaxInHours'] = '24',
                     ['MaxGrowthRatePerHour'] = '0.3',
                     ['TimeToSpread1ToNeighborInHours'] = '12',
