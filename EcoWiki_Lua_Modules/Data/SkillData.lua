@@ -1,6 +1,6 @@
--- Eco Version : 0.12.0.7
--- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:49
+-- Eco Version : 0.13.0.0
+-- EWDE Version : 0.7.1.0
+-- Date of export : 07.04.2026 08:10:26
 
 return {
     skills = {
@@ -23,7 +23,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4604',
         },
         ['Advanced Cooking'] = {
                     ['Name'] =  {
@@ -44,7 +43,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2294',
         },
         ['Advanced Masonry'] = {
                     ['Name'] =  {
@@ -61,11 +59,10 @@ return {
                             },
                     ['SkillID'] = 'AdvancedMasonrySkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '4',
+                    ['Tier'] = '5',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2573',
         },
         ['Advanced Smelting'] = {
                     ['Name'] =  {
@@ -86,7 +83,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Smith',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '1384',
         },
         ['Baking'] = {
                     ['Name'] =  {
@@ -107,7 +103,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '947',
         },
         ['Basic Engineering'] = {
                     ['Name'] =  {
@@ -128,7 +123,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Engineer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '1747',
         },
         ['Blacksmith'] = {
                     ['Name'] =  {
@@ -149,7 +143,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Smith',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2396',
         },
         ['Butchery'] = {
                     ['Name'] =  {
@@ -170,7 +163,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Hunter',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '164',
         },
         ['Campfire Cooking'] = {
                     ['Name'] =  {
@@ -191,7 +183,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '4867',
         },
         ['Carpenter'] = {
                     ['Name'] =  {
@@ -212,7 +203,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '1549',
         },
         ['Carpentry'] = {
                     ['Name'] =  {
@@ -229,11 +219,10 @@ return {
                             },
                     ['SkillID'] = 'CarpentrySkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '1',
+                    ['Tier'] = '2',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4448',
         },
         ['Chef'] = {
                     ['Name'] =  {
@@ -254,7 +243,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '2586',
         },
         ['Composites'] = {
                     ['Name'] =  {
@@ -271,11 +259,10 @@ return {
                             },
                     ['SkillID'] = 'CompositesSkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '4',
+                    ['Tier'] = '5',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '796',
         },
         ['Cooking'] = {
                     ['Name'] =  {
@@ -296,7 +283,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '3016',
         },
         ['Cutting Edge Cooking'] = {
                     ['Name'] =  {
@@ -317,7 +303,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Chef',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '3162',
         },
         ['Electronics'] = {
                     ['Name'] =  {
@@ -338,7 +323,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Engineer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '557',
         },
         ['Engineer'] = {
                     ['Name'] =  {
@@ -359,7 +343,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Engineer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2534',
         },
         ['Farmer'] = {
                     ['Name'] =  {
@@ -380,7 +363,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Farmer',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '1726',
         },
         ['Farming'] = {
                     ['Name'] =  {
@@ -401,7 +383,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Farmer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4763',
         },
         ['Fertilizers'] = {
                     ['Name'] =  {
@@ -422,7 +403,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Farmer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2213',
         },
         ['Gathering'] = {
                     ['Name'] =  {
@@ -443,7 +423,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Farmer',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '4319',
         },
         ['Glassworking'] = {
                     ['Name'] =  {
@@ -464,7 +443,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '3797',
         },
         ['Hunter'] = {
                     ['Name'] =  {
@@ -485,7 +463,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Hunter',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '1938',
         },
         ['Hunting'] = {
                     ['Name'] =  {
@@ -506,7 +483,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Hunter',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '118',
         },
         ['Industry'] = {
                     ['Name'] =  {
@@ -527,7 +503,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Engineer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '2947',
         },
         ['Logging'] = {
                     ['Name'] =  {
@@ -548,7 +523,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '3490',
         },
         ['Mason'] = {
                     ['Name'] =  {
@@ -569,7 +543,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '992',
         },
         ['Masonry'] = {
                     ['Name'] =  {
@@ -586,11 +559,10 @@ return {
                             },
                     ['SkillID'] = 'MasonrySkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '1',
+                    ['Tier'] = '2',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '291',
         },
         ['Mechanics'] = {
                     ['Name'] =  {
@@ -611,7 +583,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Engineer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '847',
         },
         ['Milling'] = {
                     ['Name'] =  {
@@ -632,7 +603,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Farmer',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '3405',
         },
         ['Mining'] = {
                     ['Name'] =  {
@@ -653,7 +623,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '2868',
         },
         ['Oil Drilling'] = {
                     ['Name'] =  {
@@ -674,7 +643,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Scientist',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4595',
         },
         ['Painting'] = {
                     ['Name'] =  {
@@ -695,7 +663,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Scientist',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '3370',
         },
         ['Paper Milling'] = {
                     ['Name'] =  {
@@ -716,7 +683,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '955',
         },
         ['Pottery'] = {
                     ['Name'] =  {
@@ -737,7 +703,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Mason',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4495',
         },
         ['Scientist'] = {
                     ['Name'] =  {
@@ -758,7 +723,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Scientist',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4100',
         },
         ['Self Improvement'] = {
                     ['Name'] =  {
@@ -779,7 +743,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Survivalist',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '2051',
         },
         ['Shipwright'] = {
                     ['Name'] =  {
@@ -796,11 +759,10 @@ return {
                             },
                     ['SkillID'] = 'ShipwrightSkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '1',
+                    ['Tier'] = '3',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Carpenter',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4113',
         },
         ['Smelting'] = {
                     ['Name'] =  {
@@ -821,7 +783,6 @@ return {
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Smith',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '4420',
         },
         ['Smith'] = {
                     ['Name'] =  {
@@ -842,7 +803,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Smith',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '1388',
         },
         ['Survivalist'] = {
                     ['Name'] =  {
@@ -863,7 +823,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Survivalist',
                     ['PlayerDefaultSkill'] = 'True',
-                    ['TypeID'] = '940',
         },
         ['Tailor'] = {
                     ['Name'] =  {
@@ -884,7 +843,6 @@ return {
                     ['IsRoot'] = 'True',
                     ['RootSkill'] = 'Tailor',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '1839',
         },
         ['Tailoring'] = {
                     ['Name'] =  {
@@ -901,11 +859,10 @@ return {
                             },
                     ['SkillID'] = 'TailoringSkill',
                     ['MaxLevel'] = '7',
-                    ['Tier'] = '2',
+                    ['Tier'] = '3',
                     ['IsRoot'] = 'False',
                     ['RootSkill'] = 'Tailor',
                     ['PlayerDefaultSkill'] = 'False',
-                    ['TypeID'] = '441',
         },
     },
 }
