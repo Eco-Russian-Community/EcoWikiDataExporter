@@ -2,6 +2,7 @@
 using Eco.Core.Plugins;
 using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
+using Eco.Gameplay.Animals.Catchers.Internal;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
 using Eco.Gameplay.Items;
@@ -14,6 +15,7 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation;
@@ -36,6 +38,8 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using static Eco.Shared.Utils.LimitMapper;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -64,8 +68,26 @@ namespace Eco.Mods.EcoWikiDataExporter
             ServerConfigData["Balance"]["ExperienceGrowthPercentage"] = $"'{BalanceConfig.Obj.ExperienceGrowthPercentage.ToString()}'";
             ServerConfigData["Balance"]["ExperienceIncreaseAdditive"] = $"'{BalanceConfig.Obj.ExperienceIncreaseAdditive.ToString()}'";
             ServerConfigData["Balance"]["StarsRequiredPerStage"] = $"'{BalanceConfig.Obj.StarsRequiredPerStage.ToString()}'";
-                     
 
+            //SpeciesLayeredCatch
+            ServerConfigData.Add("SpeciesLayeredCatch", new Dictionary<string, string>(ServerConfigDetails));
+
+            var SpeciesCatch = new SpeciesLayeredCatchConfig();
+            SpeciesCatch.Initialize();
+            
+            foreach (var catcher in SpeciesCatch.CatchersData)
+            {
+                var CatcherName = catcher.CatcherType.Name;
+
+                foreach (var Specieslayer in catcher.TargetLayers)
+                {
+
+                }
+                
+            }
+
+
+            //ServerConfigData["SpeciesLayeredCatch"]["CatchersData"] = $"'{}'";
 
             //EcoSim
             ServerConfigData.Add("EcoSim", new Dictionary<string, string>(ServerConfigDetails));

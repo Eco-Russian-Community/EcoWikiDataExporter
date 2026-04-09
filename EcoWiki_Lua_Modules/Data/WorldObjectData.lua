@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 08:10:32
+-- Date of export : 07.04.2026 15:25:45
 
 return {
     WorldObjects = {
@@ -8004,7 +8004,7 @@ return {
                     ['WorldObjectName'] = 'PlasticOutdoorTableObject',
                     ['WorldObjectSize'] = '1,2,1',
                     ['WorldObjectTier'] = '0',
-                    ['RoomCategory'] = 'Seating',
+                    ['RoomCategory'] = 'Outdoor',
                     ['HomeBaseValue'] = '2.5',
                     ['TypeForRoomLimit'] = 'Table',
                     ['DiminishingReturnMultiplier'] = '0.1',

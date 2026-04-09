@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 08:10:32
+-- Date of export : 07.04.2026 15:25:45
 
 return {
     recipes = {
@@ -10500,7 +10500,7 @@ return {
                     ['CraftTime'] = '72',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '25',
-                    ['RequiredSkill'] = {'LoggingSkill','4'},
+                    ['RequiredSkill'] = {'LoggingSkill','3'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Kiln',
                     ['RequiresStrangeBlueprint'] = 'False',
@@ -22901,7 +22901,7 @@ return {
                             ['German'] = "Fish Oil",
                             ['French'] = "Huile de poisson",
                             },
-                    ['CraftTime'] = '60',
+                    ['CraftTime'] = '38',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '20',
                     ['RequiredSkill'] = {'MillingSkill','6'},
@@ -23265,7 +23265,7 @@ return {
                             ['German'] = "Flaxseed Oil",
                             ['French'] = "Huile de lin",
                             },
-                    ['CraftTime'] = '60',
+                    ['CraftTime'] = '38',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '25',
                     ['RequiredSkill'] = {'MillingSkill','3'},
@@ -39316,7 +39316,7 @@ return {
                             ['German'] = "Öl",
                             ['French'] = "Huile",
                             },
-                    ['CraftTime'] = '60',
+                    ['CraftTime'] = '38',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '15',
                     ['RequiredSkill'] = {'MillingSkill','1'},
@@ -40747,7 +40747,7 @@ return {
                     ['CraftTime'] = '144',
                     ['ExperienceOnCraft'] = '2',
                     ['LaborInCalories'] = '50',
-                    ['RequiredSkill'] = {'LoggingSkill','5'},
+                    ['RequiredSkill'] = {'LoggingSkill','4'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Kiln',
                     ['RequiresStrangeBlueprint'] = 'False',
@@ -42606,7 +42606,7 @@ return {
                             ['German'] = "Processed Cottonseed Oil",
                             ['French'] = "Processed Cottonseed Oil",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '19',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '75',
                     ['RequiredSkill'] = {'MillingSkill','4'},
@@ -42725,7 +42725,7 @@ return {
                             ['German'] = "Processed Fish Oil",
                             ['French'] = "Processed Fish Oil",
                             },
-                    ['CraftTime'] = '30',
+                    ['CraftTime'] = '19',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '75',
                     ['RequiredSkill'] = {'MillingSkill','4'},
@@ -42737,7 +42737,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Raw Fish',
                                             ['ID'] = 'RawFishItem',
-                                            ['Quantity'] = '5',
+                                            ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -43122,7 +43122,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Sunflower Seed',
                                             ['ID'] = 'SunflowerSeedItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -43250,7 +43250,7 @@ return {
                             ['German'] = "Processsed Flaxseed Oil",
                             ['French'] = "Processsed Flaxseed Oil",
                             },
-                    ['CraftTime'] = '60',
+                    ['CraftTime'] = '19',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '100',
                     ['RequiredSkill'] = {'MillingSkill','3'},
@@ -56130,7 +56130,7 @@ return {
                             ['German'] = "Sonnenblumenöl",
                             ['French'] = "Huile de tournesol",
                             },
-                    ['CraftTime'] = '60',
+                    ['CraftTime'] = '38',
                     ['ExperienceOnCraft'] = '0.5',
                     ['LaborInCalories'] = '20',
                     ['RequiredSkill'] = {'MillingSkill','4'},
@@ -56142,7 +56142,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Sunflower Seed',
                                             ['ID'] = 'SunflowerSeedItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     }

@@ -75,7 +75,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     SkillData[SkillName]["IsRoot"] = $"'{skill.IsRoot}'";
                     SkillData[SkillName]["RootSkill"] = $"'{skill.RootSkillTree.StaticSkill}'";
                     SkillData[SkillName]["PlayerDefaultSkill"] = $"'{PlayerDefaultSkills.Contains(skill.Type)}'";
-                    SkillData[SkillName]["TypeID"] = $"'{skill.TypeID}'";
                 }
             }
         // writes to txt file

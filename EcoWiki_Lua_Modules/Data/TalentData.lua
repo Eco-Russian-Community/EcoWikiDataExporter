@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 08:10:32
+-- Date of export : 07.04.2026 15:25:45
 
 return {
     talents = {
@@ -97,10 +97,10 @@ return {
                             ['French'] = "Bright Applications: Glassworking",
                             },
                     ['Description'] =  {
-                            ['English'] = "Faster crafting and +2 yield for Light Bulb recipes.",
-                            ['Russian'] = "Faster crafting and +2 yield for Light Bulb recipes.",
-                            ['German'] = "Faster crafting and +2 yield for Light Bulb recipes.",
-                            ['French'] = "Faster crafting and +2 yield for Light Bulb recipes.",
+                            ['English'] = "Faster crafting and +2 Output for Light Bulb recipes.",
+                            ['Russian'] = "Faster crafting and +2 Output for Light Bulb recipes.",
+                            ['German'] = "Faster crafting and +2 Output for Light Bulb recipes.",
+                            ['French'] = "Faster crafting and +2 Output for Light Bulb recipes.",
                             },
                     ['IconName'] = 'GlassworkingBrightApplicationsTalentGroup',
                     ['SkillID'] = 'GlassworkingSkill',
@@ -208,12 +208,12 @@ return {
                     ['SkillID'] = 'MasonrySkill',
                     ['Level'] = '3',
         },
-        ['Copped Enrichment: Smelting'] = {
+        ['Copper Enrichment: Smelting'] = {
                     ['Name'] =  {
-                            ['English'] = "Copped Enrichment: Smelting",
-                            ['Russian'] = "Copped Enrichment: Smelting",
-                            ['German'] = "Copped Enrichment: Smelting",
-                            ['French'] = "Copped Enrichment: Smelting",
+                            ['English'] = "Copper Enrichment: Smelting",
+                            ['Russian'] = "Copper Enrichment: Smelting",
+                            ['German'] = "Copper Enrichment: Smelting",
+                            ['French'] = "Copper Enrichment: Smelting",
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce Copper Bar recipes resource cost and decreases pollution but increases costs of Gold Bars.",
@@ -221,9 +221,9 @@ return {
                             ['German'] = "Reduce Copper Bar recipes resource cost and decreases pollution but increases costs of Gold Bars.",
                             ['French'] = "Reduce Copper Bar recipes resource cost and decreases pollution but increases costs of Gold Bars.",
                             },
-                    ['IconName'] = 'SmeltingCoppedEnrichmentTalentGroup',
+                    ['IconName'] = 'SmeltingCopperEnrichmentTalentGroup',
                     ['SkillID'] = 'SmeltingSkill',
-                    ['Level'] = '6',
+                    ['Level'] = '3',
         },
         ['Crude Refining: OilDrilling'] = {
                     ['Name'] =  {
@@ -343,6 +343,23 @@ return {
                     ['IconName'] = 'IndustryElectricalEfficiencyTalentGroup',
                     ['SkillID'] = 'IndustrySkill',
                     ['Level'] = '6',
+        },
+        ['Empower: Blacksmith'] = {
+                    ['Name'] =  {
+                            ['English'] = "Empower: Blacksmith",
+                            ['Russian'] = "Empower: Blacksmith",
+                            ['German'] = "Empower: Blacksmith",
+                            ['French'] = "Empower: Blacksmith",
+                            },
+                    ['Description'] =  {
+                            ['English'] = "Axes and Pickaxes has a +1 Damage when used.",
+                            ['Russian'] = "Axes and Pickaxes has a +1 Damage when used.",
+                            ['German'] = "Axes and Pickaxes has a +1 Damage when used.",
+                            ['French'] = "Axes and Pickaxes has a +1 Damage when used.",
+                            },
+                    ['IconName'] = 'BlacksmithEmpowerTalentGroup',
+                    ['SkillID'] = 'BlacksmithSkill',
+                    ['Level'] = '3',
         },
         ['Enriched Soil: Fertilizers'] = {
                     ['Name'] =  {
@@ -514,23 +531,6 @@ return {
                     ['SkillID'] = 'CuttingEdgeCookingSkill',
                     ['Level'] = '3',
         },
-        ['Focused Workflow: Fertilizers'] = {
-                    ['Name'] =  {
-                            ['English'] = "Focused Workflow: Fertilizers",
-                            ['Russian'] = "Сосредоточенная работа: Удобрения",
-                            ['German'] = "Fokussierter Arbeitsablauf: Dünger",
-                            ['French'] = "Traitement ciblé : Engrais",
-                            },
-                    ['Description'] =  {
-                            ['English'] = "Doubles the speed of related tables when alone.",
-                            ['Russian'] = "Удваивает скорость работы на верстаках относящихся к профессии, когда они стоят в одиночку.",
-                            ['German'] = "Verdoppelt die Geschwindigkeit zusammenhängenden Herstellungstischen, wenn sie allein stehen.",
-                            ['French'] = "Double la vitesse des établis associés lorsqu'il est seul.",
-                            },
-                    ['IconName'] = 'FertilizersFocusedWorkflowTalentGroup',
-                    ['SkillID'] = 'FertilizersSkill',
-                    ['Level'] = '3',
-        },
         ['Focused Workflow: Painting'] = {
                     ['Name'] =  {
                             ['English'] = "Focused Workflow: Painting",
@@ -599,23 +599,6 @@ return {
                     ['SkillID'] = 'CuttingEdgeCookingSkill',
                     ['Level'] = '6',
         },
-        ['Frugal Workspace: Fertilizers'] = {
-                    ['Name'] =  {
-                            ['English'] = "Frugal Workspace: Fertilizers",
-                            ['Russian'] = "Скромное рабочее место: Удобрения",
-                            ['German'] = "Sparsamer Arbeitsbereich: Dünger",
-                            ['French'] = "Espace de travail simple : Engrais",
-                            },
-                    ['Description'] =  {
-                            ['English'] = "Lowers the tier requirement of related tables by 0.2.(Only applies to claimed workstations)",
-                            ['Russian'] = "Уменьшает требования к помещению для рабочих столов относящихся к специализации на 0.2. (Применяется только к рабочим столам на участках)",
-                            ['German'] = "Reduziert die Raumstufenanforderung der Tische um 0.2. (Betrifft nur Arbeitstische auf Eigentum)",
-                            ['French'] = "Réduit l'exigence de niveau des tables associées de 0,2 (S'applique uniquement aux tables de fabrication revendiquée)",
-                            },
-                    ['IconName'] = 'FertilizersFrugalWorkspaceTalentGroup',
-                    ['SkillID'] = 'FertilizersSkill',
-                    ['Level'] = '6',
-        },
         ['Frugal Workspace: Painting'] = {
                     ['Name'] =  {
                             ['English'] = "Frugal Workspace: Painting",
@@ -675,10 +658,10 @@ return {
                             ['French'] = "Fruiturist: Gathering",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increases yields of fruits when harvested by +1.",
-                            ['Russian'] = "Increases yields of fruits when harvested by +1.",
-                            ['German'] = "Increases yields of fruits when harvested by +1.",
-                            ['French'] = "Increases yields of fruits when harvested by +1.",
+                            ['English'] = "Increases yields of fruits when gathered by +1.",
+                            ['Russian'] = "Increases yields of fruits when gathered by +1.",
+                            ['German'] = "Increases yields of fruits when gathered by +1.",
+                            ['French'] = "Increases yields of fruits when gathered by +1.",
                             },
                     ['IconName'] = 'GatheringFruituristTalentGroup',
                     ['SkillID'] = 'GatheringSkill',
@@ -699,7 +682,7 @@ return {
                             },
                     ['IconName'] = 'SmeltingFuelEfficiencyTalentGroup',
                     ['SkillID'] = 'SmeltingSkill',
-                    ['Level'] = '3',
+                    ['Level'] = '6',
         },
         ['Fuel Focus: OilDrilling'] = {
                     ['Name'] =  {
@@ -784,7 +767,7 @@ return {
                             },
                     ['IconName'] = 'SmeltingGildedExpertTalentGroup',
                     ['SkillID'] = 'SmeltingSkill',
-                    ['Level'] = '6',
+                    ['Level'] = '3',
         },
         ['Glutton: SelfImprovement'] = {
                     ['Name'] =  {
@@ -811,10 +794,10 @@ return {
                             ['French'] = "Grainiac: Gathering",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increases yields of grains when harvested by +1.",
-                            ['Russian'] = "Increases yields of grains when harvested by +1.",
-                            ['German'] = "Increases yields of grains when harvested by +1.",
-                            ['French'] = "Increases yields of grains when harvested by +1.",
+                            ['English'] = "Increases yields of grains when gathered by +1.",
+                            ['Russian'] = "Increases yields of grains when gathered by +1.",
+                            ['German'] = "Increases yields of grains when gathered by +1.",
+                            ['French'] = "Increases yields of grains when gathered by +1.",
                             },
                     ['IconName'] = 'GatheringGrainiacTalentGroup',
                     ['SkillID'] = 'GatheringSkill',
@@ -956,23 +939,6 @@ return {
                     ['SkillID'] = 'CuttingEdgeCookingSkill',
                     ['Level'] = '6',
         },
-        ['Lavish Workspace: Fertilizers'] = {
-                    ['Name'] =  {
-                            ['English'] = "Lavish Workspace: Fertilizers",
-                            ['Russian'] = "Качественное рабочее место: Удобрения",
-                            ['German'] = "Großzügiger Arbeitsbereich: Dünger",
-                            ['French'] = "Espace de travail somptueux : Engrais",
-                            },
-                    ['Description'] =  {
-                            ['English'] = "Increases the tier requirement of tables by 0.2, but reduces the resources needed by 5 percent.(Only applies to claimed workstations)",
-                            ['Russian'] = "Повышает необходимый уровень помещения для рабочих столов на 0.2, но уменьшает количество необходимых ресурсов для работы на 5%. (Применяется только к рабочим столам на участках)",
-                            ['German'] = "Erhöht die Raumstufenanforderung der Tische um 0.2 und verringert die benötigten Ressourcen um 5%. (Betrifft nur Arbeitstische auf Eigentum)",
-                            ['French'] = "Augmente l'exigence de niveau des tables de 0,2, mais réduit les ressources nécessaires de 5 %. (S'applique uniquement aux tables de fabrication revendiquée)",
-                            },
-                    ['IconName'] = 'FertilizersLavishWorkspaceTalentGroup',
-                    ['SkillID'] = 'FertilizersSkill',
-                    ['Level'] = '6',
-        },
         ['Lavish Workspace: Painting'] = {
                     ['Name'] =  {
                             ['English'] = "Lavish Workspace: Painting",
@@ -1032,10 +998,10 @@ return {
                             ['French'] = "Local Fauna: Butchery",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increase yield of specific recipes.",
-                            ['Russian'] = "Increase yield of specific recipes.",
-                            ['German'] = "Increase yield of specific recipes.",
-                            ['French'] = "Increase yield of specific recipes.",
+                            ['English'] = "Increase Output of specific recipes.",
+                            ['Russian'] = "Increase Output of specific recipes.",
+                            ['German'] = "Increase Output of specific recipes.",
+                            ['French'] = "Increase Output of specific recipes.",
                             },
                     ['IconName'] = 'ButcheryLocalFaunaTalentGroup',
                     ['SkillID'] = 'ButcherySkill',
@@ -1168,10 +1134,10 @@ return {
                             ['French'] = "Mineral Baking: Masonry",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increase yield of Quicklime Recipe.",
-                            ['Russian'] = "Increase yield of Quicklime Recipe.",
-                            ['German'] = "Increase yield of Quicklime Recipe.",
-                            ['French'] = "Increase yield of Quicklime Recipe.",
+                            ['English'] = "Increase Output of Quicklime Recipe.",
+                            ['Russian'] = "Increase Output of Quicklime Recipe.",
+                            ['German'] = "Increase Output of Quicklime Recipe.",
+                            ['French'] = "Increase Output of Quicklime Recipe.",
                             },
                     ['IconName'] = 'MasonryMineralBakingTalentGroup',
                     ['SkillID'] = 'MasonrySkill',
@@ -1219,10 +1185,10 @@ return {
                             ['French'] = "Cueilleur naturel : Récolte",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increases all gathering yield by +1.",
-                            ['Russian'] = "Increases all gathering yield by +1.",
-                            ['German'] = "Increases all gathering yield by +1.",
-                            ['French'] = "Increases all gathering yield by +1.",
+                            ['English'] = "Increases all gathering yield of Crops by +1.",
+                            ['Russian'] = "Increases all gathering yield of Crops by +1.",
+                            ['German'] = "Increases all gathering yield of Crops by +1.",
+                            ['French'] = "Increases all gathering yield of Crops by +1.",
                             },
                     ['IconName'] = 'GatheringNaturalGathererTalentGroup',
                     ['SkillID'] = 'GatheringSkill',
@@ -1347,23 +1313,6 @@ return {
                     ['SkillID'] = 'CuttingEdgeCookingSkill',
                     ['Level'] = '3',
         },
-        ['Parallel Processing: Fertilizers'] = {
-                    ['Name'] =  {
-                            ['English'] = "Parallel Processing: Fertilizers",
-                            ['Russian'] = "Параллельная обработка: Удобрения",
-                            ['German'] = "Parallele Verarbeitung: Dünger",
-                            ['French'] = "Traitement parallèle : Engrais",
-                            },
-                    ['Description'] =  {
-                            ['English'] = "Increases the crafting speed of identical tables when they share a room by 20 percent.",
-                            ['Russian'] = "Если верстаки делят помещение с однотипными, повышает скорость изготовления рецептов на 20 процентов.",
-                            ['German'] = "Beschleunigt die Herstellungsgeschwindigkeit verbundener Herstellungstische um 20 Prozent, wenn sie sich einen Raum mit anderen, gleichartigen Tischen teilen.",
-                            ['French'] = "Augmente de 20 % la vitesse de fabrication des établis identiques lorsqu'elles partagent une pièce.",
-                            },
-                    ['IconName'] = 'FertilizersParallelProcessingTalentGroup',
-                    ['SkillID'] = 'FertilizersSkill',
-                    ['Level'] = '3',
-        },
         ['Parallel Processing: Painting'] = {
                     ['Name'] =  {
                             ['English'] = "Parallel Processing: Painting",
@@ -1430,7 +1379,7 @@ return {
                             },
                     ['IconName'] = 'ShipwrightPlankingTalentGroup',
                     ['SkillID'] = 'ShipwrightSkill',
-                    ['Level'] = '6',
+                    ['Level'] = '3',
         },
         ['Poor Cuts: Butchery'] = {
                     ['Name'] =  {
@@ -1568,6 +1517,23 @@ return {
                     ['SkillID'] = 'ElectronicsSkill',
                     ['Level'] = '6',
         },
+        ['Quality Repairs: Blacksmith'] = {
+                    ['Name'] =  {
+                            ['English'] = "Quality Repairs: Blacksmith",
+                            ['Russian'] = "Quality Repairs: Blacksmith",
+                            ['German'] = "Quality Repairs: Blacksmith",
+                            ['French'] = "Quality Repairs: Blacksmith",
+                            },
+                    ['Description'] =  {
+                            ['English'] = "Reduces integrity loss when repairing.",
+                            ['Russian'] = "Reduces integrity loss when repairing.",
+                            ['German'] = "Reduces integrity loss when repairing.",
+                            ['French'] = "Reduces integrity loss when repairing.",
+                            },
+                    ['IconName'] = 'BlacksmithQualityRepairsTalentGroup',
+                    ['SkillID'] = 'BlacksmithSkill',
+                    ['Level'] = '3',
+        },
         ['Refined Processing: Fertilizers'] = {
                     ['Name'] =  {
                             ['English'] = "Refined Processing: Fertilizers",
@@ -1617,7 +1583,7 @@ return {
                             },
                     ['IconName'] = 'ShipwrightRiveterTalentGroup',
                     ['SkillID'] = 'ShipwrightSkill',
-                    ['Level'] = '6',
+                    ['Level'] = '3',
         },
         ['Roadworks: BasicEngineering'] = {
                     ['Name'] =  {
@@ -1702,7 +1668,7 @@ return {
                             },
                     ['IconName'] = 'ShipwrightRopeMakerTalentGroup',
                     ['SkillID'] = 'ShipwrightSkill',
-                    ['Level'] = '3',
+                    ['Level'] = '6',
         },
         ['Scrapped But Useful: Butchery'] = {
                     ['Name'] =  {
@@ -1804,7 +1770,7 @@ return {
                             },
                     ['IconName'] = 'ShipwrightShipBuilderTalentGroup',
                     ['SkillID'] = 'ShipwrightSkill',
-                    ['Level'] = '3',
+                    ['Level'] = '6',
         },
         ['Side Dishes: CampfireCooking'] = {
                     ['Name'] =  {
@@ -2246,7 +2212,7 @@ return {
                             },
                     ['IconName'] = 'SmeltingUsingBellowsTalentGroup',
                     ['SkillID'] = 'SmeltingSkill',
-                    ['Level'] = '3',
+                    ['Level'] = '6',
         },
         ['Using Scraps: CampfireCooking'] = {
                     ['Name'] =  {
