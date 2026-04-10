@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 15:25:45
+-- Date of export : 10.04.2026 15:54:01
 
 return {
     WorldObjects = {
@@ -2017,7 +2017,7 @@ return {
                     ['WorldObjectName'] = 'CeramicTeaCupObject',
                     ['WorldObjectSize'] = '1,1,1',
                     ['WorldObjectTier'] = '0',
-                    ['RoomCategory'] = 'Decoration',
+                    ['RoomCategory'] = 'Living Room',
                     ['HomeBaseValue'] = '2',
                     ['TypeForRoomLimit'] = 'Decoration',
                     ['DiminishingReturnMultiplier'] = '0.8',
@@ -2034,7 +2034,7 @@ return {
                     ['WorldObjectName'] = 'CeramicTeaPotObject',
                     ['WorldObjectSize'] = '1,1,1',
                     ['WorldObjectTier'] = '0',
-                    ['RoomCategory'] = 'Decoration',
+                    ['RoomCategory'] = 'Living Room',
                     ['HomeBaseValue'] = '2',
                     ['TypeForRoomLimit'] = 'Decoration',
                     ['DiminishingReturnMultiplier'] = '0.3',
@@ -2051,7 +2051,7 @@ return {
                     ['WorldObjectName'] = 'CeramicTrayObject',
                     ['WorldObjectSize'] = '1,1,1',
                     ['WorldObjectTier'] = '0',
-                    ['RoomCategory'] = 'Decoration',
+                    ['RoomCategory'] = 'Living Room',
                     ['HomeBaseValue'] = '2',
                     ['TypeForRoomLimit'] = 'Decoration',
                     ['DiminishingReturnMultiplier'] = '0.3',
@@ -6563,7 +6563,7 @@ return {
                     ['WorldObjectSize'] = '1,2,1',
                     ['WorldObjectTier'] = '0',
                     ['RoomCategory'] = 'Decoration',
-                    ['HomeBaseValue'] = '2',
+                    ['HomeBaseValue'] = '3',
                     ['TypeForRoomLimit'] = 'Shelves',
                     ['DiminishingReturnMultiplier'] = '0.5',
         },

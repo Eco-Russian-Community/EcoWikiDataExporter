@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.0
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 15:25:45
+-- Date of export : 10.04.2026 15:54:01
 
 return {
     recipes = {
@@ -6944,7 +6944,7 @@ return {
                     ['CraftTime'] = '1500',
                     ['ExperienceOnCraft'] = '20',
                     ['LaborInCalories'] = '600',
-                    ['RequiredSkill'] = {'MechanicsSkill','5'},
+                    ['RequiredSkill'] = {'MechanicsSkill','3'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',

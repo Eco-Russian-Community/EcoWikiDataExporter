@@ -1,13 +1,13 @@
--- Eco Version : 0.12.0.7
--- EWDE Version : 0.7.0.0
--- Date of export : 01.03.2026 20:37:49
+-- Eco Version : 0.13.0.0
+-- EWDE Version : 0.7.1.0
+-- Date of export : 10.04.2026 15:53:55
 
 return {
     game = {
         ['eco'] = {
-                    ['Version'] = '0.12.0.7 beta release-979',
-                    ['VersionNumber'] = '0.12.0.7',
-                    ['FullInfo'] = '0.12.0.7 beta release-979 2026.02.10 17:35',
+                    ['Version'] = '0.13.0.0 beta release-998',
+                    ['VersionNumber'] = '0.13.0.0',
+                    ['FullInfo'] = '0.13.0.0 beta release-998 2026.04.08 11:14',
         },
     },
 }
