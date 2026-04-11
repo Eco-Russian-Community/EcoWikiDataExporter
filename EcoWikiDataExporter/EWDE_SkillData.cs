@@ -54,9 +54,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "SkillID", "nil" },
                 { "MaxLevel", "nil" },
                 { "Tier", "nil" },
+                { "SpecialtyCost", "nil" },
                 { "IsRoot", "nil" },
-                { "RootSkill", "nil" },
-                { "PlayerDefaultSkill", "nil" }
+                { "RootSkill", "False" },
+                { "PlayerDefaultSkill", "False" }
             };
 
             IEnumerable<Type> PlayerDefaultSkills = PlayerDefaults.GetDefaultSkills();
@@ -72,6 +73,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
                     SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";
                     SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
+                    SkillData[SkillName]["SpecialtyCost"] = $"'{skill.SpecialtyCost}'";
                     SkillData[SkillName]["IsRoot"] = $"'{skill.IsRoot}'";
                     SkillData[SkillName]["RootSkill"] = $"'{skill.RootSkillTree.StaticSkill}'";
                     SkillData[SkillName]["PlayerDefaultSkill"] = $"'{PlayerDefaultSkills.Contains(skill.Type)}'";
