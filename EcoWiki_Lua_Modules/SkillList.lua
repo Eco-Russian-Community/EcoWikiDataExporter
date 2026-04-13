@@ -2,6 +2,7 @@ local p = {}
 
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
+local Lang = Utils.WikiLang
 
 -- Main entry point for the Module
 function p.main()
@@ -10,7 +11,6 @@ function p.main()
     local skillData = mw.loadData('Module:SkillData')
     local skillList = skillData.skills
 	local text = '<div class="col-lg-12"><Center><h2 class="title">' .. Utils.Translate("Skills") .. '</h2></Center></div>';
-	local Lang = Utils.getLanguageName()
 	
 	for Pname,Pdata in pairs(skillList) do
 

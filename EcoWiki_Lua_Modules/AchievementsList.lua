@@ -1,9 +1,10 @@
 local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
+local Lang = Utils.WikiLang
 
 function p.main()
-	local Lang = Utils.getLanguageName()
+
 	local wiki = ''
 	
 	-- import the required modules

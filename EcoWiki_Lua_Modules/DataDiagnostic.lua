@@ -1,7 +1,7 @@
 local p = {}
 
 local Utils = require('Module:Utils')
-local Lang = Utils.getLanguageName()
+local Lang = Utils.WikiLang
 
 function p.SubIndexPagesList()
 		local WikiText =''

@@ -2,7 +2,7 @@ local p = {}
 
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
-local Lang = Utils.getLanguageName()
+local Lang = Utils.WikiLang
 
 -- Main entry point for the Module
 function p.main()

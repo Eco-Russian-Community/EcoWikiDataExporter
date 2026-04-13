@@ -2,7 +2,7 @@ ocal p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 
-local Lang = Utils.getLanguageName()
+local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]

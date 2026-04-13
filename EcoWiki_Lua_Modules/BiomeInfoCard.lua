@@ -1,7 +1,7 @@
-local Utils = require('Module:Utils')
-local Lang = Utils.getLanguageName()
-
 local p = {}
+local Utils = require('Module:Utils')
+local Lang = Utils.WikiLang
+
 
 function p.main(frame)
 	local PageName = frame.args[1]

@@ -1,11 +1,10 @@
+local p = {}
+
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
+local Lang = Utils.WikiLang
+
 local RecipesData = mw.loadData('Module:RecipeData')
-local ItemsData = mw.loadData('Module:ItemData')
-local TagsData = mw.loadData('Module:TagData')
-local SkillsData = mw.loadData('Module:SkillData')
-local Lang = Utils.getLanguageName()
-local p = {}
 
 function p.ItemCraft(ItemName)
     local Recipes = ""
@@ -62,6 +61,8 @@ function p.CraftTable(RecipeList)
     if (RecipeList ~= "") then
         CraftTable = CraftTable .. '<table class="table table-striped table-bordered sortable"><tr class="thead-dark">';
         CraftTable = CraftTable .. '<th>' .. Utils.Translate("Crafting Table") .. '</th><th class="unsortable">' .. Utils.Translate("Products") .. '</th><th class="unsortable">' .. Utils.Translate("Ingredients") .. '</th><th data-sort-type="mm:ss">' .. Utils.Translate("Craft time") .. '</th><th>' .. Utils.Translate("Labor") .. '</th><th>' .. Utils.Translate("Skill Requirements") .. '</th><th>' .. Utils.Translate("Experience") .. '</th></tr>';
+        local TagString = Utils.Translate("{0} Tag");
+        local ItemsData = mw.loadData('Module:ItemData')
         
         for RecipeName in string.gmatch(RecipeList, "([^,]+)") do
             local CraftTableRow = "";
@@ -78,7 +79,7 @@ function p.CraftTable(RecipeList)
             CraftTableRow = CraftTableRow .. "<td>" .. RecipeProducts .. "</td>";
 
             local RecipeIngredients = "";
-            local TagString = Utils.Translate("{0} Tag");
+            local TagsData = mw.loadData('Module:TagData');
             for IngredientName,IngredientData in pairs(RecipeData.Ingredients) do
             	if IngredientData.IsStatic == 'True' then ItemBorder = 'yellow' else ItemBorder = 'green' end
             	if (IngredientData['Type'] == "TAG") then local Tag = TagsData.tags[IngredientName]; local TagLink = Utils.VSTranslate(TagString,Tag.Name[Lang]); RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Tag.Name[Lang], id = Tag.ID, size = 48, style = 5, link = TagLink, border = ItemBorder, count = IngredientData.Quantity } .. '</span>'; 
@@ -115,6 +116,7 @@ end
 
 function p.RecipeRequiredSkill(SkillData)
 	local SkillCell = ""
+    local SkillsData = mw.loadData('Module:SkillData')
 	local SkillID = SkillData[1]
 	local SkillLevel = SkillData[2]
 	if ((SkillID == "") or (SkillID == "nil")) then SkillName = 'None' else SkillName = Utils.SkillSearchByID(SkillID) end
