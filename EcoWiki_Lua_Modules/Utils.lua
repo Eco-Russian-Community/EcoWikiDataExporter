@@ -208,6 +208,15 @@ function p.FoodsShelfLife(ShelfLife)
 	return WikiText
 end
 
+function p.Stars(StarCost)
+	local WikiText = ""
+	
+	
+	
+	return WikiText
+end
+
+
 --- Global Language Wiki
 p.WikiLang = p.getLanguageName()
 
