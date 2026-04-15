@@ -26,7 +26,8 @@ function p.main()
 		text = text .. '<div class="card"> <div class="card-body">';
 
 		for Sname,Sdata in pairs(skillList) do
-			if Sdata.IsRoot == 'False' and Sdata.RootSkill == Pname then 
+			if Sdata.IsRoot == 'False' and Sdata.RootSkill == Pname then
+				local SpecialtyName = ''
 				if (Sdata.Name[Lang] == "") then SpecialtyName = Sdata.Name.English else SpecialtyName = Sdata.Name[Lang] end
 				text = text .. IconUtils.main{id = Sdata.SkillID , size = 32, style = 1, link = SpecialtyName} .. '  ';
 			end

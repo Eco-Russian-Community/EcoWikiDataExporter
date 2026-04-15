@@ -11,6 +11,7 @@ function p.main(frame)
 	local SkillData = mw.loadData( "Module:SkillData" )
     local Skill = SkillData.skills[SkillName]
     local RootSkill = SkillData.skills[Skill.RootSkill]
+	local SkillTier = Skill.Tier
     local ItemData = mw.loadData( "Module:ItemData" )
     local SkillBook = Skill.Name.English .. ' Skill Book'
     local SkillBook = ItemData.items[SkillBook]
@@ -23,19 +24,23 @@ function p.main(frame)
 	WikiText =  WikiText .. IconUtils.main{name = Skill.Name[Lang], id = Skill.SkillID , size = 32, style = 1} .. ' '
 	if (Skill.IsRoot == 'True') then WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Profession]].<br>'   else WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Specialty]] related to the profession of [[' .. RootSkill.Name[Lang] ..']].<br>' end
 	WikiText =  WikiText .. Skill.Description[Lang] .. '<br>'
+	local SpecialtiesText = Utils.Translate('Specialties')
 	
 	if (Skill.IsRoot == 'True') then
-		WikiText =  WikiText .. '<h3>Specialties</h3>'
+		WikiText =  WikiText .. '<h3>' .. SpecialtiesText .. '</h3>'
 		WikiText =  WikiText .. 'The '.. Skill.Name[Lang] .. ' Profession includes the following Specialties:<br>'
 		WikiText =  WikiText .. '<div class="container-fluid" id="icon-grid"><div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">'
 		for Sname,Sdata in pairs(SkillData.skills) do
-			if Sdata.IsRoot == 'False' and Sdata.RootSkill == SkillName then 
+			if Sdata.IsRoot == 'False' and Sdata.RootSkill == SkillName then
+				local SpecialtyName = ''
+				local SpecialtyDescription = ''
+				local Stars = Utils.Stars(Sdata.Tier)
+				local IconName = Sdata.SkillID
 				if (Sdata.Name[Lang] == "") then SpecialtyName = Sdata.Name.English else SpecialtyName = Sdata.Name[Lang] end
 				if (Sdata.Description[Lang] == "") then SpecialtyDescription = Sdata.Description.English else SpecialtyDescription = Sdata.Description[Lang] end
 				WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
-				if (Utils.checkImage(Sdata.SkillID .. '_Icon.png') == "Y") then IconName = Sdata.SkillID else IconName = 'NoItem' end
 				WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link='.. SpecialtyName .. '|class=IconGrid]]'
-				WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">[[' .. SpecialtyName .. ']]</h5><p>' .. SpecialtyDescription .. '</p></div>'
+				WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">[[' .. SpecialtyName .. ']]' .. Stars.. '</h5><p>' .. SpecialtyDescription .. '</p></div>'
 				WikiText =  WikiText .. '</div>'
 			end
 		end

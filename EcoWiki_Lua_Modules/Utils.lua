@@ -210,10 +210,11 @@ end
 
 function p.Stars(StarCost)
 	local WikiText = ""
-	
+	local StarCost = tonumber(StarCost)
+
 	if StarCost > 0 then 
 			for i = 1, StarCost do
-				WikiText = WikiText .. '<i class="fa-solid fa-star"></i> '
+				WikiText = WikiText .. ' <i class="fa fa-star"></i>'
 			end
 	end
 	
