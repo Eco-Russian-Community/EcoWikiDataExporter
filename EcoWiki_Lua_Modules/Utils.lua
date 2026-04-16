@@ -221,6 +221,12 @@ function p.Stars(StarCost)
 	return WikiText
 end
 
+function p.Mbox(Icon, Text, TextColor, BorderColor)
+	local WikiText = ""
+	WikiText = '<center><div class="alert alert-' .. TextColor .. '" style="border-style: solid; border-width: 5px; border-color: ' .. BorderColor .. ';" role="alert"><i class="fa fa-2x fa-' .. Icon .. '"></i>'
+	WikiText = WikiText .. Text .. '</div></center>' 
+	return WikiText
+end
 
 --- Global Language Wiki
 p.WikiLang = p.getLanguageName()
