@@ -7,14 +7,15 @@ local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
+	local SkillName = ''
 	if (Lang == 'English') then SkillName = PageName else SkillName = Utils.SkillSearch(PageName) end
 	local SkillData = mw.loadData( "Module:SkillData" )
     local Skill = SkillData.skills[SkillName]
     local RootSkill = SkillData.skills[Skill.RootSkill]
 	local SkillTier = Skill.Tier
     local ItemData = mw.loadData( "Module:ItemData" )
-    local SkillBook = Skill.Name.English .. ' Skill Book'
-    local SkillBook = ItemData.items[SkillBook]
+    local SkillBookName  = Skill.Name.English .. ' Skill Book'
+    local SkillBook = ItemData.items[SkillBookName]
     local SkillScroll = Skill.Name.English .. ' Skill Scroll'
     local SkillScroll = ItemData.items[SkillScroll]
     local ClaimPaper = ItemData.items['Claim Paper Item']
