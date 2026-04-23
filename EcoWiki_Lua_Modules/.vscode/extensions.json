@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "sumneko.lua",
+    "keyring.Lua",
+	  "jeblad-3.WMFsnippets",
+	  "jakeboone02.mediawiki",
+    "RoweWilsonFrederiskHolme.wikitext",
+	  "IgorSbitnev.error-gutters"
+  ]
+}
