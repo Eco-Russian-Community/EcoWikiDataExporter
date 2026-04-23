@@ -180,9 +180,9 @@ function p.ItemTags(TagsList)
 	local TagData = mw.loadData( "Module:TagData" )
 	local IconUtils = require('Module:IconUtils')
 		for Count,Tname in pairs(TagsList) do
-			TagName = TagData.tags[Tname];
-			TagNameLoc = TagName.Name[Lang];
-			TagLink = p.VarSub(TagString,TagNameLoc);
+			local TagName = TagData.tags[Tname];
+			local TagNameLoc = TagName.Name[Lang];
+			local TagLink = p.VarSub(TagString,TagNameLoc);
 			if (TagName.IsVisibleInTooltip == "True") then WikiTagText = IconUtils.main{ name = TagNameLoc, id = TagName.ID, size = 128, style = 4, link = TagLink } end
 		end
 	if (WikiTagText ~= "") then WikiText = '<div class="row">' .. WikiTagText .. '</div>' end
