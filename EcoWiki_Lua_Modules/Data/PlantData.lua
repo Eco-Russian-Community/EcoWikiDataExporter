@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.0
--- EWDE Version : 0.7.0.0
--- Date of export : 30.03.2026 19:47:17
+-- Eco Version : 0.13.0.2
+-- EWDE Version : 0.7.1.0
+-- Date of export : 16.04.2026 15:06:31
 
 return {
     plants = {

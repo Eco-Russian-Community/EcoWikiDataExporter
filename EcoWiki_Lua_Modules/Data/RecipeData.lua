@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.0
+-- Eco Version : 0.13.0.2
 -- EWDE Version : 0.7.1.0
--- Date of export : 10.04.2026 15:54:01
+-- Date of export : 16.04.2026 15:06:37
 
 return {
     recipes = {
@@ -20088,6 +20088,13 @@ return {
                     ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Iron Gear'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Iron Gear',
@@ -20106,7 +20113,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Steel Bar',
                                             ['ID'] = 'SteelBarItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -20401,13 +20408,6 @@ return {
                                             ['Name'] = 'Corrugated Steel',
                                             ['ID'] = 'CorrugatedSteelItem',
                                             ['Quantity'] = '8',
-                                            ['IsStatic'] = 'False',
-                                    },
-                                    ['Plastic'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Plastic',
-                                            ['ID'] = 'PlasticItem',
-                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Rivet'] = {
@@ -39359,6 +39359,13 @@ return {
                     ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Boiler'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Boiler',
@@ -39377,7 +39384,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Iron Pipe',
                                             ['ID'] = 'IronPipeItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Reinforced Concrete'] = {
@@ -43335,6 +43342,13 @@ return {
                     ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '2',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Gearbox'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Gearbox',
@@ -43346,7 +43360,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Piston',
                                             ['ID'] = 'PistonItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Reinforced Concrete'] = {
@@ -52460,7 +52474,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Shorn Wool',
                                             ['ID'] = 'ShornWoolItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -57769,18 +57783,25 @@ return {
                     ['CraftingTables'] = 'Machinist Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Copper Wiring'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Copper Wiring',
                                             ['ID'] = 'CopperWiringItem',
-                                            ['Quantity'] = '14',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Iron Bar'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Iron Bar',
                                             ['ID'] = 'IronBarItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Lumber'] = {
@@ -58938,6 +58959,13 @@ return {
                     ['CraftingTables'] = 'Assembly Line',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Basic Circuit'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Basic Circuit',
+                                            ['ID'] = 'BasicCircuitItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Cement'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Cement',
@@ -58963,7 +58991,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Steel Bar',
                                             ['ID'] = 'SteelBarItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -62204,7 +62232,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Shorn Wool',
                                             ['ID'] = 'ShornWoolItem',
-                                            ['Quantity'] = '3',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'False',
                                     },
                                     }

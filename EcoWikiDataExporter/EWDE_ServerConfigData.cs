@@ -20,6 +20,7 @@ using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation;
 using Eco.Simulation.Settings;
+using Eco.Simulation.WorldLayers.Layers;
 using Eco.WorldGenerator;
 using System;
 using System.Collections.Generic;
@@ -78,12 +79,14 @@ namespace Eco.Mods.EcoWikiDataExporter
             foreach (var catcher in SpeciesCatch.CatchersData)
             {
                 var CatcherName = catcher.CatcherType.Name;
+                string Species = "";
 
                 foreach (var Specieslayer in catcher.TargetLayers)
                 {
-
+                    if (Species == "") { Species = "'" + Specieslayer.AddSpacesBetweenCapitals() + "'"; } else { Species = Species + ", '" + Specieslayer.AddSpacesBetweenCapitals() + "'"; }
                 }
                 
+                ServerConfigData["SpeciesLayeredCatch"][CatcherName] = "{ " + $"{Species}" + "}";
             }
 
 

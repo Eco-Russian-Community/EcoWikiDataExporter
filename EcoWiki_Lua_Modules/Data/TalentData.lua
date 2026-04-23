@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.0
+-- Eco Version : 0.13.0.2
 -- EWDE Version : 0.7.1.0
--- Date of export : 07.04.2026 15:25:45
+-- Date of export : 16.04.2026 15:06:38
 
 return {
     talents = {
@@ -97,10 +97,10 @@ return {
                             ['French'] = "Bright Applications: Glassworking",
                             },
                     ['Description'] =  {
-                            ['English'] = "Faster crafting and +2 Output for Light Bulb recipes.",
-                            ['Russian'] = "Faster crafting and +2 Output for Light Bulb recipes.",
-                            ['German'] = "Faster crafting and +2 Output for Light Bulb recipes.",
-                            ['French'] = "Faster crafting and +2 Output for Light Bulb recipes.",
+                            ['English'] = "Faster crafting for Glassworking recipes and increased Output for Light Bulb recipes.",
+                            ['Russian'] = "Faster crafting for Glassworking recipes and increased Output for Light Bulb recipes.",
+                            ['German'] = "Faster crafting for Glassworking recipes and increased Output for Light Bulb recipes.",
+                            ['French'] = "Faster crafting for Glassworking recipes and increased Output for Light Bulb recipes.",
                             },
                     ['IconName'] = 'GlassworkingBrightApplicationsTalentGroup',
                     ['SkillID'] = 'GlassworkingSkill',
@@ -206,7 +206,7 @@ return {
                             },
                     ['IconName'] = 'MasonryConcreteApplicationsTalentGroup',
                     ['SkillID'] = 'MasonrySkill',
-                    ['Level'] = '3',
+                    ['Level'] = '6',
         },
         ['Copper Enrichment: Smelting'] = {
                     ['Name'] =  {
@@ -1015,10 +1015,10 @@ return {
                             ['French'] = "Chance du bûcheron : Abattage",
                             },
                     ['Description'] =  {
-                            ['English'] = "Every hit has a chance of destroying tree stumps and splitting trunks immediately.",
-                            ['Russian'] = "Каждый удар имеет шанс сразу разрубить дерево на поленья и срубить пень.",
-                            ['German'] = "Bei jedem Treffer besteht die Chance, den Baumstamm sofort zu zerstören und direkt zu zerteilen.",
-                            ['French'] = "Chaque coup a une chance de détruire les souches d'arbres et de fendre les troncs immédiatement.",
+                            ['English'] = "Felling a tree has a chance of destroying tree stumps and splitting trunks immediately.",
+                            ['Russian'] = "Felling a tree has a chance of destroying tree stumps and splitting trunks immediately.",
+                            ['German'] = "Felling a tree has a chance of destroying tree stumps and splitting trunks immediately.",
+                            ['French'] = "Felling a tree has a chance of destroying tree stumps and splitting trunks immediately.",
                             },
                     ['IconName'] = 'LoggingLoggersLuckTalentGroup',
                     ['SkillID'] = 'LoggingSkill',
@@ -1719,7 +1719,7 @@ return {
                             },
                     ['IconName'] = 'MasonrySetInStoneTalentGroup',
                     ['SkillID'] = 'MasonrySkill',
-                    ['Level'] = '6',
+                    ['Level'] = '3',
         },
         ['Shaping Up: Mechanics'] = {
                     ['Name'] =  {

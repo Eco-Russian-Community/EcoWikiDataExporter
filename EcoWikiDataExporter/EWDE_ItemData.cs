@@ -404,11 +404,23 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 									}
 
+                                    if (worldObject.HasComponent<AnimalTrapComponent>())
+                                    {
+                                        //Log.WriteLineLoc($"WO Component: FuelSupplyComponent");
+                                        var AnimalTrapComponent = worldObject.GetComponent<AnimalTrapComponent>();
+
+
+
+                                    }
+
+
+                                    
 
 
 
 
-								}
+
+                                }
 								else
 								{
 									Log.WriteLineLoc($"{worldObject.Name} Not Init");

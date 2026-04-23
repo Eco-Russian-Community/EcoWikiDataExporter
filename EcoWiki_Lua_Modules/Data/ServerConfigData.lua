@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.0
--- EWDE Version : 0.7.0.0
--- Date of export : 30.03.2026 19:47:25
+-- Eco Version : 0.13.0.2
+-- EWDE Version : 0.7.1.0
+-- Date of export : 16.04.2026 15:06:38
 
 return {
     config = {
@@ -12,6 +12,9 @@ return {
                     ['ToolRepairPenalty'] = '0,2',
                     ['ShowOilLayer'] = 'False',
                     ['SpecialtyExperiencePerLevelSquared'] = '25',
+                    ['ExperienceGrowthPercentage'] = '1,05',
+                    ['ExperienceIncreaseAdditive'] = '5',
+                    ['StarsRequiredPerStage'] = '8',
         },
         ['EcoSim'] = {
                     ['PPMPerTon'] = '1,2860082',
@@ -32,6 +35,12 @@ return {
                     ['MinTreeSpawnDistance'] = '4',
                     ['BaseSkillGainRate'] = '12',
                     ['TimeOfDayScale'] = '48',
+        },
+        ['SpeciesLayeredCatch'] = {
+                    ['BoatCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},
+                    ['FishingPoleCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},
+                    ['CrabCatcher'] = { 'Crab'},
+                    ['FishCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},
         },
         ['WorldGenerator'] = {
                     ['WaterLevel'] = '60',
