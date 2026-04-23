@@ -1,0 +1,8 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {"files.encoding": "utf8", "Lua.diagnostics.globals": ["mw", "frame"]}
+}
