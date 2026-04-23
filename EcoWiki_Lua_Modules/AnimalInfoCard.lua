@@ -1,4 +1,4 @@
-ocal p = {}
+local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 
