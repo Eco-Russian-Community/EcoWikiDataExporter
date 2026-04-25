@@ -395,3 +395,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/EcoWiki_Lua_Modules/Test
