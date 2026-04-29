@@ -55,12 +55,13 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             foreach (AchievementDefinition achievement in AchievementManager.Obj.NameToAchievement.Values)
             {
-                string achievementName = achievement.DisplayName.NotTranslated;
+                string achievementName = achievement.Name;
 
                 if (!AchievementData.ContainsKey(achievementName))
                 {
+                    //string Achievement = 
                     AchievementData.Add(achievementName, new Dictionary<string, string>(achievementDetails));
-                    AchievementData[achievementName]["Name"] = WriteDictionaryAsSubObject(Localization(achievementName), 1);
+                    AchievementData[achievementName]["Name"] = WriteDictionaryAsSubObject(Localization(achievement.DisplayName.NotTranslated), 1);
                     AchievementData[achievementName]["Description"] = WriteDictionaryAsSubObject(Localization(achievement.Description.NotTranslated), 1);
                     AchievementData[achievementName]["IconName"] = $"'{achievement.IconName}'";
                 }

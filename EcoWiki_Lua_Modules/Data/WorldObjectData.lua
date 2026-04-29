@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.2
 -- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:37
+-- Date of export : 25.04.2026 17:15:00
 
 return {
     WorldObjects = {
@@ -3247,6 +3247,7 @@ return {
                     ['PublicStorageComponent'] = 'True',
                     ['StorageStacks'] = 'Eco.Core.Utils.ControllerList`1[Eco.Gameplay.Items.ItemStack]',
                     ['ShelfLifeMultiplier'] = '1',
+                    ['AnimalTrapComponent'] = 'True',
         },
         ['Crane'] = {
                     ['CraftingComponent'] = 'False',
@@ -4025,6 +4026,7 @@ return {
                     ['PublicStorageComponent'] = 'True',
                     ['StorageStacks'] = 'Eco.Core.Utils.ControllerList`1[Eco.Gameplay.Items.ItemStack]',
                     ['ShelfLifeMultiplier'] = '1',
+                    ['AnimalTrapComponent'] = 'True',
         },
         ['Fishery'] = {
                     ['CraftingComponent'] = 'True',

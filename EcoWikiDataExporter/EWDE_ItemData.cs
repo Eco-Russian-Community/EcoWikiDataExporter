@@ -406,10 +406,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                                     if (worldObject.HasComponent<AnimalTrapComponent>())
                                     {
-                                        //Log.WriteLineLoc($"WO Component: FuelSupplyComponent");
+                                        WorldObjectData[ItemName]["AnimalTrapComponent"] = "'True'";
                                         var AnimalTrapComponent = worldObject.GetComponent<AnimalTrapComponent>();
 
-
+                                        Log.WriteLineLoc($"WO AnimalTrapComponent: {AnimalTrapComponent.TargetLayers}");
+                                        
 
                                     }
 

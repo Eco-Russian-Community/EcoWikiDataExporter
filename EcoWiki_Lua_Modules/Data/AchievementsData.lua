@@ -1,10 +1,10 @@
 -- Eco Version : 0.13.0.2
 -- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Date of export : 25.04.2026 17:15:00
 
 return {
     achievements = {
-        ['A Legendary Feast'] = {
+        ['ALegendaryFeast'] = {
                     ['Name'] =  {
                             ['English'] = "A Legendary Feast",
                             ['Russian'] = "A Legendary Feast",
@@ -19,7 +19,7 @@ return {
                             ['French'] = "Attend a dinner party that generates more than  500 culture.",
                             },
         },
-        ['Appetizer Apprentice'] = {
+        ['AppetizerApprentice'] = {
                     ['Name'] =  {
                             ['English'] = "Appetizer Apprentice",
                             ['Russian'] = "Appetizer Apprentice",
@@ -49,7 +49,7 @@ return {
                             ['French'] = "Créez 50 cultures.",
                             },
         },
-        ['Ascendent Civilization'] = {
+        ['AscendentCivilization'] = {
                     ['Name'] =  {
                             ['English'] = "Ascendent Civilization",
                             ['Russian'] = "Возрождение Цивилизации",
@@ -64,7 +64,7 @@ return {
                             ['French'] = "Créer 100 000 de culture au total dans le monde.",
                             },
         },
-        ['Best Laid Plans'] = {
+        ['BestLaidPlans'] = {
                     ['Name'] =  {
                             ['English'] = "Best Laid Plans",
                             ['Russian'] = "Best Laid Plans",
@@ -79,7 +79,7 @@ return {
                             ['French'] = "Le météore a détruit le Monde.",
                             },
         },
-        ['Big Game'] = {
+        ['BigGame'] = {
                     ['Name'] =  {
                             ['English'] = "Big Game",
                             ['Russian'] = "Big Game",
@@ -94,7 +94,7 @@ return {
                             ['French'] = "Successfully hunt a bison.",
                             },
         },
-        ['Blech!'] = {
+        ['Blech'] = {
                     ['Name'] =  {
                             ['English'] = "Blech!",
                             ['Russian'] = "Хлорка!",
@@ -109,7 +109,7 @@ return {
                             ['French'] = "Découvrez la nourriture que vous détestez la plus.",
                             },
         },
-        ['Born Leader'] = {
+        ['BornLeader'] = {
                     ['Name'] =  {
                             ['English'] = "Born Leader",
                             ['Russian'] = "Прирожденный лидер",
@@ -124,7 +124,7 @@ return {
                             ['French'] = "Être élu à un poste gouvernemental.",
                             },
         },
-        ['Breaking Bread'] = {
+        ['BreakingBread'] = {
                     ['Name'] =  {
                             ['English'] = "Breaking Bread",
                             ['Russian'] = "Breaking Bread",
@@ -139,7 +139,7 @@ return {
                             ['French'] = "Host a dinner party.",
                             },
         },
-        ['By the People, For the People'] = {
+        ['BythePeopleForthePeople'] = {
                     ['Name'] =  {
                             ['English'] = "By the People, For the People",
                             ['Russian'] = "Народный, для Людей",
@@ -154,7 +154,7 @@ return {
                             ['French'] = "Constitution adoptée.",
                             },
         },
-        ['Chip Off the Old Block'] = {
+        ['ChipOfftheOldBlock'] = {
                     ['Name'] =  {
                             ['English'] = "Chip Off the Old Block",
                             ['Russian'] = "Chip Off the Old Block",
@@ -169,7 +169,7 @@ return {
                             ['French'] = "Create 1 masonry item.",
                             },
         },
-        ['Chop Chop'] = {
+        ['ChopChop'] = {
                     ['Name'] =  {
                             ['English'] = "Chop Chop",
                             ['Russian'] = "Удар за ударом",
@@ -184,7 +184,7 @@ return {
                             ['French'] = "Premier arbre abattu.",
                             },
         },
-        ['Chop Chop x100'] = {
+        ['ChopChopx100'] = {
                     ['Name'] =  {
                             ['English'] = "Chop Chop x100",
                             ['Russian'] = "Удар за ударом х100",
@@ -199,7 +199,7 @@ return {
                             ['French'] = "Abattre 100 arbres.",
                             },
         },
-        ['Confection Perfection'] = {
+        ['ConfectionPerfection'] = {
                     ['Name'] =  {
                             ['English'] = "Confection Perfection",
                             ['Russian'] = "Confection Perfection",
@@ -214,7 +214,7 @@ return {
                             ['French'] = "Create 20 types of baked goods.",
                             },
         },
-        ['Construction Yard'] = {
+        ['ConstructionYard'] = {
                     ['Name'] =  {
                             ['English'] = "Construction Yard",
                             ['Russian'] = "Строительная площадка",
@@ -229,7 +229,7 @@ return {
                             ['French'] = "Creusez 1 000 blocs avec des véhicules motorisés sur le même serveur.",
                             },
         },
-        ['Conversion Fees'] = {
+        ['ConversionFees'] = {
                     ['Name'] =  {
                             ['English'] = "Conversion Fees",
                             ['Russian'] = "Операционные потери",
@@ -244,7 +244,7 @@ return {
                             ['French'] = "Demandez à un autre joueur d'utiliser votre bureau de change.",
                             },
         },
-        ['Crafty Captain'] = {
+        ['CraftyCaptain'] = {
                     ['Name'] =  {
                             ['English'] = "Crafty Captain",
                             ['Russian'] = "Crafty Captain",
@@ -259,7 +259,7 @@ return {
                             ['French'] = "Craft 3 types of boats.",
                             },
         },
-        ['Craving Satisfied'] = {
+        ['CravingSatisfied'] = {
                     ['Name'] =  {
                             ['English'] = "Craving Satisfied",
                             ['Russian'] = "Желание удовлетворено",
@@ -274,7 +274,7 @@ return {
                             ['French'] = "Mange la nourriture dont vous rêviez.",
                             },
         },
-        ['Culinary Faux Pas'] = {
+        ['CulinaryFauxPas'] = {
                     ['Name'] =  {
                             ['English'] = "Culinary Faux Pas",
                             ['Russian'] = "Culinary Faux Pas",
@@ -304,7 +304,7 @@ return {
                             ['French'] = "Créer 10 cultures.",
                             },
         },
-        ['Cultural Awakening'] = {
+        ['CulturalAwakening'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Awakening",
                             ['Russian'] = "Эпоха Возрождения",
@@ -319,7 +319,7 @@ return {
                             ['French'] = "Crée 250 cultures totales en tant que monde.",
                             },
         },
-        ['Cultural Cornucopia'] = {
+        ['CulturalCornucopia'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Cornucopia",
                             ['Russian'] = "Культурный рог изобилия",
@@ -334,7 +334,7 @@ return {
                             ['French'] = "Créer 5 000 de culture au total dans le monde.",
                             },
         },
-        ['Cultural Nexus'] = {
+        ['CulturalNexus'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Nexus",
                             ['Russian'] = "Центр культуры",
@@ -349,7 +349,7 @@ return {
                             ['French'] = "Créer 20 000 de culture au total dans le monde.",
                             },
         },
-        ['Cultural Phenomenon'] = {
+        ['CulturalPhenomenon'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Phenomenon",
                             ['Russian'] = "Культурный Феномен",
@@ -364,7 +364,7 @@ return {
                             ['French'] = "Devient l'artiste le mieux classé lorsqu'au moins 10 citoyens ont produit une culture.",
                             },
         },
-        ['Cultural Trailblazers '] = {
+        ['CulturalTrailblazers'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Trailblazers ",
                             ['Russian'] = "Первопроходцы в области Культуры ",
@@ -379,7 +379,7 @@ return {
                             ['French'] = "Crée 100 cultures totales en tant que monde.",
                             },
         },
-        ['Cultural Vanguard'] = {
+        ['CulturalVanguard'] = {
                     ['Name'] =  {
                             ['English'] = "Cultural Vanguard",
                             ['Russian'] = "Авангард в области культуры",
@@ -394,7 +394,7 @@ return {
                             ['French'] = "Crée 1 000 cultures totales en tant que monde.",
                             },
         },
-        ['Cultured Gathering'] = {
+        ['CulturedGathering'] = {
                     ['Name'] =  {
                             ['English'] = "Cultured Gathering",
                             ['Russian'] = "Cultured Gathering",
@@ -409,7 +409,7 @@ return {
                             ['French'] = "Attend a dinner party that generates more than 10 culture.",
                             },
         },
-        ['Deer Hunter'] = {
+        ['DeerHunter'] = {
                     ['Name'] =  {
                             ['English'] = "Deer Hunter",
                             ['Russian'] = "Deer Hunter",
@@ -454,7 +454,7 @@ return {
                             ['French'] = "Mine 10000 ore.",
                             },
         },
-        ['Entree Expert'] = {
+        ['EntreeExpert'] = {
                     ['Name'] =  {
                             ['English'] = "Entree Expert",
                             ['Russian'] = "Entree Expert",
@@ -469,7 +469,7 @@ return {
                             ['French'] = "Craft 25 types of food.",
                             },
         },
-        ['Eternal Perfection'] = {
+        ['EternalPerfection'] = {
                     ['Name'] =  {
                             ['English'] = "Eternal Perfection",
                             ['Russian'] = "Вечное совершенство",
@@ -484,7 +484,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 10 000 de culture.",
                             },
         },
-        ['Eureka Moment'] = {
+        ['EurekaMoment'] = {
                     ['Name'] =  {
                             ['English'] = "Eureka Moment",
                             ['Russian'] = "Eureka Moment",
@@ -499,7 +499,7 @@ return {
                             ['French'] = "Craft a skill book.",
                             },
         },
-        ['Excellent Edificie'] = {
+        ['ExcellentEdificie'] = {
                     ['Name'] =  {
                             ['English'] = "Excellent Edificie",
                             ['Russian'] = "Превосходное Здание",
@@ -514,7 +514,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 500 de culture.",
                             },
         },
-        ['Factory Farmer'] = {
+        ['FactoryFarmer'] = {
                     ['Name'] =  {
                             ['English'] = "Factory Farmer",
                             ['Russian'] = "Factory Farmer",
@@ -529,7 +529,7 @@ return {
                             ['French'] = "Plant 1000 seeds.",
                             },
         },
-        ['Famed Landmark'] = {
+        ['FamedLandmark'] = {
                     ['Name'] =  {
                             ['English'] = "Famed Landmark",
                             ['Russian'] = "Известная достопримечательность",
@@ -544,7 +544,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 200 de culture.",
                             },
         },
-        ['Famed Work'] = {
+        ['FamedWork'] = {
                     ['Name'] =  {
                             ['English'] = "Famed Work",
                             ['Russian'] = "Знаменитая Работа",
@@ -557,21 +557,6 @@ return {
                             ['Russian'] = "Создайте предмет искусства, дающий 50 культуры.",
                             ['German'] = "Create an artwork that generates 50 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 50 de culture.",
-                            },
-        },
-        ['Fashion Icon'] = {
-                    ['Name'] =  {
-                            ['English'] = "Fashion Icon",
-                            ['Russian'] = "Fashion Icon",
-                            ['German'] = "Fashion Icon",
-                            ['French'] = "Fashion Icon",
-                            },
-                    ['IconName'] = 'FashionIcon',
-                    ['Description'] =  {
-                            ['English'] = "Craft 25 types of clothing.",
-                            ['Russian'] = "Craft 25 types of clothing.",
-                            ['German'] = "Craft 25 types of clothing.",
-                            ['French'] = "Craft 25 types of clothing.",
                             },
         },
         ['Fashionable'] = {
@@ -589,7 +574,22 @@ return {
                             ['French'] = "Craft 10 types of clothing.",
                             },
         },
-        ['Field of Dreams'] = {
+        ['FashionIcon'] = {
+                    ['Name'] =  {
+                            ['English'] = "Fashion Icon",
+                            ['Russian'] = "Fashion Icon",
+                            ['German'] = "Fashion Icon",
+                            ['French'] = "Fashion Icon",
+                            },
+                    ['IconName'] = 'FashionIcon',
+                    ['Description'] =  {
+                            ['English'] = "Craft 25 types of clothing.",
+                            ['Russian'] = "Craft 25 types of clothing.",
+                            ['German'] = "Craft 25 types of clothing.",
+                            ['French'] = "Craft 25 types of clothing.",
+                            },
+        },
+        ['FieldofDreams'] = {
                     ['Name'] =  {
                             ['English'] = "Field of Dreams",
                             ['Russian'] = "Field of Dreams",
@@ -604,7 +604,7 @@ return {
                             ['French'] = "Plant 10000 seeds.",
                             },
         },
-        ['Fireworks Show'] = {
+        ['FireworksShow'] = {
                     ['Name'] =  {
                             ['English'] = "Fireworks Show",
                             ['Russian'] = "Шоу фейерверков",
@@ -619,7 +619,7 @@ return {
                             ['French'] = "Être connecté lors de la destruction du météore.",
                             },
         },
-        ['Fleet Founder'] = {
+        ['FleetFounder'] = {
                     ['Name'] =  {
                             ['English'] = "Fleet Founder",
                             ['Russian'] = "Fleet Founder",
@@ -634,7 +634,7 @@ return {
                             ['French'] = "Craft 5 types of boats.",
                             },
         },
-        ['Forestry 101'] = {
+        ['Forestry101'] = {
                     ['Name'] =  {
                             ['English'] = "Forestry 101",
                             ['Russian'] = "Лесничество 101",
@@ -649,7 +649,7 @@ return {
                             ['French'] = "Planter 100 arbres.",
                             },
         },
-        ['Foundational Excellence'] = {
+        ['FoundationalExcellence'] = {
                     ['Name'] =  {
                             ['English'] = "Foundational Excellence",
                             ['Russian'] = "Фундаментальное Совершенство",
@@ -679,7 +679,7 @@ return {
                             ['French'] = "Successfully hunt a fox.",
                             },
         },
-        ['Fresh Canvas'] = {
+        ['FreshCanvas'] = {
                     ['Name'] =  {
                             ['English'] = "Fresh Canvas",
                             ['Russian'] = "Свежий Холст",
@@ -694,7 +694,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 5 de culture.",
                             },
         },
-        ['Fresh Out of the Oven'] = {
+        ['FreshOutoftheOven'] = {
                     ['Name'] =  {
                             ['English'] = "Fresh Out of the Oven",
                             ['Russian'] = "Fresh Out of the Oven",
@@ -709,7 +709,7 @@ return {
                             ['French'] = "Create a baked good.",
                             },
         },
-        ['Gathering of Minds'] = {
+        ['GatheringofMinds'] = {
                     ['Name'] =  {
                             ['English'] = "Gathering of Minds",
                             ['Russian'] = "Gathering of Minds",
@@ -724,7 +724,7 @@ return {
                             ['French'] = "Attend a dinner party that generates more than 50 culture.",
                             },
         },
-        ['Gracious Guest'] = {
+        ['GraciousGuest'] = {
                     ['Name'] =  {
                             ['English'] = "Gracious Guest",
                             ['Russian'] = "Gracious Guest",
@@ -739,7 +739,7 @@ return {
                             ['French'] = "Attend a dinner party as a guest.",
                             },
         },
-        ['Grand Monument'] = {
+        ['GrandMonument'] = {
                     ['Name'] =  {
                             ['English'] = "Grand Monument",
                             ['Russian'] = "Великий монумент",
@@ -754,7 +754,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 1 000 de culture.",
                             },
         },
-        ['Grease Monkey'] = {
+        ['GreaseMonkey'] = {
                     ['Name'] =  {
                             ['English'] = "Grease Monkey",
                             ['Russian'] = "Grease Monkey",
@@ -769,7 +769,7 @@ return {
                             ['French'] = "Craft 3 types of vehicles.",
                             },
         },
-        ['Hammer Time'] = {
+        ['HammerTime'] = {
                     ['Name'] =  {
                             ['English'] = "Hammer Time",
                             ['Russian'] = "Hammer Time",
@@ -784,7 +784,7 @@ return {
                             ['French'] = "Craft 3 types of tools.",
                             },
         },
-        ['Hard Day's Work'] = {
+        ['HardDaysWork'] = {
                     ['Name'] =  {
                             ['English'] = "Hard Day's Work",
                             ['Russian'] = "Трудная работа",
@@ -799,7 +799,7 @@ return {
                             ['French'] = "Premier contrat terminé.",
                             },
         },
-        ['Host with the Most'] = {
+        ['HostwiththeMost'] = {
                     ['Name'] =  {
                             ['English'] = "Host with the Most",
                             ['Russian'] = "Host with the Most",
@@ -814,7 +814,7 @@ return {
                             ['French'] = "Host 5 dinner parties.",
                             },
         },
-        ['How to Cook a Wolf'] = {
+        ['HowtoCookaWolf'] = {
                     ['Name'] =  {
                             ['English'] = "How to Cook a Wolf",
                             ['Russian'] = "How to Cook a Wolf",
@@ -829,7 +829,7 @@ return {
                             ['French'] = "Successfully hunt a wolf.",
                             },
         },
-        ['I Am Not A Crook'] = {
+        ['IAmNotACrook'] = {
                     ['Name'] =  {
                             ['English'] = "I Am Not A Crook",
                             ['Russian'] = "Я Не Мошенник",
@@ -844,7 +844,7 @@ return {
                             ['French'] = "Être démis de force de ses fonctions.",
                             },
         },
-        ['Impossible Beauty'] = {
+        ['ImpossibleBeauty'] = {
                     ['Name'] =  {
                             ['English'] = "Impossible Beauty",
                             ['Russian'] = "Невероятная Красота",
@@ -859,7 +859,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 10 000 de culture.",
                             },
         },
-        ['Incipient Renaissance'] = {
+        ['IncipientRenaissance'] = {
                     ['Name'] =  {
                             ['English'] = "Incipient Renaissance",
                             ['Russian'] = "Зарождающийся Ренессанс",
@@ -874,7 +874,7 @@ return {
                             ['French'] = "Créer 500 de culture au total dans le monde.",
                             },
         },
-        ['It's Obviously Rigged'] = {
+        ['ItsObviouslyRigged'] = {
                     ['Name'] =  {
                             ['English'] = "It's Obviously Rigged",
                             ['Russian'] = "Это Явно Подстроено",
@@ -889,7 +889,7 @@ return {
                             ['French'] = "Perdre une élection.",
                             },
         },
-        ['Knot Bad'] = {
+        ['KnotBad'] = {
                     ['Name'] =  {
                             ['English'] = "Knot Bad",
                             ['Russian'] = "Knot Bad",
@@ -904,7 +904,7 @@ return {
                             ['French'] = "Craft a boat.",
                             },
         },
-        ['Legendary Masterwork'] = {
+        ['LegendaryMasterwork'] = {
                     ['Name'] =  {
                             ['English'] = "Legendary Masterwork",
                             ['Russian'] = "Легендарный Шедевр",
@@ -919,7 +919,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 5 000 de culture.",
                             },
         },
-        ['Life of the Party'] = {
+        ['LifeoftheParty'] = {
                     ['Name'] =  {
                             ['English'] = "Life of the Party",
                             ['Russian'] = "Life of the Party",
@@ -934,7 +934,7 @@ return {
                             ['French'] = "Attend 25 dinner parties as a guest.",
                             },
         },
-        ['Magnum Opus'] = {
+        ['MagnumOpus'] = {
                     ['Name'] =  {
                             ['English'] = "Magnum Opus",
                             ['Russian'] = "Magnum Opus",
@@ -949,7 +949,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 5 000 de culture.",
                             },
         },
-        ['Make it Rain'] = {
+        ['MakeitRain'] = {
                     ['Name'] =  {
                             ['English'] = "Make it Rain",
                             ['Russian'] = "Вызови 'дождь'",
@@ -964,7 +964,7 @@ return {
                             ['French'] = "Première monnaie frappée.",
                             },
         },
-        ['Masonry Master'] = {
+        ['MasonryMaster'] = {
                     ['Name'] =  {
                             ['English'] = "Masonry Master",
                             ['Russian'] = "Masonry Master",
@@ -979,7 +979,7 @@ return {
                             ['French'] = "Create 5 types of masonry items.",
                             },
         },
-        ['Master Chef'] = {
+        ['MasterChef'] = {
                     ['Name'] =  {
                             ['English'] = "Master Chef",
                             ['Russian'] = "Master Chef",
@@ -994,7 +994,7 @@ return {
                             ['French'] = "Craft 100 types of food.",
                             },
         },
-        ['Master Mechanic'] = {
+        ['MasterMechanic'] = {
                     ['Name'] =  {
                             ['English'] = "Master Mechanic",
                             ['Russian'] = "Master Mechanic",
@@ -1009,7 +1009,7 @@ return {
                             ['French'] = "Craft 5 types of vehicles.",
                             },
         },
-        ['Master of Ceremonies'] = {
+        ['MasterofCeremonies'] = {
                     ['Name'] =  {
                             ['English'] = "Master of Ceremonies",
                             ['Russian'] = "Master of Ceremonies",
@@ -1039,7 +1039,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 1 000 de culture.",
                             },
         },
-        ['Never to Return'] = {
+        ['NevertoReturn'] = {
                     ['Name'] =  {
                             ['English'] = "Never to Return",
                             ['Russian'] = "Уже не вернётся",
@@ -1054,7 +1054,7 @@ return {
                             ['French'] = "Une espèce vient de s'éteindre.",
                             },
         },
-        ['Nobel Laureate'] = {
+        ['NobelLaureate'] = {
                     ['Name'] =  {
                             ['English'] = "Nobel Laureate",
                             ['Russian'] = "Nobel Laureate",
@@ -1069,7 +1069,7 @@ return {
                             ['French'] = "Craft 10 different skill books.",
                             },
         },
-        ['Noteworthy Construction'] = {
+        ['NoteworthyConstruction'] = {
                     ['Name'] =  {
                             ['English'] = "Noteworthy Construction",
                             ['Russian'] = "Примечательное Сооружение",
@@ -1084,7 +1084,7 @@ return {
                             ['French'] = "Crée une architecture qui génère 5 de culture.",
                             },
         },
-        ['Ore Collector'] = {
+        ['OreCollector'] = {
                     ['Name'] =  {
                             ['English'] = "Ore Collector",
                             ['Russian'] = "Ore Collector",
@@ -1099,7 +1099,7 @@ return {
                             ['French'] = "Mine 100 ore.",
                             },
         },
-        ['Perfect Pairing'] = {
+        ['PerfectPairing'] = {
                     ['Name'] =  {
                             ['English'] = "Perfect Pairing",
                             ['Russian'] = "Perfect Pairing",
@@ -1129,7 +1129,7 @@ return {
                             ['French'] = "Craft 3 different skill books.",
                             },
         },
-        ['Reap What You Sow'] = {
+        ['ReapWhatYouSow'] = {
                     ['Name'] =  {
                             ['English'] = "Reap What You Sow",
                             ['Russian'] = "Пожинай то, что посеял",
@@ -1144,7 +1144,7 @@ return {
                             ['French'] = "Gather 100 farmable items on land you own.",
                             },
         },
-        ['Remarkable Work'] = {
+        ['RemarkableWork'] = {
                     ['Name'] =  {
                             ['English'] = "Remarkable Work",
                             ['Russian'] = "Замечательная работа",
@@ -1159,7 +1159,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 20 de culture.",
                             },
         },
-        ['Renowned Work'] = {
+        ['RenownedWork'] = {
                     ['Name'] =  {
                             ['English'] = "Renowned Work",
                             ['Russian'] = "Известная Работа",
@@ -1189,7 +1189,7 @@ return {
                             ['French'] = "Mine 1000 ore.",
                             },
         },
-        ['Rolling in Dough'] = {
+        ['RollinginDough'] = {
                     ['Name'] =  {
                             ['English'] = "Rolling in Dough",
                             ['Russian'] = "Rolling in Dough",
@@ -1204,7 +1204,7 @@ return {
                             ['French'] = "Create 5 types of baked goods.",
                             },
         },
-        ['Saved the World'] = {
+        ['SavedtheWorld'] = {
                     ['Name'] =  {
                             ['English'] = "Saved the World",
                             ['Russian'] = "Сохранение мира",
@@ -1219,7 +1219,7 @@ return {
                             ['French'] = "Détruire le météore sur un serveur.",
                             },
         },
-        ['Sculptor of Cities'] = {
+        ['SculptorofCities'] = {
                     ['Name'] =  {
                             ['English'] = "Sculptor of Cities",
                             ['Russian'] = "Sculptor of Cities",
@@ -1234,7 +1234,7 @@ return {
                             ['French'] = "Create 20 types of masonry items.",
                             },
         },
-        ['Setting Up Shop'] = {
+        ['SettingUpShop'] = {
                     ['Name'] =  {
                             ['English'] = "Setting Up Shop",
                             ['Russian'] = "Настроить магазин",
@@ -1249,7 +1249,7 @@ return {
                             ['French'] = "Ouverture d'un magasin avec au moins un article répertorié.",
                             },
         },
-        ['Sew It Begins'] = {
+        ['SewItBegins'] = {
                     ['Name'] =  {
                             ['English'] = "Sew It Begins",
                             ['Russian'] = "Sew It Begins",
@@ -1264,7 +1264,7 @@ return {
                             ['French'] = "Craft an article of clothing.",
                             },
         },
-        ['Shotgun!'] = {
+        ['Shotgun'] = {
                     ['Name'] =  {
                             ['English'] = "Shotgun!",
                             ['Russian'] = "Трогай!",
@@ -1279,7 +1279,7 @@ return {
                             ['French'] = "Monter à bord d'un véhicule en tant que passager.",
                             },
         },
-        ['Social Butterfly'] = {
+        ['SocialButterfly'] = {
                     ['Name'] =  {
                             ['English'] = "Social Butterfly",
                             ['Russian'] = "Social Butterfly",
@@ -1294,7 +1294,7 @@ return {
                             ['French'] = "Attend 5 dinner parties as a guest.",
                             },
         },
-        ['Sow It Begins'] = {
+        ['SowItBegins'] = {
                     ['Name'] =  {
                             ['English'] = "Sow It Begins",
                             ['Russian'] = "Sow It Begins",
@@ -1309,7 +1309,7 @@ return {
                             ['French'] = "Plant 100 seeds.",
                             },
         },
-        ['Sparkling Canvas'] = {
+        ['SparklingCanvas'] = {
                     ['Name'] =  {
                             ['English'] = "Sparkling Canvas",
                             ['Russian'] = "Блестящий холст",
@@ -1324,7 +1324,7 @@ return {
                             ['French'] = "Créer 50 de culture au total dans le monde.",
                             },
         },
-        ['Structural Magnificence'] = {
+        ['StructuralMagnificence'] = {
                     ['Name'] =  {
                             ['English'] = "Structural Magnificence",
                             ['Russian'] = "Структурное великолепие",
@@ -1354,7 +1354,7 @@ return {
                             ['French'] = "Paid 50 backing-units of currency in taxes (IE, 50 gold ingots worth of currency, when backed by gold ingots, which may be different from the currency value).",
                             },
         },
-        ['The Preamble'] = {
+        ['ThePreamble'] = {
                     ['Name'] =  {
                             ['English'] = "The Preamble",
                             ['Russian'] = "Преамбула",
@@ -1369,7 +1369,7 @@ return {
                             ['French'] = "Proposer la ratification d'une constitution.",
                             },
         },
-        ['Tool Master'] = {
+        ['ToolMaster'] = {
                     ['Name'] =  {
                             ['English'] = "Tool Master",
                             ['Russian'] = "Tool Master",
@@ -1384,7 +1384,7 @@ return {
                             ['French'] = "Craft 10 types of tools.",
                             },
         },
-        ['Toolsmith Titan'] = {
+        ['ToolsmithTitan'] = {
                     ['Name'] =  {
                             ['English'] = "Toolsmith Titan",
                             ['Russian'] = "Toolsmith Titan",
@@ -1429,7 +1429,7 @@ return {
                             ['French'] = "Créez 1 000 cultures.",
                             },
         },
-        ['Visionary Work'] = {
+        ['VisionaryWork'] = {
                     ['Name'] =  {
                             ['English'] = "Visionary Work",
                             ['Russian'] = "Дальновидная работа",
@@ -1444,7 +1444,7 @@ return {
                             ['French'] = "Crée une œuvre d'art qui génère 500 de culture.",
                             },
         },
-        ['Wheels in Motion'] = {
+        ['WheelsinMotion'] = {
                     ['Name'] =  {
                             ['English'] = "Wheels in Motion",
                             ['Russian'] = "Wheels in Motion",
@@ -1459,7 +1459,7 @@ return {
                             ['French'] = "Craft a vehicle.",
                             },
         },
-        ['Yum!'] = {
+        ['Yum'] = {
                     ['Name'] =  {
                             ['English'] = "Yum!",
                             ['Russian'] = "Ням!",

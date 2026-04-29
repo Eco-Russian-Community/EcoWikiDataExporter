@@ -202,7 +202,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             if (GermanLang == "") { GermanLang = EnglishLang; }
             if (FrenchLang == "") { FrenchLang = EnglishLang; }
 
-
+            EnglishLang = Shielding(EnglishLang);
+            RussianLang = Shielding(RussianLang);
+            GermanLang = Shielding(GermanLang);
+            FrenchLang = Shielding(FrenchLang);
 
             localizedString["English"] = '"' + $"{EnglishLang}" + '"';
             localizedString["Russian"] = '"' + $"{RussianLang}" + '"';
@@ -210,6 +213,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             localizedString["French"] = '"' + $"{FrenchLang}" + '"';
 
             return localizedString;
+        }
+
+        public static string Shielding(string Text)
+        {
+            string SafeText = Text.Replace('"', '\'');
+            return SafeText;
         }
     }
 }

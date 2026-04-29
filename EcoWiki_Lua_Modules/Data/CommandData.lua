@@ -1,6 +1,6 @@
 -- Eco Version : 0.13.0.2
 -- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:31
+-- Date of export : 25.04.2026 17:14:53
 
 return {
     commands = {
@@ -2003,7 +2003,7 @@ return {
                             ['English'] = "Add an item to your void storage",
                             ['Russian'] = "Добавить предмет в Бездонное хранилище",
                             ['German'] = "Füge einen Gegenstand zu deinem Zwischenlager hinzu",
-                            ['French'] = "Ajouter un item à votre "Stockage du néant",
+                            ['French'] = "Ajouter un item à votre 'Stockage du néant",
                             },
                     ['shortCut'] = '',
                     ['level'] = 'Admin',
@@ -2020,7 +2020,7 @@ return {
                             ['English'] = "Allows carry items into any user inventory slot and removes weight check.  Pass false to reset to normal.",
                             ['Russian'] = "Позволяет переносить предметы в любом слоте инвентаря пользователя и удаляет проверку веса. Передайте 'Ложь' для сброса в нормальное состояние.",
                             ['German'] = "Ermöglicht das Tragen von Gegenständen in einen beliebigen Benutzerinventarplatz und entfernt die Gewichtskontrolle. Übergebe 'false', um den Normalwert wiederherzustellen.",
-                            ['French'] = "Permet de transporter des articles dans n'importe quel emplacement d'inventaire utilisateur et supprime la vérification du poids. Passez à "false" pour revenir à la normale.",
+                            ['French'] = "Permet de transporter des articles dans n'importe quel emplacement d'inventaire utilisateur et supprime la vérification du poids. Passez à 'false' pour revenir à la normale.",
                             },
                     ['shortCut'] = 'carryall',
                     ['level'] = 'Admin',
