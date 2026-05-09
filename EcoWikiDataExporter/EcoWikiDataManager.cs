@@ -189,6 +189,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             return Float.ToString("G", CultureInfo.InvariantCulture);
         }
 
+        public static string WikiDouble(double Double)
+        {
+            return Double.ToString("G", CultureInfo.InvariantCulture);
+        }
+
+
         public static Dictionary<string, string> Localization(string name)
         {
             var localizedString = new Dictionary<string, string>();
