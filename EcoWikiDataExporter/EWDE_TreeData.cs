@@ -67,14 +67,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                     TreeData[treeName]["Density"] = $"'{tree.Density}'";
 
                     // Seeding and spread customization
-                    TreeData[treeName]["SeedingTime"] = $"'{tree.SeedingTime}'";
+                    TreeData[treeName]["SeedingTime"] = $"'{WikiDouble(tree.SeedingTime)}'";
                     TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
-                    TreeData[treeName]["PlantAgeToSeed"] = $"'{tree.PlantAgeToSeed}'";
+                    TreeData[treeName]["PlantAgeToSeed"] = $"'{WikiFloat(tree.PlantAgeToSeed)}'";
                     TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
 
                     // Generation
                     TreeData[treeName]["Height"] = $"'{tree.Height}'";
-                    TreeData[treeName]["ChanceToBeSpawnOutsideOfGroup"] = $"'{tree.GenerationDefinitions.ChanceToBeSpawnOutsideOfGroup}'";
+                    TreeData[treeName]["ChanceToBeSpawnOutsideOfGroup"] = $"'{WikiFloat(tree.GenerationDefinitions.ChanceToBeSpawnOutsideOfGroup)}'";
                     TreeData[treeName]["MinDistanceBetweenGroupsMin"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Min}'";
                     TreeData[treeName]["MinDistanceBetweenGroupsMax"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Max}'";
                     TreeData[treeName]["PlantsInGroupMin"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Min}'";
@@ -83,8 +83,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     TreeData[treeName]["CountOfClustersMax"] = $"'{tree.GenerationDefinitions.CountOfClusters.Max}'";
                     TreeData[treeName]["RadiusOfGroupMin"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Min}'";
                     TreeData[treeName]["RadiusOfGroupMax"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Max}'";
-                    TreeData[treeName]["ClusterRadiusInWorldSizeMin"] = $"'{tree.GenerationDefinitions.ClusterRadiusInWorldSize.Min}'";
-                    TreeData[treeName]["ClusterRadiusInWorldSizeMax"] = $"'{tree.GenerationDefinitions.ClusterRadiusInWorldSize.Max}'";
+                    TreeData[treeName]["ClusterRadiusInWorldSizeMin"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Min)}'";
+                    TreeData[treeName]["ClusterRadiusInWorldSizeMax"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Max)}'";
 
                     TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
 
