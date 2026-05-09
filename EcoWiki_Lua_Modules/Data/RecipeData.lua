@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:37
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 09.05.2026 10:52:45
 
 return {
     recipes = {
@@ -5576,7 +5576,7 @@ return {
                                     ['Bannock'] = {
                                             ['Name'] = 'Bannock',
                                             ['ID'] = 'BannockItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -34229,9 +34229,9 @@ return {
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Hardwood Lumber'] = {
-                                            ['Type'] = 'TAG',
+                                            ['Type'] = 'ITEM',
                                             ['Name'] = 'Hardwood Lumber',
-                                            ['ID'] = 'HardwoodLumber',
+                                            ['ID'] = 'HardwoodLumberItem',
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
@@ -34362,9 +34362,9 @@ return {
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Softwood Lumber'] = {
-                                            ['Type'] = 'TAG',
+                                            ['Type'] = 'ITEM',
                                             ['Name'] = 'Softwood Lumber',
-                                            ['ID'] = 'SoftwoodLumber',
+                                            ['ID'] = 'SoftwoodLumberItem',
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
@@ -34564,10 +34564,10 @@ return {
                     ['CraftingTables'] = 'Advanced Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Lumber'] = {
+                                    ['Composite Lumber'] = {
                                             ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
+                                            ['Name'] = 'Composite Lumber',
+                                            ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
@@ -34606,10 +34606,10 @@ return {
                     ['CraftingTables'] = 'Advanced Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Lumber'] = {
+                                    ['Composite Lumber'] = {
                                             ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
+                                            ['Name'] = 'Composite Lumber',
+                                            ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
@@ -41309,7 +41309,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Plastic',
                                             ['ID'] = 'PlasticItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -41344,7 +41344,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Plastic',
                                             ['ID'] = 'PlasticItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -41379,7 +41379,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Plastic',
                                             ['ID'] = 'PlasticItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -47220,10 +47220,10 @@ return {
                     ['CraftingTables'] = 'Advanced Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Lumber'] = {
+                                    ['Composite Lumber'] = {
                                             ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
+                                            ['Name'] = 'Composite Lumber',
+                                            ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
@@ -47640,10 +47640,10 @@ return {
                     ['CraftingTables'] = 'Advanced Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Lumber'] = {
+                                    ['Composite Lumber'] = {
                                             ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
+                                            ['Name'] = 'Composite Lumber',
+                                            ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
@@ -47682,10 +47682,10 @@ return {
                     ['CraftingTables'] = 'Advanced Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Lumber'] = {
+                                    ['Composite Lumber'] = {
                                             ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
+                                            ['Name'] = 'Composite Lumber',
+                                            ['ID'] = 'CompositeLumber',
                                             ['Quantity'] = '3',
                                             ['IsStatic'] = 'False',
                                     },
