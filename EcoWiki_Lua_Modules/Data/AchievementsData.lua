@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 25.04.2026 17:15:00
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 17.05.2026 16:02:01
 
 return {
     achievements = {
@@ -11,13 +11,13 @@ return {
                             ['German'] = "A Legendary Feast",
                             ['French'] = "A Legendary Feast",
                             },
-                    ['IconName'] = 'ALegendaryFeast',
                     ['Description'] =  {
                             ['English'] = "Attend a dinner party that generates more than  500 culture.",
                             ['Russian'] = "Attend a dinner party that generates more than  500 culture.",
                             ['German'] = "Attend a dinner party that generates more than  500 culture.",
                             ['French'] = "Attend a dinner party that generates more than  500 culture.",
                             },
+                    ['IconName'] = 'ALegendaryFeast',
         },
         ['AppetizerApprentice'] = {
                     ['Name'] =  {
@@ -26,13 +26,13 @@ return {
                             ['German'] = "Appetizer Apprentice",
                             ['French'] = "Appetizer Apprentice",
                             },
-                    ['IconName'] = 'AppetizerApprentice',
                     ['Description'] =  {
                             ['English'] = "Craft 5 types of food.",
                             ['Russian'] = "Craft 5 types of food.",
                             ['German'] = "Craft 5 types of food.",
                             ['French'] = "Craft 5 types of food.",
                             },
+                    ['IconName'] = 'AppetizerApprentice',
         },
         ['Artisan'] = {
                     ['Name'] =  {
@@ -41,13 +41,13 @@ return {
                             ['German'] = "Künstler",
                             ['French'] = "Artisan",
                             },
-                    ['IconName'] = 'Artisan',
                     ['Description'] =  {
                             ['English'] = "Create 50 culture.",
                             ['Russian'] = "Создайте 50 культуры.",
                             ['German'] = "Create 50 culture.",
                             ['French'] = "Créez 50 cultures.",
                             },
+                    ['IconName'] = 'Artisan',
         },
         ['AscendentCivilization'] = {
                     ['Name'] =  {
@@ -56,13 +56,13 @@ return {
                             ['German'] = "Angrenzende Zivilisation",
                             ['French'] = "Civilisation influente",
                             },
-                    ['IconName'] = 'AscendentCivilization',
                     ['Description'] =  {
                             ['English'] = "Create 100000 total culture as a world.",
                             ['Russian'] = "В этом мире создано 100 000 культуры.",
                             ['German'] = "Create 100000 total culture as a world.",
                             ['French'] = "Créer 100 000 de culture au total dans le monde.",
                             },
+                    ['IconName'] = 'AscendentCivilization',
         },
         ['BestLaidPlans'] = {
                     ['Name'] =  {
@@ -71,13 +71,13 @@ return {
                             ['German'] = "Beste Pläne",
                             ['French'] = "Un coup d'enfer",
                             },
-                    ['IconName'] = 'BestLaidPlans',
                     ['Description'] =  {
                             ['English'] = "Meteor destroyed the world.",
                             ['Russian'] = "Метеор уничтожил мир.",
                             ['German'] = "Meteor zerstörte die Welt.",
                             ['French'] = "Le météore a détruit le Monde.",
                             },
+                    ['IconName'] = 'BestLaidPlans',
         },
         ['BigGame'] = {
                     ['Name'] =  {
@@ -86,13 +86,13 @@ return {
                             ['German'] = "Big Game",
                             ['French'] = "Big Game",
                             },
-                    ['IconName'] = 'BigGame',
                     ['Description'] =  {
                             ['English'] = "Successfully hunt a bison.",
                             ['Russian'] = "Successfully hunt a bison.",
                             ['German'] = "Successfully hunt a bison.",
                             ['French'] = "Successfully hunt a bison.",
                             },
+                    ['IconName'] = 'BigGame',
         },
         ['Blech'] = {
                     ['Name'] =  {
@@ -101,13 +101,13 @@ return {
                             ['German'] = "Bäh!",
                             ['French'] = "Beurk !",
                             },
-                    ['IconName'] = 'Blech',
                     ['Description'] =  {
                             ['English'] = "Discover your most disliked food.",
                             ['Russian'] = "Обнаружьте свою самую нелюбимую еду.",
                             ['German'] = "Entdecke deine unbeliebteste Nahrung.",
                             ['French'] = "Découvrez la nourriture que vous détestez la plus.",
                             },
+                    ['IconName'] = 'Blech',
         },
         ['BornLeader'] = {
                     ['Name'] =  {
@@ -116,13 +116,13 @@ return {
                             ['German'] = "Geborener Anführer",
                             ['French'] = "Leader-né",
                             },
-                    ['IconName'] = 'BornLeader',
                     ['Description'] =  {
                             ['English'] = "Become elected to a government position.",
                             ['Russian'] = "Выиграйте выборы на правительственную должность.",
                             ['German'] = "Werde für eine Regierungsposition gewählt.",
                             ['French'] = "Être élu à un poste gouvernemental.",
                             },
+                    ['IconName'] = 'BornLeader',
         },
         ['BreakingBread'] = {
                     ['Name'] =  {
@@ -131,13 +131,13 @@ return {
                             ['German'] = "Breaking Bread",
                             ['French'] = "Breaking Bread",
                             },
-                    ['IconName'] = 'BreakingBread',
                     ['Description'] =  {
                             ['English'] = "Host a dinner party.",
                             ['Russian'] = "Host a dinner party.",
                             ['German'] = "Host a dinner party.",
                             ['French'] = "Host a dinner party.",
                             },
+                    ['IconName'] = 'BreakingBread',
         },
         ['BythePeopleForthePeople'] = {
                     ['Name'] =  {
@@ -146,13 +146,13 @@ return {
                             ['German'] = "Von Menschen für Menschen",
                             ['French'] = "Par le peuple, pour le peuple",
                             },
-                    ['IconName'] = 'BythePeopleForthePeople',
                     ['Description'] =  {
                             ['English'] = "Constitution passed.",
                             ['Russian'] = "Конституция создана.",
                             ['German'] = "Verfassung genehmigt.",
                             ['French'] = "Constitution adoptée.",
                             },
+                    ['IconName'] = 'BythePeopleForthePeople',
         },
         ['ChipOfftheOldBlock'] = {
                     ['Name'] =  {
@@ -161,13 +161,13 @@ return {
                             ['German'] = "Chip Off the Old Block",
                             ['French'] = "Chip Off the Old Block",
                             },
-                    ['IconName'] = 'ChipOfftheOldBlock',
                     ['Description'] =  {
                             ['English'] = "Create 1 masonry item.",
                             ['Russian'] = "Create 1 masonry item.",
                             ['German'] = "Create 1 masonry item.",
                             ['French'] = "Create 1 masonry item.",
                             },
+                    ['IconName'] = 'ChipOfftheOldBlock',
         },
         ['ChopChop'] = {
                     ['Name'] =  {
@@ -176,13 +176,13 @@ return {
                             ['German'] = "Chop Chop",
                             ['French'] = "Et que ça saute",
                             },
-                    ['IconName'] = 'ChopChop',
                     ['Description'] =  {
                             ['English'] = "Chopped down first tree.",
                             ['Russian'] = "Срублено первое дерево.",
                             ['German'] = "Erster Baum wurde gefällt.",
                             ['French'] = "Premier arbre abattu.",
                             },
+                    ['IconName'] = 'ChopChop',
         },
         ['ChopChopx100'] = {
                     ['Name'] =  {
@@ -191,13 +191,13 @@ return {
                             ['German'] = "Hack Hack x100",
                             ['French'] = "Et que ça saute! x100",
                             },
-                    ['IconName'] = 'ChopChopx100',
                     ['Description'] =  {
                             ['English'] = "Chopped down 100 trees.",
                             ['Russian'] = "Вы срубили 100 деревьев.",
                             ['German'] = "100 Bäume gefällt.",
                             ['French'] = "Abattre 100 arbres.",
                             },
+                    ['IconName'] = 'ChopChopx100',
         },
         ['ConfectionPerfection'] = {
                     ['Name'] =  {
@@ -206,13 +206,13 @@ return {
                             ['German'] = "Confection Perfection",
                             ['French'] = "Confection Perfection",
                             },
-                    ['IconName'] = 'ConfectionPerfection',
                     ['Description'] =  {
                             ['English'] = "Create 20 types of baked goods.",
                             ['Russian'] = "Create 20 types of baked goods.",
                             ['German'] = "Create 20 types of baked goods.",
                             ['French'] = "Create 20 types of baked goods.",
                             },
+                    ['IconName'] = 'ConfectionPerfection',
         },
         ['ConstructionYard'] = {
                     ['Name'] =  {
@@ -221,13 +221,13 @@ return {
                             ['German'] = "Bauhof",
                             ['French'] = "École du BTP",
                             },
-                    ['IconName'] = 'ConstructionYard',
                     ['Description'] =  {
                             ['English'] = "Dig 1000 blocks with powered vehicles on the same server.",
                             ['Russian'] = "Выкопайте 1000 блоков механизированным методом на одном сервере.",
                             ['German'] = "Dig 1000 blocks with powered vehicles on the same server.",
                             ['French'] = "Creusez 1 000 blocs avec des véhicules motorisés sur le même serveur.",
                             },
+                    ['IconName'] = 'ConstructionYard',
         },
         ['ConversionFees'] = {
                     ['Name'] =  {
@@ -236,13 +236,13 @@ return {
                             ['German'] = "Umrechnungsgebühren",
                             ['French'] = "Frais de change",
                             },
-                    ['IconName'] = 'ConversionFees',
                     ['Description'] =  {
                             ['English'] = "Have another player use your currency exchange.",
                             ['Russian'] = "Другой игрок воспользовался вашим обменником валюты.",
                             ['German'] = "Have another player use your currency exchange.",
                             ['French'] = "Demandez à un autre joueur d'utiliser votre bureau de change.",
                             },
+                    ['IconName'] = 'ConversionFees',
         },
         ['CraftyCaptain'] = {
                     ['Name'] =  {
@@ -251,13 +251,13 @@ return {
                             ['German'] = "Crafty Captain",
                             ['French'] = "Crafty Captain",
                             },
-                    ['IconName'] = 'CraftyCaptain',
                     ['Description'] =  {
                             ['English'] = "Craft 3 types of boats.",
                             ['Russian'] = "Craft 3 types of boats.",
                             ['German'] = "Craft 3 types of boats.",
                             ['French'] = "Craft 3 types of boats.",
                             },
+                    ['IconName'] = 'CraftyCaptain',
         },
         ['CravingSatisfied'] = {
                     ['Name'] =  {
@@ -266,13 +266,13 @@ return {
                             ['German'] = "Heißhunger gestillt",
                             ['French'] = "Fringale satisfaite",
                             },
-                    ['IconName'] = 'CravingSatisfied',
                     ['Description'] =  {
                             ['English'] = "Eat food you've got a hankering for.",
                             ['Russian'] = "Съешьте блюдо, которое вам захотелось.",
                             ['German'] = "Iss auf was du Heißhunger hast.",
                             ['French'] = "Mange la nourriture dont vous rêviez.",
                             },
+                    ['IconName'] = 'CravingSatisfied',
         },
         ['CulinaryFauxPas'] = {
                     ['Name'] =  {
@@ -281,13 +281,13 @@ return {
                             ['German'] = "Culinary Faux Pas",
                             ['French'] = "Culinary Faux Pas",
                             },
-                    ['IconName'] = 'CulinaryFauxPas',
                     ['Description'] =  {
                             ['English'] = "Host a dinner party where a guest eats their least-favorite food.",
                             ['Russian'] = "Host a dinner party where a guest eats their least-favorite food.",
                             ['German'] = "Host a dinner party where a guest eats their least-favorite food.",
                             ['French'] = "Host a dinner party where a guest eats their least-favorite food.",
                             },
+                    ['IconName'] = 'CulinaryFauxPas',
         },
         ['Cultivated'] = {
                     ['Name'] =  {
@@ -296,13 +296,13 @@ return {
                             ['German'] = "Kultiviert",
                             ['French'] = "Cultivé(e)",
                             },
-                    ['IconName'] = 'Cultivated',
                     ['Description'] =  {
                             ['English'] = "Create 10 culture.",
                             ['Russian'] = "Создайте 10 культуры.",
                             ['German'] = "Schaffe 10 Kultur.",
                             ['French'] = "Créer 10 cultures.",
                             },
+                    ['IconName'] = 'Cultivated',
         },
         ['CulturalAwakening'] = {
                     ['Name'] =  {
@@ -311,13 +311,13 @@ return {
                             ['German'] = "Cultural Awakening",
                             ['French'] = "Éveil culturel",
                             },
-                    ['IconName'] = 'CulturalAwakening',
                     ['Description'] =  {
                             ['English'] = "Create 250 total culture as a world.",
                             ['Russian'] = "Создайте 250 культуры всем миром.",
                             ['German'] = "Create 250 total culture as a world.",
                             ['French'] = "Crée 250 cultures totales en tant que monde.",
                             },
+                    ['IconName'] = 'CulturalAwakening',
         },
         ['CulturalCornucopia'] = {
                     ['Name'] =  {
@@ -326,13 +326,13 @@ return {
                             ['German'] = "Cultural Cornucopia",
                             ['French'] = "Abondance culturelle",
                             },
-                    ['IconName'] = 'CulturalCornucopia',
                     ['Description'] =  {
                             ['English'] = "Create 5000 total culture as a world.",
                             ['Russian'] = "В этом мире создано 5000 культуры.",
                             ['German'] = "Create 5000 total culture as a world.",
                             ['French'] = "Créer 5 000 de culture au total dans le monde.",
                             },
+                    ['IconName'] = 'CulturalCornucopia',
         },
         ['CulturalNexus'] = {
                     ['Name'] =  {
@@ -341,13 +341,13 @@ return {
                             ['German'] = "Kulturzentrum",
                             ['French'] = "Nexus culturel",
                             },
-                    ['IconName'] = 'CulturalNexus',
                     ['Description'] =  {
                             ['English'] = "Create 20000 total culture as a world.",
                             ['Russian'] = "В этом мире создано 20 000 культуры.",
                             ['German'] = "Create 20000 total culture as a world.",
                             ['French'] = "Créer 20 000 de culture au total dans le monde.",
                             },
+                    ['IconName'] = 'CulturalNexus',
         },
         ['CulturalPhenomenon'] = {
                     ['Name'] =  {
@@ -356,13 +356,13 @@ return {
                             ['German'] = "Cultural Phenomenon",
                             ['French'] = "Phénomène culturel",
                             },
-                    ['IconName'] = 'CulturalPhenomenon',
                     ['Description'] =  {
                             ['English'] = "Become the top ranked cultural creator when at least 10 citizens have created any culture.",
                             ['Russian'] = "Внесите самый большой вклад в культуру, когда еще хотя бы 10 других жителей создали объекты культуры.",
                             ['German'] = "Become the top ranked cultural creator when at least 10 citizens have created any culture.",
                             ['French'] = "Devient l'artiste le mieux classé lorsqu'au moins 10 citoyens ont produit une culture.",
                             },
+                    ['IconName'] = 'CulturalPhenomenon',
         },
         ['CulturalTrailblazers'] = {
                     ['Name'] =  {
@@ -371,13 +371,13 @@ return {
                             ['German'] = "Cultural Trailblazers ",
                             ['French'] = "Pionniers de la culture ",
                             },
-                    ['IconName'] = 'CulturalTrailblazers',
                     ['Description'] =  {
                             ['English'] = "Create 100 total culture as a world.",
                             ['Russian'] = "Создайте 100 культуры всем миром.",
                             ['German'] = "Create 100 total culture as a world.",
                             ['French'] = "Crée 100 cultures totales en tant que monde.",
                             },
+                    ['IconName'] = 'CulturalTrailblazers',
         },
         ['CulturalVanguard'] = {
                     ['Name'] =  {
@@ -386,13 +386,13 @@ return {
                             ['German'] = "Cultural Vanguard",
                             ['French'] = "Avant-garde culturelle",
                             },
-                    ['IconName'] = 'CulturalVanguard',
                     ['Description'] =  {
                             ['English'] = "Create 1000 total culture as a world.",
                             ['Russian'] = "Создайте 1000 культуры всем миром.",
                             ['German'] = "Create 1000 total culture as a world.",
                             ['French'] = "Crée 1 000 cultures totales en tant que monde.",
                             },
+                    ['IconName'] = 'CulturalVanguard',
         },
         ['CulturedGathering'] = {
                     ['Name'] =  {
@@ -401,13 +401,13 @@ return {
                             ['German'] = "Cultured Gathering",
                             ['French'] = "Cultured Gathering",
                             },
-                    ['IconName'] = 'CulturedGathering',
                     ['Description'] =  {
                             ['English'] = "Attend a dinner party that generates more than 10 culture.",
                             ['Russian'] = "Attend a dinner party that generates more than 10 culture.",
                             ['German'] = "Attend a dinner party that generates more than 10 culture.",
                             ['French'] = "Attend a dinner party that generates more than 10 culture.",
                             },
+                    ['IconName'] = 'CulturedGathering',
         },
         ['DeerHunter'] = {
                     ['Name'] =  {
@@ -416,13 +416,13 @@ return {
                             ['German'] = "Deer Hunter",
                             ['French'] = "Deer Hunter",
                             },
-                    ['IconName'] = 'DeerHunter',
                     ['Description'] =  {
                             ['English'] = "Successfully hunt a deer.",
                             ['Russian'] = "Successfully hunt a deer.",
                             ['German'] = "Successfully hunt a deer.",
                             ['French'] = "Successfully hunt a deer.",
                             },
+                    ['IconName'] = 'DeerHunter',
         },
         ['Dilettante'] = {
                     ['Name'] =  {
@@ -431,13 +431,13 @@ return {
                             ['German'] = "Dilettante",
                             ['French'] = "Amateur",
                             },
-                    ['IconName'] = 'Dilettante',
                     ['Description'] =  {
                             ['English'] = "Create your first culture.",
                             ['Russian'] = "Создайте свой первый предмет культуры.",
                             ['German'] = "Create your first culture.",
                             ['French'] = "Créer votre première culture.",
                             },
+                    ['IconName'] = 'Dilettante',
         },
         ['Earthbreaker'] = {
                     ['Name'] =  {
@@ -446,13 +446,13 @@ return {
                             ['German'] = "Earthbreaker",
                             ['French'] = "Earthbreaker",
                             },
-                    ['IconName'] = 'Earthbreaker',
                     ['Description'] =  {
                             ['English'] = "Mine 10000 ore.",
                             ['Russian'] = "Mine 10000 ore.",
                             ['German'] = "Mine 10000 ore.",
                             ['French'] = "Mine 10000 ore.",
                             },
+                    ['IconName'] = 'Earthbreaker',
         },
         ['EntreeExpert'] = {
                     ['Name'] =  {
@@ -461,13 +461,13 @@ return {
                             ['German'] = "Entree Expert",
                             ['French'] = "Entree Expert",
                             },
-                    ['IconName'] = 'EntreeExpert',
                     ['Description'] =  {
                             ['English'] = "Craft 25 types of food.",
                             ['Russian'] = "Craft 25 types of food.",
                             ['German'] = "Craft 25 types of food.",
                             ['French'] = "Craft 25 types of food.",
                             },
+                    ['IconName'] = 'EntreeExpert',
         },
         ['EternalPerfection'] = {
                     ['Name'] =  {
@@ -476,13 +476,13 @@ return {
                             ['German'] = "Eternal Perfection",
                             ['French'] = "Perfection éternelle",
                             },
-                    ['IconName'] = 'EternalPerfection',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 10000 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 10000 культуры.",
                             ['German'] = "Create architecture that generates 10000 culture.",
                             ['French'] = "Crée une architecture qui génère 10 000 de culture.",
                             },
+                    ['IconName'] = 'EternalPerfection',
         },
         ['EurekaMoment'] = {
                     ['Name'] =  {
@@ -491,13 +491,13 @@ return {
                             ['German'] = "Eureka Moment",
                             ['French'] = "Eureka Moment",
                             },
-                    ['IconName'] = 'EurekaMoment',
                     ['Description'] =  {
                             ['English'] = "Craft a skill book.",
                             ['Russian'] = "Craft a skill book.",
                             ['German'] = "Craft a skill book.",
                             ['French'] = "Craft a skill book.",
                             },
+                    ['IconName'] = 'EurekaMoment',
         },
         ['ExcellentEdificie'] = {
                     ['Name'] =  {
@@ -506,13 +506,13 @@ return {
                             ['German'] = "Excellent Edificie",
                             ['French'] = "Excellent édifice",
                             },
-                    ['IconName'] = 'ExcellentEdificie',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 500 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 500 культуры.",
                             ['German'] = "Create architecture that generates 500 culture.",
                             ['French'] = "Crée une architecture qui génère 500 de culture.",
                             },
+                    ['IconName'] = 'ExcellentEdificie',
         },
         ['FactoryFarmer'] = {
                     ['Name'] =  {
@@ -521,13 +521,13 @@ return {
                             ['German'] = "Factory Farmer",
                             ['French'] = "Factory Farmer",
                             },
-                    ['IconName'] = 'FactoryFarmer',
                     ['Description'] =  {
                             ['English'] = "Plant 1000 seeds.",
                             ['Russian'] = "Plant 1000 seeds.",
                             ['German'] = "Plant 1000 seeds.",
                             ['French'] = "Plant 1000 seeds.",
                             },
+                    ['IconName'] = 'FactoryFarmer',
         },
         ['FamedLandmark'] = {
                     ['Name'] =  {
@@ -536,13 +536,13 @@ return {
                             ['German'] = "Famed Landmark",
                             ['French'] = "Point de repère célèbre",
                             },
-                    ['IconName'] = 'FamedLandmark',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 200 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 200 культуры.",
                             ['German'] = "Create architecture that generates 200 culture.",
                             ['French'] = "Crée une architecture qui génère 200 de culture.",
                             },
+                    ['IconName'] = 'FamedLandmark',
         },
         ['FamedWork'] = {
                     ['Name'] =  {
@@ -551,13 +551,13 @@ return {
                             ['German'] = "Famed Work",
                             ['French'] = "Œuvre célèbre",
                             },
-                    ['IconName'] = 'FamedWork',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 50 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 50 культуры.",
                             ['German'] = "Create an artwork that generates 50 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 50 de culture.",
                             },
+                    ['IconName'] = 'FamedWork',
         },
         ['Fashionable'] = {
                     ['Name'] =  {
@@ -566,13 +566,13 @@ return {
                             ['German'] = "Fashionable",
                             ['French'] = "Fashionable",
                             },
-                    ['IconName'] = 'Fashionable',
                     ['Description'] =  {
                             ['English'] = "Craft 10 types of clothing.",
                             ['Russian'] = "Craft 10 types of clothing.",
                             ['German'] = "Craft 10 types of clothing.",
                             ['French'] = "Craft 10 types of clothing.",
                             },
+                    ['IconName'] = 'Fashionable',
         },
         ['FashionIcon'] = {
                     ['Name'] =  {
@@ -581,13 +581,13 @@ return {
                             ['German'] = "Fashion Icon",
                             ['French'] = "Fashion Icon",
                             },
-                    ['IconName'] = 'FashionIcon',
                     ['Description'] =  {
                             ['English'] = "Craft 25 types of clothing.",
                             ['Russian'] = "Craft 25 types of clothing.",
                             ['German'] = "Craft 25 types of clothing.",
                             ['French'] = "Craft 25 types of clothing.",
                             },
+                    ['IconName'] = 'FashionIcon',
         },
         ['FieldofDreams'] = {
                     ['Name'] =  {
@@ -596,13 +596,13 @@ return {
                             ['German'] = "Field of Dreams",
                             ['French'] = "Field of Dreams",
                             },
-                    ['IconName'] = 'FieldofDreams',
                     ['Description'] =  {
                             ['English'] = "Plant 10000 seeds.",
                             ['Russian'] = "Plant 10000 seeds.",
                             ['German'] = "Plant 10000 seeds.",
                             ['French'] = "Plant 10000 seeds.",
                             },
+                    ['IconName'] = 'FieldofDreams',
         },
         ['FireworksShow'] = {
                     ['Name'] =  {
@@ -611,13 +611,13 @@ return {
                             ['German'] = "Feuerwerkshow",
                             ['French'] = "Bouquet Final",
                             },
-                    ['IconName'] = 'FireworksShow',
                     ['Description'] =  {
                             ['English'] = "Online for the destruction of the meteor.",
                             ['Russian'] = "Онлайн для уничтожения астероида.",
                             ['German'] = "Online für die Zerstörung des Meteors.",
                             ['French'] = "Être connecté lors de la destruction du météore.",
                             },
+                    ['IconName'] = 'FireworksShow',
         },
         ['FleetFounder'] = {
                     ['Name'] =  {
@@ -626,13 +626,13 @@ return {
                             ['German'] = "Fleet Founder",
                             ['French'] = "Fleet Founder",
                             },
-                    ['IconName'] = 'FleetFounder',
                     ['Description'] =  {
                             ['English'] = "Craft 5 types of boats.",
                             ['Russian'] = "Craft 5 types of boats.",
                             ['German'] = "Craft 5 types of boats.",
                             ['French'] = "Craft 5 types of boats.",
                             },
+                    ['IconName'] = 'FleetFounder',
         },
         ['Forestry101'] = {
                     ['Name'] =  {
@@ -641,13 +641,13 @@ return {
                             ['German'] = "Forstwirtschaft 1x1",
                             ['French'] = "Sylviculture pour les nuls",
                             },
-                    ['IconName'] = 'Forestry101',
                     ['Description'] =  {
                             ['English'] = "Plant 100 trees.",
                             ['Russian'] = "Посадите 100 деревьев.",
                             ['German'] = "Pflanze 100 Bäume.",
                             ['French'] = "Planter 100 arbres.",
                             },
+                    ['IconName'] = 'Forestry101',
         },
         ['FoundationalExcellence'] = {
                     ['Name'] =  {
@@ -656,13 +656,13 @@ return {
                             ['German'] = "Foundational Excellence",
                             ['French'] = "Excellence fondamentale",
                             },
-                    ['IconName'] = 'FoundationalExcellence',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 20 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 20 культуры.",
                             ['German'] = "Create architecture that generates 20 culture.",
                             ['French'] = "Crée une architecture qui génère 20 de culture.",
                             },
+                    ['IconName'] = 'FoundationalExcellence',
         },
         ['Foxtrot'] = {
                     ['Name'] =  {
@@ -671,13 +671,13 @@ return {
                             ['German'] = "Foxtrot",
                             ['French'] = "Foxtrot",
                             },
-                    ['IconName'] = 'Foxtrot',
                     ['Description'] =  {
                             ['English'] = "Successfully hunt a fox.",
                             ['Russian'] = "Successfully hunt a fox.",
                             ['German'] = "Successfully hunt a fox.",
                             ['French'] = "Successfully hunt a fox.",
                             },
+                    ['IconName'] = 'Foxtrot',
         },
         ['FreshCanvas'] = {
                     ['Name'] =  {
@@ -686,13 +686,13 @@ return {
                             ['German'] = "Fresh Canvas",
                             ['French'] = "Toile fraîche",
                             },
-                    ['IconName'] = 'FreshCanvas',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 5 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 5 культуры.",
                             ['German'] = "Create an artwork that generates 5 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 5 de culture.",
                             },
+                    ['IconName'] = 'FreshCanvas',
         },
         ['FreshOutoftheOven'] = {
                     ['Name'] =  {
@@ -701,13 +701,13 @@ return {
                             ['German'] = "Fresh Out of the Oven",
                             ['French'] = "Fresh Out of the Oven",
                             },
-                    ['IconName'] = 'FreshOutoftheOven',
                     ['Description'] =  {
                             ['English'] = "Create a baked good.",
                             ['Russian'] = "Create a baked good.",
                             ['German'] = "Create a baked good.",
                             ['French'] = "Create a baked good.",
                             },
+                    ['IconName'] = 'FreshOutoftheOven',
         },
         ['GatheringofMinds'] = {
                     ['Name'] =  {
@@ -716,13 +716,13 @@ return {
                             ['German'] = "Gathering of Minds",
                             ['French'] = "Gathering of Minds",
                             },
-                    ['IconName'] = 'GatheringofMinds',
                     ['Description'] =  {
                             ['English'] = "Attend a dinner party that generates more than 50 culture.",
                             ['Russian'] = "Attend a dinner party that generates more than 50 culture.",
                             ['German'] = "Attend a dinner party that generates more than 50 culture.",
                             ['French'] = "Attend a dinner party that generates more than 50 culture.",
                             },
+                    ['IconName'] = 'GatheringofMinds',
         },
         ['GraciousGuest'] = {
                     ['Name'] =  {
@@ -731,13 +731,13 @@ return {
                             ['German'] = "Gracious Guest",
                             ['French'] = "Gracious Guest",
                             },
-                    ['IconName'] = 'GraciousGuest',
                     ['Description'] =  {
                             ['English'] = "Attend a dinner party as a guest.",
                             ['Russian'] = "Attend a dinner party as a guest.",
                             ['German'] = "Attend a dinner party as a guest.",
                             ['French'] = "Attend a dinner party as a guest.",
                             },
+                    ['IconName'] = 'GraciousGuest',
         },
         ['GrandMonument'] = {
                     ['Name'] =  {
@@ -746,13 +746,13 @@ return {
                             ['German'] = "Grand Monument",
                             ['French'] = "Grand monument",
                             },
-                    ['IconName'] = 'GrandMonument',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 1000 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 1000 культуры.",
                             ['German'] = "Create architecture that generates 1000 culture.",
                             ['French'] = "Crée une architecture qui génère 1 000 de culture.",
                             },
+                    ['IconName'] = 'GrandMonument',
         },
         ['GreaseMonkey'] = {
                     ['Name'] =  {
@@ -761,13 +761,13 @@ return {
                             ['German'] = "Grease Monkey",
                             ['French'] = "Grease Monkey",
                             },
-                    ['IconName'] = 'GreaseMonkey',
                     ['Description'] =  {
                             ['English'] = "Craft 3 types of vehicles.",
                             ['Russian'] = "Craft 3 types of vehicles.",
                             ['German'] = "Craft 3 types of vehicles.",
                             ['French'] = "Craft 3 types of vehicles.",
                             },
+                    ['IconName'] = 'GreaseMonkey',
         },
         ['HammerTime'] = {
                     ['Name'] =  {
@@ -776,13 +776,13 @@ return {
                             ['German'] = "Hammer Time",
                             ['French'] = "Hammer Time",
                             },
-                    ['IconName'] = 'HammerTime',
                     ['Description'] =  {
                             ['English'] = "Craft 3 types of tools.",
                             ['Russian'] = "Craft 3 types of tools.",
                             ['German'] = "Craft 3 types of tools.",
                             ['French'] = "Craft 3 types of tools.",
                             },
+                    ['IconName'] = 'HammerTime',
         },
         ['HardDaysWork'] = {
                     ['Name'] =  {
@@ -791,13 +791,13 @@ return {
                             ['German'] = "Arbeitsreicher Tag",
                             ['French'] = "Une dure journée de labeur",
                             },
-                    ['IconName'] = 'HardDaysWork',
                     ['Description'] =  {
                             ['English'] = "Completed first contract.",
                             ['Russian'] = "Выполните первый договор.",
                             ['German'] = "Erster Kontakt erfolgreich.",
                             ['French'] = "Premier contrat terminé.",
                             },
+                    ['IconName'] = 'HardDaysWork',
         },
         ['HostwiththeMost'] = {
                     ['Name'] =  {
@@ -806,13 +806,13 @@ return {
                             ['German'] = "Host with the Most",
                             ['French'] = "Host with the Most",
                             },
-                    ['IconName'] = 'HostwiththeMost',
                     ['Description'] =  {
                             ['English'] = "Host 5 dinner parties.",
                             ['Russian'] = "Host 5 dinner parties.",
                             ['German'] = "Host 5 dinner parties.",
                             ['French'] = "Host 5 dinner parties.",
                             },
+                    ['IconName'] = 'HostwiththeMost',
         },
         ['HowtoCookaWolf'] = {
                     ['Name'] =  {
@@ -821,13 +821,13 @@ return {
                             ['German'] = "How to Cook a Wolf",
                             ['French'] = "How to Cook a Wolf",
                             },
-                    ['IconName'] = 'HowtoCookaWolf',
                     ['Description'] =  {
                             ['English'] = "Successfully hunt a wolf.",
                             ['Russian'] = "Successfully hunt a wolf.",
                             ['German'] = "Successfully hunt a wolf.",
                             ['French'] = "Successfully hunt a wolf.",
                             },
+                    ['IconName'] = 'HowtoCookaWolf',
         },
         ['IAmNotACrook'] = {
                     ['Name'] =  {
@@ -836,13 +836,13 @@ return {
                             ['German'] = "Ich Bin Kein Betrüger",
                             ['French'] = "Je ne suis pas un escroc",
                             },
-                    ['IconName'] = 'IAmNotACrook',
                     ['Description'] =  {
                             ['English'] = "Be forcibly removed from office.",
                             ['Russian'] = "Вас принудительно сняли с должности.",
                             ['German'] = "Be forcibly removed from office.",
                             ['French'] = "Être démis de force de ses fonctions.",
                             },
+                    ['IconName'] = 'IAmNotACrook',
         },
         ['ImpossibleBeauty'] = {
                     ['Name'] =  {
@@ -851,13 +851,13 @@ return {
                             ['German'] = "Impossible Beauty",
                             ['French'] = "Beauté impossible",
                             },
-                    ['IconName'] = 'ImpossibleBeauty',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 10000 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 10000 культуры.",
                             ['German'] = "Create an artwork that generates 10000 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 10 000 de culture.",
                             },
+                    ['IconName'] = 'ImpossibleBeauty',
         },
         ['IncipientRenaissance'] = {
                     ['Name'] =  {
@@ -866,13 +866,13 @@ return {
                             ['German'] = "Incipient Renaissance",
                             ['French'] = "Renaissance naissante",
                             },
-                    ['IconName'] = 'IncipientRenaissance',
                     ['Description'] =  {
                             ['English'] = "Create 500 total culture as a world.",
                             ['Russian'] = "В этом мире создано 500 культуры.",
                             ['German'] = "Create 500 total culture as a world.",
                             ['French'] = "Créer 500 de culture au total dans le monde.",
                             },
+                    ['IconName'] = 'IncipientRenaissance',
         },
         ['ItsObviouslyRigged'] = {
                     ['Name'] =  {
@@ -881,13 +881,13 @@ return {
                             ['German'] = "Sie wurde eindeutig gefälscht",
                             ['French'] = "C'est manifestement truqué",
                             },
-                    ['IconName'] = 'ItsObviouslyRigged',
                     ['Description'] =  {
                             ['English'] = "Lose an election.",
                             ['Russian'] = "Проиграть выборы.",
                             ['German'] = "Verliere eine Wahl.",
                             ['French'] = "Perdre une élection.",
                             },
+                    ['IconName'] = 'ItsObviouslyRigged',
         },
         ['KnotBad'] = {
                     ['Name'] =  {
@@ -896,13 +896,13 @@ return {
                             ['German'] = "Knot Bad",
                             ['French'] = "Knot Bad",
                             },
-                    ['IconName'] = 'KnotBad',
                     ['Description'] =  {
                             ['English'] = "Craft a boat.",
                             ['Russian'] = "Craft a boat.",
                             ['German'] = "Craft a boat.",
                             ['French'] = "Craft a boat.",
                             },
+                    ['IconName'] = 'KnotBad',
         },
         ['LegendaryMasterwork'] = {
                     ['Name'] =  {
@@ -911,13 +911,13 @@ return {
                             ['German'] = "Legendary Masterwork",
                             ['French'] = "Chef-d'œuvre légendaire",
                             },
-                    ['IconName'] = 'LegendaryMasterwork',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 5000 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 5000 культуры.",
                             ['German'] = "Create architecture that generates 5000 culture.",
                             ['French'] = "Crée une architecture qui génère 5 000 de culture.",
                             },
+                    ['IconName'] = 'LegendaryMasterwork',
         },
         ['LifeoftheParty'] = {
                     ['Name'] =  {
@@ -926,13 +926,13 @@ return {
                             ['German'] = "Life of the Party",
                             ['French'] = "Life of the Party",
                             },
-                    ['IconName'] = 'LifeoftheParty',
                     ['Description'] =  {
                             ['English'] = "Attend 25 dinner parties as a guest.",
                             ['Russian'] = "Attend 25 dinner parties as a guest.",
                             ['German'] = "Attend 25 dinner parties as a guest.",
                             ['French'] = "Attend 25 dinner parties as a guest.",
                             },
+                    ['IconName'] = 'LifeoftheParty',
         },
         ['MagnumOpus'] = {
                     ['Name'] =  {
@@ -941,13 +941,13 @@ return {
                             ['German'] = "Magnum Opus",
                             ['French'] = "Chef-d'œuvre Majeur",
                             },
-                    ['IconName'] = 'MagnumOpus',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 5000 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 5000 культуры.",
                             ['German'] = "Create an artwork that generates 5000 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 5 000 de culture.",
                             },
+                    ['IconName'] = 'MagnumOpus',
         },
         ['MakeitRain'] = {
                     ['Name'] =  {
@@ -956,13 +956,13 @@ return {
                             ['German'] = "Lass es regnen",
                             ['French'] = "Que ça coule à flot",
                             },
-                    ['IconName'] = 'MakeitRain',
                     ['Description'] =  {
                             ['English'] = "Minted First Currency.",
                             ['Russian'] = "Отчеканил первую валюту.",
                             ['German'] = "Erste geprägte Währung.",
                             ['French'] = "Première monnaie frappée.",
                             },
+                    ['IconName'] = 'MakeitRain',
         },
         ['MasonryMaster'] = {
                     ['Name'] =  {
@@ -971,13 +971,13 @@ return {
                             ['German'] = "Masonry Master",
                             ['French'] = "Masonry Master",
                             },
-                    ['IconName'] = 'MasonryMaster',
                     ['Description'] =  {
                             ['English'] = "Create 5 types of masonry items.",
                             ['Russian'] = "Create 5 types of masonry items.",
                             ['German'] = "Create 5 types of masonry items.",
                             ['French'] = "Create 5 types of masonry items.",
                             },
+                    ['IconName'] = 'MasonryMaster',
         },
         ['MasterChef'] = {
                     ['Name'] =  {
@@ -986,13 +986,13 @@ return {
                             ['German'] = "Master Chef",
                             ['French'] = "Master Chef",
                             },
-                    ['IconName'] = 'MasterChef',
                     ['Description'] =  {
                             ['English'] = "Craft 100 types of food.",
                             ['Russian'] = "Craft 100 types of food.",
                             ['German'] = "Craft 100 types of food.",
                             ['French'] = "Craft 100 types of food.",
                             },
+                    ['IconName'] = 'MasterChef',
         },
         ['MasterMechanic'] = {
                     ['Name'] =  {
@@ -1001,13 +1001,13 @@ return {
                             ['German'] = "Master Mechanic",
                             ['French'] = "Master Mechanic",
                             },
-                    ['IconName'] = 'MasterMechanic',
                     ['Description'] =  {
                             ['English'] = "Craft 5 types of vehicles.",
                             ['Russian'] = "Craft 5 types of vehicles.",
                             ['German'] = "Craft 5 types of vehicles.",
                             ['French'] = "Craft 5 types of vehicles.",
                             },
+                    ['IconName'] = 'MasterMechanic',
         },
         ['MasterofCeremonies'] = {
                     ['Name'] =  {
@@ -1016,13 +1016,13 @@ return {
                             ['German'] = "Master of Ceremonies",
                             ['French'] = "Master of Ceremonies",
                             },
-                    ['IconName'] = 'MasterofCeremonies',
                     ['Description'] =  {
                             ['English'] = "Host 25 dinner parties.",
                             ['Russian'] = "Host 25 dinner parties.",
                             ['German'] = "Host 25 dinner parties.",
                             ['French'] = "Host 25 dinner parties.",
                             },
+                    ['IconName'] = 'MasterofCeremonies',
         },
         ['Masterpiece'] = {
                     ['Name'] =  {
@@ -1031,13 +1031,13 @@ return {
                             ['German'] = "Meisterwerk",
                             ['French'] = "Chef-d'œuvre",
                             },
-                    ['IconName'] = 'Masterpiece',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 1000 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 1000 культуры.",
                             ['German'] = "Create an artwork that generates 1000 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 1 000 de culture.",
                             },
+                    ['IconName'] = 'Masterpiece',
         },
         ['NevertoReturn'] = {
                     ['Name'] =  {
@@ -1046,13 +1046,13 @@ return {
                             ['German'] = "Auf Nimmerwiedersehen",
                             ['French'] = "Pas de retour en arrière",
                             },
-                    ['IconName'] = 'NevertoReturn',
                     ['Description'] =  {
                             ['English'] = "A species went extinct.",
                             ['Russian'] = "Вымершие виды.",
                             ['German'] = "Eine Spezies ist ausgestorben.",
                             ['French'] = "Une espèce vient de s'éteindre.",
                             },
+                    ['IconName'] = 'NevertoReturn',
         },
         ['NobelLaureate'] = {
                     ['Name'] =  {
@@ -1061,13 +1061,13 @@ return {
                             ['German'] = "Nobel Laureate",
                             ['French'] = "Nobel Laureate",
                             },
-                    ['IconName'] = 'NobelLaureate',
                     ['Description'] =  {
                             ['English'] = "Craft 10 different skill books.",
                             ['Russian'] = "Craft 10 different skill books.",
                             ['German'] = "Craft 10 different skill books.",
                             ['French'] = "Craft 10 different skill books.",
                             },
+                    ['IconName'] = 'NobelLaureate',
         },
         ['NoteworthyConstruction'] = {
                     ['Name'] =  {
@@ -1076,13 +1076,13 @@ return {
                             ['German'] = "Noteworthy Construction",
                             ['French'] = "Construction remarquable",
                             },
-                    ['IconName'] = 'NoteworthyConstruction',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 5 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 5 культуры.",
                             ['German'] = "Create architecture that generates 5 culture.",
                             ['French'] = "Crée une architecture qui génère 5 de culture.",
                             },
+                    ['IconName'] = 'NoteworthyConstruction',
         },
         ['OreCollector'] = {
                     ['Name'] =  {
@@ -1091,13 +1091,13 @@ return {
                             ['German'] = "Ore Collector",
                             ['French'] = "Ore Collector",
                             },
-                    ['IconName'] = 'OreCollector',
                     ['Description'] =  {
                             ['English'] = "Mine 100 ore.",
                             ['Russian'] = "Mine 100 ore.",
                             ['German'] = "Mine 100 ore.",
                             ['French'] = "Mine 100 ore.",
                             },
+                    ['IconName'] = 'OreCollector',
         },
         ['PerfectPairing'] = {
                     ['Name'] =  {
@@ -1106,13 +1106,13 @@ return {
                             ['German'] = "Perfect Pairing",
                             ['French'] = "Perfect Pairing",
                             },
-                    ['IconName'] = 'PerfectPairing',
                     ['Description'] =  {
                             ['English'] = "Host a dinner party where a guest eats their favorite food.",
                             ['Russian'] = "Host a dinner party where a guest eats their favorite food.",
                             ['German'] = "Host a dinner party where a guest eats their favorite food.",
                             ['French'] = "Host a dinner party where a guest eats their favorite food.",
                             },
+                    ['IconName'] = 'PerfectPairing',
         },
         ['Polymath'] = {
                     ['Name'] =  {
@@ -1121,13 +1121,13 @@ return {
                             ['German'] = "Polymath",
                             ['French'] = "Polymath",
                             },
-                    ['IconName'] = 'Polymath',
                     ['Description'] =  {
                             ['English'] = "Craft 3 different skill books.",
                             ['Russian'] = "Craft 3 different skill books.",
                             ['German'] = "Craft 3 different skill books.",
                             ['French'] = "Craft 3 different skill books.",
                             },
+                    ['IconName'] = 'Polymath',
         },
         ['ReapWhatYouSow'] = {
                     ['Name'] =  {
@@ -1136,13 +1136,13 @@ return {
                             ['German'] = "Man erntet, was man sät",
                             ['French'] = "Récolter ce que l'on sème",
                             },
-                    ['IconName'] = 'ReapWhatYouSow',
                     ['Description'] =  {
                             ['English'] = "Gather 100 farmable items on land you own.",
                             ['Russian'] = "Gather 100 farmable items on land you own.",
                             ['German'] = "Gather 100 farmable items on land you own.",
                             ['French'] = "Gather 100 farmable items on land you own.",
                             },
+                    ['IconName'] = 'ReapWhatYouSow',
         },
         ['RemarkableWork'] = {
                     ['Name'] =  {
@@ -1151,13 +1151,13 @@ return {
                             ['German'] = "Bemerkenswerte Arbeit",
                             ['French'] = "Œuvre remarquable",
                             },
-                    ['IconName'] = 'RemarkableWork',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 20 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 20 культуры.",
                             ['German'] = "Create an artwork that generates 20 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 20 de culture.",
                             },
+                    ['IconName'] = 'RemarkableWork',
         },
         ['RenownedWork'] = {
                     ['Name'] =  {
@@ -1166,13 +1166,13 @@ return {
                             ['German'] = "Renowned Work",
                             ['French'] = "Ouvrage réputé",
                             },
-                    ['IconName'] = 'RenownedWork',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 200 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 200 культуры.",
                             ['German'] = "Create an artwork that generates 200 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 200 de culture.",
                             },
+                    ['IconName'] = 'RenownedWork',
         },
         ['Rockhound'] = {
                     ['Name'] =  {
@@ -1181,13 +1181,13 @@ return {
                             ['German'] = "Rockhound",
                             ['French'] = "Rockhound",
                             },
-                    ['IconName'] = 'Rockhound',
                     ['Description'] =  {
                             ['English'] = "Mine 1000 ore.",
                             ['Russian'] = "Mine 1000 ore.",
                             ['German'] = "Mine 1000 ore.",
                             ['French'] = "Mine 1000 ore.",
                             },
+                    ['IconName'] = 'Rockhound',
         },
         ['RollinginDough'] = {
                     ['Name'] =  {
@@ -1196,13 +1196,13 @@ return {
                             ['German'] = "Rolling in Dough",
                             ['French'] = "Rolling in Dough",
                             },
-                    ['IconName'] = 'RollinginDough',
                     ['Description'] =  {
                             ['English'] = "Create 5 types of baked goods.",
                             ['Russian'] = "Create 5 types of baked goods.",
                             ['German'] = "Create 5 types of baked goods.",
                             ['French'] = "Create 5 types of baked goods.",
                             },
+                    ['IconName'] = 'RollinginDough',
         },
         ['SavedtheWorld'] = {
                     ['Name'] =  {
@@ -1211,13 +1211,13 @@ return {
                             ['German'] = "Welt gespeichert.",
                             ['French'] = "Sauveur du Monde",
                             },
-                    ['IconName'] = 'SavedtheWorld',
                     ['Description'] =  {
                             ['English'] = "Destroyed the meteor on a server.",
                             ['Russian'] = "Уничтожен метеор на сервере.",
                             ['German'] = "Meteor auf diesem Server wurde zerstört.",
                             ['French'] = "Détruire le météore sur un serveur.",
                             },
+                    ['IconName'] = 'SavedtheWorld',
         },
         ['SculptorofCities'] = {
                     ['Name'] =  {
@@ -1226,13 +1226,13 @@ return {
                             ['German'] = "Sculptor of Cities",
                             ['French'] = "Sculptor of Cities",
                             },
-                    ['IconName'] = 'SculptorofCities',
                     ['Description'] =  {
                             ['English'] = "Create 20 types of masonry items.",
                             ['Russian'] = "Create 20 types of masonry items.",
                             ['German'] = "Create 20 types of masonry items.",
                             ['French'] = "Create 20 types of masonry items.",
                             },
+                    ['IconName'] = 'SculptorofCities',
         },
         ['SettingUpShop'] = {
                     ['Name'] =  {
@@ -1241,13 +1241,13 @@ return {
                             ['German'] = "Geschäft einrichten",
                             ['French'] = "Créer un magasin",
                             },
-                    ['IconName'] = 'SettingUpShop',
                     ['Description'] =  {
                             ['English'] = "Opened a store with at least one item listed.",
                             ['Russian'] = "Открыть магазин, в котором есть хотя бы один товар.",
                             ['German'] = "Ein Shop wurde geöffnet, mit mindestens einem Objekt, das gelistet ist.",
                             ['French'] = "Ouverture d'un magasin avec au moins un article répertorié.",
                             },
+                    ['IconName'] = 'SettingUpShop',
         },
         ['SewItBegins'] = {
                     ['Name'] =  {
@@ -1256,13 +1256,13 @@ return {
                             ['German'] = "Sew It Begins",
                             ['French'] = "Sew It Begins",
                             },
-                    ['IconName'] = 'SewItBegins',
                     ['Description'] =  {
                             ['English'] = "Craft an article of clothing.",
                             ['Russian'] = "Craft an article of clothing.",
                             ['German'] = "Craft an article of clothing.",
                             ['French'] = "Craft an article of clothing.",
                             },
+                    ['IconName'] = 'SewItBegins',
         },
         ['Shotgun'] = {
                     ['Name'] =  {
@@ -1271,13 +1271,13 @@ return {
                             ['German'] = "Erster!",
                             ['French'] = "Premier devant !",
                             },
-                    ['IconName'] = 'Shotgun',
                     ['Description'] =  {
                             ['English'] = "Ride a vehicle as a passenger.",
                             ['Russian'] = "Прокатитесь на транспорте как пассажир.",
                             ['German'] = "Fahre als Beifahrer mit.",
                             ['French'] = "Monter à bord d'un véhicule en tant que passager.",
                             },
+                    ['IconName'] = 'Shotgun',
         },
         ['SocialButterfly'] = {
                     ['Name'] =  {
@@ -1286,13 +1286,13 @@ return {
                             ['German'] = "Social Butterfly",
                             ['French'] = "Social Butterfly",
                             },
-                    ['IconName'] = 'SocialButterfly',
                     ['Description'] =  {
                             ['English'] = "Attend 5 dinner parties as a guest.",
                             ['Russian'] = "Attend 5 dinner parties as a guest.",
                             ['German'] = "Attend 5 dinner parties as a guest.",
                             ['French'] = "Attend 5 dinner parties as a guest.",
                             },
+                    ['IconName'] = 'SocialButterfly',
         },
         ['SowItBegins'] = {
                     ['Name'] =  {
@@ -1301,13 +1301,13 @@ return {
                             ['German'] = "Sow It Begins",
                             ['French'] = "Sow It Begins",
                             },
-                    ['IconName'] = 'SowItBegins',
                     ['Description'] =  {
                             ['English'] = "Plant 100 seeds.",
                             ['Russian'] = "Plant 100 seeds.",
                             ['German'] = "Plant 100 seeds.",
                             ['French'] = "Plant 100 seeds.",
                             },
+                    ['IconName'] = 'SowItBegins',
         },
         ['SparklingCanvas'] = {
                     ['Name'] =  {
@@ -1316,13 +1316,13 @@ return {
                             ['German'] = "Glitzernde Leinwand",
                             ['French'] = "Toile scintillante",
                             },
-                    ['IconName'] = 'SparklingCanvas',
                     ['Description'] =  {
                             ['English'] = "Create 50 total culture as a world.",
                             ['Russian'] = "В этом мире создано 50 культуры.",
                             ['German'] = "Create 50 total culture as a world.",
                             ['French'] = "Créer 50 de culture au total dans le monde.",
                             },
+                    ['IconName'] = 'SparklingCanvas',
         },
         ['StructuralMagnificence'] = {
                     ['Name'] =  {
@@ -1331,13 +1331,13 @@ return {
                             ['German'] = "Structural Magnificence",
                             ['French'] = "Magnificence structurelle",
                             },
-                    ['IconName'] = 'StructuralMagnificence',
                     ['Description'] =  {
                             ['English'] = "Create architecture that generates 50 culture.",
                             ['Russian'] = "Создайте архитектурное творение, генерирующее 50 культуры.",
                             ['German'] = "Create architecture that generates 50 culture.",
                             ['French'] = "Crée une architecture qui génère 50 de culture.",
                             },
+                    ['IconName'] = 'StructuralMagnificence',
         },
         ['Taxpayer'] = {
                     ['Name'] =  {
@@ -1346,13 +1346,13 @@ return {
                             ['German'] = "Steuerzahler",
                             ['French'] = "Contribuable",
                             },
-                    ['IconName'] = 'Taxpayer',
                     ['Description'] =  {
                             ['English'] = "Paid 50 backing-units of currency in taxes (IE, 50 gold ingots worth of currency, when backed by gold ingots, which may be different from the currency value).",
                             ['Russian'] = "Заплатить налогами стоимость 50-ти единиц предмета, из которого создана валюта (т. е. цену 50-ти слитков золота, если отчеканено из золота, стоимость которых может отличаться от стоимости валюты).",
                             ['German'] = "Paid 50 backing-units of currency in taxes (IE, 50 gold ingots worth of currency, when backed by gold ingots, which may be different from the currency value).",
                             ['French'] = "Paid 50 backing-units of currency in taxes (IE, 50 gold ingots worth of currency, when backed by gold ingots, which may be different from the currency value).",
                             },
+                    ['IconName'] = 'Taxpayer',
         },
         ['ThePreamble'] = {
                     ['Name'] =  {
@@ -1361,13 +1361,13 @@ return {
                             ['German'] = "Das Vorwort",
                             ['French'] = "Préambule",
                             },
-                    ['IconName'] = 'ThePreamble',
                     ['Description'] =  {
                             ['English'] = "Propose a ratification of a constitution.",
                             ['Russian'] = "Начните голосование о ратификации конституции.",
                             ['German'] = "Schlage die Ratifizierung einer Verfassung vor.",
                             ['French'] = "Proposer la ratification d'une constitution.",
                             },
+                    ['IconName'] = 'ThePreamble',
         },
         ['ToolMaster'] = {
                     ['Name'] =  {
@@ -1376,13 +1376,13 @@ return {
                             ['German'] = "Tool Master",
                             ['French'] = "Tool Master",
                             },
-                    ['IconName'] = 'ToolMaster',
                     ['Description'] =  {
                             ['English'] = "Craft 10 types of tools.",
                             ['Russian'] = "Craft 10 types of tools.",
                             ['German'] = "Craft 10 types of tools.",
                             ['French'] = "Craft 10 types of tools.",
                             },
+                    ['IconName'] = 'ToolMaster',
         },
         ['ToolsmithTitan'] = {
                     ['Name'] =  {
@@ -1391,13 +1391,13 @@ return {
                             ['German'] = "Toolsmith Titan",
                             ['French'] = "Toolsmith Titan",
                             },
-                    ['IconName'] = 'ToolsmithTitan',
                     ['Description'] =  {
                             ['English'] = "Craft 20 types of tools.",
                             ['Russian'] = "Craft 20 types of tools.",
                             ['German'] = "Craft 20 types of tools.",
                             ['French'] = "Craft 20 types of tools.",
                             },
+                    ['IconName'] = 'ToolsmithTitan',
         },
         ['Virtuoso'] = {
                     ['Name'] =  {
@@ -1406,13 +1406,13 @@ return {
                             ['German'] = "Virtuose",
                             ['French'] = "Virtuose",
                             },
-                    ['IconName'] = 'Virtuoso',
                     ['Description'] =  {
                             ['English'] = "Create 200 culture.",
                             ['Russian'] = "Создайте 200 культуры.",
                             ['German'] = "Create 200 culture.",
                             ['French'] = "Créez 200 cultures.",
                             },
+                    ['IconName'] = 'Virtuoso',
         },
         ['Visionary'] = {
                     ['Name'] =  {
@@ -1421,13 +1421,13 @@ return {
                             ['German'] = "Visionär",
                             ['French'] = "Visionnaire",
                             },
-                    ['IconName'] = 'Visionary',
                     ['Description'] =  {
                             ['English'] = "Create 1000 culture.",
                             ['Russian'] = "Создайте 1000 культуры.",
                             ['German'] = "Create 1000 culture.",
                             ['French'] = "Créez 1 000 cultures.",
                             },
+                    ['IconName'] = 'Visionary',
         },
         ['VisionaryWork'] = {
                     ['Name'] =  {
@@ -1436,13 +1436,13 @@ return {
                             ['German'] = "Visionary Work",
                             ['French'] = "Ouvrage visionnaire",
                             },
-                    ['IconName'] = 'VisionaryWork',
                     ['Description'] =  {
                             ['English'] = "Create an artwork that generates 500 culture.",
                             ['Russian'] = "Создайте предмет искусства, дающий 500 культуры.",
                             ['German'] = "Create an artwork that generates 500 culture.",
                             ['French'] = "Crée une œuvre d'art qui génère 500 de culture.",
                             },
+                    ['IconName'] = 'VisionaryWork',
         },
         ['WheelsinMotion'] = {
                     ['Name'] =  {
@@ -1451,13 +1451,13 @@ return {
                             ['German'] = "Wheels in Motion",
                             ['French'] = "Wheels in Motion",
                             },
-                    ['IconName'] = 'WheelsinMotion',
                     ['Description'] =  {
                             ['English'] = "Craft a vehicle.",
                             ['Russian'] = "Craft a vehicle.",
                             ['German'] = "Craft a vehicle.",
                             ['French'] = "Craft a vehicle.",
                             },
+                    ['IconName'] = 'WheelsinMotion',
         },
         ['Yum'] = {
                     ['Name'] =  {
@@ -1466,13 +1466,13 @@ return {
                             ['German'] = "Mjam!",
                             ['French'] = "Miam !",
                             },
-                    ['IconName'] = 'Yum',
                     ['Description'] =  {
                             ['English'] = "Discover your favorite food.",
                             ['Russian'] = "Найдите своё самое вкусное блюдо.",
                             ['German'] = "Finde dein Lieblingsessen.",
                             ['French'] = "Découvrez votre plat préféré.",
                             },
+                    ['IconName'] = 'Yum',
         },
     },
 }

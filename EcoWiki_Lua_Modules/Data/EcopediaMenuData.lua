@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 14.05.2026 18:58:29
 
 return {
     ecopediapages = {
@@ -14,6 +14,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Animals',
+                    ['Pages'] = {'Mammals', 'Reptiles', 'Fish', 'Invertebrates', 'Birds'},
         },
         ['Blocks'] = {
                     ['Name'] =  {
@@ -25,6 +26,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Blocks',
+                    ['Pages'] = {'Roads', 'Byproducts', 'Building Materials', 'Liquids', 'Metals', 'Processed Rock', 'Pipes'},
         },
         ['Components'] = {
                     ['Name'] =  {
@@ -56,6 +58,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_CraftedObjects',
+                    ['Pages'] = {'Specialty', 'Vehicles', 'Community', 'Storage', 'Power Generation', 'Signs', 'Stores'},
         },
         ['Economic Components'] = {
                     ['Name'] =  {
@@ -67,6 +70,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Components',
                     ['Icon'] = 'Ecopedia_Economic_Components',
+                    ['Pages'] = {'Item Distribution Component', 'Mint Component', 'Bank Component', 'Exchange Component', 'Store Component', 'Credit Component', 'Deed Sales Component', 'Vehicle Component', 'Contract Board Component'},
         },
         ['Economy'] = {
                     ['Name'] =  {
@@ -78,6 +82,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'MoneyBag',
+                    ['Pages'] = {'Repairs', 'Currency', 'Bank Accounts', 'Trade', 'Transport', 'Work Parties', 'Economy Overview', 'Economy Viewer', 'Research', 'Crafting', 'Contracts', 'Finance', 'Reputation'},
         },
         ['Ecosystem'] = {
                     ['Name'] =  {
@@ -89,6 +94,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'Ecopedia_Ecosystem',
+                    ['Pages'] = {'Exhaustion', 'Biomes', 'Farming', 'Harvesting', 'Hunting', 'Ecosystem Overview', 'Data', 'Food Webs', 'Mining', 'Pollution'},
         },
         ['Food'] = {
                     ['Name'] =  {
@@ -100,6 +106,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Food',
+                    ['Pages'] = {'Campfire', 'Baking', 'Cooking', 'Produce', 'Ingredients', 'Raw Meat', 'Preserved Food', 'Charred Food', 'Seed'},
         },
         ['Getting Started'] = {
                     ['Name'] =  {
@@ -111,6 +118,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'Ecopedia_GettingStarted',
+                    ['Pages'] = {'Choosing a Profession', 'Economic Participation', 'Food and Shelter', 'Civic Duties', 'Life in an Ecosystem', 'The Arc of Progress', 'The Meteor', 'Using Tools'},
         },
         ['Government'] = {
                     ['Name'] =  {
@@ -122,6 +130,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'Ecopedia_Government',
+                    ['Pages'] = {'Laws', 'Constitution', 'Districts', 'Elected Titles', 'Election Processes', 'Elections', 'Executive Actions', 'Civic Articles', 'Demographics', 'Government Overview', 'Taxes', 'Titles'},
         },
         ['Government Components'] = {
                     ['Name'] =  {
@@ -133,6 +142,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Components',
                     ['Icon'] = 'Ecopedia_Government_Components',
+                    ['Pages'] = {'Spawned Claims Component', 'Civic Action Component', 'Registrar Component', 'Civic Object Component', 'Treasury Component'},
         },
         ['Housing'] = {
                     ['Name'] =  {
@@ -144,6 +154,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'Ecopedia_Housing',
+                    ['Pages'] = {'Building', 'Housing Overview', 'Power', 'Property', 'Residency', 'Sewage', 'Rooms'},
         },
         ['Housing Components'] = {
                     ['Name'] =  {
@@ -155,6 +166,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Components',
                     ['Icon'] = 'Ecopedia_Housing_Components',
+                    ['Pages'] = {'Authorization Component', 'Bed Component', 'My Deeds Component', 'Text Component'},
         },
         ['Housing Objects'] = {
                     ['Name'] =  {
@@ -166,6 +178,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Housing_Objects',
+                    ['Pages'] = {'Cultural', 'Kitchen', 'Doors', 'Bathroom', 'Seating', 'Outdoor', 'Decoration', 'Living Room', 'Bedroom', 'Lighting'},
         },
         ['Industry Components'] = {
                     ['Name'] =  {
@@ -177,6 +190,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Components',
                     ['Icon'] = 'Ecopedia_Industry_Components',
+                    ['Pages'] = {'Pipe Component', 'Repair Component', 'Storage Component', 'Modules Component', 'Power Component', 'Crafting Component', 'Status Component'},
         },
         ['Items'] = {
                     ['Name'] =  {
@@ -188,6 +202,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Items',
+                    ['Pages'] = {'Tools', 'Products', 'Clothing', 'Fertilizers', 'Research Papers', 'Skill Books'},
         },
         ['Natural Resources'] = {
                     ['Name'] =  {
@@ -199,6 +214,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Natural_Resources',
+                    ['Pages'] = {'Logs', 'Stone', 'Ore', 'Blocks', 'Animal'},
         },
         ['Plants'] = {
                     ['Name'] =  {
@@ -210,6 +226,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Plants',
+                    ['Pages'] = {'Plants', 'Fungi', 'Trees'},
         },
         ['Professions'] = {
                     ['Name'] =  {
@@ -221,6 +238,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Professions',
+                    ['Pages'] = {'Smith', 'Survivalist', 'Farmer', 'Chef', 'Engineer', 'Hunter', 'Carpenter', 'Mason', 'Profession Overview', 'Tailor', 'Scientist'},
         },
         ['Reference'] = {
                     ['Name'] =  {
@@ -242,6 +260,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'EcopediaSettlements',
+                    ['Pages'] = {'Annexation', 'Founding', 'Dinner Parties', 'Citizenship', 'Culture', 'Immigration Policy', 'Influence', 'Property Crisis', 'Settlement Overview', 'Settlement Property'},
         },
         ['Skills'] = {
                     ['Name'] =  {
@@ -253,6 +272,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Concepts',
                     ['Icon'] = 'Skill Book',
+                    ['Pages'] = {'Skills Overview', 'Experience', 'Nutrition', 'Specialties'},
         },
         ['Upgrade Modules'] = {
                     ['Name'] =  {
@@ -264,6 +284,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_Enhancements',
+                    ['Pages'] = {'Advanced Upgrades', 'Modern Upgrades', 'Specialty Upgrades', 'Basic Upgrades'},
         },
         ['Work Stations'] = {
                     ['Name'] =  {
@@ -275,6 +296,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'Reference',
                     ['Icon'] = 'Ecopedia_WorkStations',
+                    ['Pages'] = {'Craft Tables', 'Economic', 'Government', 'Researching'},
         },
     },
 }

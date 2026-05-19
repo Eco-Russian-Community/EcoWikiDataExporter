@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 17.05.2026 16:02:01
 
 return {
     talents = {
@@ -1627,10 +1627,10 @@ return {
                             ['French'] = "Robotic Assistance: Industry",
                             },
                     ['Description'] =  {
-                            ['English'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power cost per talent level.",
-                            ['Russian'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power cost per talent level.",
-                            ['German'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power cost per talent level.",
-                            ['French'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power cost per talent level.",
+                            ['English'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power consumption.",
+                            ['Russian'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power consumption.",
+                            ['German'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power consumption.",
+                            ['French'] = "Reduced resource cost of Industry recipes in the Robotic Assembly Line and increased crafting speed at the cost of significantly increased power consumption.",
                             },
                     ['IconName'] = 'IndustryRoboticAssistanceTalentGroup',
                     ['SkillID'] = 'IndustrySkill',

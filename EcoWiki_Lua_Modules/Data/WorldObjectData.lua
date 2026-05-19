@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 25.04.2026 17:15:00
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 17.05.2026 16:02:01
 
 return {
     WorldObjects = {
@@ -4580,6 +4580,7 @@ return {
                     ['HomeBaseValue'] = '5',
                     ['TypeForRoomLimit'] = 'Dresser',
                     ['DiminishingReturnMultiplier'] = '0.5',
+                    ['WardrobeComponent'] = 'True',
         },
         ['Hardwood Lumber Hallway Table'] = {
                     ['CraftingComponent'] = 'False',
@@ -4713,6 +4714,7 @@ return {
                     ['HomeBaseValue'] = '2',
                     ['TypeForRoomLimit'] = 'Dresser',
                     ['DiminishingReturnMultiplier'] = '0.5',
+                    ['WardrobeComponent'] = 'True',
         },
         ['Hewn Hardwood Bench'] = {
                     ['CraftingComponent'] = 'False',
@@ -6786,6 +6788,7 @@ return {
                     ['HomeBaseValue'] = '5',
                     ['TypeForRoomLimit'] = 'Dresser',
                     ['DiminishingReturnMultiplier'] = '0.5',
+                    ['WardrobeComponent'] = 'True',
         },
         ['Lumber Hallway Table'] = {
                     ['CraftingComponent'] = 'False',
@@ -10251,6 +10254,7 @@ return {
                     ['HomeBaseValue'] = '5',
                     ['TypeForRoomLimit'] = 'Dresser',
                     ['DiminishingReturnMultiplier'] = '0.5',
+                    ['WardrobeComponent'] = 'True',
         },
         ['Softwood Lumber Hallway Table'] = {
                     ['CraftingComponent'] = 'False',

@@ -17,6 +17,7 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation;
@@ -68,19 +69,20 @@ namespace Eco.Mods.EcoWikiDataExporter
                     AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
                     AnimalData[animalName]["ID"] = $"'{animal.Name}" + "Species'";
                     AnimalData[animalName]["Name"] = WriteDictionaryAsSubObject(Localization(animalName), 1);
-                    AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1);
+
+                    if (animal.Aquatic == false) { AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1); }
                     
                     // Behavior
                     AnimalData[animalName]["MaturityAgeDays"] = $"'{WikiFloat(animal.MaturityAgeDays)}'";
                     AnimalData[animalName]["IsSwimming"] = $"'{animal.Swimming}'";
                     AnimalData[animalName]["IsFishable"] = $"'{animal.IsFishable}'";
                     AnimalData[animalName]["Nocturnal"] = $"'{animal.Nocturnal}'";
-                    AnimalData[animalName]["Aquatic"] = $"'{animal.Aquatic}'"; 
+                    AnimalData[animalName]["Aquatic"] = $"'{animal.Aquatic}'";
 
 
                     AnimalData[animalName]["Health"] = $"'{WikiFloat(animal.Health)}'";
                     AnimalData[animalName]["Flags"] = $"'{animal.Flags}'";
-                    
+
 
                     AnimalData[animalName]["TooCloseDistance"] = $"'{WikiFloat(animal.TooCloseDistance)}'";
                     AnimalData[animalName]["MaxVisibilityDistance"] = $"'{WikiFloat(animal.MaxVisibilityDistance)}'";

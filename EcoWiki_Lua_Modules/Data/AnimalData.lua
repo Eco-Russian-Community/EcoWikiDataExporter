@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:31
+-- Eco Version : 0.13.0.3
+-- EWDE Version : 0.7.1.1
+-- Date of export : 17.05.2026 16:01:55
 
 return {
     animals = {
@@ -104,12 +104,7 @@ return {
                             ['German'] = "Barsch",
                             ['French'] = "Bar",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -242,12 +237,7 @@ return {
                             ['German'] = "Blauer Hai",
                             ['French'] = "Requin bleu",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -288,12 +278,7 @@ return {
                             ['German'] = "Kabeljau",
                             ['French'] = "Morue",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -656,12 +641,7 @@ return {
                             ['German'] = "Mondqualle",
                             ['French'] = "Méduse lune",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -794,12 +774,7 @@ return {
                             ['German'] = "Pazifische Sardine",
                             ['French'] = "Sardine du Pacifique",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -886,12 +861,7 @@ return {
                             ['German'] = "Lachs",
                             ['French'] = "Saumon",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -1024,12 +994,7 @@ return {
                             ['German'] = "Forelle",
                             ['French'] = "Truite",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',
@@ -1070,12 +1035,7 @@ return {
                             ['German'] = "Thunfisch",
                             ['French'] = "Thon",
                             },
-                    ['Description'] =  {
-                            ['English'] = "",
-                            ['Russian'] = "",
-                            ['German'] = "",
-                            ['French'] = "",
-                            },
+                    ['Description'] = nil,
                     ['MaturityAgeDays'] = '1',
                     ['IsSwimming'] = 'True',
                     ['IsFishable'] = 'True',

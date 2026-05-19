@@ -414,9 +414,11 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                                     }
 
-
-                                    
-
+                                    if (worldObject.HasComponent<WardrobeComponent>())
+                                    {
+                                        var WardrobeComponent = worldObject.GetComponent<WardrobeComponent>();
+                                        WorldObjectData[ItemName]["WardrobeComponent"] = "'True'";
+                                    }
 
 
 

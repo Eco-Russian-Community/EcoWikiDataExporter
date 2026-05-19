@@ -49,8 +49,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             Dictionary<string, string> achievementDetails = new Dictionary<string, string>()
                 {
                     { "Name","nil" },
-                    { "IconName","nil" },
                     { "Description","nil" },
+                    { "IconName","nil" },
                 };
 
             foreach (AchievementDefinition achievement in AchievementManager.Obj.NameToAchievement.Values)
@@ -59,7 +59,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                 if (!AchievementData.ContainsKey(achievementName))
                 {
-                    //string Achievement = 
                     AchievementData.Add(achievementName, new Dictionary<string, string>(achievementDetails));
                     AchievementData[achievementName]["Name"] = WriteDictionaryAsSubObject(Localization(achievement.DisplayName.NotTranslated), 1);
                     AchievementData[achievementName]["Description"] = WriteDictionaryAsSubObject(Localization(achievement.Description.NotTranslated), 1);
