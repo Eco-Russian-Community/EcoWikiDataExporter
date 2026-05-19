@@ -236,10 +236,16 @@ namespace Eco.Mods.EcoWikiDataExporter
 						ClothingData[ItemName]["StartClothing"] = $"'{Clothing.Starter}'";
 
 						Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
-						//ClothingData[ItemName]["FlatStats"] = $"{FlatStatString}";
+						var FlatStats = new Dictionary<string, string>();
 
+						foreach (var stat in сlothingStats)
+						{
+							FlatStats.Add(stat.Key.ToString(), stat.Value.ToString() );							
+						}
 
-					}
+						ClothingData[ItemName]["FlatStats"] = WriteDictionaryAsSubObject(FlatStats, 1);
+
+                    }
 
 					if (item is VehicleToolItem vehicleToolItem)
 					{ 
