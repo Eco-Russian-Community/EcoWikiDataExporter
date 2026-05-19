@@ -1,10 +1,32 @@
 -- Eco Version : 0.13.0.3
--- EWDE Version : 0.7.1.1
--- Date of export : 14.05.2026 18:58:29
+-- EWDE Version : 0.7.1.2
+-- Date of export : 19.05.2026 12:55:54
 
 return {
     ecopediapages = {
-        ['Animals'] = {
+        ['AdvancedUpgradesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Advanced Upgrades",
+                            ['Russian'] = "Продвинутые улучшения",
+                            ['German'] = "Fortschrittliche Upgrades",
+                            ['French'] = "Améliorations avancées",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'UpgradeModulesCategory',
+                    ['Icon'] = 'AdvancedUpgradeLvl1Item',
+        },
+        ['AnimalPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Animal",
+                            ['Russian'] = "Животное",
+                            ['German'] = "Tier",
+                            ['French'] = "Animal",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'NaturalResourcesCategory',
+                    ['Icon'] = 'WolfCarcassItem',
+        },
+        ['AnimalsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Animals",
                             ['Russian'] = "Животные",
@@ -12,11 +34,132 @@ return {
                             ['French'] = "Animaux",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Animals',
-                    ['Pages'] = {'Mammals', 'Reptiles', 'Fish', 'Invertebrates', 'Birds'},
+                    ['Pages'] = {'InvertebratesPage', 'MammalsPage', 'ReptilesPage', 'FishPage', 'BirdsPage'},
         },
-        ['Blocks'] = {
+        ['AnnexationPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Annexation",
+                            ['Russian'] = "Аннексия",
+                            ['German'] = "Annexion",
+                            ['French'] = "Annexion",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsAnnexation',
+        },
+        ['AuthorizationComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Authorization Component",
+                            ['Russian'] = "Авторизация",
+                            ['German'] = "Autorisierungskomponente",
+                            ['French'] = "Onglet Autorisation",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingComponentsCategory',
+                    ['Icon'] = 'AuthComponent',
+        },
+        ['BakingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Baking",
+                            ['Russian'] = "Выпечка",
+                            ['German'] = "Backen",
+                            ['French'] = "Boulangerie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'FantasticForestPizzaItem',
+        },
+        ['BankAccountsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Bank Accounts",
+                            ['Russian'] = "Банковские счета",
+                            ['German'] = "Bankkonten",
+                            ['French'] = "Compte bancaires",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'BankAccount',
+        },
+        ['BankComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Bank Component",
+                            ['Russian'] = "Банк",
+                            ['German'] = "Bank Komponente",
+                            ['French'] = "Onglet Banque",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'BankComponent',
+        },
+        ['BasicUpgradesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Basic Upgrades",
+                            ['Russian'] = "Базовые улучшения",
+                            ['German'] = "Grundlegende Upgrades",
+                            ['French'] = "Améliorations basiques",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'UpgradeModulesCategory',
+                    ['Icon'] = 'BasicUpgradeLvl3Item',
+        },
+        ['BathroomPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Bathroom",
+                            ['Russian'] = "Ванная",
+                            ['German'] = "Badezimmer",
+                            ['French'] = "Salle de bain",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'WashingMachineItem',
+        },
+        ['BedComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Bed Component",
+                            ['Russian'] = "Кровать",
+                            ['German'] = "Bank Komponenten",
+                            ['French'] = "Onglet Lit",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingComponentsCategory',
+                    ['Icon'] = 'BedComponent',
+        },
+        ['BedroomPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Bedroom",
+                            ['Russian'] = "Спальня",
+                            ['German'] = "Schlafzimmer",
+                            ['French'] = "Chambre",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'NylonFutonBedItem',
+        },
+        ['BiomesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Biomes",
+                            ['Russian'] = "Биомы",
+                            ['German'] = "Biome",
+                            ['French'] = "Biomes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Biomes',
+        },
+        ['BirdsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Birds",
+                            ['Russian'] = "Птицы",
+                            ['German'] = "Vögel",
+                            ['French'] = "Oiseaux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'AnimalsCategory',
+                    ['Icon'] = 'TurkeySpecies',
+        },
+        ['BlocksCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Blocks",
                             ['Russian'] = "Блоки",
@@ -24,11 +167,187 @@ return {
                             ['French'] = "Blocs",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Blocks',
-                    ['Pages'] = {'Roads', 'Byproducts', 'Building Materials', 'Liquids', 'Metals', 'Processed Rock', 'Pipes'},
+                    ['Pages'] = {'RoadsPage', 'ByproductsPage', 'BuildingMaterialsPage', 'LiquidsPage', 'MetalsPage', 'ProcessedRockPage', 'PipesPage'},
         },
-        ['Components'] = {
+        ['BlocksPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Blocks",
+                            ['Russian'] = "Блоки",
+                            ['German'] = "Blöcke",
+                            ['French'] = "Blocs",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'NaturalResourcesCategory',
+                    ['Icon'] = 'WaterItem',
+        },
+        ['BuildingMaterialsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Building Materials",
+                            ['Russian'] = "Строительные материалы",
+                            ['German'] = "Baumaterialien",
+                            ['French'] = "Matériaux de construction",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'FarEastLumberItem',
+        },
+        ['BuildingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Building",
+                            ['Russian'] = "Строительство",
+                            ['German'] = "Gebäude",
+                            ['French'] = "Construction",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'Ecopedia_Building',
+        },
+        ['ByproductsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Byproducts",
+                            ['Russian'] = "Отходы производства",
+                            ['German'] = "Nebenprodukte",
+                            ['French'] = "Produits dérivés",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'WetTailingsItem',
+        },
+        ['CampfirePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Campfire",
+                            ['Russian'] = "Костёр",
+                            ['German'] = "Lagerfeuer",
+                            ['French'] = "Feu de camp",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'FriedCamasItem',
+        },
+        ['CarpenterPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Carpenter",
+                            ['Russian'] = "Плотник",
+                            ['German'] = "Zimmermann",
+                            ['French'] = "Menuisier",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'CarpentrySkill',
+        },
+        ['CharredFoodPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Charred Food",
+                            ['Russian'] = "Жареная еда",
+                            ['German'] = "Gegrilltes Essen",
+                            ['French'] = "Nourriture carbonisée",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'CharredCactusFruitItem',
+        },
+        ['ChefPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Chef",
+                            ['Russian'] = "Повар",
+                            ['German'] = "Koch",
+                            ['French'] = "Cuisinier",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'CuttingEdgeCookingSkill',
+        },
+        ['ChoosingaProfessionPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Choosing a Profession",
+                            ['Russian'] = "Выбор профессии",
+                            ['German'] = "Eine Profession wählen",
+                            ['French'] = "Choix d'une profession",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_ChoosingProfession',
+        },
+        ['CitizenshipPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Citizenship",
+                            ['Russian'] = "Гражданство",
+                            ['German'] = "Staatsbürgerschaft",
+                            ['French'] = "Citoyenneté",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsCitizenship',
+        },
+        ['CivicActionComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Civic Action Component",
+                            ['Russian'] = "Действия жителей",
+                            ['German'] = "Komponente der bürgerlichen Aktion",
+                            ['French'] = "Onglet Action civique",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentComponentsCategory',
+                    ['Icon'] = 'BallotBoxItem',
+        },
+        ['CivicArticlesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Civic Articles",
+                            ['Russian'] = "Гражданские статьи",
+                            ['German'] = "Bürgerliche Artikel",
+                            ['French'] = "Articles civiques",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'ConstitutionalArticle',
+        },
+        ['CivicDutiesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Civic Duties",
+                            ['Russian'] = "Гражданский долг",
+                            ['German'] = "Bürgerliche Aufgaben",
+                            ['French'] = "Devoirs civiques",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_CivicDuties',
+        },
+        ['CivicObjectComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Civic Object Component",
+                            ['Russian'] = "Объекты жителей",
+                            ['German'] = "Bürgerrecht-Komponente",
+                            ['French'] = "Onglet Objectif civique",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentComponentsCategory',
+                    ['Icon'] = 'CivicObjectComponent',
+        },
+        ['ClothingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Clothing",
+                            ['Russian'] = "Одежда",
+                            ['German'] = "Kleidung",
+                            ['French'] = "Vêtements",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'WanderersHoodLoweredItem',
+        },
+        ['CommunityPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Community",
+                            ['Russian'] = "Сообщество",
+                            ['German'] = "Gemeinschaft",
+                            ['French'] = "Communauté",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'StopSignItem',
+        },
+        ['ComponentsChapter'] = {
                     ['Name'] =  {
                             ['English'] = "Components",
                             ['Russian'] = "Компоненты",
@@ -36,9 +355,8 @@ return {
                             ['French'] = "Onglets",
                             },
                     ['Type'] = 'Chapter',
-                    ['Chapter'] = 'Components',
         },
-        ['Concepts'] = {
+        ['ConceptsChapter'] = {
                     ['Name'] =  {
                             ['English'] = "Concepts",
                             ['Russian'] = "Понятия",
@@ -46,9 +364,52 @@ return {
                             ['French'] = "Concepts",
                             },
                     ['Type'] = 'Chapter',
-                    ['Chapter'] = 'Concepts',
         },
-        ['Crafted Objects'] = {
+        ['ConstitutionPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Constitution",
+                            ['Russian'] = "Конституция",
+                            ['German'] = "Verfassung",
+                            ['French'] = "Constitution",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'Constitution',
+        },
+        ['ContractBoardComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Contract Board Component",
+                            ['Russian'] = "Доска объявлений",
+                            ['German'] = "Anschlagbrett-Komponente",
+                            ['French'] = "Onglet Tableau de contrat",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'ContractBoardComponent',
+        },
+        ['ContractsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Contracts",
+                            ['Russian'] = "Договоры",
+                            ['German'] = "Aufträge",
+                            ['French'] = "Contrats",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'BuildContract',
+        },
+        ['CookingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Cooking",
+                            ['Russian'] = "Готовка",
+                            ['German'] = "Kochen",
+                            ['French'] = "Cuisine",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'FriedHareHaunchesItem',
+        },
+        ['CraftedObjectsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Crafted Objects",
                             ['Russian'] = "Изготавливаемые объекты",
@@ -56,11 +417,165 @@ return {
                             ['French'] = "Objets fabriqués",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_CraftedObjects',
-                    ['Pages'] = {'Specialty', 'Vehicles', 'Community', 'Storage', 'Power Generation', 'Signs', 'Stores'},
+                    ['Pages'] = {'SpecialtyPage', 'VehiclesPage', 'CommunityPage', 'StoragePage', 'PowerGenerationPage', 'SignsPage', 'StoresPage'},
         },
-        ['Economic Components'] = {
+        ['CraftingComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Crafting Component",
+                            ['Russian'] = "Изготовление",
+                            ['German'] = "Herstellungskomponente",
+                            ['French'] = "Onglet Fabrication",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'CraftingComponent',
+        },
+        ['CraftingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Crafting",
+                            ['Russian'] = "Изготовление",
+                            ['German'] = "Herstellung",
+                            ['French'] = "Fabrication",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'WorkbenchItem',
+        },
+        ['CraftTablesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Craft Tables",
+                            ['Russian'] = "Верстаки",
+                            ['German'] = "Herstellungstisch",
+                            ['French'] = "Tables de fabrication",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'WorkStationsCategory',
+                    ['Icon'] = 'WorkbenchItem',
+        },
+        ['CreditComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Credit Component",
+                            ['Russian'] = "Кредит",
+                            ['German'] = "Finanzielle Komponente",
+                            ['French'] = "Onglet Crédit",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'CreditComponent',
+        },
+        ['CulturalPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Cultural",
+                            ['Russian'] = "Культурный",
+                            ['German'] = "Kulturell",
+                            ['French'] = "Culturel",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'WoodenFrameWideItem',
+        },
+        ['CulturePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Culture",
+                            ['Russian'] = "Культура",
+                            ['German'] = "Kultur",
+                            ['French'] = "Culture",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsCulture',
+        },
+        ['CurrencyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Currency",
+                            ['Russian'] = "Валюта",
+                            ['German'] = "Währung",
+                            ['French'] = "Monnaie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'CurrencySymbol',
+        },
+        ['DataPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Data",
+                            ['Russian'] = "Данные",
+                            ['German'] = "Daten",
+                            ['French'] = "Données",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_EcosystemData',
+        },
+        ['DecorationPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Decoration",
+                            ['Russian'] = "Украшение",
+                            ['German'] = "Dekoration",
+                            ['French'] = "Décoration",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'TapestrySunsetItem',
+        },
+        ['DeedSalesComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Deed Sales Component",
+                            ['Russian'] = "Продажи прав",
+                            ['German'] = "Besitzurkundenverkauf-Komponente",
+                            ['French'] = "Onglet Vente de titre de propriété",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'DeedSalesComponent',
+        },
+        ['DemographicsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Demographics",
+                            ['Russian'] = "Демография",
+                            ['German'] = "Bevölkerungsgruppen",
+                            ['French'] = "Données démographiques",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'Demographic',
+        },
+        ['DinnerPartiesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Dinner Parties",
+                            ['Russian'] = "Dinner Parties",
+                            ['German'] = "Dinner Parties",
+                            ['French'] = "Dinner Parties",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'DinnerParty',
+        },
+        ['DistrictsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Districts",
+                            ['Russian'] = "Районы",
+                            ['German'] = "Distrikte",
+                            ['French'] = "Quartiers",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'District',
+        },
+        ['DoorsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Doors",
+                            ['Russian'] = "Двери",
+                            ['German'] = "Türen",
+                            ['French'] = "Portes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'WoodenSlidingDoorItem',
+        },
+        ['EconomicComponentsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Economic Components",
                             ['Russian'] = "Экономика",
@@ -68,11 +583,33 @@ return {
                             ['French'] = "Onglets sur l'économie",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Components',
+                    ['Chapter'] = 'ComponentsChapter',
                     ['Icon'] = 'Ecopedia_Economic_Components',
-                    ['Pages'] = {'Item Distribution Component', 'Mint Component', 'Bank Component', 'Exchange Component', 'Store Component', 'Credit Component', 'Deed Sales Component', 'Vehicle Component', 'Contract Board Component'},
+                    ['Pages'] = {'ItemDistributionComponentPage', 'MintComponentPage', 'BankComponentPage', 'ExchangeComponentPage', 'StoreComponentPage', 'CreditComponentPage', 'DeedSalesComponentPage', 'VehicleComponentPage', 'ContractBoardComponentPage'},
         },
-        ['Economy'] = {
+        ['EconomicPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Economic",
+                            ['Russian'] = "Экономика",
+                            ['German'] = "Ökonomie",
+                            ['French'] = "Economie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'WorkStationsCategory',
+                    ['Icon'] = 'StoreItem',
+        },
+        ['EconomicParticipationPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Economic Participation",
+                            ['Russian'] = "Участие в экономике",
+                            ['German'] = "Wirtschaftliche Mitarbeit",
+                            ['French'] = "Participation à la vie économique",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_EconomicParticipation',
+        },
+        ['EconomyCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Economy",
                             ['Russian'] = "Экономика",
@@ -80,11 +617,33 @@ return {
                             ['French'] = "Économie",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'MoneyBag',
-                    ['Pages'] = {'Repairs', 'Currency', 'Bank Accounts', 'Trade', 'Transport', 'Work Parties', 'Economy Overview', 'Economy Viewer', 'Research', 'Crafting', 'Contracts', 'Finance', 'Reputation'},
+                    ['Pages'] = {'RepairsPage', 'CurrencyPage', 'BankAccountsPage', 'TradePage', 'TransportPage', 'WorkPartiesPage', 'EconomyOverviewPage', 'EconomyViewerPage', 'ResearchPage', 'CraftingPage', 'ContractsPage', 'FinancePage', 'ReputationPage'},
         },
-        ['Ecosystem'] = {
+        ['EconomyOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Economy Overview",
+                            ['Russian'] = "Обзор экономики",
+                            ['German'] = "Wirtschaftsübersicht",
+                            ['French'] = "Vue d'ensemble de l'économie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'MoneyBag',
+        },
+        ['EconomyViewerPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Economy Viewer",
+                            ['Russian'] = "Просмотр экономики",
+                            ['German'] = "Wirtschaftsansicht",
+                            ['French'] = "Visionneur d'économie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Ecopedia_EconomicParticipation',
+        },
+        ['EcosystemCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Ecosystem",
                             ['Russian'] = "Экосистема",
@@ -92,11 +651,176 @@ return {
                             ['French'] = "Écosystème",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'Ecopedia_Ecosystem',
-                    ['Pages'] = {'Exhaustion', 'Biomes', 'Farming', 'Harvesting', 'Hunting', 'Ecosystem Overview', 'Data', 'Food Webs', 'Mining', 'Pollution'},
+                    ['Pages'] = {'ExhaustionPage', 'BiomesPage', 'FarmingPage', 'HarvestingPage', 'HuntingPage', 'EcosystemOverviewPage', 'DataPage', 'FoodWebsPage', 'MiningPage', 'PollutionPage'},
         },
-        ['Food'] = {
+        ['EcosystemOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Ecosystem Overview",
+                            ['Russian'] = "Обзор экосистемы",
+                            ['German'] = "Ökosystem-Übersicht",
+                            ['French'] = "Vue d'ensemble de l'écosystème",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Ecosystem',
+        },
+        ['ElectedTitlesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Elected Titles",
+                            ['Russian'] = "Выборные должности",
+                            ['German'] = "Gewählte Titel",
+                            ['French'] = "Titres des élus",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'ElectedTitle',
+        },
+        ['ElectionProcessesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Election Processes",
+                            ['Russian'] = "Процессы выборов",
+                            ['German'] = "Wahlverfahren",
+                            ['French'] = "Processus électoraux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'ElectionProcess',
+        },
+        ['ElectionsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Elections",
+                            ['Russian'] = "Выборы",
+                            ['German'] = "Abstimmungen",
+                            ['French'] = "Élections",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'Election',
+        },
+        ['EngineerPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Engineer",
+                            ['Russian'] = "Инженер",
+                            ['German'] = "Ingenieur",
+                            ['French'] = "Ingénieur",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'ElectronicsSkill',
+        },
+        ['ExchangeComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Exchange Component",
+                            ['Russian'] = "Обмен",
+                            ['German'] = "Geldwechsel-Komponente",
+                            ['French'] = "Onglet Échange",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'ExchangeComponent',
+        },
+        ['ExecutiveActionsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Executive Actions",
+                            ['Russian'] = "Исполнительные действия",
+                            ['German'] = "Regierungsanordnungen",
+                            ['French'] = "Actions de l'exécutif",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'CivicAction_PerformExecutiveAction',
+        },
+        ['ExhaustionPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Exhaustion",
+                            ['Russian'] = "Истощение",
+                            ['German'] = "Erschöpfung",
+                            ['French'] = "Épuisement",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Ecosystem',
+        },
+        ['ExperiencePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Experience",
+                            ['Russian'] = "Опыт",
+                            ['German'] = "Erfahrung",
+                            ['French'] = "Expérience",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SkillsCategory',
+                    ['Icon'] = 'Skill Books',
+        },
+        ['FarmerPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Farmer",
+                            ['Russian'] = "Фермер",
+                            ['German'] = "Landwirt",
+                            ['French'] = "Agriculteur",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'GatheringSkill',
+        },
+        ['FarmingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Farming",
+                            ['Russian'] = "Фермерство",
+                            ['German'] = "Landwirtschaft",
+                            ['French'] = "Agriculture",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Farming',
+        },
+        ['FertilizersPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Fertilizers",
+                            ['Russian'] = "Удобрения",
+                            ['German'] = "Dünger",
+                            ['French'] = "Engrais",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'PulpFillerItem',
+        },
+        ['FinancePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Finance",
+                            ['Russian'] = "Финансы",
+                            ['German'] = "Finanzen",
+                            ['French'] = "Finance",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Ecopedia_Finance',
+        },
+        ['FishPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Fish",
+                            ['Russian'] = "Рыба",
+                            ['German'] = "Fisch",
+                            ['French'] = "Poisson",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'AnimalsCategory',
+                    ['Icon'] = 'TunaSpecies',
+        },
+        ['FoodandShelterPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Food and Shelter",
+                            ['Russian'] = "Еда и укрытие",
+                            ['German'] = "Nahrung und Unterkunft",
+                            ['French'] = "Nourriture et abris",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_FoodandShelter',
+        },
+        ['FoodCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Food",
                             ['Russian'] = "Еда",
@@ -104,11 +828,44 @@ return {
                             ['French'] = "Nourriture",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Food',
-                    ['Pages'] = {'Campfire', 'Baking', 'Cooking', 'Produce', 'Ingredients', 'Raw Meat', 'Preserved Food', 'Charred Food', 'Seed'},
+                    ['Pages'] = {'CampfirePage', 'BakingPage', 'CookingPage', 'ProducePage', 'IngredientsPage', 'RawMeatPage', 'PreservedFoodPage', 'CharredFoodPage', 'SeedPage'},
         },
-        ['Getting Started'] = {
+        ['FoodWebsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Food Webs",
+                            ['Russian'] = "Пищевые цепочки",
+                            ['German'] = "Nahrungsketten",
+                            ['French'] = "Réseaux alimentaires",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_FoodWebs',
+        },
+        ['FoundingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Founding",
+                            ['Russian'] = "Основание",
+                            ['German'] = "Gründe",
+                            ['French'] = "Fondation",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsFounding',
+        },
+        ['FungiPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Fungi",
+                            ['Russian'] = "Грибы",
+                            ['German'] = "Pilze",
+                            ['French'] = "Champignons",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'PlantsCategory',
+                    ['Icon'] = 'LatticeMushroomSpecies',
+        },
+        ['GettingStartedCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Getting Started",
                             ['Russian'] = "Введение",
@@ -116,11 +873,11 @@ return {
                             ['French'] = "Pour commencer",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'Ecopedia_GettingStarted',
-                    ['Pages'] = {'Choosing a Profession', 'Economic Participation', 'Food and Shelter', 'Civic Duties', 'Life in an Ecosystem', 'The Arc of Progress', 'The Meteor', 'Using Tools'},
+                    ['Pages'] = {'ChoosingaProfessionPage', 'EconomicParticipationPage', 'FoodandShelterPage', 'CivicDutiesPage', 'LifeinanEcosystemPage', 'TheArcofProgressPage', 'TheMeteorPage', 'UsingToolsPage'},
         },
-        ['Government'] = {
+        ['GovernmentCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Government",
                             ['Russian'] = "Правительство",
@@ -128,11 +885,11 @@ return {
                             ['French'] = "Gouvernement",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'Ecopedia_Government',
-                    ['Pages'] = {'Laws', 'Constitution', 'Districts', 'Elected Titles', 'Election Processes', 'Elections', 'Executive Actions', 'Civic Articles', 'Demographics', 'Government Overview', 'Taxes', 'Titles'},
+                    ['Pages'] = {'LawsPage', 'ConstitutionPage', 'DistrictsPage', 'ElectedTitlesPage', 'ElectionProcessesPage', 'ElectionsPage', 'ExecutiveActionsPage', 'CivicArticlesPage', 'DemographicsPage', 'GovernmentOverviewPage', 'TaxesPage', 'TitlesPage'},
         },
-        ['Government Components'] = {
+        ['GovernmentComponentsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Government Components",
                             ['Russian'] = "Правительство",
@@ -140,11 +897,44 @@ return {
                             ['French'] = "Onglets sur le Gouvernement",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Components',
+                    ['Chapter'] = 'ComponentsChapter',
                     ['Icon'] = 'Ecopedia_Government_Components',
-                    ['Pages'] = {'Spawned Claims Component', 'Civic Action Component', 'Registrar Component', 'Civic Object Component', 'Treasury Component'},
+                    ['Pages'] = {'SpawnedClaimsComponentPage', 'CivicActionComponentPage', 'RegistrarComponentPage', 'CivicObjectComponentPage', 'TreasuryComponentPage'},
         },
-        ['Housing'] = {
+        ['GovernmentOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Government Overview",
+                            ['Russian'] = "Обзор правительства",
+                            ['German'] = "Regierungsübersicht",
+                            ['French'] = "Vue d'ensemble du gouvernement",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'CivicObjectComponent',
+        },
+        ['GovernmentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Government",
+                            ['Russian'] = "Правительство",
+                            ['German'] = "Regierung",
+                            ['French'] = "Gouvernement",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'WorkStationsCategory',
+                    ['Icon'] = 'ZoningOfficeItem',
+        },
+        ['HarvestingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Harvesting",
+                            ['Russian'] = "Сбор",
+                            ['German'] = "Ernten",
+                            ['French'] = "Récolte",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Harvesting',
+        },
+        ['HousingCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Housing",
                             ['Russian'] = "Жилье",
@@ -152,11 +942,11 @@ return {
                             ['French'] = "Résidence",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'Ecopedia_Housing',
-                    ['Pages'] = {'Building', 'Housing Overview', 'Power', 'Property', 'Residency', 'Sewage', 'Rooms'},
+                    ['Pages'] = {'BuildingPage', 'HousingOverviewPage', 'PowerPage', 'PropertyPage', 'ResidencyPage', 'SewagePage', 'RoomsPage'},
         },
-        ['Housing Components'] = {
+        ['HousingComponentsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Housing Components",
                             ['Russian'] = "Жильё",
@@ -164,11 +954,11 @@ return {
                             ['French'] = "Onglets sur le Logement",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Components',
+                    ['Chapter'] = 'ComponentsChapter',
                     ['Icon'] = 'Ecopedia_Housing_Components',
-                    ['Pages'] = {'Authorization Component', 'Bed Component', 'My Deeds Component', 'Text Component'},
+                    ['Pages'] = {'AuthorizationComponentPage', 'BedComponentPage', 'MyDeedsComponentPage', 'TextComponentPage'},
         },
-        ['Housing Objects'] = {
+        ['HousingObjectsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Housing Objects",
                             ['Russian'] = "Объекты жилья",
@@ -176,11 +966,55 @@ return {
                             ['French'] = "Objets d'intérieur",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Housing_Objects',
-                    ['Pages'] = {'Cultural', 'Kitchen', 'Doors', 'Bathroom', 'Seating', 'Outdoor', 'Decoration', 'Living Room', 'Bedroom', 'Lighting'},
+                    ['Pages'] = {'CulturalPage', 'KitchenPage', 'DoorsPage', 'BathroomPage', 'SeatingPage', 'DecorationPage', 'LightingPage', 'OutdoorPage', 'LivingRoomPage', 'BedroomPage'},
         },
-        ['Industry Components'] = {
+        ['HousingOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Housing Overview",
+                            ['Russian'] = "Обзор дома",
+                            ['German'] = "Wohnübersicht",
+                            ['French'] = "Vue d'ensemble du logement",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'House',
+        },
+        ['HunterPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Hunter",
+                            ['Russian'] = "Охотник",
+                            ['German'] = "Jäger",
+                            ['French'] = "Chasseur",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'HuntingSkill',
+        },
+        ['HuntingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Hunting",
+                            ['Russian'] = "Охота",
+                            ['German'] = "Jagen",
+                            ['French'] = "Chasse",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Hunting',
+        },
+        ['ImmigrationPolicyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Immigration Policy",
+                            ['Russian'] = "Иммиграционная политика",
+                            ['German'] = "Immigrationsregeln",
+                            ['French'] = "Politique d'immigration",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsImmigrationPolicy',
+        },
+        ['IndustryComponentsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Industry Components",
                             ['Russian'] = "Промышленность",
@@ -188,11 +1022,55 @@ return {
                             ['French'] = "Onglets sur l'Industrie",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Components',
+                    ['Chapter'] = 'ComponentsChapter',
                     ['Icon'] = 'Ecopedia_Industry_Components',
-                    ['Pages'] = {'Pipe Component', 'Repair Component', 'Storage Component', 'Modules Component', 'Power Component', 'Crafting Component', 'Status Component'},
+                    ['Pages'] = {'PipeComponentPage', 'RepairComponentPage', 'StorageComponentPage', 'ModulesComponentPage', 'PowerComponentPage', 'CraftingComponentPage', 'StatusComponentPage'},
         },
-        ['Items'] = {
+        ['InfluencePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Influence",
+                            ['Russian'] = "Влияние",
+                            ['German'] = "Einfluss",
+                            ['French'] = "Influence",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsInfluence',
+        },
+        ['IngredientsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Ingredients",
+                            ['Russian'] = "Ингредиенты",
+                            ['German'] = "Zutaten",
+                            ['French'] = "Ingrédients",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'FlourItem',
+        },
+        ['InvertebratesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Invertebrates",
+                            ['Russian'] = "Беспозвоночные",
+                            ['German'] = "Wirbellose",
+                            ['French'] = "Invertébrés",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'AnimalsCategory',
+                    ['Icon'] = 'MoonJellyfishSpecies',
+        },
+        ['ItemDistributionComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Item Distribution Component",
+                            ['Russian'] = "Распределение предметов",
+                            ['German'] = "Gegenstandsverteilungskomponente",
+                            ['French'] = "Onglet Distributeur d'articles",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'ItemDistributionComponent',
+        },
+        ['ItemsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Items",
                             ['Russian'] = "Предметы",
@@ -200,11 +1078,176 @@ return {
                             ['French'] = "Articles",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Items',
-                    ['Pages'] = {'Tools', 'Products', 'Clothing', 'Fertilizers', 'Research Papers', 'Skill Books'},
+                    ['Pages'] = {'ToolsPage', 'ProductsPage', 'SkillBooksPage', 'ResearchPapersPage', 'ClothingPage', 'FertilizersPage'},
         },
-        ['Natural Resources'] = {
+        ['KitchenPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Kitchen",
+                            ['Russian'] = "Кухня",
+                            ['German'] = "Küche",
+                            ['French'] = "Cuisine",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'WoodenKitchenLampItem',
+        },
+        ['LawsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Laws",
+                            ['Russian'] = "Законы",
+                            ['German'] = "Gesetze",
+                            ['French'] = "Lois",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'Prevent_LegalAction',
+        },
+        ['LifeinanEcosystemPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Life in an Ecosystem",
+                            ['Russian'] = "Жизнь в экосистеме",
+                            ['German'] = "Leben in einem Öko-System",
+                            ['French'] = "La vie dans l'écosystème",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_LifeInAnEcosystem',
+        },
+        ['LightingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Lighting",
+                            ['Russian'] = "Освещение",
+                            ['German'] = "Beleuchtung",
+                            ['French'] = "Éclairage",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'WoodenWallTorchStandItem',
+        },
+        ['LiquidsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Liquids",
+                            ['Russian'] = "Жидкости",
+                            ['German'] = "Flüssigkeiten",
+                            ['French'] = "Liquides",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'BiodieselItem',
+        },
+        ['LivingRoomPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Living Room",
+                            ['Russian'] = "Гостиная",
+                            ['German'] = "Wohnzimmer",
+                            ['French'] = "Salon",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'NylonFutonCouchItem',
+        },
+        ['LogsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Logs",
+                            ['Russian'] = "Брёвна",
+                            ['German'] = "Baumstämme",
+                            ['French'] = "Bûches",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'NaturalResourcesCategory',
+                    ['Icon'] = 'CeibaLogItem',
+        },
+        ['MammalsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Mammals",
+                            ['Russian'] = "Млекопитающие",
+                            ['German'] = "Säugetiere",
+                            ['French'] = "Mammifères",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'AnimalsCategory',
+                    ['Icon'] = 'WolfSpecies',
+        },
+        ['MasonPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Mason",
+                            ['Russian'] = "Каменщик",
+                            ['German'] = "Steinmetz",
+                            ['French'] = "Maçon",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'GlassworkingSkill',
+        },
+        ['MetalsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Metals",
+                            ['Russian'] = "Металлы",
+                            ['German'] = "Metalle",
+                            ['French'] = "Métaux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'CopperBarItem',
+        },
+        ['MiningPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Mining",
+                            ['Russian'] = "Горное дело",
+                            ['German'] = "Bergbau",
+                            ['French'] = "Minage",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Mining',
+        },
+        ['MintComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Mint Component",
+                            ['Russian'] = "Чеканка",
+                            ['German'] = "Münzpräge Komponente",
+                            ['French'] = "Onglet Hôtel de la monnaie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'MintComponent',
+        },
+        ['ModernUpgradesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Modern Upgrades",
+                            ['Russian'] = "Современные улучшения",
+                            ['German'] = "Moderne Upgrades",
+                            ['French'] = "Améliorations modernes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'UpgradeModulesCategory',
+                    ['Icon'] = 'ModernUpgradeLvl3Item',
+        },
+        ['ModulesComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Modules Component",
+                            ['Russian'] = "Модули",
+                            ['German'] = "Modulkomponent",
+                            ['French'] = "Onglet de modules",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'ModulesComponent',
+        },
+        ['MyDeedsComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "My Deeds Component",
+                            ['Russian'] = "Права собственности",
+                            ['German'] = "Meine Besitzurkundenkomponente",
+                            ['French'] = "Onglet mes Titres de propriété",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingComponentsCategory',
+                    ['Icon'] = 'Ecopedia_MyDeedsComponent',
+        },
+        ['NaturalResourcesCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Natural Resources",
                             ['Russian'] = "Природные ресурсы",
@@ -212,11 +1255,66 @@ return {
                             ['French'] = "Ressources naturelles",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Natural_Resources',
-                    ['Pages'] = {'Logs', 'Stone', 'Ore', 'Blocks', 'Animal'},
+                    ['Pages'] = {'LogsPage', 'StonePage', 'OrePage', 'BlocksPage', 'AnimalPage'},
         },
-        ['Plants'] = {
+        ['NutritionPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Nutrition",
+                            ['Russian'] = "Питание",
+                            ['German'] = "Ernährung",
+                            ['French'] = "Nutrition",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SkillsCategory',
+                    ['Icon'] = 'Beet',
+        },
+        ['OrePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Ore",
+                            ['Russian'] = "Руда",
+                            ['German'] = "Erz",
+                            ['French'] = "Minerai",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'NaturalResourcesCategory',
+                    ['Icon'] = 'CopperOreItem',
+        },
+        ['OutdoorPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Outdoor",
+                            ['Russian'] = "Снаружи",
+                            ['German'] = "Outdoor",
+                            ['French'] = "Extérieurs",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'TikiTorchItem',
+        },
+        ['PipeComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Pipe Component",
+                            ['Russian'] = "Трубы",
+                            ['German'] = "Rohrkomponent",
+                            ['French'] = "Onglet Tuyaux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'LiquidConsumerComponent',
+        },
+        ['PipesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Pipes",
+                            ['Russian'] = "Трубы",
+                            ['German'] = "Rohre",
+                            ['French'] = "Tuyaux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'CopperPipeItem',
+        },
+        ['PlantsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Plants",
                             ['Russian'] = "Растения",
@@ -224,11 +1322,121 @@ return {
                             ['French'] = "Plantes",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Plants',
-                    ['Pages'] = {'Plants', 'Fungi', 'Trees'},
+                    ['Pages'] = {'PlantsPage', 'FungiPage', 'TreesPage'},
         },
-        ['Professions'] = {
+        ['PlantsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Plants",
+                            ['Russian'] = "Растения",
+                            ['German'] = "Pflanzen",
+                            ['French'] = "Plantes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'PlantsCategory',
+                    ['Icon'] = 'WhiteBursageSpecies',
+        },
+        ['PollutionPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Pollution",
+                            ['Russian'] = "Загрязнение",
+                            ['German'] = "Verschmutzung",
+                            ['French'] = "Pollution",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EcosystemCategory',
+                    ['Icon'] = 'Ecopedia_Pollution',
+        },
+        ['PowerComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Power Component",
+                            ['Russian'] = "Энергетика",
+                            ['German'] = "Energiekomponente",
+                            ['French'] = "Onglet Énergie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'PowerComponent',
+        },
+        ['PowerGenerationPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Power Generation",
+                            ['Russian'] = "Генераторы Энергии",
+                            ['German'] = "Stromerzeugung",
+                            ['French'] = "Générateur électrique",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'WindTurbineItem',
+        },
+        ['PowerPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Power",
+                            ['Russian'] = "Энергия",
+                            ['German'] = "Leistung",
+                            ['French'] = "Énergie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'ecopedia_power',
+        },
+        ['PreservedFoodPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Preserved Food",
+                            ['Russian'] = "Консервированная еда",
+                            ['German'] = "Konserviertes Essen",
+                            ['French'] = "Aliments conservés",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'DriedMeatItem',
+        },
+        ['ProcessedRockPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Processed Rock",
+                            ['Russian'] = "Обработанная порода",
+                            ['German'] = "Verarbeiteter Stein",
+                            ['French'] = "Pierre transformée",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'CrushedSulfurItem',
+        },
+        ['ProducePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Produce",
+                            ['Russian'] = "Продукция",
+                            ['German'] = "Produzieren",
+                            ['French'] = "Produit",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'RiceItem',
+        },
+        ['ProductsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Products",
+                            ['Russian'] = "Продукция",
+                            ['German'] = "Produkte",
+                            ['French'] = "Produits",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'YellowPowderItem',
+        },
+        ['ProfessionOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Profession Overview",
+                            ['Russian'] = "Обзор профессий",
+                            ['German'] = "Übersicht der Professionen",
+                            ['French'] = "Vue d'ensemble des professions",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'Ecopedia_Professions',
+        },
+        ['ProfessionsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Professions",
                             ['Russian'] = "Профессии",
@@ -236,11 +1444,44 @@ return {
                             ['French'] = "Professions",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Professions',
-                    ['Pages'] = {'Smith', 'Survivalist', 'Farmer', 'Chef', 'Engineer', 'Hunter', 'Carpenter', 'Mason', 'Profession Overview', 'Tailor', 'Scientist'},
+                    ['Pages'] = {'SmithPage', 'SurvivalistPage', 'FarmerPage', 'ChefPage', 'EngineerPage', 'HunterPage', 'CarpenterPage', 'MasonPage', 'ProfessionOverviewPage', 'TailorPage', 'ScientistPage'},
         },
-        ['Reference'] = {
+        ['PropertyCrisisPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Property Crisis",
+                            ['Russian'] = "Кризис собственности",
+                            ['German'] = "Immobilienkrise",
+                            ['French'] = "Crise de propriété",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsPropertyCrisis',
+        },
+        ['PropertyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Property",
+                            ['Russian'] = "Собственность",
+                            ['German'] = "Grundstücke anzeigen",
+                            ['French'] = "Propriété",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'Ecopedia_Property',
+        },
+        ['RawMeatPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Raw Meat",
+                            ['Russian'] = "Сырое мясо",
+                            ['German'] = "Rohes Fleisch",
+                            ['French'] = "Viande crue",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'ScrapMeatItem',
+        },
+        ['ReferenceChapter'] = {
                     ['Name'] =  {
                             ['English'] = "Reference",
                             ['Russian'] = "Справка",
@@ -248,9 +1489,184 @@ return {
                             ['French'] = "Référence",
                             },
                     ['Type'] = 'Chapter',
-                    ['Chapter'] = 'Reference',
         },
-        ['Settlements'] = {
+        ['RegistrarComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Registrar Component",
+                            ['Russian'] = "Регистратор",
+                            ['German'] = "Registrator-Komponent",
+                            ['French'] = "Onglet Registre",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentComponentsCategory',
+                    ['Icon'] = 'RegistrarComponent',
+        },
+        ['RepairComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Repair Component",
+                            ['Russian'] = "Ремонт",
+                            ['German'] = "Reparaturkomponent",
+                            ['French'] = "Onglet Réparation",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'RepairComponent',
+        },
+        ['RepairsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Repairs",
+                            ['Russian'] = "Repairs",
+                            ['German'] = "Repairs",
+                            ['French'] = "Repairs",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Repairs',
+        },
+        ['ReptilesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Reptiles",
+                            ['Russian'] = "Рептилии",
+                            ['German'] = "Reptilien",
+                            ['French'] = "Reptiles",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'AnimalsCategory',
+                    ['Icon'] = 'TortoiseSpecies',
+        },
+        ['ReputationPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Reputation",
+                            ['Russian'] = "Репутация",
+                            ['German'] = "Ansehen",
+                            ['French'] = "Réputation",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Ecopedia_Reputation',
+        },
+        ['ResearchingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Researching",
+                            ['Russian'] = "Исследования",
+                            ['German'] = "Forschung",
+                            ['French'] = "Recherche",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'WorkStationsCategory',
+                    ['Icon'] = 'LaboratoryItem',
+        },
+        ['ResearchPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Research",
+                            ['Russian'] = "Исследование",
+                            ['German'] = "Forschung",
+                            ['French'] = "Recherche",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'WorkbenchItem',
+        },
+        ['ResearchPapersPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Research Papers",
+                            ['Russian'] = "Исследования",
+                            ['German'] = "Forschungspapiere",
+                            ['French'] = "Papiers de recherche",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'AgricultureResearchPaperModernItem',
+        },
+        ['ResidencyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Residency",
+                            ['Russian'] = "Жилище",
+                            ['German'] = "Wohnsitz",
+                            ['French'] = "Résident",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'Residency',
+        },
+        ['RoadsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Roads",
+                            ['Russian'] = "Дороги",
+                            ['German'] = "Straßen",
+                            ['French'] = "Routes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'BlocksCategory',
+                    ['Icon'] = 'AsphaltConcreteItem',
+        },
+        ['RoomsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Rooms",
+                            ['Russian'] = "Комнаты",
+                            ['German'] = "Räume",
+                            ['French'] = "Pièces",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'Ecopedia_rooms',
+        },
+        ['ScientistPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Scientist",
+                            ['Russian'] = "Ученый",
+                            ['German'] = "Scientist",
+                            ['French'] = "Scientifique",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'PaintingSkill',
+        },
+        ['SeatingPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Seating",
+                            ['Russian'] = "Сиденье",
+                            ['German'] = "Sitzgelegenheit",
+                            ['French'] = "Siège",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingObjectsCategory',
+                    ['Icon'] = 'MortaredStoneTableItem',
+        },
+        ['SeedPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Seed",
+                            ['Russian'] = "Зерно генерации",
+                            ['German'] = "Seed",
+                            ['French'] = "Graine",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'FoodCategory',
+                    ['Icon'] = 'LupineSeedItem',
+        },
+        ['SettlementOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Settlement Overview",
+                            ['Russian'] = "Обзор поселения",
+                            ['German'] = "Siedlungsübersicht",
+                            ['French'] = "Vue d'ensemble des colonies",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsOverview',
+        },
+        ['SettlementPropertyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Settlement Property",
+                            ['Russian'] = "Собственность Поселения",
+                            ['German'] = "Siedlungsgrundstück",
+                            ['French'] = "Propriété de colonie",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SettlementsCategory',
+                    ['Icon'] = 'EcopediaSettlementsProperty',
+        },
+        ['SettlementsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Settlements",
                             ['Russian'] = "Поселения",
@@ -258,11 +1674,44 @@ return {
                             ['French'] = "Colonies",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'EcopediaSettlements',
-                    ['Pages'] = {'Annexation', 'Founding', 'Dinner Parties', 'Citizenship', 'Culture', 'Immigration Policy', 'Influence', 'Property Crisis', 'Settlement Overview', 'Settlement Property'},
+                    ['Pages'] = {'AnnexationPage', 'FoundingPage', 'DinnerPartiesPage', 'CitizenshipPage', 'CulturePage', 'ImmigrationPolicyPage', 'InfluencePage', 'PropertyCrisisPage', 'SettlementOverviewPage', 'SettlementPropertyPage'},
         },
-        ['Skills'] = {
+        ['SewagePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Sewage",
+                            ['Russian'] = "Канализация",
+                            ['German'] = "Abwasser",
+                            ['French'] = "Eaux usées",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingCategory',
+                    ['Icon'] = 'Ecopedia_HousingSewage',
+        },
+        ['SignsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Signs",
+                            ['Russian'] = "Знаки",
+                            ['German'] = "Schilder",
+                            ['French'] = "Panneaux",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'SmallStandingMortaredLimestoneSignItem',
+        },
+        ['SkillBooksPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Skill Books",
+                            ['Russian'] = "Книги навыков",
+                            ['German'] = "Fertigkeitsbücher",
+                            ['French'] = "Livres de compétence",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'ElectronicsSkillBook',
+        },
+        ['SkillsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Skills",
                             ['Russian'] = "Навыки",
@@ -270,11 +1719,275 @@ return {
                             ['French'] = "Compétences",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Concepts',
+                    ['Chapter'] = 'ConceptsChapter',
                     ['Icon'] = 'Skill Book',
-                    ['Pages'] = {'Skills Overview', 'Experience', 'Nutrition', 'Specialties'},
+                    ['Pages'] = {'SkillsOverviewPage', 'ExperiencePage', 'NutritionPage', 'SpecialtiesPage'},
         },
-        ['Upgrade Modules'] = {
+        ['SkillsOverviewPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Skills Overview",
+                            ['Russian'] = "Обзор навыков",
+                            ['German'] = "Skills Übersicht",
+                            ['French'] = "Vue d'ensemble des compétences",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SkillsCategory',
+                    ['Icon'] = 'Skill Book',
+        },
+        ['SmithPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Smith",
+                            ['Russian'] = "Кузнец",
+                            ['German'] = "Schmied",
+                            ['French'] = "Forgeron",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'BlacksmithSkill',
+        },
+        ['SpawnedClaimsComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Spawned Claims Component",
+                            ['Russian'] = "Создание участков",
+                            ['German'] = "Komponente Spawned Claims",
+                            ['French'] = "Composant des revendications engendrées",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentComponentsCategory',
+                    ['Icon'] = 'TreasuryComponent',
+        },
+        ['SpecialtiesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Specialties",
+                            ['Russian'] = "Специальности",
+                            ['German'] = "Berufe",
+                            ['French'] = "Spécialités",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'SkillsCategory',
+                    ['Icon'] = 'Skill Scrolls',
+        },
+        ['SpecialtyPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Specialty",
+                            ['Russian'] = "Специальность",
+                            ['German'] = "Spezialisierung",
+                            ['French'] = "Spécialité",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'WoodenMooragePostItem',
+        },
+        ['SpecialtyUpgradesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Specialty Upgrades",
+                            ['Russian'] = "Улучшения специальностей",
+                            ['German'] = "Spezialisierungs-Upgrades",
+                            ['French'] = "Amélioration des spécialités",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'UpgradeModulesCategory',
+                    ['Icon'] = 'AdvancedBakingUpgradeItem',
+        },
+        ['StatusComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Status Component",
+                            ['Russian'] = "Статус",
+                            ['German'] = "Statuskomponente",
+                            ['French'] = "Onglet Statut",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'StatusComponent',
+        },
+        ['StonePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Stone",
+                            ['Russian'] = "Камень",
+                            ['German'] = "Stein",
+                            ['French'] = "Pierre",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'NaturalResourcesCategory',
+                    ['Icon'] = 'BasaltItem',
+        },
+        ['StorageComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Storage Component",
+                            ['Russian'] = "Хранилище",
+                            ['German'] = "Speicherkomponente",
+                            ['French'] = "Onglet Stockage",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'IndustryComponentsCategory',
+                    ['Icon'] = 'StorageComponent',
+        },
+        ['StoragePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Storage",
+                            ['Russian'] = "Хранилище",
+                            ['German'] = "Speicher",
+                            ['French'] = "Stockage",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'WallMountedTrunkItem',
+        },
+        ['StoreComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Store Component",
+                            ['Russian'] = "Магазин",
+                            ['German'] = "Lager Komponenten",
+                            ['French'] = "Onglet Magasin",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'StoreComponent',
+        },
+        ['StoresPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Stores",
+                            ['Russian'] = "Stores",
+                            ['German'] = "Stores",
+                            ['French'] = "Stores",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'SmallStumpStoreWindowItem',
+        },
+        ['SurvivalistPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Survivalist",
+                            ['Russian'] = "Выживальщик",
+                            ['German'] = "Überlebenskünstler",
+                            ['French'] = "Survivaliste",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'SelfImprovementSkill',
+        },
+        ['TailorPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Tailor",
+                            ['Russian'] = "Портной",
+                            ['German'] = "Schneider",
+                            ['French'] = "Tailleur",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ProfessionsCategory',
+                    ['Icon'] = 'TailoringSkill',
+        },
+        ['TaxesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Taxes",
+                            ['Russian'] = "Налоги",
+                            ['German'] = "Steuern",
+                            ['French'] = "Taxes",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'PayTax',
+        },
+        ['TextComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Text Component",
+                            ['Russian'] = "Текст",
+                            ['German'] = "Textkomponente",
+                            ['French'] = "Onglet Texte",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'HousingComponentsCategory',
+                    ['Icon'] = 'Ecopedia_TextComponent',
+        },
+        ['TheArcofProgressPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "The Arc of Progress",
+                            ['Russian'] = "Кривая развития",
+                            ['German'] = "Der Bogen des Fortschritts",
+                            ['French'] = "La courbe de progression",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Globe',
+        },
+        ['TheMeteorPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "The Meteor",
+                            ['Russian'] = "Астероид",
+                            ['German'] = "Der Meteor",
+                            ['French'] = "Le Météore",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_TheMeteor',
+        },
+        ['TitlesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Titles",
+                            ['Russian'] = "Титулы",
+                            ['German'] = "Titel",
+                            ['French'] = "Titres",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentCategory',
+                    ['Icon'] = 'ElectedTitle',
+        },
+        ['ToolsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Tools",
+                            ['Russian'] = "Инструменты",
+                            ['German'] = "Werkzeuge",
+                            ['French'] = "Outils",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'ItemsCategory',
+                    ['Icon'] = 'NylonTrawlerNetItem',
+        },
+        ['TradePage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Trade",
+                            ['Russian'] = "Торговля",
+                            ['German'] = "Handel",
+                            ['French'] = "Échanger",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'CurrencyTrade',
+        },
+        ['TransportPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Transport",
+                            ['Russian'] = "Транспортировка",
+                            ['German'] = "Transport",
+                            ['French'] = "Transport",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Asphalt Road',
+        },
+        ['TreasuryComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Treasury Component",
+                            ['Russian'] = "Казна",
+                            ['German'] = "Bestandteil der Staatskasse",
+                            ['French'] = "Onglet Trésor public",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GovernmentComponentsCategory',
+                    ['Icon'] = 'TreasuryComponent',
+        },
+        ['TreesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Trees",
+                            ['Russian'] = "Деревья",
+                            ['German'] = "Bäume",
+                            ['French'] = "Arbres",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'PlantsCategory',
+                    ['Icon'] = 'SpruceSpecies',
+        },
+        ['UpgradeModulesCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Upgrade Modules",
                             ['Russian'] = "Модули улучшений",
@@ -282,11 +1995,55 @@ return {
                             ['French'] = "Amélioration",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Enhancements',
-                    ['Pages'] = {'Advanced Upgrades', 'Modern Upgrades', 'Specialty Upgrades', 'Basic Upgrades'},
+                    ['Pages'] = {'AdvancedUpgradesPage', 'ModernUpgradesPage', 'SpecialtyUpgradesPage', 'BasicUpgradesPage'},
         },
-        ['Work Stations'] = {
+        ['UsingToolsPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Using Tools",
+                            ['Russian'] = "Использование инструмента",
+                            ['German'] = "Werkzeuge verwenden",
+                            ['French'] = "Utilisation d'outils",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'GettingStartedCategory',
+                    ['Icon'] = 'Ecopedia_UsingTools',
+        },
+        ['VehicleComponentPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Vehicle Component",
+                            ['Russian'] = "Транспорт",
+                            ['German'] = "Fahrzeugkomponente",
+                            ['French'] = "Onglet Véhicules",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomicComponentsCategory',
+                    ['Icon'] = 'WoodCartItem',
+        },
+        ['VehiclesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Vehicles",
+                            ['Russian'] = "Техника",
+                            ['German'] = "Fahrzeuge",
+                            ['French'] = "Véhicules",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'CraftedObjectsCategory',
+                    ['Icon'] = 'WoodShopCartItem',
+        },
+        ['WorkPartiesPage'] = {
+                    ['Name'] =  {
+                            ['English'] = "Work Parties",
+                            ['Russian'] = "Рабочие группы",
+                            ['German'] = "Arbeitsgruppen",
+                            ['French'] = "Groupes de travail",
+                            },
+                    ['Type'] = 'Page',
+                    ['Category'] = 'EconomyCategory',
+                    ['Icon'] = 'Work Party',
+        },
+        ['WorkStationsCategory'] = {
                     ['Name'] =  {
                             ['English'] = "Work Stations",
                             ['Russian'] = "Верстаки",
@@ -294,9 +2051,9 @@ return {
                             ['French'] = "Postes de travail",
                             },
                     ['Type'] = 'Category',
-                    ['Chapter'] = 'Reference',
+                    ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_WorkStations',
-                    ['Pages'] = {'Craft Tables', 'Economic', 'Government', 'Researching'},
+                    ['Pages'] = {'CraftTablesPage', 'EconomicPage', 'GovernmentPage', 'ResearchingPage'},
         },
     },
 }

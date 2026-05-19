@@ -57,30 +57,38 @@ namespace Eco.Mods.EcoWikiDataExporter
             foreach (var Chapter in Ecopedia.Obj.Chapters.Values)
             {
                 string ChapterName = Chapter.DisplayName.NotTranslated;
+                string ChapterNameID = Chapter.Name.Replace(" ", "") + "Chapter";
                 if (ChapterName == "Development") continue;
-                EcopediaData.Add(ChapterName, new Dictionary<string, string>(EcopediaMenuDetails));
-                EcopediaData[ChapterName]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
-                EcopediaData[ChapterName]["Type"] = $"'Chapter'";
-                EcopediaData[ChapterName]["Chapter"] = $"'{ChapterName}'";
+                EcopediaData.Add(ChapterNameID, new Dictionary<string, string>(EcopediaMenuDetails));
+                EcopediaData[ChapterNameID]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
+                EcopediaData[ChapterNameID]["Type"] = $"'Chapter'";
 
                 foreach (var Category in Chapter.Categories)
                 {
                     string CategoryName = Category.DisplayName.NotTranslated;
+                    string CategoryNameID = Category.Name.Replace(" ", "") + "Category";
                     if (CategoryName == "World Index") continue;
-                    EcopediaData.Add(CategoryName, new Dictionary<string, string>(EcopediaMenuDetails));
-                    EcopediaData[CategoryName]["Name"] = WriteDictionaryAsSubObject(Localization(CategoryName), 1);
-                    EcopediaData[CategoryName]["Type"] = $"'Category'";
-                    EcopediaData[CategoryName]["Chapter"] = $"'{ChapterName}'";
-                    EcopediaData[CategoryName]["Icon"] = $"'{Category.IconName}'";
+                    EcopediaData.Add(CategoryNameID, new Dictionary<string, string>(EcopediaMenuDetails));
+                    EcopediaData[CategoryNameID]["Name"] = WriteDictionaryAsSubObject(Localization(CategoryName), 1);
+                    EcopediaData[CategoryNameID]["Type"] = $"'Category'";
+                    EcopediaData[CategoryNameID]["Chapter"] = $"'{ChapterNameID}'";
+                    EcopediaData[CategoryNameID]["Icon"] = $"'{Category.IconName}'";
 
-                    //string PagesList = "";
-                    //foreach (var Page in Category.Pages.Values)
-                    //{
-                    //    string PageName = Page.DisplayName.NotTranslated;
-                    //    if (PagesList == "") { PagesList = PageName; } else { PagesList = PagesList + ", " + PageName; }
-                    //}
-                    //PagesList = "{" + PagesList + "}";
-                    //EcopediaData[CategoryName]["Pages"] = $"{PagesList}";
+                    string PagesList = "";
+                    foreach (var Page in Category.Pages.Values)
+                    {
+                        string PageName = Page.DisplayName.NotTranslated;
+                        string PageNameID = Page.Name.Replace(" ", "") + "Page";
+                        if (PagesList == "") { PagesList = "'" + PageNameID + "'"; } else { PagesList = PagesList + ", '" + PageNameID + "'"; }
+                        EcopediaData.Add(PageNameID, new Dictionary<string, string>(EcopediaMenuDetails));
+                        EcopediaData[PageNameID]["Name"] = WriteDictionaryAsSubObject(Localization(PageName), 1);
+                        EcopediaData[PageNameID]["Type"] = $"'Page'";
+                        EcopediaData[PageNameID]["Category"] = $"'{CategoryNameID}'";
+                        EcopediaData[PageNameID]["Icon"] = $"'{Page.IconName}'";
+                    }
+
+                    PagesList = "{" + PagesList + "}";
+                    EcopediaData[CategoryNameID]["Pages"] = $"{PagesList}";
 
                 }
             }
