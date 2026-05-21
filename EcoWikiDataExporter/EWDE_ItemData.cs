@@ -132,7 +132,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 			{
 				{ "ClothingSlot", "nil" },
 				{ "StartClothing", "nil" },
-				{ "FlatStats", "nil" },
+                { "Hidden", "nil" },
+                { "FlatStats", "nil" },
 			};
 
             Dictionary<string, string> worldobjectDetails = new Dictionary<string, string>()
@@ -163,8 +164,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 					ItemData[ItemName]["Category"] = $"'{item.Category}'";
 
-					if (item.Category == "Hidden")
-					{ ItemData[ItemName]["Hidden"] = $"'True'"; }
+					if (item.Category == "Hidden") { ItemData[ItemName]["Hidden"] = $"'True'"; }
 
 					ItemData[ItemName]["Group"] = $"'{item.Group}'";
 
@@ -234,17 +234,15 @@ namespace Eco.Mods.EcoWikiDataExporter
 						ClothingData.Add(ItemName, new Dictionary<string, string>(clothingDetails));
 						ClothingData[ItemName]["ClothingSlot"] = $"'{Clothing.Slot}'";
 						ClothingData[ItemName]["StartClothing"] = $"'{Clothing.Starter}'";
+                        ClothingData[ItemName]["Hidden"] = $"'{item.Hidden}'";
 
-						Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
-						var FlatStats = new Dictionary<string, string>();
-
-						foreach (var stat in сlothingStats)
+                        Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
+						if (сlothingStats != null)
 						{
-							FlatStats.Add(stat.Key.ToString(), stat.Value.ToString() );							
+							var FlatStats = new Dictionary<string, string>();
+							foreach (var stat in Clothing.GetFlatStats()) { FlatStats.Add(stat.Key.ToString(), stat.Value.ToString()); }
+							ClothingData[ItemName]["FlatStats"] = WriteDictionaryAsSubObject(FlatStats, 2);
 						}
-
-						ClothingData[ItemName]["FlatStats"] = WriteDictionaryAsSubObject(FlatStats, 1);
-
                     }
 
 					if (item is VehicleToolItem vehicleToolItem)
