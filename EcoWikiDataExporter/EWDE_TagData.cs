@@ -66,25 +66,23 @@ namespace Eco.Mods.EcoWikiDataExporter
 				string tagID = tag.Name;
 				string tagName = tag.DisplayName.NotTranslated;
 
-				Dictionary<string, string> tagInfo = new(tagDetails); 
-				tagInfo["ID"] = $"'{tagID}'";
-                tagInfo["Name"] = WriteDictionaryAsSubObject(Localization(tagName), 1);
-                tagInfo["IsHidden"] = $"'{tag.Hidden}'";
-                tagInfo["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
-                tagInfo["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
-                tagInfo["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";
+                if (!TagData.ContainsKey(tagName))
+                {
+                    TagData.Add(tagName, new Dictionary<string, string>(tagDetails));
 
-                string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName.NotTranslated}'").ToArray();
+                    TagData[tagName]["ID"] = $"'{tagID}'";
+                    TagData[tagName]["Name"] = WriteDictionaryAsSubObject(Localization(tagName), 1);
+                    TagData[tagName]["IsHidden"] = $"'{tag.Hidden}'";
+                    TagData[tagName]["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
+                    TagData[tagName]["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
+                    TagData[tagName]["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";
 
-				if (!associatedItems.Any()) continue; 
+					string[] associatedItems = Item.AllItemsExceptHidden.Where(item => item.Tags().Contains(tag)).Select(item => $"'{item.DisplayName.NotTranslated}'").ToArray();
 
-				//Populate associated items
-				tagInfo["Items"] = WriteDictionaryToLine(string.Join(", ", associatedItems));
-				
-				//Add tag to global dictionary
-				if (!TagData.ContainsKey(tagName))
-				{
-					TagData.Add(tagName, tagInfo);
+					if (associatedItems.Any())
+					{
+                        TagData[tagName]["Items"] = WriteDictionaryToLine(string.Join(", ", associatedItems));
+                    }                   
 				}
 			}
 

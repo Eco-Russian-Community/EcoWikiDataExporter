@@ -194,7 +194,6 @@ namespace Eco.Mods.EcoWikiDataExporter
             return Double.ToString("G", CultureInfo.InvariantCulture);
         }
 
-
         public static Dictionary<string, string> Localization(string name)
         {
             var localizedString = new Dictionary<string, string>();
@@ -203,20 +202,24 @@ namespace Eco.Mods.EcoWikiDataExporter
             String RussianLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.Russian);
             String GermanLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.German);
             String FrenchLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.French);
+            String JapaneseLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.Japanese);
 
-            if (RussianLang == "") { RussianLang = EnglishLang; }
-            if (GermanLang == "") { GermanLang = EnglishLang; }
-            if (FrenchLang == "") { FrenchLang = EnglishLang; }
+            if (RussianLang     == "")  { RussianLang   = EnglishLang; }
+            if (GermanLang      == "")  { GermanLang    = EnglishLang; }
+            if (FrenchLang      == "")  { FrenchLang    = EnglishLang; }
+            if (JapaneseLang    == "")  { JapaneseLang  = EnglishLang; }
 
-            EnglishLang = Shielding(EnglishLang);
-            RussianLang = Shielding(RussianLang);
-            GermanLang = Shielding(GermanLang);
-            FrenchLang = Shielding(FrenchLang);
+            EnglishLang     = Shielding(EnglishLang);
+            RussianLang     = Shielding(RussianLang);
+            GermanLang      = Shielding(GermanLang);
+            FrenchLang      = Shielding(FrenchLang);
+            JapaneseLang    = Shielding(JapaneseLang);
 
-            localizedString["English"] = '"' + $"{EnglishLang}" + '"';
-            localizedString["Russian"] = '"' + $"{RussianLang}" + '"';
-            localizedString["German"] = '"' + $"{GermanLang}" + '"';
-            localizedString["French"] = '"' + $"{FrenchLang}" + '"';
+            localizedString["English"]  = '"' + $"{EnglishLang}" + '"';
+            localizedString["Russian"]  = '"' + $"{RussianLang}" + '"';
+            localizedString["German"]   = '"' + $"{GermanLang}" + '"';
+            localizedString["French"]   = '"' + $"{FrenchLang}" + '"';
+            localizedString["Japanese"] = '"' + $"{JapaneseLang}" + '"';
 
             return localizedString;
         }

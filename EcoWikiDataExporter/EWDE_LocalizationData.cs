@@ -39,7 +39,6 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Gameplay.Players;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -86,13 +85,36 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Pluggable Modules",
                     "Housing Value",
 
+                    "Can be used as currency, up to {0} per item.",
+
+                    "Effects When Worn",
+
+                    "Skill Benefits",
+
+                    "Can chop",
+
+                    "Pollution Containment",
+                    "Reduces the ground pollution of stored waste by {0}.",
+
+                    "When Recycled",
+                    "Produced When Crafting",
+                    "Generated from",
+                    "Recycled from",
+                    "May Contain",
+                    "Used as Catalyst in",
+                    "Ground Pollution",
                     "Air Pollution",
+                    "Garbages",
 
                     "Calories",
                     "Carbs",
                     "Protein",
                     "Fat",
                     "Vitamins",
+
+                    "Nitrogen",
+                    "Phosphorus",
+                    "Potassium",
 
                     "Skills",
                     "Profession",

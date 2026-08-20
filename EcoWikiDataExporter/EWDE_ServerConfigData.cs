@@ -106,8 +106,14 @@ namespace Eco.Mods.EcoWikiDataExporter
             ServerConfigData["EcoSim"]["CO2ppmPerDegreeTemperatureRise"] = $"'{EcoDef.Obj.ClimateSettings.CO2ppmPerDegreeTemperatureRise}'";
             ServerConfigData["EcoSim"]["MaxCO2PerDayFromAnimals"] = $"'{EcoDef.Obj.ClimateSettings.MaxCO2PerDayFromAnimals}'";
             ServerConfigData["EcoSim"]["MinCO2PerDayFromPlants"] = $"'{EcoDef.Obj.ClimateSettings.MinCO2PerDayFromPlants}'";
-            ServerConfigData["EcoSim"]["PollutionPerTailingPerTick"] = $"'{EcoDef.Obj.ClimateSettings.PollutionPerTailingPerTick}'";
-            ServerConfigData["EcoSim"]["TailingsPollutionUndergroundHalvingDistance"] = $"'{EcoDef.Obj.ClimateSettings.TailingsPollutionUndergroundHalvingDistance}'";
+            ServerConfigData["EcoSim"]["BufferPollutionConvergenceDays"] = $"'{EcoDef.Obj.ClimateSettings.BufferPollutionConvergenceDays}'";
+            ServerConfigData["EcoSim"]["GroundPollutionGraceDays"] = $"'{EcoDef.Obj.ClimateSettings.GroundPollutionGraceDays}'";
+            ServerConfigData["EcoSim"]["HeavyMineralNaturalDecayCeiling"] = $"'{EcoDef.Obj.ClimateSettings.HeavyMineralNaturalDecayCeiling}'";
+            ServerConfigData["EcoSim"]["ChemicalNaturalDecayCeiling"] = $"'{EcoDef.Obj.ClimateSettings.ChemicalNaturalDecayCeiling}'";
+            ServerConfigData["EcoSim"]["GroundPollutionSoilRatio"] = $"'{EcoDef.Obj.ClimateSettings.GroundPollutionSoilRatio}'";
+            ServerConfigData["EcoSim"]["GroundPollutionHeavyMineralRatio"] = $"'{EcoDef.Obj.ClimateSettings.GroundPollutionHeavyMineralRatio}'";
+            ServerConfigData["EcoSim"]["GroundPollutionChemicalRatio"] = $"'{EcoDef.Obj.ClimateSettings.GroundPollutionChemicalRatio}'";
+            ServerConfigData["EcoSim"]["GroundPollutionAcidRainRatio"] = $"'{EcoDef.Obj.ClimateSettings.GroundPollutionAcidRainRatio}'";
             ServerConfigData["EcoSim"]["MaxDebrisBlocks"] = $"'{EcoDef.Obj.ClimateSettings.MaxDebrisBlocks}'";
 
             ServerConfigData["EcoSim"]["MinTreeSpawnDistance"] = $"'{EcoSim.Obj.EcoDef.MinTreeSpawnDistance}'";

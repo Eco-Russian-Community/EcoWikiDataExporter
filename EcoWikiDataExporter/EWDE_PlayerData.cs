@@ -39,7 +39,6 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Gameplay.Players;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {

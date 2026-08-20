@@ -46,6 +46,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 		public string GetStatus() => string.Empty;
 
 		public string GetCategory() => Localizer.DoStr("Mods");
+
 		public override string ToString() => Localizer.DoStr("EWDE");
 
 		public void GetCommands(Dictionary<string, Action> nameToFunction)

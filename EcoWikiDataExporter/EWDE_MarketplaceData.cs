@@ -65,7 +65,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 {
                     foreach (MarketplaceItem Item in Category.Items)
                     {
-                        string MarketplaceItemName = Item.DisplayName;
+                        string MarketplaceItemName = Item.DisplayName; 
 
                         MarketplaceData.Add(MarketplaceItemName, new Dictionary<string, string>(marketplaceitemDetails));
 
@@ -73,6 +73,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                         MarketplaceData[MarketplaceItemName]["Price"] = $"'{Item.Price}'";
                         MarketplaceData[MarketplaceItemName]["Quantity"] = $"'{Item.Quantity}'";
                         MarketplaceData[MarketplaceItemName]["Achievement"] = $"'{Item.AchievementRequired}'";
+                        MarketplaceData[MarketplaceItemName]["CanPurchase"] = $"'{Item.CanPurchase}'";
+                        MarketplaceData[MarketplaceItemName]["IsVoidStorage"] = $"'{Item.IsVoidStorage}'";
                     }
                 }
             }

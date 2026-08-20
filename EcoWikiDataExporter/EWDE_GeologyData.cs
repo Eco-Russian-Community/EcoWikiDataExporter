@@ -10,7 +10,6 @@ using Eco.Gameplay.Items;
 using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Players;
-using Eco.Gameplay.Players;
 using Eco.Gameplay.Rooms;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.Messaging.Chat;

@@ -63,6 +63,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "RequiresStrangeBlueprint", "nil" },
                 { "Ingredients", "nil" },
                 { "Products", "nil" },
+                { "Garbages", "nil" },
             };
 
             Dictionary<string, string> recipeIngredientsDetails = new Dictionary<string, string>()
@@ -81,6 +82,15 @@ namespace Eco.Mods.EcoWikiDataExporter
                 { "Quantity", "nil" },
                 { "IsStatic", "'False'" },
             };
+
+            
+            Dictionary<string, string> recipeGarbagesDetails = new Dictionary<string, string>()
+            {
+                { "Name", "nil" },
+                { "ID", "nil" },
+                { "Quantity", "nil" },
+            };
+
 
             var EcoRecipes = RecipeManager.AllRecipeFamilies;
 
@@ -156,6 +166,19 @@ namespace Eco.Mods.EcoWikiDataExporter
                             if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["IsStatic"] = $"'True'"; }
 
                             RecipeData[RecipeID]["Products"] = WriteDictionaryAsSubObject(Products, 1);
+                        }
+
+                        SortedDictionary<string, Dictionary<string, string>> Garbages = new SortedDictionary<string, Dictionary<string, string>>();
+                        foreach (var recipegarbage in recipevariant.TotalGarbages)
+                        {
+                            string Garbagename = recipegarbage.GarbageMaterialType.Name;
+                            string GarbageQuantity = Percent(recipegarbage.Quantity.GetBaseValue);
+                            Garbages.Add(Garbagename, new Dictionary<string, string>(recipeGarbagesDetails));
+
+                            Garbages[Garbagename]["Name"] = $"'{Garbagename.AddSpacesBetweenCapitals()}'";
+                            Garbages[Garbagename]["ID"] = $"'{recipegarbage.IconName}'";
+                            Garbages[Garbagename]["Quantity"] = $"'{GarbageQuantity}'";
+                            RecipeData[RecipeID]["Garbages"] = WriteDictionaryAsSubObject(Garbages, 1);
                         }
                     }
                 }
