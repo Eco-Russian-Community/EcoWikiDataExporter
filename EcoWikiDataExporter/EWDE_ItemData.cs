@@ -5,6 +5,7 @@ using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
 using Eco.Gameplay.Components.Storage;
+using Eco.Gameplay.Garbage;
 using Eco.Gameplay.Housing;
 using Eco.Gameplay.Housing.PropertyValues;
 using Eco.Gameplay.Items;
@@ -20,13 +21,13 @@ using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
 using Eco.Mods.TechTree;
 using Eco.Shared;
-using Eco.Shared.Services;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Logging;
 using Eco.Shared.Math;
 using Eco.Shared.Networking;
+using Eco.Shared.Services;
 using Eco.Shared.StrangeCloudShared;
 using Eco.Shared.Utils;
 using Eco.Simulation.Agents;
@@ -245,15 +246,33 @@ namespace Eco.Mods.EcoWikiDataExporter
 						}
                     }
 
-					if (item is VehicleToolItem vehicleToolItem)
+                    //vehicleToolItem
+                    if (item is VehicleToolItem vehicleToolItem)
 					{ 
 						ItemData[ItemName]["VehicleToolItem"] = $"'True'";
-                        //vehicleToolItem.
+                        
 
                     }
 
-					if (item is WorldObjectItem worldObjectItem)
+                    //Decontaminant
+                    if (item is DecontaminantItem decontaminantItem)
 					{
+                        //decontaminantItem.TargetType
+                        //decontaminantItem.Potency
+
+
+                    }
+
+
+					//SalvageCost
+					if (item.IsWasteProduct)
+					{
+
+
+					}
+
+                        if (item is WorldObjectItem worldObjectItem)
+						{
 						Type worldObjecttype = worldObjectItem.WorldObjectType;
 						ItemData[ItemName]["WorldObjectItem"] = $"'True'";
                         
