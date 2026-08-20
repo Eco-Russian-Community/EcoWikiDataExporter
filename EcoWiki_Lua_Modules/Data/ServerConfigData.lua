@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Eco Version : 0.14.0.2
+-- EWDE Version : 0.7.2.0
+-- Date of export : 11.08.2026 21:17:06
 
 return {
     config = {
@@ -29,15 +29,21 @@ return {
                     ['CO2ppmPerDegreeTemperatureRise'] = '20',
                     ['MaxCO2PerDayFromAnimals'] = '25',
                     ['MinCO2PerDayFromPlants'] = '-500',
-                    ['PollutionPerTailingPerTick'] = '0,016',
-                    ['TailingsPollutionUndergroundHalvingDistance'] = '5',
+                    ['BufferPollutionConvergenceDays'] = '3',
+                    ['GroundPollutionGraceDays'] = '1',
+                    ['HeavyMineralNaturalDecayCeiling'] = '1',
+                    ['ChemicalNaturalDecayCeiling'] = '0,3',
+                    ['GroundPollutionSoilRatio'] = '1',
+                    ['GroundPollutionHeavyMineralRatio'] = '1',
+                    ['GroundPollutionChemicalRatio'] = '1',
+                    ['GroundPollutionAcidRainRatio'] = '1',
                     ['MaxDebrisBlocks'] = '1',
                     ['MinTreeSpawnDistance'] = '4',
                     ['BaseSkillGainRate'] = '12',
                     ['TimeOfDayScale'] = '48',
         },
         ['SpeciesLayeredCatch'] = {
-                    ['BoatCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},
+                    ['BoatCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass', 'Blue Shark', 'Alligator', 'Moon Jellyfish', 'Crab'},
                     ['FishingPoleCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},
                     ['CrabCatcher'] = { 'Crab'},
                     ['FishCatcher'] = { 'Salmon', 'Trout', 'Tuna', 'Pacific Sardine', 'Cod', 'Bass'},

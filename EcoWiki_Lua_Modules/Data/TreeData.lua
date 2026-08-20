@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.3
--- EWDE Version : 0.7.1.1
--- Date of export : 09.05.2026 10:52:38
+-- Eco Version : 0.14.0.2
+-- EWDE Version : 0.7.2.0
+-- Date of export : 11.08.2026 21:17:01
 
 return {
     trees = {
@@ -11,6 +11,7 @@ return {
                             ['Russian'] = "Берёза",
                             ['German'] = "Birke",
                             ['French'] = "Bouleau",
+                            ['Japanese'] = "白樺",
                             },
                     ['MaturityAgeDays'] = '5',
                     ['StartBiomes'] = 'WarmForestBiome',
@@ -69,6 +70,7 @@ return {
                             ['Russian'] = "Кедр",
                             ['German'] = "Zeder",
                             ['French'] = "Cèdre",
+                            ['Japanese'] = "杉",
                             },
                     ['MaturityAgeDays'] = '5',
                     ['StartBiomes'] = '',
@@ -127,6 +129,7 @@ return {
                             ['Russian'] = "Сейба",
                             ['German'] = "Kapokbaum",
                             ['French'] = "Ceiba",
+                            ['Japanese'] = "パンヤノキ",
                             },
                     ['MaturityAgeDays'] = '6',
                     ['StartBiomes'] = 'RainforestBiome',
@@ -185,6 +188,7 @@ return {
                             ['Russian'] = "Пихта",
                             ['German'] = "Tanne",
                             ['French'] = "Sapin",
+                            ['Japanese'] = "モミの木",
                             },
                     ['MaturityAgeDays'] = '5.5',
                     ['StartBiomes'] = '',
@@ -243,6 +247,7 @@ return {
                             ['Russian'] = "Юкка коротколистная",
                             ['German'] = "Joshua",
                             ['French'] = "Arbre de Josué",
+                            ['Japanese'] = "ジョシュア・ツリー",
                             },
                     ['MaturityAgeDays'] = '7',
                     ['StartBiomes'] = 'DesertBiome',
@@ -301,6 +306,7 @@ return {
                             ['Russian'] = "Дуб",
                             ['German'] = "Eiche",
                             ['French'] = "Chêne",
+                            ['Japanese'] = "樫",
                             },
                     ['MaturityAgeDays'] = '7',
                     ['StartBiomes'] = '',
@@ -359,6 +365,7 @@ return {
                             ['Russian'] = "Гигантская секвойя",
                             ['German'] = "Mammutbaum",
                             ['French'] = "Séquoia géant",
+                            ['Japanese'] = "セコイアの古木",
                             },
                     ['MaturityAgeDays'] = '30',
                     ['StartBiomes'] = '',
@@ -417,6 +424,7 @@ return {
                             ['Russian'] = "Пальма",
                             ['German'] = "Palme",
                             ['French'] = "Palmier",
+                            ['Japanese'] = "ヤシ",
                             },
                     ['MaturityAgeDays'] = '4.5',
                     ['StartBiomes'] = 'RainforestBiome',
@@ -475,6 +483,7 @@ return {
                             ['Russian'] = "Секвойя",
                             ['German'] = "Rottanne",
                             ['French'] = "Séquoia",
+                            ['Japanese'] = "セコイア",
                             },
                     ['MaturityAgeDays'] = '6',
                     ['StartBiomes'] = '',
@@ -533,6 +542,7 @@ return {
                             ['Russian'] = "Карнегия",
                             ['German'] = "Saguarokaktus",
                             ['French'] = "Cactus Saguaro",
+                            ['Japanese'] = "サグアロサボテン",
                             },
                     ['MaturityAgeDays'] = '6',
                     ['StartBiomes'] = 'DesertBiome',
@@ -591,6 +601,7 @@ return {
                             ['Russian'] = "Ель",
                             ['German'] = "Fichte",
                             ['French'] = "Épicéa",
+                            ['Japanese'] = "松",
                             },
                     ['MaturityAgeDays'] = '5.5',
                     ['StartBiomes'] = '',

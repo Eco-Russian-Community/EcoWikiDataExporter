@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Eco Version : 0.14.0.2
+-- EWDE Version : 0.7.2.0
+-- Date of export : 11.08.2026 21:17:06
 
 return {
     rooms = {
@@ -10,6 +10,7 @@ return {
                             ['Russian'] = "Ванная",
                             ['German'] = "Badezimmer",
                             ['French'] = "Salle de bain",
+                            ['Japanese'] = "バスルーム",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = nil,
@@ -26,6 +27,7 @@ return {
                             ['Russian'] = "Спальня",
                             ['German'] = "Schlafzimmer",
                             ['French'] = "Chambre",
+                            ['Japanese'] = "ベッドルーム",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = nil,
@@ -42,6 +44,7 @@ return {
                             ['Russian'] = "Культурный",
                             ['German'] = "Kulturell",
                             ['French'] = "Culturel",
+                            ['Japanese'] = "文化",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = {'Living Room','Outdoor',},
@@ -58,6 +61,7 @@ return {
                             ['Russian'] = "Украшение",
                             ['German'] = "Dekoration",
                             ['French'] = "Décoration",
+                            ['Japanese'] = "装飾",
                             },
                     ['IsRoom'] = 'False',
                     ['SupportingRooms'] = nil,
@@ -74,6 +78,7 @@ return {
                             ['Russian'] = "Промышленная",
                             ['German'] = "Industriell",
                             ['French'] = "Industriel",
+                            ['Japanese'] = "工業",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = nil,
@@ -90,6 +95,7 @@ return {
                             ['Russian'] = "Кухня",
                             ['German'] = "Küche",
                             ['French'] = "Cuisine",
+                            ['Japanese'] = "キッチン",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = nil,
@@ -106,6 +112,7 @@ return {
                             ['Russian'] = "Освещение",
                             ['German'] = "Beleuchtung",
                             ['French'] = "Éclairage",
+                            ['Japanese'] = "照明",
                             },
                     ['IsRoom'] = 'False',
                     ['SupportingRooms'] = nil,
@@ -122,6 +129,7 @@ return {
                             ['Russian'] = "Гостиная",
                             ['German'] = "Wohnzimmer",
                             ['French'] = "Salon",
+                            ['Japanese'] = "リビング",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = {'Bedroom',},
@@ -138,6 +146,7 @@ return {
                             ['Russian'] = "Снаружи",
                             ['German'] = "Outdoor",
                             ['French'] = "Extérieurs",
+                            ['Japanese'] = "屋外",
                             },
                     ['IsRoom'] = 'True',
                     ['SupportingRooms'] = nil,
@@ -154,6 +163,7 @@ return {
                             ['Russian'] = "Сиденье",
                             ['German'] = "Sitzgelegenheit",
                             ['French'] = "Siège",
+                            ['Japanese'] = "座席",
                             },
                     ['IsRoom'] = 'False',
                     ['SupportingRooms'] = {'Living Room','Bedroom','Kitchen','Bathroom','Outdoor','Cultural',},

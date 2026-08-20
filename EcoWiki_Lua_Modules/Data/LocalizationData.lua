@@ -1,6 +1,6 @@
--- Eco Version : 0.13.0.2
--- EWDE Version : 0.7.1.0
--- Date of export : 16.04.2026 15:06:38
+-- Eco Version : 0.14.0.2
+-- EWDE Version : 0.7.2.0
+-- Date of export : 08.08.2026 17:47:59
 
 return {
     locales = {
@@ -10,14 +10,16 @@ return {
                             ['Russian'] = "{0} это {1}",
                             ['German'] = "{0} ist {1}",
                             ['French'] = "{0} est {1}",
+                            ['Japanese'] = "{0} は {1}",
                             },
         },
         ['{0} Profession'] = {
                     ['Translate'] =  {
                             ['English'] = "{0} Profession",
                             ['Russian'] = "Профессия {0}",
-                            ['German'] = "{0} Profession",
+                            ['German'] = "{0} Beruf",
                             ['French'] = "Profession {0}",
+                            ['Japanese'] = "{0} 職業",
                             },
         },
         ['{0} Specialty'] = {
@@ -26,6 +28,7 @@ return {
                             ['Russian'] = "Специальность - {0}",
                             ['German'] = "{0} Beruf",
                             ['French'] = "Spécialité {0}",
+                            ['Japanese'] = "{0} 専門分野",
                             },
         },
         ['{0} Tag'] = {
@@ -34,6 +37,7 @@ return {
                             ['Russian'] = "Группа {0}",
                             ['German'] = "Tag: {0}",
                             ['French'] = "Groupe {0}",
+                            ['Japanese'] = "{0} タグ",
                             },
         },
         ['Achievements'] = {
@@ -42,6 +46,7 @@ return {
                             ['Russian'] = "Достижения",
                             ['German'] = "Errungenschaften",
                             ['French'] = "Succès",
+                            ['Japanese'] = "実績",
                             },
         },
         ['Admin'] = {
@@ -50,6 +55,7 @@ return {
                             ['Russian'] = "Администратор",
                             ['German'] = "Admin",
                             ['French'] = "Administrateur",
+                            ['Japanese'] = "管理者",
                             },
         },
         ['Air Pollution'] = {
@@ -58,6 +64,7 @@ return {
                             ['Russian'] = "Загрязнение воздуха",
                             ['German'] = "Luftverschmutzung",
                             ['French'] = "Pollution de l'air",
+                            ['Japanese'] = "大気汚染",
                             },
         },
         ['Animals'] = {
@@ -66,14 +73,16 @@ return {
                             ['Russian'] = "Животные",
                             ['German'] = "Tiere",
                             ['French'] = "Animaux",
+                            ['Japanese'] = "動物",
                             },
         },
         ['Biome'] = {
                     ['Translate'] =  {
                             ['English'] = "Biome",
                             ['Russian'] = "Биом",
-                            ['German'] = "Biome",
+                            ['German'] = "Biom",
                             ['French'] = "Biome",
+                            ['Japanese'] = "生物群系",
                             },
         },
         ['Biomes'] = {
@@ -82,14 +91,16 @@ return {
                             ['Russian'] = "Биомы",
                             ['German'] = "Biome",
                             ['French'] = "Biomes",
+                            ['Japanese'] = "バイオーム",
                             },
         },
         ['Calories'] = {
                     ['Translate'] =  {
                             ['English'] = "Calories",
                             ['Russian'] = "Калории",
-                            ['German'] = "{0}",
+                            ['German'] = "Kalorien",
                             ['French'] = "Calories",
+                            ['Japanese'] = "カロリー",
                             },
         },
         ['Carbs'] = {
@@ -98,14 +109,16 @@ return {
                             ['Russian'] = "Carbs",
                             ['German'] = "Carbs",
                             ['French'] = "Carbs",
+                            ['Japanese'] = "Carbs",
                             },
         },
         ['Charity Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Charity Cut",
-                            ['Russian'] = "Charity Cut",
+                            ['Russian'] = "Благотворительная акция",
                             ['German'] = "Charity Cut",
                             ['French'] = "Charity Cut",
+                            ['Japanese'] = "チャリティカット",
                             },
         },
         ['Craft time'] = {
@@ -114,6 +127,7 @@ return {
                             ['Russian'] = "Время изготовления",
                             ['German'] = "Herstellungszeit",
                             ['French'] = "Temps de fabrication",
+                            ['Japanese'] = "クラフト時間",
                             },
         },
         ['Crafted At'] = {
@@ -122,6 +136,7 @@ return {
                             ['Russian'] = "Создаётся в",
                             ['German'] = "Herstellbar bei",
                             ['French'] = "Se fabrique sur",
+                            ['Japanese'] = "以下で製作",
                             },
         },
         ['Crafting Table'] = {
@@ -130,6 +145,7 @@ return {
                             ['Russian'] = "Верстак",
                             ['German'] = "Herstellungstisch",
                             ['French'] = "Atelier de fabrication",
+                            ['Japanese'] = "作業台",
                             },
         },
         ['DevTier'] = {
@@ -138,6 +154,7 @@ return {
                             ['Russian'] = "DevTier",
                             ['German'] = "DevTier",
                             ['French'] = "DevTier",
+                            ['Japanese'] = "DevTier(開発階層)",
                             },
         },
         ['Eco Credits'] = {
@@ -146,6 +163,7 @@ return {
                             ['Russian'] = "Eco монеты",
                             ['German'] = "Eco Credits",
                             ['French'] = "Eco Crédits",
+                            ['Japanese'] = "エコクレジット",
                             },
         },
         ['Experience'] = {
@@ -154,6 +172,7 @@ return {
                             ['Russian'] = "Опыт",
                             ['German'] = "Erfahrung",
                             ['French'] = "Expérience",
+                            ['Japanese'] = "経験値",
                             },
         },
         ['Fat'] = {
@@ -162,6 +181,7 @@ return {
                             ['Russian'] = "Жиры",
                             ['German'] = "Fett",
                             ['French'] = "Matières grasses",
+                            ['Japanese'] = "脂質",
                             },
         },
         ['Getting Started'] = {
@@ -170,6 +190,7 @@ return {
                             ['Russian'] = "Введение",
                             ['German'] = "Erste Schritte",
                             ['French'] = "Pour commencer",
+                            ['Japanese'] = "はじめに",
                             },
         },
         ['Government'] = {
@@ -178,6 +199,7 @@ return {
                             ['Russian'] = "Правительство",
                             ['German'] = "Regierung",
                             ['French'] = "Gouvernement",
+                            ['Japanese'] = "行政",
                             },
         },
         ['Harvested from Species'] = {
@@ -186,14 +208,16 @@ return {
                             ['Russian'] = "Добывается из видов",
                             ['German'] = "Geerntet von Spezies",
                             ['French'] = "Récoltés à partir d’espèces",
+                            ['Japanese'] = "種から収穫された",
                             },
         },
         ['Host Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Host Cut",
-                            ['Russian'] = "Host Cut",
+                            ['Russian'] = "Доля сервера",
                             ['German'] = "Host Cut",
-                            ['French'] = "Host Cut",
+                            ['French'] = "Hôte Cut",
+                            ['Japanese'] = "ホストカット",
                             },
         },
         ['Housing'] = {
@@ -202,6 +226,7 @@ return {
                             ['Russian'] = "Жилье",
                             ['German'] = "Haus",
                             ['French'] = "Résidence",
+                            ['Japanese'] = "ハウジング",
                             },
         },
         ['Housing Value'] = {
@@ -210,6 +235,7 @@ return {
                             ['Russian'] = "Качество дома",
                             ['German'] = "Wohnwert",
                             ['French'] = "Valeur de la résidence",
+                            ['Japanese'] = "ハウジング価値",
                             },
         },
         ['Ingredients'] = {
@@ -218,6 +244,7 @@ return {
                             ['Russian'] = "Ингредиенты",
                             ['German'] = "Zutaten",
                             ['French'] = "Ingrédients",
+                            ['Japanese'] = "材料",
                             },
         },
         ['Items'] = {
@@ -226,6 +253,7 @@ return {
                             ['Russian'] = "Предметы",
                             ['German'] = "Gegenstände",
                             ['French'] = "Articles",
+                            ['Japanese'] = "アイテム",
                             },
         },
         ['Items in Tag'] = {
@@ -234,6 +262,7 @@ return {
                             ['Russian'] = "Предметы в группе",
                             ['German'] = "Gegenstände mit diesem Tag",
                             ['French'] = "Objets du même groupe",
+                            ['Japanese'] = "タグ内のアイテム",
                             },
         },
         ['Labor'] = {
@@ -242,14 +271,16 @@ return {
                             ['Russian'] = "Работа",
                             ['German'] = "Arbeit",
                             ['French'] = "Travail",
+                            ['Japanese'] = "労働力",
                             },
         },
         ['Laws'] = {
                     ['Translate'] =  {
                             ['English'] = "Laws",
-                            ['Russian'] = "Законы",
+                            ['Russian'] = "Законов",
                             ['German'] = "Gesetze",
                             ['French'] = "Lois",
+                            ['Japanese'] = "法律",
                             },
         },
         ['Level'] = {
@@ -258,22 +289,25 @@ return {
                             ['Russian'] = "Уровень",
                             ['German'] = "Level",
                             ['French'] = "Niveau",
+                            ['Japanese'] = "レベル",
                             },
         },
         ['Marketplace'] = {
                     ['Translate'] =  {
                             ['English'] = "Marketplace",
                             ['Russian'] = "Маркетплейс",
-                            ['German'] = "Marketplace",
+                            ['German'] = "Marktplatz",
                             ['French'] = "Marché",
+                            ['Japanese'] = "マーケットプレイス",
                             },
         },
         ['Modder Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Modder Cut",
-                            ['Russian'] = "Modder Cut",
+                            ['Russian'] = "Доля создателей модов",
                             ['German'] = "Modder Cut",
                             ['French'] = "Modder Cut",
+                            ['Japanese'] = "モッダーカット",
                             },
         },
         ['None'] = {
@@ -282,6 +316,7 @@ return {
                             ['Russian'] = "Отсутствует",
                             ['German'] = "Keine",
                             ['French'] = "Aucun",
+                            ['Japanese'] = "なし",
                             },
         },
         ['Plants'] = {
@@ -290,6 +325,7 @@ return {
                             ['Russian'] = "Растения",
                             ['German'] = "Pflanzen",
                             ['French'] = "Plantes",
+                            ['Japanese'] = "植物",
                             },
         },
         ['Pluggable Modules'] = {
@@ -298,6 +334,7 @@ return {
                             ['Russian'] = "Применимые модули",
                             ['German'] = "Passende Module",
                             ['French'] = "Améliorations possibles",
+                            ['Japanese'] = "接続可能なモジュール",
                             },
         },
         ['Plugs Into'] = {
@@ -306,6 +343,7 @@ return {
                             ['Russian'] = "Совместим с",
                             ['German'] = "Stecker",
                             ['French'] = "Se branche dans",
+                            ['Japanese'] = "プラグイン",
                             },
         },
         ['Produces'] = {
@@ -314,6 +352,7 @@ return {
                             ['Russian'] = "Производит",
                             ['German'] = "Produziert",
                             ['French'] = "Fabrique",
+                            ['Japanese'] = "生産",
                             },
         },
         ['Products'] = {
@@ -322,14 +361,16 @@ return {
                             ['Russian'] = "Продукция",
                             ['German'] = "Produkte",
                             ['French'] = "Produits",
+                            ['Japanese'] = "製品",
                             },
         },
         ['Profession'] = {
                     ['Translate'] =  {
                             ['English'] = "Profession",
                             ['Russian'] = "Профессия",
-                            ['German'] = "Profession",
+                            ['German'] = "Beruf",
                             ['French'] = "Profession",
+                            ['Japanese'] = "職業",
                             },
         },
         ['Professions'] = {
@@ -338,6 +379,7 @@ return {
                             ['Russian'] = "Профессии",
                             ['German'] = "Professionen",
                             ['French'] = "Professions",
+                            ['Japanese'] = "職業",
                             },
         },
         ['Protein'] = {
@@ -346,6 +388,7 @@ return {
                             ['Russian'] = "Белки",
                             ['German'] = "Proteine",
                             ['French'] = "Protéines",
+                            ['Japanese'] = "タンパク質",
                             },
         },
         ['Quantity'] = {
@@ -354,6 +397,7 @@ return {
                             ['Russian'] = "Количество",
                             ['German'] = "Menge",
                             ['French'] = "Quantité",
+                            ['Japanese'] = "数量",
                             },
         },
         ['Recipes'] = {
@@ -362,6 +406,7 @@ return {
                             ['Russian'] = "Рецепты",
                             ['German'] = "Rezepte",
                             ['French'] = "Recettes",
+                            ['Japanese'] = "レシピ",
                             },
         },
         ['Requirements'] = {
@@ -370,6 +415,7 @@ return {
                             ['Russian'] = "Требования",
                             ['German'] = "Voraussetzungen",
                             ['French'] = "Exigences",
+                            ['Japanese'] = "要件",
                             },
         },
         ['Requires'] = {
@@ -378,6 +424,7 @@ return {
                             ['Russian'] = "Требования",
                             ['German'] = "Voraussetzungen",
                             ['French'] = "Nécessite",
+                            ['Japanese'] = "必要条件",
                             },
         },
         ['Server'] = {
@@ -386,14 +433,16 @@ return {
                             ['Russian'] = "Сервер",
                             ['German'] = "Server",
                             ['French'] = "Serveur",
+                            ['Japanese'] = "サーバー",
                             },
         },
         ['Settlement Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Settlement Cut",
-                            ['Russian'] = "Settlement Cut",
-                            ['German'] = "Settlement Cut",
-                            ['French'] = "Settlement Cut",
+                            ['Russian'] = "Доля для поселений",
+                            ['German'] = "Siedlungskürzung",
+                            ['French'] = "Réduction des colonies",
+                            ['Japanese'] = "共同体カット",
                             },
         },
         ['Settlements'] = {
@@ -402,6 +451,7 @@ return {
                             ['Russian'] = "Поселения",
                             ['German'] = "Siedlungen",
                             ['French'] = "Colonies",
+                            ['Japanese'] = "共同体",
                             },
         },
         ['Skill Benefits'] = {
@@ -410,6 +460,7 @@ return {
                             ['Russian'] = "Преимущества навыка",
                             ['German'] = "Vorteile durch Fertigkeiten",
                             ['French'] = "Avantages de la compétence",
+                            ['Japanese'] = "スキルの利益",
                             },
         },
         ['Skill Requirements'] = {
@@ -418,6 +469,7 @@ return {
                             ['Russian'] = "Требования навыков",
                             ['German'] = "Berufsanforderungen",
                             ['French'] = "Exigences de compétences",
+                            ['Japanese'] = "スキルの要件",
                             },
         },
         ['Skills'] = {
@@ -426,6 +478,7 @@ return {
                             ['Russian'] = "Навыки",
                             ['German'] = "Fertigkeiten",
                             ['French'] = "Compétences",
+                            ['Japanese'] = "スキル",
                             },
         },
         ['Specialties'] = {
@@ -434,6 +487,7 @@ return {
                             ['Russian'] = "Специальности",
                             ['German'] = "Berufe",
                             ['French'] = "Spécialités",
+                            ['Japanese'] = "専門分野",
                             },
         },
         ['Specialty'] = {
@@ -442,6 +496,7 @@ return {
                             ['Russian'] = "Специальность",
                             ['German'] = "Spezialisierung",
                             ['French'] = "Spécialité",
+                            ['Japanese'] = "専門分野",
                             },
         },
         ['Specialty Experience Per Level'] = {
@@ -450,14 +505,16 @@ return {
                             ['Russian'] = "Опыт специальности за уровень",
                             ['German'] = "Erfahrungspunkte pro Level",
                             ['French'] = "Expérience par niveau de spécialité",
+                            ['Japanese'] = "レベルごとの専門分野経験値",
                             },
         },
         ['Streamer Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Streamer Cut",
-                            ['Russian'] = "Streamer Cut",
-                            ['German'] = "Streamer Cut",
+                            ['Russian'] = "Доля для стримеров",
+                            ['German'] = "Streamer-Schnitt",
                             ['French'] = "Streamer Cut",
+                            ['Japanese'] = "ストリーマーカット",
                             },
         },
         ['Tags'] = {
@@ -466,6 +523,7 @@ return {
                             ['Russian'] = "Группы",
                             ['German'] = "Stichworte",
                             ['French'] = "Groupes",
+                            ['Japanese'] = "タグ",
                             },
         },
         ['Tags Applying to'] = {
@@ -474,6 +532,7 @@ return {
                             ['Russian'] = "Применимые группы",
                             ['German'] = "Benutzt auch folgende Tags",
                             ['French'] = "Groupes associés",
+                            ['Japanese'] = "タグ 適用対象",
                             },
         },
         ['Tags represent a group of items.'] = {
@@ -482,6 +541,7 @@ return {
                             ['Russian'] = "Группа предметов объединённых общим признаком.",
                             ['German'] = "Tags repräsentieren eine Gruppe von Gegenständen.",
                             ['French'] = "Les groupes représentent un ensemble d'éléments.",
+                            ['Japanese'] = "タグはアイテムのグループを表します。",
                             },
         },
         ['Talents'] = {
@@ -490,6 +550,7 @@ return {
                             ['Russian'] = "Таланты",
                             ['German'] = "Talente",
                             ['French'] = "Talents",
+                            ['Japanese'] = "才能",
                             },
         },
         ['Trees'] = {
@@ -498,6 +559,7 @@ return {
                             ['Russian'] = "Деревья",
                             ['German'] = "Bäume",
                             ['French'] = "Arbres",
+                            ['Japanese'] = "木",
                             },
         },
         ['Twitch Drops'] = {
@@ -506,6 +568,7 @@ return {
                             ['Russian'] = "Twitch Drops",
                             ['German'] = "Twitch Drops",
                             ['French'] = "Récompenses Twitch",
+                            ['Japanese'] = "Twitch Drops",
                             },
         },
         ['Unlocks'] = {
@@ -514,6 +577,7 @@ return {
                             ['Russian'] = "Разблокирует",
                             ['German'] = "Freischaltungen",
                             ['French'] = "Déverrouille",
+                            ['Japanese'] = "アンロック",
                             },
         },
         ['Used in'] = {
@@ -522,6 +586,7 @@ return {
                             ['Russian'] = "Используется в",
                             ['German'] = "Wird genutzt in",
                             ['French'] = "Utiliser pour fabriquer",
+                            ['Japanese'] = "以下で使用",
                             },
         },
         ['User'] = {
@@ -530,6 +595,7 @@ return {
                             ['Russian'] = "Пользователь",
                             ['German'] = "Benutzer",
                             ['French'] = "Utilisateur",
+                            ['Japanese'] = "ユーザー",
                             },
         },
         ['Vitamins'] = {
@@ -538,6 +604,7 @@ return {
                             ['Russian'] = "Витамины",
                             ['German'] = "Vitamine",
                             ['French'] = "Vitamines",
+                            ['Japanese'] = "ビタミン",
                             },
         },
     },
