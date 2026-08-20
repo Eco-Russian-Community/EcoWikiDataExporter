@@ -212,7 +212,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 					{
 						ItemData[ItemName]["BlockItem"] = $"'True'";
 						ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
-					}
+                        if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
+
+                    }
 					if (item is SeedItem Seed)
 					{
 						ItemData[ItemName]["SeedItem"] = $"'True'";
