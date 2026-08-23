@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
+-- Eco Version : 0.14.0.3
 -- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:01
+-- Date of export : 22.08.2026 17:27:02
 
 return {
     tags = {
@@ -36,7 +36,7 @@ return {
                     ['IsVisibleInEcopedia'] = 'True',
                     ['IsVisibleInFilter'] = 'False',
                     ['Items'] =  {
-'Agriculture Research Paper Advanced', 'Culinary Research Paper Advanced', 'Dendrology Research Paper Advanced', 'Engineering Research Paper Advanced', 'Geology Research Paper Advanced', 'Metallurgy Research Paper Advanced'
+'Agriculture Research Paper Advanced', 'Culinary Research Paper Advanced', 'Dendrology Research Paper Advanced', 'Engineering Research Paper Advanced', 'Gathering Research Paper Advanced', 'Geology Research Paper Advanced', 'Metallurgy Research Paper Advanced'
 },
                     ['IsHidden'] = 'False',
         },
@@ -2494,7 +2494,7 @@ return {
                     ['IsVisibleInEcopedia'] = 'False',
                     ['IsVisibleInFilter'] = 'True',
                     ['Items'] =  {
-'Agriculture Research Paper Advanced', 'Agriculture Research Paper Basic', 'Agriculture Research Paper Modern', 'Culinary Research Paper Advanced', 'Culinary Research Paper Basic', 'Culinary Research Paper Modern', 'Dendrology Research Paper Advanced', 'Dendrology Research Paper Basic', 'Dendrology Research Paper Modern', 'Engineering Research Paper Advanced', 'Engineering Research Paper Modern', 'Gathering Research Paper Basic', 'Geology Research Paper Advanced', 'Geology Research Paper Basic', 'Geology Research Paper Modern', 'Metallurgy Research Paper Advanced', 'Metallurgy Research Paper Basic', 'Metallurgy Research Paper Modern'
+'Agriculture Research Paper Advanced', 'Agriculture Research Paper Basic', 'Agriculture Research Paper Modern', 'Culinary Research Paper Advanced', 'Culinary Research Paper Basic', 'Culinary Research Paper Modern', 'Dendrology Research Paper Advanced', 'Dendrology Research Paper Basic', 'Dendrology Research Paper Modern', 'Engineering Research Paper Advanced', 'Engineering Research Paper Modern', 'Gathering Research Paper Advanced', 'Gathering Research Paper Basic', 'Geology Research Paper Advanced', 'Geology Research Paper Basic', 'Geology Research Paper Modern', 'Metallurgy Research Paper Advanced', 'Metallurgy Research Paper Basic', 'Metallurgy Research Paper Modern'
 },
                     ['IsHidden'] = 'False',
         },

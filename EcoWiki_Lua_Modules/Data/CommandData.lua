@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
+-- Eco Version : 0.14.0.3
 -- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:01
+-- Date of export : 22.08.2026 17:27:02
 
 return {
     commands = {
@@ -5078,6 +5078,24 @@ return {
                     ['shortCut'] = 'unlimitedclaim',
                     ['level'] = 'Admin',
                     ['parameters'] =  {
+                            },
+        },
+        ['/qa adjustblueprintcount'] = {
+                    ['command'] = 'adjustblueprintcount',
+                    ['parent'] = 'qa',
+                    ['helpText'] =  {
+                            ['English'] = "Adjusts how many of a paid item a player counts as having crafted. Negative amounts refund blueprint uses lost to bugs.",
+                            ['Russian'] = "Adjusts how many of a paid item a player counts as having crafted. Negative amounts refund blueprint uses lost to bugs.",
+                            ['German'] = "Adjusts how many of a paid item a player counts as having crafted. Negative amounts refund blueprint uses lost to bugs.",
+                            ['French'] = "Adjusts how many of a paid item a player counts as having crafted. Negative amounts refund blueprint uses lost to bugs.",
+                            ['Japanese'] = "Adjusts how many of a paid item a player counts as having crafted. Negative amounts refund blueprint uses lost to bugs.",
+                            },
+                    ['shortCut'] = 'adjustblueprintcount',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'itemName', 'String'},
+                            ['Arg2'] = {'amount', 'Int32'},
+                            ['Arg3'] = {'targetUser', 'User', ''},
                             },
         },
         ['/qa allblocks'] = {

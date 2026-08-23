@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
+-- Eco Version : 0.14.0.3
 -- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Date of export : 22.08.2026 17:27:06
 
 return {
     WorldObjects = {
@@ -1493,7 +1493,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'BiowasteSorterObject',
-                    ['WorldObjectSize'] = '7,14,4',
+                    ['WorldObjectSize'] = '7,14,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Bison Mount'] = {

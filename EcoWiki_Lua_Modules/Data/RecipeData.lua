@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
+-- Eco Version : 0.14.0.3
 -- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Date of export : 22.08.2026 17:27:06
 
 return {
     recipes = {
@@ -3176,7 +3176,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '248',
+                                            ['Quantity'] = '68',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
@@ -3608,7 +3608,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -3928,7 +3928,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -4248,7 +4248,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -4911,7 +4911,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -5231,7 +5231,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -5551,7 +5551,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '162.4',
+                                            ['Quantity'] = '42.4',
                                     },
                                     }
 ,
@@ -6220,7 +6220,7 @@ return {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Crushed Rock',
                                             ['ID'] = 'CrushedRock',
-                                            ['Quantity'] = '5',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Sand'] = {
@@ -6251,7 +6251,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '40.4',
+                                            ['Quantity'] = '80.4',
                                     },
                                     }
 ,
@@ -9483,11 +9483,18 @@ return {
                     ['CraftingTables'] = 'Kiln',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Clay'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Clay',
+                                            ['ID'] = 'ClayItem',
+                                            ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Crushed Rock'] = {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Crushed Rock',
                                             ['ID'] = 'CrushedRock',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Mortar'] = {
@@ -9517,10 +9524,15 @@ return {
                                     }
 ,
                     ['Garbages'] =  {
+                                    ['CeramicScrap'] = {
+                                            ['Name'] = 'Ceramic Scrap',
+                                            ['ID'] = 'CeramicScrapItem',
+                                            ['Quantity'] = '80',
+                                    },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '164.8',
+                                            ['Quantity'] = '84.8',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
@@ -12045,7 +12057,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '24',
                                     },
                                     }
 ,
@@ -12676,7 +12688,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -15668,7 +15680,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '2',
                                     },
                                     }
 ,
@@ -23378,7 +23390,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -23422,7 +23434,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -23723,7 +23735,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -23767,7 +23779,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -23936,7 +23948,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -23980,7 +23992,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24024,7 +24036,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '24',
                                     },
                                     }
 ,
@@ -24193,7 +24205,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24237,7 +24249,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24272,94 +24284,6 @@ return {
                                             ['Name'] = 'Crushed Limestone',
                                             ['ID'] = 'CrushedLimestoneItem',
                                             ['Quantity'] = '3',
-                                            ['IsStatic'] = 'True',
-                                            ['Type'] = 'ITEM',
-                                    },
-                                    }
-,
-                    ['Garbages'] =  {
-                                    ['StoneRubble'] = {
-                                            ['Name'] = 'Stone Rubble',
-                                            ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
-                                    },
-                                    }
-,
-        },
-        ['CrushedMortaredStoneLv2Recipe'] = {
-                    ['Name'] =  {
-                            ['English'] = "Crushed Mortared Stone Lv2",
-                            ['Russian'] = "Дробление Строительного камня Ур.2",
-                            ['German'] = "Zerkleinerte Steinziegel Lv2",
-                            ['French'] = "Pierre cimentée concassée nv. 2",
-                            ['Japanese'] = "モルタルストーンの砕石 Lv2",
-                            },
-                    ['CraftTime'] = '10',
-                    ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '120',
-                    ['RequiredSkill'] = {'MiningSkill','6'},
-                    ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Jaw Crusher',
-                    ['RequiresStrangeBlueprint'] = 'False',
-                    ['Ingredients'] =  {
-                                    ['Mortared Stone'] = {
-                                            ['Type'] = 'TAG',
-                                            ['Name'] = 'Mortared Stone',
-                                            ['ID'] = 'MortaredStone',
-                                            ['Quantity'] = '20',
-                                            ['IsStatic'] = 'True',
-                                    },
-                                    }
-,
-                    ['Products'] =  {
-                                    ['Crushed Mixed Rock'] = {
-                                            ['Name'] = 'Crushed Mixed Rock',
-                                            ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '5',
-                                            ['IsStatic'] = 'True',
-                                            ['Type'] = 'ITEM',
-                                    },
-                                    }
-,
-                    ['Garbages'] =  {
-                                    ['StoneRubble'] = {
-                                            ['Name'] = 'Stone Rubble',
-                                            ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '40',
-                                    },
-                                    }
-,
-        },
-        ['CrushedMortaredStoneRecipe'] = {
-                    ['Name'] =  {
-                            ['English'] = "Crushed Mortared Stone",
-                            ['Russian'] = "Дробление Строительного камня",
-                            ['German'] = "Zerkleinerte Steinziegel",
-                            ['French'] = "Pierre cimentée concassée",
-                            ['Japanese'] = "モルタルストーンの砕石",
-                            },
-                    ['CraftTime'] = '30',
-                    ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '90',
-                    ['RequiredSkill'] = {'MiningSkill','4'},
-                    ['RequiresModule'] = 'nil',
-                    ['CraftingTables'] = 'Stamp Mill',
-                    ['RequiresStrangeBlueprint'] = 'False',
-                    ['Ingredients'] =  {
-                                    ['Mortared Stone'] = {
-                                            ['Type'] = 'TAG',
-                                            ['Name'] = 'Mortared Stone',
-                                            ['ID'] = 'MortaredStone',
-                                            ['Quantity'] = '12',
-                                            ['IsStatic'] = 'True',
-                                    },
-                                    }
-,
-                    ['Products'] =  {
-                                    ['Crushed Mixed Rock'] = {
-                                            ['Name'] = 'Crushed Mixed Rock',
-                                            ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -24413,7 +24337,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24457,7 +24381,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24501,7 +24425,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '24',
                                     },
                                     }
 ,
@@ -24545,7 +24469,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24589,7 +24513,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -24633,7 +24557,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '24',
                                     },
                                     }
 ,
@@ -28258,7 +28182,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '80',
+                                            ['Quantity'] = '20',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
@@ -30700,7 +30624,7 @@ return {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Crushed Rock',
                                             ['ID'] = 'CrushedRock',
-                                            ['Quantity'] = '5',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Fiberglass'] = {
@@ -30748,7 +30672,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '40.4',
+                                            ['Quantity'] = '80.4',
                                     },
                                     }
 ,
@@ -32996,7 +32920,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -33454,7 +33378,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '240',
+                                            ['Quantity'] = '60',
                                     },
                                     }
 ,
@@ -34605,7 +34529,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -34649,7 +34573,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -34809,7 +34733,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
@@ -45700,7 +45624,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '1600',
+                                            ['Quantity'] = '400',
                                     },
                                     }
 ,
@@ -45744,7 +45668,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -45788,7 +45712,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -45832,7 +45756,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '640',
+                                            ['Quantity'] = '160',
                                     },
                                     }
 ,
@@ -48117,7 +48041,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -49613,7 +49537,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '248',
+                                            ['Quantity'] = '68',
                                     },
                                     }
 ,
@@ -49657,7 +49581,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '10',
                                     },
                                     }
 ,
@@ -51507,7 +51431,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32.8',
+                                            ['Quantity'] = '8.8',
                                     },
                                     }
 ,
@@ -51778,7 +51702,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32.8',
+                                            ['Quantity'] = '8.8',
                                     },
                                     }
 ,
@@ -52049,7 +51973,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32.8',
+                                            ['Quantity'] = '8.8',
                                     },
                                     }
 ,
@@ -52320,7 +52244,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32.8',
+                                            ['Quantity'] = '8.8',
                                     },
                                     }
 ,
@@ -60451,7 +60375,7 @@ return {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Crushed Rock',
                                             ['ID'] = 'CrushedRock',
-                                            ['Quantity'] = '5',
+                                            ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Rebar'] = {
@@ -60494,7 +60418,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '40.4',
+                                            ['Quantity'] = '80.4',
                                     },
                                     }
 ,
@@ -60658,7 +60582,7 @@ return {
                                             ['Name'] = 'Tailings',
                                             ['ID'] = 'TailingsItem',
                                             ['Quantity'] = '4',
-                                            ['IsStatic'] = 'False',
+                                            ['IsStatic'] = 'True',
                                     },
                                     }
 ,
@@ -60666,7 +60590,7 @@ return {
                                     ['Crushed Mixed Rock'] = {
                                             ['Name'] = 'Crushed Mixed Rock',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -60709,7 +60633,7 @@ return {
                                             ['Name'] = 'Wet Tailings',
                                             ['ID'] = 'WetTailingsItem',
                                             ['Quantity'] = '4',
-                                            ['IsStatic'] = 'False',
+                                            ['IsStatic'] = 'True',
                                     },
                                     }
 ,
@@ -60717,7 +60641,7 @@ return {
                                     ['Crushed Mixed Rock'] = {
                                             ['Name'] = 'Crushed Mixed Rock',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '2',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -60800,7 +60724,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '320',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -62261,7 +62185,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -67656,7 +67580,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -67700,7 +67624,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -67744,7 +67668,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -67907,7 +67831,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -67995,7 +67919,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
@@ -74733,7 +74657,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -74777,7 +74701,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '120',
+                                            ['Quantity'] = '30',
                                     },
                                     }
 ,
@@ -74833,7 +74757,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -74889,7 +74813,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -74945,7 +74869,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -74996,7 +74920,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '180',
+                                            ['Quantity'] = '60',
                                     },
                                     }
 ,
@@ -75103,7 +75027,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -75159,7 +75083,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '160',
+                                            ['Quantity'] = '40',
                                     },
                                     }
 ,
@@ -75371,7 +75295,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '80',
+                                            ['Quantity'] = '20',
                                     },
                                     }
 ,
@@ -76407,6 +76331,13 @@ return {
                     ['CraftingTables'] = 'Cement Kiln',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Crushed Rock'] = {
+                                            ['Type'] = 'TAG',
+                                            ['Name'] = 'Crushed Rock',
+                                            ['ID'] = 'CrushedRock',
+                                            ['Quantity'] = '10',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Crushed Sulfur'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Crushed Sulfur',
@@ -76445,6 +76376,11 @@ return {
                                             ['Name'] = 'Iron Scrap',
                                             ['ID'] = 'IronScrapItem',
                                             ['Quantity'] = '6.4',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '80',
                                     },
                                     }
 ,
@@ -77487,7 +77423,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '24',
                                     },
                                     }
 ,
@@ -78307,7 +78243,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '80',
+                                            ['Quantity'] = '20',
                                     },
                                     }
 ,
@@ -78465,7 +78401,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '80',
+                                            ['Quantity'] = '20',
                                     },
                                     }
 ,
@@ -82162,7 +82098,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '6',
                                     },
                                     }
 ,
@@ -85667,7 +85603,7 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '8',
                                     },
                                     }
 ,
