@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
+-- Eco Version : 0.14.0.3
 -- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Date of export : 22.08.2026 17:27:05
 
 return {
     items = {
@@ -34,6 +34,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -67,6 +68,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Acorn Powder'] = {
                     ['ID'] = 'AcornPowderItem',
@@ -98,6 +100,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Adobe'] = {
@@ -130,8 +133,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '1',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Adobe Door'] = {
                     ['ID'] = 'AdobeDoorItem',
@@ -163,6 +166,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Basalt Bench'] = {
                     ['ID'] = 'AdornedAshlarBasaltBenchItem',
@@ -194,6 +198,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Basalt Chair'] = {
                     ['ID'] = 'AdornedAshlarBasaltChairItem',
@@ -225,6 +230,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Basalt Table'] = {
                     ['ID'] = 'AdornedAshlarBasaltTableItem',
@@ -256,6 +262,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Gneiss Bench'] = {
                     ['ID'] = 'AdornedAshlarGneissBenchItem',
@@ -287,6 +294,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Gneiss Chair'] = {
                     ['ID'] = 'AdornedAshlarGneissChairItem',
@@ -318,6 +326,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Gneiss Table'] = {
                     ['ID'] = 'AdornedAshlarGneissTableItem',
@@ -349,6 +358,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Granite Bench'] = {
                     ['ID'] = 'AdornedAshlarGraniteBenchItem',
@@ -380,6 +390,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Granite Chair'] = {
                     ['ID'] = 'AdornedAshlarGraniteChairItem',
@@ -411,6 +422,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Granite Table'] = {
                     ['ID'] = 'AdornedAshlarGraniteTableItem',
@@ -442,6 +454,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Limestone Bench'] = {
                     ['ID'] = 'AdornedAshlarLimestoneBenchItem',
@@ -473,6 +486,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Limestone Chair'] = {
                     ['ID'] = 'AdornedAshlarLimestoneChairItem',
@@ -504,6 +518,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Limestone Table'] = {
                     ['ID'] = 'AdornedAshlarLimestoneTableItem',
@@ -535,6 +550,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Sandstone Bench'] = {
                     ['ID'] = 'AdornedAshlarSandstoneBenchItem',
@@ -566,6 +582,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Sandstone Chair'] = {
                     ['ID'] = 'AdornedAshlarSandstoneChairItem',
@@ -597,6 +614,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Sandstone Table'] = {
                     ['ID'] = 'AdornedAshlarSandstoneTableItem',
@@ -628,6 +646,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Shale Bench'] = {
                     ['ID'] = 'AdornedAshlarShaleBenchItem',
@@ -659,6 +678,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Shale Chair'] = {
                     ['ID'] = 'AdornedAshlarShaleChairItem',
@@ -690,6 +710,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Shale Table'] = {
                     ['ID'] = 'AdornedAshlarShaleTableItem',
@@ -721,6 +742,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Stone Bench'] = {
                     ['ID'] = 'AdornedAshlarStoneBenchItem',
@@ -752,6 +774,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Stone Chair'] = {
                     ['ID'] = 'AdornedAshlarStoneChairItem',
@@ -783,6 +806,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Adorned Ashlar Stone Table'] = {
                     ['ID'] = 'AdornedAshlarStoneTableItem',
@@ -814,6 +838,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Advanced Baking Skill Book'] = {
                     ['ID'] = 'AdvancedBakingSkillBook',
@@ -845,6 +870,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Advanced Baking Skill Scroll'] = {
@@ -877,6 +903,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Advanced Baking Upgrade'] = {
@@ -909,6 +936,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Carpentry Table'] = {
                     ['ID'] = 'AdvancedCarpentryTableItem',
@@ -940,6 +968,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Advanced Circuit'] = {
                     ['ID'] = 'AdvancedCircuitItem',
@@ -971,6 +1000,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -1004,6 +1034,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -1037,6 +1068,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Advanced Cooking Skill Scroll'] = {
@@ -1069,6 +1101,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Advanced Cooking Upgrade'] = {
@@ -1101,6 +1134,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Masonry Skill Book'] = {
                     ['ID'] = 'AdvancedMasonrySkillBook',
@@ -1132,6 +1166,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Advanced Masonry Skill Scroll'] = {
@@ -1164,6 +1199,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Advanced Masonry Table'] = {
@@ -1196,6 +1232,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Advanced Masonry Upgrade'] = {
                     ['ID'] = 'AdvancedMasonryUpgradeItem',
@@ -1227,6 +1264,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Smelting Skill Book'] = {
                     ['ID'] = 'AdvancedSmeltingSkillBook',
@@ -1258,6 +1296,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Advanced Smelting Skill Scroll'] = {
@@ -1290,6 +1329,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Advanced Smelting Upgrade'] = {
@@ -1322,6 +1362,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Tailoring Table'] = {
                     ['ID'] = 'AdvancedTailoringTableItem',
@@ -1353,6 +1394,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Advanced Upgrade'] = {
                     ['ID'] = 'AdvancedUpgradeItem',
@@ -1384,6 +1426,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Upgrade 1'] = {
                     ['ID'] = 'AdvancedUpgradeLvl1Item',
@@ -1415,6 +1458,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Upgrade 2'] = {
                     ['ID'] = 'AdvancedUpgradeLvl2Item',
@@ -1446,6 +1490,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Upgrade 3'] = {
                     ['ID'] = 'AdvancedUpgradeLvl3Item',
@@ -1477,6 +1522,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Advanced Upgrade 4'] = {
                     ['ID'] = 'AdvancedUpgradeLvl4Item',
@@ -1508,6 +1554,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Agave Leaves'] = {
                     ['ID'] = 'AgaveLeavesItem',
@@ -1539,6 +1586,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Agave Seed'] = {
@@ -1571,6 +1619,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -1604,6 +1653,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Agouti Carcass'] = {
                     ['ID'] = 'AgoutiCarcassItem',
@@ -1635,6 +1685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Agouti Enchiladas'] = {
                     ['ID'] = 'AgoutiEnchiladasItem',
@@ -1666,6 +1717,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Agriculture Research Paper Advanced'] = {
@@ -1698,6 +1750,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Agriculture Research Paper Basic'] = {
                     ['ID'] = 'AgricultureResearchPaperBasicItem',
@@ -1729,6 +1782,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Agriculture Research Paper Modern'] = {
                     ['ID'] = 'AgricultureResearchPaperModernItem',
@@ -1760,6 +1814,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Air Pollution Generator'] = {
                     ['ID'] = 'AirPollutionGeneratorItem',
@@ -1791,6 +1846,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Alligator Carcass'] = {
                     ['ID'] = 'AlligatorCarcassItem',
@@ -1822,6 +1878,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Alpha Cloak'] = {
                     ['ID'] = 'AlphaCloakItem',
@@ -1853,6 +1910,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Alpha Goggles'] = {
@@ -1885,6 +1943,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Alpha Hat'] = {
@@ -1917,6 +1976,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Amanita Mushroom Spores'] = {
@@ -1949,6 +2009,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -1982,6 +2043,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Amanita Mushrooms'] = {
                     ['ID'] = 'AmanitaMushroomsItem',
@@ -2013,6 +2075,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Amendments'] = {
@@ -2045,6 +2108,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Anatomy Book'] = {
                     ['ID'] = 'AnatomyBookItem',
@@ -2076,6 +2140,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Anvil'] = {
                     ['ID'] = 'AnvilItem',
@@ -2107,6 +2172,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Arctic Willow Seed'] = {
@@ -2139,6 +2205,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -2172,6 +2239,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Arrastra'] = {
                     ['ID'] = 'ArrastraItem',
@@ -2203,6 +2271,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Arrow'] = {
                     ['ID'] = 'ArrowItem',
@@ -2234,6 +2303,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Art Supplies'] = {
                     ['ID'] = 'ArtSuppliesItem',
@@ -2265,6 +2335,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ashlar Basalt'] = {
                     ['ID'] = 'AshlarBasaltItem',
@@ -2296,8 +2367,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Basalt Bench'] = {
                     ['ID'] = 'AshlarBasaltBenchItem',
@@ -2329,6 +2400,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Basalt Chair'] = {
                     ['ID'] = 'AshlarBasaltChairItem',
@@ -2360,6 +2432,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Basalt Door'] = {
                     ['ID'] = 'AshlarBasaltDoorItem',
@@ -2391,6 +2464,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Basalt Fireplace'] = {
                     ['ID'] = 'AshlarBasaltFireplaceItem',
@@ -2422,6 +2496,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Basalt Table'] = {
                     ['ID'] = 'AshlarBasaltTableItem',
@@ -2453,6 +2528,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Gneiss'] = {
                     ['ID'] = 'AshlarGneissItem',
@@ -2484,8 +2560,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Gneiss Bench'] = {
                     ['ID'] = 'AshlarGneissBenchItem',
@@ -2517,6 +2593,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Gneiss Chair'] = {
                     ['ID'] = 'AshlarGneissChairItem',
@@ -2548,6 +2625,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Gneiss Door'] = {
                     ['ID'] = 'AshlarGneissDoorItem',
@@ -2579,6 +2657,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Gneiss Fireplace'] = {
                     ['ID'] = 'AshlarGneissFireplaceItem',
@@ -2610,6 +2689,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Gneiss Table'] = {
                     ['ID'] = 'AshlarGneissTableItem',
@@ -2641,6 +2721,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Granite'] = {
                     ['ID'] = 'AshlarGraniteItem',
@@ -2672,8 +2753,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Granite Bench'] = {
                     ['ID'] = 'AshlarGraniteBenchItem',
@@ -2705,6 +2786,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Granite Chair'] = {
                     ['ID'] = 'AshlarGraniteChairItem',
@@ -2736,6 +2818,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Granite Door'] = {
                     ['ID'] = 'AshlarGraniteDoorItem',
@@ -2767,6 +2850,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Granite Fireplace'] = {
                     ['ID'] = 'AshlarGraniteFireplaceItem',
@@ -2798,6 +2882,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Granite Table'] = {
                     ['ID'] = 'AshlarGraniteTableItem',
@@ -2829,6 +2914,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Basalt Fountain'] = {
                     ['ID'] = 'AshlarLargeBasaltFountainItem',
@@ -2860,6 +2946,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Gneiss Fountain'] = {
                     ['ID'] = 'AshlarLargeGneissFountainItem',
@@ -2891,6 +2978,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Granite Fountain'] = {
                     ['ID'] = 'AshlarLargeGraniteFountainItem',
@@ -2922,6 +3010,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Limestone Fountain'] = {
                     ['ID'] = 'AshlarLargeLimestoneFountainItem',
@@ -2953,6 +3042,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Sandstone Fountain'] = {
                     ['ID'] = 'AshlarLargeSandstoneFountainItem',
@@ -2984,6 +3074,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Shale Fountain'] = {
                     ['ID'] = 'AshlarLargeShaleFountainItem',
@@ -3015,6 +3106,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Large Stone Fountain'] = {
                     ['ID'] = 'AshlarLargeStoneFountainItem',
@@ -3046,6 +3138,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Limestone'] = {
                     ['ID'] = 'AshlarLimestoneItem',
@@ -3077,8 +3170,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Limestone Bench'] = {
                     ['ID'] = 'AshlarLimestoneBenchItem',
@@ -3110,6 +3203,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Limestone Chair'] = {
                     ['ID'] = 'AshlarLimestoneChairItem',
@@ -3141,6 +3235,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Limestone Door'] = {
                     ['ID'] = 'AshlarLimestoneDoorItem',
@@ -3172,6 +3267,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Limestone Fireplace'] = {
                     ['ID'] = 'AshlarLimestoneFireplaceItem',
@@ -3203,6 +3299,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Limestone Table'] = {
                     ['ID'] = 'AshlarLimestoneTableItem',
@@ -3234,6 +3331,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Sandstone'] = {
                     ['ID'] = 'AshlarSandstoneItem',
@@ -3265,8 +3363,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Sandstone Bench'] = {
                     ['ID'] = 'AshlarSandstoneBenchItem',
@@ -3298,6 +3396,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Sandstone Chair'] = {
                     ['ID'] = 'AshlarSandstoneChairItem',
@@ -3329,6 +3428,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Sandstone Door'] = {
                     ['ID'] = 'AshlarSandstoneDoorItem',
@@ -3360,6 +3460,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Sandstone Fireplace'] = {
                     ['ID'] = 'AshlarSandstoneFireplaceItem',
@@ -3391,6 +3492,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Sandstone Table'] = {
                     ['ID'] = 'AshlarSandstoneTableItem',
@@ -3422,6 +3524,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Shale'] = {
                     ['ID'] = 'AshlarShaleItem',
@@ -3453,8 +3556,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Ashlar Shale Bench'] = {
                     ['ID'] = 'AshlarShaleBenchItem',
@@ -3486,6 +3589,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Shale Chair'] = {
                     ['ID'] = 'AshlarShaleChairItem',
@@ -3517,6 +3621,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Shale Door'] = {
                     ['ID'] = 'AshlarShaleDoorItem',
@@ -3548,6 +3653,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Shale Fireplace'] = {
                     ['ID'] = 'AshlarShaleFireplaceItem',
@@ -3579,6 +3685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Shale Table'] = {
                     ['ID'] = 'AshlarShaleTableItem',
@@ -3610,6 +3717,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Basalt Fountain'] = {
                     ['ID'] = 'AshlarSmallBasaltFountainItem',
@@ -3641,6 +3749,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Gneiss Fountain'] = {
                     ['ID'] = 'AshlarSmallGneissFountainItem',
@@ -3672,6 +3781,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Granite Fountain'] = {
                     ['ID'] = 'AshlarSmallGraniteFountainItem',
@@ -3703,6 +3813,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Limestone Fountain'] = {
                     ['ID'] = 'AshlarSmallLimestoneFountainItem',
@@ -3734,6 +3845,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Sandstone Fountain'] = {
                     ['ID'] = 'AshlarSmallSandstoneFountainItem',
@@ -3765,6 +3877,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Shale Fountain'] = {
                     ['ID'] = 'AshlarSmallShaleFountainItem',
@@ -3796,6 +3909,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Small Stone Fountain'] = {
                     ['ID'] = 'AshlarSmallStoneFountainItem',
@@ -3827,6 +3941,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Stone Bench'] = {
                     ['ID'] = 'AshlarStoneBenchItem',
@@ -3858,6 +3973,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Stone Chair'] = {
                     ['ID'] = 'AshlarStoneChairItem',
@@ -3889,6 +4005,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Stone Door'] = {
                     ['ID'] = 'AshlarStoneDoorItem',
@@ -3920,6 +4037,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Stone Fireplace'] = {
                     ['ID'] = 'AshlarStoneFireplaceItem',
@@ -3951,6 +4069,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ashlar Stone Table'] = {
                     ['ID'] = 'AshlarStoneTableItem',
@@ -3982,6 +4101,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Asphalt Concrete'] = {
                     ['ID'] = 'AsphaltConcreteItem',
@@ -4013,8 +4133,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Assembly Line'] = {
                     ['ID'] = 'AssemblyLineItem',
@@ -4046,6 +4166,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Atlas Book'] = {
                     ['ID'] = 'AtlasBookItem',
@@ -4077,6 +4198,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Automatic Loom'] = {
                     ['ID'] = 'AutomaticLoomItem',
@@ -4108,6 +4230,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Autumn Stew'] = {
                     ['ID'] = 'AutumnStewItem',
@@ -4139,6 +4262,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Axe Calorie Buff Item'] = {
@@ -4171,6 +4295,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Baked Agave'] = {
                     ['ID'] = 'BakedAgaveItem',
@@ -4202,6 +4327,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Beet'] = {
@@ -4234,6 +4360,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Corn'] = {
@@ -4266,6 +4393,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Heart Of Palm'] = {
@@ -4298,6 +4426,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Meat'] = {
@@ -4321,7 +4450,7 @@ return {
                             },
                     ['Weight'] = '800',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -4330,6 +4459,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Roast'] = {
@@ -4362,6 +4492,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Taro'] = {
@@ -4394,6 +4525,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baked Tomato'] = {
@@ -4417,7 +4549,7 @@ return {
                             },
                     ['Weight'] = '300',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Baked Vegetable', 'Baked Food', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Baked Vegetable', 'Baked Food', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -4426,6 +4558,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Baker Sign'] = {
@@ -4458,6 +4591,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bakery Oven'] = {
                     ['ID'] = 'BakeryOvenItem',
@@ -4489,6 +4623,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Baking Skill Book'] = {
                     ['ID'] = 'BakingSkillBook',
@@ -4520,6 +4655,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Baking Skill Scroll'] = {
@@ -4552,6 +4688,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Baking Upgrade'] = {
@@ -4584,6 +4721,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ballot Box'] = {
                     ['ID'] = 'BallotBoxItem',
@@ -4615,6 +4753,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Banana Rug'] = {
                     ['ID'] = 'BananaRugItem',
@@ -4646,6 +4785,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Banana Shirt'] = {
                     ['ID'] = 'BananaShirtItem',
@@ -4677,6 +4817,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Bandana'] = {
@@ -4709,6 +4850,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Banh Xeo'] = {
@@ -4741,6 +4883,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bank'] = {
@@ -4773,6 +4916,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bannock'] = {
                     ['ID'] = 'BannockItem',
@@ -4804,6 +4948,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Barrel'] = {
@@ -4827,7 +4972,7 @@ return {
                             },
                     ['Weight'] = '2000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -4836,8 +4981,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Barrel Cactus Seed'] = {
                     ['ID'] = 'BarrelCactusSeedItem',
@@ -4869,6 +5014,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -4902,6 +5048,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basalt'] = {
                     ['ID'] = 'BasaltItem',
@@ -4933,8 +5080,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Base Paint'] = {
                     ['ID'] = 'BasePaintItem',
@@ -4966,6 +5113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Backpack'] = {
                     ['ID'] = 'BasicBackpackItem',
@@ -4997,6 +5145,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Basic Circuit'] = {
@@ -5029,6 +5178,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -5062,6 +5212,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Basic Engineering Skill Scroll'] = {
@@ -5094,6 +5245,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Basic Engineering Upgrade'] = {
@@ -5126,6 +5278,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Salad'] = {
                     ['ID'] = 'BasicSaladItem',
@@ -5157,6 +5310,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Basic Upgrade'] = {
@@ -5189,6 +5343,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Upgrade 1'] = {
                     ['ID'] = 'BasicUpgradeLvl1Item',
@@ -5220,6 +5375,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Upgrade 2'] = {
                     ['ID'] = 'BasicUpgradeLvl2Item',
@@ -5251,6 +5407,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Upgrade 3'] = {
                     ['ID'] = 'BasicUpgradeLvl3Item',
@@ -5282,6 +5439,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Basic Upgrade 4'] = {
                     ['ID'] = 'BasicUpgradeLvl4Item',
@@ -5313,6 +5471,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bass'] = {
                     ['ID'] = 'BassItem',
@@ -5344,6 +5503,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bathroom'] = {
                     ['ID'] = 'BathroomItem',
@@ -5375,6 +5535,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bathtub'] = {
                     ['ID'] = 'BathtubItem',
@@ -5406,6 +5567,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bean Paste'] = {
                     ['ID'] = 'BeanPasteItem',
@@ -5437,6 +5599,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bean Sprout'] = {
@@ -5469,6 +5632,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Beans'] = {
@@ -5501,6 +5665,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -5534,6 +5699,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bear S U P R E M E'] = {
                     ['ID'] = 'BearSUPREMEItem',
@@ -5565,6 +5731,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bearclaw'] = {
@@ -5597,6 +5764,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bearpack'] = {
@@ -5629,6 +5797,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Beaver Carcass'] = {
@@ -5661,6 +5830,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bedroom'] = {
                     ['ID'] = 'BedroomItem',
@@ -5692,6 +5862,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Beet'] = {
                     ['ID'] = 'BeetItem',
@@ -5723,6 +5894,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Beet Campfire Salad'] = {
@@ -5746,7 +5918,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -5755,6 +5927,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Beet Greens'] = {
@@ -5787,6 +5960,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Beet Seed'] = {
@@ -5819,6 +5993,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -5852,6 +6027,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Berry Extract Fertilizer'] = {
                     ['ID'] = 'BerryExtractFertilizerItem',
@@ -5883,6 +6059,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Big Backpack'] = {
@@ -5915,6 +6092,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Big Bluestem Seed'] = {
@@ -5947,6 +6125,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -5980,6 +6159,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bighorn Carcass'] = {
                     ['ID'] = 'BighornCarcassItem',
@@ -6011,6 +6191,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bio Residue'] = {
                     ['ID'] = 'BioResidueItem',
@@ -6042,8 +6223,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Biodiesel'] = {
                     ['ID'] = 'BiodieselItem',
@@ -6075,8 +6256,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Biowaste Sorter'] = {
                     ['ID'] = 'BiowasteSorterItem',
@@ -6108,6 +6289,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Birch Log'] = {
                     ['ID'] = 'BirchLogItem',
@@ -6139,8 +6321,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Birch Seed'] = {
                     ['ID'] = 'BirchSeedItem',
@@ -6172,6 +6354,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -6205,6 +6388,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bison Carcass'] = {
                     ['ID'] = 'BisonCarcassItem',
@@ -6236,6 +6420,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bison Chow Fun'] = {
                     ['ID'] = 'BisonChowFunItem',
@@ -6267,6 +6452,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bison Mount'] = {
@@ -6299,6 +6485,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bison Pelt'] = {
                     ['ID'] = 'BisonPeltItem',
@@ -6330,6 +6517,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Black Powder'] = {
                     ['ID'] = 'BlackPowderItem',
@@ -6361,6 +6549,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blackboard'] = {
                     ['ID'] = 'BlackboardItem',
@@ -6392,6 +6581,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Blacksmith Advanced Upgrade'] = {
                     ['ID'] = 'BlacksmithAdvancedUpgradeItem',
@@ -6423,6 +6613,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blacksmith Skill Book'] = {
                     ['ID'] = 'BlacksmithSkillBook',
@@ -6454,6 +6645,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Blacksmith Skill Scroll'] = {
@@ -6486,6 +6678,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Blacksmith Table'] = {
@@ -6518,6 +6711,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Blacksmith Upgrade'] = {
@@ -6550,6 +6744,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blast Furnace'] = {
                     ['ID'] = 'BlastFurnaceItem',
@@ -6581,6 +6776,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Blasting Cap'] = {
                     ['ID'] = 'BlastingCapItem',
@@ -6612,6 +6808,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blasting Charge'] = {
                     ['ID'] = 'BlastingChargeItem',
@@ -6643,6 +6840,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blinky Eyelids'] = {
                     ['ID'] = 'BlinkyEyelidsItem',
@@ -6674,6 +6872,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Blood Meal Fertilizer'] = {
@@ -6706,6 +6905,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Bloomery'] = {
@@ -6738,6 +6938,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Blue Powder'] = {
@@ -6770,6 +6971,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blue Shark'] = {
                     ['ID'] = 'BlueSharkItem',
@@ -6801,6 +7003,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Blueprint Item'] = {
                     ['ID'] = 'BlueprintItem',
@@ -6832,6 +7035,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Board'] = {
                     ['ID'] = 'BoardItem',
@@ -6863,6 +7067,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Board Of Elections'] = {
                     ['ID'] = 'BoardOfElectionsItem',
@@ -6894,6 +7099,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Boat Captain Flip Flops'] = {
                     ['ID'] = 'BoatCaptainFlipFlopsItem',
@@ -6925,6 +7131,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Boat Captain Glasses'] = {
@@ -6957,6 +7164,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Boat Captain Hat'] = {
@@ -6989,6 +7197,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Boat Captain Shirt'] = {
@@ -7021,6 +7230,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Boat Captain Shorts'] = {
@@ -7053,6 +7263,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Boiled Grains'] = {
@@ -7085,6 +7296,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Boiled Rice'] = {
@@ -7108,7 +7320,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -7117,6 +7329,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Boiled Sausage'] = {
@@ -7149,6 +7362,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Boiler'] = {
@@ -7181,6 +7395,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -7214,6 +7429,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -7247,6 +7463,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bolete Mushrooms'] = {
                     ['ID'] = 'BoleteMushroomsItem',
@@ -7278,6 +7495,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Bonsai'] = {
@@ -7310,6 +7528,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bookshelf'] = {
                     ['ID'] = 'BookshelfItem',
@@ -7341,6 +7560,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Botanical Book'] = {
                     ['ID'] = 'BotanicalBookItem',
@@ -7372,6 +7592,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Brazier'] = {
                     ['ID'] = 'BrazierItem',
@@ -7403,6 +7624,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bread'] = {
                     ['ID'] = 'BreadItem',
@@ -7434,6 +7656,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Brick'] = {
@@ -7466,8 +7689,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Brick Fireplace'] = {
                     ['ID'] = 'BrickFireplaceItem',
@@ -7499,6 +7722,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Builder Boots'] = {
                     ['ID'] = 'BuilderBootsItem',
@@ -7530,6 +7754,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Builder Gloves'] = {
@@ -7562,6 +7787,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Builder Helmet'] = {
@@ -7594,6 +7820,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Builder Overalls'] = {
@@ -7626,6 +7853,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Builder Shirt'] = {
@@ -7658,6 +7886,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Bullrush Seed'] = {
@@ -7690,6 +7919,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -7723,6 +7953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Bunchgrass Seed'] = {
                     ['ID'] = 'BunchgrassSeedItem',
@@ -7754,6 +7985,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -7787,6 +8019,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Butchery Skill Book'] = {
                     ['ID'] = 'ButcherySkillBook',
@@ -7818,6 +8051,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Butchery Skill Scroll'] = {
@@ -7850,6 +8084,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Butchery Table'] = {
@@ -7882,6 +8117,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Butchery Upgrade'] = {
                     ['ID'] = 'ButcheryUpgradeItem',
@@ -7913,6 +8149,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Button'] = {
                     ['ID'] = 'ButtonItem',
@@ -7944,6 +8181,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Bycocket'] = {
                     ['ID'] = 'BycocketItem',
@@ -7975,6 +8213,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Camas Ash Fertilizer'] = {
@@ -8007,6 +8246,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Camas Bread'] = {
@@ -8039,6 +8279,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Camas Bulb'] = {
@@ -8071,6 +8312,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -8104,6 +8346,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Camas Bulb Pack'] = {
@@ -8136,6 +8379,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Camas Paste'] = {
                     ['ID'] = 'CamasPasteItem',
@@ -8158,7 +8402,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -8167,6 +8411,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Camera Film'] = {
@@ -8199,6 +8444,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Camo Pants'] = {
                     ['ID'] = 'CamoPantsItem',
@@ -8230,6 +8476,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Camo Shirt'] = {
@@ -8262,6 +8509,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Campfire'] = {
@@ -8294,6 +8542,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Campfire Cooking Upgrade'] = {
                     ['ID'] = 'CampfireCookingUpgradeItem',
@@ -8325,6 +8574,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Campfire Roast'] = {
                     ['ID'] = 'CampfireRoastItem',
@@ -8356,6 +8606,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Campfire Salad'] = {
@@ -8388,6 +8639,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Campfire Stew'] = {
@@ -8420,6 +8672,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Campsite'] = {
@@ -8452,6 +8705,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Candle Stand'] = {
                     ['ID'] = 'CandleStandItem',
@@ -8483,6 +8737,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Canning Assembly'] = {
                     ['ID'] = 'CanningAssemblyItem',
@@ -8514,6 +8769,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Canvas'] = {
                     ['ID'] = 'CanvasItem',
@@ -8536,7 +8792,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -8545,6 +8801,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Capitalist Top Hat'] = {
                     ['ID'] = 'CapitalistTopHatItem',
@@ -8576,6 +8833,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Capitol'] = {
@@ -8608,6 +8866,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Capris'] = {
                     ['ID'] = 'CaprisItem',
@@ -8639,6 +8898,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Carbide Helmet Lamp'] = {
@@ -8671,6 +8931,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Carbon Filter'] = {
@@ -8703,6 +8964,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Carpenter Sign'] = {
                     ['ID'] = 'CarpenterSignItem',
@@ -8734,6 +8996,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Carpentry Advanced Upgrade'] = {
                     ['ID'] = 'CarpentryAdvancedUpgradeItem',
@@ -8765,6 +9028,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Carpentry Basic Upgrade'] = {
                     ['ID'] = 'CarpentryBasicUpgradeItem',
@@ -8796,6 +9060,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Carpentry Skill Book'] = {
                     ['ID'] = 'CarpentrySkillBook',
@@ -8827,6 +9092,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Carpentry Skill Scroll'] = {
@@ -8859,6 +9125,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Carpentry Table'] = {
@@ -8891,6 +9158,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cart Blueprint Poster'] = {
                     ['ID'] = 'CartBlueprintPosterItem',
@@ -8922,6 +9190,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Carved Pumpkin'] = {
                     ['ID'] = 'CarvedPumpkinItem',
@@ -8953,6 +9222,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Bed'] = {
                     ['ID'] = 'CastIronBedItem',
@@ -8984,6 +9254,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Bench'] = {
                     ['ID'] = 'CastIronBenchItem',
@@ -9015,6 +9286,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Chair'] = {
                     ['ID'] = 'CastIronChairItem',
@@ -9046,6 +9318,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Plaque'] = {
                     ['ID'] = 'CastIronPlaqueItem',
@@ -9077,6 +9350,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Royal Bed'] = {
                     ['ID'] = 'CastIronRoyalBedItem',
@@ -9108,6 +9382,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Stove'] = {
                     ['ID'] = 'CastIronStoveItem',
@@ -9139,6 +9414,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cast Iron Table'] = {
                     ['ID'] = 'CastIronTableItem',
@@ -9170,6 +9446,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cedar Log'] = {
                     ['ID'] = 'CedarLogItem',
@@ -9201,8 +9478,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Cedar Seed'] = {
                     ['ID'] = 'CedarSeedItem',
@@ -9234,6 +9511,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -9267,6 +9545,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ceiba Log'] = {
                     ['ID'] = 'CeibaLogItem',
@@ -9298,8 +9577,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Ceiba Seed'] = {
                     ['ID'] = 'CeibaSeedItem',
@@ -9331,6 +9610,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -9364,6 +9644,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ceiling Candle'] = {
                     ['ID'] = 'CeilingCandleItem',
@@ -9395,6 +9676,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cellulose Fiber'] = {
                     ['ID'] = 'CelluloseFiberItem',
@@ -9426,6 +9708,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cellulose Insulation'] = {
                     ['ID'] = 'CelluloseInsulationItem',
@@ -9457,6 +9740,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cement'] = {
                     ['ID'] = 'CementItem',
@@ -9488,6 +9772,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cement Kiln'] = {
                     ['ID'] = 'CementKilnItem',
@@ -9519,6 +9804,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Census Bureau'] = {
                     ['ID'] = 'CensusBureauItem',
@@ -9550,6 +9836,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ceramic Mold'] = {
                     ['ID'] = 'CeramicMoldItem',
@@ -9581,6 +9868,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ceramic Scrap'] = {
                     ['ID'] = 'CeramicScrapItem',
@@ -9612,8 +9900,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Ceramic Tea Cup'] = {
                     ['ID'] = 'CeramicTeaCupItem',
@@ -9645,6 +9933,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ceramic Tea Pot'] = {
                     ['ID'] = 'CeramicTeaPotItem',
@@ -9676,6 +9965,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ceramic Tray'] = {
                     ['ID'] = 'CeramicTrayItem',
@@ -9707,6 +9997,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cereal Germ'] = {
                     ['ID'] = 'CerealGermItem',
@@ -9738,6 +10029,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Chainsaw'] = {
@@ -9770,6 +10062,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Chandelier'] = {
                     ['ID'] = 'ChandelierItem',
@@ -9801,6 +10094,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Charcoal'] = {
                     ['ID'] = 'CharcoalItem',
@@ -9832,6 +10126,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Charcoal Powder'] = {
                     ['ID'] = 'CharcoalPowderItem',
@@ -9863,6 +10158,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Charred Agave'] = {
                     ['ID'] = 'CharredAgaveItem',
@@ -9894,6 +10190,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Beans'] = {
@@ -9926,6 +10223,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Beet'] = {
@@ -9958,6 +10256,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Cactus Fruit'] = {
@@ -9990,6 +10289,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Camas Bulb'] = {
@@ -10013,7 +10313,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Charred Vegetable', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Charred Vegetable', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -10022,6 +10322,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Corn'] = {
@@ -10054,6 +10355,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Fireweed Shoots'] = {
@@ -10086,6 +10388,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Fish'] = {
@@ -10118,6 +10421,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Heart Of Palm'] = {
@@ -10150,6 +10454,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Meat'] = {
@@ -10182,6 +10487,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Mushrooms'] = {
@@ -10214,6 +10520,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Papaya'] = {
@@ -10246,6 +10553,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Pineapple'] = {
@@ -10269,7 +10577,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Charred Fruit', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Charred Fruit', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -10278,6 +10586,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Sausage'] = {
@@ -10310,6 +10619,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Taro'] = {
@@ -10342,6 +10652,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Charred Tomato'] = {
@@ -10374,6 +10685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Chef Hat'] = {
@@ -10406,6 +10718,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Chef Pants'] = {
@@ -10438,6 +10751,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Chef Shirt'] = {
@@ -10470,6 +10784,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Chef Shoes'] = {
@@ -10502,6 +10817,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Chemical Neutralizer'] = {
@@ -10534,6 +10850,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Chemical Pollutant'] = {
                     ['ID'] = 'ChemicalPollutantItem',
@@ -10565,8 +10882,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Chemical Waste'] = {
                     ['ID'] = 'ChemicalWasteFluidItem',
@@ -10598,8 +10915,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Chiseled Legs'] = {
                     ['ID'] = 'ChiseledLegsItem',
@@ -10631,6 +10948,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['ChocoTaco Cap'] = {
@@ -10663,6 +10981,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Claim Paper Item'] = {
@@ -10695,6 +11014,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Claim Tool'] = {
                     ['ID'] = 'ClaimToolItem',
@@ -10726,6 +11046,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Clam'] = {
                     ['ID'] = 'ClamItem',
@@ -10757,6 +11078,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Clam Chowder'] = {
                     ['ID'] = 'ClamChowderItem',
@@ -10788,6 +11110,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Clay'] = {
@@ -10820,8 +11143,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Clay Mold'] = {
                     ['ID'] = 'ClayMoldItem',
@@ -10853,6 +11176,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cloth'] = {
                     ['ID'] = 'ClothItem',
@@ -10884,6 +11208,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cloth Belt'] = {
                     ['ID'] = 'ClothBeltItem',
@@ -10915,6 +11240,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Cloth Cape'] = {
@@ -10947,6 +11273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['CO2 Canister'] = {
@@ -10979,6 +11306,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['CO2 Item'] = {
                     ['ID'] = 'CO2Item',
@@ -11010,6 +11338,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Coal'] = {
                     ['ID'] = 'CoalItem',
@@ -11041,8 +11370,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Coarse Stone'] = {
                     ['ID'] = 'CoarseStoneItem',
@@ -11074,6 +11403,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -11107,6 +11437,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Coffee Table'] = {
                     ['ID'] = 'CoffeeTableItem',
@@ -11138,6 +11469,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Colored Powder'] = {
                     ['ID'] = 'ColoredPowderItem',
@@ -11169,6 +11501,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Combustion Engine'] = {
                     ['ID'] = 'CombustionEngineItem',
@@ -11200,6 +11533,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -11233,6 +11567,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Birch Bench'] = {
                     ['ID'] = 'CompositeBirchBenchItem',
@@ -11264,6 +11599,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Birch Chair'] = {
                     ['ID'] = 'CompositeBirchChairItem',
@@ -11295,6 +11631,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Birch Door'] = {
                     ['ID'] = 'CompositeBirchDoorItem',
@@ -11326,6 +11663,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Birch Lumber'] = {
                     ['ID'] = 'CompositeBirchLumberItem',
@@ -11357,8 +11695,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Birch Table'] = {
                     ['ID'] = 'CompositeBirchTableItem',
@@ -11390,6 +11728,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Bow'] = {
                     ['ID'] = 'CompositeBowItem',
@@ -11421,6 +11760,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Composite Cedar Bench'] = {
                     ['ID'] = 'CompositeCedarBenchItem',
@@ -11452,6 +11792,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Cedar Chair'] = {
                     ['ID'] = 'CompositeCedarChairItem',
@@ -11483,6 +11824,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Cedar Door'] = {
                     ['ID'] = 'CompositeCedarDoorItem',
@@ -11514,6 +11856,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Cedar Lumber'] = {
                     ['ID'] = 'CompositeCedarLumberItem',
@@ -11545,8 +11888,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Cedar Table'] = {
                     ['ID'] = 'CompositeCedarTableItem',
@@ -11578,6 +11921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Ceiba Bench'] = {
                     ['ID'] = 'CompositeCeibaBenchItem',
@@ -11609,6 +11953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Ceiba Chair'] = {
                     ['ID'] = 'CompositeCeibaChairItem',
@@ -11640,6 +11985,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Ceiba Door'] = {
                     ['ID'] = 'CompositeCeibaDoorItem',
@@ -11671,6 +12017,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Ceiba Lumber'] = {
                     ['ID'] = 'CompositeCeibaLumberItem',
@@ -11702,8 +12049,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Ceiba Table'] = {
                     ['ID'] = 'CompositeCeibaTableItem',
@@ -11735,6 +12082,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Filler'] = {
                     ['ID'] = 'CompositeFillerItem',
@@ -11757,7 +12105,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '50',
-                    ['Tags'] = {'Fertilizer', 'Fertilizer Filler', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Fertilizer', 'Fertilizer Filler', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -11766,6 +12114,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Composite Fir Bench'] = {
@@ -11798,6 +12147,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Fir Chair'] = {
                     ['ID'] = 'CompositeFirChairItem',
@@ -11829,6 +12179,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Fir Door'] = {
                     ['ID'] = 'CompositeFirDoorItem',
@@ -11860,6 +12211,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Fir Lumber'] = {
                     ['ID'] = 'CompositeFirLumberItem',
@@ -11891,8 +12243,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Fir Table'] = {
                     ['ID'] = 'CompositeFirTableItem',
@@ -11924,6 +12276,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Hardwood Bench'] = {
                     ['ID'] = 'CompositeHardwoodBenchItem',
@@ -11955,6 +12308,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Hardwood Chair'] = {
                     ['ID'] = 'CompositeHardwoodChairItem',
@@ -11986,6 +12340,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Hardwood Door'] = {
                     ['ID'] = 'CompositeHardwoodDoorItem',
@@ -12017,6 +12372,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Hardwood Table'] = {
                     ['ID'] = 'CompositeHardwoodTableItem',
@@ -12048,6 +12404,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Joshua Bench'] = {
                     ['ID'] = 'CompositeJoshuaBenchItem',
@@ -12079,6 +12436,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Joshua Chair'] = {
                     ['ID'] = 'CompositeJoshuaChairItem',
@@ -12110,6 +12468,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Joshua Door'] = {
                     ['ID'] = 'CompositeJoshuaDoorItem',
@@ -12141,6 +12500,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Joshua Lumber'] = {
                     ['ID'] = 'CompositeJoshuaLumberItem',
@@ -12172,8 +12532,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Joshua Table'] = {
                     ['ID'] = 'CompositeJoshuaTableItem',
@@ -12205,6 +12565,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Lumber'] = {
                     ['ID'] = 'CompositeLumberItem',
@@ -12236,8 +12597,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Lumber Bench'] = {
                     ['ID'] = 'CompositeLumberBenchItem',
@@ -12269,6 +12630,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Lumber Chair'] = {
                     ['ID'] = 'CompositeLumberChairItem',
@@ -12300,6 +12662,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Lumber Door'] = {
                     ['ID'] = 'CompositeLumberDoorItem',
@@ -12331,6 +12694,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Lumber Dresser'] = {
                     ['ID'] = 'CompositeLumberDresserItem',
@@ -12362,6 +12726,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Lumber Table'] = {
                     ['ID'] = 'CompositeLumberTableItem',
@@ -12393,6 +12758,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Oak Bench'] = {
                     ['ID'] = 'CompositeOakBenchItem',
@@ -12424,6 +12790,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Oak Chair'] = {
                     ['ID'] = 'CompositeOakChairItem',
@@ -12455,6 +12822,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Oak Door'] = {
                     ['ID'] = 'CompositeOakDoorItem',
@@ -12486,6 +12854,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Oak Lumber'] = {
                     ['ID'] = 'CompositeOakLumberItem',
@@ -12517,8 +12886,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Oak Table'] = {
                     ['ID'] = 'CompositeOakTableItem',
@@ -12550,6 +12919,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Palm Bench'] = {
                     ['ID'] = 'CompositePalmBenchItem',
@@ -12581,6 +12951,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Palm Chair'] = {
                     ['ID'] = 'CompositePalmChairItem',
@@ -12612,6 +12983,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Palm Door'] = {
                     ['ID'] = 'CompositePalmDoorItem',
@@ -12643,6 +13015,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Palm Lumber'] = {
                     ['ID'] = 'CompositePalmLumberItem',
@@ -12674,8 +13047,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Palm Table'] = {
                     ['ID'] = 'CompositePalmTableItem',
@@ -12707,6 +13080,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Redwood Bench'] = {
                     ['ID'] = 'CompositeRedwoodBenchItem',
@@ -12738,6 +13112,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Redwood Chair'] = {
                     ['ID'] = 'CompositeRedwoodChairItem',
@@ -12769,6 +13144,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Redwood Door'] = {
                     ['ID'] = 'CompositeRedwoodDoorItem',
@@ -12800,6 +13176,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Redwood Lumber'] = {
                     ['ID'] = 'CompositeRedwoodLumberItem',
@@ -12831,8 +13208,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Redwood Table'] = {
                     ['ID'] = 'CompositeRedwoodTableItem',
@@ -12864,6 +13241,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Saguaro Bench'] = {
                     ['ID'] = 'CompositeSaguaroBenchItem',
@@ -12895,6 +13273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Saguaro Chair'] = {
                     ['ID'] = 'CompositeSaguaroChairItem',
@@ -12926,6 +13305,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Saguaro Door'] = {
                     ['ID'] = 'CompositeSaguaroDoorItem',
@@ -12957,6 +13337,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Saguaro Lumber'] = {
                     ['ID'] = 'CompositeSaguaroLumberItem',
@@ -12988,8 +13369,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Saguaro Table'] = {
                     ['ID'] = 'CompositeSaguaroTableItem',
@@ -13021,6 +13402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Softwood Bench'] = {
                     ['ID'] = 'CompositeSoftwoodBenchItem',
@@ -13052,6 +13434,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Softwood Chair'] = {
                     ['ID'] = 'CompositeSoftwoodChairItem',
@@ -13083,6 +13466,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Softwood Door'] = {
                     ['ID'] = 'CompositeSoftwoodDoorItem',
@@ -13114,6 +13498,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Softwood Table'] = {
                     ['ID'] = 'CompositeSoftwoodTableItem',
@@ -13145,6 +13530,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Spruce Bench'] = {
                     ['ID'] = 'CompositeSpruceBenchItem',
@@ -13176,6 +13562,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Spruce Chair'] = {
                     ['ID'] = 'CompositeSpruceChairItem',
@@ -13207,6 +13594,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Spruce Door'] = {
                     ['ID'] = 'CompositeSpruceDoorItem',
@@ -13238,6 +13626,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composite Spruce Lumber'] = {
                     ['ID'] = 'CompositeSpruceLumberItem',
@@ -13269,8 +13658,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Composite Spruce Table'] = {
                     ['ID'] = 'CompositeSpruceTableItem',
@@ -13302,6 +13691,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Composites Skill Book'] = {
                     ['ID'] = 'CompositesSkillBook',
@@ -13333,6 +13723,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Composites Skill Scroll'] = {
@@ -13365,6 +13756,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Composites Upgrade'] = {
@@ -13397,6 +13789,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Compost'] = {
                     ['ID'] = 'CompostItem',
@@ -13428,8 +13821,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Compost Fertilizer'] = {
                     ['ID'] = 'CompostFertilizerItem',
@@ -13452,7 +13845,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '50',
-                    ['Tags'] = {'Fertilizer', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Fertilizer', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -13461,6 +13854,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Compostables Item'] = {
@@ -13493,6 +13887,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Computer Lab'] = {
                     ['ID'] = 'ComputerLabItem',
@@ -13524,6 +13919,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Construction Post'] = {
                     ['ID'] = 'ConstructionPostItem',
@@ -13555,6 +13951,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Construction Scrap Sorter'] = {
                     ['ID'] = 'ConstructionScrapSorterItem',
@@ -13586,6 +13983,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Contract Board'] = {
                     ['ID'] = 'ContractBoardItem',
@@ -13617,6 +14015,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cookeina Mushroom Spores'] = {
                     ['ID'] = 'CookeinaMushroomSporesItem',
@@ -13648,6 +14047,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -13681,6 +14081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cookeina Mushrooms'] = {
                     ['ID'] = 'CookeinaMushroomsItem',
@@ -13712,6 +14113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Cooking Skill Book'] = {
@@ -13744,6 +14146,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Cooking Skill Scroll'] = {
@@ -13776,6 +14179,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Cooking Upgrade'] = {
@@ -13808,6 +14212,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cooking Utensils'] = {
                     ['ID'] = 'CookingUtensilsItem',
@@ -13839,6 +14244,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -13863,7 +14269,7 @@ return {
                             },
                     ['Weight'] = '18000',
                     ['MaxStackSize'] = '20',
-                    ['Tags'] = {'Currency', 'Metal', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Currency', 'Metal', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = 'True',
@@ -13872,8 +14278,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Copper Concentrate'] = {
                     ['ID'] = 'CopperConcentrateItem',
@@ -13896,7 +14302,7 @@ return {
                             },
                     ['Weight'] = '20000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Concentrated Ore', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Concentrated Ore', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -13905,8 +14311,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Copper Frame Landscape'] = {
                     ['ID'] = 'CopperFrameLandscapeItem',
@@ -13938,6 +14344,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Copper Frame Portrait'] = {
                     ['ID'] = 'CopperFramePortraitItem',
@@ -13969,6 +14376,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Copper Frame Square'] = {
                     ['ID'] = 'CopperFrameSquareItem',
@@ -14000,6 +14408,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Copper Frame Tall'] = {
                     ['ID'] = 'CopperFrameTallItem',
@@ -14031,6 +14440,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Copper Frame Wide'] = {
                     ['ID'] = 'CopperFrameWideItem',
@@ -14062,6 +14472,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Copper Hydroxide'] = {
                     ['ID'] = 'CopperHydroxideItem',
@@ -14084,7 +14495,7 @@ return {
                             },
                     ['Weight'] = '50',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Pigment', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Pigment', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -14093,6 +14504,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Copper Ore'] = {
                     ['ID'] = 'CopperOreItem',
@@ -14124,8 +14536,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Copper Pipe'] = {
                     ['ID'] = 'CopperPipeItem',
@@ -14157,8 +14569,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Copper Plate'] = {
                     ['ID'] = 'CopperPlateItem',
@@ -14190,6 +14602,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -14223,8 +14636,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Copper Wiring'] = {
                     ['ID'] = 'CopperWiringItem',
@@ -14247,7 +14660,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -14256,6 +14669,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -14289,6 +14703,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Corn Fritters'] = {
@@ -14321,6 +14736,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Corn Seed'] = {
@@ -14353,6 +14769,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -14386,6 +14803,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Corn Starch'] = {
                     ['ID'] = 'CornStarchItem',
@@ -14417,6 +14835,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Cornmeal'] = {
@@ -14449,6 +14868,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Cornrows'] = {
@@ -14481,6 +14901,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Corrugated Steel'] = {
@@ -14513,8 +14934,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '4',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Corrugated Steel Door'] = {
                     ['ID'] = 'CorrugatedSteelDoorItem',
@@ -14546,6 +14967,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Corrugated Steel Fence Door'] = {
                     ['ID'] = 'CorrugatedSteelFenceDoorItem',
@@ -14577,6 +14999,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cotton Boll'] = {
                     ['ID'] = 'CottonBollItem',
@@ -14608,6 +15031,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cotton Carpet'] = {
                     ['ID'] = 'CottonCarpetItem',
@@ -14639,8 +15063,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Cotton Curtains'] = {
                     ['ID'] = 'CottonCurtainsItem',
@@ -14672,8 +15096,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Cotton Fabric'] = {
                     ['ID'] = 'CottonFabricItem',
@@ -14705,6 +15129,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -14738,6 +15163,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cotton Seed'] = {
                     ['ID'] = 'CottonSeedItem',
@@ -14769,6 +15195,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -14802,6 +15229,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cotton Streamer Stars'] = {
                     ['ID'] = 'CottonStreamerStarsItem',
@@ -14833,6 +15261,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cotton Streamer Stripes'] = {
                     ['ID'] = 'CottonStreamerStripesItem',
@@ -14864,6 +15293,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cotton Thread'] = {
                     ['ID'] = 'CottonThreadItem',
@@ -14895,6 +15325,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Couch'] = {
                     ['ID'] = 'CouchItem',
@@ -14926,6 +15357,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Country Claim Stake'] = {
                     ['ID'] = 'CountryClaimStakeItem',
@@ -14957,6 +15389,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Country Foundation'] = {
                     ['ID'] = 'CountryFoundationItem',
@@ -14988,6 +15421,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Court Chair'] = {
                     ['ID'] = 'CourtChairItem',
@@ -15019,6 +15453,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Court Table'] = {
                     ['ID'] = 'CourtTableItem',
@@ -15050,6 +15485,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cowboy Hat'] = {
                     ['ID'] = 'CowboyHatItem',
@@ -15081,6 +15517,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Coyote Carcass'] = {
@@ -15113,6 +15550,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Crab Carcass'] = {
                     ['ID'] = 'CrabCarcassItem',
@@ -15144,6 +15582,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Crab Pot'] = {
                     ['ID'] = 'CrabPotItem',
@@ -15175,6 +15614,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Crane'] = {
                     ['ID'] = 'CraneItem',
@@ -15206,6 +15646,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Creosote Bush Seed'] = {
                     ['ID'] = 'CreosoteBushSeedItem',
@@ -15237,6 +15678,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -15270,6 +15712,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Creosote Flower'] = {
                     ['ID'] = 'CreosoteFlowerItem',
@@ -15301,6 +15744,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Crimini Mushroom Spores'] = {
@@ -15333,6 +15777,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -15366,6 +15811,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Crimini Mushrooms'] = {
                     ['ID'] = 'CriminiMushroomsItem',
@@ -15397,6 +15843,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Crimson Salad'] = {
@@ -15429,6 +15876,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Crispy Bacon'] = {
@@ -15461,6 +15909,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Crushed Basalt'] = {
@@ -15484,7 +15933,7 @@ return {
                             },
                     ['Weight'] = '30000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15493,8 +15942,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Coal'] = {
                     ['ID'] = 'CrushedCoalItem',
@@ -15526,8 +15975,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Copper Ore'] = {
                     ['ID'] = 'CrushedCopperOreItem',
@@ -15550,7 +15999,7 @@ return {
                             },
                     ['Weight'] = '28000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Excavatable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Excavatable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15559,8 +16008,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Gneiss'] = {
                     ['ID'] = 'CrushedGneissItem',
@@ -15583,7 +16032,7 @@ return {
                             },
                     ['Weight'] = '28000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15592,8 +16041,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Gold Ore'] = {
                     ['ID'] = 'CrushedGoldOreItem',
@@ -15616,7 +16065,7 @@ return {
                             },
                     ['Weight'] = '28000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15625,8 +16074,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Granite'] = {
                     ['ID'] = 'CrushedGraniteItem',
@@ -15649,7 +16098,7 @@ return {
                             },
                     ['Weight'] = '26000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Silica', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Crushed Rock', 'Silica', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15658,8 +16107,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Iron Ore'] = {
                     ['ID'] = 'CrushedIronOreItem',
@@ -15682,7 +16131,7 @@ return {
                             },
                     ['Weight'] = '30000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15691,8 +16140,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Limestone'] = {
                     ['ID'] = 'CrushedLimestoneItem',
@@ -15715,7 +16164,7 @@ return {
                             },
                     ['Weight'] = '26000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15724,8 +16173,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Mixed Rock'] = {
                     ['ID'] = 'CrushedMixedRockItem',
@@ -15757,8 +16206,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Oil Shale'] = {
                     ['ID'] = 'CrushedOilShaleItem',
@@ -15790,8 +16239,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Sandstone'] = {
                     ['ID'] = 'CrushedSandstoneItem',
@@ -15814,7 +16263,7 @@ return {
                             },
                     ['Weight'] = '24000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Silica', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Crushed Rock', 'Silica', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15823,8 +16272,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Shale'] = {
                     ['ID'] = 'CrushedShaleItem',
@@ -15847,7 +16296,7 @@ return {
                             },
                     ['Weight'] = '24000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Crushed Rock', 'Excavatable', 'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15856,8 +16305,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Slag'] = {
                     ['ID'] = 'CrushedSlagItem',
@@ -15889,8 +16338,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Crushed Sulfur'] = {
                     ['ID'] = 'CrushedSulfurItem',
@@ -15922,8 +16371,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Culinary Research Paper Advanced'] = {
                     ['ID'] = 'CulinaryResearchPaperAdvancedItem',
@@ -15946,7 +16395,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Advanced Research', 'Research', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Advanced Research', 'Research', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15955,6 +16404,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Culinary Research Paper Basic'] = {
                     ['ID'] = 'CulinaryResearchPaperBasicItem',
@@ -15977,7 +16427,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Basic Research', 'Research', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Basic Research', 'Research', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -15986,6 +16436,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Culinary Research Paper Modern'] = {
                     ['ID'] = 'CulinaryResearchPaperModernItem',
@@ -16017,6 +16468,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Culture'] = {
                     ['ID'] = 'CultureItem',
@@ -16048,6 +16500,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Curly'] = {
                     ['ID'] = 'CurlyItem',
@@ -16079,6 +16532,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Currency Exchange'] = {
@@ -16111,6 +16565,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Cutting Edge Cooking Skill Book'] = {
                     ['ID'] = 'CuttingEdgeCookingSkillBook',
@@ -16142,6 +16597,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Cutting Edge Cooking Skill Scroll'] = {
@@ -16174,6 +16630,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Cutting Edge Cooking Upgrade'] = {
@@ -16206,6 +16663,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Cyan Powder'] = {
                     ['ID'] = 'CyanPowderItem',
@@ -16237,6 +16695,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Daisy'] = {
                     ['ID'] = 'DaisyItem',
@@ -16268,6 +16727,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Daisy Seed'] = {
                     ['ID'] = 'DaisySeedItem',
@@ -16299,6 +16759,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -16332,6 +16793,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Decorative Anchor'] = {
                     ['ID'] = 'DecorativeAnchorItem',
@@ -16363,6 +16825,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Bowl'] = {
                     ['ID'] = 'DecorativeBowlItem',
@@ -16394,6 +16857,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Glass Buoy Blue'] = {
                     ['ID'] = 'DecorativeGlassBuoyBlueItem',
@@ -16425,6 +16889,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Glass Buoy Green'] = {
                     ['ID'] = 'DecorativeGlassBuoyGreenItem',
@@ -16456,6 +16921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Glass Buoy Red'] = {
                     ['ID'] = 'DecorativeGlassBuoyRedItem',
@@ -16487,6 +16953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Glass Buoy Violet'] = {
                     ['ID'] = 'DecorativeGlassBuoyVioletItem',
@@ -16518,6 +16985,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Glass Buoy Yellow'] = {
                     ['ID'] = 'DecorativeGlassBuoyYellowItem',
@@ -16549,6 +17017,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Hanging Buoy'] = {
                     ['ID'] = 'DecorativeHangingBuoyItem',
@@ -16580,6 +17049,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Life Preserver'] = {
                     ['ID'] = 'DecorativeLifePreserverItem',
@@ -16611,6 +17081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Decorative Ship Wheel'] = {
                     ['ID'] = 'DecorativeShipWheelItem',
@@ -16642,6 +17113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Deer Carcass'] = {
                     ['ID'] = 'DeerCarcassItem',
@@ -16673,6 +17145,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Deer Pelt'] = {
                     ['ID'] = 'DeerPeltItem',
@@ -16704,6 +17177,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dendrology Research Paper Advanced'] = {
                     ['ID'] = 'DendrologyResearchPaperAdvancedItem',
@@ -16726,7 +17200,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Advanced Research', 'Research', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Advanced Research', 'Research', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -16735,6 +17209,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dendrology Research Paper Basic'] = {
                     ['ID'] = 'DendrologyResearchPaperBasicItem',
@@ -16766,6 +17241,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dendrology Research Paper Modern'] = {
                     ['ID'] = 'DendrologyResearchPaperModernItem',
@@ -16788,7 +17264,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Modern Research', 'Research', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Modern Research', 'Research', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -16797,6 +17273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Derpy Hat'] = {
                     ['ID'] = 'DerpyHatItem',
@@ -16828,6 +17305,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Desalinator'] = {
@@ -16860,6 +17338,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dev Flood Tool'] = {
                     ['ID'] = 'DevFloodToolItem',
@@ -16891,6 +17370,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dev Paint Tool'] = {
                     ['ID'] = 'DevPaintToolItem',
@@ -16922,6 +17402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dev Tool'] = {
                     ['ID'] = 'DevtoolItem',
@@ -16953,6 +17434,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Digital Work Station'] = {
                     ['ID'] = 'DigitalWorkStationItem',
@@ -16984,6 +17466,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dirt'] = {
                     ['ID'] = 'DirtItem',
@@ -17015,8 +17498,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Dirt Ramp'] = {
                     ['ID'] = 'DirtRampItem',
@@ -17048,6 +17531,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dirt Road'] = {
                     ['ID'] = 'DirtRoadItem',
@@ -17079,8 +17563,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Distribution Station'] = {
                     ['ID'] = 'DistributionStationItem',
@@ -17112,6 +17596,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dowel'] = {
                     ['ID'] = 'DowelItem',
@@ -17143,6 +17628,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dried Fish'] = {
                     ['ID'] = 'DriedFishItem',
@@ -17174,6 +17660,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Dried Meat'] = {
@@ -17197,7 +17684,7 @@ return {
                             },
                     ['Weight'] = '250',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -17206,6 +17693,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Dumpster Compost'] = {
@@ -17238,6 +17726,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dumpster Garbage'] = {
                     ['ID'] = 'DumpsterGarbageItem',
@@ -17269,6 +17758,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dumpster Recycle'] = {
                     ['ID'] = 'DumpsterRecycleItem',
@@ -17300,6 +17790,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Dwarf Willow Seed'] = {
                     ['ID'] = 'DwarfWillowSeedItem',
@@ -17331,6 +17822,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -17364,6 +17856,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Dynamite'] = {
                     ['ID'] = 'DynamiteItem',
@@ -17395,6 +17888,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Easel'] = {
                     ['ID'] = 'EaselItem',
@@ -17426,6 +17920,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ecko Statue'] = {
                     ['ID'] = 'EckoStatueItem',
@@ -17457,6 +17952,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ecko The Dolphin'] = {
                     ['ID'] = 'EckoTheDolphinItem',
@@ -17488,6 +17984,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Eco Book'] = {
                     ['ID'] = 'EcoBookItem',
@@ -17519,6 +18016,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ecoylent'] = {
                     ['ID'] = 'EcoylentItem',
@@ -17550,6 +18048,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Egyptian Canoe'] = {
@@ -17582,6 +18081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Election Poster'] = {
                     ['ID'] = 'ElectionPosterItem',
@@ -17613,6 +18113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Lathe'] = {
                     ['ID'] = 'ElectricLatheItem',
@@ -17644,6 +18145,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Machinist Table'] = {
                     ['ID'] = 'ElectricMachinistTableItem',
@@ -17675,6 +18177,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Motor'] = {
                     ['ID'] = 'ElectricMotorItem',
@@ -17697,7 +18200,7 @@ return {
                             },
                     ['Weight'] = '1000',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -17706,6 +18209,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -17739,6 +18243,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Stamping Press'] = {
                     ['ID'] = 'ElectricStampingPressItem',
@@ -17770,6 +18275,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Wall Lamp'] = {
                     ['ID'] = 'ElectricWallLampItem',
@@ -17801,6 +18307,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electric Water Pump'] = {
                     ['ID'] = 'ElectricWaterPumpItem',
@@ -17832,6 +18339,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electro Static Filter'] = {
                     ['ID'] = 'ElectroStaticFilterItem',
@@ -17863,6 +18371,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Electronic Scrap'] = {
                     ['ID'] = 'ElectronicScrapItem',
@@ -17894,8 +18403,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Electronics Assembly'] = {
                     ['ID'] = 'ElectronicsAssemblyItem',
@@ -17927,6 +18436,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Electronics Skill Book'] = {
                     ['ID'] = 'ElectronicsSkillBook',
@@ -17958,6 +18468,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Electronics Skill Scroll'] = {
@@ -17990,6 +18501,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Electronics Upgrade'] = {
@@ -18022,6 +18534,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Elevator Call Post'] = {
                     ['ID'] = 'ElevatorCallPostItem',
@@ -18053,6 +18566,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Elk Carcass'] = {
                     ['ID'] = 'ElkCarcassItem',
@@ -18084,6 +18598,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Elk Gong'] = {
                     ['ID'] = 'ElkGongItem',
@@ -18115,6 +18630,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Elk Mount'] = {
                     ['ID'] = 'ElkMountItem',
@@ -18146,6 +18662,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Elk Skypiercer'] = {
                     ['ID'] = 'ElkSkypiercerItem',
@@ -18177,6 +18694,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Elk Statuette'] = {
                     ['ID'] = 'ElkStatuetteItem',
@@ -18208,6 +18726,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Elk Taco'] = {
                     ['ID'] = 'ElkTacoItem',
@@ -18239,6 +18758,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Elk Wellington'] = {
@@ -18271,6 +18791,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Embassy Desk'] = {
@@ -18303,6 +18824,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Engineer Sign'] = {
                     ['ID'] = 'EngineerSignItem',
@@ -18334,6 +18856,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Engineering Research Paper Advanced'] = {
                     ['ID'] = 'EngineeringResearchPaperAdvancedItem',
@@ -18356,7 +18879,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Advanced Research', 'Research', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Advanced Research', 'Research', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -18365,6 +18888,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Engineering Research Paper Modern'] = {
                     ['ID'] = 'EngineeringResearchPaperModernItem',
@@ -18396,6 +18920,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Epoxy'] = {
                     ['ID'] = 'EpoxyItem',
@@ -18427,6 +18952,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ethanol'] = {
                     ['ID'] = 'EthanolItem',
@@ -18458,6 +18984,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Excavator'] = {
                     ['ID'] = 'ExcavatorItem',
@@ -18489,6 +19016,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Executive Office'] = {
                     ['ID'] = 'ExecutiveOfficeItem',
@@ -18520,6 +19048,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Explorer Boots'] = {
                     ['ID'] = 'ExplorerBootsItem',
@@ -18551,6 +19080,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Explorer Gloves'] = {
@@ -18583,6 +19113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Explorer Hat'] = {
@@ -18615,6 +19146,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Explorer Pants'] = {
@@ -18647,6 +19179,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Explorer Shirt'] = {
@@ -18679,6 +19212,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Extruder'] = {
@@ -18711,6 +19245,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fancy Hewn Door'] = {
                     ['ID'] = 'FancyHewnDoorItem',
@@ -18742,6 +19277,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fancy Medium Lumber Store Window'] = {
                     ['ID'] = 'FancyMediumLumberStoreWindowItem',
@@ -18773,6 +19309,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fantastic Forest Pizza'] = {
                     ['ID'] = 'FantasticForestPizzaItem',
@@ -18804,6 +19341,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Far East Lumber'] = {
@@ -18836,8 +19374,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Farmer Boots'] = {
                     ['ID'] = 'FarmerBootsItem',
@@ -18869,6 +19407,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Farmer Gloves'] = {
@@ -18901,6 +19440,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Farmer Hat'] = {
@@ -18933,6 +19473,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Farmer Overalls'] = {
@@ -18965,6 +19506,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Farmer Shirt'] = {
@@ -18997,6 +19539,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Farmer Sign'] = {
@@ -19029,6 +19572,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Farmers Table'] = {
                     ['ID'] = 'FarmersTableItem',
@@ -19060,6 +19604,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Farming Skill Book'] = {
                     ['ID'] = 'FarmingSkillBook',
@@ -19091,6 +19636,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Farming Skill Scroll'] = {
@@ -19123,6 +19669,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Farming Upgrade'] = {
@@ -19155,6 +19702,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Federation Claim Stake'] = {
                     ['ID'] = 'FederationClaimStakeItem',
@@ -19186,6 +19734,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Federation Foundation'] = {
                     ['ID'] = 'FederationFoundationItem',
@@ -19217,6 +19766,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Feminine Mannequin'] = {
                     ['ID'] = 'FeminineMannequinItem',
@@ -19248,6 +19798,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fern Campfire Salad'] = {
                     ['ID'] = 'FernCampfireSaladItem',
@@ -19270,7 +19821,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -19279,6 +19830,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fern Spore'] = {
@@ -19311,6 +19863,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -19344,6 +19897,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fertilizers Skill Book'] = {
                     ['ID'] = 'FertilizersSkillBook',
@@ -19375,6 +19929,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Fertilizers Skill Scroll'] = {
@@ -19407,6 +19962,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Fertilizers Upgrade'] = {
@@ -19439,6 +19995,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fiber Filler'] = {
                     ['ID'] = 'FiberFillerItem',
@@ -19470,6 +20027,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Fiber Scutching Station'] = {
@@ -19502,6 +20060,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fiberglass'] = {
                     ['ID'] = 'FiberglassItem',
@@ -19524,7 +20083,7 @@ return {
                             },
                     ['Weight'] = '600',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -19533,6 +20092,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -19566,6 +20126,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Field Campfire Stew'] = {
@@ -19598,6 +20159,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Filmy Fern Spore'] = {
@@ -19630,6 +20192,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -19663,6 +20226,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fir Log'] = {
                     ['ID'] = 'FirLogItem',
@@ -19694,8 +20258,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Fir Seed'] = {
                     ['ID'] = 'FirSeedItem',
@@ -19727,6 +20291,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -19760,6 +20325,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fireweed Seed'] = {
                     ['ID'] = 'FireweedSeedItem',
@@ -19791,6 +20357,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -19824,6 +20391,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fireweed Shoots'] = {
                     ['ID'] = 'FireweedShootsItem',
@@ -19855,6 +20423,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fish Kites'] = {
@@ -19887,6 +20456,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fish N Chips'] = {
                     ['ID'] = 'FishNChipsItem',
@@ -19918,6 +20488,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fish Rack'] = {
@@ -19950,6 +20521,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fish Trap'] = {
                     ['ID'] = 'FishTrapItem',
@@ -19981,6 +20553,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fishery'] = {
                     ['ID'] = 'FisheryItem',
@@ -20012,6 +20585,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fishing Pole'] = {
                     ['ID'] = 'FishingPoleItem',
@@ -20043,6 +20617,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fit Torso'] = {
                     ['ID'] = 'FitTorsoItem',
@@ -20074,6 +20649,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Flat Steel'] = {
@@ -20106,8 +20682,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Flat Steel Door'] = {
                     ['ID'] = 'FlatSteelDoorItem',
@@ -20139,6 +20715,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Flatbread'] = {
                     ['ID'] = 'FlatbreadItem',
@@ -20170,6 +20747,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Flax Fiber'] = {
@@ -20202,6 +20780,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Flax Flower'] = {
                     ['ID'] = 'FlaxFlowerItem',
@@ -20233,6 +20812,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Flax Seed'] = {
@@ -20265,6 +20845,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -20298,6 +20879,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Flax Stem'] = {
                     ['ID'] = 'FlaxStemItem',
@@ -20329,6 +20911,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Flax Trawler Net'] = {
                     ['ID'] = 'FlaxTrawlerNetItem',
@@ -20360,6 +20943,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Flaxseed Oil'] = {
@@ -20392,6 +20976,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fletching Table'] = {
@@ -20424,6 +21009,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Flour'] = {
                     ['ID'] = 'FlourItem',
@@ -20455,6 +21041,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Food Scrap'] = {
@@ -20487,8 +21074,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Food Sign'] = {
                     ['ID'] = 'FoodSignItem',
@@ -20520,6 +21107,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fox Carcass'] = {
                     ['ID'] = 'FoxCarcassItem',
@@ -20551,6 +21139,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fox Pelt'] = {
                     ['ID'] = 'FoxPeltItem',
@@ -20582,6 +21171,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Framed Glass'] = {
                     ['ID'] = 'FramedGlassItem',
@@ -20613,8 +21203,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Framed Glass Door'] = {
                     ['ID'] = 'FramedGlassDoorItem',
@@ -20646,6 +21236,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fried Camas'] = {
                     ['ID'] = 'FriedCamasItem',
@@ -20677,6 +21268,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Fiddleheads'] = {
@@ -20700,7 +21292,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -20709,6 +21301,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Hare Haunches'] = {
@@ -20741,6 +21334,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Hearts Of Palm'] = {
@@ -20764,7 +21358,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -20773,6 +21367,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Taro'] = {
@@ -20796,7 +21391,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fried Vegetable', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -20805,6 +21400,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Tomatoes'] = {
@@ -20837,6 +21433,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fried Vegetables'] = {
@@ -20869,6 +21466,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Friendly Scarecrow'] = {
@@ -20901,6 +21499,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Froth Floatation Cell'] = {
                     ['ID'] = 'FrothFloatationCellItem',
@@ -20932,6 +21531,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Fruit Muffin'] = {
                     ['ID'] = 'FruitMuffinItem',
@@ -20963,6 +21563,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fruit Salad'] = {
@@ -20986,7 +21587,7 @@ return {
                             },
                     ['Weight'] = '300',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -20995,6 +21596,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fruit Tart'] = {
@@ -21027,6 +21629,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Fungi Feet'] = {
@@ -21059,6 +21662,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Fur Pelt'] = {
@@ -21091,6 +21695,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Fuse'] = {
                     ['ID'] = 'FuseItem',
@@ -21122,6 +21727,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -21155,6 +21761,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Garbage'] = {
                     ['ID'] = 'GarbageItem',
@@ -21186,8 +21793,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Garbage Sorter'] = {
                     ['ID'] = 'GarbageSorterItem',
@@ -21219,6 +21826,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Garden Boots'] = {
                     ['ID'] = 'GardenBootsItem',
@@ -21250,6 +21858,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Garden Gravel'] = {
@@ -21282,8 +21891,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Garden Pond'] = {
                     ['ID'] = 'GardenPondItem',
@@ -21315,6 +21924,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gasoline'] = {
                     ['ID'] = 'GasolineItem',
@@ -21346,8 +21956,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Gathering Advanced Upgrade'] = {
                     ['ID'] = 'GatheringAdvancedUpgradeItem',
@@ -21379,6 +21989,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Gathering Basic Upgrade'] = {
                     ['ID'] = 'GatheringBasicUpgradeItem',
@@ -21410,6 +22021,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Gathering Research Paper Advanced'] = {
                     ['ID'] = 'GatheringResearchPaperAdvancedItem',
@@ -21432,7 +22044,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Product', 'Ingredient'},
+                    ['Tags'] = {'Advanced Research', 'Research', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -21441,6 +22053,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Gathering Research Paper Basic'] = {
                     ['ID'] = 'GatheringResearchPaperBasicItem',
@@ -21472,6 +22085,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Gearbox'] = {
                     ['ID'] = 'GearboxItem',
@@ -21503,6 +22117,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -21527,7 +22142,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Advanced Research', 'Research', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Advanced Research', 'Research', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -21536,6 +22151,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Geology Research Paper Basic'] = {
                     ['ID'] = 'GeologyResearchPaperBasicItem',
@@ -21567,6 +22183,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Geology Research Paper Modern'] = {
                     ['ID'] = 'GeologyResearchPaperModernItem',
@@ -21598,6 +22215,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Giant Cactus Fruit'] = {
                     ['ID'] = 'GiantCactusFruitItem',
@@ -21629,6 +22247,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Gigot Sleeve Shirt'] = {
@@ -21661,6 +22280,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Glass'] = {
@@ -21684,7 +22304,7 @@ return {
                             },
                     ['Weight'] = '10000',
                     ['MaxStackSize'] = '20',
-                    ['Tags'] = {'Constructable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Constructable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -21693,8 +22313,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Glass Insulation'] = {
                     ['ID'] = 'GlassInsulationItem',
@@ -21726,6 +22346,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Glass Lens'] = {
                     ['ID'] = 'GlassLensItem',
@@ -21748,7 +22369,7 @@ return {
                             },
                     ['Weight'] = '75',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -21757,6 +22378,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Glass Scrap'] = {
                     ['ID'] = 'GlassScrapItem',
@@ -21788,8 +22410,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Glassworking Advanced Upgrade'] = {
                     ['ID'] = 'GlassworkingAdvancedUpgradeItem',
@@ -21821,6 +22443,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Glassworking Modern Upgrade'] = {
                     ['ID'] = 'GlassworkingModernUpgradeItem',
@@ -21852,6 +22475,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Glassworking Skill Book'] = {
                     ['ID'] = 'GlassworkingSkillBook',
@@ -21883,6 +22507,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Glassworking Skill Scroll'] = {
@@ -21915,6 +22540,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Glassworks'] = {
@@ -21947,6 +22573,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Global Calorie Buff Item'] = {
                     ['ID'] = 'GlobalCalorieBuffItem',
@@ -21978,6 +22605,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gneiss'] = {
                     ['ID'] = 'GneissItem',
@@ -22009,8 +22637,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Goat Mount'] = {
                     ['ID'] = 'GoatMountItem',
@@ -22042,6 +22670,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Bar'] = {
                     ['ID'] = 'GoldBarItem',
@@ -22073,8 +22702,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Gold Concentrate'] = {
                     ['ID'] = 'GoldConcentrateItem',
@@ -22106,8 +22735,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Gold Flakes'] = {
                     ['ID'] = 'GoldFlakesItem',
@@ -22139,6 +22768,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Gold Frame Landscape'] = {
                     ['ID'] = 'GoldFrameLandscapeItem',
@@ -22170,6 +22800,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Frame Portrait'] = {
                     ['ID'] = 'GoldFramePortraitItem',
@@ -22201,6 +22832,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Frame Square'] = {
                     ['ID'] = 'GoldFrameSquareItem',
@@ -22232,6 +22864,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Frame Tall'] = {
                     ['ID'] = 'GoldFrameTallItem',
@@ -22263,6 +22896,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Frame Wide'] = {
                     ['ID'] = 'GoldFrameWideItem',
@@ -22294,6 +22928,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Ore'] = {
                     ['ID'] = 'GoldOreItem',
@@ -22325,8 +22960,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Gold Scrap'] = {
                     ['ID'] = 'GoldScrapItem',
@@ -22358,8 +22993,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Gold Trim Book'] = {
                     ['ID'] = 'GoldTrimBookItem',
@@ -22391,6 +23026,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Gold Wiring'] = {
                     ['ID'] = 'GoldWiringItem',
@@ -22422,6 +23058,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -22455,6 +23092,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Granite'] = {
                     ['ID'] = 'GraniteItem',
@@ -22486,8 +23124,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Granite Spiral Fountain'] = {
                     ['ID'] = 'GraniteSpiralFountainItem',
@@ -22519,6 +23157,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Granite Terrace Fountain'] = {
                     ['ID'] = 'GraniteTerraceFountainItem',
@@ -22550,6 +23189,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Grass Seed'] = {
                     ['ID'] = 'GrassSeedItem',
@@ -22581,6 +23221,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -22614,6 +23255,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Grindstone'] = {
                     ['ID'] = 'GrindstoneItem',
@@ -22645,6 +23287,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanamura Cap'] = {
                     ['ID'] = 'HanamuraCapItem',
@@ -22676,6 +23319,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Hand Plow'] = {
@@ -22708,6 +23352,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Handheld Camera'] = {
                     ['ID'] = 'HandheldCameraItem',
@@ -22739,6 +23384,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hands'] = {
                     ['ID'] = 'HandsItem',
@@ -22770,6 +23416,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hanging Basket'] = {
                     ['ID'] = 'HangingBasketItem',
@@ -22801,6 +23448,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Electric Wall Lamp'] = {
                     ['ID'] = 'HangingElectricWallLampItem',
@@ -22832,6 +23480,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Long Steel Sign'] = {
                     ['ID'] = 'HangingLongSteelSignItem',
@@ -22863,6 +23512,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Steel Framed Sign'] = {
                     ['ID'] = 'HangingSteelFramedSignItem',
@@ -22894,6 +23544,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Steel Mine Sign'] = {
                     ['ID'] = 'HangingSteelMineSignItem',
@@ -22925,6 +23576,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Steel Plain Sign'] = {
                     ['ID'] = 'HangingSteelPlainSignItem',
@@ -22956,6 +23608,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hanging Steel Shop Sign'] = {
                     ['ID'] = 'HangingSteelShopSignItem',
@@ -22987,6 +23640,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Board'] = {
                     ['ID'] = 'HardwoodBoardItem',
@@ -23018,6 +23672,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hardwood Double Shelf'] = {
                     ['ID'] = 'HardwoodDoubleShelfItem',
@@ -23049,6 +23704,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Hewn Log'] = {
                     ['ID'] = 'HardwoodHewnLogItem',
@@ -23071,7 +23727,7 @@ return {
                             },
                     ['Weight'] = '10000',
                     ['MaxStackSize'] = '15',
-                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -23080,8 +23736,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Hardwood Lumber'] = {
                     ['ID'] = 'HardwoodLumberItem',
@@ -23113,8 +23769,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Hardwood Lumber Bench'] = {
                     ['ID'] = 'HardwoodLumberBenchItem',
@@ -23146,6 +23802,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Lumber Chair'] = {
                     ['ID'] = 'HardwoodLumberChairItem',
@@ -23177,6 +23834,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Lumber Door'] = {
                     ['ID'] = 'HardwoodLumberDoorItem',
@@ -23208,6 +23866,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Lumber Dresser'] = {
                     ['ID'] = 'HardwoodLumberDresserItem',
@@ -23239,6 +23898,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Lumber Hallway Table'] = {
                     ['ID'] = 'HardwoodLumberHallwayTableItem',
@@ -23270,6 +23930,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardwood Lumber Table'] = {
                     ['ID'] = 'HardwoodLumberTableItem',
@@ -23301,6 +23962,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hardy Beard'] = {
                     ['ID'] = 'HardyBeardItem',
@@ -23332,6 +23994,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Hare Carcass'] = {
@@ -23364,6 +24027,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hare Pelt'] = {
                     ['ID'] = 'HarePeltItem',
@@ -23395,6 +24059,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Heart Of Palm'] = {
                     ['ID'] = 'HeartOfPalmItem',
@@ -23426,6 +24091,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Hearty Hometown Pizza'] = {
@@ -23458,6 +24124,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Heat Sink'] = {
@@ -23490,6 +24157,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Heated Display Cabinet'] = {
                     ['ID'] = 'HeatedDisplayCabinetItem',
@@ -23521,6 +24189,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Heavy Mineral Decontaminant'] = {
                     ['ID'] = 'HeavyMineralDecontaminantItem',
@@ -23552,6 +24221,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Heavy Mineral Pollutant'] = {
                     ['ID'] = 'HeavyMineralPollutantItem',
@@ -23583,8 +24253,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Heliconia Seed'] = {
                     ['ID'] = 'HeliconiaSeedItem',
@@ -23616,6 +24286,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -23649,6 +24320,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hemp Mooring Rope'] = {
                     ['ID'] = 'HempMooringRopeItem',
@@ -23680,6 +24352,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -23713,6 +24386,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Hewn Bench'] = {
@@ -23745,6 +24419,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Chair'] = {
                     ['ID'] = 'HewnChairItem',
@@ -23776,6 +24451,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Door'] = {
                     ['ID'] = 'HewnDoorItem',
@@ -23807,6 +24483,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Dresser'] = {
                     ['ID'] = 'HewnDresserItem',
@@ -23838,6 +24515,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Hardwood Bench'] = {
                     ['ID'] = 'HewnHardwoodBenchItem',
@@ -23869,6 +24547,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Hardwood Chair'] = {
                     ['ID'] = 'HewnHardwoodChairItem',
@@ -23900,6 +24579,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Hardwood Door'] = {
                     ['ID'] = 'HewnHardwoodDoorItem',
@@ -23931,6 +24611,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Hardwood Table'] = {
                     ['ID'] = 'HewnHardwoodTableItem',
@@ -23962,6 +24643,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Log'] = {
                     ['ID'] = 'HewnLogItem',
@@ -23984,7 +24666,7 @@ return {
                             },
                     ['Weight'] = '10000',
                     ['MaxStackSize'] = '15',
-                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -23993,8 +24675,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Hewn Nightstand'] = {
                     ['ID'] = 'HewnNightstandItem',
@@ -24026,6 +24708,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Softwood Bench'] = {
                     ['ID'] = 'HewnSoftwoodBenchItem',
@@ -24057,6 +24740,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Softwood Chair'] = {
                     ['ID'] = 'HewnSoftwoodChairItem',
@@ -24088,6 +24772,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Softwood Door'] = {
                     ['ID'] = 'HewnSoftwoodDoorItem',
@@ -24119,6 +24804,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Softwood Table'] = {
                     ['ID'] = 'HewnSoftwoodTableItem',
@@ -24150,6 +24836,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hewn Table'] = {
                     ['ID'] = 'HewnTableItem',
@@ -24181,6 +24868,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Hide Ash Fertilizer'] = {
                     ['ID'] = 'HideAshFertilizerItem',
@@ -24203,7 +24891,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '50',
-                    ['Tags'] = {'Fertilizer', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fertilizer', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -24212,6 +24900,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Homestead Claim Stake'] = {
@@ -24244,6 +24933,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Homestead Support Claim Paper'] = {
                     ['ID'] = 'HomesteadSupportClaimPaperItem',
@@ -24275,6 +24965,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hosomaki'] = {
                     ['ID'] = 'HosomakiItem',
@@ -24306,6 +24997,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Hourglass'] = {
@@ -24338,6 +25030,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huckleberries'] = {
                     ['ID'] = 'HuckleberriesItem',
@@ -24369,6 +25062,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Huckleberry Extract'] = {
@@ -24401,6 +25095,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Huckleberry Fritter'] = {
@@ -24433,6 +25128,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Huckleberry Pie'] = {
@@ -24465,6 +25161,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Huckleberry Seed'] = {
@@ -24497,6 +25194,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -24530,6 +25228,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Huge Banner Sign'] = {
                     ['ID'] = 'HugeBannerSignItem',
@@ -24561,6 +25260,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huge Iron Banner Sign'] = {
                     ['ID'] = 'HugeIronBannerSignItem',
@@ -24592,6 +25292,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huge Iron Sign'] = {
                     ['ID'] = 'HugeIronSignItem',
@@ -24623,6 +25324,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huge Steel Banner Sign'] = {
                     ['ID'] = 'HugeSteelBannerSignItem',
@@ -24654,6 +25356,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huge Steel Sign'] = {
                     ['ID'] = 'HugeSteelSignItem',
@@ -24685,6 +25388,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Huge Wooden Banner Sign'] = {
                     ['ID'] = 'HugeWoodenBannerSignItem',
@@ -24716,6 +25420,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Human Limbs'] = {
                     ['ID'] = 'HumanLimbsItem',
@@ -24747,6 +25452,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Hunting Upgrade'] = {
@@ -24779,6 +25485,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Hydrocolloids'] = {
                     ['ID'] = 'HydrocolloidsItem',
@@ -24810,6 +25517,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Hydrometer'] = {
@@ -24842,6 +25550,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Icebox'] = {
                     ['ID'] = 'IceboxItem',
@@ -24873,6 +25582,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Immigration Desk'] = {
                     ['ID'] = 'ImmigrationDeskItem',
@@ -24904,6 +25614,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Incinerator'] = {
                     ['ID'] = 'IncineratorItem',
@@ -24935,6 +25646,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial'] = {
                     ['ID'] = 'IndustrialItem',
@@ -24966,6 +25678,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Barge'] = {
                     ['ID'] = 'IndustrialBargeItem',
@@ -24997,6 +25710,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Elevator'] = {
                     ['ID'] = 'IndustrialElevatorItem',
@@ -25028,6 +25742,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Generator'] = {
                     ['ID'] = 'IndustrialGeneratorItem',
@@ -25059,6 +25774,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Mill'] = {
                     ['ID'] = 'IndustrialMillItem',
@@ -25090,6 +25806,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Refrigerator'] = {
                     ['ID'] = 'IndustrialRefrigeratorItem',
@@ -25121,6 +25838,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industrial Sewage'] = {
                     ['ID'] = 'IndustrialSewageItem',
@@ -25152,8 +25870,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Industrial Waste Sorter'] = {
                     ['ID'] = 'IndustrialWasteSorterItem',
@@ -25185,6 +25903,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Industry Skill Book'] = {
                     ['ID'] = 'IndustrySkillBook',
@@ -25216,6 +25935,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Industry Skill Scroll'] = {
@@ -25248,6 +25968,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Industry Upgrade'] = {
@@ -25280,6 +26001,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Infused Oil'] = {
                     ['ID'] = 'InfusedOilItem',
@@ -25311,6 +26033,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Injection Mold Machine'] = {
@@ -25343,6 +26066,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ink'] = {
                     ['ID'] = 'InkItem',
@@ -25374,6 +26098,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Insulated Copper Wiring'] = {
                     ['ID'] = 'InsulatedCopperWiringItem',
@@ -25405,6 +26130,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -25429,7 +26155,7 @@ return {
                             },
                     ['Weight'] = '5000',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -25438,6 +26164,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Axe'] = {
                     ['ID'] = 'IronAxeItem',
@@ -25469,6 +26196,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Axle'] = {
                     ['ID'] = 'IronAxleItem',
@@ -25500,6 +26228,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -25533,8 +26262,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Iron Concentrate'] = {
                     ['ID'] = 'IronConcentrateItem',
@@ -25566,8 +26295,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Iron Frame Landscape'] = {
                     ['ID'] = 'IronFrameLandscapeItem',
@@ -25599,6 +26328,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Iron Frame Portrait'] = {
                     ['ID'] = 'IronFramePortraitItem',
@@ -25630,6 +26360,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Iron Frame Square'] = {
                     ['ID'] = 'IronFrameSquareItem',
@@ -25661,6 +26392,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Iron Frame Tall'] = {
                     ['ID'] = 'IronFrameTallItem',
@@ -25692,6 +26424,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Iron Frame Wide'] = {
                     ['ID'] = 'IronFrameWideItem',
@@ -25723,6 +26456,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Iron Gear'] = {
                     ['ID'] = 'IronGearItem',
@@ -25754,6 +26488,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -25787,6 +26522,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Hoe'] = {
                     ['ID'] = 'IronHoeItem',
@@ -25818,6 +26554,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Hull Sheet'] = {
                     ['ID'] = 'IronHullSheetItem',
@@ -25849,6 +26586,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -25882,6 +26620,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Ore'] = {
                     ['ID'] = 'IronOreItem',
@@ -25913,8 +26652,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Iron Oxide'] = {
                     ['ID'] = 'IronOxideItem',
@@ -25946,6 +26685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Paint Sprayer'] = {
                     ['ID'] = 'IronPaintSprayerItem',
@@ -25977,6 +26717,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Pickaxe'] = {
                     ['ID'] = 'IronPickaxeItem',
@@ -26008,6 +26749,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Pipe'] = {
                     ['ID'] = 'IronPipeItem',
@@ -26039,8 +26781,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Iron Plate'] = {
                     ['ID'] = 'IronPlateItem',
@@ -26072,6 +26814,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -26105,6 +26848,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Rock Drill'] = {
                     ['ID'] = 'IronRockDrillItem',
@@ -26136,6 +26880,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Saw Blade'] = {
                     ['ID'] = 'IronSawBladeItem',
@@ -26158,7 +26903,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -26167,6 +26912,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -26200,8 +26946,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Iron Shovel'] = {
                     ['ID'] = 'IronShovelItem',
@@ -26233,6 +26979,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Sickle'] = {
                     ['ID'] = 'IronSickleItem',
@@ -26264,6 +27011,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Iron Wheel'] = {
                     ['ID'] = 'IronWheelItem',
@@ -26295,6 +27043,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -26328,6 +27077,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Jaw Crusher'] = {
                     ['ID'] = 'JawCrusherItem',
@@ -26359,6 +27109,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Jazz Hands'] = {
                     ['ID'] = 'JazzHandsItem',
@@ -26390,6 +27141,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Jointfir Seed'] = {
@@ -26422,6 +27174,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -26455,6 +27208,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Joshua Log'] = {
                     ['ID'] = 'JoshuaLogItem',
@@ -26486,8 +27240,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Joshua Seed'] = {
                     ['ID'] = 'JoshuaSeedItem',
@@ -26519,6 +27273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -26552,6 +27307,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Jungle Campfire Salad'] = {
                     ['ID'] = 'JungleCampfireSaladItem',
@@ -26574,7 +27330,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -26583,6 +27339,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Jungle Campfire Stew'] = {
@@ -26615,6 +27372,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Kelp'] = {
@@ -26647,6 +27405,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Kelp Seed'] = {
                     ['ID'] = 'KelpSeedItem',
@@ -26678,6 +27437,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -26711,6 +27471,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Kelpy Crab Roll'] = {
                     ['ID'] = 'KelpyCrabRollItem',
@@ -26742,6 +27503,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Kiln'] = {
@@ -26774,6 +27536,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['King Fern Spore'] = {
                     ['ID'] = 'KingFernSporeItem',
@@ -26805,6 +27568,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -26838,6 +27602,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Kitchen'] = {
                     ['ID'] = 'KitchenItem',
@@ -26869,6 +27634,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Kitchenroom'] = {
                     ['ID'] = 'KitchenroomItem',
@@ -26900,6 +27666,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Kite'] = {
                     ['ID'] = 'KiteItem',
@@ -26931,6 +27698,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Koi Pond'] = {
                     ['ID'] = 'KoiPondItem',
@@ -26962,6 +27730,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Laboratory'] = {
                     ['ID'] = 'LaboratoryItem',
@@ -26993,6 +27762,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Bath Mat'] = {
                     ['ID'] = 'LargeBathMatItem',
@@ -27024,6 +27794,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Canoe'] = {
                     ['ID'] = 'LargeCanoeItem',
@@ -27055,6 +27826,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Corrugated Steel Door'] = {
                     ['ID'] = 'LargeCorrugatedSteelDoorItem',
@@ -27086,6 +27858,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Cotton Bunting Festive'] = {
                     ['ID'] = 'LargeCottonBuntingFestiveItem',
@@ -27117,6 +27890,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Cotton Bunting Red'] = {
                     ['ID'] = 'LargeCottonBuntingRedItem',
@@ -27148,6 +27922,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Cotton Bunting Regal'] = {
                     ['ID'] = 'LargeCottonBuntingRegalItem',
@@ -27179,6 +27954,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Cotton Bunting Vibrant'] = {
                     ['ID'] = 'LargeCottonBuntingVibrantItem',
@@ -27210,6 +27986,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Court'] = {
                     ['ID'] = 'LargeCourtItem',
@@ -27241,6 +28018,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Festive Paper Lantern'] = {
                     ['ID'] = 'LargeFestivePaperLanternItem',
@@ -27272,6 +28050,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Glass Store Window'] = {
                     ['ID'] = 'LargeGlassStoreWindowItem',
@@ -27303,6 +28082,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Basalt Sign'] = {
                     ['ID'] = 'LargeHangingAshlarBasaltSignItem',
@@ -27334,6 +28114,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Gneiss Sign'] = {
                     ['ID'] = 'LargeHangingAshlarGneissSignItem',
@@ -27365,6 +28146,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Granite Sign'] = {
                     ['ID'] = 'LargeHangingAshlarGraniteSignItem',
@@ -27396,6 +28178,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Limestone Sign'] = {
                     ['ID'] = 'LargeHangingAshlarLimestoneSignItem',
@@ -27427,6 +28210,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Sandstone Sign'] = {
                     ['ID'] = 'LargeHangingAshlarSandstoneSignItem',
@@ -27458,6 +28242,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Shale Sign'] = {
                     ['ID'] = 'LargeHangingAshlarShaleSignItem',
@@ -27489,6 +28274,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ashlar Stone Sign'] = {
                     ['ID'] = 'LargeHangingAshlarStoneSignItem',
@@ -27520,6 +28306,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Birch Sign'] = {
                     ['ID'] = 'LargeHangingBirchSignItem',
@@ -27551,6 +28338,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Cedar Sign'] = {
                     ['ID'] = 'LargeHangingCedarSignItem',
@@ -27582,6 +28370,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Ceiba Sign'] = {
                     ['ID'] = 'LargeHangingCeibaSignItem',
@@ -27613,6 +28402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Fir Sign'] = {
                     ['ID'] = 'LargeHangingFirSignItem',
@@ -27644,6 +28434,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Hardwood Sign'] = {
                     ['ID'] = 'LargeHangingHardwoodSignItem',
@@ -27675,6 +28466,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Joshua Sign'] = {
                     ['ID'] = 'LargeHangingJoshuaSignItem',
@@ -27706,6 +28498,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Lumber Sign'] = {
                     ['ID'] = 'LargeHangingLumberSignItem',
@@ -27737,6 +28530,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Mortared Granite Sign'] = {
                     ['ID'] = 'LargeHangingMortaredGraniteSignItem',
@@ -27768,6 +28562,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Mortared Limestone Sign'] = {
                     ['ID'] = 'LargeHangingMortaredLimestoneSignItem',
@@ -27799,6 +28594,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Mortared Sandstone Sign'] = {
                     ['ID'] = 'LargeHangingMortaredSandstoneSignItem',
@@ -27830,6 +28626,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Mortared Stone Sign'] = {
                     ['ID'] = 'LargeHangingMortaredStoneSignItem',
@@ -27861,6 +28658,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Oak Sign'] = {
                     ['ID'] = 'LargeHangingOakSignItem',
@@ -27892,6 +28690,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Palm Sign'] = {
                     ['ID'] = 'LargeHangingPalmSignItem',
@@ -27923,6 +28722,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Redwood Sign'] = {
                     ['ID'] = 'LargeHangingRedwoodSignItem',
@@ -27954,6 +28754,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Saguaro Sign'] = {
                     ['ID'] = 'LargeHangingSaguaroSignItem',
@@ -27985,6 +28786,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Softwood Sign'] = {
                     ['ID'] = 'LargeHangingSoftwoodSignItem',
@@ -28016,6 +28818,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Spruce Sign'] = {
                     ['ID'] = 'LargeHangingSpruceSignItem',
@@ -28047,6 +28850,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Stone Sign'] = {
                     ['ID'] = 'LargeHangingStoneSignItem',
@@ -28078,6 +28882,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Hanging Wood Sign'] = {
                     ['ID'] = 'LargeHangingWoodSignItem',
@@ -28109,6 +28914,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Lumber Door'] = {
                     ['ID'] = 'LargeLumberDoorItem',
@@ -28140,6 +28946,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Lumber Stockpile'] = {
                     ['ID'] = 'LargeLumberStockpileItem',
@@ -28171,6 +28978,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Lumber Store Window'] = {
                     ['ID'] = 'LargeLumberStoreWindowItem',
@@ -28202,6 +29010,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Metal Ship Frame'] = {
                     ['ID'] = 'LargeMetalShipFrameItem',
@@ -28233,6 +29042,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Large Nylon Bunting Green'] = {
                     ['ID'] = 'LargeNylonBuntingGreenItem',
@@ -28264,6 +29074,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Nylon Bunting Purple'] = {
                     ['ID'] = 'LargeNylonBuntingPurpleItem',
@@ -28295,6 +29106,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Nylon Bunting Yellow'] = {
                     ['ID'] = 'LargeNylonBuntingYellowItem',
@@ -28326,6 +29138,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Paper Lantern'] = {
                     ['ID'] = 'LargePaperLanternItem',
@@ -28357,6 +29170,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Basalt Sign'] = {
                     ['ID'] = 'LargeStandingAshlarBasaltSignItem',
@@ -28388,6 +29202,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Gneiss Sign'] = {
                     ['ID'] = 'LargeStandingAshlarGneissSignItem',
@@ -28419,6 +29234,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Granite Sign'] = {
                     ['ID'] = 'LargeStandingAshlarGraniteSignItem',
@@ -28450,6 +29266,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Limestone Sign'] = {
                     ['ID'] = 'LargeStandingAshlarLimestoneSignItem',
@@ -28481,6 +29298,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Sandstone Sign'] = {
                     ['ID'] = 'LargeStandingAshlarSandstoneSignItem',
@@ -28512,6 +29330,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Shale Sign'] = {
                     ['ID'] = 'LargeStandingAshlarShaleSignItem',
@@ -28543,6 +29362,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ashlar Stone Sign'] = {
                     ['ID'] = 'LargeStandingAshlarStoneSignItem',
@@ -28574,6 +29394,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Birch Sign'] = {
                     ['ID'] = 'LargeStandingBirchSignItem',
@@ -28605,6 +29426,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Cedar Sign'] = {
                     ['ID'] = 'LargeStandingCedarSignItem',
@@ -28636,6 +29458,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Ceiba Sign'] = {
                     ['ID'] = 'LargeStandingCeibaSignItem',
@@ -28667,6 +29490,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Fir Sign'] = {
                     ['ID'] = 'LargeStandingFirSignItem',
@@ -28698,6 +29522,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Hardwood Sign'] = {
                     ['ID'] = 'LargeStandingHardwoodSignItem',
@@ -28729,6 +29554,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Joshua Sign'] = {
                     ['ID'] = 'LargeStandingJoshuaSignItem',
@@ -28760,6 +29586,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Lumber Sign'] = {
                     ['ID'] = 'LargeStandingLumberSignItem',
@@ -28791,6 +29618,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Mortared Granite Sign'] = {
                     ['ID'] = 'LargeStandingMortaredGraniteSignItem',
@@ -28822,6 +29650,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Mortared Limestone Sign'] = {
                     ['ID'] = 'LargeStandingMortaredLimestoneSignItem',
@@ -28853,6 +29682,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Mortared Sandstone Sign'] = {
                     ['ID'] = 'LargeStandingMortaredSandstoneSignItem',
@@ -28884,6 +29714,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Mortared Stone Sign'] = {
                     ['ID'] = 'LargeStandingMortaredStoneSignItem',
@@ -28915,6 +29746,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Oak Sign'] = {
                     ['ID'] = 'LargeStandingOakSignItem',
@@ -28946,6 +29778,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Palm Sign'] = {
                     ['ID'] = 'LargeStandingPalmSignItem',
@@ -28977,6 +29810,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Redwood Sign'] = {
                     ['ID'] = 'LargeStandingRedwoodSignItem',
@@ -29008,6 +29842,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Saguaro Sign'] = {
                     ['ID'] = 'LargeStandingSaguaroSignItem',
@@ -29039,6 +29874,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Softwood Sign'] = {
                     ['ID'] = 'LargeStandingSoftwoodSignItem',
@@ -29070,6 +29906,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Spruce Sign'] = {
                     ['ID'] = 'LargeStandingSpruceSignItem',
@@ -29101,6 +29938,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Stone Sign'] = {
                     ['ID'] = 'LargeStandingStoneSignItem',
@@ -29132,6 +29970,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Standing Wood Sign'] = {
                     ['ID'] = 'LargeStandingWoodSignItem',
@@ -29163,6 +30002,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Windowed Lumber Door'] = {
                     ['ID'] = 'LargeWindowedLumberDoorItem',
@@ -29194,6 +30034,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Wooden Bookshelf'] = {
                     ['ID'] = 'LargeWoodenBookshelfItem',
@@ -29225,6 +30066,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Large Wooden Ship Frame'] = {
                     ['ID'] = 'LargeWoodenShipFrameItem',
@@ -29256,6 +30098,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Laser'] = {
                     ['ID'] = 'LaserItem',
@@ -29287,6 +30130,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lathe'] = {
                     ['ID'] = 'LatheItem',
@@ -29318,6 +30162,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Lattice Mushroom Spores'] = {
@@ -29350,6 +30195,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -29383,6 +30229,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Leather Hide'] = {
                     ['ID'] = 'LeatherHideItem',
@@ -29414,6 +30261,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Leavened Dough'] = {
                     ['ID'] = 'LeavenedDoughItem',
@@ -29445,6 +30293,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Light Backpack'] = {
@@ -29477,6 +30326,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Light Bulb'] = {
@@ -29509,6 +30359,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -29542,6 +30393,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Limestone'] = {
                     ['ID'] = 'LimestoneItem',
@@ -29573,8 +30425,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Limestone Bison Statue'] = {
                     ['ID'] = 'LimestoneBisonStatueItem',
@@ -29606,6 +30458,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Limestone Otter Statue'] = {
                     ['ID'] = 'LimestoneOtterStatueItem',
@@ -29637,6 +30490,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Limestone Owl Statue'] = {
                     ['ID'] = 'LimestoneOwlStatueItem',
@@ -29668,6 +30522,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Limestone Podium'] = {
                     ['ID'] = 'LimestonePodiumItem',
@@ -29699,6 +30554,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Limestone Wolf Statue'] = {
                     ['ID'] = 'LimestoneWolfStatueItem',
@@ -29730,6 +30586,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Linen Fabric'] = {
                     ['ID'] = 'LinenFabricItem',
@@ -29761,6 +30618,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -29785,7 +30643,7 @@ return {
                             },
                     ['Weight'] = '25',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -29794,6 +30652,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -29827,6 +30686,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Liquid Nitrogen'] = {
                     ['ID'] = 'LiquidNitrogenItem',
@@ -29858,6 +30718,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Livingroom'] = {
@@ -29890,6 +30751,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Loaded Taro Fries'] = {
                     ['ID'] = 'LoadedTaroFriesItem',
@@ -29921,6 +30783,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Log'] = {
@@ -29953,8 +30816,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Logging Advanced Upgrade'] = {
                     ['ID'] = 'LoggingAdvancedUpgradeItem',
@@ -29986,6 +30849,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Logging Basic Upgrade'] = {
                     ['ID'] = 'LoggingBasicUpgradeItem',
@@ -30017,6 +30881,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Logic Gate Item'] = {
                     ['ID'] = 'LogicGateItem',
@@ -30048,6 +30913,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Basic Hardwood Shelf'] = {
                     ['ID'] = 'LongBasicHardwoodShelfItem',
@@ -30079,6 +30945,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Basic Softwood Shelf'] = {
                     ['ID'] = 'LongBasicSoftwoodShelfItem',
@@ -30110,6 +30977,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Basic Wood Shelf'] = {
                     ['ID'] = 'LongBasicWoodShelfItem',
@@ -30141,6 +31009,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Floating Hardwood Shelf'] = {
                     ['ID'] = 'LongFloatingHardwoodShelfItem',
@@ -30172,6 +31041,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Floating Softwood Shelf'] = {
                     ['ID'] = 'LongFloatingSoftwoodShelfItem',
@@ -30203,6 +31073,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Floating Wood Shelf'] = {
                     ['ID'] = 'LongFloatingWoodShelfItem',
@@ -30234,6 +31105,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Hardwood Lumber Shelf'] = {
                     ['ID'] = 'LongHardwoodLumberShelfItem',
@@ -30265,6 +31137,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Hardwood Veneer Shelf'] = {
                     ['ID'] = 'LongHardwoodVeneerShelfItem',
@@ -30296,6 +31169,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Lumber Shelf'] = {
                     ['ID'] = 'LongLumberShelfItem',
@@ -30327,6 +31201,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Softwood Lumber Shelf'] = {
                     ['ID'] = 'LongSoftwoodLumberShelfItem',
@@ -30358,6 +31233,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Softwood Veneer Shelf'] = {
                     ['ID'] = 'LongSoftwoodVeneerShelfItem',
@@ -30389,6 +31265,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Steel Shelf'] = {
                     ['ID'] = 'LongSteelShelfItem',
@@ -30420,6 +31297,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Thin Hardwood Veneer Shelf'] = {
                     ['ID'] = 'LongThinHardwoodVeneerShelfItem',
@@ -30451,6 +31329,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Thin Softwood Veneer Shelf'] = {
                     ['ID'] = 'LongThinSoftwoodVeneerShelfItem',
@@ -30482,6 +31361,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Thin Wood Veneer Shelf'] = {
                     ['ID'] = 'LongThinWoodVeneerShelfItem',
@@ -30513,6 +31393,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Long Wood Veneer Shelf'] = {
                     ['ID'] = 'LongWoodVeneerShelfItem',
@@ -30544,6 +31425,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Loom'] = {
                     ['ID'] = 'LoomItem',
@@ -30575,6 +31457,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Low Top Shoes'] = {
                     ['ID'] = 'LowTopShoesItem',
@@ -30606,6 +31489,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Lubricant'] = {
@@ -30638,6 +31522,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -30671,8 +31556,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Lumber Bench'] = {
                     ['ID'] = 'LumberBenchItem',
@@ -30704,6 +31589,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Chair'] = {
                     ['ID'] = 'LumberChairItem',
@@ -30735,6 +31621,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Door'] = {
                     ['ID'] = 'LumberDoorItem',
@@ -30766,6 +31653,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Dresser'] = {
                     ['ID'] = 'LumberDresserItem',
@@ -30797,6 +31685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Hallway Table'] = {
                     ['ID'] = 'LumberHallwayTableItem',
@@ -30828,6 +31717,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Stockpile'] = {
                     ['ID'] = 'LumberStockpileItem',
@@ -30859,6 +31749,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Table'] = {
                     ['ID'] = 'LumberTableItem',
@@ -30890,6 +31781,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lumber Warehouse Shelves'] = {
                     ['ID'] = 'LumberWarehouseShelvesItem',
@@ -30921,6 +31813,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Lupine'] = {
                     ['ID'] = 'LupineItem',
@@ -30952,6 +31845,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Lupine Seed'] = {
                     ['ID'] = 'LupineSeedItem',
@@ -30983,6 +31877,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -31016,6 +31911,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Macarons'] = {
                     ['ID'] = 'MacaronsItem',
@@ -31047,6 +31943,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Machinist Table'] = {
@@ -31079,6 +31976,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Magenta Powder'] = {
@@ -31111,6 +32009,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Magnet'] = {
                     ['ID'] = 'MagnetItem',
@@ -31133,7 +32032,7 @@ return {
                             },
                     ['Weight'] = '250',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product', 'Catalyst'},
+                    ['Tags'] = {'Product', 'Ingredient', 'Catalyst'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -31142,6 +32041,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mailbox'] = {
                     ['ID'] = 'MailboxItem',
@@ -31173,6 +32073,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Maltodextrin'] = {
                     ['ID'] = 'MaltodextrinItem',
@@ -31204,6 +32105,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Marmot Carcass'] = {
@@ -31236,6 +32138,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Masculine Mannequin'] = {
                     ['ID'] = 'MasculineMannequinItem',
@@ -31267,6 +32170,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mason Sign'] = {
                     ['ID'] = 'MasonSignItem',
@@ -31298,6 +32202,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Masonry Advanced Upgrade'] = {
                     ['ID'] = 'MasonryAdvancedUpgradeItem',
@@ -31329,6 +32234,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Masonry Basic Upgrade'] = {
                     ['ID'] = 'MasonryBasicUpgradeItem',
@@ -31360,6 +32266,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Masonry Skill Book'] = {
                     ['ID'] = 'MasonrySkillBook',
@@ -31391,6 +32298,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Masonry Skill Scroll'] = {
@@ -31423,6 +32331,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Masonry Table'] = {
@@ -31455,6 +32364,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Meat Pie'] = {
                     ['ID'] = 'MeatPieItem',
@@ -31486,6 +32396,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Meat Stock'] = {
@@ -31509,7 +32420,7 @@ return {
                             },
                     ['Weight'] = '800',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -31518,6 +32429,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Meaty Stew'] = {
@@ -31550,6 +32462,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Mechanical Water Pump'] = {
@@ -31582,6 +32495,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mechanics Advanced Upgrade'] = {
                     ['ID'] = 'MechanicsAdvancedUpgradeItem',
@@ -31613,6 +32527,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mechanics Modern Upgrade'] = {
                     ['ID'] = 'MechanicsModernUpgradeItem',
@@ -31644,6 +32559,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mechanics Skill Book'] = {
                     ['ID'] = 'MechanicsSkillBook',
@@ -31675,6 +32591,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Mechanics Skill Scroll'] = {
@@ -31707,6 +32624,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Medium Fishing Trawler'] = {
@@ -31739,6 +32657,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Medium Lumber Store Window'] = {
                     ['ID'] = 'MediumLumberStoreWindowItem',
@@ -31770,6 +32689,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Medium Metal Ship Frame'] = {
                     ['ID'] = 'MediumMetalShipFrameItem',
@@ -31801,6 +32721,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Medium Shipyard'] = {
                     ['ID'] = 'MediumShipyardItem',
@@ -31832,6 +32753,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Medium Wooden Ship Frame'] = {
                     ['ID'] = 'MediumWoodenShipFrameItem',
@@ -31863,6 +32785,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mesh Filter'] = {
                     ['ID'] = 'MeshFilterItem',
@@ -31894,6 +32817,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Metal Keel'] = {
                     ['ID'] = 'MetalKeelItem',
@@ -31916,7 +32840,7 @@ return {
                             },
                     ['Weight'] = '5000',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -31925,6 +32849,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Metal Rudder'] = {
                     ['ID'] = 'MetalRudderItem',
@@ -31956,6 +32881,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -31989,6 +32915,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Metallurgy Research Paper Advanced'] = {
                     ['ID'] = 'MetallurgyResearchPaperAdvancedItem',
@@ -32020,6 +32947,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Metallurgy Research Paper Basic'] = {
                     ['ID'] = 'MetallurgyResearchPaperBasicItem',
@@ -32051,6 +32979,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Metallurgy Research Paper Modern'] = {
                     ['ID'] = 'MetallurgyResearchPaperModernItem',
@@ -32073,7 +33002,7 @@ return {
                             },
                     ['Weight'] = '10',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Modern Research', 'Research', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Modern Research', 'Research', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -32082,6 +33011,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Meteor Shard'] = {
                     ['ID'] = 'MeteorShardItem',
@@ -32113,6 +33043,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Milk'] = {
                     ['ID'] = 'MilkItem',
@@ -32144,6 +33075,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Mill'] = {
@@ -32176,6 +33108,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mill Stone'] = {
                     ['ID'] = 'MillStoneItem',
@@ -32207,6 +33140,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -32240,6 +33174,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Milling Skill Scroll'] = {
@@ -32272,6 +33207,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Milling Upgrade'] = {
@@ -32304,6 +33240,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Millionaires Salad'] = {
                     ['ID'] = 'MillionairesSaladItem',
@@ -32335,6 +33272,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Mining Advanced Upgrade'] = {
@@ -32367,6 +33305,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mining Basic Upgrade'] = {
                     ['ID'] = 'MiningBasicUpgradeItem',
@@ -32398,6 +33337,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mining Charge'] = {
                     ['ID'] = 'MiningChargeItem',
@@ -32429,6 +33369,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mining Modern Upgrade'] = {
                     ['ID'] = 'MiningModernUpgradeItem',
@@ -32460,6 +33401,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mint'] = {
                     ['ID'] = 'MintItem',
@@ -32491,6 +33433,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mixed Biowaste'] = {
                     ['ID'] = 'MixedBiowasteItem',
@@ -32522,8 +33465,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mixed Construction Scrap'] = {
                     ['ID'] = 'MixedConstructionScrapItem',
@@ -32555,8 +33498,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mixed Garbage'] = {
                     ['ID'] = 'MixedGarbageItem',
@@ -32588,8 +33531,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mixed Industrial Waste'] = {
                     ['ID'] = 'MixedIndustrialWasteItem',
@@ -32621,8 +33564,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mixed Metal Scrap'] = {
                     ['ID'] = 'MixedMetalScrapItem',
@@ -32654,8 +33597,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mixed Residuals'] = {
                     ['ID'] = 'MixedResidualsItem',
@@ -32687,8 +33630,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mochi'] = {
                     ['ID'] = 'MochiItem',
@@ -32720,6 +33663,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Modern Axe'] = {
@@ -32752,6 +33696,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Compost Bin'] = {
                     ['ID'] = 'ModernCompostBinItem',
@@ -32783,6 +33728,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Modern Double Street Light'] = {
                     ['ID'] = 'ModernDoubleStreetLightItem',
@@ -32814,6 +33760,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Modern Garbage Bin'] = {
                     ['ID'] = 'ModernGarbageBinItem',
@@ -32845,6 +33792,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Modern Hammer'] = {
                     ['ID'] = 'ModernHammerItem',
@@ -32876,6 +33824,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Hoe'] = {
                     ['ID'] = 'ModernHoeItem',
@@ -32907,6 +33856,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Machete'] = {
                     ['ID'] = 'ModernMacheteItem',
@@ -32938,6 +33888,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Paint Sprayer'] = {
                     ['ID'] = 'ModernPaintSprayerItem',
@@ -32969,6 +33920,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Pickaxe'] = {
                     ['ID'] = 'ModernPickaxeItem',
@@ -33000,6 +33952,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Recycling Bin'] = {
                     ['ID'] = 'ModernRecyclingBinItem',
@@ -33031,6 +33984,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Modern Rock Drill'] = {
                     ['ID'] = 'ModernRockDrillItem',
@@ -33062,6 +34016,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Scythe'] = {
                     ['ID'] = 'ModernScytheItem',
@@ -33093,6 +34048,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Shovel'] = {
                     ['ID'] = 'ModernShovelItem',
@@ -33124,6 +34080,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Street Light'] = {
                     ['ID'] = 'ModernStreetLightItem',
@@ -33155,6 +34112,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Modern Upgrade'] = {
                     ['ID'] = 'ModernUpgradeItem',
@@ -33186,6 +34144,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Upgrade 1'] = {
                     ['ID'] = 'ModernUpgradeLvl1Item',
@@ -33217,6 +34176,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Upgrade 2'] = {
                     ['ID'] = 'ModernUpgradeLvl2Item',
@@ -33248,6 +34208,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Upgrade 3'] = {
                     ['ID'] = 'ModernUpgradeLvl3Item',
@@ -33279,6 +34240,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Modern Upgrade 4'] = {
                     ['ID'] = 'ModernUpgradeLvl4Item',
@@ -33310,6 +34272,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Moon Jellyfish'] = {
                     ['ID'] = 'MoonJellyfishItem',
@@ -33341,6 +34304,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Mortar'] = {
                     ['ID'] = 'MortarItem',
@@ -33372,6 +34336,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -33405,8 +34370,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mortared Gneiss'] = {
                     ['ID'] = 'MortaredGneissItem',
@@ -33438,8 +34403,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mortared Granite'] = {
                     ['ID'] = 'MortaredGraniteItem',
@@ -33471,8 +34436,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Mortared Granite Bench'] = {
                     ['ID'] = 'MortaredGraniteBenchItem',
@@ -33504,6 +34469,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Granite Chair'] = {
                     ['ID'] = 'MortaredGraniteChairItem',
@@ -33535,6 +34501,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Granite Door'] = {
                     ['ID'] = 'MortaredGraniteDoorItem',
@@ -33566,6 +34533,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Granite Fireplace'] = {
                     ['ID'] = 'MortaredGraniteFireplaceItem',
@@ -33597,6 +34565,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Granite Table'] = {
                     ['ID'] = 'MortaredGraniteTableItem',
@@ -33628,6 +34597,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Limestone'] = {
                     ['ID'] = 'MortaredLimestoneItem',
@@ -33659,8 +34629,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Mortared Limestone Bench'] = {
                     ['ID'] = 'MortaredLimestoneBenchItem',
@@ -33692,6 +34662,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Limestone Chair'] = {
                     ['ID'] = 'MortaredLimestoneChairItem',
@@ -33723,6 +34694,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Limestone Door'] = {
                     ['ID'] = 'MortaredLimestoneDoorItem',
@@ -33754,6 +34726,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Limestone Fireplace'] = {
                     ['ID'] = 'MortaredLimestoneFireplaceItem',
@@ -33785,6 +34758,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Limestone Table'] = {
                     ['ID'] = 'MortaredLimestoneTableItem',
@@ -33816,6 +34790,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Sandstone'] = {
                     ['ID'] = 'MortaredSandstoneItem',
@@ -33847,8 +34822,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Mortared Sandstone Bench'] = {
                     ['ID'] = 'MortaredSandstoneBenchItem',
@@ -33880,6 +34855,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Sandstone Chair'] = {
                     ['ID'] = 'MortaredSandstoneChairItem',
@@ -33911,6 +34887,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Sandstone Door'] = {
                     ['ID'] = 'MortaredSandstoneDoorItem',
@@ -33942,6 +34919,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Sandstone Fireplace'] = {
                     ['ID'] = 'MortaredSandstoneFireplaceItem',
@@ -33973,6 +34951,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Sandstone Table'] = {
                     ['ID'] = 'MortaredSandstoneTableItem',
@@ -34004,6 +34983,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Shale'] = {
                     ['ID'] = 'MortaredShaleItem',
@@ -34035,8 +35015,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Mortared Stone'] = {
                     ['ID'] = 'MortaredStoneItem',
@@ -34068,8 +35048,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Mortared Stone Bench'] = {
                     ['ID'] = 'MortaredStoneBenchItem',
@@ -34101,6 +35081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Stone Chair'] = {
                     ['ID'] = 'MortaredStoneChairItem',
@@ -34132,6 +35113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Stone Door'] = {
                     ['ID'] = 'MortaredStoneDoorItem',
@@ -34163,6 +35145,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Stone Fireplace'] = {
                     ['ID'] = 'MortaredStoneFireplaceItem',
@@ -34194,6 +35177,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mortared Stone Table'] = {
                     ['ID'] = 'MortaredStoneTableItem',
@@ -34225,6 +35209,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Mountain Goat Carcass'] = {
                     ['ID'] = 'MountainGoatCarcassItem',
@@ -34256,6 +35241,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Muffin Hat'] = {
                     ['ID'] = 'MuffinHatItem',
@@ -34287,6 +35273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Nail'] = {
@@ -34319,6 +35306,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nitric Acid'] = {
                     ['ID'] = 'NitricAcidItem',
@@ -34341,7 +35329,7 @@ return {
                             },
                     ['Weight'] = '1000',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Explosives', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Explosives', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -34350,6 +35338,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nitrogen Item'] = {
                     ['ID'] = 'NitrogenItem',
@@ -34381,6 +35370,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Normal Hair'] = {
                     ['ID'] = 'NormalHairItem',
@@ -34412,6 +35402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Norse Axe'] = {
@@ -34444,6 +35435,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Norse Canoe'] = {
                     ['ID'] = 'NorseCanoeItem',
@@ -34475,6 +35467,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Nuclear Fuel'] = {
                     ['ID'] = 'NuclearFuelItem',
@@ -34506,6 +35499,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nylon'] = {
                     ['ID'] = 'NylonItem',
@@ -34528,7 +35522,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -34537,6 +35531,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nylon Carpet'] = {
                     ['ID'] = 'NylonCarpetItem',
@@ -34568,8 +35563,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Nylon Chips'] = {
                     ['ID'] = 'NylonChipsItem',
@@ -34601,6 +35596,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nylon Curtains'] = {
                     ['ID'] = 'NylonCurtainsItem',
@@ -34632,8 +35628,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Nylon Fabric'] = {
                     ['ID'] = 'NylonFabricItem',
@@ -34665,6 +35661,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nylon Futon Bed'] = {
                     ['ID'] = 'NylonFutonBedItem',
@@ -34696,6 +35693,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Nylon Futon Couch'] = {
                     ['ID'] = 'NylonFutonCouchItem',
@@ -34727,6 +35725,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Nylon Mooring Rope'] = {
                     ['ID'] = 'NylonMooringRopeItem',
@@ -34758,6 +35757,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Nylon Thread'] = {
                     ['ID'] = 'NylonThreadItem',
@@ -34789,6 +35789,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -34822,6 +35823,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Oak Log'] = {
@@ -34854,8 +35856,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Occupancy Init Item'] = {
                     ['ID'] = 'OccupancyInitItem',
@@ -34887,6 +35889,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ocean Spray Seed'] = {
                     ['ID'] = 'OceanSpraySeedItem',
@@ -34918,6 +35921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -34951,6 +35955,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Office Mailbox'] = {
                     ['ID'] = 'OfficeMailboxItem',
@@ -34982,6 +35987,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Oil'] = {
                     ['ID'] = 'OilItem',
@@ -35013,6 +36019,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Oil Drilling Skill Book'] = {
@@ -35045,6 +36052,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Oil Drilling Skill Scroll'] = {
@@ -35077,6 +36085,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Oil Drilling Upgrade'] = {
@@ -35109,6 +36118,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Oil Head Lamp'] = {
                     ['ID'] = 'OilHeadLampItem',
@@ -35140,6 +36150,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Oil Paint'] = {
@@ -35172,6 +36183,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Oil Refinery'] = {
                     ['ID'] = 'OilRefineryItem',
@@ -35203,6 +36215,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Orange Vase'] = {
                     ['ID'] = 'OrangeVaseItem',
@@ -35234,6 +36247,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Orchid'] = {
                     ['ID'] = 'OrchidItem',
@@ -35265,6 +36279,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Orchid Seed'] = {
@@ -35297,6 +36312,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -35330,6 +36346,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Ornate Cast Iron Plaque'] = {
                     ['ID'] = 'OrnateCastIronPlaqueItem',
@@ -35361,6 +36378,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Gold Frame Landscape'] = {
                     ['ID'] = 'OrnateGoldFrameLandscapeItem',
@@ -35392,6 +36410,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Gold Frame Portrait'] = {
                     ['ID'] = 'OrnateGoldFramePortraitItem',
@@ -35423,6 +36442,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Gold Frame Square'] = {
                     ['ID'] = 'OrnateGoldFrameSquareItem',
@@ -35454,6 +36474,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Gold Frame Tall'] = {
                     ['ID'] = 'OrnateGoldFrameTallItem',
@@ -35485,6 +36506,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Gold Frame Wide'] = {
                     ['ID'] = 'OrnateGoldFrameWideItem',
@@ -35516,6 +36538,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Iron Frame Landscape'] = {
                     ['ID'] = 'OrnateIronFrameLandscapeItem',
@@ -35547,6 +36570,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Iron Frame Portrait'] = {
                     ['ID'] = 'OrnateIronFramePortraitItem',
@@ -35578,6 +36602,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Iron Frame Square'] = {
                     ['ID'] = 'OrnateIronFrameSquareItem',
@@ -35609,6 +36634,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Iron Frame Tall'] = {
                     ['ID'] = 'OrnateIronFrameTallItem',
@@ -35640,6 +36666,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Iron Frame Wide'] = {
                     ['ID'] = 'OrnateIronFrameWideItem',
@@ -35671,6 +36698,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Stone Plaque'] = {
                     ['ID'] = 'OrnateStonePlaqueItem',
@@ -35702,6 +36730,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wood Plaque'] = {
                     ['ID'] = 'OrnateWoodPlaqueItem',
@@ -35733,6 +36762,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wooden Frame Landscape'] = {
                     ['ID'] = 'OrnateWoodenFrameLandscapeItem',
@@ -35764,6 +36794,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wooden Frame Portrait'] = {
                     ['ID'] = 'OrnateWoodenFramePortraitItem',
@@ -35795,6 +36826,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wooden Frame Square'] = {
                     ['ID'] = 'OrnateWoodenFrameSquareItem',
@@ -35826,6 +36858,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wooden Frame Tall'] = {
                     ['ID'] = 'OrnateWoodenFrameTallItem',
@@ -35857,6 +36890,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Ornate Wooden Frame Wide'] = {
                     ['ID'] = 'OrnateWoodenFrameWideItem',
@@ -35888,6 +36922,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Orrery'] = {
                     ['ID'] = 'OrreryItem',
@@ -35919,6 +36954,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Otter Carcass'] = {
                     ['ID'] = 'OtterCarcassItem',
@@ -35950,6 +36986,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Outpost Claim Stake Item'] = {
                     ['ID'] = 'OutpostClaimStakeItem',
@@ -35981,6 +37018,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Outpost Netting'] = {
                     ['ID'] = 'OutpostNettingItem',
@@ -36012,6 +37050,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Outpost Table'] = {
                     ['ID'] = 'OutpostTableItem',
@@ -36043,6 +37082,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Oxygen Item'] = {
                     ['ID'] = 'OxygenItem',
@@ -36074,6 +37114,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Pacific Sardine'] = {
                     ['ID'] = 'PacificSardineItem',
@@ -36105,6 +37146,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Padded Chair'] = {
                     ['ID'] = 'PaddedChairItem',
@@ -36136,6 +37178,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Paint Bucket (White)'] = {
                     ['ID'] = 'PaintBucketItem',
@@ -36167,6 +37210,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ColorItem'] = 'True',
         },
         ['Paint Mixer'] = {
@@ -36199,6 +37243,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Paint Tool Item'] = {
                     ['ID'] = 'PaintToolItem',
@@ -36230,6 +37275,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Painting Skill Book'] = {
                     ['ID'] = 'PaintingSkillBook',
@@ -36261,6 +37307,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Painting Skill Scroll'] = {
@@ -36293,6 +37340,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Painting Upgrade'] = {
@@ -36325,6 +37373,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Palm Log'] = {
                     ['ID'] = 'PalmLogItem',
@@ -36356,8 +37405,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Palm Seed'] = {
                     ['ID'] = 'PalmSeedItem',
@@ -36389,6 +37438,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -36422,6 +37472,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Papaya'] = {
                     ['ID'] = 'PapayaItem',
@@ -36453,6 +37504,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Papaya Seed'] = {
@@ -36485,6 +37537,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -36518,6 +37571,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Paper'] = {
                     ['ID'] = 'PaperItem',
@@ -36549,6 +37603,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -36582,6 +37637,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Paper Milling Skill Book'] = {
                     ['ID'] = 'PaperMillingSkillBook',
@@ -36613,6 +37669,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Paper Milling Skill Scroll'] = {
@@ -36645,6 +37702,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Paper Milling Upgrade'] = {
@@ -36677,6 +37735,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Paper Streamers'] = {
                     ['ID'] = 'PaperStreamersItem',
@@ -36708,6 +37767,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Paraffin'] = {
                     ['ID'] = 'ParaffinItem',
@@ -36739,6 +37799,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Participation Trophy'] = {
                     ['ID'] = 'ParticipationTrophyItem',
@@ -36770,6 +37831,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Pastry Dough'] = {
                     ['ID'] = 'PastryDoughItem',
@@ -36801,6 +37863,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Peasant Hair'] = {
@@ -36833,6 +37896,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Peat'] = {
@@ -36865,8 +37929,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Pelt Fertilizer'] = {
                     ['ID'] = 'PeltFertilizerItem',
@@ -36898,6 +37962,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Periodic Table Poster'] = {
@@ -36930,6 +37995,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Petroleum'] = {
                     ['ID'] = 'PetroleumItem',
@@ -36952,7 +38018,7 @@ return {
                             },
                     ['Weight'] = '10000',
                     ['MaxStackSize'] = '10',
-                    ['Tags'] = {'Block', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Block', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -36961,8 +38027,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Phad Thai'] = {
                     ['ID'] = 'PhadThaiItem',
@@ -36994,6 +38060,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Phosphate Fertilizer'] = {
@@ -37017,7 +38084,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '50',
-                    ['Tags'] = {'Fertilizer', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Fertilizer', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -37026,6 +38093,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Picture Item'] = {
@@ -37058,6 +38126,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Pineapple'] = {
                     ['ID'] = 'PineappleItem',
@@ -37089,6 +38158,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Pineapple Friend Rice'] = {
@@ -37121,6 +38191,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Pineapple Seed'] = {
@@ -37153,6 +38224,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -37186,6 +38258,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Pirate Hat'] = {
                     ['ID'] = 'PirateHatItem',
@@ -37217,6 +38290,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Pirozhok'] = {
@@ -37249,6 +38323,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Piston'] = {
@@ -37281,6 +38356,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -37314,6 +38390,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Plant Vase'] = {
                     ['ID'] = 'PlantVaseItem',
@@ -37345,6 +38422,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Plastic'] = {
                     ['ID'] = 'PlasticItem',
@@ -37376,6 +38454,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -37409,6 +38488,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Plastic Outdoor Bench'] = {
                     ['ID'] = 'PlasticOutdoorBenchItem',
@@ -37440,6 +38520,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Plastic Outdoor Chair'] = {
                     ['ID'] = 'PlasticOutdoorChairItem',
@@ -37471,6 +38552,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Plastic Outdoor Table'] = {
                     ['ID'] = 'PlasticOutdoorTableItem',
@@ -37502,6 +38584,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Plastic Scrap'] = {
                     ['ID'] = 'PlasticScrapItem',
@@ -37533,8 +38616,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Plastic Window Planter'] = {
                     ['ID'] = 'PlasticWindowPlanterItem',
@@ -37566,6 +38649,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Player Item'] = {
                     ['ID'] = 'PlayerItem',
@@ -37597,6 +38681,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Poke Bowl'] = {
                     ['ID'] = 'PokeBowlItem',
@@ -37628,6 +38713,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Polishing Paste'] = {
@@ -37660,6 +38746,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -37693,8 +38780,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Polluted Water'] = {
                     ['ID'] = 'PollutedWaterItem',
@@ -37726,8 +38813,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Ponytail'] = {
                     ['ID'] = 'PonytailItem',
@@ -37759,6 +38846,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Portable Steam Engine'] = {
@@ -37791,6 +38879,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -37824,6 +38913,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Pottery Skill Scroll'] = {
@@ -37856,6 +38946,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Pottery Table'] = {
@@ -37888,6 +38979,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Pottery Upgrade'] = {
@@ -37920,6 +39012,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Power Hammer'] = {
                     ['ID'] = 'PowerHammerItem',
@@ -37951,6 +39044,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Powered Cart'] = {
                     ['ID'] = 'PoweredCartItem',
@@ -37982,6 +39076,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Powered Storage Silo'] = {
                     ['ID'] = 'PoweredStorageSiloItem',
@@ -38013,6 +39108,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Prairie Dog Carcass'] = {
                     ['ID'] = 'PrairieDogCarcassItem',
@@ -38044,6 +39140,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Prepared Meat'] = {
                     ['ID'] = 'PreparedMeatItem',
@@ -38075,6 +39172,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Prickly Pear Fruit'] = {
@@ -38107,6 +39205,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Prickly Pear Seed'] = {
@@ -38139,6 +39238,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -38172,6 +39272,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Prime Cut'] = {
                     ['ID'] = 'PrimeCutItem',
@@ -38203,6 +39304,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Primitive Bin'] = {
@@ -38235,6 +39337,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Primitive Canvas Boots'] = {
                     ['ID'] = 'PrimitiveCanvasBootsItem',
@@ -38266,6 +39369,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Canvas Pants'] = {
@@ -38298,6 +39402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Canvas Shorts'] = {
@@ -38330,6 +39435,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Dump'] = {
@@ -38362,6 +39468,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Primitive Fur Belt'] = {
                     ['ID'] = 'PrimitiveFurBeltItem',
@@ -38393,6 +39500,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Leather Boots'] = {
@@ -38425,6 +39533,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Leather Pants'] = {
@@ -38457,6 +39566,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Leather Shirt'] = {
@@ -38489,6 +39599,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Primitive Leather Shorts'] = {
@@ -38521,6 +39632,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Printing Press'] = {
@@ -38553,6 +39665,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Printing Supplies'] = {
                     ['ID'] = 'PrintingSuppliesItem',
@@ -38584,6 +39697,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Pulp Filler'] = {
                     ['ID'] = 'PulpFillerItem',
@@ -38615,6 +39729,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FertilizerItem'] = 'True',
         },
         ['Pump Jack'] = {
@@ -38647,6 +39762,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Pumpkin'] = {
                     ['ID'] = 'PumpkinItem',
@@ -38678,6 +39794,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Pumpkin Seed'] = {
@@ -38710,6 +39827,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -38743,6 +39861,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Punch Card Time Clock'] = {
                     ['ID'] = 'PunchCardItem',
@@ -38774,6 +39893,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Pupusas'] = {
                     ['ID'] = 'PupusasItem',
@@ -38805,6 +39925,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Purple Vase'] = {
@@ -38837,6 +39958,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Quicklime'] = {
                     ['ID'] = 'QuicklimeItem',
@@ -38868,6 +39990,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Radiator'] = {
                     ['ID'] = 'RadiatorItem',
@@ -38899,6 +40022,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -38932,6 +40056,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Raw Fish'] = {
@@ -38964,6 +40089,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Raw Meat'] = {
@@ -38996,6 +40122,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Raw Roast'] = {
@@ -39019,7 +40146,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -39028,6 +40155,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Raw Sausage'] = {
@@ -39060,6 +40188,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Real Estate Desk'] = {
@@ -39092,6 +40221,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rebar'] = {
                     ['ID'] = 'RebarItem',
@@ -39123,6 +40253,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Recurve Bow'] = {
                     ['ID'] = 'RecurveBowItem',
@@ -39154,6 +40285,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Recycler'] = {
                     ['ID'] = 'RecyclerItem',
@@ -39185,6 +40317,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Recycling Skill Book'] = {
                     ['ID'] = 'RecyclingSkillBook',
@@ -39216,6 +40349,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Recycling Skill Scroll'] = {
@@ -39248,6 +40382,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Red Vase'] = {
@@ -39280,6 +40415,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Redwood Log'] = {
                     ['ID'] = 'RedwoodLogItem',
@@ -39311,8 +40447,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Redwood Seed'] = {
                     ['ID'] = 'RedwoodSeedItem',
@@ -39344,6 +40480,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -39377,6 +40514,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Redwoods Poster'] = {
                     ['ID'] = 'RedwoodsPosterItem',
@@ -39408,6 +40546,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Refrigerated Display Cabinet'] = {
                     ['ID'] = 'RefrigeratedDisplayCabinetItem',
@@ -39439,6 +40578,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Refrigerator'] = {
                     ['ID'] = 'RefrigeratorItem',
@@ -39470,6 +40610,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Registrar'] = {
                     ['ID'] = 'RegistrarItem',
@@ -39501,6 +40642,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Reinforced Concrete'] = {
                     ['ID'] = 'ReinforcedConcreteItem',
@@ -39532,8 +40674,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '4',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Remote Detonator'] = {
                     ['ID'] = 'RemoteDetonatorItem',
@@ -39565,6 +40707,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Research Table'] = {
                     ['ID'] = 'ResearchTableItem',
@@ -39596,6 +40739,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Residual Waste Sorter'] = {
                     ['ID'] = 'ResidualWasteSorterItem',
@@ -39627,6 +40771,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rice'] = {
                     ['ID'] = 'RiceItem',
@@ -39658,6 +40803,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -39691,6 +40837,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Rice Noodles'] = {
@@ -39723,6 +40870,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Rice Pack'] = {
@@ -39755,6 +40903,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Rivet'] = {
                     ['ID'] = 'RivetItem',
@@ -39786,6 +40935,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Roast Pumpkin'] = {
                     ['ID'] = 'RoastPumpkinItem',
@@ -39817,6 +40967,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Robotic Assembly Line'] = {
@@ -39849,6 +41000,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rock Insulation'] = {
                     ['ID'] = 'RockInsulationItem',
@@ -39880,6 +41032,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Rocker Box'] = {
                     ['ID'] = 'RockerBoxItem',
@@ -39911,6 +41064,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rolling Mill'] = {
                     ['ID'] = 'RollingMillItem',
@@ -39942,6 +41096,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Root Campfire Salad'] = {
                     ['ID'] = 'RootCampfireSaladItem',
@@ -39964,7 +41119,7 @@ return {
                             },
                     ['Weight'] = '200',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Campfire Salad', 'Herbivore Feed', 'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -39973,6 +41128,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Root Campfire Stew'] = {
@@ -40005,6 +41161,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Rose'] = {
@@ -40037,6 +41194,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Rose Seed'] = {
                     ['ID'] = 'RoseSeedItem',
@@ -40068,6 +41226,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -40101,6 +41260,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Rotating Cube'] = {
                     ['ID'] = 'RotatingCubeItem',
@@ -40132,6 +41292,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Round Pot'] = {
                     ['ID'] = 'PlanterPotRoundItem',
@@ -40163,6 +41324,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rounded Face'] = {
                     ['ID'] = 'RoundedFaceItem',
@@ -40194,6 +41356,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Rubber Wheel'] = {
@@ -40226,6 +41389,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -40259,6 +41423,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rug Medium'] = {
                     ['ID'] = 'RugMediumItem',
@@ -40290,6 +41455,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Rug Small'] = {
                     ['ID'] = 'RugSmallItem',
@@ -40321,6 +41487,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Running Shoes'] = {
                     ['ID'] = 'RunningShoesItem',
@@ -40352,6 +41519,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Rustic Window Planter'] = {
@@ -40384,6 +41552,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Saguaro Rib'] = {
                     ['ID'] = 'SaguaroRibItem',
@@ -40415,8 +41584,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Saguaro Seed'] = {
                     ['ID'] = 'SaguaroSeedItem',
@@ -40448,6 +41617,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -40481,6 +41651,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Salmon'] = {
                     ['ID'] = 'SalmonItem',
@@ -40512,6 +41683,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Salt Basket'] = {
                     ['ID'] = 'SaltBasketItem',
@@ -40543,6 +41715,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Salt Water'] = {
                     ['ID'] = 'SaltWaterItem',
@@ -40574,8 +41747,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Sand'] = {
                     ['ID'] = 'SandItem',
@@ -40607,8 +41780,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Sandals'] = {
                     ['ID'] = 'SandalsItem',
@@ -40640,6 +41813,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Sandstone'] = {
@@ -40672,8 +41846,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Saved The World Achievement Trophy'] = {
                     ['ID'] = 'SavedTheWorldAchievementTrophyItem',
@@ -40705,6 +41879,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Sawmill'] = {
                     ['ID'] = 'SawmillItem',
@@ -40736,6 +41911,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Saxifrage Seed'] = {
                     ['ID'] = 'SaxifrageSeedItem',
@@ -40767,6 +41943,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -40800,6 +41977,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Scarecrow'] = {
                     ['ID'] = 'ScarecrowItem',
@@ -40831,6 +42009,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['School Supply Station Item'] = {
                     ['ID'] = 'SchoolSupplyStationItem',
@@ -40862,6 +42041,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Scorpion'] = {
                     ['ID'] = 'ScorpionItem',
@@ -40893,6 +42073,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Scrap Meat'] = {
                     ['ID'] = 'ScrapMeatItem',
@@ -40924,6 +42105,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Screening Machine'] = {
@@ -40956,6 +42138,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Screw Press'] = {
                     ['ID'] = 'ScrewPressItem',
@@ -40987,6 +42170,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Screws'] = {
@@ -41019,6 +42203,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Scruffy Hair'] = {
                     ['ID'] = 'ScruffyHairItem',
@@ -41050,6 +42235,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Seagrass Seed'] = {
@@ -41082,6 +42268,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -41115,6 +42302,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Seared Meat'] = {
                     ['ID'] = 'SearedMeatItem',
@@ -41146,6 +42334,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Seeded Camas Roll'] = {
@@ -41178,6 +42367,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sensor Based Belt Sorter'] = {
@@ -41210,6 +42400,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Sensuous Sea Pizza'] = {
                     ['ID'] = 'SensuousSeaPizzaItem',
@@ -41241,6 +42432,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Servo'] = {
@@ -41273,6 +42465,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -41306,6 +42499,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Sewage'] = {
                     ['ID'] = 'SewageItem',
@@ -41337,8 +42531,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Shale'] = {
                     ['ID'] = 'ShaleItem',
@@ -41370,8 +42564,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Shaper'] = {
                     ['ID'] = 'ShaperItem',
@@ -41403,6 +42597,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Shark Fillet Soup'] = {
@@ -41435,6 +42630,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Shark Jaws'] = {
@@ -41467,6 +42663,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Sharpening Steel'] = {
                     ['ID'] = 'SharpeningSteelItem',
@@ -41498,6 +42695,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -41531,6 +42729,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shelf Cabinet'] = {
                     ['ID'] = 'ShelfCabinetItem',
@@ -41562,6 +42761,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shipping Container Blue'] = {
                     ['ID'] = 'ShippingContainerBlueItem',
@@ -41593,6 +42793,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shipping Container Green'] = {
                     ['ID'] = 'ShippingContainerGreenItem',
@@ -41624,6 +42825,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shipping Container Red'] = {
                     ['ID'] = 'ShippingContainerRedItem',
@@ -41655,6 +42857,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shipwright Advanced Upgrade'] = {
                     ['ID'] = 'ShipwrightAdvancedUpgradeItem',
@@ -41686,6 +42889,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Shipwright Basic Upgrade'] = {
                     ['ID'] = 'ShipwrightBasicUpgradeItem',
@@ -41717,6 +42921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Shipwright Hat'] = {
                     ['ID'] = 'ShipwrightHatItem',
@@ -41748,6 +42953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Shipwright Overalls'] = {
@@ -41780,6 +42986,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Shipwright Sandals'] = {
@@ -41812,6 +43019,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Shipwright Shirt'] = {
@@ -41844,6 +43052,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Shipwright Sign'] = {
@@ -41876,6 +43085,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shipwright Skill Book'] = {
                     ['ID'] = 'ShipwrightSkillBook',
@@ -41907,6 +43117,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Shipwright Skill Scroll'] = {
@@ -41939,6 +43150,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Shoji Door'] = {
@@ -41971,6 +43183,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shorn Wool'] = {
                     ['ID'] = 'ShornWoolItem',
@@ -41993,7 +43206,7 @@ return {
                             },
                     ['Weight'] = '250',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Ingredient', 'Product'},
+                    ['Tags'] = {'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -42002,6 +43215,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Short Basic Hardwood Shelf'] = {
                     ['ID'] = 'ShortBasicHardwoodShelfItem',
@@ -42033,6 +43247,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Basic Softwood Shelf'] = {
                     ['ID'] = 'ShortBasicSoftwoodShelfItem',
@@ -42064,6 +43279,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Basic Wood Shelf'] = {
                     ['ID'] = 'ShortBasicWoodShelfItem',
@@ -42095,6 +43311,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Beard'] = {
                     ['ID'] = 'ShortBeardItem',
@@ -42126,6 +43343,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Short Curved Hardwood Veneer Shelf'] = {
@@ -42158,6 +43376,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Curved Softwood Veneer Shelf'] = {
                     ['ID'] = 'ShortCurvedSoftwoodVeneerShelfItem',
@@ -42189,6 +43408,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Curved Wood Veneer Shelf'] = {
                     ['ID'] = 'ShortCurvedWoodVeneerShelfItem',
@@ -42220,6 +43440,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Floating Hardwood Shelf'] = {
                     ['ID'] = 'ShortFloatingHardwoodShelfItem',
@@ -42251,6 +43472,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Floating Softwood Shelf'] = {
                     ['ID'] = 'ShortFloatingSoftwoodShelfItem',
@@ -42282,6 +43504,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Floating Wood Shelf'] = {
                     ['ID'] = 'ShortFloatingWoodShelfItem',
@@ -42313,6 +43536,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Hardwood Veneer Shelf'] = {
                     ['ID'] = 'ShortHardwoodVeneerShelfItem',
@@ -42344,6 +43568,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Softwood Veneer Shelf'] = {
                     ['ID'] = 'ShortSoftwoodVeneerShelfItem',
@@ -42375,6 +43600,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Steel Shelf'] = {
                     ['ID'] = 'ShortSteelShelfItem',
@@ -42406,6 +43632,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Thin Hardwood Veneer Shelf'] = {
                     ['ID'] = 'ShortThinHardwoodVeneerShelfItem',
@@ -42437,6 +43664,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Thin Softwood Veneer Shelf'] = {
                     ['ID'] = 'ShortThinSoftwoodVeneerShelfItem',
@@ -42468,6 +43696,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Thin Wood Veneer Shelf'] = {
                     ['ID'] = 'ShortThinWoodVeneerShelfItem',
@@ -42499,6 +43728,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Short Wood Veneer Shelf'] = {
                     ['ID'] = 'ShortWoodVeneerShelfItem',
@@ -42530,6 +43760,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Shorts'] = {
                     ['ID'] = 'ShortsItem',
@@ -42561,6 +43792,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Simmered Meat'] = {
@@ -42584,7 +43816,7 @@ return {
                             },
                     ['Weight'] = '800',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -42593,6 +43825,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Simple Syrup'] = {
@@ -42625,6 +43858,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sink'] = {
@@ -42657,6 +43891,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Skid Steer'] = {
                     ['ID'] = 'SkidSteerItem',
@@ -42688,6 +43923,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Slag'] = {
                     ['ID'] = 'SlagItem',
@@ -42719,8 +43955,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Sleek Short Hair'] = {
                     ['ID'] = 'SleekShortHairItem',
@@ -42752,6 +43988,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Small Bath Mat'] = {
@@ -42784,6 +44021,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Canoe'] = {
                     ['ID'] = 'SmallCanoeItem',
@@ -42815,6 +44053,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Clay Pot'] = {
                     ['ID'] = 'SmallClayPotItem',
@@ -42846,6 +44085,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Cotton Bunting Festive'] = {
                     ['ID'] = 'SmallCottonBuntingFestiveItem',
@@ -42877,6 +44117,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Cotton Bunting Red'] = {
                     ['ID'] = 'SmallCottonBuntingRedItem',
@@ -42908,6 +44149,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Cotton Bunting Regal'] = {
                     ['ID'] = 'SmallCottonBuntingRegalItem',
@@ -42939,6 +44181,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Cotton Bunting Vibrant'] = {
                     ['ID'] = 'SmallCottonBuntingVibrantItem',
@@ -42970,6 +44213,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Court'] = {
                     ['ID'] = 'SmallCourtItem',
@@ -43001,6 +44245,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Faceted Steel Pot'] = {
                     ['ID'] = 'SmallFacetedSteelPotItem',
@@ -43032,6 +44277,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Festive Paper Lantern'] = {
                     ['ID'] = 'SmallFestivePaperLanternItem',
@@ -43063,6 +44309,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Basalt Sign'] = {
                     ['ID'] = 'SmallHangingAshlarBasaltSignItem',
@@ -43094,6 +44341,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Gneiss Sign'] = {
                     ['ID'] = 'SmallHangingAshlarGneissSignItem',
@@ -43125,6 +44373,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Granite Sign'] = {
                     ['ID'] = 'SmallHangingAshlarGraniteSignItem',
@@ -43156,6 +44405,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Limestone Sign'] = {
                     ['ID'] = 'SmallHangingAshlarLimestoneSignItem',
@@ -43187,6 +44437,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Sandstone Sign'] = {
                     ['ID'] = 'SmallHangingAshlarSandstoneSignItem',
@@ -43218,6 +44469,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Shale Sign'] = {
                     ['ID'] = 'SmallHangingAshlarShaleSignItem',
@@ -43249,6 +44501,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ashlar Stone Sign'] = {
                     ['ID'] = 'SmallHangingAshlarStoneSignItem',
@@ -43280,6 +44533,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Birch Sign'] = {
                     ['ID'] = 'SmallHangingBirchSignItem',
@@ -43311,6 +44565,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Cedar Sign'] = {
                     ['ID'] = 'SmallHangingCedarSignItem',
@@ -43342,6 +44597,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Ceiba Sign'] = {
                     ['ID'] = 'SmallHangingCeibaSignItem',
@@ -43373,6 +44629,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Fir Sign'] = {
                     ['ID'] = 'SmallHangingFirSignItem',
@@ -43404,6 +44661,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Hardwood Sign'] = {
                     ['ID'] = 'SmallHangingHardwoodSignItem',
@@ -43435,6 +44693,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Joshua Sign'] = {
                     ['ID'] = 'SmallHangingJoshuaSignItem',
@@ -43466,6 +44725,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Lumber Sign'] = {
                     ['ID'] = 'SmallHangingLumberSignItem',
@@ -43497,6 +44757,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Mortared Granite Sign'] = {
                     ['ID'] = 'SmallHangingMortaredGraniteSignItem',
@@ -43528,6 +44789,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Mortared Limestone Sign'] = {
                     ['ID'] = 'SmallHangingMortaredLimestoneSignItem',
@@ -43559,6 +44821,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Mortared Sandstone Sign'] = {
                     ['ID'] = 'SmallHangingMortaredSandstoneSignItem',
@@ -43590,6 +44853,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Mortared Stone Sign'] = {
                     ['ID'] = 'SmallHangingMortaredStoneSignItem',
@@ -43621,6 +44885,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Oak Sign'] = {
                     ['ID'] = 'SmallHangingOakSignItem',
@@ -43652,6 +44917,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Palm Sign'] = {
                     ['ID'] = 'SmallHangingPalmSignItem',
@@ -43683,6 +44949,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Redwood Sign'] = {
                     ['ID'] = 'SmallHangingRedwoodSignItem',
@@ -43714,6 +44981,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Saguaro Sign'] = {
                     ['ID'] = 'SmallHangingSaguaroSignItem',
@@ -43745,6 +45013,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Softwood Sign'] = {
                     ['ID'] = 'SmallHangingSoftwoodSignItem',
@@ -43776,6 +45045,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Spruce Sign'] = {
                     ['ID'] = 'SmallHangingSpruceSignItem',
@@ -43807,6 +45077,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Stone Sign'] = {
                     ['ID'] = 'SmallHangingStoneSignItem',
@@ -43838,6 +45109,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Hanging Wood Sign'] = {
                     ['ID'] = 'SmallHangingWoodSignItem',
@@ -43869,6 +45141,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Lumber Store Window'] = {
                     ['ID'] = 'SmallLumberStoreWindowItem',
@@ -43900,6 +45173,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Meeting Chair'] = {
                     ['ID'] = 'SmallMeetingChairItem',
@@ -43931,6 +45205,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Meeting Table'] = {
                     ['ID'] = 'SmallMeetingTableItem',
@@ -43962,6 +45237,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Nylon Bunting Green'] = {
                     ['ID'] = 'SmallNylonBuntingGreenItem',
@@ -43993,6 +45269,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Nylon Bunting Purple'] = {
                     ['ID'] = 'SmallNylonBuntingPurpleItem',
@@ -44024,6 +45301,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Nylon Bunting Yellow'] = {
                     ['ID'] = 'SmallNylonBuntingYellowItem',
@@ -44055,6 +45333,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Paper Lantern'] = {
                     ['ID'] = 'SmallPaperLanternItem',
@@ -44086,6 +45365,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Paper Machine'] = {
                     ['ID'] = 'SmallPaperMachineItem',
@@ -44117,6 +45397,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Rough Basalt Pot'] = {
                     ['ID'] = 'SmallRoughBasaltPotItem',
@@ -44148,6 +45429,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Rough Limestone Pot'] = {
                     ['ID'] = 'SmallRoughLimestonePotItem',
@@ -44179,6 +45461,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Round Limestone Pot'] = {
                     ['ID'] = 'SmallRoundLimestonePotItem',
@@ -44210,6 +45493,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Shipyard'] = {
                     ['ID'] = 'SmallShipyardItem',
@@ -44241,6 +45525,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Sink'] = {
                     ['ID'] = 'SmallSinkItem',
@@ -44272,6 +45557,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Square Basalt Pot'] = {
                     ['ID'] = 'SmallSquareBasaltPotItem',
@@ -44303,6 +45589,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Square Clay Pot'] = {
                     ['ID'] = 'SmallSquareClayPotItem',
@@ -44334,6 +45621,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Square Limestone Pot'] = {
                     ['ID'] = 'SmallSquareLimestonePotItem',
@@ -44365,6 +45653,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Basalt Sign'] = {
                     ['ID'] = 'SmallStandingAshlarBasaltSignItem',
@@ -44396,6 +45685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Gneiss Sign'] = {
                     ['ID'] = 'SmallStandingAshlarGneissSignItem',
@@ -44427,6 +45717,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Granite Sign'] = {
                     ['ID'] = 'SmallStandingAshlarGraniteSignItem',
@@ -44458,6 +45749,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Limestone Sign'] = {
                     ['ID'] = 'SmallStandingAshlarLimestoneSignItem',
@@ -44489,6 +45781,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Sandstone Sign'] = {
                     ['ID'] = 'SmallStandingAshlarSandstoneSignItem',
@@ -44520,6 +45813,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Shale Sign'] = {
                     ['ID'] = 'SmallStandingAshlarShaleSignItem',
@@ -44551,6 +45845,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ashlar Stone Sign'] = {
                     ['ID'] = 'SmallStandingAshlarStoneSignItem',
@@ -44582,6 +45877,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Birch Sign'] = {
                     ['ID'] = 'SmallStandingBirchSignItem',
@@ -44613,6 +45909,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Cedar Sign'] = {
                     ['ID'] = 'SmallStandingCedarSignItem',
@@ -44644,6 +45941,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Ceiba Sign'] = {
                     ['ID'] = 'SmallStandingCeibaSignItem',
@@ -44675,6 +45973,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Fir Sign'] = {
                     ['ID'] = 'SmallStandingFirSignItem',
@@ -44706,6 +46005,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Hardwood Sign'] = {
                     ['ID'] = 'SmallStandingHardwoodSignItem',
@@ -44737,6 +46037,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Joshua Sign'] = {
                     ['ID'] = 'SmallStandingJoshuaSignItem',
@@ -44768,6 +46069,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Lumber Sign'] = {
                     ['ID'] = 'SmallStandingLumberSignItem',
@@ -44799,6 +46101,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Mortared Granite Sign'] = {
                     ['ID'] = 'SmallStandingMortaredGraniteSignItem',
@@ -44830,6 +46133,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Mortared Limestone Sign'] = {
                     ['ID'] = 'SmallStandingMortaredLimestoneSignItem',
@@ -44861,6 +46165,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Mortared Sandstone Sign'] = {
                     ['ID'] = 'SmallStandingMortaredSandstoneSignItem',
@@ -44892,6 +46197,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Mortared Stone Sign'] = {
                     ['ID'] = 'SmallStandingMortaredStoneSignItem',
@@ -44923,6 +46229,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Oak Sign'] = {
                     ['ID'] = 'SmallStandingOakSignItem',
@@ -44954,6 +46261,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Palm Sign'] = {
                     ['ID'] = 'SmallStandingPalmSignItem',
@@ -44985,6 +46293,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Redwood Sign'] = {
                     ['ID'] = 'SmallStandingRedwoodSignItem',
@@ -45016,6 +46325,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Saguaro Sign'] = {
                     ['ID'] = 'SmallStandingSaguaroSignItem',
@@ -45047,6 +46357,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Softwood Sign'] = {
                     ['ID'] = 'SmallStandingSoftwoodSignItem',
@@ -45078,6 +46389,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Spruce Sign'] = {
                     ['ID'] = 'SmallStandingSpruceSignItem',
@@ -45109,6 +46421,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Stone Sign'] = {
                     ['ID'] = 'SmallStandingStoneSignItem',
@@ -45140,6 +46453,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Standing Wood Sign'] = {
                     ['ID'] = 'SmallStandingWoodSignItem',
@@ -45171,6 +46485,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Steel Pot'] = {
                     ['ID'] = 'SmallSteelPotItem',
@@ -45202,6 +46517,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Stockpile'] = {
                     ['ID'] = 'SmallStockpileItem',
@@ -45233,6 +46549,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Stump Store Window'] = {
                     ['ID'] = 'SmallStumpStoreWindowItem',
@@ -45264,6 +46581,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Wood Cart'] = {
                     ['ID'] = 'SmallWoodCartItem',
@@ -45295,6 +46613,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Wooden Boat'] = {
                     ['ID'] = 'SmallWoodenBoatItem',
@@ -45326,6 +46645,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Small Wooden Ship Frame'] = {
                     ['ID'] = 'SmallWoodenShipFrameItem',
@@ -45357,6 +46677,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -45390,6 +46711,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Smelting Skill Book'] = {
                     ['ID'] = 'SmeltingSkillBook',
@@ -45421,6 +46743,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Smelting Skill Scroll'] = {
@@ -45453,6 +46776,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Smelting Upgrade'] = {
@@ -45485,6 +46809,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Smith Apron'] = {
                     ['ID'] = 'SmithApronItem',
@@ -45516,6 +46841,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smith Bandana'] = {
@@ -45548,6 +46874,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smith Boots'] = {
@@ -45580,6 +46907,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smith Gloves'] = {
@@ -45612,6 +46940,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smith Pants'] = {
@@ -45644,6 +46973,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smith Shirt'] = {
@@ -45676,6 +47006,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Smog'] = {
@@ -45708,6 +47039,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Smooth Gut Noodle Roll'] = {
                     ['ID'] = 'SmoothGutNoodleRollItem',
@@ -45739,6 +47071,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Snapping Turtle Carcass'] = {
@@ -45771,6 +47104,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Socialist Shirt'] = {
                     ['ID'] = 'SocialistShirtItem',
@@ -45802,6 +47136,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Softwood Board'] = {
@@ -45834,6 +47169,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Softwood Double Shelf'] = {
                     ['ID'] = 'SoftwoodDoubleShelfItem',
@@ -45865,6 +47201,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Hewn Log'] = {
                     ['ID'] = 'SoftwoodHewnLogItem',
@@ -45887,7 +47224,7 @@ return {
                             },
                     ['Weight'] = '10000',
                     ['MaxStackSize'] = '15',
-                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Fuel', 'Hewn Log', 'Burnable Fuel', 'Constructable', 'Block', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -45896,8 +47233,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '2',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Softwood Lumber'] = {
                     ['ID'] = 'SoftwoodLumberItem',
@@ -45929,8 +47266,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '3',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Softwood Lumber Bench'] = {
                     ['ID'] = 'SoftwoodLumberBenchItem',
@@ -45962,6 +47299,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Lumber Chair'] = {
                     ['ID'] = 'SoftwoodLumberChairItem',
@@ -45993,6 +47331,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Lumber Door'] = {
                     ['ID'] = 'SoftwoodLumberDoorItem',
@@ -46024,6 +47363,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Lumber Dresser'] = {
                     ['ID'] = 'SoftwoodLumberDresserItem',
@@ -46055,6 +47395,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Lumber Hallway Table'] = {
                     ['ID'] = 'SoftwoodLumberHallwayTableItem',
@@ -46086,6 +47427,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Softwood Lumber Table'] = {
                     ['ID'] = 'SoftwoodLumberTableItem',
@@ -46117,6 +47459,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Soil Decontaminant'] = {
                     ['ID'] = 'SoilDecontaminantItem',
@@ -46148,6 +47491,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Soil Sampler'] = {
                     ['ID'] = 'SoilSamplerItem',
@@ -46179,6 +47523,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Solar Generator'] = {
                     ['ID'] = 'SolarGeneratorItem',
@@ -46210,6 +47555,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Sombrero'] = {
                     ['ID'] = 'SombreroItem',
@@ -46241,6 +47587,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Spiky Roll'] = {
@@ -46273,6 +47620,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Spin Melter'] = {
@@ -46305,6 +47653,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
                     ['ModuleItem'] = 'True',
         },
         ['Spinning Jenny'] = {
@@ -46337,6 +47686,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Spoiled Food'] = {
                     ['ID'] = 'SpoiledFoodItem',
@@ -46368,6 +47718,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Spruce Log'] = {
                     ['ID'] = 'SpruceLogItem',
@@ -46399,8 +47750,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Spruce Seed'] = {
                     ['ID'] = 'SpruceSeedItem',
@@ -46432,6 +47783,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -46465,6 +47817,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Square Belt'] = {
                     ['ID'] = 'SquareBeltItem',
@@ -46496,6 +47849,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Square Jaw'] = {
@@ -46528,6 +47882,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Square Lumber Pot'] = {
@@ -46560,6 +47915,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Square Pot'] = {
                     ['ID'] = 'PlanterPotSquareItem',
@@ -46591,6 +47947,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stamp Mill'] = {
                     ['ID'] = 'StampMillItem',
@@ -46622,6 +47979,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Standing Basalt Pot'] = {
                     ['ID'] = 'StandingBasaltPotItem',
@@ -46653,6 +48011,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Standing Clay Pot'] = {
                     ['ID'] = 'StandingClayPotItem',
@@ -46684,6 +48043,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Standing Glass Sign'] = {
                     ['ID'] = 'StandingGlassSignItem',
@@ -46715,6 +48075,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Standing Long Steel Sign'] = {
                     ['ID'] = 'StandingLongSteelSignItem',
@@ -46746,6 +48107,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Standing Steel Brick Sign'] = {
                     ['ID'] = 'StandingSteelBrickSignItem',
@@ -46777,6 +48139,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Starter Camp'] = {
                     ['ID'] = 'StarterCampItem',
@@ -46808,6 +48171,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steam Engine'] = {
                     ['ID'] = 'SteamEngineItem',
@@ -46839,6 +48203,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steam Tractor'] = {
                     ['ID'] = 'SteamTractorItem',
@@ -46870,6 +48235,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steam Tractor Harvester'] = {
                     ['ID'] = 'SteamTractorHarvesterItem',
@@ -46901,6 +48267,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Tractor Plow'] = {
@@ -46933,6 +48300,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Tractor Scoop'] = {
@@ -46965,6 +48333,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Tractor Sower'] = {
@@ -46997,6 +48366,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Tractor Tree Cutter'] = {
@@ -47029,6 +48399,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Truck'] = {
@@ -47061,6 +48432,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steam Truck Flatbed'] = {
                     ['ID'] = 'SteamTruckFlatbedItem',
@@ -47092,6 +48464,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steam Truck Garbage Collector'] = {
@@ -47124,6 +48497,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Steel Abstract Fixture'] = {
@@ -47156,6 +48530,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Axe'] = {
                     ['ID'] = 'SteelAxeItem',
@@ -47187,6 +48562,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Axle'] = {
                     ['ID'] = 'SteelAxleItem',
@@ -47209,7 +48585,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -47218,6 +48594,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -47251,8 +48628,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Steel Bin'] = {
                     ['ID'] = 'SteelBinItem',
@@ -47284,6 +48661,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Buoy'] = {
                     ['ID'] = 'SteelBuoyItem',
@@ -47315,6 +48693,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Ceiling Light'] = {
                     ['ID'] = 'SteelCeilingLightItem',
@@ -47346,6 +48725,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Floor Lamp'] = {
                     ['ID'] = 'SteelFloorLampItem',
@@ -47377,6 +48757,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Gear'] = {
                     ['ID'] = 'SteelGearItem',
@@ -47408,6 +48789,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -47432,7 +48814,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -47441,6 +48823,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -47474,6 +48857,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Hanging Fixture'] = {
                     ['ID'] = 'SteelHangingFixtureItem',
@@ -47505,6 +48889,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Hanging Lamp'] = {
                     ['ID'] = 'SteelHangingLampItem',
@@ -47536,6 +48921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Hoe'] = {
                     ['ID'] = 'SteelHoeItem',
@@ -47567,6 +48953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Kitchen Lamp'] = {
                     ['ID'] = 'SteelKitchenLampItem',
@@ -47598,6 +48985,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Liquid Tank'] = {
                     ['ID'] = 'SteelLiquidTankItem',
@@ -47629,6 +49017,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Machete'] = {
                     ['ID'] = 'SteelMacheteItem',
@@ -47660,6 +49049,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Moorage Post'] = {
                     ['ID'] = 'SteelMooragePostItem',
@@ -47691,6 +49081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Pickaxe'] = {
                     ['ID'] = 'SteelPickaxeItem',
@@ -47722,6 +49113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Pipe'] = {
                     ['ID'] = 'SteelPipeItem',
@@ -47753,8 +49145,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Steel Plate'] = {
                     ['ID'] = 'SteelPlateItem',
@@ -47786,6 +49178,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -47819,6 +49212,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Row Seating'] = {
                     ['ID'] = 'SteelRowSeatingItem',
@@ -47850,6 +49244,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Saw Blade'] = {
                     ['ID'] = 'SteelSawBladeItem',
@@ -47881,6 +49276,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -47914,6 +49310,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Shovel'] = {
                     ['ID'] = 'SteelShovelItem',
@@ -47945,6 +49342,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Sickle'] = {
                     ['ID'] = 'SteelSickleItem',
@@ -47976,6 +49374,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Spring'] = {
                     ['ID'] = 'SteelSpringItem',
@@ -48007,6 +49406,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Steel Square Fixture'] = {
                     ['ID'] = 'SteelSquareFixtureItem',
@@ -48038,6 +49438,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Table Lamp'] = {
                     ['ID'] = 'SteelTableLampItem',
@@ -48069,6 +49470,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Steel Warehouse Shelves'] = {
                     ['ID'] = 'SteelWarehouseShelvesItem',
@@ -48100,6 +49502,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stenographers Table'] = {
                     ['ID'] = 'StenographersTableItem',
@@ -48131,6 +49534,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stockpile'] = {
                     ['ID'] = 'StockpileItem',
@@ -48162,6 +49566,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stone'] = {
                     ['ID'] = 'StoneItem',
@@ -48193,8 +49598,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Stone Axe'] = {
                     ['ID'] = 'StoneAxeItem',
@@ -48226,6 +49631,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stone Brazier'] = {
                     ['ID'] = 'StoneBrazierItem',
@@ -48257,6 +49663,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stone Door'] = {
                     ['ID'] = 'StoneDoorItem',
@@ -48288,6 +49695,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stone Hammer'] = {
                     ['ID'] = 'StoneHammerItem',
@@ -48319,6 +49727,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stone Machete'] = {
                     ['ID'] = 'StoneMacheteItem',
@@ -48350,6 +49759,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stone Pickaxe'] = {
                     ['ID'] = 'StonePickaxeItem',
@@ -48381,6 +49791,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stone Plaque'] = {
                     ['ID'] = 'StonePlaqueItem',
@@ -48412,6 +49823,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stone Road'] = {
                     ['ID'] = 'StoneRoadItem',
@@ -48443,8 +49855,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Stone Road Tool'] = {
                     ['ID'] = 'StoneRoadToolItem',
@@ -48476,6 +49888,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stone Rubble'] = {
                     ['ID'] = 'StoneRubbleItem',
@@ -48507,8 +49920,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Stone Sickle'] = {
                     ['ID'] = 'StoneSickleItem',
@@ -48540,6 +49953,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Stop Sign'] = {
                     ['ID'] = 'StopSignItem',
@@ -48571,6 +49985,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Storage Chest'] = {
                     ['ID'] = 'StorageChestItem',
@@ -48602,6 +50017,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Storage Silo'] = {
                     ['ID'] = 'StorageSiloItem',
@@ -48633,6 +50049,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Store'] = {
                     ['ID'] = 'StoreItem',
@@ -48664,6 +50081,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Store Sign'] = {
                     ['ID'] = 'StoreSignItem',
@@ -48695,6 +50113,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stove'] = {
                     ['ID'] = 'StoveItem',
@@ -48726,6 +50145,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Strange Fuel'] = {
                     ['ID'] = 'StrangeFuelItem',
@@ -48757,6 +50177,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Street Sign'] = {
                     ['ID'] = 'StreetSignItem',
@@ -48788,6 +50209,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Streetlamp'] = {
                     ['ID'] = 'StreetlampItem',
@@ -48819,6 +50241,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Students Desk Item'] = {
                     ['ID'] = 'StudentsDeskItem',
@@ -48850,6 +50273,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Students Desk T1'] = {
                     ['ID'] = 'StudentsDeskT1Item',
@@ -48881,6 +50305,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Students Desk T2'] = {
                     ['ID'] = 'StudentsDeskT2Item',
@@ -48912,6 +50337,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Students Desk T3'] = {
                     ['ID'] = 'StudentsDeskT3Item',
@@ -48943,6 +50369,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Alligator'] = {
                     ['ID'] = 'StuffedAlligatorItem',
@@ -48974,6 +50401,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Bison'] = {
                     ['ID'] = 'StuffedBisonItem',
@@ -49005,6 +50433,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Elk'] = {
                     ['ID'] = 'StuffedElkItem',
@@ -49036,6 +50465,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Goat'] = {
                     ['ID'] = 'StuffedGoatItem',
@@ -49067,6 +50497,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Jaguar'] = {
                     ['ID'] = 'StuffedJaguarItem',
@@ -49098,6 +50529,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stuffed Turkey'] = {
                     ['ID'] = 'StuffedTurkeyItem',
@@ -49129,6 +50561,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Stuffed Wolf'] = {
@@ -49161,6 +50594,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stump Bed'] = {
                     ['ID'] = 'StumpBedItem',
@@ -49192,6 +50626,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stump Chair'] = {
                     ['ID'] = 'StumpChairItem',
@@ -49223,6 +50658,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stump Latrine'] = {
                     ['ID'] = 'StumpLatrineItem',
@@ -49254,6 +50690,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Stump Table'] = {
                     ['ID'] = 'StumpTableItem',
@@ -49285,6 +50722,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Substrate'] = {
                     ['ID'] = 'SubstrateItem',
@@ -49316,6 +50754,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Sugar'] = {
                     ['ID'] = 'SugarItem',
@@ -49347,6 +50786,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sugarcane'] = {
@@ -49379,6 +50819,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -49412,6 +50853,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Sulfur'] = {
                     ['ID'] = 'SulfurItem',
@@ -49443,8 +50885,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Sulfuric Acid'] = {
                     ['ID'] = 'SulfuricAcidItem',
@@ -49476,6 +50918,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Sun Butter'] = {
                     ['ID'] = 'SunButterItem',
@@ -49507,6 +50950,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sun Cheese'] = {
@@ -49539,6 +50983,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sunflower'] = {
@@ -49571,6 +51016,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sunflower Seed'] = {
@@ -49603,6 +51049,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -49636,6 +51083,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Sweet Deer Jerky'] = {
                     ['ID'] = 'SweetDeerJerkyItem',
@@ -49667,6 +51115,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Sweet Salad'] = {
@@ -49699,6 +51148,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Swirl Vase'] = {
@@ -49731,6 +51181,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Switch'] = {
                     ['ID'] = 'SwitchItem',
@@ -49762,6 +51213,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Synthetic Rubber'] = {
                     ['ID'] = 'SyntheticRubberItem',
@@ -49793,6 +51245,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tailings'] = {
                     ['ID'] = 'TailingsItem',
@@ -49824,8 +51277,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Tailor Bowler Hat'] = {
                     ['ID'] = 'TailorBowlerHatItem',
@@ -49857,6 +51310,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tailor Pants'] = {
@@ -49889,6 +51343,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tailor Shirt'] = {
@@ -49921,6 +51376,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tailor Shoes'] = {
@@ -49953,6 +51409,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tailor Sign'] = {
@@ -49985,6 +51442,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tailoring Basic Upgrade'] = {
                     ['ID'] = 'TailoringUpgradeItem',
@@ -50016,6 +51474,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tailoring Modern Upgrade'] = {
                     ['ID'] = 'TailoringModernUpgradeItem',
@@ -50047,6 +51506,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tailoring Skill Book'] = {
                     ['ID'] = 'TailoringSkillBook',
@@ -50078,6 +51538,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillBook'] = 'True',
         },
         ['Tailoring Skill Scroll'] = {
@@ -50110,6 +51571,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['SkillScroll'] = 'True',
         },
         ['Tailoring Table'] = {
@@ -50142,6 +51604,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tall Boots'] = {
                     ['ID'] = 'TallBootsItem',
@@ -50173,6 +51636,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tall Limestone Pot'] = {
@@ -50205,6 +51669,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tallow'] = {
                     ['ID'] = 'TallowItem',
@@ -50236,6 +51701,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Tallow Candle'] = {
@@ -50268,6 +51734,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tallow Lamp'] = {
                     ['ID'] = 'TallowLampItem',
@@ -50299,6 +51766,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tallow Wall Lamp'] = {
                     ['ID'] = 'TallowWallLampItem',
@@ -50330,6 +51798,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tapestry'] = {
                     ['ID'] = 'TapestryItem',
@@ -50361,6 +51830,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tapestry Fish'] = {
                     ['ID'] = 'TapestryFishItem',
@@ -50392,6 +51862,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tapestry Sunset'] = {
                     ['ID'] = 'TapestrySunsetItem',
@@ -50423,6 +51894,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Taro Fries'] = {
                     ['ID'] = 'TaroFriesItem',
@@ -50454,6 +51926,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Taro Root'] = {
@@ -50486,6 +51959,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Taro Seed'] = {
@@ -50518,6 +51992,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -50551,6 +52026,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tasty Tropical Pizza'] = {
                     ['ID'] = 'TastyTropicalPizzaItem',
@@ -50582,6 +52058,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Teachers Desk Item'] = {
@@ -50614,6 +52091,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Teachers Desk T1'] = {
                     ['ID'] = 'TeachersDeskT1Item',
@@ -50645,6 +52123,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Teachers Desk T2'] = {
                     ['ID'] = 'TeachersDeskT2Item',
@@ -50676,6 +52155,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Teachers Desk T3'] = {
                     ['ID'] = 'TeachersDeskT3Item',
@@ -50707,6 +52187,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Textiles'] = {
                     ['ID'] = 'TextilesItem',
@@ -50738,8 +52219,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['The Bob'] = {
                     ['ID'] = 'TheBobItem',
@@ -50771,6 +52252,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Tiki Torch'] = {
@@ -50803,6 +52285,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tiny Stockpile'] = {
                     ['ID'] = 'TinyStockpileItem',
@@ -50834,6 +52317,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Toilet'] = {
                     ['ID'] = 'ToiletItem',
@@ -50865,6 +52349,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Toll'] = {
                     ['ID'] = 'TollItem',
@@ -50896,6 +52381,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tomato'] = {
                     ['ID'] = 'TomatoItem',
@@ -50927,6 +52413,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Tomato Seed'] = {
@@ -50959,6 +52446,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -50992,6 +52480,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tool Bench'] = {
                     ['ID'] = 'ToolBenchItem',
@@ -51023,6 +52512,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Topped Porridge'] = {
                     ['ID'] = 'ToppedPorridgeItem',
@@ -51054,6 +52544,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Torch'] = {
@@ -51086,6 +52577,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Torch Stand'] = {
                     ['ID'] = 'TorchStandItem',
@@ -51117,6 +52609,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tortilla'] = {
                     ['ID'] = 'TortillaItem',
@@ -51148,6 +52641,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Towel Rack'] = {
@@ -51180,6 +52674,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Town Bell'] = {
                     ['ID'] = 'TownBellItem',
@@ -51211,6 +52706,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Town Claim Stake'] = {
                     ['ID'] = 'TownClaimStakeItem',
@@ -51242,6 +52738,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Town Foundation'] = {
                     ['ID'] = 'TownFoundationItem',
@@ -51273,6 +52770,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trailer Truck'] = {
                     ['ID'] = 'TrailerTruckItem',
@@ -51304,6 +52802,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Transglutaminase'] = {
                     ['ID'] = 'TransglutaminaseItem',
@@ -51335,6 +52834,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Transmission Pole'] = {
@@ -51367,6 +52867,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trapper Fur Hat'] = {
                     ['ID'] = 'TrapperFurHatItem',
@@ -51398,6 +52899,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Trapper Leather Hat'] = {
@@ -51430,6 +52932,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Trash Item'] = {
@@ -51462,6 +52965,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Treasure Backpack'] = {
                     ['ID'] = 'TreasureBackpackItem',
@@ -51493,6 +52997,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Treasury'] = {
@@ -51525,6 +53030,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Tree Debris'] = {
                     ['ID'] = 'TreeDebrisItem',
@@ -51556,8 +53062,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Trillium Flower'] = {
                     ['ID'] = 'TrilliumFlowerItem',
@@ -51589,6 +53095,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Trillium Seed'] = {
@@ -51621,6 +53128,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -51654,6 +53162,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tripod Camera'] = {
                     ['ID'] = 'TripodCameraItem',
@@ -51685,6 +53194,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trophy Artist'] = {
                     ['ID'] = 'TrophyArtistItem',
@@ -51716,6 +53226,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trophy Baker'] = {
                     ['ID'] = 'TrophyBakerItem',
@@ -51747,6 +53258,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trophy Farmer'] = {
                     ['ID'] = 'TrophyFarmerItem',
@@ -51778,6 +53290,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trophy Logger'] = {
                     ['ID'] = 'TrophyLoggerItem',
@@ -51809,6 +53322,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trophy Miner'] = {
                     ['ID'] = 'TrophyMinerItem',
@@ -51840,6 +53354,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Trousers'] = {
                     ['ID'] = 'TrousersItem',
@@ -51871,6 +53386,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Trout'] = {
@@ -51903,6 +53419,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Truck'] = {
                     ['ID'] = 'TruckItem',
@@ -51934,6 +53451,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Truck Dumpster Loader'] = {
                     ['ID'] = 'TruckDumpsterLoaderItem',
@@ -51965,6 +53483,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Truck Flatbed'] = {
@@ -51997,6 +53516,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Truck Garbage Collector'] = {
@@ -52029,6 +53549,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['VehicleToolItem'] = 'True',
         },
         ['Tulip'] = {
@@ -52061,6 +53582,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tulip Seed'] = {
                     ['ID'] = 'TulipSeedItem',
@@ -52092,6 +53614,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -52125,6 +53648,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tuna'] = {
                     ['ID'] = 'TunaItem',
@@ -52156,6 +53680,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Tunic'] = {
                     ['ID'] = 'TunicItem',
@@ -52187,6 +53712,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Turkey Carcass'] = {
@@ -52219,6 +53745,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Upholstered Chair'] = {
                     ['ID'] = 'UpholsteredChairItem',
@@ -52250,6 +53777,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Upholstered Couch'] = {
                     ['ID'] = 'UpholsteredCouchItem',
@@ -52281,6 +53809,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Urchin'] = {
                     ['ID'] = 'UrchinItem',
@@ -52312,6 +53841,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Valve'] = {
                     ['ID'] = 'ValveItem',
@@ -52343,6 +53873,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Vegetable Medley'] = {
                     ['ID'] = 'VegetableMedleyItem',
@@ -52374,6 +53905,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Vegetable Soup'] = {
@@ -52406,6 +53938,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Vegetable Stock'] = {
@@ -52429,7 +53962,7 @@ return {
                             },
                     ['Weight'] = '600',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Food', 'Can Be On Surface', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Food', 'Can Be On Surface', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -52438,6 +53971,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Vehicle Tool Toggle'] = {
@@ -52470,6 +54004,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Villagers Cowl Lowered'] = {
                     ['ID'] = 'VillagersCowlLoweredItem',
@@ -52501,6 +54036,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Villagers Cowl Raised'] = {
@@ -52533,6 +54069,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wainwright Table'] = {
@@ -52565,6 +54102,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wall Candle'] = {
                     ['ID'] = 'WallCandleItem',
@@ -52596,6 +54134,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wall Mounted Chest'] = {
                     ['ID'] = 'WallMountedChestItem',
@@ -52627,6 +54166,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wall Mounted Trunk'] = {
                     ['ID'] = 'WallMountedTrunkItem',
@@ -52658,6 +54198,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wanderers Hood Lowered'] = {
                     ['ID'] = 'WanderersHoodLoweredItem',
@@ -52689,6 +54230,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wanderers Hood Raised'] = {
@@ -52721,6 +54263,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Washboard'] = {
@@ -52753,6 +54296,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Washing Machine'] = {
                     ['ID'] = 'WashingMachineItem',
@@ -52784,6 +54328,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Waste Filter'] = {
                     ['ID'] = 'WasteFilterItem',
@@ -52815,6 +54360,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Water'] = {
                     ['ID'] = 'WaterItem',
@@ -52846,8 +54392,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Water Filter'] = {
                     ['ID'] = 'WaterFilterItem',
@@ -52879,6 +54425,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Waterweed Seed'] = {
                     ['ID'] = 'WaterweedSeedItem',
@@ -52910,6 +54457,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -52943,6 +54491,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Waterwheel'] = {
                     ['ID'] = 'WaterwheelItem',
@@ -52974,6 +54523,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Waxed Paper'] = {
                     ['ID'] = 'WaxedPaperItem',
@@ -52996,7 +54546,7 @@ return {
                             },
                     ['Weight'] = '120',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Product', 'Ingredient'},
+                    ['Tags'] = {'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -53005,6 +54555,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wet Brick'] = {
                     ['ID'] = 'WetBrickItem',
@@ -53036,6 +54587,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wet Tailings'] = {
                     ['ID'] = 'WetTailingsItem',
@@ -53067,8 +54619,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Wheat'] = {
                     ['ID'] = 'WheatItem',
@@ -53100,6 +54652,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Wheat Seed'] = {
@@ -53132,6 +54685,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -53165,6 +54719,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wheelbarrow'] = {
                     ['ID'] = 'WheelbarrowItem',
@@ -53196,6 +54751,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Whetstone'] = {
                     ['ID'] = 'WhetstoneItem',
@@ -53218,7 +54774,7 @@ return {
                             },
                     ['Weight'] = '100',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -53227,6 +54783,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -53260,6 +54817,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
                     ['SeedItem'] = 'True',
         },
@@ -53293,6 +54851,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['White Powder'] = {
                     ['ID'] = 'WhitePowderItem',
@@ -53324,6 +54883,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wide Hips'] = {
                     ['ID'] = 'WideHipsItem',
@@ -53355,6 +54915,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wild Mix'] = {
@@ -53387,6 +54948,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Wild Stew'] = {
@@ -53419,6 +54981,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Wilted Fiddleheads'] = {
@@ -53451,6 +55014,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Wind Turbine'] = {
@@ -53483,6 +55047,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Windmill'] = {
                     ['ID'] = 'WindmillItem',
@@ -53514,6 +55079,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Window Shutters Center'] = {
                     ['ID'] = 'WindowShuttersCenterItem',
@@ -53545,6 +55111,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Window Shutters Left'] = {
                     ['ID'] = 'WindowShuttersLeftItem',
@@ -53576,6 +55143,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Window Shutters Right'] = {
                     ['ID'] = 'WindowShuttersRightItem',
@@ -53607,6 +55175,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wire'] = {
                     ['ID'] = 'WireItem',
@@ -53638,8 +55207,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Wolf Carcass'] = {
                     ['ID'] = 'WolfCarcassItem',
@@ -53671,6 +55240,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wolf Pelt'] = {
                     ['ID'] = 'WolfPeltItem',
@@ -53702,6 +55272,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wolf Whisperer Hat'] = {
                     ['ID'] = 'WolfWhispererHatItem',
@@ -53733,6 +55304,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wolf Whisperer Mask'] = {
@@ -53765,6 +55337,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wolf Whisperer Shirt'] = {
@@ -53797,6 +55370,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Wood Cart'] = {
@@ -53829,6 +55403,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wood Double Shelf'] = {
                     ['ID'] = 'WoodDoubleShelfItem',
@@ -53860,6 +55435,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wood Plaque'] = {
                     ['ID'] = 'WoodPlaqueItem',
@@ -53891,6 +55467,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wood Pulp'] = {
                     ['ID'] = 'WoodPulpItem',
@@ -53922,6 +55499,7 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wood Scrap'] = {
                     ['ID'] = 'WoodScrapItem',
@@ -53953,8 +55531,8 @@ return {
                     ['IsFuel'] = 'True',
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'False',
         },
         ['Wood Shop Cart'] = {
                     ['ID'] = 'WoodShopCartItem',
@@ -53986,6 +55564,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wood Window Planter'] = {
                     ['ID'] = 'WoodWindowPlanterItem',
@@ -54017,6 +55596,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Barge'] = {
                     ['ID'] = 'WoodenBargeItem',
@@ -54048,6 +55628,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Bow'] = {
                     ['ID'] = 'WoodenBowItem',
@@ -54079,6 +55660,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Ceiling Light'] = {
                     ['ID'] = 'WoodenCeilingLightItem',
@@ -54110,6 +55692,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Dumpster'] = {
                     ['ID'] = 'WoodenDumpsterItem',
@@ -54141,6 +55724,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Elevator'] = {
                     ['ID'] = 'WoodenElevatorItem',
@@ -54172,6 +55756,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Fabric Bed'] = {
                     ['ID'] = 'WoodenFabricBedItem',
@@ -54203,6 +55788,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Floor Lamp'] = {
                     ['ID'] = 'WoodenFloorLampItem',
@@ -54234,6 +55820,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Frame Landscape'] = {
                     ['ID'] = 'WoodenFrameLandscapeItem',
@@ -54265,6 +55852,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Frame Portrait'] = {
                     ['ID'] = 'WoodenFramePortraitItem',
@@ -54296,6 +55884,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Frame Square'] = {
                     ['ID'] = 'WoodenFrameSquareItem',
@@ -54327,6 +55916,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Frame Tall'] = {
                     ['ID'] = 'WoodenFrameTallItem',
@@ -54358,6 +55948,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Frame Wide'] = {
                     ['ID'] = 'WoodenFrameWideItem',
@@ -54389,6 +55980,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Gear'] = {
                     ['ID'] = 'WoodenGearItem',
@@ -54411,7 +56003,7 @@ return {
                             },
                     ['Weight'] = '500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
+                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -54420,6 +56012,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -54453,6 +56046,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Hull Planks'] = {
                     ['ID'] = 'WoodenHullPlanksItem',
@@ -54475,7 +56069,7 @@ return {
                             },
                     ['Weight'] = '1500',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Parts', 'Product', 'Ingredient'},
+                    ['Tags'] = {'Parts', 'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -54484,6 +56078,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -54517,6 +56112,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Kitchen Lamp'] = {
                     ['ID'] = 'WoodenKitchenLampItem',
@@ -54548,6 +56144,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Latrine'] = {
                     ['ID'] = 'LatrineItem',
@@ -54579,6 +56176,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Liquid Tank'] = {
                     ['ID'] = 'WoodenLiquidTankItem',
@@ -54610,6 +56208,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Mold'] = {
                     ['ID'] = 'WoodenMoldItem',
@@ -54641,6 +56240,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Moorage Post'] = {
                     ['ID'] = 'WoodenMooragePostItem',
@@ -54672,6 +56272,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Oar'] = {
                     ['ID'] = 'WoodenOarItem',
@@ -54703,6 +56304,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -54736,6 +56338,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Podium'] = {
                     ['ID'] = 'WoodenPodiumItem',
@@ -54767,6 +56370,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Rudder'] = {
                     ['ID'] = 'WoodenRudderItem',
@@ -54798,6 +56402,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Shovel'] = {
                     ['ID'] = 'WoodenShovelItem',
@@ -54829,6 +56434,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wooden Sliding Door'] = {
                     ['ID'] = 'WoodenSlidingDoorItem',
@@ -54860,6 +56466,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Straw Bed'] = {
                     ['ID'] = 'WoodenStrawBedItem',
@@ -54891,6 +56498,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Table Lamp'] = {
                     ['ID'] = 'WoodenTableLampItem',
@@ -54922,6 +56530,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Transport Ship'] = {
                     ['ID'] = 'WoodenTransportShipItem',
@@ -54953,6 +56562,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Wall Torch Stand'] = {
                     ['ID'] = 'WoodenWallTorchStandItem',
@@ -54984,6 +56594,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Wooden Wheel'] = {
                     ['ID'] = 'WoodenWheelItem',
@@ -55015,6 +56626,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['PartItem'] = 'True',
                     ['MaxDurability'] = '100',
         },
@@ -55048,8 +56660,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '5',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Wool Curtains'] = {
                     ['ID'] = 'WoolCurtainsItem',
@@ -55081,8 +56693,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Wool Fabric'] = {
                     ['ID'] = 'WoolFabricItem',
@@ -55114,6 +56726,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Wool Yarn'] = {
                     ['ID'] = 'WoolYarnItem',
@@ -55136,7 +56749,7 @@ return {
                             },
                     ['Weight'] = '20',
                     ['MaxStackSize'] = '100',
-                    ['Tags'] = {'Product', 'Ingredient'},
+                    ['Tags'] = {'Ingredient', 'Product'},
                     ['IsPaidItem'] = nil,
                     ['IsTool'] = nil,
                     ['CanBeCurrency'] = nil,
@@ -55145,6 +56758,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Work Backpack'] = {
                     ['ID'] = 'WorkBackpackItem',
@@ -55176,6 +56790,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Work Boots'] = {
@@ -55208,6 +56823,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['ClothingItem'] = 'True',
         },
         ['Workbench'] = {
@@ -55240,6 +56856,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Worldly Donut'] = {
                     ['ID'] = 'WorldlyDonutItem',
@@ -55271,6 +56888,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Yeast'] = {
@@ -55303,6 +56921,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['FoodItem'] = 'True',
         },
         ['Yellow Powder'] = {
@@ -55335,6 +56954,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
         },
         ['Zataku Table'] = {
                     ['ID'] = 'ZatakuTableItem',
@@ -55366,6 +56986,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
         ['Zen Garden'] = {
                     ['ID'] = 'ZenGardenItem',
@@ -55397,8 +57018,8 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = 'True',
                     ['WorldObjectItem'] = nil,
+                    ['Tier'] = '0',
                     ['BlockItem'] = 'True',
-                    ['HasForms'] = 'True',
         },
         ['Zoning Office'] = {
                     ['ID'] = 'ZoningOfficeItem',
@@ -55430,6 +57051,7 @@ return {
                     ['IsFuel'] = nil,
                     ['IsStackable'] = nil,
                     ['WorldObjectItem'] = 'True',
+                    ['Tier'] = '0',
         },
     },
 }
