@@ -90,8 +90,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 				{ "IsWasteProduct", "nil" },
 				{ "IsFuel", "nil" },
 				{ "IsStackable", "nil" },
-                { "WorldObjectItem", "nil" }
-
+                { "WorldObjectItem", "nil" },
+                { "Tier", "'0'" }
             };
 
 			Dictionary<string, string> foodDetails = new Dictionary<string, string>()
@@ -211,8 +211,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 					if (item is BlockItem Block)
 					{
 						ItemData[ItemName]["BlockItem"] = $"'True'";
-						ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
+						//ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
                         if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
+
+
 
                     }
 					if (item is SeedItem Seed)
