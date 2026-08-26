@@ -89,8 +89,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     "Effects When Worn",
 
-                    "Skill Benefits",
-
                     "Can chop",
 
                     "Pollution Containment",
