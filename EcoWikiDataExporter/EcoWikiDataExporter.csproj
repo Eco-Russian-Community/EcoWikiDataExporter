@@ -26,7 +26,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.14.0-beta-release-1049" />
+		<PackageReference Include="Eco.ReferenceAssemblies" Version="0.14.1-beta-release-1077" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 	</ItemGroup>
 	
