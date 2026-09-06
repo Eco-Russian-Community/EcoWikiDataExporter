@@ -39,27 +39,25 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-
-      private static SortedDictionary<string, Dictionary<string, string>> VersionData = new SortedDictionary<string, Dictionary<string, string>>();
+        // dictionary of Eco version
+        public class EcoVersionData
+        {
+            public string Version { get; set; }
+            public string VersionNumber { get; set; }
+            public string FullVersion { get; set; }
+        }
 
         public static void ExportVersionData()
         {
-
-            // dictionary of Eco version
-            Dictionary<string, string> EcoDetails = new Dictionary<string, string>()
-            {
-                { "Version", "nil" },
-                { "VersionNumber", "nil" },
-                { "FullInfo", "nil" },
+            EcoVersionData ecoversiondata = new EcoVersionData { 
+                Version = EcoVersion.Version, 
+                VersionNumber = EcoVersion.VersionNumber,
+                FullVersion = EcoVersion.FullInfo.Replace("\r\n", " ")
             };
 
-            VersionData["eco"] = EcoDetails;
-            VersionData["eco"]["Version"] = $"'{EcoVersion.Version}'";
-            VersionData["eco"]["VersionNumber"] = $"'{EcoVersion.VersionNumber}'";
-            VersionData["eco"]["FullVersion"] = $"'{EcoVersion.FullInfo.Replace("\r\n", " ")}'";
-            
-            // writes to txt file
-            WriteDictionaryToFile("EcoVersionData", "game", VersionData);
+            // writes to json file
+            string jsonString =  JsonConvert.SerializeObject(new { ecogame = ecoversiondata }, Formatting.Indented);
+            WriteDictionaryToJsonFile("EcoVersion",jsonString);
         }
     }
 }
