@@ -1,13 +1,13 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     talents = {
         ['Abundant: Advanced Baking'] = {
                     ['Name'] =  {
                             ['English'] = "Abundant: Advanced Baking",
-                            ['Russian'] = "Abundant: Advanced Baking",
+                            ['Russian'] = "Сытное: Продвинутая выпечка",
                             ['German'] = "Abundant: Advanced Baking",
                             ['French'] = "Abundant: Advanced Baking",
                             ['Japanese'] = "Abundant: Advanced Baking",
@@ -121,14 +121,14 @@ return {
         ['Carbon Enrichment: Advanced Smelting'] = {
                     ['Name'] =  {
                             ['English'] = "Carbon Enrichment: Advanced Smelting",
-                            ['Russian'] = "Carbon Enrichment: Advanced Smelting",
+                            ['Russian'] = "Обогащение углеродом: Продвинутая выплавка",
                             ['German'] = "Carbon Enrichment: Advanced Smelting",
                             ['French'] = "Carbon Enrichment: Advanced Smelting",
                             ['Japanese'] = "Carbon Enrichment: Advanced Smelting",
                             },
                     ['Description'] =  {
                             ['English'] = "Unlocks Charcoal Steel recipe and reduces pollution of Advanced Smelting recipes.",
-                            ['Russian'] = "Разблокирует рецепт «Сталь с древесным углём» и снижает загрязнение от рецептов «Продвинутая выплавка».",
+                            ['Russian'] = "Разблокирует рецепт «Сталь с древесным углём» и снижает загрязнение от рецептов специальности Продвинутая выплавка.",
                             ['German'] = "Schaltet das Rezept für Kohlestahl frei und verringert die Umweltverschmutzung bei Rezepten für fortgeschrittenes Schmelzen.",
                             ['French'] = "Débloque la recette de l'acier au charbon et réduit la pollution des recettes de fusion avancée.",
                             ['Japanese'] = "チャコールスチールのレシピを解放し、高度な精錬レシピによる汚染を軽減する。",
@@ -166,7 +166,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Faster crafting and reduced labor cost at the Pottery Table.",
-                            ['Russian'] = "Ускорение производства предметов и снижение затрат очков работы на гончарном круге.",
+                            ['Russian'] = "Ускоряет производство предметов и снижает затраты очков работы на гончарном круге.",
                             ['German'] = "Schnelleres Herstellen und geringere Arbeitskosten am Töpfertisch.",
                             ['French'] = "Fabrication plus rapide et coût de main-d'œuvre réduit à la table de poterie.",
                             ['Japanese'] = "陶芸台でのクラフト速度が向上し、労働コストが削減された。",
@@ -197,7 +197,7 @@ return {
         ['Coastal Rock: Advanced Masonry'] = {
                     ['Name'] =  {
                             ['English'] = "Coastal Rock: Advanced Masonry",
-                            ['Russian'] = "Coastal Rock: Advanced Masonry",
+                            ['Russian'] = "Прибрежные камни: Продвинутая каменная кладка",
                             ['German'] = "Coastal Rock: Advanced Masonry",
                             ['French'] = "Coastal Rock: Advanced Masonry",
                             ['Japanese'] = "Coastal Rock: Advanced Masonry",
@@ -254,17 +254,17 @@ return {
         ['Crude Refining: Oil Drilling'] = {
                     ['Name'] =  {
                             ['English'] = "Crude Refining: Oil Drilling",
-                            ['Russian'] = "Crude Refining: Oil Drilling",
+                            ['Russian'] = "Нефтепереработка: Добыча нефти",
                             ['German'] = "Crude Refining: Oil Drilling",
                             ['French'] = "Crude Refining: Oil Drilling",
                             ['Japanese'] = "Crude Refining: Oil Drilling",
                             },
                     ['Description'] =  {
-                            ['English'] = "Increasing craft speed of the Pumpjack but increasing pollution.",
-                            ['Russian'] = "Увеличивает скорость работы буровой установки, но также увеличивает загрязнение окружающей среды.",
-                            ['German'] = "Die Geschwindigkeit des Pumpjacks erhöhen, aber dabei die Umweltverschmutzung steigern.",
-                            ['French'] = "Augmenter la vitesse du Pumpjack, mais ça augmente la pollution.",
-                            ['Japanese'] = "クラフトの稼働速度を上げるが、汚染も増加する。",
+                            ['English'] = "Increasing craft speed of the Pumpjack.",
+                            ['Russian'] = "Increasing craft speed of the Pumpjack.",
+                            ['German'] = "Increasing craft speed of the Pumpjack.",
+                            ['French'] = "Increasing craft speed of the Pumpjack.",
+                            ['Japanese'] = "Increasing craft speed of the Pumpjack.",
                             },
                     ['IconName'] = 'OilDrillingCrudeRefiningTalentGroup',
                     ['SkillID'] = 'OilDrillingSkill',
@@ -311,7 +311,7 @@ return {
         ['Deeper Pockets: Self Improvement'] = {
                     ['Name'] =  {
                             ['English'] = "Deeper Pockets: Self Improvement",
-                            ['Russian'] = "Deeper Pockets: Self Improvement",
+                            ['Russian'] = "Глубокие карманы: Самосовершенствование",
                             ['German'] = "Deeper Pockets: Self Improvement",
                             ['French'] = "Deeper Pockets: Self Improvement",
                             ['Japanese'] = "Deeper Pockets: Self Improvement",
@@ -527,7 +527,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce cost for Housing items and labor cost of Carpentry recipes.",
-                            ['Russian'] = "Снизить стоимость предметов для жилья и затраты на рабочую силу в рецептах столярного дела.",
+                            ['Russian'] = "Снижает стоимость производства предметов для жилья и затраты очков работы в рецептах Плотницкого дела.",
                             ['German'] = "Senke die Kosten für Einrichtungsgegenstände und die Arbeitskosten für Tischler-Rezepte.",
                             ['French'] = "Réduis le coût des objets d'habitation et le coût de la main-d'œuvre pour les recettes de menuiserie.",
                             ['Japanese'] = "住宅アイテムのコストと、大工レシピの人件費を削減する。",
@@ -577,7 +577,7 @@ return {
         ['Focused Workflow: Cutting Edge Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Focused Workflow: Cutting Edge Cooking",
-                            ['Russian'] = "Focused Workflow: Cutting Edge Cooking",
+                            ['Russian'] = "Сосредоточенная работа: Передовая кулинария",
                             ['German'] = "Focused Workflow: Cutting Edge Cooking",
                             ['French'] = "Focused Workflow: Cutting Edge Cooking",
                             ['Japanese'] = "Focused Workflow: Cutting Edge Cooking",
@@ -615,7 +615,7 @@ return {
         ['Focused Workflow: Paper Milling'] = {
                     ['Name'] =  {
                             ['English'] = "Focused Workflow: Paper Milling",
-                            ['Russian'] = "Focused Workflow: Paper Milling",
+                            ['Russian'] = "Сосредоточенная работа: Производство бумаги",
                             ['German'] = "Focused Workflow: Paper Milling",
                             ['French'] = "Focused Workflow: Paper Milling",
                             ['Japanese'] = "Focused Workflow: Paper Milling",
@@ -641,7 +641,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Resource reduction for Framed Glass recipe.",
-                            ['Russian'] = "Сокращение ресурсов для рецепта «Остекленная рама».",
+                            ['Russian'] = "Снижает затраты ресурсов при создании Обрамленного стекла.",
                             ['German'] = "Ressourcenreduzierung für das Rezept „Glasrahmen“.",
                             ['French'] = "Réduction des ressources pour la recette du verre encadré.",
                             ['Japanese'] = "「枠付きガラス」のレシピにおける資源削減。",
@@ -710,7 +710,7 @@ return {
         ['Fruit Centric: Advanced Baking'] = {
                     ['Name'] =  {
                             ['English'] = "Fruit Centric: Advanced Baking",
-                            ['Russian'] = "Fruit Centric: Advanced Baking",
+                            ['Russian'] = "Фруктолюб: Продвинутая выпечка",
                             ['German'] = "Fruit Centric: Advanced Baking",
                             ['French'] = "Fruit Centric: Advanced Baking",
                             ['Japanese'] = "Fruit Centric: Advanced Baking",
@@ -755,7 +755,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Significantly reduces fuel usage of the Bloomery and Blast furnace but slightly decreases craft time.",
-                            ['Russian'] = "Значительно сокращает расход топлива в доменной печи и плавильной печи, но немного увеличивает время изготовления предметов.",
+                            ['Russian'] = "Значительно сокращает расход топлива в доменной и сыродутной печах, но немного увеличивает время изготовления предметов.",
                             ['German'] = "Reduziert den Brennstoffverbrauch der Bloomery und des Hochofens deutlich, verlängert aber die Herstellungszeit leicht.",
                             ['French'] = "Réduit considérablement la consommation de combustible de la fonderie et du haut fourneau, mais augmente légèrement le temps de fabrication.",
                             ['Japanese'] = "ブルメリーと高炉の燃料消費量を大幅に削減するが、クラフト時間はわずかに長くなる。",
@@ -767,7 +767,7 @@ return {
         ['Fuel Focus: Oil Drilling'] = {
                     ['Name'] =  {
                             ['English'] = "Fuel Focus: Oil Drilling",
-                            ['Russian'] = "Fuel Focus: Oil Drilling",
+                            ['Russian'] = "Больше топлива: Добыча нефти",
                             ['German'] = "Fuel Focus: Oil Drilling",
                             ['French'] = "Fuel Focus: Oil Drilling",
                             ['Japanese'] = "Fuel Focus: Oil Drilling",
@@ -786,7 +786,7 @@ return {
         ['Fully Staffed: Advanced Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Fully Staffed: Advanced Cooking",
-                            ['Russian'] = "Fully Staffed: Advanced Cooking",
+                            ['Russian'] = "Полный штат: Продвинутая кулинария",
                             ['German'] = "Fully Staffed: Advanced Cooking",
                             ['French'] = "Fully Staffed: Advanced Cooking",
                             ['Japanese'] = "Fully Staffed: Advanced Cooking",
@@ -850,7 +850,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce Gold Bar recipes resource cost and decreases pollution but increases costs of Copper Bars.",
-                            ['Russian'] = "Уменьшение стоимости ресурсов в рецептах с золотыми слитками снижает загрязнение, но увеличивает стоимость медных слитков.",
+                            ['Russian'] = "Уменьшает затраты ресурсов на создание Золотых слитков и снижает загрязнение, но увеличивает затраты на Медные слитки",
                             ['German'] = "Das Rezept für Goldbarren senkt die Ressourcenkosten und verringert die Umweltverschmutzung, erhöht aber die Kosten für Kupferbarren.",
                             ['French'] = "Réduire le coût en ressources des recettes de lingots d'or diminue la pollution, mais augmente le coût des lingots de cuivre.",
                             ['Japanese'] = "金塊のレシピの資源コストと汚染を削減するが、銅塊のコストは増加する。",
@@ -862,7 +862,7 @@ return {
         ['Glutton: Self Improvement'] = {
                     ['Name'] =  {
                             ['English'] = "Glutton: Self Improvement",
-                            ['Russian'] = "Glutton: Self Improvement",
+                            ['Russian'] = "Обжора: Самосовершенствование",
                             ['German'] = "Glutton: Self Improvement",
                             ['French'] = "Glutton: Self Improvement",
                             ['Japanese'] = "Glutton: Self Improvement",
@@ -907,7 +907,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduces resource cost of Hardwood Composite Lumber.",
-                            ['Russian'] = "Снижает стоимость ресурсов для производства композитной древесины из твёрдых пород.",
+                            ['Russian'] = "Снижает расход ресурсов при производстве Композитных пиломатериалов из лиственных пород.",
                             ['German'] = "Reduziert die Ressourcenkosten für Hartholz-Verbundholz.",
                             ['French'] = "Réduit le coût des ressources du bois composite de feuillus.",
                             ['Japanese'] = "ハードウッド複合材の資源コストを削減する。",
@@ -926,7 +926,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce resource cost for Crafting Tables.",
-                            ['Russian'] = "Уменьши стоимость ресурсов для на создание различных верстаков.",
+                            ['Russian'] = "Уменьшает затраты ресурсов для создания верстаков в специальности Электроника.",
                             ['German'] = "Reduziere die Ressourcenkosten für Werkbänke.",
                             ['French'] = "Réduis le coût des ressources pour les tables d'artisanat.",
                             ['Japanese'] = "作業台の資源コストを削減する。",
@@ -976,7 +976,7 @@ return {
         ['Improved Extraction: Oil Drilling'] = {
                     ['Name'] =  {
                             ['English'] = "Improved Extraction: Oil Drilling",
-                            ['Russian'] = "Improved Extraction: Oil Drilling",
+                            ['Russian'] = "Улучшенная добыча: Добыча нефти",
                             ['German'] = "Improved Extraction: Oil Drilling",
                             ['French'] = "Improved Extraction: Oil Drilling",
                             ['Japanese'] = "Improved Extraction: Oil Drilling",
@@ -995,7 +995,7 @@ return {
         ['Ina Bowl: Advanced Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Ina Bowl: Advanced Cooking",
-                            ['Russian'] = "Ina Bowl: Advanced Cooking",
+                            ['Russian'] = "Миско-боул: Продвинутая кулинария",
                             ['German'] = "Ina Bowl: Advanced Cooking",
                             ['French'] = "Ina Bowl: Advanced Cooking",
                             ['Japanese'] = "Ina Bowl: Advanced Cooking",
@@ -1033,7 +1033,7 @@ return {
         ['Lavish Workspace: Cutting Edge Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Lavish Workspace: Cutting Edge Cooking",
-                            ['Russian'] = "Lavish Workspace: Cutting Edge Cooking",
+                            ['Russian'] = "Качественное рабочее место: Передовая кулинария",
                             ['German'] = "Lavish Workspace: Cutting Edge Cooking",
                             ['French'] = "Lavish Workspace: Cutting Edge Cooking",
                             ['Japanese'] = "Lavish Workspace: Cutting Edge Cooking",
@@ -1071,7 +1071,7 @@ return {
         ['Lavish Workspace: Paper Milling'] = {
                     ['Name'] =  {
                             ['English'] = "Lavish Workspace: Paper Milling",
-                            ['Russian'] = "Lavish Workspace: Paper Milling",
+                            ['Russian'] = "Качественное рабочее место: Производство бумаги",
                             ['German'] = "Lavish Workspace: Paper Milling",
                             ['French'] = "Lavish Workspace: Paper Milling",
                             ['Japanese'] = "Lavish Workspace: Paper Milling",
@@ -1097,7 +1097,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduces all Composite recipe labor costs.",
-                            ['Russian'] = "Снижает все затраты на рабочую силу при создании составных рецептов.",
+                            ['Russian'] = "Снижает затраты очков работы в специальности Композиты.",
                             ['German'] = "Reduziert alle Arbeitskosten für Kombinationsrezepte.",
                             ['French'] = "Réduit tous les coûts de main-d'œuvre des recettes composites.",
                             ['Japanese'] = "すべての複合レシピの労働コストを削減する。",
@@ -1173,7 +1173,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce costs for Lumber Blocks and labor cost of Carpentry recipes.",
-                            ['Russian'] = "Снизить стоимость лесоматериалов и затраты на рабочую силу в рецептах столярного дела.",
+                            ['Russian'] = "Снижает стоимость пиломатериалов и затраты очков работы в рецептах плотницкого дела.",
                             ['German'] = "Senke die Kosten für Holzblöcke und die Arbeitskosten für Tischler-Rezepte.",
                             ['French'] = "Réduis le coût des blocs de bois et le coût de la main-d'œuvre pour les recettes de menuiserie.",
                             ['Japanese'] = "木材ブロックのコストと、大工仕事のレシピにかかる人件費を削減する。",
@@ -1242,14 +1242,14 @@ return {
         ['Metallurgy Improvements: Advanced Smelting'] = {
                     ['Name'] =  {
                             ['English'] = "Metallurgy Improvements: Advanced Smelting",
-                            ['Russian'] = "Metallurgy Improvements: Advanced Smelting",
+                            ['Russian'] = "Улучшения в металлургии: Продвинутая выплавка",
                             ['German'] = "Metallurgy Improvements: Advanced Smelting",
                             ['French'] = "Metallurgy Improvements: Advanced Smelting",
                             ['Japanese'] = "Metallurgy Improvements: Advanced Smelting",
                             },
                     ['Description'] =  {
                             ['English'] = "Reduced resource cost of Steel Bars and reduced pollution of Advanced Smelting recipes in the blast furnace.",
-                            ['Russian'] = "Снижена стоимость стальных прутьев и уменьшено загрязнение при использовании рецептов Продвинутой выплавки в доменной печи.",
+                            ['Russian'] = "Снижает затраты ресурсов для стальных брусков и уменьшает загрязнение для рецептов Продвинутой выплавки в доменной печи.",
                             ['German'] = "Reduzierte Ressourcenkosten für Stahlstangen und geringere Umweltbelastung bei den Rezepten für fortgeschrittene Verhüttung im Hochofen.",
                             ['French'] = "Réduction du coût en ressources des barres d'acier et réduction de la pollution des recettes de fusion avancée dans le haut fourneau.",
                             ['Japanese'] = "高炉における「鋼鉄棒」の資源コストを削減し、「高度な精錬」レシピの汚染を低減した。",
@@ -1268,7 +1268,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Increase Output of Quicklime Recipe.",
-                            ['Russian'] = "Увеличивает производительность рецепта негашеной извести.",
+                            ['Russian'] = "Увеличивает производительность рецепта Оксида кальция.",
                             ['German'] = "Rezept zur Steigerung der Kalkproduktion.",
                             ['French'] = "Augmente la production de la recette de chaux vive.",
                             ['Japanese'] = "生石灰のレシピの生産量を増やす。",
@@ -1356,7 +1356,7 @@ return {
         ['Nature Adventurer: Self Improvement'] = {
                     ['Name'] =  {
                             ['English'] = "Nature Adventurer: Self Improvement",
-                            ['Russian'] = "Nature Adventurer: Self Improvement",
+                            ['Russian'] = "Исследование местности: Самосовершенствование",
                             ['German'] = "Nature Adventurer: Self Improvement",
                             ['French'] = "Nature Adventurer: Self Improvement",
                             ['Japanese'] = "Nature Adventurer: Self Improvement",
@@ -1413,7 +1413,7 @@ return {
         ['Organic Abundance: Fertilizers'] = {
                     ['Name'] =  {
                             ['English'] = "Organic Abundance: Fertilizers",
-                            ['Russian'] = "Органическое изобилие: удобрения",
+                            ['Russian'] = "Больше органики: удобрения",
                             ['German'] = "Organischer Überfluss: Düngemittel",
                             ['French'] = "Abondance organique : engrais",
                             ['Japanese'] = "有機物の豊かさ：肥料",
@@ -1451,7 +1451,7 @@ return {
         ['Parallel Processing: Cutting Edge Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Parallel Processing: Cutting Edge Cooking",
-                            ['Russian'] = "Parallel Processing: Cutting Edge Cooking",
+                            ['Russian'] = "Параллельная обработка: Передовая кулинария",
                             ['German'] = "Parallel Processing: Cutting Edge Cooking",
                             ['French'] = "Parallel Processing: Cutting Edge Cooking",
                             ['Japanese'] = "Parallel Processing: Cutting Edge Cooking",
@@ -1489,7 +1489,7 @@ return {
         ['Parallel Processing: Paper Milling'] = {
                     ['Name'] =  {
                             ['English'] = "Parallel Processing: Paper Milling",
-                            ['Russian'] = "Parallel Processing: Paper Milling",
+                            ['Russian'] = "Параллельная обработка: Производство бумаги",
                             ['German'] = "Parallel Processing: Paper Milling",
                             ['French'] = "Parallel Processing: Paper Milling",
                             ['Japanese'] = "Parallel Processing: Paper Milling",
@@ -1572,7 +1572,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduced resource cost for Housing furniture in Pottery.",
-                            ['Russian'] = "Снижает затраты ресурсов на создание предметов мебели в Гончарном деле.",
+                            ['Russian'] = "Снижает затраты ресурсов на создание предметов жилья в Гончарном деле.",
                             ['German'] = "Reduzierte Ressourcenkosten für Wohnmöbel in der Töpferei.",
                             ['French'] = "Réduction du coût des ressources pour le mobilier de maison en poterie.",
                             ['Japanese'] = "陶器工房における住宅用家具の資源コストを削減した。",
@@ -1610,7 +1610,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce resource cost of Industry skill Parts and increases their Durability and Integrity per talent level.",
-                            ['Russian'] = "Снижает стоимость ресурсов для деталей навыка «Промышленность» и увеличивает их прочность и целостность на каждый уровень таланта.",
+                            ['Russian'] = "Снижает затраты ресурсов при создании деталей, в специальности Промышленность, и увеличивает их прочность и целостность на каждый уровень таланта.",
                             ['German'] = "Senkt die Ressourcenkosten für Teile der Fertigkeit „Industrie“ und erhöht deren Haltbarkeit und Integrität pro Talentstufe.",
                             ['French'] = "Réduit le coût en ressources des pièces de la compétence Industrie et augmente leur durabilité et leur intégrité par niveau de talent.",
                             ['Japanese'] = "産業スキルの部品の資源コストを削減し、才能レベルごとに耐久性と完全性を向上させる。",
@@ -1736,7 +1736,7 @@ return {
         ['Refined Scraps: Advanced Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Refined Scraps: Advanced Cooking",
-                            ['Russian'] = "Refined Scraps: Advanced Cooking",
+                            ['Russian'] = "Переработка обрезков: Продвинутая кулинария",
                             ['German'] = "Refined Scraps: Advanced Cooking",
                             ['French'] = "Refined Scraps: Advanced Cooking",
                             ['Japanese'] = "Refined Scraps: Advanced Cooking",
@@ -1762,7 +1762,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce resource cost of Hull Sheets per talent level.",
-                            ['Russian'] = "Уменьшай стоимость ресурсов на листы корпуса за каждый уровень таланта.",
+                            ['Russian'] = "Уменьшает затраты ресурсов на Железные листы корпуса за каждый уровень таланта.",
                             ['German'] = "Reduziert die Ressourcenkosten für Rumpfplatten pro Talentstufe.",
                             ['French'] = "Réduis le coût en ressources des plaques de coque par niveau de talent.",
                             ['Japanese'] = "タレントレベルごとに、船体シートの資源コストを削減する。",
@@ -1774,7 +1774,7 @@ return {
         ['Roadworks: Basic Engineering'] = {
                     ['Name'] =  {
                             ['English'] = "Roadworks: Basic Engineering",
-                            ['Russian'] = "Roadworks: Basic Engineering",
+                            ['Russian'] = "Дорожные работы: Основы инженерного дела",
                             ['German'] = "Roadworks: Basic Engineering",
                             ['French'] = "Roadworks: Basic Engineering",
                             ['Japanese'] = "Roadworks: Basic Engineering",
@@ -1793,7 +1793,7 @@ return {
         ['Roasted: Campfire Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Roasted: Campfire Cooking",
-                            ['Russian'] = "Roasted: Campfire Cooking",
+                            ['Russian'] = "Обжарка: Готовка на костре",
                             ['German'] = "Roasted: Campfire Cooking",
                             ['French'] = "Roasted: Campfire Cooking",
                             ['Japanese'] = "Roasted: Campfire Cooking",
@@ -1831,14 +1831,14 @@ return {
         ['Rolling Steel: Advanced Smelting'] = {
                     ['Name'] =  {
                             ['English'] = "Rolling Steel: Advanced Smelting",
-                            ['Russian'] = "Rolling Steel: Advanced Smelting",
+                            ['Russian'] = "Прокатная сталь: Продвинутая выплавка",
                             ['German'] = "Rolling Steel: Advanced Smelting",
                             ['French'] = "Rolling Steel: Advanced Smelting",
                             ['Japanese'] = "Rolling Steel: Advanced Smelting",
                             },
                     ['Description'] =  {
                             ['English'] = "Reduce costs of specific recipes and reduce labor costs for Advanced Smelting recipes.",
-                            ['Russian'] = "Снижает стоимость определенных рецептов и сокращает затраты очков работы для рецептов «Продвинутая выплавка».",
+                            ['Russian'] = "Снижает стоимость определенных рецептов и сокращает затраты очков работы для рецептов специальности Продвинутая выплавка.",
                             ['German'] = "Senke die Kosten für bestimmte Rezepte und reduziere die Arbeitskosten für Rezepte im Bereich „Fortgeschrittenes Schmelzen“.",
                             ['French'] = "Réduis les coûts de certaines recettes et diminue les coûts de main-d'œuvre pour les recettes de fusion avancée.",
                             ['Japanese'] = "特定のレシピのコストを削減し、高度な精錬レシピの人件費を削減する。",
@@ -1857,7 +1857,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Increases craft speed and reducing labor costs of ropes.",
-                            ['Russian'] = "Увеличивает скорость изготовления и снижает затраты очков работы на производство веревок.",
+                            ['Russian'] = "Увеличивает скорость изготовления и снижает затраты очков работы на производство канатов.",
                             ['German'] = "Erhöht die Handwerksgeschwindigkeit und senkt die Arbeitskosten für Seile.",
                             ['French'] = "Augmente la vitesse de fabrication et réduit les coûts de main-d'œuvre liés aux cordes.",
                             ['Japanese'] = "クラフト速度を向上させ、ロープの労働コストを削減する。",
@@ -1926,7 +1926,7 @@ return {
         ['Shaping Up: Mechanics'] = {
                     ['Name'] =  {
                             ['English'] = "Shaping Up: Mechanics",
-                            ['Russian'] = "Формирование: механика",
+                            ['Russian'] = "Фрезерование: Механика",
                             ['German'] = "Shaping Up: Spielmechanik",
                             ['French'] = "Mise en place : mécanismes",
                             ['Japanese'] = "概要：ゲームシステム",
@@ -1945,7 +1945,7 @@ return {
         ['Sharp Blades: Advanced Masonry'] = {
                     ['Name'] =  {
                             ['English'] = "Sharp Blades: Advanced Masonry",
-                            ['Russian'] = "Sharp Blades: Advanced Masonry",
+                            ['Russian'] = "Острые пилы: Продвинутая каменная кладка",
                             ['German'] = "Sharp Blades: Advanced Masonry",
                             ['French'] = "Sharp Blades: Advanced Masonry",
                             ['Japanese'] = "Sharp Blades: Advanced Masonry",
@@ -1983,7 +1983,7 @@ return {
         ['Side Dishes: Campfire Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Side Dishes: Campfire Cooking",
-                            ['Russian'] = "Side Dishes: Campfire Cooking",
+                            ['Russian'] = "Дешевые салаты: Готовка на костре",
                             ['German'] = "Side Dishes: Campfire Cooking",
                             ['French'] = "Side Dishes: Campfire Cooking",
                             ['Japanese'] = "Side Dishes: Campfire Cooking",
@@ -2021,7 +2021,7 @@ return {
         ['Smooth Stone: Advanced Masonry'] = {
                     ['Name'] =  {
                             ['English'] = "Smooth Stone: Advanced Masonry",
-                            ['Russian'] = "Smooth Stone: Advanced Masonry",
+                            ['Russian'] = "Податливый камень: Продвинутая каменная кладка",
                             ['German'] = "Smooth Stone: Advanced Masonry",
                             ['French'] = "Smooth Stone: Advanced Masonry",
                             ['Japanese'] = "Smooth Stone: Advanced Masonry",
@@ -2078,14 +2078,14 @@ return {
         ['Steel Processing: Advanced Smelting'] = {
                     ['Name'] =  {
                             ['English'] = "Steel Processing: Advanced Smelting",
-                            ['Russian'] = "Steel Processing: Advanced Smelting",
+                            ['Russian'] = "Стальные изделия: Продвинутая выплавка",
                             ['German'] = "Steel Processing: Advanced Smelting",
                             ['French'] = "Steel Processing: Advanced Smelting",
                             ['Japanese'] = "Steel Processing: Advanced Smelting",
                             },
                     ['Description'] =  {
                             ['English'] = "Increase craft speed of all Advanced Smelting recipes and reduces resource cost of specific recipes.",
-                            ['Russian'] = "Увеличивает скорость изготовления всех рецептов «Продвинутая выплавка» и снижает затраты ресурсов на определенные рецепты.",
+                            ['Russian'] = "Увеличивает скорость изготовления всех рецептов специальности Продвинутая выплавка и снижает затраты ресурсов на определенные рецепты.",
                             ['German'] = "Erhöht die Herstellgeschwindigkeit aller Rezepte für fortgeschrittenes Schmelzen und senkt die Ressourcenkosten bestimmter Rezepte.",
                             ['French'] = "Augmente la vitesse de fabrication de toutes les recettes de fusion avancée et réduit le coût en ressources de certaines recettes.",
                             ['Japanese'] = "すべての「高度な精錬」レシピのクラフト速度を向上させ、特定のレシピの資源コストを削減する。",
@@ -2097,7 +2097,7 @@ return {
         ['Stew Gourmand: Campfire Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Stew Gourmand: Campfire Cooking",
-                            ['Russian'] = "Stew Gourmand: Campfire Cooking",
+                            ['Russian'] = "Любитель рагу: Готовка на костре",
                             ['German'] = "Stew Gourmand: Campfire Cooking",
                             ['French'] = "Stew Gourmand: Campfire Cooking",
                             ['Japanese'] = "Stew Gourmand: Campfire Cooking",
@@ -2135,7 +2135,7 @@ return {
         ['Stuff It: Advanced Baking'] = {
                     ['Name'] =  {
                             ['English'] = "Stuff It: Advanced Baking",
-                            ['Russian'] = "Stuff It: Advanced Baking",
+                            ['Russian'] = "Фаршировка: Продвинутая выпечка",
                             ['German'] = "Stuff It: Advanced Baking",
                             ['French'] = "Stuff It: Advanced Baking",
                             ['Japanese'] = "Stuff It: Advanced Baking",
@@ -2154,7 +2154,7 @@ return {
         ['Sub Terrain Sourced: Advanced Masonry'] = {
                     ['Name'] =  {
                             ['English'] = "Sub Terrain Sourced: Advanced Masonry",
-                            ['Russian'] = "Sub Terrain Sourced: Advanced Masonry",
+                            ['Russian'] = "Камни глубокого залегания: Продвинутая каменная кладка",
                             ['German'] = "Sub Terrain Sourced: Advanced Masonry",
                             ['French'] = "Sub Terrain Sourced: Advanced Masonry",
                             ['Japanese'] = "Sub Terrain Sourced: Advanced Masonry",
@@ -2249,7 +2249,7 @@ return {
         ['Synthetic Materials: Oil Drilling'] = {
                     ['Name'] =  {
                             ['English'] = "Synthetic Materials: Oil Drilling",
-                            ['Russian'] = "Synthetic Materials: Oil Drilling",
+                            ['Russian'] = "Синтетические материалы: Добыча нефти",
                             ['German'] = "Synthetic Materials: Oil Drilling",
                             ['French'] = "Synthetic Materials: Oil Drilling",
                             ['Japanese'] = "Synthetic Materials: Oil Drilling",
@@ -2287,7 +2287,7 @@ return {
         ['Take Out: Advanced Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Take Out: Advanced Cooking",
-                            ['Russian'] = "Take Out: Advanced Cooking",
+                            ['Russian'] = "На вынос: Продвинутая кулинария",
                             ['German'] = "Take Out: Advanced Cooking",
                             ['French'] = "Take Out: Advanced Cooking",
                             ['Japanese'] = "Take Out: Advanced Cooking",
@@ -2420,7 +2420,7 @@ return {
         ['Top It: Advanced Baking'] = {
                     ['Name'] =  {
                             ['English'] = "Top It: Advanced Baking",
-                            ['Russian'] = "Top It: Advanced Baking",
+                            ['Russian'] = "Пицца: Продвинутая выпечка",
                             ['German'] = "Top It: Advanced Baking",
                             ['French'] = "Top It: Advanced Baking",
                             ['Japanese'] = "Top It: Advanced Baking",
@@ -2439,7 +2439,7 @@ return {
         ['Urban Traveller: Self Improvement'] = {
                     ['Name'] =  {
                             ['English'] = "Urban Traveller: Self Improvement",
-                            ['Russian'] = "Urban Traveller: Self Improvement",
+                            ['Russian'] = "Городской житель: Самосовершенствование",
                             ['German'] = "Urban Traveller: Self Improvement",
                             ['French'] = "Urban Traveller: Self Improvement",
                             ['Japanese'] = "Urban Traveller: Self Improvement",
@@ -2465,7 +2465,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Increases craft speed of the Bloomery and Blast furnace but also increases pollution.",
-                            ['Russian'] = "Увеличивает скорость производства в кузнице и доменной печи, но при этом повышает уровень загрязнения.",
+                            ['Russian'] = "Увеличивает скорость производства в сыродутной и доменной печах, но при этом повышает уровень загрязнения.",
                             ['German'] = "Erhöht die Produktionsgeschwindigkeit der Schmiede und des Hochofens, erhöht aber auch die Umweltverschmutzung.",
                             ['French'] = "Augmente la vitesse de fabrication de la fonderie et du haut fourneau, mais augmente aussi la pollution.",
                             ['Japanese'] = "ブルメリーと高炉のクラフト速度を上げるが、汚染も増加する。",
@@ -2477,7 +2477,7 @@ return {
         ['Using Scraps: Campfire Cooking'] = {
                     ['Name'] =  {
                             ['English'] = "Using Scraps: Campfire Cooking",
-                            ['Russian'] = "Using Scraps: Campfire Cooking",
+                            ['Russian'] = "Сало из обрезков: Готовка на костре",
                             ['German'] = "Using Scraps: Campfire Cooking",
                             ['French'] = "Using Scraps: Campfire Cooking",
                             ['Japanese'] = "Using Scraps: Campfire Cooking",
@@ -2496,7 +2496,7 @@ return {
         ['Vehicular Design: Basic Engineering'] = {
                     ['Name'] =  {
                             ['English'] = "Vehicular Design: Basic Engineering",
-                            ['Russian'] = "Vehicular Design: Basic Engineering",
+                            ['Russian'] = "Проектировщик транспорта: Основы инженерного дела",
                             ['German'] = "Vehicular Design: Basic Engineering",
                             ['French'] = "Vehicular Design: Basic Engineering",
                             ['Japanese'] = "Vehicular Design: Basic Engineering",
@@ -2515,7 +2515,7 @@ return {
         ['Wateristheway: Basic Engineering'] = {
                     ['Name'] =  {
                             ['English'] = "Wateristheway: Basic Engineering",
-                            ['Russian'] = "Wateristheway: Basic Engineering",
+                            ['Russian'] = "Путь воды: Основы инженерного дела",
                             ['German'] = "Wateristheway: Basic Engineering",
                             ['French'] = "Wateristheway: Basic Engineering",
                             ['Japanese'] = "Wateristheway: Basic Engineering",
@@ -2534,7 +2534,7 @@ return {
         ['Windequalsenergy: Basic Engineering'] = {
                     ['Name'] =  {
                             ['English'] = "Windequalsenergy: Basic Engineering",
-                            ['Russian'] = "Windequalsenergy: Basic Engineering",
+                            ['Russian'] = "Путь ветра: Основы инженерного дела",
                             ['German'] = "Windequalsenergy: Basic Engineering",
                             ['French'] = "Windequalsenergy: Basic Engineering",
                             ['Japanese'] = "Windequalsenergy: Basic Engineering",

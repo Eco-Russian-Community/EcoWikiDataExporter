@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     ecopediapages = {
@@ -570,7 +570,7 @@ return {
         ['DecontaminantsPage'] = {
                     ['Name'] =  {
                             ['English'] = "Decontaminants",
-                            ['Russian'] = "Обеззараживатели",
+                            ['Russian'] = "Нейтрализаторы",
                             ['German'] = "Decontaminants",
                             ['French'] = "Decontaminants",
                             ['Japanese'] = "Decontaminants",
@@ -1213,7 +1213,7 @@ return {
                     ['Type'] = 'Category',
                     ['Chapter'] = 'ReferenceChapter',
                     ['Icon'] = 'Ecopedia_Items',
-                    ['Pages'] = {'ToolsPage', 'DecontaminantsPage', 'ProductsPage', 'ClothingPage', 'FertilizersPage', 'ResearchPapersPage', 'SkillBooksPage'},
+                    ['Pages'] = {'DecontaminantsPage', 'ToolsPage', 'ProductsPage', 'ClothingPage', 'FertilizersPage', 'ResearchPapersPage', 'SkillBooksPage'},
         },
         ['KitchenPage'] = {
                     ['Name'] =  {
@@ -1687,7 +1687,7 @@ return {
         ['RepairsPage'] = {
                     ['Name'] =  {
                             ['English'] = "Repairs",
-                            ['Russian'] = "Отремонтировано",
+                            ['Russian'] = "Заказы на ремонт",
                             ['German'] = "Reparaturen",
                             ['French'] = "Réparations",
                             ['Japanese'] = "修理",
@@ -2152,7 +2152,7 @@ return {
                             },
                     ['Type'] = 'Page',
                     ['Category'] = 'ItemsCategory',
-                    ['Icon'] = 'WoodenShovelItem',
+                    ['Icon'] = 'HomesteadSupportClaimPaperItem',
         },
         ['TradePage'] = {
                     ['Name'] =  {

@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:01
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:07
 
 return {
     animals = {
@@ -73,7 +73,7 @@ return {
                     ['IsFishable'] = 'False',
                     ['Nocturnal'] = 'False',
                     ['Aquatic'] = 'False',
-                    ['Health'] = '7',
+                    ['Health'] = '6',
                     ['Flags'] = 'IsPredator, AttacksPlayer',
                     ['TooCloseDistance'] = '4',
                     ['MaxVisibilityDistance'] = '25',
@@ -1177,15 +1177,15 @@ return {
                     ['IsFishable'] = 'False',
                     ['Nocturnal'] = 'True',
                     ['Aquatic'] = 'False',
-                    ['Health'] = '4',
+                    ['Health'] = '5.5',
                     ['Flags'] = 'HowlsAtMeteor, IsPredator, AttacksPlayer',
                     ['TooCloseDistance'] = '4',
                     ['MaxVisibilityDistance'] = '25',
                     ['MaxVisibilityAngle'] = '110',
                     ['AttackRange'] = '1',
-                    ['ChanceToAttack'] = '0.9',
+                    ['ChanceToAttack'] = '0.6',
                     ['ChanceToAttackUnprovoked'] = '1',
-                    ['AttackUnprovokedDistance'] = '15',
+                    ['AttackUnprovokedDistance'] = '9',
                     ['ChanceOfAlertNoise'] = '0.5',
                     ['AnimalDamage'] = '2',
                     ['PlayerDamage'] = '50',

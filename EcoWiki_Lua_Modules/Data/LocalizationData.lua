@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 08.08.2026 17:47:59
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     locales = {
@@ -103,6 +103,24 @@ return {
                             ['Japanese'] = "カロリー",
                             },
         },
+        ['Can be used as currency, up to {0} per item.'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Can be used as currency, up to {0} per item.",
+                            ['Russian'] = "Можно использовать как валюту, вплоть до {0} за предмет.",
+                            ['German'] = "Kann als Währung verwendet werden, bis zu {0} pro Gegenstand.",
+                            ['French'] = "Peut être utilisé comme monnaie, jusqu'à {0} par objet.",
+                            ['Japanese'] = "通貨として使用可能で、アイテムごとに最大{0}まで使えます。",
+                            },
+        },
+        ['Can chop'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Can chop",
+                            ['Russian'] = "Можно сократить",
+                            ['German'] = "Kann man kürzen",
+                            ['French'] = "Tu peux couper",
+                            ['Japanese'] = "切り分け可能",
+                            },
+        },
         ['Carbs'] = {
                     ['Translate'] =  {
                             ['English'] = "Carbs",
@@ -166,6 +184,15 @@ return {
                             ['Japanese'] = "エコクレジット",
                             },
         },
+        ['Effects When Worn'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Effects When Worn",
+                            ['Russian'] = "Эффект при экипировке",
+                            ['German'] = "Effects When Worn",
+                            ['French'] = "Effects When Worn",
+                            ['Japanese'] = "Effects When Worn",
+                            },
+        },
         ['Experience'] = {
                     ['Translate'] =  {
                             ['English'] = "Experience",
@@ -184,6 +211,24 @@ return {
                             ['Japanese'] = "脂質",
                             },
         },
+        ['Garbages'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Garbages",
+                            ['Russian'] = "Garbages",
+                            ['German'] = "Garbages",
+                            ['French'] = "Garbages",
+                            ['Japanese'] = "Garbages",
+                            },
+        },
+        ['Generated from'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Generated from",
+                            ['Russian'] = "Создано на основе",
+                            ['German'] = "Generiert aus",
+                            ['French'] = "Généré à partir de",
+                            ['Japanese'] = "生成元",
+                            },
+        },
         ['Getting Started'] = {
                     ['Translate'] =  {
                             ['English'] = "Getting Started",
@@ -200,6 +245,15 @@ return {
                             ['German'] = "Regierung",
                             ['French'] = "Gouvernement",
                             ['Japanese'] = "行政",
+                            },
+        },
+        ['Ground Pollution'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Ground Pollution",
+                            ['Russian'] = "Загрязнение почвы",
+                            ['German'] = "Bodenverschmutzung",
+                            ['French'] = "Pollution terrestre",
+                            ['Japanese'] = "土壌汚染",
                             },
         },
         ['Harvested from Species'] = {
@@ -301,6 +355,15 @@ return {
                             ['Japanese'] = "マーケットプレイス",
                             },
         },
+        ['May Contain'] = {
+                    ['Translate'] =  {
+                            ['English'] = "May Contain",
+                            ['Russian'] = "May Contain",
+                            ['German'] = "May Contain",
+                            ['French'] = "May Contain",
+                            ['Japanese'] = "May Contain",
+                            },
+        },
         ['Modder Cut'] = {
                     ['Translate'] =  {
                             ['English'] = "Modder Cut",
@@ -310,6 +373,15 @@ return {
                             ['Japanese'] = "モッダーカット",
                             },
         },
+        ['Nitrogen'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Nitrogen",
+                            ['Russian'] = "Азот",
+                            ['German'] = "Stickstoff",
+                            ['French'] = "Azote",
+                            ['Japanese'] = "窒素",
+                            },
+        },
         ['None'] = {
                     ['Translate'] =  {
                             ['English'] = "None",
@@ -317,6 +389,15 @@ return {
                             ['German'] = "Keine",
                             ['French'] = "Aucun",
                             ['Japanese'] = "なし",
+                            },
+        },
+        ['Phosphorus'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Phosphorus",
+                            ['Russian'] = "Фосфор",
+                            ['German'] = "Phosphor",
+                            ['French'] = "Phosphore",
+                            ['Japanese'] = "リン",
                             },
         },
         ['Plants'] = {
@@ -344,6 +425,33 @@ return {
                             ['German'] = "Stecker",
                             ['French'] = "Se branche dans",
                             ['Japanese'] = "プラグイン",
+                            },
+        },
+        ['Pollution Containment'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Pollution Containment",
+                            ['Russian'] = "Сдерживание загрязнения",
+                            ['German'] = "Pollution Containment",
+                            ['French'] = "Pollution Containment",
+                            ['Japanese'] = "Pollution Containment",
+                            },
+        },
+        ['Potassium'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Potassium",
+                            ['Russian'] = "Калий",
+                            ['German'] = "Kalium",
+                            ['French'] = "Potassium",
+                            ['Japanese'] = "カリウム",
+                            },
+        },
+        ['Produced When Crafting'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Produced When Crafting",
+                            ['Russian'] = "Производится при крафте",
+                            ['German'] = "Produced When Crafting",
+                            ['French'] = "Produced When Crafting",
+                            ['Japanese'] = "Produced When Crafting",
                             },
         },
         ['Produces'] = {
@@ -407,6 +515,24 @@ return {
                             ['German'] = "Rezepte",
                             ['French'] = "Recettes",
                             ['Japanese'] = "レシピ",
+                            },
+        },
+        ['Recycled from'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Recycled from",
+                            ['Russian'] = "Recycled from",
+                            ['German'] = "Recycled from",
+                            ['French'] = "Recycled from",
+                            ['Japanese'] = "Recycled from",
+                            },
+        },
+        ['Reduces the ground pollution of stored waste by {0}.'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Reduces the ground pollution of stored waste by {0}.",
+                            ['Russian'] = "Снижает загрязнение почвы хранящимися отходами на {0}.",
+                            ['German'] = "Reduces the ground pollution of stored waste by {0}.",
+                            ['French'] = "Reduces the ground pollution of stored waste by {0}.",
+                            ['Japanese'] = "Reduces the ground pollution of stored waste by {0}.",
                             },
         },
         ['Requirements'] = {
@@ -580,6 +706,15 @@ return {
                             ['Japanese'] = "アンロック",
                             },
         },
+        ['Used as Catalyst in'] = {
+                    ['Translate'] =  {
+                            ['English'] = "Used as Catalyst in",
+                            ['Russian'] = "Используется как катализатор в",
+                            ['German'] = "Used as Catalyst in",
+                            ['French'] = "Used as Catalyst in",
+                            ['Japanese'] = "Used as Catalyst in",
+                            },
+        },
         ['Used in'] = {
                     ['Translate'] =  {
                             ['English'] = "Used in",
@@ -605,6 +740,15 @@ return {
                             ['German'] = "Vitamine",
                             ['French'] = "Vitamines",
                             ['Japanese'] = "ビタミン",
+                            },
+        },
+        ['When Recycled'] = {
+                    ['Translate'] =  {
+                            ['English'] = "When Recycled",
+                            ['Russian'] = "При утилизации",
+                            ['German'] = "When Recycled",
+                            ['French'] = "When Recycled",
+                            ['Japanese'] = "When Recycled",
                             },
         },
     },

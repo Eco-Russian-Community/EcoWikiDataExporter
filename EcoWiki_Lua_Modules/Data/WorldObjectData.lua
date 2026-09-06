@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.3
--- EWDE Version : 0.7.2.0
--- Date of export : 22.08.2026 17:27:06
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     WorldObjects = {
@@ -3022,7 +3022,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'ConstructionScrapSorterObject',
-                    ['WorldObjectSize'] = '7,14,4',
+                    ['WorldObjectSize'] = '7,14,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Contract Board'] = {
@@ -4218,7 +4218,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'GarbageSorterObject',
-                    ['WorldObjectSize'] = '7,16,4',
+                    ['WorldObjectSize'] = '7,16,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Garden Pond'] = {
@@ -5195,7 +5195,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'IndustrialWasteSorterObject',
-                    ['WorldObjectSize'] = '7,14,4',
+                    ['WorldObjectSize'] = '7,14,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Injection Mold Machine'] = {
@@ -7070,7 +7070,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'MetalScrapSorterObject',
-                    ['WorldObjectSize'] = '7,14,4',
+                    ['WorldObjectSize'] = '7,14,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Mill'] = {
@@ -8465,7 +8465,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'ResidualWasteSorterObject',
-                    ['WorldObjectSize'] = '7,18,4',
+                    ['WorldObjectSize'] = '7,18,5',
                     ['WorldObjectTier'] = '0',
         },
         ['Robotic Assembly Line'] = {
@@ -9881,7 +9881,7 @@ return {
                     ['MintComponent'] = 'False',
                     ['DoorComponent'] = 'False',
                     ['WorldObjectName'] = 'SmallShipyardObject',
-                    ['WorldObjectSize'] = '2,5,4',
+                    ['WorldObjectSize'] = '4,5,2',
                     ['WorldObjectTier'] = '0',
         },
         ['Small Sink'] = {

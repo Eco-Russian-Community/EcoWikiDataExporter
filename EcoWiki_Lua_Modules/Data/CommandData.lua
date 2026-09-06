@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.3
--- EWDE Version : 0.7.2.0
--- Date of export : 22.08.2026 17:27:02
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:07
 
 return {
     commands = {
@@ -2079,34 +2079,18 @@ return {
                     ['command'] = 'give',
                     ['parent'] = 'garbage',
                     ['helpText'] =  {
-                            ['English'] = "Give garbage with specific internal repartition. Format: TypeA:0.1;TypeB:0.9",
-                            ['Russian'] = "Укажи мусор с конкретным внутренним распределением. Формат: TypeA:0.1;TypeB:0.9",
-                            ['German'] = "Gib Müll mit einer bestimmten internen Aufteilung an. Format: TypeA:0.1;TypeB:0.9",
-                            ['French'] = "Donne des déchets avec une répartition interne spécifique. Format : TypeA:0.1;TypeB:0.9",
-                            ['Japanese'] = "特定の内部構成を持つゴミを指定する。形式：TypeA:0.1;TypeB:0.9",
+                            ['English'] = "Give a fractional garbage item (mixed garbage, mixed biowaste, ...) with a specific composition. Format: TypeA:0.1;TypeB:0.9. For a random composition use /give instead.",
+                            ['Russian'] = "Give a fractional garbage item (mixed garbage, mixed biowaste, ...) with a specific composition. Format: TypeA:0.1;TypeB:0.9. For a random composition use /give instead.",
+                            ['German'] = "Give a fractional garbage item (mixed garbage, mixed biowaste, ...) with a specific composition. Format: TypeA:0.1;TypeB:0.9. For a random composition use /give instead.",
+                            ['French'] = "Give a fractional garbage item (mixed garbage, mixed biowaste, ...) with a specific composition. Format: TypeA:0.1;TypeB:0.9. For a random composition use /give instead.",
+                            ['Japanese'] = "Give a fractional garbage item (mixed garbage, mixed biowaste, ...) with a specific composition. Format: TypeA:0.1;TypeB:0.9. For a random composition use /give instead.",
                             },
                     ['shortCut'] = '',
                     ['level'] = 'Admin',
                     ['parameters'] =  {
-                            ['Arg1'] = {'garbages', 'String'},
-                            ['Arg2'] = {'quantity', 'Int32'},
-                            },
-        },
-        ['/garbage randommixed'] = {
-                    ['command'] = 'randommixed',
-                    ['parent'] = 'garbage',
-                    ['helpText'] =  {
-                            ['English'] = "Give N full stacks of MixedGarbageItem, each with a distinct random repartition over 2..5 GarbageMaterials drawn at random. Targets the nearest storage within searchRadius, falling back to the player\'s inventory.",
-                            ['Russian'] = "Give N full stacks of MixedGarbageItem, each with a distinct random repartition over 2..5 GarbageMaterials drawn at random. Targets the nearest storage within searchRadius, falling back to the player\'s inventory.",
-                            ['German'] = "Give N full stacks of MixedGarbageItem, each with a distinct random repartition over 2..5 GarbageMaterials drawn at random. Targets the nearest storage within searchRadius, falling back to the player\'s inventory.",
-                            ['French'] = "Give N full stacks of MixedGarbageItem, each with a distinct random repartition over 2..5 GarbageMaterials drawn at random. Targets the nearest storage within searchRadius, falling back to the player\'s inventory.",
-                            ['Japanese'] = "Give N full stacks of MixedGarbageItem, each with a distinct random repartition over 2..5 GarbageMaterials drawn at random. Targets the nearest storage within searchRadius, falling back to the player\'s inventory.",
-                            },
-                    ['shortCut'] = '',
-                    ['level'] = 'Admin',
-                    ['parameters'] =  {
-                            ['Arg1'] = {'stacks', 'Int32'},
-                            ['Arg2'] = {'searchRadius', 'Single', '5'},
+                            ['Arg1'] = {'itemName', 'String'},
+                            ['Arg2'] = {'garbages', 'String'},
+                            ['Arg3'] = {'quantity', 'Int32', '1'},
                             },
         },
         ['/help'] = {
@@ -2452,6 +2436,22 @@ return {
                             ['Arg4'] = {'amount', 'Int32', '1'},
                             },
         },
+        ['/inventory ignorecarrysize'] = {
+                    ['command'] = 'ignorecarrysize',
+                    ['parent'] = 'inventory',
+                    ['helpText'] =  {
+                            ['English'] = "Lets you carry any quantity of blocks per carried slot. Pass false to reset to normal.",
+                            ['Russian'] = "Lets you carry any quantity of blocks per carried slot. Pass false to reset to normal.",
+                            ['German'] = "Lets you carry any quantity of blocks per carried slot. Pass false to reset to normal.",
+                            ['French'] = "Lets you carry any quantity of blocks per carried slot. Pass false to reset to normal.",
+                            ['Japanese'] = "Lets you carry any quantity of blocks per carried slot. Pass false to reset to normal.",
+                            },
+                    ['shortCut'] = 'ignorecarrysize',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'ignore', 'Boolean', 'True'},
+                            },
+        },
         ['/inventory integrity'] = {
                     ['command'] = 'integrity',
                     ['parent'] = 'inventory',
@@ -2473,7 +2473,7 @@ return {
                     ['parent'] = 'inventory',
                     ['helpText'] =  {
                             ['English'] = "Set the number of backpack slots. DO NOT persist after server restart.",
-                            ['Russian'] = "Установи количество ячеек в рюкзаке. НЕ сохраняется после перезапуска сервера.",
+                            ['Russian'] = "Устанавливает количество ячеек в рюкзаке. НЕ сохраняется после перезапуска сервера.",
                             ['German'] = "Lege die Anzahl der Rucksackplätze fest. Diese Einstellung wird nach einem Server-Neustart NICHT beibehalten.",
                             ['French'] = "Définis le nombre d'emplacements dans le sac à dos. NE PAS conserver ces paramètres après le redémarrage du serveur.",
                             ['Japanese'] = "バックパックのスロット数を設定する。サーバー再起動後は設定が引き継がれない。",
@@ -4120,7 +4120,7 @@ return {
                     ['parent'] = 'pollute',
                     ['helpText'] =  {
                             ['English'] = "Removes all pollution of one layer (soil/heavymineral/chemical/acidrain), on your claim or within a radius.",
-                            ['Russian'] = "Removes all pollution of one layer (soil/heavymineral/chemical/acidrain), on your claim or within a radius.",
+                            ['Russian'] = "Удаляет все типы загрязнений из слоя (почва/тяжелыеметаллы/химикаты/кислотныйдождь), на вашем участке или в указанном радиусе.",
                             ['German'] = "Removes all pollution of one layer (soil/heavymineral/chemical/acidrain), on your claim or within a radius.",
                             ['French'] = "Removes all pollution of one layer (soil/heavymineral/chemical/acidrain), on your claim or within a radius.",
                             ['Japanese'] = "Removes all pollution of one layer (soil/heavymineral/chemical/acidrain), on your claim or within a radius.",
@@ -4153,7 +4153,7 @@ return {
                     ['parent'] = 'pollute',
                     ['helpText'] =  {
                             ['English'] = "Queues decontamination of a pollution layer (soil/heavymineral/chemical), on your claim or within a radius.",
-                            ['Russian'] = "Queues decontamination of a pollution layer (soil/heavymineral/chemical), on your claim or within a radius.",
+                            ['Russian'] = "Создает очередь очистки загрязненного слоя (почва/тяжелыеметаллы/химикаты), на вашем участке или в заданом радиусе.",
                             ['German'] = "Queues decontamination of a pollution layer (soil/heavymineral/chemical), on your claim or within a radius.",
                             ['French'] = "Queues decontamination of a pollution layer (soil/heavymineral/chemical), on your claim or within a radius.",
                             ['Japanese'] = "Queues decontamination of a pollution layer (soil/heavymineral/chemical), on your claim or within a radius.",
@@ -4186,7 +4186,7 @@ return {
                     ['parent'] = 'pollute',
                     ['helpText'] =  {
                             ['English'] = "Sets a pollution layer value (soil/heavymineral/chemical/acidrain), on your claim or on every claim within a radius.",
-                            ['Russian'] = "Sets a pollution layer value (soil/heavymineral/chemical/acidrain), on your claim or on every claim within a radius.",
+                            ['Russian'] = "Устанавливает уровень загрязнения для слоя (почва/тяжелыеметаллы/химикаты/кислотныйдождь), на текущем участке или на участках в радиусе.",
                             ['German'] = "Sets a pollution layer value (soil/heavymineral/chemical/acidrain), on your claim or on every claim within a radius.",
                             ['French'] = "Sets a pollution layer value (soil/heavymineral/chemical/acidrain), on your claim or on every claim within a radius.",
                             ['Japanese'] = "Sets a pollution layer value (soil/heavymineral/chemical/acidrain), on your claim or on every claim within a radius.",
@@ -4204,7 +4204,7 @@ return {
                     ['parent'] = 'pollute',
                     ['helpText'] =  {
                             ['English'] = "Sets the queued decontamination (soil/heavymineral/chemical), on your claim or within a radius.",
-                            ['Russian'] = "Sets the queued decontamination (soil/heavymineral/chemical), on your claim or within a radius.",
+                            ['Russian'] = "Запускает очереди очистки загрязненного слоя (почва/тяжелыеметаллы/химикаты), на вашем участке или в заданном радиусе.",
                             ['German'] = "Sets the queued decontamination (soil/heavymineral/chemical), on your claim or within a radius.",
                             ['French'] = "Sets the queued decontamination (soil/heavymineral/chemical), on your claim or within a radius.",
                             ['Japanese'] = "Sets the queued decontamination (soil/heavymineral/chemical), on your claim or within a radius.",
@@ -8729,6 +8729,577 @@ return {
                     ['level'] = 'Admin',
                     ['parameters'] =  {
                             ['Arg1'] = {'species', 'String'},
+                            },
+        },
+        ['/worldedit addclaim'] = {
+                    ['command'] = 'addclaim',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Expands the selection to include the claim plot at your position.",
+                            ['Russian'] = "Expands the selection to include the claim plot at your position.",
+                            ['German'] = "Expands the selection to include the claim plot at your position.",
+                            ['French'] = "Expands the selection to include the claim plot at your position.",
+                            ['Japanese'] = "Expands the selection to include the claim plot at your position.",
+                            },
+                    ['shortCut'] = 'addclaim',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit blueprintinfo'] = {
+                    ['command'] = 'blueprintinfo',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Shows block and size information for a blueprint file.",
+                            ['Russian'] = "Shows block and size information for a blueprint file.",
+                            ['German'] = "Shows block and size information for a blueprint file.",
+                            ['French'] = "Shows block and size information for a blueprint file.",
+                            ['Japanese'] = "Shows block and size information for a blueprint file.",
+                            },
+                    ['shortCut'] = 'binfo',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'fileName', 'String'},
+                            ['Arg2'] = {'outFileName', 'String', ''},
+                            },
+        },
+        ['/worldedit clearall'] = {
+                    ['command'] = 'clearall',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Clears everything above your position within the specified radius.",
+                            ['Russian'] = "Clears everything above your position within the specified radius.",
+                            ['German'] = "Clears everything above your position within the specified radius.",
+                            ['French'] = "Clears everything above your position within the specified radius.",
+                            ['Japanese'] = "Clears everything above your position within the specified radius.",
+                            },
+                    ['shortCut'] = 'clearall',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'radius', 'Int32', '20'},
+                            },
+        },
+        ['/worldedit colorblocks'] = {
+                    ['command'] = 'colorblocks',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Paints blocks in the selection with the specified color.",
+                            ['Russian'] = "Paints blocks in the selection with the specified color.",
+                            ['German'] = "Paints blocks in the selection with the specified color.",
+                            ['French'] = "Paints blocks in the selection with the specified color.",
+                            ['Japanese'] = "Paints blocks in the selection with the specified color.",
+                            },
+                    ['shortCut'] = 'color',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'color', 'String'},
+                            },
+        },
+        ['/worldedit copy'] = {
+                    ['command'] = 'copy',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Copies the selection to your clipboard.",
+                            ['Russian'] = "Copies the selection to your clipboard.",
+                            ['German'] = "Copies the selection to your clipboard.",
+                            ['French'] = "Copies the selection to your clipboard.",
+                            ['Japanese'] = "Copies the selection to your clipboard.",
+                            },
+                    ['shortCut'] = 'copy',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit cut'] = {
+                    ['command'] = 'cut',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Copies the selection to your clipboard and clears it.",
+                            ['Russian'] = "Copies the selection to your clipboard and clears it.",
+                            ['German'] = "Copies the selection to your clipboard and clears it.",
+                            ['French'] = "Copies the selection to your clipboard and clears it.",
+                            ['Japanese'] = "Copies the selection to your clipboard and clears it.",
+                            },
+                    ['shortCut'] = 'cut',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit delete'] = {
+                    ['command'] = 'delete',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Clears the selection.",
+                            ['Russian'] = "Clears the selection.",
+                            ['German'] = "Clears the selection.",
+                            ['French'] = "Clears the selection.",
+                            ['Japanese'] = "Clears the selection.",
+                            },
+                    ['shortCut'] = 'del',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit distribution'] = {
+                    ['command'] = 'distribution',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Shows the block distribution within the selection.",
+                            ['Russian'] = "Shows the block distribution within the selection.",
+                            ['German'] = "Shows the block distribution within the selection.",
+                            ['French'] = "Shows the block distribution within the selection.",
+                            ['Japanese'] = "Shows the block distribution within the selection.",
+                            },
+                    ['shortCut'] = 'distr',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'type', 'String', 'brief'},
+                            ['Arg2'] = {'fileName', 'String', ''},
+                            },
+        },
+        ['/worldedit drain'] = {
+                    ['command'] = 'drain',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Removes water from the selection.",
+                            ['Russian'] = "Removes water from the selection.",
+                            ['German'] = "Removes water from the selection.",
+                            ['French'] = "Removes water from the selection.",
+                            ['Japanese'] = "Removes water from the selection.",
+                            },
+                    ['shortCut'] = 'drain',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit expand'] = {
+                    ['command'] = 'expand',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Expands the selection by an amount in a direction.",
+                            ['Russian'] = "Expands the selection by an amount in a direction.",
+                            ['German'] = "Expands the selection by an amount in a direction.",
+                            ['French'] = "Expands the selection by an amount in a direction.",
+                            ['Japanese'] = "Expands the selection by an amount in a direction.",
+                            },
+                    ['shortCut'] = 'expand',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'directionAndAmount', 'String', '1'},
+                            },
+        },
+        ['/worldedit expandclaim'] = {
+                    ['command'] = 'expandclaim',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Expands the selection by claim plots in a direction.",
+                            ['Russian'] = "Expands the selection by claim plots in a direction.",
+                            ['German'] = "Expands the selection by claim plots in a direction.",
+                            ['French'] = "Expands the selection by claim plots in a direction.",
+                            ['Japanese'] = "Expands the selection by claim plots in a direction.",
+                            },
+                    ['shortCut'] = 'expclaim',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'args', 'String', '1'},
+                            },
+        },
+        ['/worldedit export'] = {
+                    ['command'] = 'export',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Exports your clipboard to a shareable blueprint file.",
+                            ['Russian'] = "Exports your clipboard to a shareable blueprint file.",
+                            ['German'] = "Exports your clipboard to a shareable blueprint file.",
+                            ['French'] = "Exports your clipboard to a shareable blueprint file.",
+                            ['Japanese'] = "Exports your clipboard to a shareable blueprint file.",
+                            },
+                    ['shortCut'] = 'exportbp',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'fileName', 'String'},
+                            },
+        },
+        ['/worldedit fixwater'] = {
+                    ['command'] = 'fixwater',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Restores the specified water level within the selection.",
+                            ['Russian'] = "Restores the specified water level within the selection.",
+                            ['German'] = "Restores the specified water level within the selection.",
+                            ['French'] = "Restores the specified water level within the selection.",
+                            ['Japanese'] = "Restores the specified water level within the selection.",
+                            },
+                    ['shortCut'] = 'fixwater',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'height', 'Int32', '0'},
+                            },
+        },
+        ['/worldedit grow'] = {
+                    ['command'] = 'grow',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Fully grows plants and trees in the selection.",
+                            ['Russian'] = "Fully grows plants and trees in the selection.",
+                            ['German'] = "Fully grows plants and trees in the selection.",
+                            ['French'] = "Fully grows plants and trees in the selection.",
+                            ['Japanese'] = "Fully grows plants and trees in the selection.",
+                            },
+                    ['shortCut'] = 'grow',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit import'] = {
+                    ['command'] = 'import',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Imports a blueprint file into your clipboard.",
+                            ['Russian'] = "Imports a blueprint file into your clipboard.",
+                            ['German'] = "Imports a blueprint file into your clipboard.",
+                            ['French'] = "Imports a blueprint file into your clipboard.",
+                            ['Japanese'] = "Imports a blueprint file into your clipboard.",
+                            },
+                    ['shortCut'] = 'importbp',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'fileName', 'String', ''},
+                            },
+        },
+        ['/worldedit looking'] = {
+                    ['command'] = 'looking',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Shows your current WorldEdit direction.",
+                            ['Russian'] = "Shows your current WorldEdit direction.",
+                            ['German'] = "Shows your current WorldEdit direction.",
+                            ['French'] = "Shows your current WorldEdit direction.",
+                            ['Japanese'] = "Shows your current WorldEdit direction.",
+                            },
+                    ['shortCut'] = 'welooking',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit move'] = {
+                    ['command'] = 'move',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Moves the selected area in a direction.",
+                            ['Russian'] = "Moves the selected area in a direction.",
+                            ['German'] = "Moves the selected area in a direction.",
+                            ['French'] = "Moves the selected area in a direction.",
+                            ['Japanese'] = "Moves the selected area in a direction.",
+                            },
+                    ['shortCut'] = 'move',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'directionAndAmount', 'String', '1'},
+                            },
+        },
+        ['/worldedit paste'] = {
+                    ['command'] = 'paste',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Pastes the clipboard at your position.",
+                            ['Russian'] = "Pastes the clipboard at your position.",
+                            ['German'] = "Pastes the clipboard at your position.",
+                            ['French'] = "Pastes the clipboard at your position.",
+                            ['Japanese'] = "Pastes the clipboard at your position.",
+                            },
+                    ['shortCut'] = 'paste',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'skipEmpty', 'Boolean', 'False'},
+                            },
+        },
+        ['/worldedit pyramid'] = {
+                    ['command'] = 'pyramid',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Builds a pyramid at your position.",
+                            ['Russian'] = "Builds a pyramid at your position.",
+                            ['German'] = "Builds a pyramid at your position.",
+                            ['French'] = "Builds a pyramid at your position.",
+                            ['Japanese'] = "Builds a pyramid at your position.",
+                            },
+                    ['shortCut'] = 'pyramid',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'height', 'Int32'},
+                            ['Arg2'] = {'blockType', 'String', ''},
+                            ['Arg3'] = {'styleStr', 'String', 'full'},
+                            ['Arg4'] = {'clear', 'Boolean', 'True'},
+                            },
+        },
+        ['/worldedit redo'] = {
+                    ['command'] = 'redo',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Redoes one or more previously undone WorldEdit actions.",
+                            ['Russian'] = "Redoes one or more previously undone WorldEdit actions.",
+                            ['German'] = "Redoes one or more previously undone WorldEdit actions.",
+                            ['French'] = "Redoes one or more previously undone WorldEdit actions.",
+                            ['Japanese'] = "Redoes one or more previously undone WorldEdit actions.",
+                            },
+                    ['shortCut'] = 'redo',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'count', 'Int32', '1'},
+                            },
+        },
+        ['/worldedit reduce'] = {
+                    ['command'] = 'reduce',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Reduces the selection by an amount in a direction.",
+                            ['Russian'] = "Reduces the selection by an amount in a direction.",
+                            ['German'] = "Reduces the selection by an amount in a direction.",
+                            ['French'] = "Reduces the selection by an amount in a direction.",
+                            ['Japanese'] = "Reduces the selection by an amount in a direction.",
+                            },
+                    ['shortCut'] = 'reduce',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'directionAndAmount', 'String', '1'},
+                            },
+        },
+        ['/worldedit replace'] = {
+                    ['command'] = 'replace',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Replaces one block type with another in the selection.",
+                            ['Russian'] = "Replaces one block type with another in the selection.",
+                            ['German'] = "Replaces one block type with another in the selection.",
+                            ['French'] = "Replaces one block type with another in the selection.",
+                            ['Japanese'] = "Replaces one block type with another in the selection.",
+                            },
+                    ['shortCut'] = 'replace',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'findType', 'String'},
+                            ['Arg2'] = {'replaceType', 'String', ''},
+                            },
+        },
+        ['/worldedit reset'] = {
+                    ['command'] = 'reset',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Clears the current selection.",
+                            ['Russian'] = "Clears the current selection.",
+                            ['German'] = "Clears the current selection.",
+                            ['French'] = "Clears the current selection.",
+                            ['Japanese'] = "Clears the current selection.",
+                            },
+                    ['shortCut'] = 'reset',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit rmwand'] = {
+                    ['command'] = 'rmwand',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Removes a WorldEdit wand from your inventory.",
+                            ['Russian'] = "Removes a WorldEdit wand from your inventory.",
+                            ['German'] = "Removes a WorldEdit wand from your inventory.",
+                            ['French'] = "Removes a WorldEdit wand from your inventory.",
+                            ['Japanese'] = "Removes a WorldEdit wand from your inventory.",
+                            },
+                    ['shortCut'] = 'rmwand',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit rotate'] = {
+                    ['command'] = 'rotate',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Rotates the contents of your clipboard.",
+                            ['Russian'] = "Rotates the contents of your clipboard.",
+                            ['German'] = "Rotates the contents of your clipboard.",
+                            ['French'] = "Rotates the contents of your clipboard.",
+                            ['Japanese'] = "Rotates the contents of your clipboard.",
+                            },
+                    ['shortCut'] = 'rotate',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'degrees', 'Single', '90'},
+                            },
+        },
+        ['/worldedit selectclaim'] = {
+                    ['command'] = 'selectclaim',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Selects the claim plot at your position.",
+                            ['Russian'] = "Selects the claim plot at your position.",
+                            ['German'] = "Selects the claim plot at your position.",
+                            ['French'] = "Selects the claim plot at your position.",
+                            ['Japanese'] = "Selects the claim plot at your position.",
+                            },
+                    ['shortCut'] = 'selclaim',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit set'] = {
+                    ['command'] = 'set',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Fills the selection with the specified block.",
+                            ['Russian'] = "Fills the selection with the specified block.",
+                            ['German'] = "Fills the selection with the specified block.",
+                            ['French'] = "Fills the selection with the specified block.",
+                            ['Japanese'] = "Fills the selection with the specified block.",
+                            },
+                    ['shortCut'] = 'set',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'blockName', 'String'},
+                            },
+        },
+        ['/worldedit setpos1'] = {
+                    ['command'] = 'setpos1',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Sets the first selection point to the given coordinates or your position.",
+                            ['Russian'] = "Sets the first selection point to the given coordinates or your position.",
+                            ['German'] = "Sets the first selection point to the given coordinates or your position.",
+                            ['French'] = "Sets the first selection point to the given coordinates or your position.",
+                            ['Japanese'] = "Sets the first selection point to the given coordinates or your position.",
+                            },
+                    ['shortCut'] = 'setpos1',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'coordinate', 'String', ''},
+                            },
+        },
+        ['/worldedit setpos2'] = {
+                    ['command'] = 'setpos2',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Sets the second selection point to the given coordinates or your position.",
+                            ['Russian'] = "Sets the second selection point to the given coordinates or your position.",
+                            ['German'] = "Sets the second selection point to the given coordinates or your position.",
+                            ['French'] = "Sets the second selection point to the given coordinates or your position.",
+                            ['Japanese'] = "Sets the second selection point to the given coordinates or your position.",
+                            },
+                    ['shortCut'] = 'setpos2',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'coordinate', 'String', ''},
+                            },
+        },
+        ['/worldedit shift'] = {
+                    ['command'] = 'shift',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Moves the selection bounds without moving blocks.",
+                            ['Russian'] = "Moves the selection bounds without moving blocks.",
+                            ['German'] = "Moves the selection bounds without moving blocks.",
+                            ['French'] = "Moves the selection bounds without moving blocks.",
+                            ['Japanese'] = "Moves the selection bounds without moving blocks.",
+                            },
+                    ['shortCut'] = 'shift',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'directionAndAmount', 'String', '1'},
+                            },
+        },
+        ['/worldedit stack'] = {
+                    ['command'] = 'stack',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Repeats the selected area in a direction.",
+                            ['Russian'] = "Repeats the selected area in a direction.",
+                            ['German'] = "Repeats the selected area in a direction.",
+                            ['French'] = "Repeats the selected area in a direction.",
+                            ['Japanese'] = "Repeats the selected area in a direction.",
+                            },
+                    ['shortCut'] = 'stack',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'directionAndAmount', 'String', '1'},
+                            ['Arg2'] = {'offset', 'Int32', '0'},
+                            },
+        },
+        ['/worldedit undo'] = {
+                    ['command'] = 'undo',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Undoes one or more WorldEdit actions.",
+                            ['Russian'] = "Undoes one or more WorldEdit actions.",
+                            ['German'] = "Undoes one or more WorldEdit actions.",
+                            ['French'] = "Undoes one or more WorldEdit actions.",
+                            ['Japanese'] = "Undoes one or more WorldEdit actions.",
+                            },
+                    ['shortCut'] = 'undo',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'count', 'Int32', '1'},
+                            },
+        },
+        ['/worldedit upme'] = {
+                    ['command'] = 'upme',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Moves you upward and places a support block below you.",
+                            ['Russian'] = "Moves you upward and places a support block below you.",
+                            ['German'] = "Moves you upward and places a support block below you.",
+                            ['French'] = "Moves you upward and places a support block below you.",
+                            ['Japanese'] = "Moves you upward and places a support block below you.",
+                            },
+                    ['shortCut'] = 'upme',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'count', 'Int32', '1'},
+                            },
+        },
+        ['/worldedit version'] = {
+                    ['command'] = 'version',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Shows the installed WorldEdit version.",
+                            ['Russian'] = "Shows the installed WorldEdit version.",
+                            ['German'] = "Shows the installed WorldEdit version.",
+                            ['French'] = "Shows the installed WorldEdit version.",
+                            ['Japanese'] = "Shows the installed WorldEdit version.",
+                            },
+                    ['shortCut'] = 'weversion',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            },
+        },
+        ['/worldedit walls'] = {
+                    ['command'] = 'walls',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Builds outer walls around the selection.",
+                            ['Russian'] = "Builds outer walls around the selection.",
+                            ['German'] = "Builds outer walls around the selection.",
+                            ['French'] = "Builds outer walls around the selection.",
+                            ['Japanese'] = "Builds outer walls around the selection.",
+                            },
+                    ['shortCut'] = 'walls',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
+                            ['Arg1'] = {'typeName', 'String'},
+                            },
+        },
+        ['/worldedit wand'] = {
+                    ['command'] = 'wand',
+                    ['parent'] = 'worldedit',
+                    ['helpText'] =  {
+                            ['English'] = "Adds a WorldEdit wand to your inventory.",
+                            ['Russian'] = "Adds a WorldEdit wand to your inventory.",
+                            ['German'] = "Adds a WorldEdit wand to your inventory.",
+                            ['French'] = "Adds a WorldEdit wand to your inventory.",
+                            ['Japanese'] = "Adds a WorldEdit wand to your inventory.",
+                            },
+                    ['shortCut'] = 'wand',
+                    ['level'] = 'Admin',
+                    ['parameters'] =  {
                             },
         },
     },

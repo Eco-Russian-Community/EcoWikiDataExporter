@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:06
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     achievements = {
@@ -1289,7 +1289,7 @@ return {
                             },
                     ['Description'] =  {
                             ['English'] = "Gather 100 farmable items on land you own.",
-                            ['Russian'] = "Собери 100 предметов, которые можно выращивать на своей земле.",
+                            ['Russian'] = "Соберите 100 предметов, которые можно выращивать на своей земле.",
                             ['German'] = "Sammle 100 erntbare Gegenstände auf dem Land, das dir gehört.",
                             ['French'] = "Récolte 100 objets cultivables sur les terres que tu possèdes.",
                             ['Japanese'] = "所有する土地で、収穫可能なアイテムを100個集めろ。",

@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.3
--- EWDE Version : 0.7.2.0
--- Date of export : 22.08.2026 17:27:06
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:12
 
 return {
     recipes = {
@@ -143,7 +143,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -2683,13 +2688,6 @@ return {
                                             ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Spoiled Food'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Spoiled Food',
-                                            ['ID'] = 'SpoiledFoodItem',
-                                            ['Quantity'] = '5',
-                                            ['IsStatic'] = 'False',
-                                    },
                                     }
 ,
                     ['Products'] =  {
@@ -2707,11 +2705,6 @@ return {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
                                             ['Quantity'] = '48',
-                                    },
-                                    ['Compost'] = {
-                                            ['Name'] = 'Compost',
-                                            ['ID'] = 'CompostItem',
-                                            ['Quantity'] = '4',
                                     },
                                     ['Trash'] = {
                                             ['Name'] = 'Trash',
@@ -3171,7 +3164,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
@@ -3181,7 +3174,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '38.8',
                                     },
                                     }
 ,
@@ -3225,7 +3218,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -3269,7 +3267,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -6971,15 +6974,15 @@ return {
                     ['CraftTime'] = '480',
                     ['ExperienceOnCraft'] = '5',
                     ['LaborInCalories'] = '180',
-                    ['RequiredSkill'] = {'PotterySkill','1'},
+                    ['RequiredSkill'] = {'MasonrySkill','4'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Kiln',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
-                                    ['Brick'] = {
+                                    ['Clay'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Brick',
-                                            ['ID'] = 'BrickItem',
+                                            ['Name'] = 'Clay',
+                                            ['ID'] = 'ClayItem',
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
@@ -7013,7 +7016,7 @@ return {
                                     ['CeramicScrap'] = {
                                             ['Name'] = 'Ceramic Scrap',
                                             ['ID'] = 'CeramicScrapItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '160',
                                     },
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
@@ -7057,14 +7060,7 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Gathering Research Paper Advanced',
                                             ['ID'] = 'GatheringResearchPaperAdvancedItem',
-                                            ['Quantity'] = '2',
-                                            ['IsStatic'] = 'False',
-                                    },
-                                    ['Geology Research Paper Modern'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Geology Research Paper Modern',
-                                            ['ID'] = 'GeologyResearchPaperModernItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '5',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Metallurgy Research Paper Advanced'] = {
@@ -7090,12 +7086,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '54.4',
+                                            ['Quantity'] = '56',
                                     },
                                     ['Trash'] = {
                                             ['Name'] = 'Trash',
                                             ['ID'] = 'GarbageItem',
-                                            ['Quantity'] = '27.2',
+                                            ['Quantity'] = '28',
                                     },
                                     }
 ,
@@ -9681,7 +9677,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -9725,7 +9726,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -12052,12 +12058,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '6',
+                                            ['Quantity'] = '1.92',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '24',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '4.08',
                                     },
                                     }
 ,
@@ -12152,12 +12163,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['Textiles'] = {
                                             ['Name'] = 'Textiles',
                                             ['ID'] = 'TextilesItem',
                                             ['Quantity'] = '38.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -12683,12 +12699,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -13091,9 +13112,9 @@ return {
                     ['CraftTime'] = '360',
                     ['ExperienceOnCraft'] = '15',
                     ['LaborInCalories'] = '300',
-                    ['RequiredSkill'] = {'SmeltingSkill','3'},
+                    ['RequiredSkill'] = {'BlacksmithSkill','3'},
                     ['RequiresModule'] = 'Anvil',
-                    ['CraftingTables'] = 'Bloomery',
+                    ['CraftingTables'] = 'Blacksmith Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
                                     ['Cooking Utensils'] = {
@@ -13103,18 +13124,11 @@ return {
                                             ['Quantity'] = '1',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Iron Bar'] = {
+                                    ['Iron Plate'] = {
                                             ['Type'] = 'ITEM',
-                                            ['Name'] = 'Iron Bar',
-                                            ['ID'] = 'IronBarItem',
-                                            ['Quantity'] = '8',
-                                            ['IsStatic'] = 'False',
-                                    },
-                                    ['Lumber'] = {
-                                            ['Type'] = 'TAG',
-                                            ['Name'] = 'Lumber',
-                                            ['ID'] = 'Lumber',
-                                            ['Quantity'] = '8',
+                                            ['Name'] = 'Iron Plate',
+                                            ['ID'] = 'IronPlateItem',
+                                            ['Quantity'] = '12',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -13130,20 +13144,10 @@ return {
                                     }
 ,
                     ['Garbages'] =  {
-                                    ['BioResidue'] = {
-                                            ['Name'] = 'Bio Residue',
-                                            ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '3.2',
-                                    },
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
                                             ['ID'] = 'IronScrapItem',
-                                            ['Quantity'] = '19.2',
-                                    },
-                                    ['WoodScrap'] = {
-                                            ['Name'] = 'Wood Scrap',
-                                            ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '9.6',
+                                            ['Quantity'] = '51.2',
                                     },
                                     }
 ,
@@ -14030,7 +14034,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '14',
+                                            ['Quantity'] = '4.48',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '9.52',
                                     },
                                     }
 ,
@@ -15070,7 +15079,7 @@ return {
                             ['English'] = "Chemical Neutralizer",
                             ['Russian'] = "Химический нейтрализатор",
                             ['German'] = "Chemical Neutralizer",
-                            ['French'] = "Chemical Neutralizer",
+                            ['French'] = "Neutralisant Chimique",
                             ['Japanese'] = "化学汚染中和剤",
                             },
                     ['CraftTime'] = '120',
@@ -15172,7 +15181,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -16181,7 +16195,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -16196,7 +16210,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -16598,7 +16612,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -16613,7 +16627,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -16942,7 +16956,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -16957,7 +16971,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -17337,7 +17351,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -17352,7 +17366,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -17945,7 +17959,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -17960,7 +17974,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -18289,7 +18303,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -18304,7 +18318,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -18633,7 +18647,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -18648,7 +18662,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -18977,7 +18991,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -18992,7 +19006,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -19321,7 +19335,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -19336,7 +19350,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -20273,7 +20287,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
                                     },
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
@@ -20288,7 +20302,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '14.16',
                                     },
                                     }
 ,
@@ -20993,7 +21007,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -21001,7 +21020,7 @@ return {
         ['ConstructionScrapSorterRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Construction Scrap Sorter",
-                            ['Russian'] = "Сортировщик строительного лома",
+                            ['Russian'] = "Сортировщик строительного Мусора",
                             ['German'] = "Bauschutt-Sortierer",
                             ['French'] = "Trieuse de déchets de chantier",
                             ['Japanese'] = "建設用スクラップ選別機",
@@ -21162,12 +21181,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '60',
+                                            ['Quantity'] = '19.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '72.8',
                                     },
                                     }
 ,
@@ -21246,18 +21265,11 @@ return {
                                             ['Quantity'] = '10',
                                             ['IsStatic'] = 'False',
                                     },
-                                    ['Dendrology Research Paper Modern'] = {
-                                            ['Type'] = 'ITEM',
-                                            ['Name'] = 'Dendrology Research Paper Modern',
-                                            ['ID'] = 'DendrologyResearchPaperModernItem',
-                                            ['Quantity'] = '2',
-                                            ['IsStatic'] = 'False',
-                                    },
                                     ['Gathering Research Paper Advanced'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Gathering Research Paper Advanced',
                                             ['ID'] = 'GatheringResearchPaperAdvancedItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '5',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Metallurgy Research Paper Advanced'] = {
@@ -21283,12 +21295,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '54.4',
+                                            ['Quantity'] = '56',
                                     },
                                     ['Trash'] = {
                                             ['Name'] = 'Trash',
                                             ['ID'] = 'GarbageItem',
-                                            ['Quantity'] = '27.2',
+                                            ['Quantity'] = '28',
                                     },
                                     }
 ,
@@ -25982,7 +25994,7 @@ return {
         ['DendrologyResearchPaperAdvancedHullPlanksRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Dendrology Research Paper Advanced Hull Planks",
-                            ['Russian'] = "Dendrology Research Paper Advanced Hull Planks",
+                            ['Russian'] = "Исследование по продвинутой дендрологии - Кораблестроение",
                             ['German'] = "Dendrology Research Paper Advanced Hull Planks",
                             ['French'] = "Dendrology Research Paper Advanced Hull Planks",
                             ['Japanese'] = "Dendrology Research Paper Advanced Hull Planks",
@@ -26140,7 +26152,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -26340,7 +26357,7 @@ return {
         ['DesalinatorRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Desalinator",
-                            ['Russian'] = "Опреснитель",
+                            ['Russian'] = "Десалинатор",
                             ['German'] = "Entsalzungsanlage",
                             ['French'] = "Dessalinisateur",
                             ['Japanese'] = "海水淡水化装置",
@@ -26635,7 +26652,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -27005,7 +27027,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '7.68',
                                     },
                                     ['Textiles'] = {
                                             ['Name'] = 'Textiles',
@@ -27015,7 +27037,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '29.12',
                                     },
                                     }
 ,
@@ -27129,12 +27151,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '28',
+                                            ['Quantity'] = '8.96',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '6.4',
+                                            ['Quantity'] = '25.44',
                                     },
                                     }
 ,
@@ -30890,12 +30912,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '25.6',
+                                            ['Quantity'] = '52.8',
                                     },
                                     }
 ,
@@ -30946,7 +30968,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '10.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -30962,7 +30989,7 @@ return {
                     ['CraftTime'] = '240',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '120',
-                    ['RequiredSkill'] = {'nil','0'},
+                    ['RequiredSkill'] = {'TailoringSkill','2'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tailoring Table',
                     ['RequiresStrangeBlueprint'] = 'True',
@@ -32715,7 +32742,7 @@ return {
         ['GarbageSorterRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Garbage Sorter",
-                            ['Russian'] = "Сортировщик мусора",
+                            ['Russian'] = "Сортировщик смешанного мусора",
                             ['German'] = "Müllsortierer",
                             ['French'] = "Trieuse de déchets",
                             ['Japanese'] = "ゴミ分別機",
@@ -33101,7 +33128,7 @@ return {
         ['GatheringResearchPaperAdvancedRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Gathering Research Paper Advanced",
-                            ['Russian'] = "Gathering Research Paper Advanced",
+                            ['Russian'] = "Продвинутое исследование по собирательству",
                             ['German'] = "Gathering Research Paper Advanced",
                             ['French'] = "Gathering Research Paper Advanced",
                             ['Japanese'] = "Gathering Research Paper Advanced",
@@ -33162,7 +33189,7 @@ return {
         ['GatheringResearchPaperBasicRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Gathering Research Paper Basic",
-                            ['Russian'] = "Исследование по базовому собирательству",
+                            ['Russian'] = "Базовое исследование по собирательству",
                             ['German'] = "Grundlegendes Forschungspapier: Sammeln",
                             ['French'] = "Papier de recherche : Récolte basique",
                             ['Japanese'] = "採集の基礎研究書",
@@ -35395,7 +35422,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -35439,7 +35471,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -35447,7 +35484,7 @@ return {
         ['HardwoodDoubleShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Hardwood Double Shelf",
-                            ['Russian'] = "Двухъярусная полка из массива дерева",
+                            ['Russian'] = "Двухъярусная полка из лиственных пород",
                             ['German'] = "Doppelregal aus Hartholz",
                             ['French'] = "Étagère double en bois massif",
                             ['Japanese'] = "ハードウッド製ダブルシェルフ",
@@ -35546,12 +35583,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '1.6',
+                                            ['Quantity'] = '4.32',
                                     },
                                     }
 ,
@@ -35817,7 +35854,7 @@ return {
         ['HardwoodLumberHallwayTableRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Hardwood Lumber Hallway Table",
-                            ['Russian'] = "Стол для прихожей",
+                            ['Russian'] = "Стол для прихожей из пиломатериалов лиственных пород",
                             ['German'] = "Flurtisch aus Hartholz",
                             ['French'] = "Table de couloir en bois massif",
                             ['Japanese'] = "ハードウッド製廊下用テーブル",
@@ -36242,7 +36279,7 @@ return {
         ['HeavyMineralDecontaminantRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Heavy Mineral Decontaminant",
-                            ['Russian'] = "Обеззараживатель сильного минерального загрязнения",
+                            ['Russian'] = "Нейтрализатор тяжелых металлов",
                             ['German'] = "Heavy Mineral Decontaminant",
                             ['French'] = "Heavy Mineral Decontaminant",
                             ['Japanese'] = "重鉱物除染剤",
@@ -36316,7 +36353,7 @@ return {
                             ['Japanese'] = "麻製係留ロープ",
                             },
                     ['CraftTime'] = '120',
-                    ['ExperienceOnCraft'] = '0.5',
+                    ['ExperienceOnCraft'] = '1.5',
                     ['LaborInCalories'] = '180',
                     ['RequiredSkill'] = {'ShipwrightSkill','1'},
                     ['RequiresModule'] = 'nil',
@@ -36866,12 +36903,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '1.6',
+                                            ['Quantity'] = '4.32',
                                     },
                                     }
 ,
@@ -37277,7 +37314,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -38149,7 +38191,7 @@ return {
         ['IncinerateGarbageRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Incinerate Garbage",
-                            ['Russian'] = "Сжигай мусор",
+                            ['Russian'] = "Сжечь мусор",
                             ['German'] = "Müll verbrennen",
                             ['French'] = "Incinérer les déchets",
                             ['Japanese'] = "ゴミを焼却する",
@@ -38361,7 +38403,7 @@ return {
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
                                             ['ID'] = 'IronScrapItem',
-                                            ['Quantity'] = '560',
+                                            ['Quantity'] = '512',
                                     },
                                     ['PlasticScrap'] = {
                                             ['Name'] = 'Plastic Scrap',
@@ -39931,7 +39973,7 @@ return {
                             ['Japanese'] = "鉄製船体シート",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '0.5',
+                    ['ExperienceOnCraft'] = '2.5',
                     ['LaborInCalories'] = '60',
                     ['RequiredSkill'] = {'ShipwrightSkill','5'},
                     ['RequiresModule'] = 'nil',
@@ -41103,7 +41145,7 @@ return {
                     ['CraftTime'] = '240',
                     ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '120',
-                    ['RequiredSkill'] = {'nil','0'},
+                    ['RequiredSkill'] = {'TailoringSkill','2'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Tailoring Table',
                     ['RequiresStrangeBlueprint'] = 'False',
@@ -42213,12 +42255,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42276,12 +42318,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42339,12 +42381,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42402,12 +42444,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42465,12 +42507,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '33.6',
                                     },
                                     }
 ,
@@ -42528,12 +42570,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42828,12 +42870,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42891,12 +42933,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -42954,12 +42996,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -43080,12 +43122,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '28',
+                                            ['Quantity'] = '41.6',
                                     },
                                     }
 ,
@@ -43143,12 +43185,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -43206,12 +43248,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -43347,7 +43389,7 @@ return {
                             ['Japanese'] = "大型金属製船体フレーム",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '2',
+                    ['ExperienceOnCraft'] = '5',
                     ['LaborInCalories'] = '240',
                     ['RequiredSkill'] = {'ShipwrightSkill','6'},
                     ['RequiresModule'] = 'nil',
@@ -44048,12 +44090,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44111,12 +44153,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44174,12 +44216,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44237,12 +44279,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44300,12 +44342,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '33.6',
                                     },
                                     }
 ,
@@ -44363,12 +44405,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44663,12 +44705,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44726,12 +44768,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44789,12 +44831,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -44915,12 +44957,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '28',
+                                            ['Quantity'] = '41.6',
                                     },
                                     }
 ,
@@ -44978,12 +45020,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -45041,12 +45083,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '24',
+                                            ['Quantity'] = '37.6',
                                     },
                                     }
 ,
@@ -45133,7 +45175,7 @@ return {
                             ['Japanese'] = "大型木製船骨",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '2',
+                    ['ExperienceOnCraft'] = '5',
                     ['LaborInCalories'] = '200',
                     ['RequiredSkill'] = {'ShipwrightSkill','2'},
                     ['RequiresModule'] = 'nil',
@@ -45953,7 +45995,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['Trash'] = {
                                             ['Name'] = 'Trash',
@@ -45963,7 +46005,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '35.2',
                                     },
                                     }
 ,
@@ -45971,7 +46013,7 @@ return {
         ['LongBasicHardwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Basic Hardwood Shelf",
-                            ['Russian'] = "Длинная полка из массива дерева",
+                            ['Russian'] = "Длинная базовая полка из лиственных пород",
                             ['German'] = "Langes Regal aus Massivholz",
                             ['French'] = "Longue étagère en bois massif",
                             ['Japanese'] = "ロング・ベーシック・ハードウッド・シェルフ",
@@ -46027,7 +46069,7 @@ return {
         ['LongBasicSoftwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Basic Softwood Shelf",
-                            ['Russian'] = "Длинная полка из мягкой древесины",
+                            ['Russian'] = "Длинная базовая полка из хвойных пород",
                             ['German'] = "Langes Regal aus Weichholz",
                             ['French'] = "Longue étagère en bois tendre",
                             ['Japanese'] = "ロング・ベーシック・ソフトウッド・シェルフ",
@@ -46083,7 +46125,7 @@ return {
         ['LongBasicWoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Basic Wood Shelf",
-                            ['Russian'] = "Длинная деревянная полка",
+                            ['Russian'] = "Длинная базовая деревянная полка",
                             ['German'] = "Langes einfaches Holzregal",
                             ['French'] = "Longue étagère en bois basique",
                             ['Japanese'] = "ロング・ベーシック・ウッド・シェルフ",
@@ -46139,7 +46181,7 @@ return {
         ['LongFloatingHardwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Floating Hardwood Shelf",
-                            ['Russian'] = "Длинная плавающая полка из массива дерева",
+                            ['Russian'] = "Парящая длинная полка из лиственных пород",
                             ['German'] = "Langes schwebendes Regal aus Hartholz",
                             ['French'] = "Longue étagère flottante en bois massif",
                             ['Japanese'] = "ロングフローティングハードウッドシェルフ",
@@ -46195,7 +46237,7 @@ return {
         ['LongFloatingSoftwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Floating Softwood Shelf",
-                            ['Russian'] = "Длинная плавающая полка из хвойного дерева",
+                            ['Russian'] = "Парящая длинная полка из хвойных пород",
                             ['German'] = "Langes, schwebendes Regal aus Weichholz",
                             ['French'] = "Longue étagère flottante en bois tendre",
                             ['Japanese'] = "ロング・フローティング・ソフトウッド・シェルフ",
@@ -46251,7 +46293,7 @@ return {
         ['LongFloatingWoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Floating Wood Shelf",
-                            ['Russian'] = "Длинная плавающая деревянная полка",
+                            ['Russian'] = "Парящая длинная полка из дерева",
                             ['German'] = "Langes schwebendes Holzregal",
                             ['French'] = "Longue étagère flottante en bois",
                             ['Japanese'] = "長い浮遊木製棚",
@@ -46307,7 +46349,7 @@ return {
         ['LongHardwoodLumberShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Hardwood Lumber Shelf",
-                            ['Russian'] = "Длинная полка из массива дерева",
+                            ['Russian'] = "Длинная полка из композитных пиломатериалов лиственных пород",
                             ['German'] = "Langes Regal aus Hartholz",
                             ['French'] = "Longue étagère en bois massif",
                             ['Japanese'] = "長いハードウッド製棚",
@@ -46368,7 +46410,7 @@ return {
         ['LongHardwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Hardwood Veneer Shelf",
-                            ['Russian'] = "Длинная полка из шпона твердых пород дерева",
+                            ['Russian'] = "Длинная полка из лиственных композитов со шпоном",
                             ['German'] = "Langes Regal aus Hartholzfurnier",
                             ['French'] = "Longue étagère en placage de bois massif",
                             ['Japanese'] = "長いハードウッド突き板棚",
@@ -46434,7 +46476,7 @@ return {
         ['LongLumberShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Lumber Shelf",
-                            ['Russian'] = "Длинная полка для древесины",
+                            ['Russian'] = "Длинная полка из пиломатериалов",
                             ['German'] = "Langes Holzregal",
                             ['French'] = "Longue étagère à bois",
                             ['Japanese'] = "長い木材用棚",
@@ -46495,7 +46537,7 @@ return {
         ['LongSoftwoodLumberShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Softwood Lumber Shelf",
-                            ['Russian'] = "Длинная полка из хвойной древесины",
+                            ['Russian'] = "Длинная полка из хвойных пиломатериалов",
                             ['German'] = "Langes Regal aus Nadelholz",
                             ['French'] = "Longue étagère en bois de conifères",
                             ['Japanese'] = "長い針葉樹材の棚",
@@ -46556,7 +46598,7 @@ return {
         ['LongSoftwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Softwood Veneer Shelf",
-                            ['Russian'] = "Длинная полка из шпона хвойных пород",
+                            ['Russian'] = "Длинная полка из хвойных композитов со шпоном",
                             ['German'] = "Langes Regal aus Weichholzfurnier",
                             ['French'] = "Longue étagère en placage de bois tendre",
                             ['Japanese'] = "長い針葉樹突き板の棚",
@@ -46673,7 +46715,7 @@ return {
         ['LongThinHardwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Thin Hardwood Veneer Shelf",
-                            ['Russian'] = "Длинная тонкая полка из шпона твердых пород дерева",
+                            ['Russian'] = "Длинная тонкая полка из лиственных композитов со шпоном",
                             ['German'] = "Langes, schmales Regal aus Hartholzfurnier",
                             ['French'] = "Étagère longue et fine en placage de bois dur",
                             ['Japanese'] = "細長いハードウッド突き板棚",
@@ -46739,7 +46781,7 @@ return {
         ['LongThinSoftwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Thin Softwood Veneer Shelf",
-                            ['Russian'] = "Длинная токная полка из шпона хвойных пород",
+                            ['Russian'] = "Длинная тонкая полка из хвойных композитов со шпоном",
                             ['German'] = "Langes, schmales Regal aus Weichholzfurnier",
                             ['French'] = "Étagère longue et fine en placage de bois tendre",
                             ['Japanese'] = "細長い軟木突き板棚",
@@ -46805,7 +46847,7 @@ return {
         ['LongThinWoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Thin Wood Veneer Shelf",
-                            ['Russian'] = "Длинная узкая полка из деревянного шпона",
+                            ['Russian'] = "Длинная тонкая полка из композитов со шпоном",
                             ['German'] = "Langes, schmales Regal aus Holzfurnier",
                             ['French'] = "Longue étagère fine en placage de bois",
                             ['Japanese'] = "細長い木製突き板棚",
@@ -46871,7 +46913,7 @@ return {
         ['LongWoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Long Wood Veneer Shelf",
-                            ['Russian'] = "Длинная полка из деревянного шпона",
+                            ['Russian'] = "Длинная полка из композитов со шпоном",
                             ['German'] = "Langes Regal aus Holzfurnier",
                             ['French'] = "Longue étagère en placage de bois",
                             ['Japanese'] = "ロングウッド突き板棚",
@@ -48036,12 +48078,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -48549,7 +48596,7 @@ return {
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
                                             ['ID'] = 'IronScrapItem',
-                                            ['Quantity'] = '376',
+                                            ['Quantity'] = '328',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
@@ -48568,7 +48615,7 @@ return {
                             ['Japanese'] = "中金属製船体フレーム",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '2',
+                    ['ExperienceOnCraft'] = '5',
                     ['LaborInCalories'] = '160',
                     ['RequiredSkill'] = {'ShipwrightSkill','5'},
                     ['RequiresModule'] = 'nil',
@@ -48701,7 +48748,7 @@ return {
                             ['Japanese'] = "中木製船枠",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '2',
+                    ['ExperienceOnCraft'] = '5',
                     ['LaborInCalories'] = '120',
                     ['RequiredSkill'] = {'ShipwrightSkill','3'},
                     ['RequiresModule'] = 'nil',
@@ -49107,7 +49154,7 @@ return {
                             ['Japanese'] = "メタルラダー",
                             },
                     ['CraftTime'] = '120',
-                    ['ExperienceOnCraft'] = '1',
+                    ['ExperienceOnCraft'] = '3',
                     ['LaborInCalories'] = '120',
                     ['RequiredSkill'] = {'ShipwrightSkill','5'},
                     ['RequiresModule'] = 'nil',
@@ -49159,7 +49206,7 @@ return {
         ['MetalScrapSorterRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Metal Scrap Sorter",
-                            ['Russian'] = "Сортировщик металлолома",
+                            ['Russian'] = "Сортировщик металлического лома",
                             ['German'] = "Metallschrott-Sortierer",
                             ['French'] = "Trieuse de ferraille",
                             ['Japanese'] = "金属スクラップ選別機",
@@ -49532,12 +49579,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '68',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -52819,7 +52871,7 @@ return {
                             ['Japanese'] = "ナイロン係留ロープ",
                             },
                     ['CraftTime'] = '120',
-                    ['ExperienceOnCraft'] = '0.5',
+                    ['ExperienceOnCraft'] = '1.5',
                     ['LaborInCalories'] = '220',
                     ['RequiredSkill'] = {'ShipwrightSkill','3'},
                     ['RequiresModule'] = 'nil',
@@ -54384,7 +54436,7 @@ return {
         ['OrreryRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Orrery",
-                            ['Russian'] = "Оррери",
+                            ['Russian'] = "Модель мира",
                             ['German'] = "Orrery",
                             ['French'] = "Orrery",
                             ['Japanese'] = "オラリー",
@@ -55095,11 +55147,18 @@ return {
                     ['CraftingTables'] = 'Carpentry Table',
                     ['RequiresStrangeBlueprint'] = 'False',
                     ['Ingredients'] =  {
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
                                             ['ID'] = 'RedwoodLogItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '6',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -55118,7 +55177,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '4.64',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '8.16',
                                     },
                                     }
 ,
@@ -56268,14 +56337,14 @@ return {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Lubricant',
                                             ['ID'] = 'LubricantItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '5',
                                             ['IsStatic'] = 'False',
                                     },
                                     ['Silica'] = {
                                             ['Type'] = 'TAG',
                                             ['Name'] = 'Silica',
                                             ['ID'] = 'Silica',
-                                            ['Quantity'] = '3',
+                                            ['Quantity'] = '15',
                                             ['IsStatic'] = 'False',
                                     },
                                     }
@@ -56284,7 +56353,7 @@ return {
                                     ['Polishing Paste'] = {
                                             ['Name'] = 'Polishing Paste',
                                             ['ID'] = 'PolishingPasteItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -56294,12 +56363,12 @@ return {
                                     ['ChemicalWaste'] = {
                                             ['Name'] = 'Chemical Waste',
                                             ['ID'] = 'ChemicalWasteItem',
-                                            ['Quantity'] = '0.8',
+                                            ['Quantity'] = '4',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '96',
+                                            ['Quantity'] = '480',
                                     },
                                     }
 ,
@@ -57024,7 +57093,7 @@ return {
                             },
                     ['CraftTime'] = '120',
                     ['ExperienceOnCraft'] = '1',
-                    ['LaborInCalories'] = '1',
+                    ['LaborInCalories'] = '120',
                     ['RequiredSkill'] = {'HuntingSkill','1'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Fletching Table',
@@ -57111,12 +57180,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '2.56',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '6.4',
+                                            ['Quantity'] = '11.84',
                                     },
                                     }
 ,
@@ -57124,7 +57193,7 @@ return {
         ['PrimitiveDumpRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Primitive Dump",
-                            ['Russian'] = "«Примитивная свалка»",
+                            ['Russian'] = "Примитивная свалка",
                             ['German'] = "Primitive Dump",
                             ['French'] = "Décharge primitive",
                             ['Japanese'] = "原始的なダンプ",
@@ -57167,12 +57236,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '59.2',
                                     },
                                     }
 ,
@@ -58859,7 +58928,7 @@ return {
         ['QuicklimeGlassRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Quicklime Glass",
-                            ['Russian'] = "Стекло из негашеной извести",
+                            ['Russian'] = "Стекло из Оксида кальция",
                             ['German'] = "Glas aus Branntkalk",
                             ['French'] = "Verre en chaux vive",
                             ['Japanese'] = "クイックライムグラス",
@@ -59439,6 +59508,43 @@ return {
                                     }
 ,
         },
+        ['RecycledBoardsRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Recycled Boards",
+                            ['Russian'] = "Recycled Boards",
+                            ['German'] = "Recycled Boards",
+                            ['French'] = "Recycled Boards",
+                            ['Japanese'] = "Recycled Boards",
+                            },
+                    ['CraftTime'] = '10',
+                    ['ExperienceOnCraft'] = '0.1',
+                    ['LaborInCalories'] = '20',
+                    ['RequiredSkill'] = {'LoggingSkill','5'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Sawmill',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Wood Scrap'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Board'] = {
+                                            ['Name'] = 'Board',
+                                            ['ID'] = 'BoardItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+                    ['Garbages'] = nil,
+        },
         ['RecycledCelluloseFiberRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Recycled Cellulose Fiber",
@@ -59475,6 +59581,88 @@ return {
                                     }
 ,
                     ['Garbages'] = nil,
+        },
+        ['RecycledCharcoalSteelRecipe'] = {
+                    ['Name'] =  {
+                            ['English'] = "Recycled Charcoal Steel",
+                            ['Russian'] = "Recycled Charcoal Steel",
+                            ['German'] = "Recycled Charcoal Steel",
+                            ['French'] = "Recycled Charcoal Steel",
+                            ['Japanese'] = "Recycled Charcoal Steel",
+                            },
+                    ['CraftTime'] = '90',
+                    ['ExperienceOnCraft'] = '1',
+                    ['LaborInCalories'] = '60',
+                    ['RequiredSkill'] = {'RecyclingSkill','3'},
+                    ['RequiresModule'] = 'nil',
+                    ['CraftingTables'] = 'Blast Furnace',
+                    ['RequiresStrangeBlueprint'] = 'False',
+                    ['Ingredients'] =  {
+                                    ['Ceramic Mold'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Ceramic Mold',
+                                            ['ID'] = 'CeramicMoldItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Charcoal'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Charcoal',
+                                            ['ID'] = 'CharcoalItem',
+                                            ['Quantity'] = '8',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    ['Iron Scrap'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Iron Scrap',
+                                            ['ID'] = 'IronScrapItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
+                                    ['Quicklime'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Quicklime',
+                                            ['ID'] = 'QuicklimeItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                    },
+                                    }
+,
+                    ['Products'] =  {
+                                    ['Slag'] = {
+                                            ['Name'] = 'Slag',
+                                            ['ID'] = 'SlagItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'False',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    ['Steel Bar'] = {
+                                            ['Name'] = 'Steel Bar',
+                                            ['ID'] = 'SteelBarItem',
+                                            ['Quantity'] = '4',
+                                            ['IsStatic'] = 'True',
+                                            ['Type'] = 'ITEM',
+                                    },
+                                    }
+,
+                    ['Garbages'] =  {
+                                    ['CeramicScrap'] = {
+                                            ['Name'] = 'Ceramic Scrap',
+                                            ['ID'] = 'CeramicScrapItem',
+                                            ['Quantity'] = '103.2',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '3.2',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '128',
+                                    },
+                                    }
+,
         },
         ['RecycledCopperBarRecipe'] = {
                     ['Name'] =  {
@@ -60105,7 +60293,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -60719,12 +60912,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '84',
+                                            ['Quantity'] = '43.2',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '80',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '40.8',
                                     },
                                     }
 ,
@@ -61229,12 +61427,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '3.84',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '40.16',
                                     },
                                     }
 ,
@@ -61897,7 +62095,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '6.8',
                                     },
                                     }
 ,
@@ -62152,6 +62355,13 @@ return {
                                             ['Quantity'] = '4',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -62175,7 +62385,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
@@ -62185,7 +62395,12 @@ return {
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '8.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -62229,7 +62444,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -62273,7 +62493,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -62331,12 +62556,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '10.24',
                                     },
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
                                             ['ID'] = 'IronScrapItem',
                                             ['Quantity'] = '30.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '21.76',
                                     },
                                     }
 ,
@@ -62380,7 +62610,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -62438,12 +62673,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '31.84',
                                     },
                                     ['Textiles'] = {
                                             ['Name'] = 'Textiles',
                                             ['ID'] = 'TextilesItem',
                                             ['Quantity'] = '24',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '8.16',
                                     },
                                     }
 ,
@@ -63191,12 +63431,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '45.6',
                                     },
                                     }
 ,
@@ -63398,7 +63638,7 @@ return {
                             },
                     ['CraftTime'] = '12',
                     ['ExperienceOnCraft'] = '0.5',
-                    ['LaborInCalories'] = '60',
+                    ['LaborInCalories'] = '220',
                     ['RequiredSkill'] = {'BlacksmithSkill','1'},
                     ['RequiresModule'] = 'nil',
                     ['CraftingTables'] = 'Anvil',
@@ -63417,7 +63657,7 @@ return {
                                     ['Sharpening Steel'] = {
                                             ['Name'] = 'Sharpening Steel',
                                             ['ID'] = 'SharpeningSteelItem',
-                                            ['Quantity'] = '1',
+                                            ['Quantity'] = '8',
                                             ['IsStatic'] = 'True',
                                             ['Type'] = 'ITEM',
                                     },
@@ -63952,7 +64192,7 @@ return {
         ['ShortBasicHardwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Basic Hardwood Shelf",
-                            ['Russian'] = "Короткая простая полка из массива дерева",
+                            ['Russian'] = "Короткая обычная полка из лиственных пород дерева",
                             ['German'] = "Kurzes, einfaches Regal aus Hartholz",
                             ['French'] = "Petite étagère en bois massif",
                             ['Japanese'] = "ショート・ベーシック・ハードウッド・シェルフ",
@@ -64008,7 +64248,7 @@ return {
         ['ShortBasicSoftwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Basic Softwood Shelf",
-                            ['Russian'] = "Короткая простая полка из хвойного дерева",
+                            ['Russian'] = "Короткая обычная полка из хвойных пород дерева",
                             ['German'] = "Kurzes, einfaches Regal aus Weichholz",
                             ['French'] = "Petite étagère en bois tendre",
                             ['Japanese'] = "ショート・ベーシック・ソフトウッド・シェルフ",
@@ -64064,7 +64304,7 @@ return {
         ['ShortBasicWoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Basic Wood Shelf",
-                            ['Russian'] = "Короткая простая деревянная полка",
+                            ['Russian'] = "Короткая обычная деревянная полка",
                             ['German'] = "Kurzes, einfaches Holzregal",
                             ['French'] = "Petite étagère en bois basique",
                             ['Japanese'] = "シンプルな木製棚",
@@ -64120,7 +64360,7 @@ return {
         ['ShortCurvedHardwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Curved Hardwood Veneer Shelf",
-                            ['Russian'] = "Короткая изогнутая полка из шпона твердых пород дерева",
+                            ['Russian'] = "Короткая изогнутая полка из лиственных композитов со шпоном",
                             ['German'] = "Kurzes, gebogenes Regal aus Hartholzfurnier",
                             ['French'] = "Petite étagère en placage de bois dur incurvé",
                             ['Japanese'] = "短くて湾曲したハードウッド突き板の棚",
@@ -64186,7 +64426,7 @@ return {
         ['ShortCurvedSoftwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Curved Softwood Veneer Shelf",
-                            ['Russian'] = "Короткая изогнутая полка из шпона хвойных пород",
+                            ['Russian'] = "Короткая изогнутая полка из хвойных композитов со шпоном",
                             ['German'] = "Kurzes, gebogenes Regal aus Weichholzfurnier",
                             ['French'] = "Étagère courte en placage de bois tendre courbé",
                             ['Japanese'] = "短く湾曲した針葉樹の突き板棚",
@@ -64252,7 +64492,7 @@ return {
         ['ShortCurvedWoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Curved Wood Veneer Shelf",
-                            ['Russian'] = "Короткая изогнутая полка из деревянного шпона",
+                            ['Russian'] = "Короткая изогнутая полка из композитных пиломатериалов со шпоном",
                             ['German'] = "Kurzes, gebogenes Regal aus Holzfurnier",
                             ['French'] = "Petite étagère en placage de bois courbé",
                             ['Japanese'] = "短い湾曲した木製突き板の棚",
@@ -64318,7 +64558,7 @@ return {
         ['ShortFloatingHardwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Floating Hardwood Shelf",
-                            ['Russian'] = "Короткая плавающая полка из массива дерева",
+                            ['Russian'] = "Парящая короткая полка из лиственных пород дерева",
                             ['German'] = "Kurzes, schwebendes Regal aus Hartholz",
                             ['French'] = "Petite étagère flottante en bois massif",
                             ['Japanese'] = "短い浮き棚（ハードウッド製）",
@@ -64374,7 +64614,7 @@ return {
         ['ShortFloatingSoftwoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Floating Softwood Shelf",
-                            ['Russian'] = "Короткая плавающая полка из хвойного дерева",
+                            ['Russian'] = "Парящая короткая полка из хвойных пород дерева",
                             ['German'] = "Kurzes schwebendes Regal aus Weichholz",
                             ['French'] = "Petite étagère flottante en bois tendre",
                             ['Japanese'] = "短いフローティング・ソフトウッド・シェルフ",
@@ -64430,7 +64670,7 @@ return {
         ['ShortFloatingWoodShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Floating Wood Shelf",
-                            ['Russian'] = "Короткая плавающая деревянная полка",
+                            ['Russian'] = "Парящая короткая полка из дерева",
                             ['German'] = "Kurzes schwebendes Holzregal",
                             ['French'] = "Petite étagère flottante en bois",
                             ['Japanese'] = "短いフローティングウッドシェルフ",
@@ -64486,7 +64726,7 @@ return {
         ['ShortHardwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Hardwood Veneer Shelf",
-                            ['Russian'] = "Короткая полка из шпона твердых пород дерева",
+                            ['Russian'] = "Короткая полка из лиственных композитов со шпоном",
                             ['German'] = "Kurzes Regal aus Hartholzfurnier",
                             ['French'] = "Petite étagère en placage de bois dur",
                             ['Japanese'] = "短いハードウッド突き板棚",
@@ -64552,7 +64792,7 @@ return {
         ['ShortSoftwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Softwood Veneer Shelf",
-                            ['Russian'] = "Короткая полка из шпона хвойных пород",
+                            ['Russian'] = "Короткая полка из хвойных композитов со шпоном",
                             ['German'] = "Kurzes Regal aus Nadelholzfurnier",
                             ['French'] = "Petite étagère en placage de bois tendre",
                             ['Japanese'] = "短い針葉樹突き板棚",
@@ -64725,7 +64965,7 @@ return {
         ['ShortThinHardwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Thin Hardwood Veneer Shelf",
-                            ['Russian'] = "Короткая тонкая полка из шпона твердой древесины",
+                            ['Russian'] = "Короткая тонкая полка из лиственных композитов со шпоном",
                             ['German'] = "Kurzes, schmales Regal aus Hartholzfurnier",
                             ['French'] = "Petite étagère en placage de bois dur",
                             ['Japanese'] = "薄型のハードウッド突き板棚",
@@ -64791,7 +65031,7 @@ return {
         ['ShortThinSoftwoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Thin Softwood Veneer Shelf",
-                            ['Russian'] = "Короткая полка из тонкого шпона хвойных пород",
+                            ['Russian'] = "Короткая тонкая полка из хвойных композитов со шпоном",
                             ['German'] = "Kurzes, schmales Regal aus Nadelholzfurnier",
                             ['French'] = "Petite étagère en placage de bois tendre",
                             ['Japanese'] = "短くて薄い針葉樹の突き板棚",
@@ -64857,7 +65097,7 @@ return {
         ['ShortThinWoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Thin Wood Veneer Shelf",
-                            ['Russian'] = "Короткая тонкая полка из деревянного шпона",
+                            ['Russian'] = "Короткая тонкая полка из композитных пиломатериалов со шпоном",
                             ['German'] = "Kurzes, schmales Regal aus Holzfurnier",
                             ['French'] = "Petite étagère en placage de bois fin",
                             ['Japanese'] = "薄型の木製突き板棚",
@@ -64923,7 +65163,7 @@ return {
         ['ShortWoodVeneerShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Short Wood Veneer Shelf",
-                            ['Russian'] = "Короткая полка из деревянного шпона",
+                            ['Russian'] = "Короткая полка из композитных пиломатериалов со шпоном",
                             ['German'] = "Kurzes Regal aus Holzfurnier",
                             ['French'] = "Petite étagère en placage de bois",
                             ['Japanese'] = "ショート・ウッド・ベニア・シェルフ",
@@ -65452,12 +65692,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '28',
+                                            ['Quantity'] = '8.96',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '6.4',
+                                            ['Quantity'] = '25.44',
                                     },
                                     }
 ,
@@ -65789,7 +66029,7 @@ return {
         ['SmallFacetedSteelPotRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Small Faceted Steel Pot",
-                            ['Russian'] = "Небольшой шлифованный стальной горшок",
+                            ['Russian'] = "Небольшой гранёный стальной горшок",
                             ['German'] = "Kleiner facettierter Stahltopf",
                             ['French'] = "Petit pot en acier à facettes",
                             ['Japanese'] = "小さなファセット加工スチールポット",
@@ -66226,12 +66466,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66289,12 +66529,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66352,12 +66592,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66415,12 +66655,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66478,12 +66718,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '19.6',
                                     },
                                     }
 ,
@@ -66541,12 +66781,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66841,12 +67081,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66904,12 +67144,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -66967,12 +67207,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -67093,12 +67333,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '22.8',
                                     },
                                     }
 ,
@@ -67156,12 +67396,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -67219,12 +67459,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68320,12 +68560,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68383,12 +68623,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68446,12 +68686,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68509,12 +68749,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68572,12 +68812,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '19.6',
                                     },
                                     }
 ,
@@ -68635,12 +68875,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68935,12 +69175,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -68998,12 +69238,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -69061,12 +69301,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -69187,12 +69427,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '22.8',
                                     },
                                     }
 ,
@@ -69250,12 +69490,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -69313,12 +69553,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '14.4',
+                                            ['Quantity'] = '21.2',
                                     },
                                     }
 ,
@@ -69406,7 +69646,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '6.8',
                                     },
                                     }
 ,
@@ -69558,7 +69803,7 @@ return {
                             ['Japanese'] = "小型木製船枠",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '1',
+                    ['ExperienceOnCraft'] = '3',
                     ['LaborInCalories'] = '60',
                     ['RequiredSkill'] = {'ShipwrightSkill','1'},
                     ['RequiresModule'] = 'nil',
@@ -70298,7 +70543,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '2',
+                                            ['Quantity'] = '0.64',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '1.36',
                                     },
                                     }
 ,
@@ -70342,7 +70592,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -70350,7 +70605,7 @@ return {
         ['SoftwoodDoubleShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Softwood Double Shelf",
-                            ['Russian'] = "Двухъярусная полка из хвойного дерева",
+                            ['Russian'] = "Двухъярусная полка из хвойных пород",
                             ['German'] = "Doppelregal aus Weichholz",
                             ['French'] = "Étagère double en bois tendre",
                             ['Japanese'] = "ソフトウッド製ダブルシェルフ",
@@ -70449,12 +70704,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '1.6',
+                                            ['Quantity'] = '4.32',
                                     },
                                     }
 ,
@@ -70910,7 +71165,7 @@ return {
         ['SoilDecontaminantRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Soil Decontaminant",
-                            ['Russian'] = "Обеззараживатель почвы",
+                            ['Russian'] = "Нейтрализатор загрязнения почвы",
                             ['German'] = "Soil Decontaminant",
                             ['French'] = "Soil Decontaminant",
                             ['Japanese'] = "土壌除染剤",
@@ -70997,12 +71252,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '6.4',
+                                            ['Quantity'] = '9.12',
                                     },
                                     }
 ,
@@ -74601,7 +74856,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -74652,12 +74912,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -74752,12 +75017,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -74808,12 +75078,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -74864,12 +75139,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -75022,12 +75302,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -75078,12 +75363,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '40',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -75171,7 +75461,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -75290,12 +75585,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '20',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -76117,7 +76417,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '3.84',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '8.16',
                                     },
                                     }
 ,
@@ -76161,7 +76466,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '3.84',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '8.16',
                                     },
                                     }
 ,
@@ -76205,7 +76515,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '10.24',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '21.76',
                                     },
                                     }
 ,
@@ -76318,7 +76633,7 @@ return {
         ['SulfurcreteRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Sulfurcrete",
-                            ['Russian'] = "Sulfurcrete",
+                            ['Russian'] = "Серный бетон",
                             ['German'] = "Sulfurcrete",
                             ['French'] = "Sulfurcrete",
                             ['Japanese'] = "硫黄コンクリート",
@@ -76776,7 +77091,7 @@ return {
         ['SyntheticPhosphateFertilizerRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Synthetic Phosphate Fertilizer",
-                            ['Russian'] = "Synthetic Phosphate Fertilizer",
+                            ['Russian'] = "Синтетическое фосфорное удобрение",
                             ['German'] = "Synthetic Phosphate Fertilizer",
                             ['French'] = "Synthetic Phosphate Fertilizer",
                             ['Japanese'] = "Synthetic Phosphate Fertilizer",
@@ -77766,12 +78081,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '12',
+                                            ['Quantity'] = '3.84',
                                     },
                                     ['Textiles'] = {
                                             ['Name'] = 'Textiles',
                                             ['ID'] = 'TextilesItem',
                                             ['Quantity'] = '16',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '8.16',
                                     },
                                     }
 ,
@@ -78031,7 +78351,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '6.8',
                                     },
                                     }
 ,
@@ -78075,7 +78400,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -78238,12 +78568,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '20',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -78338,7 +78673,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '4',
+                                            ['Quantity'] = '1.28',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -78396,12 +78736,17 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '18.4',
                                     },
                                     ['StoneRubble'] = {
                                             ['Name'] = 'Stone Rubble',
                                             ['ID'] = 'CrushedMixedRockItem',
                                             ['Quantity'] = '20',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -79074,6 +79419,13 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -79097,12 +79449,22 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
                                             ['ID'] = 'GoldScrapItem',
                                             ['Quantity'] = '32',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -79130,6 +79492,13 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -79153,12 +79522,22 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
                                             ['ID'] = 'GoldScrapItem',
                                             ['Quantity'] = '32',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -79186,6 +79565,13 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -79209,12 +79595,22 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
                                             ['ID'] = 'GoldScrapItem',
                                             ['Quantity'] = '32',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -79242,6 +79638,13 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -79265,12 +79668,22 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
                                             ['ID'] = 'GoldScrapItem',
                                             ['Quantity'] = '32',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -79298,6 +79711,13 @@ return {
                                             ['Quantity'] = '20',
                                             ['IsStatic'] = 'False',
                                     },
+                                    ['Polishing Paste'] = {
+                                            ['Type'] = 'ITEM',
+                                            ['Name'] = 'Polishing Paste',
+                                            ['ID'] = 'PolishingPasteItem',
+                                            ['Quantity'] = '1',
+                                            ['IsStatic'] = 'False',
+                                    },
                                     ['Redwood Log'] = {
                                             ['Type'] = 'ITEM',
                                             ['Name'] = 'Redwood Log',
@@ -79321,12 +79741,22 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '3.36',
                                     },
                                     ['GoldScrap'] = {
                                             ['Name'] = 'Gold Scrap',
                                             ['ID'] = 'GoldScrapItem',
                                             ['Quantity'] = '32',
+                                    },
+                                    ['StoneRubble'] = {
+                                            ['Name'] = 'Stone Rubble',
+                                            ['ID'] = 'CrushedMixedRockItem',
+                                            ['Quantity'] = '0.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '5.44',
                                     },
                                     }
 ,
@@ -80264,7 +80694,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
@@ -80274,7 +80704,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '48',
+                                            ['Quantity'] = '58.88',
                                     },
                                     }
 ,
@@ -80332,7 +80762,7 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
                                     },
                                     ['IronScrap'] = {
                                             ['Name'] = 'Iron Scrap',
@@ -80342,7 +80772,7 @@ return {
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '48',
+                                            ['Quantity'] = '58.88',
                                     },
                                     }
 ,
@@ -82049,12 +82479,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '8',
+                                            ['Quantity'] = '2.56',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '12.8',
+                                            ['Quantity'] = '18.24',
                                     },
                                     }
 ,
@@ -82385,7 +82815,7 @@ return {
         ['WindowShuttersCenterRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Window Shutters Center",
-                            ['Russian'] = "оконные жалюзи центральные",
+                            ['Russian'] = "Центральный сегмент жалюзи",
                             ['German'] = "Fensterläden-Center",
                             ['French'] = "Volets fermés",
                             ['Japanese'] = "窓のシャッターセンター",
@@ -82439,7 +82869,7 @@ return {
         ['WindowShuttersLeftRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Window Shutters Left",
-                            ['Russian'] = "оконные жалюзи левые",
+                            ['Russian'] = "Левый сегмент жалюзи",
                             ['German'] = "Fensterläden links",
                             ['French'] = "Volet à battants gauche",
                             ['Japanese'] = "窓のシャッターは左です",
@@ -82493,7 +82923,7 @@ return {
         ['WindowShuttersRightRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Window Shutters Right",
-                            ['Russian'] = "оконные жалюзи правые",
+                            ['Russian'] = "Правый сегмент жалюзи",
                             ['German'] = "Fensterläden rechts",
                             ['French'] = "Volet à battants droit",
                             ['Japanese'] = "窓のシャッターは右に",
@@ -82770,7 +83200,7 @@ return {
         ['WoodDoubleShelfRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Wood Double Shelf",
-                            ['Russian'] = "Деревянная двойная полка",
+                            ['Russian'] = "Деревянная двухъярусная полка",
                             ['German'] = "Doppelregal aus Holz",
                             ['French'] = "Étagère double en bois",
                             ['Japanese'] = "木製ダブルシェルフ",
@@ -82970,7 +83400,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '72',
+                                            ['Quantity'] = '39.36',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '32.64',
                                     },
                                     }
 ,
@@ -83695,7 +84130,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -83709,7 +84149,7 @@ return {
                             ['Japanese'] = "木製船体板",
                             },
                     ['CraftTime'] = '60',
-                    ['ExperienceOnCraft'] = '0.5',
+                    ['ExperienceOnCraft'] = '1',
                     ['LaborInCalories'] = '60',
                     ['RequiredSkill'] = {'ShipwrightSkill','1'},
                     ['RequiresModule'] = 'nil',
@@ -83746,7 +84186,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '7.2',
+                                            ['Quantity'] = '4.48',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '2.72',
                                     },
                                     }
 ,
@@ -83790,7 +84235,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '16',
+                                            ['Quantity'] = '5.12',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '10.88',
                                     },
                                     }
 ,
@@ -84222,12 +84672,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '22.4',
+                                            ['Quantity'] = '11.52',
                                     },
                                     ['WoodScrap'] = {
                                             ['Name'] = 'Wood Scrap',
                                             ['ID'] = 'WoodScrapItem',
-                                            ['Quantity'] = '38.4',
+                                            ['Quantity'] = '49.28',
                                     },
                                     }
 ,
@@ -84332,7 +84782,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '40',
+                                            ['Quantity'] = '12.8',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '27.2',
                                     },
                                     }
 ,
@@ -84717,7 +85172,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '32',
+                                            ['Quantity'] = '18.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -84953,7 +85413,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '10',
+                                            ['Quantity'] = '3.2',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '6.8',
                                     },
                                     }
 ,
@@ -85289,7 +85754,12 @@ return {
                                     ['BioResidue'] = {
                                             ['Name'] = 'Bio Residue',
                                             ['ID'] = 'BioResidueItem',
-                                            ['Quantity'] = '20',
+                                            ['Quantity'] = '6.4',
+                                    },
+                                    ['WoodScrap'] = {
+                                            ['Name'] = 'Wood Scrap',
+                                            ['ID'] = 'WoodScrapItem',
+                                            ['Quantity'] = '13.6',
                                     },
                                     }
 ,
@@ -85506,7 +85976,7 @@ return {
         ['ZatakuTableRecipe'] = {
                     ['Name'] =  {
                             ['English'] = "Zataku Table",
-                            ['Russian'] = "Стол Затаку",
+                            ['Russian'] = "Столик Затаку",
                             ['German'] = "Zataku-Tabelle",
                             ['French'] = "Table Zataku",
                             ['Japanese'] = "ザタク表",

@@ -1,6 +1,6 @@
--- Eco Version : 0.14.0.2
--- EWDE Version : 0.7.2.0
--- Date of export : 11.08.2026 21:17:01
+-- Eco Version : 0.14.1.1
+-- EWDE Version : 0.8.0.0
+-- Date of export : 06.09.2026 16:23:07
 
 return {
     trees = {
@@ -438,14 +438,14 @@ return {
                     ['SeedsCount'] = '3',
                     ['Height'] = '1',
                     ['ChanceToBeSpawnOutsideOfGroup'] = '0.1',
-                    ['MinDistanceBetweenGroupsMin'] = '25',
-                    ['MinDistanceBetweenGroupsMax'] = '40',
-                    ['PlantsInGroupMin'] = '3',
-                    ['PlantsInGroupMax'] = '8',
+                    ['MinDistanceBetweenGroupsMin'] = '14',
+                    ['MinDistanceBetweenGroupsMax'] = '22',
+                    ['PlantsInGroupMin'] = '4',
+                    ['PlantsInGroupMax'] = '10',
                     ['CountOfClustersMin'] = '5',
                     ['CountOfClustersMax'] = '8',
-                    ['RadiusOfGroupMin'] = '4',
-                    ['RadiusOfGroupMax'] = '8',
+                    ['RadiusOfGroupMin'] = '6',
+                    ['RadiusOfGroupMax'] = '14',
                     ['ClusterRadiusInWorldSizeMin'] = '0.08',
                     ['ClusterRadiusInWorldSizeMax'] = '0.16',
                     ['CalorieValue'] = '12',

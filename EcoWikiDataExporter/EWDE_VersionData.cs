@@ -33,6 +33,7 @@ using Eco.Shared.Utils;
 using Eco.Gameplay.Systems;
 using Eco.Shared;
 using Eco.Shared.IoC;
+using Newtonsoft.Json;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
@@ -43,8 +44,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public static void ExportVersionData()
         {
-         
-		    // dictionary of commands
+
+            // dictionary of Eco version
             Dictionary<string, string> EcoDetails = new Dictionary<string, string>()
             {
                 { "Version", "nil" },
@@ -55,7 +56,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             VersionData["eco"] = EcoDetails;
             VersionData["eco"]["Version"] = $"'{EcoVersion.Version}'";
             VersionData["eco"]["VersionNumber"] = $"'{EcoVersion.VersionNumber}'";
-            VersionData["eco"]["FullInfo"] = $"'{EcoVersion.FullInfo.Replace("\r\n", " ")}'";
+            VersionData["eco"]["FullVersion"] = $"'{EcoVersion.FullInfo.Replace("\r\n", " ")}'";
             
             // writes to txt file
             WriteDictionaryToFile("EcoVersionData", "game", VersionData);
