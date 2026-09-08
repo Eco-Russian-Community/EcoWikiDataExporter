@@ -72,7 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     TagData[tagName]["ID"] = $"'{tagID}'";
                     TagData[tagName]["Name"] = WriteDictionaryAsSubObject(Localization(tagName), 1);
-                    TagData[tagName]["IsHidden"] = $"'{tag.Hidden}'";
+                    TagData[tagName]["Hidden"] = $"'{tag.Hidden}'";
                     TagData[tagName]["IsVisibleInTooltip"] = $"'{tag.IsVisibleInTooltip}'";
                     TagData[tagName]["IsVisibleInEcopedia"] = $"'{tag.IsVisibleInEcopedia}'";
                     TagData[tagName]["IsVisibleInFilter"] = $"'{tag.IsVisibleInFilter}'";

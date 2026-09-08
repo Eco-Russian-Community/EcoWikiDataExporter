@@ -12,6 +12,7 @@ using Eco.Gameplay.Players;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.ModKit.Internal;
 using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.Localization;
@@ -44,6 +45,12 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
         private static string space2 = "        ";
         private static string space3 = "            ";
+
+        public static void WriteDictionaryToJsonFile(string filename, string Data)
+        {
+            string filepath = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".json";
+            File.WriteAllText(filepath, Data);
+        }
 
         public static void WriteDictionaryToFile(string filename, string type, SortedDictionary<string, Dictionary<string, string>> dictionary, bool final = true)
         {
