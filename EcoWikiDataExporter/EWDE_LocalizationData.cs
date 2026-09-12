@@ -21,6 +21,7 @@ using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,15 +40,16 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static SortedDictionary<string, Dictionary<string, string>> LocalizationData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static Dictionary<string, TranslateData> LocalizationData = new Dictionary<string, TranslateData>();
+
         public static void ExportLocalizationData()
         {
-            Dictionary<string, string> LocDetails = new Dictionary<string, string>() { };
             string[] LocStrings =
                 {
                     "Tags",
@@ -68,7 +70,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "None",
                     "Recipes",
                     "Unlocks",
-                    
                     "Eco Credits",
                     "Quantity",
                     "Requires",
@@ -77,23 +78,17 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Streamer Cut",
                     "Settlement Cut",
                     "Charity Cut",
-
                     "Produces",
                     "Harvested from Species",
                     "Plugs Into",
                     "Requirements",
                     "Pluggable Modules",
                     "Housing Value",
-
                     "Can be used as currency, up to {0} per item.",
-
                     "Effects When Worn",
-
                     "Can chop",
-
                     "Pollution Containment",
                     "Reduces the ground pollution of stored waste by {0}.",
-
                     "When Recycled",
                     "Produced When Crafting",
                     "Generated from",
@@ -103,17 +98,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Ground Pollution",
                     "Air Pollution",
                     "Garbages",
-
                     "Calories",
                     "Carbs",
                     "Protein",
                     "Fat",
                     "Vitamins",
-
                     "Nitrogen",
                     "Phosphorus",
                     "Potassium",
-
                     "Skills",
                     "Profession",
                     "Professions",
@@ -140,20 +132,20 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Laws",
                     "Twitch Drops",
                     "Server",
-
                     "Admin",
                     "User",
                     "DevTier",
-
                 };
 
             foreach (string Loc in LocStrings)
             {
-                LocalizationData.Add(Loc, new Dictionary<string, string>(LocDetails));
-                LocalizationData[Loc]["Translate"] = WriteDictionaryAsSubObject(Localization(Loc), 1);
+                var LocString = Localization(Loc);
+                LocalizationData.Add( Loc, LocString);
             }
-            // writes to txt file
-                WriteDictionaryToFile("LocalizationData", "locales", LocalizationData);
+
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { locales = LocalizationData }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Localization", jsonString);
         }
     }
 }

@@ -39,14 +39,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        // dictionary of Eco version
-        public class EcoVersionData
-        {
-            public string Version { get; set; }
-            public string VersionNumber { get; set; }
-            public string FullVersion { get; set; }
-        }
-
         public static void ExportVersionData()
         {
             EcoVersionData ecoversiondata = new EcoVersionData { 
@@ -55,7 +47,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 FullVersion = EcoVersion.FullInfo.Replace("\r\n", " ")
             };
 
-            // writes to json file
+            // Writes Data to json file
             string jsonString =  JsonConvert.SerializeObject(new { ecogame = ecoversiondata }, Formatting.Indented);
             WriteDictionaryToJsonFile("EcoVersion",jsonString);
         }

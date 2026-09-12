@@ -1,0 +1,262 @@
+{
+  "blueprints": {
+    "Zen Garden": {
+      "Category": "Building Materials",
+      "Price": "900",
+      "Quantity": "250",
+      "Achievement": ""
+    },
+    "Far East Lumber": {
+      "Category": "Building Materials",
+      "Price": "900",
+      "Quantity": "2500",
+      "Achievement": ""
+    },
+    "Egyptian Canoe": {
+      "Category": "Vehicles",
+      "Price": "600",
+      "Quantity": "1",
+      "Achievement": "KnotBad"
+    },
+    "Norse Canoe": {
+      "Category": "Vehicles",
+      "Price": "500",
+      "Quantity": "1",
+      "Achievement": ""
+    },
+    "Chandelier": {
+      "Category": "Lighting",
+      "Price": "400",
+      "Quantity": "4",
+      "Achievement": "Artisan"
+    },
+    "Hanging Electric Wall Lamp": {
+      "Category": "Lighting",
+      "Price": "500",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Fish Kites": {
+      "Category": "Outdoor",
+      "Price": "500",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Koi Pond": {
+      "Category": "Outdoor",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": ""
+    },
+    "Friendly Scarecrow": {
+      "Category": "Outdoor",
+      "Price": "300",
+      "Quantity": "1",
+      "Achievement": "SowItBegins"
+    },
+    "Ornate Wood Plaque": {
+      "Category": "Outdoor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "NoteworthyConstruction"
+    },
+    "Ornate Stone Plaque": {
+      "Category": "Outdoor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "FoundationalExcellence"
+    },
+    "Ornate Cast Iron Plaque": {
+      "Category": "Outdoor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "StructuralMagnificence"
+    },
+    "Carpenter Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "ToolMaster"
+    },
+    "Tailor Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "Fashionable"
+    },
+    "Baker Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "RollinginDough"
+    },
+    "Food Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "EntreeExpert"
+    },
+    "Shipwright Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "CraftyCaptain"
+    },
+    "Farmer Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "FactoryFarmer"
+    },
+    "Engineer Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "GreaseMonkey"
+    },
+    "Mason Sign": {
+      "Category": "Signs",
+      "Price": "400",
+      "Quantity": "1",
+      "Achievement": "MasonryMaster"
+    },
+    "Periodic Table Poster": {
+      "Category": "Decor",
+      "Price": "40",
+      "Quantity": "4",
+      "Achievement": "Polymath"
+    },
+    "Cart Blueprint Poster": {
+      "Category": "Decor",
+      "Price": "40",
+      "Quantity": "4",
+      "Achievement": "GreaseMonkey"
+    },
+    "Election Poster": {
+      "Category": "Decor",
+      "Price": "40",
+      "Quantity": "4",
+      "Achievement": "BornLeader"
+    },
+    "Tapestry Fish": {
+      "Category": "Decor",
+      "Price": "600",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Tapestry Sunset": {
+      "Category": "Decor",
+      "Price": "600",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Wolf Pelt": {
+      "Category": "Decor",
+      "Price": "200",
+      "Quantity": "4",
+      "Achievement": "HowtoCookaWolf"
+    },
+    "Fox Pelt": {
+      "Category": "Decor",
+      "Price": "150",
+      "Quantity": "4",
+      "Achievement": "Foxtrot"
+    },
+    "Bison Pelt": {
+      "Category": "Decor",
+      "Price": "90",
+      "Quantity": "4",
+      "Achievement": "BigGame"
+    },
+    "Deer Pelt": {
+      "Category": "Decor",
+      "Price": "60",
+      "Quantity": "4",
+      "Achievement": "DeerHunter"
+    },
+    "Banana Rug": {
+      "Category": "Decor",
+      "Price": "200",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Trophy Miner": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "Rockhound"
+    },
+    "Trophy Logger": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "Forestry101"
+    },
+    "Trophy Farmer": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "FactoryFarmer"
+    },
+    "Trophy Baker": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "ConfectionPerfection"
+    },
+    "Trophy Artist": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "Artisan"
+    },
+    "Saved The World Achievement Trophy": {
+      "Category": "Decor",
+      "Price": "350",
+      "Quantity": "1",
+      "Achievement": "FireworksShow"
+    },
+    "Wall Mounted Trunk": {
+      "Category": "Misc",
+      "Price": "350",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Zataku Table": {
+      "Category": "Furniture",
+      "Price": "700",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Fancy Hewn Door": {
+      "Category": "Furniture",
+      "Price": "100",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Shoji Door": {
+      "Category": "Furniture",
+      "Price": "200",
+      "Quantity": "4",
+      "Achievement": ""
+    },
+    "Norse Axe": {
+      "Category": "Tools",
+      "Price": "300",
+      "Quantity": "1",
+      "Achievement": "Forestry101"
+    },
+    "Banana Shirt": {
+      "Category": "Clothing",
+      "Price": "250",
+      "Quantity": "1",
+      "Achievement": ""
+    },
+    "Hanamura Cap": {
+      "Category": "Special",
+      "Price": "0",
+      "Quantity": "1",
+      "Achievement": ""
+    }
+  }
+}

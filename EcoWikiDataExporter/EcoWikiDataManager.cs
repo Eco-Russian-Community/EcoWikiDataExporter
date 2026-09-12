@@ -20,6 +20,7 @@ using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation.Types;
 using Eco.Stats;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -38,50 +39,18 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
     public partial class WikiData
     {
-        private static string space2 = "        ";
-        private static string space3 = "            ";
-
         public static void WriteDictionaryToJsonFile(string filename, string Data)
         {
             string filepath = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".json";
             File.WriteAllText(filepath, Data);
         }
 
-        public static void WriteDictionaryToFile(string filename, string type, SortedDictionary<string, Dictionary<string, string>> dictionary, bool final = true)
-        {
-            //var lang = LocalizationPlugin.Config.Language;
-
-            //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}"  + $@"\" + $@"{lang}_" + filename + $@".txt";
-            //string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + $@"{lang}_" + filename + $@".txt";
-            string path = @EcoWikiDataExporter.EWDEFolder + $@"\" + filename + $@".lua";
-
-            using (StreamWriter streamWriter = new StreamWriter(path, false))
-            {
-                streamWriter.WriteLine("-- Eco Version : " + EcoVersion.VersionNumber);
-                streamWriter.WriteLine("-- EWDE Version : " + EcoWikiDataExporter.Version);
-                streamWriter.WriteLine("-- Date of export : " + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss"));
-
-               streamWriter.WriteLine();
-                streamWriter.WriteLine("return {\n    " + type + " = {");
-
-                foreach (string key in dictionary.Keys)
-                {
-                    streamWriter.WriteLine(string.Format("{0}['{1}'] = {{", space2, key));
-                    foreach (KeyValuePair<string, string> keyValuePair in dictionary[key])
-                        streamWriter.WriteLine(string.Format("{0}{1}['{2}'] = {3},", space2, space3, keyValuePair.Key, keyValuePair.Value));
-                    streamWriter.WriteLine(string.Format("{0}}},", space2));
-                }
-                streamWriter.Write("    },");
-                if (final)
-                    streamWriter.Write("\n}");
-                streamWriter.Close();
-            }
-        }
         public static string JSONStringSafe(string s)
         {
             string[] NameSplit = Regex.Split(s, @"(?=['?])");
@@ -93,61 +62,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     sb.Append("\\");
             }
 
-            return sb.ToString();
-        }
-
-		public static string WriteDictionaryAsSubObject(SortedDictionary<string, Dictionary<string, string>> dictionary, int depth)
-		{
-			string spaces = space2 + space2 + space3;
-
-			for (int i = 0; i < depth; i++)
-			{
-				spaces += space2;
-			}
-
-			StringBuilder sb = new StringBuilder();
-			sb.AppendLine(" {");
-			foreach (KeyValuePair<string, Dictionary<string, string>> kvp in dictionary)
-			{
-				sb.AppendLine(spaces + "['" + kvp.Key + "'] = {");
-				foreach (KeyValuePair<string, string> innerKvp in kvp.Value)
-				{
-					sb.AppendLine(spaces + space2 + "['" + innerKvp.Key + "'] = " + innerKvp.Value + ",");
-				}
-				sb.AppendLine(spaces + "},");
-			}
-			sb.AppendLine(spaces + "}");
-
-			return sb.ToString();
-		}
-
-		public static string WriteDictionaryAsSubObject(Dictionary<string, string> dictionary, int depth)
-        {
-            string spaces = space2 + space3;
-
-            for (int i = 0; i < depth; i++)
-            {
-                spaces += space2;
-            }
-
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(" {");
-            foreach (KeyValuePair<string, string> kvp in dictionary)
-            {
-                sb.AppendLine(spaces + "['" + kvp.Key + "'] = " + kvp.Value + ",");
-                //sb.AppendLine(spaces + "['" + kvp.Key + "'] = {" + kvp.Value + "},");
-            }
-            sb.Append(spaces + "}");
-
-            return sb.ToString();
-        }
-
-        public static string WriteDictionaryToLine(string dictionary)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(" {");
-            sb.AppendLine(string.Join(", ", dictionary));
-            sb.Append("}");
             return sb.ToString();
         }
 
@@ -201,10 +115,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             return Double.ToString("G", CultureInfo.InvariantCulture);
         }
 
-        public static Dictionary<string, string> Localization(string name)
+        public static TranslateData Localization(string text)
         {
-            var localizedString = new Dictionary<string, string>();
-            String EnglishLang = name;
+            
+            String EnglishLang = text;
 
             String RussianLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.Russian);
             String GermanLang = Localizer.LocalizeString(EnglishLang, SupportedLanguage.German);
@@ -222,13 +136,16 @@ namespace Eco.Mods.EcoWikiDataExporter
             FrenchLang      = Shielding(FrenchLang);
             JapaneseLang    = Shielding(JapaneseLang);
 
-            localizedString["English"]  = '"' + $"{EnglishLang}" + '"';
-            localizedString["Russian"]  = '"' + $"{RussianLang}" + '"';
-            localizedString["German"]   = '"' + $"{GermanLang}" + '"';
-            localizedString["French"]   = '"' + $"{FrenchLang}" + '"';
-            localizedString["Japanese"] = '"' + $"{JapaneseLang}" + '"';
+            TranslateData translatedata = new TranslateData
+            {
+                English = EnglishLang,
+                Russian = RussianLang,
+                German = GermanLang,
+                French = FrenchLang,
+                Japanese = JapaneseLang
+            };
 
-            return localizedString;
+            return translatedata;
         }
 
         public static string Shielding(string Text)

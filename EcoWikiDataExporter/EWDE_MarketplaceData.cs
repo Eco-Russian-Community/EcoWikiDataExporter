@@ -23,6 +23,8 @@ using Eco.Shared.Items;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Newtonsoft.Json;
+using StrangeCloud.Service.Client.Contracts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -41,24 +43,15 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using StrangeCloud.Service.Client.Contracts;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static SortedDictionary<string, Dictionary<string, string>> MarketplaceData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static Dictionary<string, MarketplaceData> MarketplaceDataList = new Dictionary<string, MarketplaceData>();
         public static void ExportMarketplaceData()
         {
-            // dictionary of marketplace item properties
-            Dictionary<string, string> marketplaceitemDetails = new Dictionary<string, string>()
-            {
-                { "Category", "nil" },
-                { "Price", "nil" },
-                { "Quantity", "nil" },
-                { "Achievement", "nil" }
-            };
-
             foreach (MarketplaceCategory Category in GameData.Obj.EcoMarketplaceManager.Categories)
             {
                 if ((Category.Name != "StrangeLoop") && (Category.Name != "Currency"))
@@ -67,20 +60,22 @@ namespace Eco.Mods.EcoWikiDataExporter
                     {
                         string MarketplaceItemName = Item.DisplayName; 
 
-                        MarketplaceData.Add(MarketplaceItemName, new Dictionary<string, string>(marketplaceitemDetails));
+                        MarketplaceData translatedata = new MarketplaceData
+                        {
+                            Category = Category.Name,
+                            Price = WikiFloat(Item.Price),
+                            Quantity = WikiFloat(Item.Quantity),
+                            Achievement = Item.AchievementRequired
+                        };
 
-                        MarketplaceData[MarketplaceItemName]["Category"] = $"'{Category.Name}'";
-                        MarketplaceData[MarketplaceItemName]["Price"] = $"'{Item.Price}'";
-                        MarketplaceData[MarketplaceItemName]["Quantity"] = $"'{Item.Quantity}'";
-                        MarketplaceData[MarketplaceItemName]["Achievement"] = $"'{Item.AchievementRequired}'";
-                        MarketplaceData[MarketplaceItemName]["CanPurchase"] = $"'{Item.CanPurchase}'";
-                        MarketplaceData[MarketplaceItemName]["IsVoidStorage"] = $"'{Item.IsVoidStorage}'";
+                        MarketplaceDataList.Add(MarketplaceItemName, translatedata);
                     }
                 }
             }
                 
-            // writes to txt file
-            WriteDictionaryToFile("MarketplaceData", "blueprints", MarketplaceData);
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { blueprints = MarketplaceDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Marketplace", jsonString);
         }
     }
 }
