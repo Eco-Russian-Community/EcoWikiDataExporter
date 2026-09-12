@@ -52,10 +52,6 @@ namespace Eco.Mods.EcoWikiDataExporter
             //PlayerDefaults.GetDefaultInventory
 
 
-
-
-            // writes to txt file
-            WriteDictionaryToFile("PlayerData", "player", PlayerData);
         }
     }
 }

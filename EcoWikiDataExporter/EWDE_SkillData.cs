@@ -1,4 +1,25 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Items;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Skills;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.IoC;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,49 +36,21 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Shared.IoC;
-using Eco.Gameplay.Skills;
-using Eco.Core.Items;
+using System.Xml.Linq;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
+        private static Dictionary<string, SkillData> SkillDataList = new Dictionary<string, SkillData>();
 
-        // dictionary of skills and their dictionary of stats
-        private static SortedDictionary<string, Dictionary<string, string>> SkillData = new SortedDictionary<string, Dictionary<string, string>>();
-        
         public static void ExportSkillData()
         {
 
             Dictionary<string, string> skillsDetails = new Dictionary<string, string>()
             {
-                { "Name", "nil" },
-                { "Description", "nil" },
-                { "SkillID", "nil" },
-                { "MaxLevel", "nil" },
-                { "Tier", "nil" },
-                { "SpecialtyCost", "nil" },
-                { "IsRoot", "nil" },
-                { "RootSkill", "False" },
-                { "PlayerDefaultSkill", "False" }
+
             };
 
             IEnumerable<Type> PlayerDefaultSkills = PlayerDefaults.GetDefaultSkills();
@@ -65,24 +58,29 @@ namespace Eco.Mods.EcoWikiDataExporter
             foreach (var skill in Skill.AllSkills)
             {
                 string SkillName = skill.DisplayName;
-                if (!SkillData.ContainsKey(SkillName))
-                {                    
-                    SkillData.Add(SkillName, new Dictionary<string, string>(skillsDetails));
-                    SkillData[SkillName]["Name"] = WriteDictionaryAsSubObject(Localization(skill.DisplayName), 1);
-                    SkillData[SkillName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(skill.GetDescription.NotTranslated)), 1);
-                    SkillData[SkillName]["MaxLevel"] = $"'{skill.MaxLevel}'";
-                    SkillData[SkillName]["SkillID"] = $"'{skill.Type.Name}'";
-                    SkillData[SkillName]["Tier"] = $"'{skill.Tier}'";
-                    SkillData[SkillName]["SpecialtyCost"] = $"'{skill.SpecialtyCost}'";
-                    SkillData[SkillName]["IsRoot"] = $"'{skill.IsRoot}'";
-                    SkillData[SkillName]["RootSkill"] = $"'{skill.RootSkillTree.StaticSkill}'";
-                    SkillData[SkillName]["PlayerDefaultSkill"] = $"'{PlayerDefaultSkills.Contains(skill.Type)}'";
+                if (!SkillDataList.ContainsKey(SkillName))
+                {
+
+                    SkillData skilldata = new SkillData
+                    {
+                        Name = Localization(skill.DisplayName),
+                        Description = Localization(CleanText(skill.GetDescription.NotTranslated)),
+                        MaxLevel = skill.MaxLevel,
+                        SkillID = skill.Type.Name,
+                        Tier = skill.Tier,
+                        SpecialtyCost = skill.SpecialtyCost,
+                        IsRoot = skill.IsRoot,
+                        RootSkill = skill.RootSkillTree.StaticSkill.ToString(),
+                        PlayerDefaultSkill = PlayerDefaultSkills.Contains(skill.Type)
+                    };
+
+                    SkillDataList.Add(SkillName, skilldata);
                 }
             }
-        // writes to txt file
-        WriteDictionaryToFile("SkillData", "skills", SkillData);
+            
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { skills = SkillDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Skills", jsonString);
         }
-
-
     }
 }

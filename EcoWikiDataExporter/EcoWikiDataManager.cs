@@ -115,6 +115,11 @@ namespace Eco.Mods.EcoWikiDataExporter
             return Double.ToString("G", CultureInfo.InvariantCulture);
         }
 
+        public static string WikiBool(bool Bool)
+        {
+            if (Bool) { return "True"; } else {  return "False"; }
+        }
+
         public static TranslateData Localization(string text)
         {
             

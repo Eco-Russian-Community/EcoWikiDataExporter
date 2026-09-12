@@ -1,0 +1,1670 @@
+{
+  "achievements": {
+    "SewItBegins": {
+      "Name": {
+        "English": "Sew It Begins",
+        "Russian": "Первые стежки",
+        "German": "So geht’s los",
+        "French": "C'est parti",
+        "Japanese": "さあ、ここから始まる"
+      },
+      "Description": {
+        "English": "Craft an article of clothing.",
+        "Russian": "Создайте предмет одежды.",
+        "German": "Stelle ein Kleidungsstück her.",
+        "French": "Fabrique un vêtement.",
+        "Japanese": "衣服を1着クラフトする。"
+      },
+      "IconName": "SewItBegins"
+    },
+    "Foxtrot": {
+      "Name": {
+        "English": "Foxtrot",
+        "Russian": "Фокстрот",
+        "German": "Foxtrot",
+        "French": "Foxtrot",
+        "Japanese": "フォックストロット"
+      },
+      "Description": {
+        "English": "Successfully hunt a fox.",
+        "Russian": "Успешно поймайте лису.",
+        "German": "Jage erfolgreich einen Fuchs.",
+        "French": "Réussis à chasser un renard.",
+        "Japanese": "キツネを無事に狩る。"
+      },
+      "IconName": "Foxtrot"
+    },
+    "GatheringofMinds": {
+      "Name": {
+        "English": "Gathering of Minds",
+        "Russian": "Сбор умов",
+        "German": "Gathering of Minds",
+        "French": "Rassemblement des esprits",
+        "Japanese": "知恵の結集"
+      },
+      "Description": {
+        "English": "Attend a dinner party that generates more than 50 culture.",
+        "Russian": "Посетите званый ужин, который генерирует больше 50 очков культуры.",
+        "German": "Nimm an einer Dinnerparty teil, die mehr als 50 Kulturpunkte einbringt.",
+        "French": "Participe à un dîner qui génère plus de 50 points de culture.",
+        "Japanese": "50以上の文化ポイントを獲得できるディナーパーティーに参加する。"
+      },
+      "IconName": "GatheringofMinds"
+    },
+    "FreshCanvas": {
+      "Name": {
+        "English": "Fresh Canvas",
+        "Russian": "Свежий Холст",
+        "German": "Neuer Anfang",
+        "French": "Toile fraîche",
+        "Japanese": "フレッシュ・キャンバス"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 5 culture.",
+        "Russian": "Создайте предмет искусства, дающий 5 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 5 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 5 de culture.",
+        "Japanese": "5つの文化を生み出すアート作品を制作してください。"
+      },
+      "IconName": "FreshCanvas"
+    },
+    "VisionaryWork": {
+      "Name": {
+        "English": "Visionary Work",
+        "Russian": "Дальновидная работа",
+        "German": "Visionäres Werk",
+        "French": "Ouvrage visionnaire",
+        "Japanese": "先見の明のある活動"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 500 culture.",
+        "Russian": "Создайте предмет искусства, дающий 500 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 500 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 500 de culture.",
+        "Japanese": "500の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "VisionaryWork"
+    },
+    "EternalPerfection": {
+      "Name": {
+        "English": "Eternal Perfection",
+        "Russian": "Вечное совершенство",
+        "German": "Ewige Vollkommenheit",
+        "French": "Perfection éternelle",
+        "Japanese": "永遠の完全さ"
+      },
+      "Description": {
+        "English": "Create architecture that generates 10000 culture.",
+        "Russian": "Создайте архитектурное творение, генерирующее 10000 культуры.",
+        "German": "Erstelle eine Architektur, die 10.000 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 10 000 de culture.",
+        "Japanese": "1万の文化を生み出す建築を創りましょう。"
+      },
+      "IconName": "EternalPerfection"
+    },
+    "SowItBegins": {
+      "Name": {
+        "English": "Sow It Begins",
+        "Russian": "Да начнется Посевная",
+        "German": "So beginnt es",
+        "French": "C'est ainsi que tout commence",
+        "Japanese": "物語の始まり"
+      },
+      "Description": {
+        "English": "Plant 100 seeds.",
+        "Russian": "Посадить 100 семян.",
+        "German": "Pflanze 100 Samen.",
+        "French": "Plante 100 graines.",
+        "Japanese": "種を100個植える。"
+      },
+      "IconName": "SowItBegins"
+    },
+    "ChopChop": {
+      "Name": {
+        "English": "Chop Chop",
+        "Russian": "Удар за ударом",
+        "German": "Chop Chop",
+        "French": "Et que ça saute",
+        "Japanese": "チョップチョップ"
+      },
+      "Description": {
+        "English": "Chopped down first tree.",
+        "Russian": "Срублено первое дерево.",
+        "German": "Erster Baum wurde gefällt.",
+        "French": "Premier arbre abattu.",
+        "Japanese": "最初の木を切り倒した。"
+      },
+      "IconName": "ChopChop"
+    },
+    "HowtoCookaWolf": {
+      "Name": {
+        "English": "How to Cook a Wolf",
+        "Russian": "Как приготовить волка",
+        "German": "Wie man einen Wolf kocht",
+        "French": "Comment cuisiner un loup",
+        "Japanese": "『How to Cook a Wolf』"
+      },
+      "Description": {
+        "English": "Successfully hunt a wolf.",
+        "Russian": "Успешно охоться на волка.",
+        "German": "Jage erfolgreich einen Wolf.",
+        "French": "Chasse un loup avec succès.",
+        "Japanese": "オオカミを狩り上げろ。"
+      },
+      "IconName": "HowtoCookaWolf"
+    },
+    "GraciousGuest": {
+      "Name": {
+        "English": "Gracious Guest",
+        "Russian": "Уважаемый гость",
+        "German": "Ehrwürdiger Gast",
+        "French": "Cher invité",
+        "Japanese": "丁重な客"
+      },
+      "Description": {
+        "English": "Attend a dinner party as a guest.",
+        "Russian": "Посетите званый ужин в качестве гостя.",
+        "German": "Nimm als Gast an einer Dinnerparty teil.",
+        "French": "Participe à un dîner en tant qu'invité.",
+        "Japanese": "ゲストとしてディナーパーティーに参加する。"
+      },
+      "IconName": "GraciousGuest"
+    },
+    "Rockhound": {
+      "Name": {
+        "English": "Rockhound",
+        "Russian": "Rockhound",
+        "German": "Rockhound",
+        "French": "Rockhound",
+        "Japanese": "ロックハウンド"
+      },
+      "Description": {
+        "English": "Mine 1000 ore.",
+        "Russian": "Добывай 1000 единиц руды.",
+        "German": "Folge 1000 Erz.",
+        "French": "Extraye 1 000 minerais.",
+        "Japanese": "鉱石を1000個採掘する。"
+      },
+      "IconName": "Rockhound"
+    },
+    "Shotgun": {
+      "Name": {
+        "English": "Shotgun!",
+        "Russian": "Трогай!",
+        "German": "Erster!",
+        "French": "Premier devant !",
+        "Japanese": "助手席!"
+      },
+      "Description": {
+        "English": "Ride a vehicle as a passenger.",
+        "Russian": "Прокатитесь на транспорте как пассажир.",
+        "German": "Fahre als Beifahrer mit.",
+        "French": "Monter à bord d'un véhicule en tant que passager.",
+        "Japanese": "乗客として車両に乗ること。"
+      },
+      "IconName": "Shotgun"
+    },
+    "ToolsmithTitan": {
+      "Name": {
+        "English": "Toolsmith Titan",
+        "Russian": "Инструментальный титан",
+        "German": "Toolsmith Titan",
+        "French": "Toolsmith Titan",
+        "Japanese": "ツールスミス・タイタン"
+      },
+      "Description": {
+        "English": "Craft 20 types of tools.",
+        "Russian": "Создайте 20 видов инструментов.",
+        "German": "Stelle 20 Arten von Werkzeugen her.",
+        "French": "Fabrique 20 types d'outils.",
+        "Japanese": "20種類の道具をクラフトできる。"
+      },
+      "IconName": "ToolsmithTitan"
+    },
+    "Fashionable": {
+      "Name": {
+        "English": "Fashionable",
+        "Russian": "Модный",
+        "German": "Modisch",
+        "French": "À la mode",
+        "Japanese": "ファッショナブル"
+      },
+      "Description": {
+        "English": "Craft 10 types of clothing.",
+        "Russian": "Создайте 10 видов одежды.",
+        "German": "Stelle 10 Arten von Kleidung her.",
+        "French": "Fabrique 10 types de vêtements.",
+        "Japanese": "クラフトで10種類の服を作成する。"
+      },
+      "IconName": "Fashionable"
+    },
+    "KnotBad": {
+      "Name": {
+        "English": "Knot Bad",
+        "Russian": "Неплохо",
+        "German": "Nicht schlecht",
+        "French": "Pas mal",
+        "Japanese": "悪くない"
+      },
+      "Description": {
+        "English": "Craft a boat.",
+        "Russian": "Создайте лодку.",
+        "German": "Baue ein Boot.",
+        "French": "Construis un bateau.",
+        "Japanese": "ボートのクラフトをしよう。"
+      },
+      "IconName": "KnotBad"
+    },
+    "ChipOfftheOldBlock": {
+      "Name": {
+        "English": "Chip Off the Old Block",
+        "Russian": "Яблоко от яблони недалеко падает",
+        "German": "Ganz der Vater",
+        "French": "Tel père, tel fils",
+        "Japanese": "親の血を引く"
+      },
+      "Description": {
+        "English": "Create 1 masonry item.",
+        "Russian": "Создайте 1 каменный элемент.",
+        "German": "Erstelle 1 Mauerwerk-Gegenstand.",
+        "French": "Crée 1 élément de maçonnerie.",
+        "Japanese": "石積みアイテムを1つ作成する。"
+      },
+      "IconName": "ChipOfftheOldBlock"
+    },
+    "MasterofCeremonies": {
+      "Name": {
+        "English": "Master of Ceremonies",
+        "Russian": "Ведущий",
+        "German": "Zeremonienmeister",
+        "French": "Maître de cérémonie",
+        "Japanese": "司会者"
+      },
+      "Description": {
+        "English": "Host 25 dinner parties.",
+        "Russian": "Организуйте 25 званых ужинов.",
+        "German": "Veranstalte 25 Dinnerpartys.",
+        "French": "Organise 25 dîners.",
+        "Japanese": "ディナーパーティーを25回開催する。"
+      },
+      "IconName": "MasterofCeremonies"
+    },
+    "LegendaryMasterwork": {
+      "Name": {
+        "English": "Legendary Masterwork",
+        "Russian": "Легендарный Шедевр",
+        "German": "Legendäres Meisterwerk",
+        "French": "Chef-d'œuvre légendaire",
+        "Japanese": "伝説の名作"
+      },
+      "Description": {
+        "English": "Create architecture that generates 5000 culture.",
+        "Russian": "Создайте архитектурное творение, ценностью в 5000 культуры.",
+        "German": "Erstelle eine Architektur, die 5000 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 5 000 de culture.",
+        "Japanese": "5000の文化を生み出す建築を創造しましょう。"
+      },
+      "IconName": "LegendaryMasterwork"
+    },
+    "StructuralMagnificence": {
+      "Name": {
+        "English": "Structural Magnificence",
+        "Russian": "Структурное великолепие",
+        "German": "Strukturelle Pracht",
+        "French": "Magnificence structurelle",
+        "Japanese": "構造的な壮麗さ"
+      },
+      "Description": {
+        "English": "Create architecture that generates 50 culture.",
+        "Russian": "Создайте архитектурное творение, генерирующее 50 культуры.",
+        "German": "Erstelle eine Architektur, die 50 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 50 de culture.",
+        "Japanese": "50の文化を生み出す建築を創りましょう。"
+      },
+      "IconName": "StructuralMagnificence"
+    },
+    "SettingUpShop": {
+      "Name": {
+        "English": "Setting Up Shop",
+        "Russian": "Настроить магазин",
+        "German": "Geschäft einrichten",
+        "French": "Créer un magasin",
+        "Japanese": "店の立ち上げ"
+      },
+      "Description": {
+        "English": "Opened a store with at least one item listed.",
+        "Russian": "Открыть магазин, в котором есть хотя бы один товар.",
+        "German": "Ein Shop wurde geöffnet, mit mindestens einem Objekt, das gelistet ist.",
+        "French": "Ouverture d'un magasin avec au moins un article répertorié.",
+        "Japanese": "少なくとも1つの商品がリストされている店舗をオープンしました。"
+      },
+      "IconName": "SettingUpShop"
+    },
+    "RenownedWork": {
+      "Name": {
+        "English": "Renowned Work",
+        "Russian": "Известная Работа",
+        "German": "Bekanntes Werk",
+        "French": "Ouvrage réputé",
+        "Japanese": "著名な業績"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 200 culture.",
+        "Russian": "Создайте предмет искусства, дающий 200 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 200 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 200 de culture.",
+        "Japanese": "200の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "RenownedWork"
+    },
+    "BornLeader": {
+      "Name": {
+        "English": "Born Leader",
+        "Russian": "Прирожденный лидер",
+        "German": "Geborener Anführer",
+        "French": "Leader-né",
+        "Japanese": "生まれたリーダー"
+      },
+      "Description": {
+        "English": "Become elected to a government position.",
+        "Russian": "Выиграйте выборы на правительственную должность.",
+        "German": "Werde für eine Regierungsposition gewählt.",
+        "French": "Être élu à un poste gouvernemental.",
+        "Japanese": "政府の役職に選ばれること。"
+      },
+      "IconName": "BornLeader"
+    },
+    "EurekaMoment": {
+      "Name": {
+        "English": "Eureka Moment",
+        "Russian": "Момент озарения",
+        "German": "Aha-Erlebnis",
+        "French": "Le moment « eurêka »",
+        "Japanese": "ひらめきの瞬間"
+      },
+      "Description": {
+        "English": "Craft a skill book.",
+        "Russian": "Создайте книгу навыков.",
+        "German": "Erstelle ein Fertigkeitenbuch.",
+        "French": "Crée un livre de compétences.",
+        "Japanese": "スキルブックをクラフトする。"
+      },
+      "IconName": "EurekaMoment"
+    },
+    "CulturalAwakening": {
+      "Name": {
+        "English": "Cultural Awakening",
+        "Russian": "Эпоха Возрождения",
+        "German": "Kulturelles Erwachen",
+        "French": "Éveil culturel",
+        "Japanese": "文化的覚醒"
+      },
+      "Description": {
+        "English": "Create 250 total culture as a world.",
+        "Russian": "Создайте 250 культуры всем миром.",
+        "German": "Erreiche insgesamt 250 Kulturpunkte als Welt.",
+        "French": "Crée 250 cultures totales en tant que monde.",
+        "Japanese": "世界として250の文化を創り出しましょう。"
+      },
+      "IconName": "CulturalAwakening"
+    },
+    "BigGame": {
+      "Name": {
+        "English": "Big Game",
+        "Russian": "Большая игра",
+        "German": "Big Game",
+        "French": "Big Game",
+        "Japanese": "ビッグゲーム"
+      },
+      "Description": {
+        "English": "Successfully hunt a bison.",
+        "Russian": "Успешно охотиться на бизона.",
+        "German": "Jage erfolgreich einen Bison.",
+        "French": "Réussis à chasser un bison.",
+        "Japanese": "バイソンを無事に狩り上げろ。"
+      },
+      "IconName": "BigGame"
+    },
+    "Yum": {
+      "Name": {
+        "English": "Yum!",
+        "Russian": "Ням!",
+        "German": "Mjam!",
+        "French": "Miam !",
+        "Japanese": "おいしい!"
+      },
+      "Description": {
+        "English": "Discover your favorite food.",
+        "Russian": "Найдите своё самое вкусное блюдо.",
+        "German": "Finde dein Lieblingsessen.",
+        "French": "Découvrez votre plat préféré.",
+        "Japanese": "お気に入りの食べ物を発見しましょう。"
+      },
+      "IconName": "Yum"
+    },
+    "Masterpiece": {
+      "Name": {
+        "English": "Masterpiece",
+        "Russian": "Шедевр",
+        "German": "Meisterwerk",
+        "French": "Chef-d'œuvre",
+        "Japanese": "傑作"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 1000 culture.",
+        "Russian": "Создайте предмет искусства, дающий 1000 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 1000 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 1 000 de culture.",
+        "Japanese": "1000の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "Masterpiece"
+    },
+    "RemarkableWork": {
+      "Name": {
+        "English": "Remarkable Work",
+        "Russian": "Замечательная работа",
+        "German": "Bemerkenswerte Arbeit",
+        "French": "Œuvre remarquable",
+        "Japanese": "注目すべき業績"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 20 culture.",
+        "Russian": "Создайте предмет искусства, дающий 20 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 20 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 20 de culture.",
+        "Japanese": "20の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "RemarkableWork"
+    },
+    "GreaseMonkey": {
+      "Name": {
+        "English": "Grease Monkey",
+        "Russian": "Автослесарь",
+        "German": "Grease Monkey",
+        "French": "Grease Monkey",
+        "Japanese": "グリース・モンキー"
+      },
+      "Description": {
+        "English": "Craft 3 types of vehicles.",
+        "Russian": "Создайте 3 типа транспортных средств.",
+        "German": "Baue 3 Arten von Fahrzeugen.",
+        "French": "Fabrique 3 types de véhicules.",
+        "Japanese": "3種類の乗り物をクラフトする。"
+      },
+      "IconName": "GreaseMonkey"
+    },
+    "CulinaryFauxPas": {
+      "Name": {
+        "English": "Culinary Faux Pas",
+        "Russian": "Кулинарные промахи",
+        "German": "Kulinarische Fauxpas",
+        "French": "Faux pas culinaires",
+        "Japanese": "食に関する失態"
+      },
+      "Description": {
+        "English": "Host a dinner party where a guest eats their least-favorite food.",
+        "Russian": "Организуйте званый ужин, на котором гости будут есть свою самую нелюбимую еду.",
+        "German": "Veranstalte eine Dinnerparty, bei der ein Gast sein am wenigsten bevorzugtes Essen isst.",
+        "French": "Organise un dîner où un invité doit manger le plat qu'il aime le moins.",
+        "Japanese": "ゲストが最も嫌いな食べ物を食べるディナーパーティーを開く。"
+      },
+      "IconName": "CulinaryFauxPas"
+    },
+    "SparklingCanvas": {
+      "Name": {
+        "English": "Sparkling Canvas",
+        "Russian": "Блестящий холст",
+        "German": "Glitzernde Leinwand",
+        "French": "Toile scintillante",
+        "Japanese": "スパークリング・キャンバス"
+      },
+      "Description": {
+        "English": "Create 50 total culture as a world.",
+        "Russian": "В этом мире создано 50 культуры.",
+        "German": "Erreiche insgesamt 50 Kulturpunkte als Welt.",
+        "French": "Créer 50 de culture au total dans le monde.",
+        "Japanese": "世界全体で50の文化を作りましょう。"
+      },
+      "IconName": "SparklingCanvas"
+    },
+    "MagnumOpus": {
+      "Name": {
+        "English": "Magnum Opus",
+        "Russian": "Великая работа",
+        "German": "Magnum Opus",
+        "French": "Chef-d'œuvre Majeur",
+        "Japanese": "マグナム・オーパス"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 5000 culture.",
+        "Russian": "Создайте предмет искусства, дающий 5000 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 5000 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 5 000 de culture.",
+        "Japanese": "5000の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "MagnumOpus"
+    },
+    "CulturalVanguard": {
+      "Name": {
+        "English": "Cultural Vanguard",
+        "Russian": "Авангард в области культуры",
+        "German": "Kulturelle Avantgarde",
+        "French": "Avant-garde culturelle",
+        "Japanese": "カルチュラル・ヴァンガード"
+      },
+      "Description": {
+        "English": "Create 1000 total culture as a world.",
+        "Russian": "Создайте 1000 культуры всем миром.",
+        "German": "Erreiche insgesamt 1000 Kulturpunkte als Welt.",
+        "French": "Crée 1 000 cultures totales en tant que monde.",
+        "Japanese": "世界全体で1000の文化を作りましょう。"
+      },
+      "IconName": "CulturalVanguard"
+    },
+    "Visionary": {
+      "Name": {
+        "English": "Visionary",
+        "Russian": "Провидец",
+        "German": "Visionär",
+        "French": "Visionnaire",
+        "Japanese": "ビジョナリー"
+      },
+      "Description": {
+        "English": "Create 1000 culture.",
+        "Russian": "Создайте 1000 культуры.",
+        "German": "Erreiche 1000 Kulturpunkte.",
+        "French": "Créez 1 000 cultures.",
+        "Japanese": "1000の文化を創造する。"
+      },
+      "IconName": "Visionary"
+    },
+    "BestLaidPlans": {
+      "Name": {
+        "English": "Best Laid Plans",
+        "Russian": "Лучшие планы",
+        "German": "Beste Pläne",
+        "French": "Un coup d'enfer",
+        "Japanese": "最善の計画"
+      },
+      "Description": {
+        "English": "Meteor destroyed the world.",
+        "Russian": "Метеор уничтожил мир.",
+        "German": "Meteor zerstörte die Welt.",
+        "French": "Le météore a détruit le Monde.",
+        "Japanese": "隕石が世界を破壊した。"
+      },
+      "IconName": "BestLaidPlans"
+    },
+    "CulturedGathering": {
+      "Name": {
+        "English": "Cultured Gathering",
+        "Russian": "Культурное собрание",
+        "German": "Kulturelles Beisammensein",
+        "French": "Rassemblement culturel",
+        "Japanese": "文化の集い"
+      },
+      "Description": {
+        "English": "Attend a dinner party that generates more than 10 culture.",
+        "Russian": "Посетите званый ужин, который генерирует больше 10 очков культуры.",
+        "German": "Nimm an einer Dinnerparty teil, die mehr als 10 Kulturpunkte einbringt.",
+        "French": "Participe à un dîner qui génère plus de 10 points de culture.",
+        "Japanese": "文化ポイントが10以上獲得できるディナーパーティーに参加する。"
+      },
+      "IconName": "CulturedGathering"
+    },
+    "BreakingBread": {
+      "Name": {
+        "English": "Breaking Bread",
+        "Russian": "Преломить хлеб",
+        "German": "Brot brechen",
+        "French": "Partager le pain",
+        "Japanese": "『Breaking Bread』"
+      },
+      "Description": {
+        "English": "Host a dinner party.",
+        "Russian": "Организовать званый ужин.",
+        "German": "Veranstalte eine Dinnerparty.",
+        "French": "Organise un dîner.",
+        "Japanese": "ディナーパーティーを開く。"
+      },
+      "IconName": "BreakingBread"
+    },
+    "CraftyCaptain": {
+      "Name": {
+        "English": "Crafty Captain",
+        "Russian": "Капитан Проныра",
+        "German": "Crafty Captain",
+        "French": "Crafty Captain",
+        "Japanese": "クラフティ・キャプテン"
+      },
+      "Description": {
+        "English": "Craft 3 types of boats.",
+        "Russian": "Создайте 3 типа лодок.",
+        "German": "Baue 3 Arten von Booten.",
+        "French": "Construis 3 types de bateaux.",
+        "Japanese": "3種類のボートをクラフトする。"
+      },
+      "IconName": "CraftyCaptain"
+    },
+    "NevertoReturn": {
+      "Name": {
+        "English": "Never to Return",
+        "Russian": "Уже не вернётся",
+        "German": "Auf Nimmerwiedersehen",
+        "French": "Pas de retour en arrière",
+        "Japanese": "二度と戻らない"
+      },
+      "Description": {
+        "English": "A species went extinct.",
+        "Russian": "Вымершие виды.",
+        "German": "Eine Spezies ist ausgestorben.",
+        "French": "Une espèce vient de s'éteindre.",
+        "Japanese": "ある種が絶滅した。"
+      },
+      "IconName": "NevertoReturn"
+    },
+    "MasonryMaster": {
+      "Name": {
+        "English": "Masonry Master",
+        "Russian": "Мастер каменного дела",
+        "German": "Meister der Freimaurerei",
+        "French": "Maître maçon",
+        "Japanese": "メイソンリー・マスター"
+      },
+      "Description": {
+        "English": "Create 5 types of masonry items.",
+        "Russian": "Создайте 5 видов каменных конструкций.",
+        "German": "Erstelle 5 Arten von Mauerwerksgegenständen.",
+        "French": "Crée 5 types d'éléments de maçonnerie.",
+        "Japanese": "5種類の石積みアイテムを作成する。"
+      },
+      "IconName": "MasonryMaster"
+    },
+    "ConversionFees": {
+      "Name": {
+        "English": "Conversion Fees",
+        "Russian": "Операционные потери",
+        "German": "Umrechnungsgebühren",
+        "French": "Frais de change",
+        "Japanese": "コンバージョン手数料"
+      },
+      "Description": {
+        "English": "Have another player use your currency exchange.",
+        "Russian": "Другой игрок воспользовался вашим обменником валюты.",
+        "German": "Lass einen anderen Spieler deinen Währungsumtausch nutzen.",
+        "French": "Demandez à un autre joueur d'utiliser votre bureau de change.",
+        "Japanese": "他のプレイヤーにあなたの通貨交換を使わせましょう。"
+      },
+      "IconName": "ConversionFees"
+    },
+    "Blech": {
+      "Name": {
+        "English": "Blech!",
+        "Russian": "Хлорка!",
+        "German": "Bäh!",
+        "French": "Beurk !",
+        "Japanese": "うえっ!"
+      },
+      "Description": {
+        "English": "Discover your most disliked food.",
+        "Russian": "Обнаружьте свою самую нелюбимую еду.",
+        "German": "Entdecke deine unbeliebteste Nahrung.",
+        "French": "Découvrez la nourriture que vous détestez la plus.",
+        "Japanese": "最も嫌いな食べ物を見つけましょう。"
+      },
+      "IconName": "Blech"
+    },
+    "SavedtheWorld": {
+      "Name": {
+        "English": "Saved the World",
+        "Russian": "Сохранение мира",
+        "German": "Welt gespeichert.",
+        "French": "Sauveur du Monde",
+        "Japanese": "世界を救った"
+      },
+      "Description": {
+        "English": "Destroyed the meteor on a server.",
+        "Russian": "Уничтожен метеор на сервере.",
+        "German": "Meteor auf diesem Server wurde zerstört.",
+        "French": "Détruire le météore sur un serveur.",
+        "Japanese": "サーバーで隕石を破壊しました。"
+      },
+      "IconName": "SavedtheWorld"
+    },
+    "ThePreamble": {
+      "Name": {
+        "English": "The Preamble",
+        "Russian": "Преамбула",
+        "German": "Das Vorwort",
+        "French": "Préambule",
+        "Japanese": "前文"
+      },
+      "Description": {
+        "English": "Propose a ratification of a constitution.",
+        "Russian": "Начните голосование о ратификации конституции.",
+        "German": "Schlage die Ratifizierung einer Verfassung vor.",
+        "French": "Proposer la ratification d'une constitution.",
+        "Japanese": "憲法の批准を提案する。"
+      },
+      "IconName": "ThePreamble"
+    },
+    "ImpossibleBeauty": {
+      "Name": {
+        "English": "Impossible Beauty",
+        "Russian": "Невероятная Красота",
+        "German": "Unmögliche Schönheit",
+        "French": "Beauté impossible",
+        "Japanese": "インポッシブル・ビューティー"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 10000 culture.",
+        "Russian": "Создайте предмет искусства, дающий 10000 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 10.000 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 10 000 de culture.",
+        "Japanese": "1万の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "ImpossibleBeauty"
+    },
+    "IncipientRenaissance": {
+      "Name": {
+        "English": "Incipient Renaissance",
+        "Russian": "Зарождающийся Ренессанс",
+        "German": "Anfängliche Renaissance",
+        "French": "Renaissance naissante",
+        "Japanese": "初期のルネサンス"
+      },
+      "Description": {
+        "English": "Create 500 total culture as a world.",
+        "Russian": "В этом мире создано 500 культуры.",
+        "German": "Erreiche insgesamt 500 Kulturpunkte als Welt.",
+        "French": "Créer 500 de culture au total dans le monde.",
+        "Japanese": "世界全体で500の文化を作りましょう。"
+      },
+      "IconName": "IncipientRenaissance"
+    },
+    "ConfectionPerfection": {
+      "Name": {
+        "English": "Confection Perfection",
+        "Russian": "Кондитерское совершенство",
+        "German": "Perfekte Konditorei",
+        "French": "La perfection en pâtisserie",
+        "Japanese": "コンフェクション・パーフェクション"
+      },
+      "Description": {
+        "English": "Create 20 types of baked goods.",
+        "Russian": "Создайте 20 видов выпечки.",
+        "German": "Erstelle 20 verschiedene Backwaren.",
+        "French": "Crée 20 types de pâtisseries.",
+        "Japanese": "20種類の焼き菓子を作成する。"
+      },
+      "IconName": "ConfectionPerfection"
+    },
+    "MasterMechanic": {
+      "Name": {
+        "English": "Master Mechanic",
+        "Russian": "Мастер-механик",
+        "German": "Meistermechaniker",
+        "French": "Maître mécanicien",
+        "Japanese": "マスター・メカニック"
+      },
+      "Description": {
+        "English": "Craft 5 types of vehicles.",
+        "Russian": "Создайте 5 типов транспортных средств.",
+        "German": "Baue 5 verschiedene Fahrzeugtypen.",
+        "French": "Fabrique 5 types de véhicules.",
+        "Japanese": "5種類の乗り物をクラフトする。"
+      },
+      "IconName": "MasterMechanic"
+    },
+    "CulturalTrailblazers": {
+      "Name": {
+        "English": "Cultural Trailblazers ",
+        "Russian": "Первопроходцы в области Культуры ",
+        "German": "Kulturelle Vorreiter ",
+        "French": "Pionniers de la culture ",
+        "Japanese": "文化の先駆者たち "
+      },
+      "Description": {
+        "English": "Create 100 total culture as a world.",
+        "Russian": "Создайте 100 культуры всем миром.",
+        "German": "Erreiche insgesamt 100 Kulturpunkte als Welt.",
+        "French": "Crée 100 cultures totales en tant que monde.",
+        "Japanese": "世界全体で100の文化を作りましょう。"
+      },
+      "IconName": "CulturalTrailblazers"
+    },
+    "FleetFounder": {
+      "Name": {
+        "English": "Fleet Founder",
+        "Russian": "Основатель флота",
+        "German": "Flottengründer",
+        "French": "Fondateur de la flotte",
+        "Japanese": "フリート・ファウンダー"
+      },
+      "Description": {
+        "English": "Craft 5 types of boats.",
+        "Russian": "Создайте 5 типов лодок.",
+        "German": "Baue 5 verschiedene Bootstypen.",
+        "French": "Construis 5 types de bateaux.",
+        "Japanese": "5種類の船をクラフトする。"
+      },
+      "IconName": "FleetFounder"
+    },
+    "ConstructionYard": {
+      "Name": {
+        "English": "Construction Yard",
+        "Russian": "Строительная площадка",
+        "German": "Bauhof",
+        "French": "École du BTP",
+        "Japanese": "建設ヤード"
+      },
+      "Description": {
+        "English": "Dig 1000 blocks with powered vehicles on the same server.",
+        "Russian": "Выкопайте 1000 блоков механизированным методом на одном сервере.",
+        "German": "Grabe 1000 Blöcke mit motorisierten Fahrzeugen auf demselben Server.",
+        "French": "Creusez 1 000 blocs avec des véhicules motorisés sur le même serveur.",
+        "Japanese": "同じサーバーで動力付き車両が1000ブロック掘れ。"
+      },
+      "IconName": "ConstructionYard"
+    },
+    "ToolMaster": {
+      "Name": {
+        "English": "Tool Master",
+        "Russian": "Мастер инструментов",
+        "German": "Tool Master",
+        "French": "Tool Master",
+        "Japanese": "ツールマスター"
+      },
+      "Description": {
+        "English": "Craft 10 types of tools.",
+        "Russian": "Создайте 10 видов инструментов.",
+        "German": "Stelle 10 Arten von Werkzeugen her.",
+        "French": "Fabrique 10 types d'outils.",
+        "Japanese": "10種類の道具をクラフトする。"
+      },
+      "IconName": "ToolMaster"
+    },
+    "NobelLaureate": {
+      "Name": {
+        "English": "Nobel Laureate",
+        "Russian": "Лауреат Нобелевской премии",
+        "German": "Nobelpreisträger",
+        "French": "Lauréat du prix Nobel",
+        "Japanese": "ノーベル賞受賞者"
+      },
+      "Description": {
+        "English": "Craft 10 different skill books.",
+        "Russian": "Создайте 10 разных книг навыков.",
+        "German": "Stelle 10 verschiedene Fertigkeitsbücher her.",
+        "French": "Fabrique 10 livres de compétences différents.",
+        "Japanese": "10種類のスキルブックをクラフトする。"
+      },
+      "IconName": "NobelLaureate"
+    },
+    "Cultivated": {
+      "Name": {
+        "English": "Cultivated",
+        "Russian": "Утонченный",
+        "German": "Kultiviert",
+        "French": "Cultivé(e)",
+        "Japanese": "栽培"
+      },
+      "Description": {
+        "English": "Create 10 culture.",
+        "Russian": "Создайте 10 культуры.",
+        "German": "Schaffe 10 Kultur.",
+        "French": "Créer 10 cultures.",
+        "Japanese": "文化を10つ作りましょう。"
+      },
+      "IconName": "Cultivated"
+    },
+    "HostwiththeMost": {
+      "Name": {
+        "English": "Host with the Most",
+        "Russian": "Лучший организатор",
+        "German": "Der beste Gastgeber",
+        "French": "L'hôte le plus génial",
+        "Japanese": "最高のホスト"
+      },
+      "Description": {
+        "English": "Host 5 dinner parties.",
+        "Russian": "Организуйте 5 званых ужинов.",
+        "German": "Veranstalte 5 Dinnerpartys.",
+        "French": "Organise 5 dîners.",
+        "Japanese": "ディナーパーティーを5回開催する。"
+      },
+      "IconName": "HostwiththeMost"
+    },
+    "GrandMonument": {
+      "Name": {
+        "English": "Grand Monument",
+        "Russian": "Великий монумент",
+        "German": "Grand Monument",
+        "French": "Grand monument",
+        "Japanese": "グランドモニュメント"
+      },
+      "Description": {
+        "English": "Create architecture that generates 1000 culture.",
+        "Russian": "Создайте архитектурное творение, генерирующее 1000 культуры.",
+        "German": "Erstelle eine Architektur, die 1000 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 1 000 de culture.",
+        "Japanese": "1000の文化を生み出す建築を創りましょう。"
+      },
+      "IconName": "GrandMonument"
+    },
+    "LifeoftheParty": {
+      "Name": {
+        "English": "Life of the Party",
+        "Russian": "Душа компании",
+        "German": "Die Seele der Party",
+        "French": "L'âme de la fête",
+        "Japanese": "パーティの盛り上げ役"
+      },
+      "Description": {
+        "English": "Attend 25 dinner parties as a guest.",
+        "Russian": "Посетите 25 ужинов в качестве гостя.",
+        "German": "Nimm als Gast an 25 Dinnerpartys teil.",
+        "French": "Participe à 25 dîners en tant qu'invité.",
+        "Japanese": "ゲストとして25回のディナーパーティーに参加する。"
+      },
+      "IconName": "LifeoftheParty"
+    },
+    "FireworksShow": {
+      "Name": {
+        "English": "Fireworks Show",
+        "Russian": "Шоу фейерверков",
+        "German": "Feuerwerkshow",
+        "French": "Bouquet Final",
+        "Japanese": "花火大会"
+      },
+      "Description": {
+        "English": "Online for the destruction of the meteor.",
+        "Russian": "Онлайн для уничтожения астероида.",
+        "German": "Online für die Zerstörung des Meteors.",
+        "French": "Être connecté lors de la destruction du météore.",
+        "Japanese": "隕石破壊のためにオンライン。"
+      },
+      "IconName": "FireworksShow"
+    },
+    "FamedWork": {
+      "Name": {
+        "English": "Famed Work",
+        "Russian": "Знаменитая Работа",
+        "German": "Berühmtes Werk",
+        "French": "Œuvre célèbre",
+        "Japanese": "著名な業績"
+      },
+      "Description": {
+        "English": "Create an artwork that generates 50 culture.",
+        "Russian": "Создайте предмет искусства, дающий 50 культуры.",
+        "German": "Erstelle ein Kunstwerk, das 50 Kulturpunkte generiert.",
+        "French": "Crée une œuvre d'art qui génère 50 de culture.",
+        "Japanese": "50の文化を生み出すアート作品を制作しましょう。"
+      },
+      "IconName": "FamedWork"
+    },
+    "ReapWhatYouSow": {
+      "Name": {
+        "English": "Reap What You Sow",
+        "Russian": "Пожинай то, что посеял",
+        "German": "Man erntet, was man sät",
+        "French": "Récolter ce que l'on sème",
+        "Japanese": "蒔いた種を刈り取る"
+      },
+      "Description": {
+        "English": "Gather 100 farmable items on land you own.",
+        "Russian": "Соберите 100 предметов, которые можно выращивать на своей земле.",
+        "German": "Sammle 100 erntbare Gegenstände auf dem Land, das dir gehört.",
+        "French": "Récolte 100 objets cultivables sur les terres que tu possèdes.",
+        "Japanese": "所有する土地で、収穫可能なアイテムを100個集めろ。"
+      },
+      "IconName": "ReapWhatYouSow"
+    },
+    "CulturalPhenomenon": {
+      "Name": {
+        "English": "Cultural Phenomenon",
+        "Russian": "Культурный Феномен",
+        "German": "Kulturelles Phänomen",
+        "French": "Phénomène culturel",
+        "Japanese": "文化現象"
+      },
+      "Description": {
+        "English": "Become the top ranked cultural creator when at least 10 citizens have created any culture.",
+        "Russian": "Внесите самый большой вклад в культуру, когда еще хотя бы 10 других жителей создали объекты культуры.",
+        "German": "Werde zum bestplatzierten Kulturschöpfer, sobald mindestens 10 Bürger eine Kultur geschaffen haben.",
+        "French": "Devient l'artiste le mieux classé lorsqu'au moins 10 citoyens ont produit une culture.",
+        "Japanese": "少なくとも10人の市民がどの文化を創造したかで、トップランクの文化創造者になる。"
+      },
+      "IconName": "CulturalPhenomenon"
+    },
+    "AppetizerApprentice": {
+      "Name": {
+        "English": "Appetizer Apprentice",
+        "Russian": "Новичок в закусках",
+        "German": "Appetizer-Lehrling",
+        "French": "Apprenti Appétit",
+        "Japanese": "前菜見習い"
+      },
+      "Description": {
+        "English": "Craft 5 types of food.",
+        "Russian": "Приготовьте 5 видов еды.",
+        "German": "Stelle 5 Arten von Lebensmitteln her.",
+        "French": "Fabrique 5 types d'aliments.",
+        "Japanese": "5種類の食料をクラフトする。"
+      },
+      "IconName": "AppetizerApprentice"
+    },
+    "Polymath": {
+      "Name": {
+        "English": "Polymath",
+        "Russian": "Эрудит",
+        "German": "Polymath",
+        "French": "Polymath",
+        "Japanese": "博学多才"
+      },
+      "Description": {
+        "English": "Craft 3 different skill books.",
+        "Russian": "Создайте 3 разных книги навыков.",
+        "German": "Erstelle 3 verschiedene Fertigkeitsbücher.",
+        "French": "Crée 3 livres de compétences différents.",
+        "Japanese": "3種類のスキルブックをクラフトする。"
+      },
+      "IconName": "Polymath"
+    },
+    "CulturalCornucopia": {
+      "Name": {
+        "English": "Cultural Cornucopia",
+        "Russian": "Культурный рог изобилия",
+        "German": "Kulturelle Fülle",
+        "French": "Abondance culturelle",
+        "Japanese": "文化的豊穣の角"
+      },
+      "Description": {
+        "English": "Create 5000 total culture as a world.",
+        "Russian": "В этом мире создано 5000 культуры.",
+        "German": "Erreiche insgesamt 5000 Kulturpunkte als Welt.",
+        "French": "Créer 5 000 de culture au total dans le monde.",
+        "Japanese": "世界全体で5000の文化を作りましょう。"
+      },
+      "IconName": "CulturalCornucopia"
+    },
+    "DeerHunter": {
+      "Name": {
+        "English": "Deer Hunter",
+        "Russian": "Охотник на оленей",
+        "German": "Deer Hunter",
+        "French": "Deer Hunter",
+        "Japanese": "ディア・ハンター"
+      },
+      "Description": {
+        "English": "Successfully hunt a deer.",
+        "Russian": "Успешно добыть оленя.",
+        "German": "Erlege erfolgreich ein Reh.",
+        "French": "Réussis à chasser un cerf.",
+        "Japanese": "鹿を無事に狩る。"
+      },
+      "IconName": "DeerHunter"
+    },
+    "SocialButterfly": {
+      "Name": {
+        "English": "Social Butterfly",
+        "Russian": "Светский мотылёк",
+        "German": "Sozialer Schmetterling",
+        "French": "Fleur bleue",
+        "Japanese": "社交的な人"
+      },
+      "Description": {
+        "English": "Attend 5 dinner parties as a guest.",
+        "Russian": "Посетите 5 ужинов в качестве гостя.",
+        "German": "Nimm als Gast an 5 Dinnerpartys teil.",
+        "French": "Participe à 5 dîners en tant qu'invité.",
+        "Japanese": "ゲストとして5回のディナーパーティーに参加する。"
+      },
+      "IconName": "SocialButterfly"
+    },
+    "FamedLandmark": {
+      "Name": {
+        "English": "Famed Landmark",
+        "Russian": "Известная достопримечательность",
+        "German": "Berühmte Sehenswürdigkeit",
+        "French": "Point de repère célèbre",
+        "Japanese": "有名なランドマーク"
+      },
+      "Description": {
+        "English": "Create architecture that generates 200 culture.",
+        "Russian": "Создайте архитектурное творение, ценностью 200 культуры.",
+        "German": "Erstelle eine Architektur, die 200 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 200 de culture.",
+        "Japanese": "200の文化を生み出す建築を創りましょう。"
+      },
+      "IconName": "FamedLandmark"
+    },
+    "NoteworthyConstruction": {
+      "Name": {
+        "English": "Noteworthy Construction",
+        "Russian": "Примечательное Сооружение",
+        "German": "Bemerkenswerte Konstruktion",
+        "French": "Construction remarquable",
+        "Japanese": "注目すべき建設"
+      },
+      "Description": {
+        "English": "Create architecture that generates 5 culture.",
+        "Russian": "Создайте архитектурное творение, генерирующее 5 культуры.",
+        "German": "Erstelle eine Architektur, die 5 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 5 de culture.",
+        "Japanese": "文化を5つ生成する建築を作りましょう。"
+      },
+      "IconName": "NoteworthyConstruction"
+    },
+    "FreshOutoftheOven": {
+      "Name": {
+        "English": "Fresh Out of the Oven",
+        "Russian": "Только что из печи",
+        "German": "Frisch aus dem Ofen",
+        "French": "Tout juste sorti du four",
+        "Japanese": "出来立てほやほや"
+      },
+      "Description": {
+        "English": "Create a baked good.",
+        "Russian": "Приготовьте выпечку.",
+        "German": "Backe etwas.",
+        "French": "Prépare une pâtisserie.",
+        "Japanese": "焼き菓子を作ろう。"
+      },
+      "IconName": "FreshOutoftheOven"
+    },
+    "ChopChopx100": {
+      "Name": {
+        "English": "Chop Chop x100",
+        "Russian": "Удар за ударом х100",
+        "German": "Hack Hack x100",
+        "French": "Et que ça saute ! x100",
+        "Japanese": "チョップチョップ x100"
+      },
+      "Description": {
+        "English": "Chopped down 100 trees.",
+        "Russian": "Вы срубили 100 деревьев.",
+        "German": "100 Bäume gefällt.",
+        "French": "Abattre 100 arbres.",
+        "Japanese": "100本の木を切り倒した。"
+      },
+      "IconName": "ChopChopx100"
+    },
+    "FashionIcon": {
+      "Name": {
+        "English": "Fashion Icon",
+        "Russian": "Икона моды",
+        "German": "Mode-Ikone",
+        "French": "Icône de la mode",
+        "Japanese": "ファッション・アイコン"
+      },
+      "Description": {
+        "English": "Craft 25 types of clothing.",
+        "Russian": "Создайте 25 видов одежды.",
+        "German": "Stelle 25 Arten von Kleidung her.",
+        "French": "Fabrique 25 types de vêtements.",
+        "Japanese": "クラフトで25種類の服を製作する。"
+      },
+      "IconName": "FashionIcon"
+    },
+    "FoundationalExcellence": {
+      "Name": {
+        "English": "Foundational Excellence",
+        "Russian": "Фундаментальное Совершенство",
+        "German": "Fundierte Exzellenz",
+        "French": "Excellence fondamentale",
+        "Japanese": "基礎的卓越性"
+      },
+      "Description": {
+        "English": "Create architecture that generates 20 culture.",
+        "Russian": "Создайте архитектурное творение, генерирующее 20 культуры.",
+        "German": "Erstelle eine Architektur, die 20 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 20 de culture.",
+        "Japanese": "20の文化を生み出す建築を作ろう。"
+      },
+      "IconName": "FoundationalExcellence"
+    },
+    "FieldofDreams": {
+      "Name": {
+        "English": "Field of Dreams",
+        "Russian": "Поле мечты",
+        "German": "Field of Dreams",
+        "French": "Field of Dreams",
+        "Japanese": "フィールド・オブ・ドリームス"
+      },
+      "Description": {
+        "English": "Plant 10000 seeds.",
+        "Russian": "Посадить 10 000 семян.",
+        "German": "Pflanze 10.000 Samen.",
+        "French": "Plante 10 000 graines.",
+        "Japanese": "10,000個の種を植える。"
+      },
+      "IconName": "FieldofDreams"
+    },
+    "MakeitRain": {
+      "Name": {
+        "English": "Make it Rain",
+        "Russian": "Денежный дождь",
+        "German": "Lass es regnen",
+        "French": "Que ça coule à flot",
+        "Japanese": "雨を降らせて"
+      },
+      "Description": {
+        "English": "Minted First Currency.",
+        "Russian": "Отчеканил первую валюту.",
+        "German": "Erste geprägte Währung.",
+        "French": "Première monnaie frappée.",
+        "Japanese": "最初の通貨が鋳造されました。"
+      },
+      "IconName": "MakeitRain"
+    },
+    "AscendentCivilization": {
+      "Name": {
+        "English": "Ascendent Civilization",
+        "Russian": "Возрождение Цивилизации",
+        "German": "Angrenzende Zivilisation",
+        "French": "Civilisation influente",
+        "Japanese": "昇華文明"
+      },
+      "Description": {
+        "English": "Create 100000 total culture as a world.",
+        "Russian": "В этом мире создано 100 000 культуры.",
+        "German": "Erreiche insgesamt 100.000 Kulturpunkte als Welt.",
+        "French": "Créer 100 000 de culture au total dans le monde.",
+        "Japanese": "世界として100,000の総文化を作りましょう。"
+      },
+      "IconName": "AscendentCivilization"
+    },
+    "BythePeopleForthePeople": {
+      "Name": {
+        "English": "By the People, For the People",
+        "Russian": "Народный, для Людей",
+        "German": "Von Menschen für Menschen",
+        "French": "Par le peuple, pour le peuple",
+        "Japanese": "民衆によって、民衆のために"
+      },
+      "Description": {
+        "English": "Constitution passed.",
+        "Russian": "Конституция создана.",
+        "German": "Verfassung genehmigt.",
+        "French": "Constitution adoptée.",
+        "Japanese": "憲法が承認されました。"
+      },
+      "IconName": "BythePeopleForthePeople"
+    },
+    "Dilettante": {
+      "Name": {
+        "English": "Dilettante",
+        "Russian": "Дилетант",
+        "German": "Dilettante",
+        "French": "Amateur",
+        "Japanese": "ディレッタント"
+      },
+      "Description": {
+        "English": "Create your first culture.",
+        "Russian": "Создайте свой первый предмет культуры.",
+        "German": "Erschaffe deine erste Kultur.",
+        "French": "Créer votre première culture.",
+        "Japanese": "最初の文化を作りましょう。"
+      },
+      "IconName": "Dilettante"
+    },
+    "RollinginDough": {
+      "Name": {
+        "English": "Rolling in Dough",
+        "Russian": "Как сыр в масле",
+        "German": "Im Geld schwimmen",
+        "French": "Rouler sur l'or",
+        "Japanese": "大金持ち"
+      },
+      "Description": {
+        "English": "Create 5 types of baked goods.",
+        "Russian": "Создайте 5 видов выпечки.",
+        "German": "Erstelle 5 Arten von Backwaren.",
+        "French": "Crée 5 types de pâtisseries.",
+        "Japanese": "5種類の焼き菓子を作成する。"
+      },
+      "IconName": "RollinginDough"
+    },
+    "Virtuoso": {
+      "Name": {
+        "English": "Virtuoso",
+        "Russian": "Виртуоз",
+        "German": "Virtuose",
+        "French": "Virtuose",
+        "Japanese": "ヴィルトゥオーゾ"
+      },
+      "Description": {
+        "English": "Create 200 culture.",
+        "Russian": "Создайте 200 культуры.",
+        "German": "Erreiche 200 Kulturpunkte.",
+        "French": "Créez 200 cultures.",
+        "Japanese": "200の文化を創り出しましょう。"
+      },
+      "IconName": "Virtuoso"
+    },
+    "FactoryFarmer": {
+      "Name": {
+        "English": "Factory Farmer",
+        "Russian": "Руководитель агрохолдинга",
+        "German": "Factory Farmer",
+        "French": "Factory Farmer",
+        "Japanese": "ファクトリー・ファーマー"
+      },
+      "Description": {
+        "English": "Plant 1000 seeds.",
+        "Russian": "Посадить 1000 семян.",
+        "German": "Pflanze 1000 Samen.",
+        "French": "Plante 1 000 graines.",
+        "Japanese": "種を1000個植える。"
+      },
+      "IconName": "FactoryFarmer"
+    },
+    "PerfectPairing": {
+      "Name": {
+        "English": "Perfect Pairing",
+        "Russian": "Идеальное сочетание",
+        "German": "Perfekte Kombination",
+        "French": "Le duo parfait",
+        "Japanese": "完璧な組み合わせ"
+      },
+      "Description": {
+        "English": "Host a dinner party where a guest eats their favorite food.",
+        "Russian": "Организуйте званый ужин, на котором гости смогут отведать свои любимые блюда.",
+        "German": "Veranstalte eine Dinnerparty, bei der ein Gast sein Lieblingsessen isst.",
+        "French": "Organise un dîner où un invité mange son plat préféré.",
+        "Japanese": "ゲストが好物を食べられるディナーパーティーを開く。"
+      },
+      "IconName": "PerfectPairing"
+    },
+    "Taxpayer": {
+      "Name": {
+        "English": "Taxpayer",
+        "Russian": "Налогоплательщик",
+        "German": "Steuerzahler",
+        "French": "Contribuable",
+        "Japanese": "納税者"
+      },
+      "Description": {
+        "English": "Paid 50 backing-units of currency in taxes (IE, 50 gold ingots worth of currency, when backed by gold ingots, which may be different from the currency value).",
+        "Russian": "Заплатить налогами стоимость 50-ти единиц предмета, из которого создана валюта (т. е. цену 50-ти слитков золота, если отчеканено из золота, стоимость которых может отличаться от стоимости валюты).",
+        "German": "50 Backing-Einheiten der Währung wurden als Steuern gezahlt (d. h. 50 Goldbarren im Wert der Währung, wenn diese durch Goldbarren gedeckt ist, was vom Währungswert abweichen kann).",
+        "French": "Tu as payé 50 unités de monnaie en impôts (c'est-à-dire 50 lingots d'or, lorsque la monnaie est adossée à des lingots d'or, ce qui peut différer de la valeur de la monnaie).",
+        "Japanese": "税金として50単位の現金を支払った(つまり、金のインゴットを裏付ける場合、通貨価値とは異なる場合もあります)。"
+      },
+      "IconName": "Taxpayer"
+    },
+    "IAmNotACrook": {
+      "Name": {
+        "English": "I Am Not A Crook",
+        "Russian": "Я Не Мошенник",
+        "German": "Ich Bin Kein Betrüger",
+        "French": "Je ne suis pas un escroc",
+        "Japanese": "私は詐欺師ではありません"
+      },
+      "Description": {
+        "English": "Be forcibly removed from office.",
+        "Russian": "Вас принудительно сняли с должности.",
+        "German": "Gewaltsam aus dem Amt entfernt werden.",
+        "French": "Être démis de force de ses fonctions.",
+        "Japanese": "強制的に職を解かれること。"
+      },
+      "IconName": "IAmNotACrook"
+    },
+    "HardDaysWork": {
+      "Name": {
+        "English": "Hard Day's Work",
+        "Russian": "Трудная работа",
+        "German": "Arbeitsreicher Tag",
+        "French": "Une dure journée de labeur",
+        "Japanese": "ハード・デイズ・ワーク"
+      },
+      "Description": {
+        "English": "Completed first contract.",
+        "Russian": "Выполните первый договор.",
+        "German": "Erster Kontakt erfolgreich.",
+        "French": "Premier contrat terminé.",
+        "Japanese": "最初の契約を完了しました。"
+      },
+      "IconName": "HardDaysWork"
+    },
+    "ExcellentEdificie": {
+      "Name": {
+        "English": "Excellent Edificie",
+        "Russian": "Превосходное Здание",
+        "German": "Ausgezeichnetes Edificie",
+        "French": "Excellent édifice",
+        "Japanese": "素晴らしい建造物です"
+      },
+      "Description": {
+        "English": "Create architecture that generates 500 culture.",
+        "Russian": "Создайте архитектурное творение, ценностью в 500 культуры.",
+        "German": "Erstelle eine Architektur, die 500 Kulturpunkte generiert.",
+        "French": "Crée une architecture qui génère 500 de culture.",
+        "Japanese": "500の文化を生み出す建築を創りましょう。"
+      },
+      "IconName": "ExcellentEdificie"
+    },
+    "EntreeExpert": {
+      "Name": {
+        "English": "Entree Expert",
+        "Russian": "Эксперт по блюдам",
+        "German": "Entree-Experte",
+        "French": "Expert en entrée",
+        "Japanese": "エントレ・エキスパート"
+      },
+      "Description": {
+        "English": "Craft 25 types of food.",
+        "Russian": "Приготовьте 25 видов еды.",
+        "German": "Stelle 25 verschiedene Arten von Lebensmitteln her.",
+        "French": "Fabrique 25 types d'aliments.",
+        "Japanese": "25種類の食料をクラフトする。"
+      },
+      "IconName": "EntreeExpert"
+    },
+    "Forestry101": {
+      "Name": {
+        "English": "Forestry 101",
+        "Russian": "Лесничество 101",
+        "German": "Forstwirtschaft 1x1",
+        "French": "Sylviculture pour les nuls",
+        "Japanese": "林業入門"
+      },
+      "Description": {
+        "English": "Plant 100 trees.",
+        "Russian": "Посадите 100 деревьев.",
+        "German": "Pflanze 100 Bäume.",
+        "French": "Planter 100 arbres.",
+        "Japanese": "100本の木を植えましょう。"
+      },
+      "IconName": "Forestry101"
+    },
+    "HammerTime": {
+      "Name": {
+        "English": "Hammer Time",
+        "Russian": "Время Молота",
+        "German": "Hammer Time",
+        "French": "Hammer Time",
+        "Japanese": "ハンマータイム"
+      },
+      "Description": {
+        "English": "Craft 3 types of tools.",
+        "Russian": "Создайте 3 вида инструментов.",
+        "German": "Stelle 3 Arten von Werkzeugen her.",
+        "French": "Fabrique 3 types d'outils.",
+        "Japanese": "3種類の道具をクラフトする。"
+      },
+      "IconName": "HammerTime"
+    },
+    "ALegendaryFeast": {
+      "Name": {
+        "English": "A Legendary Feast",
+        "Russian": "Легендарный пир",
+        "German": "Ein legendäres Festmahl",
+        "French": "Un festin légendaire",
+        "Japanese": "伝説の饗宴"
+      },
+      "Description": {
+        "English": "Attend a dinner party that generates more than  500 culture.",
+        "Russian": "Посетите званый ужин, который генерирует больше 500 очков культуры.",
+        "German": "Nimm an einer Dinnerparty teil, die mehr als 500 Kulturpunkte einbringt.",
+        "French": "Participe à un dîner qui génère plus de 500 points de culture.",
+        "Japanese": "文化値が500以上になるディナーパーティーに参加する。"
+      },
+      "IconName": "ALegendaryFeast"
+    },
+    "CravingSatisfied": {
+      "Name": {
+        "English": "Craving Satisfied",
+        "Russian": "Желание удовлетворено",
+        "German": "Heißhunger gestillt",
+        "French": "Fringale satisfaite",
+        "Japanese": "渇望が満たされて"
+      },
+      "Description": {
+        "English": "Eat food you've got a hankering for.",
+        "Russian": "Съешьте блюдо, которое вам захотелось.",
+        "German": "Iss auf was du Heißhunger hast.",
+        "French": "Mange la nourriture dont vous rêviez.",
+        "Japanese": "食べたいと思った食べ物を食べましょう。"
+      },
+      "IconName": "CravingSatisfied"
+    },
+    "ItsObviouslyRigged": {
+      "Name": {
+        "English": "It's Obviously Rigged",
+        "Russian": "Это Явно Подстроено",
+        "German": "Sie wurde eindeutig gefälscht",
+        "French": "C'est manifestement truqué",
+        "Japanese": "明らかに仕組まれている"
+      },
+      "Description": {
+        "English": "Lose an election.",
+        "Russian": "Проиграть выборы.",
+        "German": "Verliere eine Wahl.",
+        "French": "Perdre une élection.",
+        "Japanese": "選挙に負ける。"
+      },
+      "IconName": "ItsObviouslyRigged"
+    },
+    "Artisan": {
+      "Name": {
+        "English": "Artisan",
+        "Russian": "Умелец",
+        "German": "Künstler",
+        "French": "Artisan",
+        "Japanese": "職人"
+      },
+      "Description": {
+        "English": "Create 50 culture.",
+        "Russian": "Создайте 50 культуры.",
+        "German": "Erreiche 50 Kulturpunkte.",
+        "French": "Créez 50 cultures.",
+        "Japanese": "50の文化を創造しましょう。"
+      },
+      "IconName": "Artisan"
+    },
+    "MasterChef": {
+      "Name": {
+        "English": "Master Chef",
+        "Russian": "Мастер-шеф",
+        "German": "Master Chef",
+        "French": "Master Chef",
+        "Japanese": "マスターシェフ"
+      },
+      "Description": {
+        "English": "Craft 100 types of food.",
+        "Russian": "Приготовьте 100 видов еды.",
+        "German": "Stelle 100 verschiedene Arten von Lebensmitteln her.",
+        "French": "Fabrique 100 types d'aliments.",
+        "Japanese": "100種類の食料をクラフトする。"
+      },
+      "IconName": "MasterChef"
+    },
+    "SculptorofCities": {
+      "Name": {
+        "English": "Sculptor of Cities",
+        "Russian": "Скульптор городов",
+        "German": "Sculptor of Cities",
+        "French": "Sculptor of Cities",
+        "Japanese": "都市の彫刻家"
+      },
+      "Description": {
+        "English": "Create 20 types of masonry items.",
+        "Russian": "Создайте 20 видов каменных конструкций.",
+        "German": "Erstelle 20 Arten von Mauerwerksgegenständen.",
+        "French": "Crée 20 types d'éléments de maçonnerie.",
+        "Japanese": "20種類の石積みアイテムを作成する。"
+      },
+      "IconName": "SculptorofCities"
+    },
+    "WheelsinMotion": {
+      "Name": {
+        "English": "Wheels in Motion",
+        "Russian": "Привести в движение",
+        "German": "Räder in Bewegung",
+        "French": "Wheels in Motion",
+        "Japanese": "動き出す車輪"
+      },
+      "Description": {
+        "English": "Craft a vehicle.",
+        "Russian": "Создайте транспортное средство.",
+        "German": "Baue ein Fahrzeug.",
+        "French": "Fabrique un véhicule.",
+        "Japanese": "クラフトで乗り物を作ろう。"
+      },
+      "IconName": "WheelsinMotion"
+    },
+    "Earthbreaker": {
+      "Name": {
+        "English": "Earthbreaker",
+        "Russian": "Землекрушитель",
+        "German": "Earthbreaker",
+        "French": "Earthbreaker",
+        "Japanese": "アースブレイカー"
+      },
+      "Description": {
+        "English": "Mine 10000 ore.",
+        "Russian": "Добудьте 10 000 единиц руды.",
+        "German": "Fördere 10.000 Erz.",
+        "French": "Extraye 10 000 minerais.",
+        "Japanese": "鉱石を10000個採掘する。"
+      },
+      "IconName": "Earthbreaker"
+    },
+    "CulturalNexus": {
+      "Name": {
+        "English": "Cultural Nexus",
+        "Russian": "Центр культуры",
+        "German": "Kulturzentrum",
+        "French": "Nexus culturel",
+        "Japanese": "文化的つながり"
+      },
+      "Description": {
+        "English": "Create 20000 total culture as a world.",
+        "Russian": "В этом мире создано 20 000 культуры.",
+        "German": "Erreiche insgesamt 20.000 Kulturpunkte als Welt.",
+        "French": "Créer 20 000 de culture au total dans le monde.",
+        "Japanese": "世界全体で20000の文化を作りましょう。"
+      },
+      "IconName": "CulturalNexus"
+    },
+    "OreCollector": {
+      "Name": {
+        "English": "Ore Collector",
+        "Russian": "Сборщик руды",
+        "German": "Erzsammler",
+        "French": "Collecteur de minerai",
+        "Japanese": "鉱石採集者"
+      },
+      "Description": {
+        "English": "Mine 100 ore.",
+        "Russian": "Добывай 100 единиц руды.",
+        "German": "Folge 100 Erz.",
+        "French": "Extraye 100 minerais.",
+        "Japanese": "鉱石を100個採掘する。"
+      },
+      "IconName": "OreCollector"
+    }
+  }
+}

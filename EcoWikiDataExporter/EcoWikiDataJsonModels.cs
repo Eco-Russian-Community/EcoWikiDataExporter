@@ -67,6 +67,36 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string Achievement { get; set; }
         }
 
+        public class AchievementData
+        {
+            public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public string IconName { get; set; }
+        }
+
+        public class TagData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+            public bool Hidden { get; set; }
+            public bool IsVisibleInTooltip { get; set; }
+            public bool IsVisibleInEcopedia { get; set; }
+            public bool IsVisibleInFilter { get; set; }
+            public List<string> Items { get; set; }
+        }
+
+        public class SkillData
+        {
+            public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public string SkillID { get; set; }
+            public int MaxLevel { get; set; }
+            public int Tier { get; set; }
+            public int SpecialtyCost { get; set; }
+            public bool IsRoot { get; set; }
+            public string RootSkill { get; set; }
+            public bool PlayerDefaultSkill { get; set; }
+        }
 
 
     }

@@ -18,6 +18,7 @@ using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation.Agents;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -35,41 +36,35 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
     public partial class WikiData
     {
         // dictionary of animals and their dictionary of stats
-        private static SortedDictionary<string, Dictionary<string, string>> AchievementData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static Dictionary<string, AchievementData> AchievementDataList = new Dictionary<string, AchievementData>();
 
         public static void ExportAchievementsData()
         {
-            // dictionary of plant properties
-            Dictionary<string, string> achievementDetails = new Dictionary<string, string>()
-                {
-                    { "Name","nil" },
-                    { "Description","nil" },
-                    { "IconName","nil" },
-                };
 
             foreach (AchievementDefinition achievement in AchievementManager.Obj.NameToAchievement.Values)
             {
                 string achievementName = achievement.Name;
 
-                if (!AchievementData.ContainsKey(achievementName))
+                AchievementData achievementdata = new AchievementData
                 {
-                    AchievementData.Add(achievementName, new Dictionary<string, string>(achievementDetails));
-                    AchievementData[achievementName]["Name"] = WriteDictionaryAsSubObject(Localization(achievement.DisplayName.NotTranslated), 1);
-                    AchievementData[achievementName]["Description"] = WriteDictionaryAsSubObject(Localization(achievement.Description.NotTranslated), 1);
-                    AchievementData[achievementName]["IconName"] = $"'{achievement.IconName}'";
-                }
+                    Name = Localization(achievement.DisplayName.NotTranslated),
+                    Description = Localization(achievement.Description.NotTranslated),
+                    IconName = achievement.IconName
+                };
+
+                AchievementDataList.Add(achievementName, achievementdata);
             }
 
-        // writes to txt file
-        WriteDictionaryToFile("AchievementsData", "achievements", AchievementData);
-
-
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { achievements = AchievementDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Achievements", jsonString);
         }
     }
 }
