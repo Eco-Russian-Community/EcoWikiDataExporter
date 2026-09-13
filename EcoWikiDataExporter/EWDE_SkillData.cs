@@ -48,11 +48,6 @@ namespace Eco.Mods.EcoWikiDataExporter
         public static void ExportSkillData()
         {
 
-            Dictionary<string, string> skillsDetails = new Dictionary<string, string>()
-            {
-
-            };
-
             IEnumerable<Type> PlayerDefaultSkills = PlayerDefaults.GetDefaultSkills();
 
             foreach (var skill in Skill.AllSkills)

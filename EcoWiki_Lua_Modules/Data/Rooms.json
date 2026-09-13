@@ -1,0 +1,134 @@
+{
+  "rooms": {
+    "Living Room": {
+      "Name": {
+        "English": "Living Room",
+        "Russian": "Гостиная",
+        "German": "Wohnzimmer",
+        "French": "Salon",
+        "Japanese": "リビング"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#DB48C5FF"
+    },
+    "Bedroom": {
+      "Name": {
+        "English": "Bedroom",
+        "Russian": "Спальня",
+        "German": "Schlafzimmer",
+        "French": "Chambre",
+        "Japanese": "ベッドルーム"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#00B4A5FF"
+    },
+    "Kitchen": {
+      "Name": {
+        "English": "Kitchen",
+        "Russian": "Кухня",
+        "German": "Küche",
+        "French": "Cuisine",
+        "Japanese": "キッチン"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#4C7BD9FF"
+    },
+    "Bathroom": {
+      "Name": {
+        "English": "Bathroom",
+        "Russian": "Ванная",
+        "German": "Badezimmer",
+        "French": "Salle de bain",
+        "Japanese": "バスルーム"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#A6E1EAFF"
+    },
+    "Outdoor": {
+      "Name": {
+        "English": "Outdoor",
+        "Russian": "Снаружи",
+        "German": "Outdoor",
+        "French": "Extérieurs",
+        "Japanese": "屋外"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#68E897FF"
+    },
+    "Cultural": {
+      "Name": {
+        "English": "Cultural",
+        "Russian": "Культурный",
+        "German": "Kulturell",
+        "French": "Culturel",
+        "Japanese": "文化"
+      },
+      "IsRoom": true,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#B270FFFF"
+    },
+    "Industrial": {
+      "Name": {
+        "English": "Industrial",
+        "Russian": "Промышленная",
+        "German": "Industriell",
+        "French": "Industriel",
+        "Japanese": "工業"
+      },
+      "IsRoom": true,
+      "NegatesValue": true,
+      "Percent": null,
+      "Color": "#A300B4FF"
+    },
+    "Seating": {
+      "Name": {
+        "English": "Seating",
+        "Russian": "Сиденье",
+        "German": "Sitzgelegenheit",
+        "French": "Siège",
+        "Japanese": "座席"
+      },
+      "IsRoom": false,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#E5956EFF"
+    },
+    "Decoration": {
+      "Name": {
+        "English": "Decoration",
+        "Russian": "Украшение",
+        "German": "Dekoration",
+        "French": "Décoration",
+        "Japanese": "装飾"
+      },
+      "IsRoom": false,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#6BD6B4FF"
+    },
+    "Lighting": {
+      "Name": {
+        "English": "Lighting",
+        "Russian": "Освещение",
+        "German": "Beleuchtung",
+        "French": "Éclairage",
+        "Japanese": "照明"
+      },
+      "IsRoom": false,
+      "NegatesValue": false,
+      "Percent": null,
+      "Color": "#FFD6B4FF"
+    }
+  }
+}

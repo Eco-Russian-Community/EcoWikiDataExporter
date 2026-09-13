@@ -4,6 +4,7 @@ using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
+using Eco.Gameplay.Housing.PropertyValues;
 using Eco.Gameplay.Items;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Players;
@@ -17,6 +18,7 @@ using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -39,18 +41,9 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static SortedDictionary<string, Dictionary<string, string>> TalentData = new SortedDictionary<string, Dictionary<string, string>>();
-
+        private static Dictionary<string, TalentData> TalentDataList = new Dictionary<string, TalentData>();
         public static void ExportTalentData()
         {
-            Dictionary<string, string> TalentDetails = new Dictionary<string, string>()
-            {
-                { "Name" , "nil" },
-                { "Description", "nil" },
-                { "IconName", "nil" },
-                { "SkillID", "nil" },
-                { "Level", "nil" },
-            };
 
             foreach (Talent talent in TalentManager.AllTalents)
             {
@@ -59,21 +52,24 @@ namespace Eco.Mods.EcoWikiDataExporter
                 {
                     talentGroup = Item.Get(TalentManager.TypeToTalent[talent.GetType()].TalentGroupType) as TalentGroup;
                     string TalentName = talentGroup.DisplayName.NotTranslated;
-                    if (!TalentData.ContainsKey(TalentName))
+                    if (!TalentDataList.ContainsKey(TalentName))
                     {
-                        TalentData.Add(TalentName, new Dictionary<string, string>(TalentDetails));
-                        TalentData[TalentName]["Name"] = WriteDictionaryAsSubObject(Localization(TalentName), 1);
-                        TalentData[TalentName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(talentGroup.GetDescription.NotTranslated)), 1);
-                        TalentData[TalentName]["IconName"] = $"'{talentGroup.IconName}'";
-                        TalentData[TalentName]["SkillID"] = $"'{talentGroup.OwningSkill.Name}'";
-                        TalentData[TalentName]["Level"] = $"'{talentGroup.Level}'";
+                        TalentData talentdata = new TalentData
+                        {
+                            Name = Localization(TalentName),
+                            Description = Localization(CleanText(talentGroup.GetDescription.NotTranslated)),
+                            IconName = talentGroup.IconName,
+                            SkillID = talentGroup.OwningSkill.Name,
+                            Level = talentGroup.Level.ToString()
+                        };
+
+                        TalentDataList.Add(TalentName, talentdata);
                     }
                 }
             }
-
-
-            // writes to txt file
-            WriteDictionaryToFile("TalentData", "talents", TalentData);
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { talents = TalentDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Talents", jsonString);
         }
     }
 }

@@ -98,6 +98,44 @@ namespace Eco.Mods.EcoWikiDataExporter
             public bool PlayerDefaultSkill { get; set; }
         }
 
+        public class RoomTierData
+        {
+            public string SoftCap { get; set; }
+            public string HardCap { get; set; }
+            public string Percent { get; set; }
+        }
+
+        public class RoomData
+        {
+            public TranslateData Name { get; set; }
+            public bool IsRoom { get; set; }
+            public bool NegatesValue { get; set; }
+            public string Percent { get; set; }
+            public string Color { get; set; }
+        }
+
+
+        //{ "SupportingRooms", "nil" },
+
+        public class CommandData
+        {
+            public string Command { get; set; }
+            public string Level { get; set; }
+            public string ShortCut { get; set; }
+            public string Parent { get; set; }
+            public TranslateData Description { get; set; }
+            public string Parameters { get; set; }
+        }
+
+        public class TalentData
+        {
+            public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public string IconName { get; set; }
+            public string SkillID { get; set; }
+            public string Level { get; set; }
+        }
+
 
     }
 }

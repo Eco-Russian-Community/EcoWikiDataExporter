@@ -1,4 +1,23 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.IoC;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,44 +34,15 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Shared.IoC;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-
-     private static SortedDictionary<string, Dictionary<string, string>> CommandData = new SortedDictionary<string, Dictionary<string, string>>();
-
+        private static Dictionary<string, CommandData> CommandDataList = new Dictionary<string, CommandData>();
         public static void ExportCommandData()
         {
-            // dictionary of commands
-            Dictionary<string, string> commandDetails = new Dictionary<string, string>()
-            {
-                { "command", "nil" },
-                { "parent", "nil" },
-                { "helpText", "nil" },
-                { "shortCut", "nil" },
-                { "level", "nil" },
-                { "parameters", "nil" }
-            };
 
             Regex regex = new Regex("\t\n\v\f\r");
 
@@ -63,17 +53,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (com.Key == "dumpdetails")
                     continue;
 
-                var command = $"/{Localizer.DoStr(com.ParentKey)}{(Localizer.DoStr(com.ParentKey) == "" ? Localizer.DoStr(com.Name) : " " + Localizer.DoStr(com.Name))}";
-                if (!CommandData.ContainsKey(command))
+                var CommandName = $"/{Localizer.DoStr(com.ParentKey)}{(Localizer.DoStr(com.ParentKey) == "" ? Localizer.DoStr(com.Name) : " " + Localizer.DoStr(com.Name))}";
+                if (!CommandDataList.ContainsKey(CommandName))
                 {
-                    CommandData.Add(command, new Dictionary<string, string>(commandDetails));
-                    CommandData[command]["command"] = $"'{com.Key}'";
-
-                    if (com.ParentKey != null && com.ParentKey != "") { CommandData[command]["parent"] = $"'{com.ParentKey}'"; }
-                        
-                    CommandData[command]["helpText"] = WriteDictionaryAsSubObject(Localization(JSONStringSafe(com.HelpText)), 1);
-                    CommandData[command]["shortCut"] = $"'{com.ShortCut}'";
-                    CommandData[command]["level"] = $"'{com.AuthLevel}'";
 
                     MethodInfo method = com.Method;
                     if (method == null)
@@ -98,14 +80,29 @@ namespace Eco.Mods.EcoWikiDataExporter
                         if (p.HasDefaultValue) { pars[pos] += ", '" + p.DefaultValue + "'"; }
                         pars[pos] += "}";
                     }
-                    CommandData[command]["parameters"] = WriteDictionaryAsSubObject(pars, 1);
+
+                    string Parent = "";
+                    if (com.ParentKey != null && com.ParentKey != "") { Parent = com.ParentKey; }
+
+                    CommandData commanddata = new CommandData
+                    {
+                        Command = com.Key,
+                        Level = com.AuthLevel.ToString(),
+                        Description = Localization(JSONStringSafe(com.HelpText)),
+                        ShortCut = com.ShortCut,
+                        Parent = Parent
+                    };
+
+                    
+                    //CommandData[command]["parameters"] = WriteDictionaryAsSubObject(pars, 1);
+
+                    CommandDataList.Add(CommandName, commanddata);
                 }
             }
 
-            // writes to txt file
-            WriteDictionaryToFile("CommandData", "commands", CommandData);
+            // writes to json file
+            string jsonString = JsonConvert.SerializeObject(new { commands = CommandDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Commands", jsonString);
         }
-
-
     }
 }
