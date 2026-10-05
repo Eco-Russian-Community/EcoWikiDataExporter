@@ -21,6 +21,13 @@
       "French": "Objets du même groupe",
       "Japanese": "タグ内のアイテム"
     },
+    "Tagged Items": {
+      "English": "Tagged Items",
+      "Russian": "Помеченные предметы",
+      "German": "Getaggte Gegenstände",
+      "French": "Articles étiquetés",
+      "Japanese": "タグが付いたアイテム"
+    },
     "Tags represent a group of items.": {
       "English": "Tags represent a group of items.",
       "Russian": "Группа предметов объединённых общим признаком.",
@@ -580,6 +587,55 @@
       "German": "DevTier",
       "French": "DevTier",
       "Japanese": "DevTier(開発階層)"
+    },
+    "Carry Weight: {0}": {
+      "English": "Carry Weight: {0}",
+      "Russian": "Переносимый вес: {0}",
+      "German": "Carry Weight: {0}",
+      "French": "Carry Weight: {0}",
+      "Japanese": "Carry Weight: {0}"
+    },
+    "Max Calories: {0}": {
+      "English": "Max Calories: {0}",
+      "Russian": "Max Calories: {0}",
+      "German": "Max Calories: {0}",
+      "French": "Max Calories: {0}",
+      "Japanese": "Max Calories: {0}"
+    },
+    "Calorie Cost: {0}": {
+      "English": "Calorie Cost: {0}",
+      "Russian": "Calorie Cost: {0}",
+      "German": "Calorie Cost: {0}",
+      "French": "Calorie Cost: {0}",
+      "Japanese": "Calorie Cost: {0}"
+    },
+    "Movement Speed: {0}": {
+      "English": "Movement Speed: {0}",
+      "Russian": "Скорость передвижения: {0}",
+      "German": "Movement Speed: {0}",
+      "French": "Movement Speed: {0}",
+      "Japanese": "Movement Speed: {0}"
+    },
+    "Animal Detection Range: {0}": {
+      "English": "Animal Detection Range: {0}",
+      "Russian": "Animal Detection Range: {0}",
+      "German": "Animal Detection Range: {0}",
+      "French": "Animal Detection Range: {0}",
+      "Japanese": "Animal Detection Range: {0}"
+    },
+    "Backpack Slots: {0}": {
+      "English": "Backpack Slots: {0}",
+      "Russian": "Ячейки рюкзака: {0}",
+      "German": "Backpack Slots: {0}",
+      "French": "Backpack Slots: {0}",
+      "Japanese": "Backpack Slots: {0}"
+    },
+    "Carried Slots: {0}": {
+      "English": "Carried Slots: {0}",
+      "Russian": "Carried Slots: {0}",
+      "German": "Carried Slots: {0}",
+      "French": "Carried Slots: {0}",
+      "Japanese": "Carried Slots: {0}"
     }
   }
 }

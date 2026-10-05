@@ -14,6 +14,8 @@ using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
+using Eco.Shared.Math;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Newtonsoft.Json;
@@ -40,7 +42,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static Dictionary<string, CommandData> CommandDataList = new Dictionary<string, CommandData>();
+        private static SortedDictionary<string, CommandData> CommandDataList = new SortedDictionary<string, CommandData>();
+        
         public static void ExportCommandData()
         {
 
@@ -50,39 +53,33 @@ namespace Eco.Mods.EcoWikiDataExporter
 
             foreach (var com in commands)
             {
-                if (com.Key == "dumpdetails")
-                    continue;
+                if (com.Key == "dumpdetails") continue;
 
                 var CommandName = $"/{Localizer.DoStr(com.ParentKey)}{(Localizer.DoStr(com.ParentKey) == "" ? Localizer.DoStr(com.Name) : " " + Localizer.DoStr(com.Name))}";
                 if (!CommandDataList.ContainsKey(CommandName))
                 {
 
                     MethodInfo method = com.Method;
-                    if (method == null)
-                        continue;
+                    if (method == null) continue;
 
                     ParameterInfo[] parameters = method.GetParameters();
 
-                    if (parameters == null)
-                        continue;
+                    if (parameters == null) continue;
 
-                    Dictionary<string, string> pars = new Dictionary<string, string>();
+                    Dictionary<string, string> commandparameterdatalist = new Dictionary<string, string>();
+                    Dictionary<string, string> commandparameterDetails = new Dictionary<string, string>() { };
 
                     foreach (var p in parameters)
                     {
-                        if (p.Name == "user")
-                            continue;
-
-                        string pos = "Arg" + p.Position.ToString();
-                        pars[pos] = "{";
-                        pars[pos] += "'" + p.Name + "', '" + p.ParameterType.Name + "'";
-
-                        if (p.HasDefaultValue) { pars[pos] += ", '" + p.DefaultValue + "'"; }
-                        pars[pos] += "}";
+                        if (p.Name == "user" | p.Position < 1) continue;
+                        string ParameterName = "Arg" + p.Position.ToString();
+                        string ParameterValue = p.Name + "," + p.ParameterType.Name;
+                        commandparameterdatalist.Add(ParameterName, ParameterValue);
                     }
 
                     string Parent = "";
                     if (com.ParentKey != null && com.ParentKey != "") { Parent = com.ParentKey; }
+
 
                     CommandData commanddata = new CommandData
                     {
@@ -90,11 +87,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                         Level = com.AuthLevel.ToString(),
                         Description = Localization(JSONStringSafe(com.HelpText)),
                         ShortCut = com.ShortCut,
-                        Parent = Parent
+                        Parent = Parent,
+                        Parameters = commandparameterdatalist
                     };
-
-                    
-                    //CommandData[command]["parameters"] = WriteDictionaryAsSubObject(pars, 1);
 
                     CommandDataList.Add(CommandName, commanddata);
                 }

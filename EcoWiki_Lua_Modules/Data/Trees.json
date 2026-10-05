@@ -1,0 +1,114 @@
+{
+  "trees": {
+    "Birch": {
+      "ID": "BirchSpecies",
+      "Name": {
+        "English": "Birch",
+        "Russian": "Берёза",
+        "German": "Birke",
+        "French": "Bouleau",
+        "Japanese": "白樺"
+      }
+    },
+    "Cedar": {
+      "ID": "CedarSpecies",
+      "Name": {
+        "English": "Cedar",
+        "Russian": "Кедр",
+        "German": "Zeder",
+        "French": "Cèdre",
+        "Japanese": "杉"
+      }
+    },
+    "Ceiba": {
+      "ID": "CeibaSpecies",
+      "Name": {
+        "English": "Ceiba",
+        "Russian": "Сейба",
+        "German": "Kapokbaum",
+        "French": "Ceiba",
+        "Japanese": "パンヤノキ"
+      }
+    },
+    "Fir": {
+      "ID": "FirSpecies",
+      "Name": {
+        "English": "Fir",
+        "Russian": "Пихта",
+        "German": "Tanne",
+        "French": "Sapin",
+        "Japanese": "モミの木"
+      }
+    },
+    "Joshua": {
+      "ID": "JoshuaSpecies",
+      "Name": {
+        "English": "Joshua",
+        "Russian": "Юкка коротколистная",
+        "German": "Joshua",
+        "French": "Arbre de Josué",
+        "Japanese": "ジョシュア・ツリー"
+      }
+    },
+    "Oak": {
+      "ID": "OakSpecies",
+      "Name": {
+        "English": "Oak",
+        "Russian": "Дуб",
+        "German": "Eiche",
+        "French": "Chêne",
+        "Japanese": "樫"
+      }
+    },
+    "Old Growth Redwood": {
+      "ID": "OldGrowthRedwoodSpecies",
+      "Name": {
+        "English": "Old Growth Redwood",
+        "Russian": "Гигантская секвойя",
+        "German": "Mammutbaum",
+        "French": "Séquoia géant",
+        "Japanese": "セコイアの古木"
+      }
+    },
+    "Palm": {
+      "ID": "PalmSpecies",
+      "Name": {
+        "English": "Palm",
+        "Russian": "Пальма",
+        "German": "Palme",
+        "French": "Palmier",
+        "Japanese": "ヤシ"
+      }
+    },
+    "Redwood": {
+      "ID": "RedwoodSpecies",
+      "Name": {
+        "English": "Redwood",
+        "Russian": "Секвойя",
+        "German": "Rottanne",
+        "French": "Séquoia",
+        "Japanese": "セコイア"
+      }
+    },
+    "Saguaro Cactus": {
+      "ID": "SaguaroCactusSpecies",
+      "Name": {
+        "English": "Saguaro Cactus",
+        "Russian": "Карнегия",
+        "German": "Saguarokaktus",
+        "French": "Cactus Saguaro",
+        "Japanese": "サグアロサボテン"
+      }
+    },
+    "Spruce": {
+      "ID": "SpruceSpecies",
+      "Name": {
+        "English": "Spruce",
+        "Russian": "Ель",
+        "German": "Fichte",
+        "French": "Épicéa",
+        "Japanese": "松"
+      }
+    }
+  }
+}

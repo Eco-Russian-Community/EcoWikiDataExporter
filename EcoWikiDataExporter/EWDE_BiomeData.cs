@@ -96,7 +96,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeExtensions.IsOcean(BiomeItem)) { BiomeData[BiomeName]["IsOcean"] = $"'True'"; }
                 
 
-                BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
+                //BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
 
                 string BiomeDescription = "";
                 if (BiomeID == "Coast") { BiomeDescription = "Beaches and shallow waters."; }
@@ -116,7 +116,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeID == "WarmForest") { BiomeDescription = "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate."; }
                 if (BiomeID == "Wetland") { BiomeDescription = "A unique biome characterized by a saturation of the soil with fresh or brackish water."; }
 
-                BiomeData[BiomeName]["Description"] = WriteDictionaryAsSubObject(Localization(BiomeDescription), 1);
+                //BiomeData[BiomeName]["Description"] = WriteDictionaryAsSubObject(Localization(BiomeDescription), 1);
                 BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType.Name}'";
                 //BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
                 //BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
@@ -128,8 +128,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 //BiomeData[BiomeName]["BadNeighbors"] = $"'{BiomeItem.BadNeighbors}'";
             }
 
-         // writes to txt file
-        WriteDictionaryToFile("BiomeData", "biomes", BiomeData);
+
         }
     }
 }

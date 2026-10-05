@@ -19,6 +19,7 @@ using Eco.Simulation.Types;
 using Eco.Simulation.WorldLayers;
 using Eco.World;
 using Eco.World.Blocks;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -34,78 +35,93 @@ namespace Eco.Mods.EcoWikiDataExporter
     public partial class WikiData
     {
         // Dictionary of trees
-        private static SortedDictionary<string, Dictionary<string, string>> TreeData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, TreeData> TreeDataList = new SortedDictionary<string, TreeData>();
 
         public static void ExportTreeData()
         {
-            // Dictionary of trees properties
-            Dictionary<string, string> treeDetails = new Dictionary<string, string>()
-            {
-                { "ID","nil" },
-                { "Name","nil" },
-                { "MaturityAgeDays","nil" },
-                { "StartBiomes","nil" }               
-            };
-
             IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is TreeSpecies);
 
             foreach (Species s in species)
             {
                 TreeSpecies tree = s as TreeSpecies;
-                string treeName = tree.DisplayName.NotTranslated;
-                if (!TreeData.ContainsKey(treeName))
+                string TreeName = tree.DisplayName.NotTranslated;
+                if (!TreeDataList.ContainsKey(TreeName))
                 {
-                    TreeData.Add(treeName, new Dictionary<string, string>(treeDetails));
+
+
+
+
+
+
+
+
+
+
+
+                    TreeData treedata = new TreeData
+                    {
+                        ID = tree.Name + "Species",
+                        Name = Localization(TreeName),
+
+                    };
+
+                    TreeDataList.Add(TreeName, treedata);
+
+
+
+
+
+
+
                     // Info
-                    TreeData[treeName]["ID"] = $"'{tree.Name}" + "Species'";
-                    TreeData[treeName]["Name"] = WriteDictionaryAsSubObject(Localization(treeName), 1);
-                    TreeData[treeName]["IsDecorative"] = $"'{tree.Decorative}'";
+
+                    // TreeData[treeName]["IsDecorative"] = $"'{tree.Decorative}'";
                     // Lifetime
-                    TreeData[treeName]["MaturityAgeDays"] = $"'{WikiFloat(tree.MaturityAgeDays)}'";
-                    TreeData[treeName]["TreeHealth"] = $"'{tree.TreeHealth}'";
-                    TreeData[treeName]["BranchCount"] = $"'{tree.BranchingDef.Count}'";
-                    TreeData[treeName]["Density"] = $"'{tree.Density}'";
+                    // TreeData[treeName]["MaturityAgeDays"] = $"'{WikiFloat(tree.MaturityAgeDays)}'";
+                    // TreeData[treeName]["TreeHealth"] = $"'{tree.TreeHealth}'";
+                    // TreeData[treeName]["BranchCount"] = $"'{tree.BranchingDef.Count}'";
+                    // TreeData[treeName]["Density"] = $"'{tree.Density}'";
 
                     // Seeding and spread customization
-                    TreeData[treeName]["SeedingTime"] = $"'{WikiDouble(tree.SeedingTime)}'";
-                    TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
-                    TreeData[treeName]["PlantAgeToSeed"] = $"'{WikiFloat(tree.PlantAgeToSeed)}'";
-                    TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
+                    // TreeData[treeName]["SeedingTime"] = $"'{WikiDouble(tree.SeedingTime)}'";
+                    // TreeData[treeName]["SeedingArea"] = $"'{tree.SeedingArea}'";
+                    // TreeData[treeName]["PlantAgeToSeed"] = $"'{WikiFloat(tree.PlantAgeToSeed)}'";
+                    // TreeData[treeName]["SeedsCount"] = $"'{tree.SeedsCount}'";
 
                     // Generation
-                    TreeData[treeName]["Height"] = $"'{tree.Height}'";
-                    TreeData[treeName]["ChanceToBeSpawnOutsideOfGroup"] = $"'{WikiFloat(tree.GenerationDefinitions.ChanceToBeSpawnOutsideOfGroup)}'";
-                    TreeData[treeName]["MinDistanceBetweenGroupsMin"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Min}'";
-                    TreeData[treeName]["MinDistanceBetweenGroupsMax"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Max}'";
-                    TreeData[treeName]["PlantsInGroupMin"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Min}'";
-                    TreeData[treeName]["PlantsInGroupMax"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Max}'";
-                    TreeData[treeName]["CountOfClustersMin"] = $"'{tree.GenerationDefinitions.CountOfClusters.Min}'";
-                    TreeData[treeName]["CountOfClustersMax"] = $"'{tree.GenerationDefinitions.CountOfClusters.Max}'";
-                    TreeData[treeName]["RadiusOfGroupMin"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Min}'";
-                    TreeData[treeName]["RadiusOfGroupMax"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Max}'";
-                    TreeData[treeName]["ClusterRadiusInWorldSizeMin"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Min)}'";
-                    TreeData[treeName]["ClusterRadiusInWorldSizeMax"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Max)}'";
+                    // TreeData[treeName]["Height"] = $"'{tree.Height}'";
+                    // TreeData[treeName]["ChanceToBeSpawnOutsideOfGroup"] = $"'{WikiFloat(tree.GenerationDefinitions.ChanceToBeSpawnOutsideOfGroup)}'";
+                    // TreeData[treeName]["MinDistanceBetweenGroupsMin"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Min}'";
+                    // TreeData[treeName]["MinDistanceBetweenGroupsMax"] = $"'{tree.GenerationDefinitions.MinDistanceBetweenGroups.Max}'";
+                    // TreeData[treeName]["PlantsInGroupMin"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Min}'";
+                    // TreeData[treeName]["PlantsInGroupMax"] = $"'{tree.GenerationDefinitions.PlantsInGroup.Max}'";
+                    // TreeData[treeName]["CountOfClustersMin"] = $"'{tree.GenerationDefinitions.CountOfClusters.Min}'";
+                    // TreeData[treeName]["CountOfClustersMax"] = $"'{tree.GenerationDefinitions.CountOfClusters.Max}'";
+                    // TreeData[treeName]["RadiusOfGroupMin"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Min}'";
+                    // TreeData[treeName]["RadiusOfGroupMax"] = $"'{tree.GenerationDefinitions.RadiusOfGroup.Max}'";
+                    // TreeData[treeName]["ClusterRadiusInWorldSizeMin"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Min)}'";
+                    // TreeData[treeName]["ClusterRadiusInWorldSizeMax"] = $"'{WikiFloat(tree.GenerationDefinitions.ClusterRadiusInWorldSize.Max)}'";
 
-                    TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
+                    // TreeData[treeName]["StartBiomes"] = $"'{tree.GenerationDefinitions.StartBiomes}'";
 
                     // as Food
-                    TreeData[treeName]["CalorieValue"] = $"'{tree.CalorieValue}'";
+                    // TreeData[treeName]["CalorieValue"] = $"'{tree.CalorieValue}'";
 
                     // Resources
-                    TreeData[treeName]["PostHarvestingGrowth"] = $"'{tree.PostHarvestingGrowth}'";
-                    TreeData[treeName]["PickableAtPercent"] = $"'{tree.PickableAtPercent}'";
-                    TreeData[treeName]["ResourceBonusAtGrowth"] = $"'{Percent(tree.ResourceBonusAtGrowth)}'";
-                    TreeData[treeName]["LogHealth"] = $"'{tree.LogHealth}'";
-                    TreeData[treeName]["ChanceToSpawnDebris"] = $"'{Percent(tree.ChanceToSpawnDebris)}'";
-                    TreeData[treeName]["DebrisType"] = $"'{tree.DebrisType.Name}'";
+                    // TreeData[treeName]["PostHarvestingGrowth"] = $"'{tree.PostHarvestingGrowth}'";
+                    // TreeData[treeName]["PickableAtPercent"] = $"'{tree.PickableAtPercent}'";
+                    // TreeData[treeName]["ResourceBonusAtGrowth"] = $"'{Percent(tree.ResourceBonusAtGrowth)}'";
+                    // TreeData[treeName]["LogHealth"] = $"'{tree.LogHealth}'";
+                    // TreeData[treeName]["ChanceToSpawnDebris"] = $"'{Percent(tree.ChanceToSpawnDebris)}'";
+                    // TreeData[treeName]["DebrisType"] = $"'{tree.DebrisType.Name}'";
 
                     if (tree.ResourceItemType != null) 
-                    { 
-                        TreeData[treeName]["ResourceItem"] = $"'{tree.ResourceItemType.Name}'";
-                        TreeData[treeName]["ResourceMax"] = $"'{tree.ResourceRange.Max}'";
+                    {
+                        // TreeData[treeName]["ResourceItem"] = $"'{tree.ResourceItemType.Name}'";
+                        // TreeData[treeName]["ResourceMax"] = $"'{tree.ResourceRange.Max}'";
                     }
 
-                    
+
                     foreach (var debrisresources in tree.DebrisResources)
                     {
                         
@@ -117,6 +133,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     foreach (var trunkresources in tree.TrunkResources)
                     {
                         //trunkresources.Key
+                        //trunkresources.Value.Min
+                        //trunkresources.Value.Max
                     }
 
                     // WorldLayers
@@ -125,44 +143,48 @@ namespace Eco.Mods.EcoWikiDataExporter
                         foreach (ResourceConstraint resource in tree.ResourceConstraints)
                         {
                             string LayerName = resource.LayerName;
-                            TreeData[treeName][LayerName + "HalfSpeed"] = $"'{Percent(resource.HalfSpeedConcentration)}'";
-                            TreeData[treeName][LayerName + "MaxResource"] = $"'{Percent(resource.MaxResourceContent)}'";
+                            // TreeData[treeName][LayerName + "HalfSpeed"] = $"'{Percent(resource.HalfSpeedConcentration)}'";
+                            // TreeData[treeName][LayerName + "MaxResource"] = $"'{Percent(resource.MaxResourceContent)}'";
                         }
                     }
 
-                    TreeData[treeName]["BlockType"] = $"'{tree.BlockType.Name}'";
-                    
-
-                     
+                    // TreeData[treeName]["BlockType"] = $"'{tree.BlockType.Name}'";
 
 
 
 
 
-                     // Capacity
-                    TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(tree.IdealTemperatureRange.Min)}'";
-                    TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(tree.IdealTemperatureRange.Max)}'";
-                    TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(tree.TemperatureExtremes.Min)}'";
-                    TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(tree.TemperatureExtremes.Max)}'";
 
-                    TreeData[treeName]["IdealMoistureRangeMin"] = $"'{Percent(tree.IdealMoistureRange.Min)}'";
-                    TreeData[treeName]["IdealMoistureRangeMax"] = $"'{Percent(tree.IdealMoistureRange.Max)}'";
-                    TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{Percent(tree.MoistureExtremes.Min)}'";
-                    TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{Percent(tree.MoistureExtremes.Max)}'";
 
-                    TreeData[treeName]["IdealWaterRangeMin"] = $"'{Percent(tree.IdealWaterRange.Min)}'";
-                    TreeData[treeName]["IdealWaterRangeMax"] = $"'{Percent(tree.IdealWaterRange.Max)}'";
-                    TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{Percent(tree.WaterExtremes.Min)}'";
-                    TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{Percent(tree.WaterExtremes.Max)}'";
+
+                    // Capacity
+                    // TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(tree.IdealTemperatureRange.Min)}'";
+                    // TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(tree.IdealTemperatureRange.Max)}'";
+                    // TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(tree.TemperatureExtremes.Min)}'";
+                    // TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(tree.TemperatureExtremes.Max)}'";
+
+                    // TreeData[treeName]["IdealMoistureRangeMin"] = $"'{Percent(tree.IdealMoistureRange.Min)}'";
+                    // TreeData[treeName]["IdealMoistureRangeMax"] = $"'{Percent(tree.IdealMoistureRange.Max)}'";
+                    // TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{Percent(tree.MoistureExtremes.Min)}'";
+                    // TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{Percent(tree.MoistureExtremes.Max)}'";
+
+                    // TreeData[treeName]["IdealWaterRangeMin"] = $"'{Percent(tree.IdealWaterRange.Min)}'";
+                    // TreeData[treeName]["IdealWaterRangeMax"] = $"'{Percent(tree.IdealWaterRange.Max)}'";
+                    // TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{Percent(tree.WaterExtremes.Min)}'";
+                    // TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{Percent(tree.WaterExtremes.Max)}'";
 
                     // Climate
-                    TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{tree.ReleasesCO2TonsPerDay.ToString("G", CultureInfo.InvariantCulture)}'";
-                    TreeData[treeName]["PollutionDensityMin"] = $"'{Percent(tree.PollutionDensityTolerance)}'";
-                    TreeData[treeName]["PollutionDensityMax"] = $"'{Percent(tree.MaxPollutionDensity)}'";
+                    // TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(tree.ReleasesCO2TonsPerDay)}'";
+                    // TreeData[treeName]["PollutionDensityMin"] = $"'{Percent(tree.PollutionDensityTolerance)}'";
+                    // TreeData[treeName]["PollutionDensityMax"] = $"'{Percent(tree.MaxPollutionDensity)}'";
+
+
+
                 }
             }
-        // writes to txt file
-        WriteDictionaryToFile("TreeData", "trees", TreeData);
+            // writes to json file
+            string TreeDataListjsonString = JsonConvert.SerializeObject(new { trees = TreeDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Trees", TreeDataListjsonString);
         }
     }
 }

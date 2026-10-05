@@ -22,6 +22,7 @@ using Eco.Shared.Localization;
 using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -42,55 +43,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static SortedDictionary<string, Dictionary<string, string>> RecipeData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, RecipeData> RecipesDataList = new SortedDictionary<string, RecipeData>();
         public static void ExportRecipeData()
         {
-            // dictionary of recipe properties
-            Dictionary<string, string> recipeDetails = new Dictionary<string, string>()
-            {
-                { "Name", "nil" },
-                { "CraftTime", "nil" },
-                { "ExperienceOnCraft", "nil" },
-                { "LaborInCalories", "nil" },
-                { "RequiredSkill", "nil" },
-                { "RequiresModule", "nil" },
-                { "CraftingTables", "nil" },
-                { "RequiresStrangeBlueprint", "nil" },
-                { "Ingredients", "nil" },
-                { "Products", "nil" },
-                { "Garbages", "nil" },
-            };
-
-            Dictionary<string, string> recipeIngredientsDetails = new Dictionary<string, string>()
-            {
-                { "Type", "nil" },
-                { "Name", "nil" },
-                { "ID", "nil" },
-                { "Quantity", "nil" },
-                { "IsStatic", "'False'" },
-            };
-
-            Dictionary<string, string> recipeProductsDetails = new Dictionary<string, string>()
-            {
-                { "Name", "nil" },
-                { "ID", "nil" },
-                { "Quantity", "nil" },
-                { "IsStatic", "'False'" },
-            };
-
-            
-            Dictionary<string, string> recipeGarbagesDetails = new Dictionary<string, string>()
-            {
-                { "Name", "nil" },
-                { "ID", "nil" },
-                { "Quantity", "nil" },
-            };
-
 
             var EcoRecipes = RecipeManager.AllRecipeFamilies;
 
@@ -98,32 +59,21 @@ namespace Eco.Mods.EcoWikiDataExporter
             {
                 string BaseRecipeName = recipe.RecipeName;
                 
-                if (!RecipeData.ContainsKey(BaseRecipeName))
+                foreach (Recipe recipevariant in recipe.Recipes)
                 {
-                    foreach (Recipe recipevariant in recipe.Recipes)
+                    string RecipeName = recipevariant.DisplayName.NotTranslated;
+                    string RecipeID = RecipeName.Replace(" ", "") + "Recipe";
+                    
+                    if (!RecipesDataList.ContainsKey(RecipeID))
                     {
-                        string RecipeName = recipevariant.DisplayName.NotTranslated;
-                        string RecipeID = RecipeName.Replace(" ", "") + "Recipe";
-
-                        RecipeData.Add(RecipeID, new Dictionary<string, string>(recipeDetails));
-                        RecipeData[RecipeID]["Name"] = WriteDictionaryAsSubObject(Localization(RecipeName), 1);
-                        RecipeData[RecipeID]["CraftTime"] = $"'{(Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture)}'";
-                        RecipeData[RecipeID]["ExperienceOnCraft"] = $"'{recipe.ExperienceOnCraft.ToString("G", CultureInfo.InvariantCulture)}'";
-                        RecipeData[RecipeID]["LaborInCalories"] = $"'{recipe.LaborInCalories.GetBaseValue.ToString("G", CultureInfo.InvariantCulture)}'";
-                        
                         var skill = recipe.RequiredSkills.FirstOrDefault();
-                        string RequiredSkill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
-                        int RequiredSkillLevel = skill?.Level ?? 0;
+                        string requiredskill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
+                        int requiredskilllevel = skill?.Level ?? 0;
 
                         var module = recipe.RequiredModules.FirstOrDefault();
-                        string RequiredModule = module != null ? Item.CreatingItem(module.ModuleType).DisplayName.NotTranslated : "nil";
+                        string requiredmodule = module != null ? Item.CreatingItem(module.ModuleType).DisplayName.NotTranslated : "nil";
 
-                        RecipeData[RecipeID]["RequiredSkill"] = "{" + $"'{RequiredSkill}'" + "," + $"'{RequiredSkillLevel}'" + "}";
-                        RecipeData[RecipeID]["RequiresModule"] = $"'{RequiredModule}'";
-                        RecipeData[RecipeID]["CraftingTables"] = $"'{recipe.CraftingTable.DisplayName.NotTranslated}'";
-                        RecipeData[RecipeID]["RequiresStrangeBlueprint"] = $"'{recipevariant.RequiresStrangeBlueprint}'";
-
-                        SortedDictionary<string, Dictionary<string, string>> Ingredients = new SortedDictionary<string, Dictionary<string, string>>();
+                        SortedDictionary<string, RecipeIngredientData> IngredientsList = new SortedDictionary<string, RecipeIngredientData>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
                         {
                             string Ingredienttype;
@@ -139,53 +89,82 @@ namespace Eco.Mods.EcoWikiDataExporter
                                 Ingredientname = recipeingredient.Tag.DisplayName.NotTranslated;
                                 IngredientID = recipeingredient.Tag.Name;
                             }
-                            string IngredientQuantity = recipeingredient.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
+                            string IngredientQuantity = WikiFloat(recipeingredient.Quantity.GetBaseValue);
+                            bool IngredientIsStatic = false;
+                            if (recipeingredient.Quantity is ConstantValue) { IngredientIsStatic = true; }
 
-                            Ingredients.Add(Ingredientname, new Dictionary<string, string>(recipeIngredientsDetails));
+                            RecipeIngredientData recipeingredientdata = new RecipeIngredientData
+                            {
+                                Type = Ingredienttype,
+                                Name = Ingredientname,
+                                ID = IngredientID,
+                                Quantity = IngredientQuantity,
+                                IsStatic = IngredientIsStatic
+                            };
 
-                            Ingredients[Ingredientname]["Type"] = $"'{Ingredienttype}'";
-                            Ingredients[Ingredientname]["Name"] = $"'{Ingredientname}'";
-                            Ingredients[Ingredientname]["ID"] = $"'{IngredientID}'";
-                            Ingredients[Ingredientname]["Quantity"] = $"'{IngredientQuantity}'";
-                            if (recipeingredient.Quantity is ConstantValue) { Ingredients[Ingredientname]["IsStatic"] = $"'True'";  }
-
-                            RecipeData[RecipeID]["Ingredients"] = WriteDictionaryAsSubObject(Ingredients, 1);
+                            IngredientsList.Add(Ingredientname, recipeingredientdata);
                         }
 
-                        SortedDictionary<string, Dictionary<string, string>> Products = new SortedDictionary<string, Dictionary<string, string>>();
+                        SortedDictionary<string, RecipeProductData> ProductsList = new SortedDictionary<string, RecipeProductData>();
                         foreach (var recipeproduct in recipevariant.Products)
                         {
                             string Productname = recipeproduct.Item.DisplayName.NotTranslated;
-                            string ProductQuantity = recipeproduct.Quantity.GetBaseValue.ToString("G", CultureInfo.InvariantCulture);
-                            Products.Add(Productname, new Dictionary<string, string>(recipeProductsDetails));
+                            string ProductQuantity = WikiFloat(recipeproduct.Quantity.GetBaseValue);
+                            string Producttype = "ITEM";
+                            bool ProductIsStatic = false;
+                            if (recipeproduct.Quantity is ConstantValue) { ProductIsStatic = true; }
 
-                            Products[Productname]["Type"] = $"'ITEM'";
-                            Products[Productname]["Name"] = $"'{Productname}'";
-                            Products[Productname]["ID"] = $"'{recipeproduct.Item.Type.Name}'";
-                            Products[Productname]["Quantity"] = $"'{ProductQuantity}'";
-                            if (recipeproduct.Quantity is ConstantValue) { Products[Productname]["IsStatic"] = $"'True'"; }
+                            RecipeProductData recipeproductdata = new RecipeProductData
+                            {
+                                Type = Producttype,
+                                Name = Productname,
+                                ID = recipeproduct.Item.Type.Name,
+                                Quantity = ProductQuantity,
+                                IsStatic = ProductIsStatic
+                            };
 
-                            RecipeData[RecipeID]["Products"] = WriteDictionaryAsSubObject(Products, 1);
+                            ProductsList.Add(Productname, recipeproductdata);
                         }
 
-                        SortedDictionary<string, Dictionary<string, string>> Garbages = new SortedDictionary<string, Dictionary<string, string>>();
+                        SortedDictionary<string, RecipeGarbageData> GarbagesList = new SortedDictionary<string, RecipeGarbageData>();
                         foreach (var recipegarbage in recipevariant.TotalGarbages)
                         {
                             string Garbagename = recipegarbage.GarbageMaterialType.Name;
                             string GarbageQuantity = Percent(recipegarbage.Quantity.GetBaseValue);
-                            Garbages.Add(Garbagename, new Dictionary<string, string>(recipeGarbagesDetails));
 
-                            Garbages[Garbagename]["Name"] = $"'{Garbagename.AddSpacesBetweenCapitals()}'";
-                            Garbages[Garbagename]["ID"] = $"'{recipegarbage.IconName}'";
-                            Garbages[Garbagename]["Quantity"] = $"'{GarbageQuantity}'";
-                            RecipeData[RecipeID]["Garbages"] = WriteDictionaryAsSubObject(Garbages, 1);
+                            RecipeGarbageData recipegarbagedata = new RecipeGarbageData
+                            {
+                                Name = Garbagename.AddSpacesBetweenCapitals(),
+                                ID = recipegarbage.IconName,
+                                Quantity = GarbageQuantity
+                            };
+
+                            GarbagesList.Add(Garbagename, recipegarbagedata);
                         }
+
+                        RecipeData recipedata = new RecipeData
+                        {
+                            CraftTime = (Math.Round(recipe.CraftMinutes.GetBaseValue * 60)).ToString("G", CultureInfo.InvariantCulture),
+                            Experience = WikiFloat(recipe.ExperienceOnCraft),
+                            LaborInCalories = WikiFloat(recipe.LaborInCalories.GetBaseValue),
+                            RequiredSkill = requiredskill + "," + requiredskilllevel,
+                            RequiresModule = requiredmodule,
+                            CraftingTable = recipe.CraftingTable.DisplayName.NotTranslated,
+                            RequiresBlueprint = recipevariant.RequiresStrangeBlueprint,
+                            Ingredients = IngredientsList,
+                            Products = ProductsList,
+                            Garbages = GarbagesList
+                        };
+
+                        RecipesDataList.Add(RecipeID, recipedata);
                     }
                 }
             }
 
-            // writes to txt file
-            WriteDictionaryToFile("RecipeData", "recipes", RecipeData);
+            // writes to json file
+            string RecipesDataListjsonString = JsonConvert.SerializeObject(new { recipes = RecipesDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Recipes", RecipesDataListjsonString);
+
 
         }
 

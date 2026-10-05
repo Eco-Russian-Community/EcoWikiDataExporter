@@ -60,7 +60,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string ChapterNameID = Chapter.Name.Replace(" ", "") + "Chapter";
                 if (ChapterName == "Development") continue;
                 EcopediaData.Add(ChapterNameID, new Dictionary<string, string>(EcopediaMenuDetails));
-                EcopediaData[ChapterNameID]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
+                //EcopediaData[ChapterNameID]["Name"] = WriteDictionaryAsSubObject(Localization(ChapterName), 1);
                 EcopediaData[ChapterNameID]["Type"] = $"'Chapter'";
 
                 foreach (var Category in Chapter.Categories)
@@ -69,7 +69,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     string CategoryNameID = Category.Name.Replace(" ", "") + "Category";
                     if (CategoryName == "World Index") continue;
                     EcopediaData.Add(CategoryNameID, new Dictionary<string, string>(EcopediaMenuDetails));
-                    EcopediaData[CategoryNameID]["Name"] = WriteDictionaryAsSubObject(Localization(CategoryName), 1);
+                    //EcopediaData[CategoryNameID]["Name"] = WriteDictionaryAsSubObject(Localization(CategoryName), 1);
                     EcopediaData[CategoryNameID]["Type"] = $"'Category'";
                     EcopediaData[CategoryNameID]["Chapter"] = $"'{ChapterNameID}'";
                     EcopediaData[CategoryNameID]["Icon"] = $"'{Category.IconName}'";
@@ -81,7 +81,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         string PageNameID = Page.Name.Replace(" ", "") + "Page";
                         if (PagesList == "") { PagesList = "'" + PageNameID + "'"; } else { PagesList = PagesList + ", '" + PageNameID + "'"; }
                         EcopediaData.Add(PageNameID, new Dictionary<string, string>(EcopediaMenuDetails));
-                        EcopediaData[PageNameID]["Name"] = WriteDictionaryAsSubObject(Localization(PageName), 1);
+                        //EcopediaData[PageNameID]["Name"] = WriteDictionaryAsSubObject(Localization(PageName), 1);
                         EcopediaData[PageNameID]["Type"] = $"'Page'";
                         EcopediaData[PageNameID]["Category"] = $"'{CategoryNameID}'";
                         EcopediaData[PageNameID]["Icon"] = $"'{Page.IconName}'";
@@ -94,7 +94,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             }
 
          // writes to txt file
-         WriteDictionaryToFile("EcopediaMenuData", "ecopediapages", EcopediaData);
+
         }
     }
 }

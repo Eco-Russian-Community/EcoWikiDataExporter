@@ -15,6 +15,7 @@ using Eco.Gameplay.Pipes.Gases;
 using Eco.Gameplay.Pipes.LiquidComponents;
 using Eco.Gameplay.Players;
 using Eco.Gameplay.Property;
+using Eco.Gameplay.Rooms;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.EcoMarketplace;
 using Eco.Gameplay.Systems.Messaging.Chat;
@@ -32,6 +33,7 @@ using Eco.Shared.StrangeCloudShared;
 using Eco.Shared.Utils;
 using Eco.Simulation.Agents;
 using Eco.World.Blocks;
+using Newtonsoft.Json;
 using StrangeCloud.Service.Client;
 using System;
 using System.Collections;
@@ -52,6 +54,7 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 using static Eco.Simulation.Types.PlantSpecies;
 
 namespace Eco.Mods.EcoWikiDataExporter
@@ -59,95 +62,18 @@ namespace Eco.Mods.EcoWikiDataExporter
 	public partial class WikiData
 	{
 
-		// dictionary of items and their dictionary of stats
-		private static SortedDictionary<string, Dictionary<string, string>> ItemData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> FoodData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> SeedData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> FertilizerData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> FuelData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> ToolData = new SortedDictionary<string, Dictionary<string, string>>();
-		private static SortedDictionary<string, Dictionary<string, string>> ClothingData = new SortedDictionary<string, Dictionary<string, string>>();
-        private static SortedDictionary<string, Dictionary<string, string>> WorldObjectData = new SortedDictionary<string, Dictionary<string, string>>();
+		// dictionary of items and their stats
+        private static SortedDictionary<string, ItemData> ItemDataList = new SortedDictionary<string, ItemData>();
+        private static SortedDictionary<string, FoodData> FoodDataList = new SortedDictionary<string, FoodData>();
+        private static SortedDictionary<string, FertilizerData> FertilizerDataList = new SortedDictionary<string, FertilizerData>();
+		private static SortedDictionary<string, ClothingData> ClothingDataList = new SortedDictionary<string, ClothingData>();
+        private static SortedDictionary<string, WorldObjectData> WorldObjectDataList = new SortedDictionary<string, WorldObjectData>();
+        private static SortedDictionary<string, ToolData> ToolDataList = new SortedDictionary<string, ToolData>();
+        private static SortedDictionary<string, FuelData> FuelDataList = new SortedDictionary<string, FuelData>();
+        private static SortedDictionary<string, SeedData> SeedDataList = new SortedDictionary<string, SeedData>();
 
         public static void ExportItemData()
 		{
-			// dictionary of item properties
-			Dictionary<string, string> itemDetails = new Dictionary<string, string>()
-			{
-				{ "ID", "nil" },
-				{ "Category", "nil" },
-				{ "Hidden", "nil" },
-				{ "Group", "nil" },
-				{ "Name", "nil" },
-				{ "Description", "nil" },
-				{ "Weight", "nil" },
-				{ "MaxStackSize", "nil" },
-				{ "Tags", "nil" },
-				{ "IsPaidItem", "nil" },
-				{ "IsTool", "nil" },
-				{ "CanBeCurrency", "nil" },
-				{ "Compostable", "nil" },
-				{ "IsWasteProduct", "nil" },
-				{ "IsFuel", "nil" },
-				{ "IsStackable", "nil" },
-                { "WorldObjectItem", "nil" },
-                { "Tier", "'0'" }
-            };
-
-			Dictionary<string, string> foodDetails = new Dictionary<string, string>()
-			{
-				{ "Calories", "nil" },
-				{ "Carbs", "nil" },
-				{ "Protein", "nil" },
-				{ "Fat", "nil" },
-				{ "Vitamins", "nil" },
-				{ "ShelfLife", "nil" }
-			};
-
-			Dictionary<string, string> fertilizerDetails = new Dictionary<string, string>()
-			{
-				{ "Nitrogen", "nil" },
-				{ "Phosphorus", "nil" },
-				{ "Potassium", "nil" }
-			};
-
-			Dictionary<string, string> seedDetails = new Dictionary<string, string>()
-			{
-				{ "Species", "nil" }
-			};
-
-			Dictionary<string, string> fuelDetails = new Dictionary<string, string>()
-			{
-				{ "Power", "nil" }
-			};
-
-			Dictionary<string, string> toolDetails = new Dictionary<string, string>()
-			{
-				{ "ToolType", "nil" },
-                { "Hidden", "nil" },
-                { "Tier", "nil" },
-				{ "Weapon", "'False'" }
-			};
-
-			Dictionary<string, string> clothingDetails = new Dictionary<string, string>()
-			{
-				{ "ClothingSlot", "nil" },
-				{ "StartClothing", "nil" },
-                { "Hidden", "nil" },
-                { "FlatStats", "nil" },
-			};
-
-            Dictionary<string, string> worldobjectDetails = new Dictionary<string, string>()
-            {
-                { "CraftingComponent", "'False'" },
-                { "MountComponent", "'False'" },
-                { "ForSaleComponent", "'False'" },
-                { "RoomRequirementsComponent", "'False'" },
-                { "HousingComponent", "'False'" },
-                { "BedComponent", "'False'" },
-				{ "MintComponent", "'False'" },
-                { "DoorComponent", "'False'" }
-            };
 
             WorldObjectInitializer objectInitializer = new WorldObjectInitializer();
 
@@ -156,104 +82,130 @@ namespace Eco.Mods.EcoWikiDataExporter
 			{
 				ItemName = item.DisplayName.NotTranslated;
 
-				if (!ItemData.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
+				if (!ItemDataList.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
 				{
+                    #region FoodItem
+                    if (item is FoodItem foodItem)
+                    {
+                        //ItemData[ItemName]["FoodItem"] = $"'True'";
 
-					ItemData.Add(ItemName, new Dictionary<string, string>(itemDetails));
+                        FoodData fooddata = new FoodData
+                        {
+                            Calories = WikiFloat(foodItem.Calories),
+                            Carbs = WikiFloat(foodItem.Nutrition.Carbs),
+                            Protein = WikiFloat(foodItem.Nutrition.Protein),
+                            Fat = WikiFloat(foodItem.Nutrition.Fat),
+                            Vitamins = WikiFloat(foodItem.Nutrition.Vitamins),
+                            ShelfLife = WikiFloat(foodItem.GetPropertyValueByName<float>("BaseShelfLife")),
+                        };
 
-					ItemData[ItemName]["ID"] = $"'{item.Type.Name}'";
+                        FoodDataList.Add(ItemName, fooddata);
+                    }
+                    #endregion
 
-					ItemData[ItemName]["Category"] = $"'{item.Category}'";
+                    #region SeedItem
+                    if (item is SeedItem Seed)
+                    {
+                        //ItemData[ItemName]["SeedItem"] = $"'True'";
 
-					if (item.Category == "Hidden") { ItemData[ItemName]["Hidden"] = $"'True'"; }
+                        SeedData seeddata = new SeedData
+                        {
+                            Species = Seed.SpeciesName.NotTranslated.AddSpacesBetweenCapitals(),
+                        };
 
-					ItemData[ItemName]["Group"] = $"'{item.Group}'";
+                        SeedDataList.Add(ItemName, seeddata);
+                    }
+                    #endregion
 
-					ItemData[ItemName]["Name"] = WriteDictionaryAsSubObject(Localization(ItemName), 1);
-					ItemData[ItemName]["Description"] = WriteDictionaryAsSubObject(Localization(CleanText(item.GetDescription.NotTranslated)), 1);
+                    #region  FertilizerItem
+                    if (item is FertilizerItem Fertilizer)
+                    {
+                        //ItemData[ItemName]["FertilizerItem"] = $"'True'";
 
-					if (item.HasWeight) { ItemData[ItemName]["Weight"] = $"'{item.Weight}'"; }
+                        FertilizerData fertilizerdata = new FertilizerData
+                        {
+                            Nitrogen = WikiFloat(Fertilizer.Nutrients.GetPropertyValueByName<float>("Nitrogen")),
+                            Phosphorus = WikiFloat(Fertilizer.Nutrients.GetPropertyValueByName<float>("Phosphorus")),
+                            Potassium = WikiFloat(Fertilizer.Nutrients.GetPropertyValueByName<float>("Potassium"))
+                        };
 
-					ItemData[ItemName]["MaxStackSize"] = $"'{item.MaxStackSize}'";
-					ItemData[ItemName]["Tags"] = $"{GetItemTags(item)}";
+                        FertilizerDataList.Add(ItemName, fertilizerdata);
+                    }
+                    #endregion
 
-					if (MarketplaceExtensions.IsPaidItem(item))	{ ItemData[ItemName]["IsPaidItem"] = $"'{MarketplaceExtensions.IsPaidItem(item)}'"; }
+                    #region ClothingItem
+                    if (item is ClothingItem Clothing)
+                    {
+                        //ItemData[ItemName]["ClothingItem"] = $"'True'";
 
-					if (item.CanBeCurrency) { ItemData[ItemName]["CanBeCurrency"] = $"'True'"; }
-					if (item.Compostable) { ItemData[ItemName]["Compostable"] = $"'True'"; }
-					if (item.IsWasteProduct) { ItemData[ItemName]["IsWasteProduct"] = $"'True'"; }
+                        Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
+                        var FlatStats = new Dictionary<string, string>();
+                        if (сlothingStats != null)
+                        {
+                            
+                            foreach (var stat in Clothing.GetFlatStats()) { FlatStats.Add(stat.Key.ToString(), WikiFloat(stat.Value)); }
+                        }
 
-					if (item.IsFuel) {
-						ItemData[ItemName]["IsFuel"] = $"'True'";
-						FuelData.Add(ItemName, new Dictionary<string, string>(fuelDetails));
-						FuelData[ItemName]["Power"] = $"'{item.Fuel}'";
+						ClothingData clothingdata = new ClothingData
+						{
+                            AvatarSlot = Clothing.Slot,
+                            StartClothing = Clothing.Starter,
+                            Hidden = item.Hidden,
+                            FlatStats = FlatStats
+                        };
+
+                        ClothingDataList.Add(ItemName, clothingdata);
+                    }
+                    #endregion
+
+                    if (item.IsFuel) 
+					{
+						//ItemData[ItemName]["IsFuel"] = $"'True'";
+
+                        FuelData fueldata = new FuelData
+                        {
+                            Power = WikiFloat(item.Fuel)
+                        };
+
+                        FuelDataList.Add(ItemName, fueldata);
+                    }
+
+                    // -------------------------------------------------------------------------------------------------------
+
+                    if (item.IsStackable)
+					{ 
+						//ItemData[ItemName]["IsStackable"] = $"'True'"; 
 					}
-
-					if (item.IsStackable) { ItemData[ItemName]["IsStackable"] = $"'True'"; }
 
 					//item.IsCarried
 
-					if (item is FoodItem)
-					{
-						ItemData[ItemName]["FoodItem"] = $"'True'";
-						if (item is FoodItem foodItem)
-						{
-							FoodData.Add(ItemName, new Dictionary<string, string>(foodDetails));
-							FoodData[ItemName]["Calories"] = $"'{foodItem.Calories}'";
-							FoodData[ItemName]["Carbs"] = $"'{foodItem.Nutrition.Carbs}'";
-							FoodData[ItemName]["Protein"] = $"'{foodItem.Nutrition.Protein}'";
-							FoodData[ItemName]["Fat"] = $"'{foodItem.Nutrition.Fat}'";
-							FoodData[ItemName]["Vitamins"] = $"'{foodItem.Nutrition.Vitamins}'";
-							FoodData[ItemName]["ShelfLife"] = $"'{foodItem.GetPropertyValueByName<float>("BaseShelfLife")}'";
-						}
-					}
+
 
 					if (item is BlockItem Block)
 					{
-						ItemData[ItemName]["BlockItem"] = $"'True'";
+						//ItemData[ItemName]["BlockItem"] = $"'True'";
 						//ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
-                        if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
-
-
+                        //if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
 
                     }
-					if (item is SeedItem Seed)
-					{
-						ItemData[ItemName]["SeedItem"] = $"'True'";
 
-						SeedData.Add(ItemName, new Dictionary<string, string>(seedDetails));
-						SeedData[ItemName]["Species"] = $"'{Seed.SpeciesName.NotTranslated.AddSpacesBetweenCapitals()}'";
-					}
 
 					if (item is ModuleItem)
-					{ ItemData[ItemName]["ModuleItem"] = $"'True'"; }
+					{ 
+						//ItemData[ItemName]["ModuleItem"] = $"'True'";
+					}
+
 					if (item is PartItem Part)
 					{
-						ItemData[ItemName]["PartItem"] = $"'True'";
-						ItemData[ItemName]["MaxDurability"] = $"'{Part.IntegrityAmount}'";
+						//ItemData[ItemName]["PartItem"] = $"'True'";
+						//ItemData[ItemName]["MaxDurability"] = $"'{Part.IntegrityAmount}'";
 					}
-					if (item is ClothingItem Clothing)
-					{
-						ItemData[ItemName]["ClothingItem"] = $"'True'";
 
-						ClothingData.Add(ItemName, new Dictionary<string, string>(clothingDetails));
-						ClothingData[ItemName]["ClothingSlot"] = $"'{Clothing.Slot}'";
-						ClothingData[ItemName]["StartClothing"] = $"'{Clothing.Starter}'";
-                        ClothingData[ItemName]["Hidden"] = $"'{item.Hidden}'";
-
-                        Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
-						if (сlothingStats != null)
-						{
-							var FlatStats = new Dictionary<string, string>();
-							foreach (var stat in Clothing.GetFlatStats()) { FlatStats.Add(stat.Key.ToString(), stat.Value.ToString()); }
-							ClothingData[ItemName]["FlatStats"] = WriteDictionaryAsSubObject(FlatStats, 2);
-						}
-                    }
 
                     //vehicleToolItem
                     if (item is VehicleToolItem vehicleToolItem)
 					{ 
-						ItemData[ItemName]["VehicleToolItem"] = $"'True'";
+						//ItemData[ItemName]["VehicleToolItem"] = $"'True'";
                         
 
                     }
@@ -275,271 +227,48 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 					}
 
-                        if (item is WorldObjectItem worldObjectItem)
-						{
-						Type worldObjecttype = worldObjectItem.WorldObjectType;
-						ItemData[ItemName]["WorldObjectItem"] = $"'True'";
-                        
-						WorldObjectData.Add(ItemName, new Dictionary<string, string>(worldobjectDetails));
-                        WorldObjectData[ItemName]["WorldObjectName"] = $"'{worldObjecttype.Name}'";
-
-                        var occupancy = WorldObject.GetOccupancy(worldObjecttype).Select(x => x.Offset).ToList();
-						var size = Vector3i.One + new Vector3i(occupancy.Max(i => i.x) - occupancy.Min(i => i.x),
-															   occupancy.Max(i => i.y) - occupancy.Min(i => i.y),
-															   occupancy.Max(i => i.z) - occupancy.Min(i => i.z));
-						string fullsize = size.z + "," + size.x + "," + size.y;
-                        WorldObjectData[ItemName]["WorldObjectSize"] = $"'{fullsize}'";
-						if (item.Category == "WorldObject")
-						{
-							try
-							{
-								WorldObject? worldObject = objectInitializer.Init(worldObjectItem) ?? throw new Exception($"Initializer error for WorldObjectItem: {worldObjectItem.Name}");
-								//Log.WriteWarningLineLoc($"=================== WorldObject: {worldObject.Name}");
-								//Log.WriteLineLoc($"Category: {item.Category} Group: {item.Group}");
-
-								if (worldObject != null)
-								{
-									WorldObjectData[ItemName]["WorldObjectTier"] = $"'{worldObject.Tier}'";
-
-									if (worldObject.HasComponent<CraftingComponent>())
-									{
-										var CraftingComponent = worldObject.GetComponent<CraftingComponent>();
-										WorldObjectData[ItemName]["CraftingComponent"] = "'True'";
-									}
-
-									if (worldObject.HasComponent<RoomRequirementsComponent>())
-									{
-										var RoomRequirementsComponent = worldObject.GetComponent<RoomRequirementsComponent>();
-										WorldObjectData[ItemName]["RoomRequirementsComponent"] = "'True'";
-
-										var roomrequirements = RoomRequirements.Get(worldObject.GetType());
-
-										if (roomrequirements != null)
-										{
-											foreach (RoomRequirementAttribute Attribute in roomrequirements.Requirements)
-											{
-												if (Attribute.GetType() == typeof(RequireRoomContainmentAttribute))
-												{
-													//Log.WriteLineLoc($"Need Room: True");
-												}
-												if (Attribute.GetType() == typeof(RequireRoomMaterialTierAttribute))
-												{
-													//Log.WriteLineLoc($"Need Room Tier: {(Attribute as RequireRoomMaterialTierAttribute).Tier}");
-												}
-												if (Attribute.GetType() == typeof(RequireRoomVolumeAttribute))
-												{
-													//Log.WriteLineLoc($"Need Room Free Volume: {(Attribute as RequireRoomVolumeAttribute).Volume}");
-												}
-                                                if (Attribute.GetType() == typeof(PropertyTypeRoomRequirementAttribute)) 
-												{
-                                                    //Log.WriteLineLoc($"Need Deed Type: !!!");
-                                                }
-
-                                            }
-										}
-									}
-
-									if (worldObject.HasComponent<MountComponent>())
-									{
-										var MountComponent = worldObject.GetComponent<MountComponent>();
-										WorldObjectData[ItemName]["MountComponent"] = "'True'";
-										WorldObjectData[ItemName]["MountSeats"] = $"'{MountComponent.Seats}'";
-									}
-
-									if (worldObject.HasComponent<ForSaleComponent>())
-									{
-										var ForSaleComponent = worldObject.GetComponent<ForSaleComponent>();
-										WorldObjectData[ItemName]["ForSaleComponent"] = "'True'";
-									}
-
-                                    if (worldObject.HasComponent<BedComponent>())
-                                    {
-                                        var BedComponent = worldObject.GetComponent<BedComponent>();
-                                        WorldObjectData[ItemName]["BedComponent"] = "'True'";
-                                    }
-
-                                    if (worldObject.HasComponent<MintComponent>())
-                                    {
-                                        var MintComponent = worldObject.GetComponent<MintComponent>();
-                                        WorldObjectData[ItemName]["MintComponent"] = "'True'";
-                                    }
-
-                                    if (worldObject.HasComponent<DoorComponent>())
-                                    {
-                                        var DoorComponent = worldObject.GetComponent<DoorComponent>();
-                                        WorldObjectData[ItemName]["DoorComponent"] = "'True'";
-                                    }
-
-                                    if (worldObject.HasComponent<PublicStorageComponent>())
-									{
-                                        var PublicStorageComponent = worldObject.GetComponent<PublicStorageComponent>();
-                                        WorldObjectData[ItemName]["PublicStorageComponent"] = "'True'";
-                                        WorldObjectData[ItemName]["StorageStacks"] = $"'{PublicStorageComponent.Storage.Stacks}'";
-                                        WorldObjectData[ItemName]["ShelfLifeMultiplier"] = $"'{PublicStorageComponent.ShelfLifeMultiplier}'";
-
-                                    }
-
-                                    if (worldObject.HasComponent<HousingComponent>())
-									{
-										WorldObjectData[ItemName]["HousingComponent"] = "'True'";
-										var HousingComponent = worldObject.GetComponent<HousingComponent>().HomeValue;
-										
-										if (HousingComponent.Category != RoomCategory.Industrial)
-										{
-                                            WorldObjectData[ItemName]["RoomCategory"] = $"'{HousingComponent.Category.DisplayName.NotTranslated}'";
-                                            WorldObjectData[ItemName]["HomeBaseValue"] = $"'{WikiFloat(HousingComponent.BaseValue)}'";
-                                            WorldObjectData[ItemName]["TypeForRoomLimit"] = $"'{HousingComponent.TypeForRoomLimit}'";
-                                            WorldObjectData[ItemName]["DiminishingReturnMultiplier"] = $"'{WikiFloat(HousingComponent.DiminishingReturnMultiplier)}'";											                                         
-										}
-									}
-
-									if (worldObject.HasComponent<PowerGridComponent>())
-									{
-										//Log.WriteLineLoc($"WO Component: PowerGridComponent");
-										var PowerGridComponent = worldObject.GetComponent<PowerGridComponent>();
-										//Log.WriteLineLoc($"EnergyType {PowerGridComponent.EnergyType.Name.NotTranslated}");
-										//Log.WriteLineLoc($"Radius {PowerGridComponent.Radius}");
-										//Log.WriteLineLoc($"EnergySupply {PowerGridComponent.EnergySupply}");
-										//Log.WriteLineLoc($"EnergySelfSupply {PowerGridComponent.EnergySelfSupply}");
-										//Log.WriteLineLoc($"EnergyDemand {PowerGridComponent.EnergyDemand}");
-									}
-
-									if (worldObject.HasComponent<LiquidConsumerComponent>())
-									{
-										//Log.WriteLineLoc($"WO Component: LiquidConsumerComponent");
-										var LiquidConsumerComponent = worldObject.GetComponent<LiquidConsumerComponent>();
 
 
 
-									}
+                    //if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
+                    //if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
+                    //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
+                    //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
-									if (worldObject.HasComponent<LiquidConverterComponent>())
-									{
-										//Log.WriteLineLoc($"WO Component: LiquidConverterComponent");
-										var LiquidConverterComponent = worldObject.GetComponent<LiquidConverterComponent>();
-
-
-
-									}
-
-									if (worldObject.HasComponent<FuelSupplyComponent>())
-									{
-										//Log.WriteLineLoc($"WO Component: FuelSupplyComponent");
-										var FuelSupplyComponent = worldObject.GetComponent<FuelSupplyComponent>();
+                    // -------------------------------------------------------------------------------------------------------
 
 
 
-									}
+                    ItemData itemdata = new ItemData
+                    {
+                        ID = item.Type.Name.ToString(),
+                        Name = Localization(ItemName),
+                        Description = Localization(CleanText(item.GetDescription.NotTranslated)),
+                        Weight = item.Weight,
+                        MaxStackSize = item.MaxStackSize,
+						Tags = GetItemTags(item)
+                    };
 
-                                    if (worldObject.HasComponent<AnimalTrapComponent>())
-                                    {
-                                        WorldObjectData[ItemName]["AnimalTrapComponent"] = "'True'";
-                                        var AnimalTrapComponent = worldObject.GetComponent<AnimalTrapComponent>();
-
-                                        Log.WriteLineLoc($"WO AnimalTrapComponent: {AnimalTrapComponent.TargetLayers}");
-                                        
-
-                                    }
-
-                                    if (worldObject.HasComponent<WardrobeComponent>())
-                                    {
-                                        var WardrobeComponent = worldObject.GetComponent<WardrobeComponent>();
-                                        WorldObjectData[ItemName]["WardrobeComponent"] = "'True'";
-                                    }
-
-
-
-
-                                }
-								else
-								{
-									Log.WriteLineLoc($"{worldObject.Name} Not Init");
-								}
-								WorldObjectManager.DestroyPermanently(worldObject);
-							}
-							catch (Exception ex) { Log.WriteException(ex); }
-						}
-
-					}
-
-					if (item is FertilizerItem Fertilizer)
-					{
-						ItemData[ItemName]["FertilizerItem"] = $"'True'";
-
-						FertilizerData.Add(ItemName, new Dictionary<string, string>(fertilizerDetails));
-						float Nitrogen = Fertilizer.Nutrients.GetPropertyValueByName<float>("Nitrogen");
-						float Phosphorus = Fertilizer.Nutrients.GetPropertyValueByName<float>("Phosphorus");
-						float Potassium = Fertilizer.Nutrients.GetPropertyValueByName<float>("Potassium");
-						FertilizerData[ItemName]["Nitrogen"] = $"'{WikiFloat(Nitrogen)}'";
-						FertilizerData[ItemName]["Phosphorus"] = $"'{WikiFloat(Phosphorus)}'";
-						FertilizerData[ItemName]["Potassium"] = $"'{WikiFloat(Potassium)}'";
-					}
-
-					if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
-					if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
-					if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
-					if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
-
-					if (item is ToolItem toolItem)
-					{
-						ItemData[ItemName]["IsTool"] = $"'True'";
-						ToolData.Add(ItemName, new Dictionary<string, string>(toolDetails));
-
-						ToolData[ItemName]["ToolType"] = $"'Tool'";
-                        if (item.Category == "Hidden") { ToolData[ItemName]["Hidden"] = $"'True'"; }
-                        ToolData[ItemName]["Tier"] = $"'{toolItem.Tier.GetBaseValue}'";
-                        ToolData[ItemName]["CaloriesBurn"] = $"'{toolItem.CaloriesBurn.GetBaseValue}'";
-
-                        if (item is AxeItem) { 
-							ToolData[ItemName]["ToolType"] = $"'Axe'";
-                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
-                        }
-						if (item is PickaxeItem) { 
-							ToolData[ItemName]["ToolType"] = $"'Pickaxe'";
-                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
-                        }
-
-						if (item is ShovelItem)	{ 
-							ToolData[ItemName]["ToolType"] = $"'Shovel'";
-                            ToolData[ItemName]["MaxTake"] = $"'{toolItem.MaxTake}'";
-                        }
-						if (item is HammerItem) { ToolData[ItemName]["ToolType"] = $"'Hammer'"; }
-						if (item is HoeItem) { ToolData[ItemName]["ToolType"] = $"'Hoe'"; }
-						if (item is MacheteItem) { 
-							ToolData[ItemName]["ToolType"] = $"'Machete'";
-                            ToolData[ItemName]["Damage"] = $"'{toolItem.Damage.GetBaseValue}'";
-                        }
-						if (item is PaintToolItem) { ToolData[ItemName]["ToolType"] = $"'PaintTool'"; }
-						if (item is DrillItem) { ToolData[ItemName]["ToolType"] = $"'Drill'"; }
-                        if (item is BlastingChargeItem) { ToolData[ItemName]["ToolType"] = $"'BlastingCharge'"; }
-                        if (item is DetonatorBaseItem) { ToolData[ItemName]["ToolType"] = $"'Detonator'"; }
-						if (item is BowItem) { ToolData[ItemName]["ToolType"] = $"'Bow'"; }
-						if (item is BlockHarvestItem) { ToolData[ItemName]["ToolType"] = $"'BlockHarvest'"; }
-
-						if (item is RoadToolItem) { ToolData[ItemName]["ToolType"] = $"'RoadTool'"; }
-
-						if (item is WeaponItem Weapon)
-						{
-							ToolData[ItemName]["Weapon"] = $"'True'";
-							ToolData[ItemName]["WeaponDamage"] = $"'{WikiFloat(Weapon.Damage.GetBaseValue)}'";
-						}
-
-                        if (ItemName == "Fishing Pole") { ToolData[ItemName]["ToolType"] = $"'FishingPole'"; }
-                        //if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
-
-                    }
-				}
+                    ItemDataList.Add(ItemName, itemdata);
+                }
 			}
 
-			// writes to txt file
-			WriteDictionaryToFile("ItemData", "items", ItemData);
-			WriteDictionaryToFile("FoodData", "foods", FoodData);
-			WriteDictionaryToFile("SeedData", "seeds", SeedData);
-			WriteDictionaryToFile("FuelData", "fuels", FuelData);
-			WriteDictionaryToFile("ToolData", "tools", ToolData);
-			WriteDictionaryToFile("ClothingData", "clothing", ClothingData);
-			WriteDictionaryToFile("FertilizerData", "fertilizers", FertilizerData);
-            WriteDictionaryToFile("WorldObjectData", "WorldObjects", WorldObjectData);
+            // writes to json file
+            string ItemDataListjsonString = JsonConvert.SerializeObject(new { items = ItemDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Items", ItemDataListjsonString);
+            string FoodDataListjsonString = JsonConvert.SerializeObject(new { foods = FoodDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Food", FoodDataListjsonString);
+            string SeedDataListjsonString = JsonConvert.SerializeObject(new { seeds = SeedDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Seeds", SeedDataListjsonString);
+            string FertilizerDataListjsonString = JsonConvert.SerializeObject(new { fertilizers = FertilizerDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Fertilizers", FertilizerDataListjsonString);
+            string ClothingDataListjsonString = JsonConvert.SerializeObject(new { clothing = ClothingDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Clothing", ClothingDataListjsonString);
+            string FuelDataListjsonString = JsonConvert.SerializeObject(new { fuels = FuelDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Fuels", FuelDataListjsonString);
+
+            //WriteDictionaryToFile("ToolData", "tools", ToolData);
+            //WriteDictionaryToFile("WorldObjectData", "WorldObjects", WorldObjectData);
 
         }
 	}

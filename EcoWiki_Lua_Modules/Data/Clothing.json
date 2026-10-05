@@ -1,0 +1,761 @@
+{
+  "clothing": {
+    "Alpha Cloak": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Alpha Goggles": {
+      "AvatarSlot": "Face",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Alpha Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Banana Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Bandana": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Basic Backpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Bearpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "20000",
+        "BackpackSlots": "8"
+      }
+    },
+    "Big Backpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "15000",
+        "BackpackSlots": "4"
+      }
+    },
+    "Blinky Eyelids": {
+      "AvatarSlot": "Eyelids",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Boat Captain Flip Flops": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Boat Captain Glasses": {
+      "AvatarSlot": "Face",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Boat Captain Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Boat Captain Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Boat Captain Shorts": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Builder Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Builder Gloves": {
+      "AvatarSlot": "Hands",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Builder Helmet": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Builder Overalls": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Builder Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Bycocket": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Camo Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "DetectionRange": "1",
+        "MaxCarryWeight": "2000"
+      }
+    },
+    "Camo Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "DetectionRange": "1"
+      }
+    },
+    "Capitalist Top Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Capris": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Carbide Helmet Lamp": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Chef Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Chef Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Chef Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Chef Shoes": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Chiseled Legs": {
+      "AvatarSlot": "Legs",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "ChocoTaco Cap": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Cloth Belt": {
+      "AvatarSlot": "Waist",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Cloth Cape": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MovementSpeed": "2",
+        "CalorieRate": "-0.2",
+        "BackpackSlots": "-8"
+      }
+    },
+    "Cornrows": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Cowboy Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Curly": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Derpy Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Explorer Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Explorer Gloves": {
+      "AvatarSlot": "Hands",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Explorer Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Explorer Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Explorer Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Farmer Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Farmer Gloves": {
+      "AvatarSlot": "Hands",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Farmer Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Farmer Overalls": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Farmer Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Fit Torso": {
+      "AvatarSlot": "Torso",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Fungi Feet": {
+      "AvatarSlot": "Feet",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Garden Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.1"
+      }
+    },
+    "Gigot Sleeve Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Hanamura Cap": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Hardy Beard": {
+      "AvatarSlot": "FacialHair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Henley": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Human Limbs": {
+      "AvatarSlot": "Limbs",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Jazz Hands": {
+      "AvatarSlot": "Hands",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Light Backpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "8000",
+        "MovementSpeed": "1",
+        "BackpackSlots": "-4"
+      }
+    },
+    "Low Top Shoes": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.1"
+      }
+    },
+    "Muffin Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Normal Hair": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Oil Head Lamp": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Peasant Hair": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Pirate Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Ponytail": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Primitive Canvas Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Canvas Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Canvas Shorts": {
+      "AvatarSlot": "Pants",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Fur Belt": {
+      "AvatarSlot": "Waist",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Leather Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Leather Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Leather Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Primitive Leather Shorts": {
+      "AvatarSlot": "Pants",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Rounded Face": {
+      "AvatarSlot": "Face",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Running Shoes": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MovementSpeed": "1"
+      }
+    },
+    "Sandals": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.1"
+      }
+    },
+    "Scruffy Hair": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Shipwright Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Shipwright Overalls": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Shipwright Sandals": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Shipwright Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Short Beard": {
+      "AvatarSlot": "FacialHair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Shorts": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Sleek Short Hair": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Smith Apron": {
+      "AvatarSlot": "Waist",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Smith Bandana": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Smith Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Smith Gloves": {
+      "AvatarSlot": "Hands",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Smith Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Smith Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Socialist Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Sombrero": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Square Belt": {
+      "AvatarSlot": "Waist",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Square Jaw": {
+      "AvatarSlot": "Face",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Tailor Bowler Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Tailor Pants": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "7500"
+      }
+    },
+    "Tailor Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Tailor Shoes": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.3"
+      }
+    },
+    "Tall Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.1"
+      }
+    },
+    "The Bob": {
+      "AvatarSlot": "Hair",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Trapper Fur Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Trapper Leather Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Treasure Backpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Trousers": {
+      "AvatarSlot": "Pants",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "5000"
+      }
+    },
+    "Tunic": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Villagers Cowl Lowered": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Villagers Cowl Raised": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Wanderers Hood Lowered": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Wanderers Hood Raised": {
+      "AvatarSlot": "Head",
+      "StartClothing": true,
+      "Hidden": false,
+      "FlatStats": {}
+    },
+    "Wide Hips": {
+      "AvatarSlot": "Hips",
+      "StartClothing": true,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Wolf Whisperer Hat": {
+      "AvatarSlot": "Head",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Wolf Whisperer Mask": {
+      "AvatarSlot": "Face",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Wolf Whisperer Shirt": {
+      "AvatarSlot": "Shirt",
+      "StartClothing": false,
+      "Hidden": true,
+      "FlatStats": {}
+    },
+    "Work Backpack": {
+      "AvatarSlot": "Back",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "MaxCarryWeight": "8000",
+        "CarriedSlots": "1"
+      }
+    },
+    "Work Boots": {
+      "AvatarSlot": "Shoes",
+      "StartClothing": false,
+      "Hidden": false,
+      "FlatStats": {
+        "CalorieRate": "-0.1",
+        "MovementSpeed": "0.5"
+      }
+    }
+  }
+}

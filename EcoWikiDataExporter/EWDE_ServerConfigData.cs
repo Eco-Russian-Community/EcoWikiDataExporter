@@ -127,7 +127,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             ServerConfigData["WorldGenerator"]["MaxBuildHeight"] = $"'{WorldGeneratorPlugin.Settings.MaxBuildHeight}'";
 
             // writes to txt file
-            WriteDictionaryToFile("ServerConfigData", "config", ServerConfigData);
+
         }
     }
 }

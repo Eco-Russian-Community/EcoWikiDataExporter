@@ -41,7 +41,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
-        private static Dictionary<string, TalentData> TalentDataList = new Dictionary<string, TalentData>();
+        private static SortedDictionary<string, TalentData> TalentDataList = new SortedDictionary<string, TalentData>();
         public static void ExportTalentData()
         {
 

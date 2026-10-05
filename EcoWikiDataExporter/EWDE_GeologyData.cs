@@ -124,10 +124,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                                             break;
                                         default: Log.WriteWarningLineLoc($"Unknown TerrainModule of type [{terrainModule.GetType()}]"); break;
                                     }
-                                    BiomeLayer["LayerResources"] = WriteDictionaryAsSubObject(LayerResources, 2);
+                                    //BiomeLayer["LayerResources"] = WriteDictionaryAsSubObject(LayerResources, 2);
                                 }
 
-                                GeologyData[BiomeName][BiomeLayerName] = WriteDictionaryAsSubObject(BiomeLayer, 1);
+                                //GeologyData[BiomeName][BiomeLayerName] = WriteDictionaryAsSubObject(BiomeLayer, 1);
                             }
 						}
 						break;
@@ -135,8 +135,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 				}
 			}
 
-            // writes to txt file
-            WriteDictionaryToFile("GeologyData", "geology", GeologyData);
+
 		}
 	}
 }

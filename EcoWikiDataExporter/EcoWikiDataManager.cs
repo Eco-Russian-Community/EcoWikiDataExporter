@@ -16,6 +16,7 @@ using Eco.ModKit.Internal;
 using Eco.Shared;
 using Eco.Shared.Icons;
 using Eco.Shared.Localization;
+using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
 using Eco.Simulation.Types;
@@ -71,7 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             Text = regexTag.Replace(Text, "");
             Regex regexFeed = new Regex("[\t\n\v\f\r]");
             Text = regexFeed.Replace(Text, "");
-            Text = Text.Replace("'", "\\'");
+            //Text = Text.Replace("'", "\'");
             return Text;
         }
 
@@ -80,17 +81,17 @@ namespace Eco.Mods.EcoWikiDataExporter
             return ItemName.ToString().Substring(ItemName.ToString().LastIndexOf('.') + 1);
         }
 
-        public static string GetItemTags(Item Item)
+        public static List<string> GetItemTags(Item Item)
         {
-            StringBuilder tags = new StringBuilder();
-            tags.Append('{');
+            List<string> tagslist = [];
+           
             foreach (Tag tag in Item.Tags())
             {
-                tags.Append($"'{tag.DisplayName}'");
-                if (tag != Item.Tags().Last()) tags.Append(", ");
+                //Log.WriteLineLoc($"Tags: {tag.DisplayName.NotTranslated}");
+                if (tag.Name != null) { tagslist.Add(tag.DisplayName.NotTranslated); }
             }
-            tags.Append('}');
-            return tags.ToString();
+
+            return tagslist;
         }
 
         public static string WorldTemp(float ServerTemp)

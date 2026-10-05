@@ -9,11 +9,11 @@
         "Japanese": "サバイバリスト"
       },
       "Description": {
-        "English": "All citizens are survivalists in the world of Eco. How can you save the world if you can\\'t save yourself?",
-        "Russian": "All citizens are survivalists in the world of Eco. How can you save the world if you can\\'t save yourself?",
-        "German": "All citizens are survivalists in the world of Eco. How can you save the world if you can\\'t save yourself?",
-        "French": "All citizens are survivalists in the world of Eco. How can you save the world if you can\\'t save yourself?",
-        "Japanese": "All citizens are survivalists in the world of Eco. How can you save the world if you can\\'t save yourself?"
+        "English": "All citizens are survivalists in the world of Eco. How can you save the world if you can't save yourself?",
+        "Russian": "Все жители мира Eco - выживальщики. Как вы можете спасти мир, если не можете спасти себя?",
+        "German": "In der Welt von Eco sind alle Bürger Überlebenskünstler. Wie kann man die Welt retten, wenn man sich selbst nicht retten kann?",
+        "French": "Tous les citoyens sont des survivalistes dans le monde d'Eco. Comment pouvez-vous sauver le monde si vous ne pouvez pas vous sauvez vous-même ?",
+        "Japanese": "エコの世界では、すべての市民がサバイバリストです。世界を救うためには、自分をまず救えないといけませんね？"
       },
       "SkillID": "SurvivalistSkill",
       "MaxLevel": 7,
@@ -377,11 +377,11 @@
         "Japanese": "最先端料理"
       },
       "Description": {
-        "English": "Cutting edge cooking works with ingredients that don\\'t quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes.",
-        "Russian": "Cutting edge cooking works with ingredients that don\\'t quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes.",
-        "German": "Cutting edge cooking works with ingredients that don\\'t quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes.",
-        "French": "Cutting edge cooking works with ingredients that don\\'t quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes.",
-        "Japanese": "Cutting edge cooking works with ingredients that don\\'t quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes."
+        "English": "Cutting edge cooking works with ingredients that don't quite sound like food but can potentially provide high calorie and nutrition. Levels up by crafting related recipes.",
+        "Russian": "Передовая кулинария использует ингредиенты, на первый взгляд не являющиеся съедобными, но потенциально крайне питательными и содержащими большое количество калорий. Уровень повышается при изготовлении блюд из связанных с профессией рецептов.",
+        "German": "Innovatives Kochen arbeitet mit Zutaten, die nicht wirklich nach Essen klingen, aber unter Umständen viele Kalorien und Nährstoffe liefern. Stufenaufstieg erfolgt durch das Herstellen damit verbundener Rezepte.",
+        "French": "La cuisine moléculaire fonctionne avec des ingrédients qui ne ressemblent pas tout à fait à de la nourriture, mais qui peuvent potentiellement fournir des calories et une nutrition élevées. Montez de niveau en créant des recettes associées.",
+        "Japanese": "最先端の料理は、食べ物のようには聞こえないが、高カロリーで栄養価の高い可能性のある食材を使う。関連レシピを作ることでレベルアップする。"
       },
       "SkillID": "CuttingEdgeCookingSkill",
       "MaxLevel": 7,

@@ -67,12 +67,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string FormGroupName = formgroup.Name;
                 FormGroups.Add(FormGroupName, new Dictionary<string, string>(formgroupDetails));
 
-                FormGroups[FormGroupName]["Name"] = WriteDictionaryAsSubObject(Localization(formgroup.DisplayName.NotTranslated), 1);
+                ///FormGroups[FormGroupName]["Name"] = WriteDictionaryAsSubObject(Localization(formgroup.DisplayName.NotTranslated), 1);
                 FormGroups[FormGroupName]["IconName"] = $"'{formgroup.IconName}'";
                 FormGroups[FormGroupName]["SortOrder"] = $"'{formgroup.SortOrder}'";
             }
 
-            BlockData["Data"]["FormGroups"] = WriteDictionaryAsSubObject(FormGroups, 1);
+            //BlockData["Data"]["FormGroups"] = WriteDictionaryAsSubObject(FormGroups, 1);
 
 
             foreach (FormType formtype in data.FormTypes) 
@@ -80,31 +80,31 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string FormTypeName = formtype.Name;
                 FormGroups.Add(FormTypeName, new Dictionary<string, string>(formgroupDetails));
 
-                FormGroups[FormTypeName]["Name"] = WriteDictionaryAsSubObject(Localization(formtype.DisplayName.NotTranslated), 1);
+                //FormGroups[FormTypeName]["Name"] = WriteDictionaryAsSubObject(Localization(formtype.DisplayName.NotTranslated), 1);
                 FormGroups[FormTypeName]["IconName"] = $"'{formtype.IconName}'";
                 FormGroups[FormTypeName]["SortOrder"] = $"'{formtype.SortOrder}'";
             }
 
-            BlockData["Data"]["FormTypes"] = WriteDictionaryAsSubObject(FormTypes, 1);
+            //BlockData["Data"]["FormTypes"] = WriteDictionaryAsSubObject(FormTypes, 1);
 
             foreach (BlockForm blockform in data.BlockForms)
             {
                 string BlockFormName = blockform.Name;
                 //BlockForms.Add(BlockFormName, new Dictionary<string, string>(formgroupDetails));
-                Log.WriteLineLoc($"Block Form: {BlockFormName} Icon Name: {blockform.IconName} Form Type: {blockform.FormType.DisplayName.NotTranslated}");
-                Log.WriteLineLoc($"Block Types: {blockform.BlockTypes}");
-                Log.WriteLineLoc($"Block Types: {blockform.BlockTypeIDs}");
+                //Log.WriteLineLoc($"Block Form: {BlockFormName} Icon Name: {blockform.IconName} Form Type: {blockform.FormType.DisplayName.NotTranslated}");
+                //Log.WriteLineLoc($"Block Types: {blockform.BlockTypes}");
+                //Log.WriteLineLoc($"Block Types: {blockform.BlockTypeIDs}");
                 //Log.WriteLineLoc($"Block Types: {blockform.}");
                 //BlockForms[BlockFormName]["Name"] = WriteDictionaryAsSubObject(Localization(blockform.DisplayName.NotTranslated), 1);
                 //BlockForms[BlockFormName]["IconName"] = $"'{blockform.IconName}'";
                 //BlockForms[BlockFormName]["SortOrder"] = $"'{blockform.SortOrder}'";
             }
 
-            BlockData["Data"]["BlockForms"] = WriteDictionaryAsSubObject(BlockForms, 1);
+            //BlockData["Data"]["BlockForms"] = WriteDictionaryAsSubObject(BlockForms, 1);
 
 
             // writes to txt file
-            WriteDictionaryToFile("BlockData", "blocks", BlockData);
+
         }
     }
 }

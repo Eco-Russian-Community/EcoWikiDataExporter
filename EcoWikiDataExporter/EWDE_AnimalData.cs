@@ -68,9 +68,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                 {
                     AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
                     AnimalData[animalName]["ID"] = $"'{animal.Name}" + "Species'";
-                    AnimalData[animalName]["Name"] = WriteDictionaryAsSubObject(Localization(animalName), 1);
+                    //AnimalData[animalName]["Name"] = WriteDictionaryAsSubObject(Localization(animalName), 1);
 
-                    if (animal.Aquatic == false) { AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1); }
+                    //if (animal.Aquatic == false) { AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1); }
                     
                     // Behavior
                     AnimalData[animalName]["MaturityAgeDays"] = $"'{WikiFloat(animal.MaturityAgeDays)}'";
@@ -134,7 +134,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 }
             }
         // writes to txt file
-        WriteDictionaryToFile("AnimalData", "animals", AnimalData);
+
         }
 
     }

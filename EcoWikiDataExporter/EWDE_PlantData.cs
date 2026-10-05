@@ -69,7 +69,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         
                     PlantData.Add(plantName, new Dictionary<string, string>(plantDetails));
                     PlantData[plantName]["ID"] = $"'{plant.Name}" + "Species'";
-                    PlantData[plantName]["Name"] = WriteDictionaryAsSubObject(Localization(plantName), 1);
+                    //PlantData[plantName]["Name"] = WriteDictionaryAsSubObject(Localization(plantName), 1);
                     PlantData[plantName]["MaturityAgeDays"] = $"'{WikiFloat(plant.MaturityAgeDays)}'";
                     PlantData[plantName]["StartBiomes"] = $"'{plant.GenerationDefinitions.StartBiomes}'";
                     PlantData[plantName]["IsWater"] = plant.Water ? $"'True'" : "nil";
@@ -107,7 +107,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 }
                 
              // writes to txt file
-             WriteDictionaryToFile("PlantData", "plants", PlantData);
+
             }
         }
     }

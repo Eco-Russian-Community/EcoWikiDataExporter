@@ -20,6 +20,7 @@ using Eco.Shared.Icons;
 using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
+using Eco.Shared.Services;
 using Eco.Shared.Utils;
 using Newtonsoft.Json;
 using System;
@@ -55,6 +56,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Tags",
                     "{0} Tag",
                     "Items in Tag",
+                    "Tagged Items",
                     "Tags represent a group of items.",
                     "Tags Applying to",
                     "Items",
@@ -135,7 +137,16 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Admin",
                     "User",
                     "DevTier",
-                };
+
+                    "Carry Weight: {0}",
+                    "Max Calories: {0}",
+                    "Calorie Cost: {0}",
+                    "Movement Speed: {0}",
+                    "Animal Detection Range: {0}",
+                    "Backpack Slots: {0}",
+                    "Carried Slots: {0}",
+            }
+            ;
 
             foreach (string Loc in LocStrings)
             {

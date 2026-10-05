@@ -114,8 +114,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string Color { get; set; }
         }
 
-
-        //{ "SupportingRooms", "nil" },
+        // SupportingRooms
 
         public class CommandData
         {
@@ -124,7 +123,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string ShortCut { get; set; }
             public string Parent { get; set; }
             public TranslateData Description { get; set; }
-            public string Parameters { get; set; }
+            public Dictionary <string, string> Parameters { get; set; }
         }
 
         public class TalentData
@@ -136,6 +135,112 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string Level { get; set; }
         }
 
+        public class ItemData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public int Tier { get; set; }
+            public int Weight { get; set; }
+            public int MaxStackSize { get; set; }
+            public List<string> Tags { get; set; }
+        }
+
+        public class FoodData
+        {
+            public string Calories { get; set; }
+            public string Carbs { get; set; }
+            public string Protein { get; set; }
+            public string Fat { get; set; }
+            public string Vitamins { get; set; }
+            public string ShelfLife { get; set; }
+        }
+
+        public class FertilizerData
+        {
+            public string Nitrogen { get; set; }
+            public string Phosphorus { get; set; }
+            public string Potassium { get; set; }
+        }
+
+        public class SeedData
+        {
+            public string Species { get; set; }
+        }
+
+        public class ClothingData
+        {
+            public string AvatarSlot { get; set; }
+            public bool StartClothing { get; set; }
+            public bool Hidden { get; set; }
+            public Dictionary<string, string> FlatStats { get; set; }
+        }
+
+
+
+        public class ToolData
+        {
+            public string ToolType { get; set; }
+            public bool Hidden { get; set; }
+            public string Tier { get; set; }
+            public bool Weapon { get; set; }
+        }
+
+        public class FuelData
+        {
+            public string Power { get; set; }
+        }
+
+        public class WorldObjectData
+        {
+            public string Components { get; set; }
+        }
+
+        public class RecipeData
+        {
+            public string CraftTime { get; set; }
+            public string Experience { get; set; }
+            public string LaborInCalories { get; set; }
+            public string RequiredSkill { get; set; }
+            public string RequiresModule { get; set; }
+            public string CraftingTable { get; set; }
+            public bool RequiresBlueprint { get; set; }
+            public SortedDictionary<string, RecipeIngredientData> Ingredients { get; set; }
+            public SortedDictionary<string, RecipeProductData> Products { get; set; }
+            public SortedDictionary<string, RecipeGarbageData> Garbages { get; set; }
+        }
+
+        public class RecipeIngredientData
+        {
+            public string Type { get; set; }
+            public string Name { get; set; }
+            public string ID { get; set; }
+            public string Quantity { get; set; }
+            public bool IsStatic { get; set; }
+        }
+
+        public class RecipeProductData
+        {
+            public string Name { get; set; }
+            public string ID { get; set; }
+            public string Type { get; set; }
+            public string Quantity { get; set; }
+            public bool IsStatic { get; set; }
+        }
+
+        public class RecipeGarbageData
+        {
+            public string Name { get; set; }
+            public string ID { get; set; }
+            public string Quantity { get; set; }
+        }
+
+        public class TreeData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+           
+        }
 
     }
 }
