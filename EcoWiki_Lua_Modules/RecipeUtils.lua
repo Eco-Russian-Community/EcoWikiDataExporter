@@ -143,7 +143,7 @@ end
 function p.CraftingTableRecipes(ItemName)
     local Recipes = ""
     for RecipeName,RecipeData in pairs(RecipesData.recipes) do
-            if RecipeData.CraftingTables == ItemName then
+            if RecipeData.CraftingTable == ItemName then
                 if (Recipes == "") then Recipes = Recipes .. RecipeName else Recipes = Recipes .. "," .. RecipeName end
             end
     end
