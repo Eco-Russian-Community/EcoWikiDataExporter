@@ -21,6 +21,7 @@ function p.main(frame)
 	if (Lang ~= 'Russian') then WikiText =  WikiText .. '[[ru:' .. Tree.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Tree.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Tree.Name.French .. ']]' end
+	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Tree.Name.Japanese .. ']]' end
 	
 	local descriptionpage = Tree.Name[Lang] .. " - it is Tree."
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
