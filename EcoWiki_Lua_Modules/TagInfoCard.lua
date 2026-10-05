@@ -41,6 +41,9 @@ function p.main(frame)
 		WikiText =  WikiText .. RecipeUtils.CraftTable(RecipeTagIngredients)
 	end
 	
+	local descriptionpage = Tag.Name[Lang] .. " - " ..  Utils.Translate("Tags represent a group of items.")
+	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
+	
 	return WikiText
 end
 

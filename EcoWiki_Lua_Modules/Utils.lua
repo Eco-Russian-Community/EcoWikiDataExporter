@@ -63,18 +63,18 @@ end
 
 function p.getLanguageName()
   local languageName = "English"
-  local	language = mw.language.getContentLanguage()
-  local languageCode = language:getCode()
+  local languageCode = p.getLanguageCode()
   if languageCode == "ru" then languageName = "Russian" end
   if languageCode == "de" then languageName = "German" end
   if languageCode == "fr" then languageName = "French" end
+  if languageCode == "ja" then languageName = "Japanese" end  
   return languageName
 end
 
 function p.checkImage(filename)
 	if filename then
-		if mw.title.makeTitle('Media', filename).file.exists then return "Y" else return "N" end
-	else return "Error name" end
+		if mw.title.makeTitle('Media', filename).fileExists then return "True" else return "False" end
+	else return "Error" end
 end
 
 function p.checkPage(pagename)
@@ -149,9 +149,31 @@ function p.AnimalSearch(PageName)
     return AnimalName
 end
 
+function p.PlantSearch(PageName)
+	local PlantName = 'None'
+	local PlantData = mw.loadData( "Module:PlantData" )
+    local PlantList = PlantData.plants
+    local Lang = p.getLanguageName()
+    	for Pname,Pdata in pairs(PlantList) do
+    		if (Pdata.Name[Lang] == PageName) then PlantName = Pname end
+    	end
+    return PlantName
+end
+
+function p.TreeSearch(PageName)
+	local TreeName = 'None'
+	local TreeData = mw.loadData( "Module:TreeData" )
+    local TreeList = TreeData.trees
+    local Lang = p.getLanguageName()
+    	for Tname,Tdata in pairs(TreeList) do
+    		if (Tdata.Name[Lang] == PageName) then TreeName = Tname end
+    	end
+    return TreeName
+end
+
 function p.SpecialtyXP(Tier)
 	local WikiText =  ''
-	WikiText =  WikiText ..'<table class="table table-striped table-bordered"><tr class="thead-dark"><th>Specialty Level</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><td>Specialty XP</td>'
+	WikiText =  WikiText ..'<table class="table table-striped table-bordered"><tr class="table-dark"><th>Specialty Level</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><td>Specialty XP</td>'
 	for i = 1, 6 do
 		local XP = Tier * ( 25 * i) ^ 2
 		WikiText =  WikiText .. '<td>' .. XP .. '</td>'
@@ -166,7 +188,7 @@ function p.Translate(String)
 	local TranslateData = mw.loadData( "Module:LocalizationData" )
 	local TranslateList = TranslateData.locales
 		for Tname,Tdata in pairs(TranslateList) do
-    		if ( Tname == String) then Translate = Tdata.Translate[Lang] end
+    		if ( Tname == String) then Translate = Tdata[Lang] end
     	end
 	
 	return Translate
@@ -183,7 +205,7 @@ function p.ItemTags(TagsList)
 			local TagName = TagData.tags[Tname];
 			local TagNameLoc = TagName.Name[Lang];
 			local TagLink = p.VarSub(TagString,TagNameLoc);
-			if (TagName.IsVisibleInTooltip == "True") then WikiTagText = IconUtils.main{ name = TagNameLoc, id = TagName.ID, size = 128, style = 4, link = TagLink } end
+			if (TagName.IsVisibleInTooltip == true) then WikiTagText = IconUtils.main{ name = TagNameLoc, id = TagName.ID, size = 128, style = 4, link = TagLink } end
 		end
 	if (WikiTagText ~= "") then WikiText = '<div class="row">' .. WikiTagText .. '</div>' end
 	return WikiText
@@ -211,7 +233,7 @@ end
 function p.Stars(StarCost)
 	local WikiText = ""
 	local StarCost = tonumber(StarCost)
-
+	
 	if StarCost > 0 then 
 			for i = 1, StarCost do
 				WikiText = WikiText .. ' <i class="fa fa-star"></i>'
@@ -219,6 +241,18 @@ function p.Stars(StarCost)
 	end
 	
 	return WikiText
+end
+
+function p.StringListToArray(StringList)
+	local Array = {}
+	local StringCount = 1
+	
+	for StringItem in string.gmatch(StringList, "[^,]+") do
+    	Array[StringCount] = StringItem
+    	StringCount = StringCount + 1
+	end
+	
+	return	Array
 end
 
 function p.Mbox(Icon, Text, TextColor, BorderColor)

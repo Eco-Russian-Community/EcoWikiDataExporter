@@ -7,15 +7,14 @@ local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
-	local SkillName = ''
 	if (Lang == 'English') then SkillName = PageName else SkillName = Utils.SkillSearch(PageName) end
 	local SkillData = mw.loadData( "Module:SkillData" )
     local Skill = SkillData.skills[SkillName]
     local RootSkill = SkillData.skills[Skill.RootSkill]
-	local SkillTier = Skill.Tier
+    local SkillTier = Skill.Tier
     local ItemData = mw.loadData( "Module:ItemData" )
     local SkillBookName  = Skill.Name.English .. ' Skill Book'
-    local SkillBook = ItemData.items[SkillBookName]
+    local SkillBook = ItemData.items[SkillBookName ]
     local SkillScroll = Skill.Name.English .. ' Skill Scroll'
     local SkillScroll = ItemData.items[SkillScroll]
     local ClaimPaper = ItemData.items['Claim Paper Item']
@@ -23,16 +22,16 @@ function p.main(frame)
 	
 	WikiText =  WikiText ..'__NOTOC__'
 	WikiText =  WikiText .. IconUtils.main{name = Skill.Name[Lang], id = Skill.SkillID , size = 32, style = 1} .. ' '
-	if (Skill.IsRoot == 'True') then WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Profession]].<br>'   else WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Specialty]] related to the profession of [[' .. RootSkill.Name[Lang] ..']].<br>' end
+	if (Skill.IsRoot == true) then WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Profession]].<br>'   else WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Specialty]] related to the profession of [[' .. RootSkill.Name[Lang] ..']].<br>' end
 	WikiText =  WikiText .. Skill.Description[Lang] .. '<br>'
 	local SpecialtiesText = Utils.Translate('Specialties')
 	
-	if (Skill.IsRoot == 'True') then
+	if (Skill.IsRoot == true) then
 		WikiText =  WikiText .. '<h3>' .. SpecialtiesText .. '</h3>'
 		WikiText =  WikiText .. 'The '.. Skill.Name[Lang] .. ' Profession includes the following Specialties:<br>'
 		WikiText =  WikiText .. '<div class="container-fluid" id="icon-grid"><div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">'
 		for Sname,Sdata in pairs(SkillData.skills) do
-			if Sdata.IsRoot == 'False' and Sdata.RootSkill == SkillName then
+			if Sdata.IsRoot == false and Sdata.RootSkill == SkillName then 
 				local SpecialtyName = ''
 				local SpecialtyDescription = ''
 				local Stars = Utils.Stars(Sdata.Tier)
@@ -41,14 +40,14 @@ function p.main(frame)
 				if (Sdata.Description[Lang] == "") then SpecialtyDescription = Sdata.Description.English else SpecialtyDescription = Sdata.Description[Lang] end
 				WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
 				WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link='.. SpecialtyName .. '|class=IconGrid]]'
-				WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">[[' .. SpecialtyName .. ']]' .. Stars.. '</h5><p>' .. SpecialtyDescription .. '</p></div>'
+				WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">[[' .. SpecialtyName .. ']]' .. Stars .. '</h5><p>' .. SpecialtyDescription .. '</p></div>'
 				WikiText =  WikiText .. '</div>'
 			end
 		end
 		WikiText =  WikiText .. '</div></div>'
 	else
 		WikiText =  WikiText .. '<h3>How to learn</h3>'
-			if (Skill.PlayerDefaultSkill == 'True') then
+			if (Skill.PlayerDefaultSkill == true) then
 				if (SkillName == 'Self Improvement') then WikiText =  WikiText .. Skill.Name[Lang] .. ' Specialty is learned and have level 1 from the start of the game.'
 				else WikiText =  WikiText .. Skill.Name[Lang] .. ' Specialty is learned and available from the start of the game in the Skill Book (key <kbd class="keyboard-key nowrap">Z</kbd>)' end
 			else
@@ -56,7 +55,7 @@ function p.main(frame)
 				WikiText =  WikiText .. 'When learning a [[File:SkillScroll_Icon.png|32px|link=]] <b>' ..  SkillScroll.Name[Lang] .. '</b>, depending on the server settings, the player can also receive several [[' .. ClaimPaper.Name[Lang] .. ']] to expand [[Residency|Homestead]].'
 			end
 		
-			if (Skill.PlayerDefaultSkill == 'False') then 
+			if (Skill.PlayerDefaultSkill == false) then 
 				local RecipeItemCraft = RecipeUtils.ItemCraft(SkillBookName)
 				if (RecipeItemCraft ~= "") then
 					WikiText =  WikiText .. '</br>' .. '<h3>' .. Utils.Translate("Crafted At") .. ':</h3>';
@@ -67,7 +66,7 @@ function p.main(frame)
 		WikiText =  WikiText .. '<h3>Benefits and item availability by level:</h3>'
 		if (SkillName ~= 'Self Improvement') then
 			WikiText =  WikiText .. 'The study of specialization start from level 0'
-			if (Skill.PlayerDefaultSkill == 'False') then WikiText =  WikiText .. ' when learning a [[File:SkillScroll_Icon.png|32px|link=]] <b>' ..  SkillScroll.Name[Lang] .. '</b>' end
+			if (Skill.PlayerDefaultSkill == false) then WikiText =  WikiText .. ' when learning a [[File:SkillScroll_Icon.png|32px|link=]] <b>' ..  SkillScroll.Name[Lang] .. '</b>' end
 			WikiText =  WikiText .. ' and increases to level 1 by spending a star.'
 		else
 			WikiText =  WikiText .. 'For increasing any specialization by 1 level you will receive 20 experience points of ' .. Skill.Name[Lang] .. ' Specialty.'
@@ -94,12 +93,13 @@ function p.main(frame)
 			end
 		end
 		
+		if (TalentList[TalentsThree[1]] == "") then
 		WikiText =  WikiText .. '<h4>At 3rd level, the player can choose one of two proposed talents:</h4>'
 		WikiText =  WikiText .. '<div class="container-fluid" id="icon-grid"><div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-4">'
 		
 		if (TalentList[TalentsThree[1]].Name[Lang] == "") then TalentThreeName = TalentList[TalentsThree[1]].Name.English else TalentThreeName = TalentList[TalentsThree[1]].Name[Lang] end
 		if (TalentList[TalentsThree[1]].Description[Lang] == "") then TalentsThreeDescription = TalentList[TalentsThree[1]].Description.English else TalentsThreeDescription = TalentList[TalentsThree[1]].Description[Lang] end
-		if (Utils.checkImage(TalentList[TalentsThree[1]].IconName .. '_Icon.png') == "Y") then IconName = TalentList[TalentsThree[1]].IconName else IconName = 'NoItem' end
+		if (Utils.checkImage(TalentList[TalentsThree[1]].IconName .. '_Icon.png') == "True") then IconName = TalentList[TalentsThree[1]].IconName else IconName = 'NoItem' end
 		WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
 		WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'
 		WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">' .. TalentThreeName .. '</h5><p>' .. TalentsThreeDescription .. '</p></div>'
@@ -107,19 +107,22 @@ function p.main(frame)
 		
 		if (TalentList[TalentsThree[2]].Name[Lang] == "") then TalentThreeName = TalentList[TalentsThree[2]].Name.English else TalentThreeName = TalentList[TalentsThree[2]].Name[Lang] end
 		if (TalentList[TalentsThree[2]].Description[Lang] == "") then TalentsThreeDescription = TalentList[TalentsThree[2]].Description.English else TalentsThreeDescription = TalentList[TalentsThree[2]].Description[Lang] end
-		if (Utils.checkImage(TalentList[TalentsThree[2]].IconName .. '_Icon.png') == "Y") then IconName = TalentList[TalentsThree[2]].IconName else IconName = 'NoItem' end
+		if (Utils.checkImage(TalentList[TalentsThree[2]].IconName .. '_Icon.png') == "True") then IconName = TalentList[TalentsThree[2]].IconName else IconName = 'NoItem' end
 		WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
 		WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'
 		WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">' .. TalentThreeName .. '</h5><p>' .. TalentsThreeDescription .. '</p></div>'
 		WikiText =  WikiText .. '</div>'
 		
 		WikiText =  WikiText .. '</div></div>'
+		end
+		
+		if (TalentList[TalentsSix[1]] == "") then
 		WikiText =  WikiText .. '<h4>At 6th level, the player can choose one of two proposed talents:</h4>'
 		WikiText =  WikiText .. '<div class="container-fluid" id="icon-grid"><div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-4">'
 		
 		if (TalentList[TalentsSix[1]].Name[Lang] == "") then TalentsSixName = TalentList[TalentsSix[1]].Name.English else TalentsSixName = TalentList[TalentsSix[1]].Name[Lang] end
 		if (TalentList[TalentsSix[1]].Description[Lang] == "") then TalentsSixDescription = TalentList[TalentsSix[1]].Description.English else TalentsSixDescription = TalentList[TalentsSix[1]].Description[Lang] end
-		if (Utils.checkImage(TalentList[TalentsSix[1]].IconName .. '_Icon.png') == "Y") then IconName = TalentList[TalentsSix[1]].IconName else IconName = 'NoItem' end
+		if (Utils.checkImage(TalentList[TalentsSix[1]].IconName .. '_Icon.png') == "True") then IconName = TalentList[TalentsSix[1]].IconName else IconName = 'NoItem' end
 		WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
 		WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'
 		WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">' .. TalentsSixName .. '</h5><p>' .. TalentsSixDescription .. '</p></div>'
@@ -127,13 +130,14 @@ function p.main(frame)
 		
 		if (TalentList[TalentsSix[2]].Name[Lang] == "") then TalentsSixName = TalentList[TalentsSix[2]].Name.English else TalentsSixName = TalentList[TalentsSix[2]].Name[Lang] end
 		if (TalentList[TalentsSix[2]].Description[Lang] == "") then TalentsSixDescription = TalentList[TalentsSix[2]].Description.English else TalentsSixDescription = TalentList[TalentsSix[2]].Description[Lang] end
-		if (Utils.checkImage(TalentList[TalentsSix[2]].IconName .. '_Icon.png') == "Y") then IconName = TalentList[TalentsSix[2]].IconName else IconName = 'NoItem' end
+		if (Utils.checkImage(TalentList[TalentsSix[2]].IconName .. '_Icon.png') == "True") then IconName = TalentList[TalentsSix[2]].IconName else IconName = 'NoItem' end
 		WikiText =  WikiText .. '<div class="col d-flex align-items-start">'
 		WikiText =  WikiText .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'
 		WikiText =  WikiText .. '<div><h5 class="fw-bold mb-0 fs-4 text-body-emphasis">' .. TalentsSixName .. '</h5><p>' .. TalentsSixDescription .. '</p></div>'
 		WikiText =  WikiText .. '</div>'
 		
 		WikiText =  WikiText .. '</div></div>'
+		end
 		
 		WikiText =  WikiText .. '<h3>Upgrade modules:</h3>'
 		WikiText =  WikiText .. '<h3>Clothing:</h3>'
@@ -147,6 +151,7 @@ function p.main(frame)
 	if (Lang ~= 'Russian') then WikiText =  WikiText .. '[[ru:' .. Skill.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Skill.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Skill.Name.French .. ']]' end
+	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Skill.Name.Japanese .. ']]' end
 	
 	local descriptionpage = Skill.Name[Lang] .. " - " .. Skill.Description[Lang]
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}

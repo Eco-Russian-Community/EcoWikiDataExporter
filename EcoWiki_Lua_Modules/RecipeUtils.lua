@@ -59,42 +59,54 @@ function p.CraftTable(RecipeList)
     local CraftTable = ""
 
     if (RecipeList ~= "") then
-        CraftTable = CraftTable .. '<table class="table table-striped table-bordered sortable"><tr class="thead-dark">';
-        CraftTable = CraftTable .. '<th>' .. Utils.Translate("Crafting Table") .. '</th><th class="unsortable">' .. Utils.Translate("Products") .. '</th><th class="unsortable">' .. Utils.Translate("Ingredients") .. '</th><th data-sort-type="mm:ss">' .. Utils.Translate("Craft time") .. '</th><th>' .. Utils.Translate("Labor") .. '</th><th>' .. Utils.Translate("Skill Requirements") .. '</th><th>' .. Utils.Translate("Experience") .. '</th></tr>';
+        CraftTable = CraftTable .. '<table class="table table-striped table-bordered sortable"><tr class="table-dark">';
+        CraftTable = CraftTable .. '<th>' .. Utils.Translate("Crafting Table") .. '</th><th class="unsortable">' .. Utils.Translate("Products") .. '</th><th class="unsortable">' .. Utils.Translate("Garbages") .. '</th><th class="unsortable">' .. Utils.Translate("Ingredients") .. '</th><th data-sort-type="mm:ss">' .. Utils.Translate("Craft time") .. '</th><th>' .. Utils.Translate("Labor") .. '</th><th>' .. Utils.Translate("Skill Requirements") .. '</th><th>' .. Utils.Translate("Experience") .. '</th></tr>';
         local TagString = Utils.Translate("{0} Tag");
         local ItemsData = mw.loadData('Module:ItemData')
         
         for RecipeName in string.gmatch(RecipeList, "([^,]+)") do
             local CraftTableRow = "";
             local RecipeData = RecipesData.recipes[RecipeName];
-            local CraftTableData = ItemsData.items[RecipeData.CraftingTables]
+            local CraftTableData = ItemsData.items[RecipeData.CraftingTable]
             CraftTableRow = "<td>" .. IconUtils.main{ name = CraftTableData.Name[Lang], id = CraftTableData.ID, size = 48, style = 2, link = CraftTableData.Name[Lang] } .. "</td>";
             
             local RecipeProducts = "";
             for ProductName,ProductData in pairs(RecipeData.Products) do
             	local Item = ItemsData.items[ProductName]
-            	if ProductData.IsStatic == 'True' then ItemBorder = 'yellow' else ItemBorder = 'green' end
+            	if ProductData.IsStatic == true then ItemBorder = 'yellow' else ItemBorder = 'green' end
                 RecipeProducts = RecipeProducts .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = ProductData.Quantity } .. '</span>';
             end
             CraftTableRow = CraftTableRow .. "<td>" .. RecipeProducts .. "</td>";
+            
+            -- Garbages
+            local RecipeGarbages = "";
+            if (RecipeData.Garbages == nil) then RecipeGarbages = Utils.Translate("None"); else
+            	for GarbageName,GarbageData in pairs(RecipeData.Garbages) do
+            		local GarbageName = GarbageData.Name;
+            		if GarbageName == 'Trash' then GarbageName = 'Garbage'; end
+            		local GarbageItem = ItemsData.items[GarbageName];
+            		RecipeGarbages = RecipeGarbages .. '<span style="display: inline-block;">' .. IconUtils.main{ name = GarbageItem.Name[Lang], id = GarbageData.ID, size = 48, style = 5, link = GarbageItem.Name[Lang], border = 'yellow', count = GarbageData.Quantity } .. '</span>';
+            	end
+            end
+            CraftTableRow = CraftTableRow .. "<td>" .. RecipeGarbages .. "</td>"; 
 
             local RecipeIngredients = "";
             local TagsData = mw.loadData('Module:TagData');
             for IngredientName,IngredientData in pairs(RecipeData.Ingredients) do
-            	if IngredientData.IsStatic == 'True' then ItemBorder = 'yellow' else ItemBorder = 'green' end
+            	if IngredientData.IsStatic == true then ItemBorder = 'yellow' else ItemBorder = 'green' end
             	if (IngredientData['Type'] == "TAG") then local Tag = TagsData.tags[IngredientName]; local TagLink = Utils.VSTranslate(TagString,Tag.Name[Lang]); RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Tag.Name[Lang], id = Tag.ID, size = 48, style = 5, link = TagLink, border = ItemBorder, count = IngredientData.Quantity } .. '</span>'; 
             	else  local Item = ItemsData.items[IngredientName]; RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = IngredientData.Quantity } .. '</span>';
             	end
             	
             end
-            if (RecipeData.RequiresStrangeBlueprint == "True") then RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = "Blueprint", id = "BlueprintItem", size = 48, style = 6, link = "Marketplace"} .. '</span>'; end
+            if (RecipeData.RequiresBlueprint == true ) then RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = "Blueprint", id = "BlueprintItem", size = 48, style = 6, link = "Marketplace"} .. '</span>'; end
             CraftTableRow = CraftTableRow .. "<td>" .. RecipeIngredients .. "</td>";
             local CraftTime = tonumber(RecipeData.CraftTime)
 			CraftTableRow = CraftTableRow .. "<td><span>" .. p.CraftTime(CraftTime) .. "</span></td>";
 			CraftTableRow = CraftTableRow .. "<td><span>" .. RecipeData.LaborInCalories .. "</span></td>";
 
 			CraftTableRow = CraftTableRow .. "<td>" .. p.RecipeRequiredSkill(RecipeData.RequiredSkill) .. "</td>";
-			CraftTableRow = CraftTableRow .. "<td><span>" .. RecipeData.ExperienceOnCraft .. "</span></td>";
+			CraftTableRow = CraftTableRow .. "<td><span>" .. RecipeData.Experience .. "</span></td>";
 
             CraftTable = CraftTable .. "<tr>" ..CraftTableRow .. "</tr>";
         end
@@ -114,9 +126,12 @@ function p.CraftTime(TimeInSeconds)
     return CraftTime
 end
 
-function p.RecipeRequiredSkill(SkillData)
+function p.RecipeRequiredSkill(SkillDataString)
 	local SkillCell = ""
-    local SkillsData = mw.loadData('Module:SkillData')
+	local SkillData = Utils.StringListToArray(SkillDataString)
+	local StringCount = 1
+	local SkillsData = mw.loadData('Module:SkillData')
+	
 	local SkillID = SkillData[1]
 	local SkillLevel = SkillData[2]
 	if ((SkillID == "") or (SkillID == "nil")) then SkillName = 'None' else SkillName = Utils.SkillSearchByID(SkillID) end

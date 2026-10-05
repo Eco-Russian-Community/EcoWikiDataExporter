@@ -28,8 +28,7 @@ function p.main(frame)
 	WikiText =  WikiText ..'</div></div></div></div>'
 	
 	if (Item.FoodItem == "True") then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
-
-
+	
 	local RecipeItemCraft = RecipeUtils.ItemCraft(ItemName)
 	if (RecipeItemCraft ~= "") then
 		WikiText =  WikiText .. '<h3>' .. Utils.Translate("Crafted At") .. ':</h3>';
@@ -54,8 +53,7 @@ function p.main(frame)
 		WikiText =  WikiText .. RecipeUtils.CraftTable(RecipeTagsIngredient)
 	end
 	
-	if (Item.WorldObjectItem == "True") then WikiText =  WikiText .. InfoCardUtils.WorldObjectModule(ItemName) end	
-	
+	if (Item.WorldObjectItem == "True") then WikiText =  WikiText .. InfoCardUtils.WorldObjectModule(ItemName) end
 	
 	WikiText =  WikiText .. '<h3>How use Icon:</h3>'
 	WikiText =  WikiText .. '<p>' .. Item.Name[Lang] .. ' icon can be used on any sign that has a text component, including on [[Vehicles]]:</br>'

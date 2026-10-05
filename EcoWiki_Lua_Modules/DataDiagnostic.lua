@@ -1,7 +1,7 @@
 local p = {}
 
 local Utils = require('Module:Utils')
-local Lang = Utils.WikiLang
+local Lang = Utils.getLanguageName()
 
 function p.SubIndexPagesList()
 		local WikiText =''
@@ -39,14 +39,14 @@ function p.SubIndexItemsList()
 		local ItemData = mw.loadData("Module:ItemData")
 		local ItemList = ItemData.items
 		for Iname,Idata in pairs(ItemList) do
-			if (Idata.Hidden ~= 'True') then
+			if (Idata.Hidden ~= true) then
 			local Color = "success"
 			local Item = Idata.Name[Lang]
 			local ItemEN = Idata.Name.English
 			if ((Item == ItemEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Item == '') then Color = "danger" end
 			if (Color == 'danger') then String = ItemEN else String = '[[' .. Item .. ']]' end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 			end
 		end
@@ -64,7 +64,7 @@ function p.SubIndexTagsList()
 		local TagList = TagData.tags
 		
 		for Tname,Tdata in pairs(TagList) do
-			if (Tdata.IsVisibleInTooltip == 'True') then
+			if (Tdata.IsVisibleInTooltip == true) then
 				local Color = "success"
 				local Tag = Tdata.Name[Lang]
 				local TagEN = Tdata.Name.English
@@ -73,7 +73,7 @@ function p.SubIndexTagsList()
 				if ((Tag == TagEN) and (Lang ~= 'English')) then Color = "warning" end
 				if (Tag == '') then Color = "danger" end
 				if (Color == 'danger') then String = TagEN else String = '[[' .. TagLink .. ']]' end
-				String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+				String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 				WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 			end
 		end
@@ -99,8 +99,9 @@ function p.SubIndexSkillsList()
 			if ((Skill == SkillEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Skill == '') then Color = "danger" end
 			if (Color == 'danger') then String = SkillEN else String = '[[' .. Skill .. ']]' end
-			String = '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><span class="bg-' .. Color .. '">' .. String .. '</span></div>'
-			if Sdata.IsRoot == 'True' then Professions = Professions .. String else Specialties = Specialties .. String end
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
+			String = '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
+			if Sdata.IsRoot == true then Professions = Professions .. String else Specialties = Specialties .. String end
 		end
 		
 		WikiText = '<h2>Professions Page Diagnostic</h2><div class="container-fluid"><div class="row g-2 mb-3">' .. Professions .. '</div></div>'
@@ -121,7 +122,7 @@ function p.SubIndexBiomesList()
 			if ((Biome == BiomeEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Biome == '') then Color = "danger" end
 			if (Color == 'danger') then String = BiomeEN else String = '[[' .. Biome .. ']]' end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 		end
 		
@@ -143,7 +144,7 @@ function p.SubIndexAnimalsList()
 			if ((Animal == AnimalEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Animal == '') then Color = "danger" end
 			if (Color == 'danger') then String = AnimalEN else String = '[[' .. Animal .. ']]' end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 		end
 		
@@ -165,7 +166,7 @@ function p.SubIndexPlantsList()
 			if ((Plant == PlantEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Plant == '') then Color = "danger" end
 			if (Color == 'danger') then String = PlantEN else String = '[[' .. Plant .. ']]' end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 		end
 		
@@ -187,7 +188,7 @@ function p.SubIndexTreesList()
 			if ((Tree == TreeEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Tree == '') then Color = "danger" end
 			if (Color == 'danger') then String = TreeEN else String = '[[' .. Tree .. ']]' end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 		end
 		
@@ -209,7 +210,7 @@ function p.SubIndexAchievementsList()
 			if ((Achievement == AchievementEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Achievement == '') then Color = "danger" end
 			if (Color == 'danger') then String = AchievementEN else String = Achievement end
-			String = '<span class="bg-' .. Color .. '">' .. String .. '</span>'
+			String = '<span><i class="fa-solid fa-circle bg-' .. Color .. '"></i> ' .. String .. '</span>'
 			WikiText = WikiText .. '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' .. String .. '</div>'
 		end
 		

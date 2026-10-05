@@ -4,11 +4,10 @@ local IconUtils = require('Module:IconUtils')
 local Lang = Utils.WikiLang
 
 function p.main()
-
 	local wiki = ''
 	
 	-- import the required modules
-	local AchievementsData = mw.loadData('Module:AchievementsData')
+	local AchievementsData = mw.loadData( "Module:AchievementsData" )
 	local ADescription = require('Module:AdvancedDescription')
 	local achievements = AchievementsData.achievements
 	
@@ -17,7 +16,7 @@ function p.main()
 	for k,v in pairs(achievements) do
 		local row = ''
 		row = row .. '<div class="col d-flex align-items-start">'
-		if (Utils.checkImage(v.IconName .. '_Icon.png') == "Y") then IconName = v.IconName else IconName = 'NoItem' end
+		if (Utils.checkImage(v.IconName .. '_Icon.png') == "True") then IconName = v.IconName else IconName = 'NoItem' end
 		row = row .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'
 		if (v.Name[Lang] == "") then achievementName = v.Name.English else achievementName = v.Name[Lang] end
 		if (v.Description[Lang] == "") then achievementDescription = v.Description.English else achievementDescription = ADescription.main(v.Description[Lang]) end

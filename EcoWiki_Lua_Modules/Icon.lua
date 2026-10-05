@@ -8,7 +8,7 @@ function p.main(param)
     local itemID = args.id
     if (itemID == nil) then itemID = Utils.CheckId(args.name); end
 
-    return IconUtils.main{ name =  args.name, id = itemID , size = args.size , style = args.style , link = args.link }
+    return IconUtils.main{ name =  args.name, id = itemID , size = args.size , style = args.style , link = args.link , border = args.border , count = args.count }
     
 end
 
