@@ -140,6 +140,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string ID { get; set; }
             public TranslateData Name { get; set; }
             public TranslateData Description { get; set; }
+            public bool Hidden { get; set; }
             public int Tier { get; set; }
             public int Weight { get; set; }
             public int MaxStackSize { get; set; }

@@ -244,6 +244,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         ID = item.Type.Name.ToString(),
                         Name = Localization(ItemName),
                         Description = Localization(CleanText(item.GetDescription.NotTranslated)),
+                        Hidden = item.Hidden,
                         Weight = item.Weight,
                         MaxStackSize = item.MaxStackSize,
 						Tags = GetItemTags(item)
