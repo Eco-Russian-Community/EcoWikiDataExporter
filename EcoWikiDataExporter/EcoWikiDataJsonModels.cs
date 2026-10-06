@@ -240,7 +240,8 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             public string ID { get; set; }
             public TranslateData Name { get; set; }
-           
+            public string MaturityAgeDays { get; set; }
+
         }
 
     }

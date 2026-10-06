@@ -47,7 +47,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string TreeName = tree.DisplayName.NotTranslated;
                 if (!TreeDataList.ContainsKey(TreeName))
                 {
-
+                    
 
 
 
@@ -62,6 +62,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     {
                         ID = tree.Name + "Species",
                         Name = Localization(TreeName),
+                        MaturityAgeDays = WikiFloat(tree.MaturityAgeDays)
 
                     };
 
