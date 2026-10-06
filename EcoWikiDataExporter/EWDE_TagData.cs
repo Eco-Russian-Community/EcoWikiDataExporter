@@ -45,7 +45,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
 	{
-        private static Dictionary<string, TagData> TagDataList = new Dictionary<string, TagData>();
+        private static SortedDictionary<string, TagData> TagDataList = new SortedDictionary<string, TagData>();
 
 		public static void ExportTagData()
 		{
