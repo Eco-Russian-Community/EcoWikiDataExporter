@@ -1,7 +1,7 @@
 local p = {}
 
 local Utils = require('Module:Utils')
-local Lang = Utils.getLanguageName()
+local Lang = Utils.WikiLang
 
 function p.SubIndexPagesList()
 		local WikiText =''
@@ -43,6 +43,7 @@ function p.SubIndexItemsList()
 			local Color = "success"
 			local Item = Idata.Name[Lang]
 			local ItemEN = Idata.Name.English
+			local String
 			if ((Item == ItemEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Item == '') then Color = "danger" end
 			if (Color == 'danger') then String = ItemEN else String = '[[' .. Item .. ']]' end
@@ -70,6 +71,7 @@ function p.SubIndexTagsList()
 				local TagEN = Tdata.Name.English
 				local TagString = Utils.Translate("{0} Tag");
 				local TagLink = Utils.VarSub(TagString,Tag);
+				local String
 				if ((Tag == TagEN) and (Lang ~= 'English')) then Color = "warning" end
 				if (Tag == '') then Color = "danger" end
 				if (Color == 'danger') then String = TagEN else String = '[[' .. TagLink .. ']]' end
@@ -96,6 +98,7 @@ function p.SubIndexSkillsList()
 			local Color = "success"
 			local Skill = Sdata.Name[Lang]
 			local SkillEN = Sdata.Name.English
+			local String
 			if ((Skill == SkillEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Skill == '') then Color = "danger" end
 			if (Color == 'danger') then String = SkillEN else String = '[[' .. Skill .. ']]' end
@@ -119,6 +122,7 @@ function p.SubIndexBiomesList()
 			local Color = "success"
 			local Biome = Bdata.Name[Lang]
 			local BiomeEN = Bdata.Name.English
+			local String
 			if ((Biome == BiomeEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Biome == '') then Color = "danger" end
 			if (Color == 'danger') then String = BiomeEN else String = '[[' .. Biome .. ']]' end
@@ -141,6 +145,7 @@ function p.SubIndexAnimalsList()
 			local Color = "success"
 			local Animal = Adata.Name[Lang]
 			local AnimalEN = Adata.Name.English
+			local String
 			if ((Animal == AnimalEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Animal == '') then Color = "danger" end
 			if (Color == 'danger') then String = AnimalEN else String = '[[' .. Animal .. ']]' end
@@ -163,6 +168,7 @@ function p.SubIndexPlantsList()
 			local Color = "success"
 			local Plant = Pdata.Name[Lang]
 			local PlantEN = Pdata.Name.English
+			local String
 			if ((Plant == PlantEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Plant == '') then Color = "danger" end
 			if (Color == 'danger') then String = PlantEN else String = '[[' .. Plant .. ']]' end
@@ -185,6 +191,7 @@ function p.SubIndexTreesList()
 			local Color = "success"
 			local Tree = Tdata.Name[Lang]
 			local TreeEN = Tdata.Name.English
+			local String
 			if ((Tree == TreeEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Tree == '') then Color = "danger" end
 			if (Color == 'danger') then String = TreeEN else String = '[[' .. Tree .. ']]' end
@@ -207,6 +214,7 @@ function p.SubIndexAchievementsList()
 			local Color = "success"
 			local Achievement = Adata.Name[Lang]
 			local AchievementEN = Adata.Name.English
+			local String
 			if ((Achievement == AchievementEN) and (Lang ~= 'English')) then Color = "warning" end
 			if (Achievement == '') then Color = "danger" end
 			if (Color == 'danger') then String = AchievementEN else String = Achievement end
