@@ -9,6 +9,7 @@ local Lang = Utils.getLanguageName()
 
 function p.main(frame)
 	local PageName = frame.args[1]
+	local ItemName
 	if (Lang == 'English') then ItemName = PageName else ItemName = Utils.ItemSearch(PageName) end
 	local ItemData = mw.loadData( "Module:ItemData" )
     local Item = ItemData.items[ItemName]

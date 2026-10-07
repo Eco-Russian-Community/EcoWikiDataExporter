@@ -9,6 +9,7 @@ function p.main(frame)
 	local PageName = frame.args[1]
 	local TagLoc = string.gsub(Utils.Translate("{0} Tag"),"{0}","")
 	PageName = string.gsub(PageName,TagLoc,"")
+	local TagName
 	if (Lang == 'English') then TagName = PageName else TagName = Utils.TagSearch(PageName) end
 	local TagData = mw.loadData( "Module:TagData" )
 	local ItemData = mw.loadData( "Module:ItemData" )
@@ -28,7 +29,7 @@ function p.main(frame)
 	WikiText =  WikiText .. '<div class="row">'
 	
 	for Count, ItemName in pairs(ItemList) do
-		Item = ItemData.items[ItemName]
+		local Item = ItemData.items[ItemName]
 		WikiText =  WikiText .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 128, style = 4, link = Item.Name[Lang] }
 	end
 	

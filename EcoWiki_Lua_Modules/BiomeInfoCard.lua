@@ -6,7 +6,7 @@ local Lang = Utils.WikiLang
 function p.main(frame)
 	local PageName = frame.args[1]
 	local WikiText =''
-	BiomeName = Utils.BiomeSearch(PageName)
+	local BiomeName = Utils.BiomeSearch(PageName)
 	
 	WikiText =  WikiText ..'page name get test: ' .. PageName ..'</br>'
 	WikiText =  WikiText ..'Biome name get test: ' .. BiomeName ..'</br>'

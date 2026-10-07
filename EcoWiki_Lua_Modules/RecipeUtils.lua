@@ -73,6 +73,7 @@ function p.CraftTable(RecipeList)
             local RecipeProducts = "";
             for ProductName,ProductData in pairs(RecipeData.Products) do
             	local Item = ItemsData.items[ProductName]
+                local ItemBorder
             	if ProductData.IsStatic == true then ItemBorder = 'yellow' else ItemBorder = 'green' end
                 RecipeProducts = RecipeProducts .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = ProductData.Quantity } .. '</span>';
             end
@@ -93,7 +94,8 @@ function p.CraftTable(RecipeList)
             local RecipeIngredients = "";
             local TagsData = mw.loadData('Module:TagData');
             for IngredientName,IngredientData in pairs(RecipeData.Ingredients) do
-            	if IngredientData.IsStatic == true then ItemBorder = 'yellow' else ItemBorder = 'green' end
+                local ItemBorder
+                if IngredientData.IsStatic == true then ItemBorder = 'yellow' else ItemBorder = 'green' end
             	if (IngredientData['Type'] == "TAG") then local Tag = TagsData.tags[IngredientName]; local TagLink = Utils.VSTranslate(TagString,Tag.Name[Lang]); RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Tag.Name[Lang], id = Tag.ID, size = 48, style = 5, link = TagLink, border = ItemBorder, count = IngredientData.Quantity } .. '</span>'; 
             	else  local Item = ItemsData.items[IngredientName]; RecipeIngredients = RecipeIngredients .. '<span style="display: inline-block;">' .. IconUtils.main{ name = Item.Name[Lang], id = Item.ID, size = 48, style = 5, link = Item.Name[Lang], border = ItemBorder, count = IngredientData.Quantity } .. '</span>';
             	end
@@ -134,6 +136,7 @@ function p.RecipeRequiredSkill(SkillDataString)
 	
 	local SkillID = SkillData[1]
 	local SkillLevel = SkillData[2]
+    local SkillName
 	if ((SkillID == "") or (SkillID == "nil")) then SkillName = 'None' else SkillName = Utils.SkillSearchByID(SkillID) end
 	if (SkillName == "None") then SkillCell = IconUtils.main{ name = Utils.Translate("None"), id = 'NoSkillLabor', size = 48, style = 2 } else SkillCell = IconUtils.main{ name = SkillsData.skills[SkillName].Name[Lang], id = SkillsData.skills[SkillName].SkillID, size = 48, style = 2, link = SkillsData.skills[SkillName].Name[Lang]} .. " " .. SkillLevel end
 	
