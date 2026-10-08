@@ -3294,6 +3294,295 @@
       },
       "Parameters": {}
     },
+    "/mods account": {
+      "Command": "account",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Which mod.io account the server is signed in to, and what that adds.",
+        "Russian": "Which mod.io account the server is signed in to, and what that adds.",
+        "German": "Which mod.io account the server is signed in to, and what that adds.",
+        "French": "Which mod.io account the server is signed in to, and what that adds.",
+        "Japanese": "Which mod.io account the server is signed in to, and what that adds."
+      },
+      "Parameters": {}
+    },
+    "/mods check": {
+      "Command": "check",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Checks the tracked mods on mod.io now.",
+        "Russian": "Checks the tracked mods on mod.io now.",
+        "German": "Checks the tracked mods on mod.io now.",
+        "French": "Checks the tracked mods on mod.io now.",
+        "Japanese": "Checks the tracked mods on mod.io now."
+      },
+      "Parameters": {}
+    },
+    "/mods collections": {
+      "Command": "collections",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Lists the signed-in mod.io account\\'s own collections and those it follows, with the ids /mods trackcollection takes.",
+        "Russian": "Lists the signed-in mod.io account\\'s own collections and those it follows, with the ids /mods trackcollection takes.",
+        "German": "Lists the signed-in mod.io account\\'s own collections and those it follows, with the ids /mods trackcollection takes.",
+        "French": "Lists the signed-in mod.io account\\'s own collections and those it follows, with the ids /mods trackcollection takes.",
+        "Japanese": "Lists the signed-in mod.io account\\'s own collections and those it follows, with the ids /mods trackcollection takes."
+      },
+      "Parameters": {}
+    },
+    "/mods download": {
+      "Command": "download",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Downloads a mod\\'s latest package from mod.io, verified, without installing it.",
+        "Russian": "Downloads a mod\\'s latest package from mod.io, verified, without installing it.",
+        "German": "Downloads a mod\\'s latest package from mod.io, verified, without installing it.",
+        "French": "Downloads a mod\\'s latest package from mod.io, verified, without installing it.",
+        "Japanese": "Downloads a mod\\'s latest package from mod.io, verified, without installing it."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods list": {
+      "Command": "list",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Lists the tracked mod.io mods and whether each has an update.",
+        "Russian": "Lists the tracked mod.io mods and whether each has an update.",
+        "German": "Lists the tracked mod.io mods and whether each has an update.",
+        "French": "Lists the tracked mod.io mods and whether each has an update.",
+        "Japanese": "Lists the tracked mod.io mods and whether each has an update."
+      },
+      "Parameters": {}
+    },
+    "/mods mark": {
+      "Command": "mark",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Records the copy of a mod on disk as mod.io\\'s latest file, for one installed by hand.",
+        "Russian": "Records the copy of a mod on disk as mod.io\\'s latest file, for one installed by hand.",
+        "German": "Records the copy of a mod on disk as mod.io\\'s latest file, for one installed by hand.",
+        "French": "Records the copy of a mod on disk as mod.io\\'s latest file, for one installed by hand.",
+        "Japanese": "Records the copy of a mod on disk as mod.io\\'s latest file, for one installed by hand."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods pin": {
+      "Command": "pin",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Keeps a tracked mod at its installed version: its updates are listed, never installed or announced.",
+        "Russian": "Keeps a tracked mod at its installed version: its updates are listed, never installed or announced.",
+        "German": "Keeps a tracked mod at its installed version: its updates are listed, never installed or announced.",
+        "French": "Keeps a tracked mod at its installed version: its updates are listed, never installed or announced.",
+        "Japanese": "Keeps a tracked mod at its installed version: its updates are listed, never installed or announced."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods reload": {
+      "Command": "reload",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Re-reads Configs/ModKit.eco after it was edited by hand while the server runs, then checks mod.io.",
+        "Russian": "Re-reads Configs/ModKit.eco after it was edited by hand while the server runs, then checks mod.io.",
+        "German": "Re-reads Configs/ModKit.eco after it was edited by hand while the server runs, then checks mod.io.",
+        "French": "Re-reads Configs/ModKit.eco after it was edited by hand while the server runs, then checks mod.io.",
+        "Japanese": "Re-reads Configs/ModKit.eco after it was edited by hand while the server runs, then checks mod.io."
+      },
+      "Parameters": {}
+    },
+    "/mods signout": {
+      "Command": "signout",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Signs the server out of mod.io and forgets its token. Nothing is uninstalled.",
+        "Russian": "Signs the server out of mod.io and forgets its token. Nothing is uninstalled.",
+        "German": "Signs the server out of mod.io and forgets its token. Nothing is uninstalled.",
+        "French": "Signs the server out of mod.io and forgets its token. Nothing is uninstalled.",
+        "Japanese": "Signs the server out of mod.io and forgets its token. Nothing is uninstalled."
+      },
+      "Parameters": {}
+    },
+    "/mods skip": {
+      "Command": "skip",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Leaves a mod out even though it is tracked, a followed collection holds it or a tracked mod needs it: it isn\\'t checked or installed.",
+        "Russian": "Leaves a mod out even though it is tracked, a followed collection holds it or a tracked mod needs it: it isn\\'t checked or installed.",
+        "German": "Leaves a mod out even though it is tracked, a followed collection holds it or a tracked mod needs it: it isn\\'t checked or installed.",
+        "French": "Leaves a mod out even though it is tracked, a followed collection holds it or a tracked mod needs it: it isn\\'t checked or installed.",
+        "Japanese": "Leaves a mod out even though it is tracked, a followed collection holds it or a tracked mod needs it: it isn\\'t checked or installed."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods subscriptions": {
+      "Command": "subscriptions",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Lists the Eco mods the signed-in mod.io account subscribes to, with the ids /mods track takes to follow only some of them.",
+        "Russian": "Lists the Eco mods the signed-in mod.io account subscribes to, with the ids /mods track takes to follow only some of them.",
+        "German": "Lists the Eco mods the signed-in mod.io account subscribes to, with the ids /mods track takes to follow only some of them.",
+        "French": "Lists the Eco mods the signed-in mod.io account subscribes to, with the ids /mods track takes to follow only some of them.",
+        "Japanese": "Lists the Eco mods the signed-in mod.io account subscribes to, with the ids /mods track takes to follow only some of them."
+      },
+      "Parameters": {}
+    },
+    "/mods sync": {
+      "Command": "sync",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Checks mod.io, then installs every tracked mod that is missing or has an update, except pinned and skipped ones. They load at the next restart.",
+        "Russian": "Checks mod.io, then installs every tracked mod that is missing or has an update, except pinned and skipped ones. They load at the next restart.",
+        "German": "Checks mod.io, then installs every tracked mod that is missing or has an update, except pinned and skipped ones. They load at the next restart.",
+        "French": "Checks mod.io, then installs every tracked mod that is missing or has an update, except pinned and skipped ones. They load at the next restart.",
+        "Japanese": "Checks mod.io, then installs every tracked mod that is missing or has an update, except pinned and skipped ones. They load at the next restart."
+      },
+      "Parameters": {}
+    },
+    "/mods track": {
+      "Command": "track",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Tracks a mod by its mod.io id, the number under Mod ID on its mod.io page.",
+        "Russian": "Tracks a mod by its mod.io id, the number under Mod ID on its mod.io page.",
+        "German": "Tracks a mod by its mod.io id, the number under Mod ID on its mod.io page.",
+        "French": "Tracks a mod by its mod.io id, the number under Mod ID on its mod.io page.",
+        "Japanese": "Tracks a mod by its mod.io id, the number under Mod ID on its mod.io page."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods trackcollection": {
+      "Command": "trackcollection",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Tracks every mod in a mod.io collection, re-read at each check.",
+        "Russian": "Tracks every mod in a mod.io collection, re-read at each check.",
+        "German": "Tracks every mod in a mod.io collection, re-read at each check.",
+        "French": "Tracks every mod in a mod.io collection, re-read at each check.",
+        "Japanese": "Tracks every mod in a mod.io collection, re-read at each check."
+      },
+      "Parameters": {
+        "Arg1": "collectionId,Int32"
+      }
+    },
+    "/mods unpin": {
+      "Command": "unpin",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Lets a pinned mod be updated again.",
+        "Russian": "Lets a pinned mod be updated again.",
+        "German": "Lets a pinned mod be updated again.",
+        "French": "Lets a pinned mod be updated again.",
+        "Japanese": "Lets a pinned mod be updated again."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods unskip": {
+      "Command": "unskip",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Stops skipping a mod, so the next check includes it again.",
+        "Russian": "Stops skipping a mod, so the next check includes it again.",
+        "German": "Stops skipping a mod, so the next check includes it again.",
+        "French": "Stops skipping a mod, so the next check includes it again.",
+        "Japanese": "Stops skipping a mod, so the next check includes it again."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods untrack": {
+      "Command": "untrack",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Stops tracking a mod by id, and unpins it. Nothing is uninstalled.",
+        "Russian": "Stops tracking a mod by id, and unpins it. Nothing is uninstalled.",
+        "German": "Stops tracking a mod by id, and unpins it. Nothing is uninstalled.",
+        "French": "Stops tracking a mod by id, and unpins it. Nothing is uninstalled.",
+        "Japanese": "Stops tracking a mod by id, and unpins it. Nothing is uninstalled."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32"
+      }
+    },
+    "/mods untrackcollection": {
+      "Command": "untrackcollection",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "Stops following a mod.io collection. Nothing is uninstalled.",
+        "Russian": "Stops following a mod.io collection. Nothing is uninstalled.",
+        "German": "Stops following a mod.io collection. Nothing is uninstalled.",
+        "French": "Stops following a mod.io collection. Nothing is uninstalled.",
+        "Japanese": "Stops following a mod.io collection. Nothing is uninstalled."
+      },
+      "Parameters": {
+        "Arg1": "collectionId,Int32"
+      }
+    },
+    "/mods version": {
+      "Command": "version",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "mods",
+      "Description": {
+        "English": "For a mod that ships several versions (one per language, say), chooses which installs, by name or part of it: /mods version 4358905, English.",
+        "Russian": "For a mod that ships several versions (one per language, say), chooses which installs, by name or part of it: /mods version 4358905, English.",
+        "German": "For a mod that ships several versions (one per language, say), chooses which installs, by name or part of it: /mods version 4358905, English.",
+        "French": "For a mod that ships several versions (one per language, say), chooses which installs, by name or part of it: /mods version 4358905, English.",
+        "Japanese": "For a mod that ships several versions (one per language, say), chooses which installs, by name or part of it: /mods version 4358905, English."
+      },
+      "Parameters": {
+        "Arg1": "modId,Int32",
+        "Arg2": "name,String"
+      }
+    },
     "/money accounts": {
       "Command": "accounts",
       "Level": "User",
@@ -3341,6 +3630,20 @@
         "Arg1": "account,BankAccount",
         "Arg2": "target,User"
       }
+    },
+    "/money auditors": {
+      "Command": "auditors",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "money",
+      "Description": {
+        "English": "Lists the account auditors and the rights each holds.",
+        "Russian": "Lists the account auditors and the rights each holds.",
+        "German": "Lists the account auditors and the rights each holds.",
+        "French": "Lists the account auditors and the rights each holds.",
+        "Japanese": "Lists the account auditors and the rights each holds."
+      },
+      "Parameters": {}
     },
     "/money cancelalldebtfromplayer": {
       "Command": "cancelalldebtfromplayer",
@@ -3459,6 +3762,22 @@
         "Arg2": "target,User"
       }
     },
+    "/money removeauditor": {
+      "Command": "removeauditor",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "money",
+      "Description": {
+        "English": "Removes a user from the account auditors.",
+        "Russian": "Removes a user from the account auditors.",
+        "German": "Removes a user from the account auditors.",
+        "French": "Removes a user from the account auditors.",
+        "Japanese": "Removes a user from the account auditors."
+      },
+      "Parameters": {
+        "Arg1": "userIdOrName,String"
+      }
+    },
     "/money setaccountowner": {
       "Command": "setaccountowner",
       "Level": "Admin",
@@ -3474,6 +3793,23 @@
       "Parameters": {
         "Arg1": "account,BankAccount",
         "Arg2": "target,User"
+      }
+    },
+    "/money setauditor": {
+      "Command": "setauditor",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "money",
+      "Description": {
+        "English": "Makes a user an account auditor, or changes their rights. Rights are any of balances, accounthistories, shophistories, or all (default): /money setauditor Name, balances shophistories",
+        "Russian": "Makes a user an account auditor, or changes their rights. Rights are any of balances, accounthistories, shophistories, or all (default): /money setauditor Name, balances shophistories",
+        "German": "Makes a user an account auditor, or changes their rights. Rights are any of balances, accounthistories, shophistories, or all (default): /money setauditor Name, balances shophistories",
+        "French": "Makes a user an account auditor, or changes their rights. Rights are any of balances, accounthistories, shophistories, or all (default): /money setauditor Name, balances shophistories",
+        "Japanese": "Makes a user an account auditor, or changes their rights. Rights are any of balances, accounthistories, shophistories, or all (default): /money setauditor Name, balances shophistories"
+      },
+      "Parameters": {
+        "Arg1": "userIdOrName,String",
+        "Arg2": "rights,String"
       }
     },
     "/money spawnaccounts": {
@@ -7366,6 +7702,41 @@
       },
       "Parameters": {
         "Arg1": "nestingIterations,Int32"
+      }
+    },
+    "/test generatebigeconomydata": {
+      "Command": "generatebigeconomydata",
+      "Level": "DevTier",
+      "ShortCut": "genecodatabig",
+      "Parent": "test",
+      "Description": {
+        "English": "Seed the economy journal like a busy server: every carriable item on the market, many players, and at least the given number of item units traded on every single day of the world\\'s life.",
+        "Russian": "Seed the economy journal like a busy server: every carriable item on the market, many players, and at least the given number of item units traded on every single day of the world\\'s life.",
+        "German": "Seed the economy journal like a busy server: every carriable item on the market, many players, and at least the given number of item units traded on every single day of the world\\'s life.",
+        "French": "Seed the economy journal like a busy server: every carriable item on the market, many players, and at least the given number of item units traded on every single day of the world\\'s life.",
+        "Japanese": "Seed the economy journal like a busy server: every carriable item on the market, many players, and at least the given number of item units traded on every single day of the world\\'s life."
+      },
+      "Parameters": {
+        "Arg1": "players,Int32",
+        "Arg2": "unitsPerDay,Int32"
+      }
+    },
+    "/test generateeconomydata": {
+      "Command": "generateeconomydata",
+      "Level": "DevTier",
+      "ShortCut": "genecodata",
+      "Parent": "test",
+      "Description": {
+        "English": "Seed the economy journal with synthetic sales, transfers, taxes and shops spread over the whole life of the world. Pass days to cover only the most recent ones.",
+        "Russian": "Seed the economy journal with synthetic sales, transfers, taxes and shops spread over the whole life of the world. Pass days to cover only the most recent ones.",
+        "German": "Seed the economy journal with synthetic sales, transfers, taxes and shops spread over the whole life of the world. Pass days to cover only the most recent ones.",
+        "French": "Seed the economy journal with synthetic sales, transfers, taxes and shops spread over the whole life of the world. Pass days to cover only the most recent ones.",
+        "Japanese": "Seed the economy journal with synthetic sales, transfers, taxes and shops spread over the whole life of the world. Pass days to cover only the most recent ones."
+      },
+      "Parameters": {
+        "Arg1": "days,Int32",
+        "Arg2": "players,Int32",
+        "Arg3": "sales,Int32"
       }
     },
     "/test giveremoveitems": {

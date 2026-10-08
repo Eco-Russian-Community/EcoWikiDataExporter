@@ -561,11 +561,11 @@
         "Japanese": "猟師"
       },
       "Description": {
-        "English": "Hunting animals provides a great source of nutritious food and their skins can be used in a variety of crafting projects.",
-        "Russian": "Охота на животных является отличным источником пищи, а их шкуры могут быть использованы для создания различных предметов.",
-        "German": "Die Jagd auf Tiere bietet eine große Quelle nahrhafter Lebensmittel, und ihre Häute können in einer Vielzahl von Herstellungsprojekten verwendet werden.",
-        "French": "Chasser des animaux constitue une excellente source de nourriture nutritive et leur peau peut être utilisée dans diverses fabrications d'objets.",
-        "Japanese": "動物の狩猟は栄養価の高い食料の優れた供給源であり、その皮はさまざまな工芸プロジェクトに使用できます。"
+        "English": "Hunters track and harvest animals, turning their carcasses into meat and nutritious food, and transform their skins, pelts and wool into usable blocks, fabrics and other tailored items.",
+        "Russian": "Hunters track and harvest animals, turning their carcasses into meat and nutritious food, and transform their skins, pelts and wool into usable blocks, fabrics and other tailored items.",
+        "German": "Hunters track and harvest animals, turning their carcasses into meat and nutritious food, and transform their skins, pelts and wool into usable blocks, fabrics and other tailored items.",
+        "French": "Hunters track and harvest animals, turning their carcasses into meat and nutritious food, and transform their skins, pelts and wool into usable blocks, fabrics and other tailored items.",
+        "Japanese": "Hunters track and harvest animals, turning their carcasses into meat and nutritious food, and transform their skins, pelts and wool into usable blocks, fabrics and other tailored items."
       },
       "SkillID": "HunterSkill",
       "MaxLevel": 7,
@@ -966,29 +966,6 @@
       "RootSkill": "Smith",
       "PlayerDefaultSkill": false
     },
-    "Tailor": {
-      "Name": {
-        "English": "Tailor",
-        "Russian": "Портной",
-        "German": "Schneider",
-        "French": "Tailleur",
-        "Japanese": "裁縫"
-      },
-      "Description": {
-        "English": "Tailorings work with cloth to make high-end furniture.and clothing that provides special bonuses when worn.",
-        "Russian": "Портные работают с тканью, чтобы создавать высококачественную мебель и одежду, которая даёт особые бонусы при ношении.",
-        "German": "Schneider arbeiten mit Stoff, um hochwertige Möbel und Kleidung herzustellen, die beim Tragen besondere Boni bieten.",
-        "French": "Les couturiers travaillent avec du tissu pour fabriquer des meubles haut de gamme et des vêtements qui offrent des bonus spéciaux lorsqu'ils sont portés.",
-        "Japanese": "テーラリングは布地を使って高級家具や、着用すると特別なボーナスをもたらす衣服を作ります。"
-      },
-      "SkillID": "TailorSkill",
-      "MaxLevel": 7,
-      "Tier": 1,
-      "SpecialtyCost": 1,
-      "IsRoot": true,
-      "RootSkill": "Tailor",
-      "PlayerDefaultSkill": false
-    },
     "Tailoring": {
       "Name": {
         "English": "Tailoring",
@@ -1009,7 +986,7 @@
       "Tier": 2,
       "SpecialtyCost": 2,
       "IsRoot": false,
-      "RootSkill": "Tailor",
+      "RootSkill": "Hunter",
       "PlayerDefaultSkill": false
     }
   }

@@ -19466,13 +19466,7 @@
           "IsStatic": true
         }
       },
-      "Garbages": {
-        "StoneRubble": {
-          "Name": "Stone Rubble",
-          "ID": "CrushedMixedRockItem",
-          "Quantity": "100"
-        }
-      }
+      "Garbages": {}
     },
     "CrushedCopperLv2Recipe": {
       "CraftTime": "42",

@@ -3917,7 +3917,8 @@
       "IsVisibleInFilter": false,
       "Items": [
         "Butchery",
-        "Hunting"
+        "Hunting",
+        "Tailoring"
       ]
     },
     "Industrial": {
@@ -5172,7 +5173,6 @@
         "Smelting",
         "Smith",
         "Survivalist",
-        "Tailor",
         "Tailoring",
         "Hands"
       ]
@@ -7192,8 +7192,7 @@
         "Mason",
         "Scientist",
         "Smith",
-        "Survivalist",
-        "Tailor"
+        "Survivalist"
       ]
     },
     "Raw Food": {
@@ -8115,23 +8114,6 @@
       "IsVisibleInFilter": false,
       "Items": [
         "Self Improvement"
-      ]
-    },
-    "Tailor Specialty": {
-      "ID": "Tailor Specialty",
-      "Name": {
-        "English": "Tailor Specialty",
-        "Russian": "Портной",
-        "German": "Schneiderberuf",
-        "French": "Spécialité tailleur",
-        "Japanese": "テーラー専門"
-      },
-      "Hidden": false,
-      "IsVisibleInTooltip": false,
-      "IsVisibleInEcopedia": false,
-      "IsVisibleInFilter": false,
-      "Items": [
-        "Tailoring"
       ]
     },
     "Tamper": {

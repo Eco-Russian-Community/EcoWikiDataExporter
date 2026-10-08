@@ -213,8 +213,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -303,8 +303,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -393,8 +393,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -483,8 +483,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -573,8 +573,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -663,8 +663,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -753,8 +753,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -857,8 +857,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -888,8 +888,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Advanced Combustion Engine": {
@@ -1064,8 +1064,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -1196,8 +1196,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -2131,8 +2131,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -2306,8 +2306,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -2481,8 +2481,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -2859,8 +2859,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -3034,8 +3034,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -3209,8 +3209,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -3559,8 +3559,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -3760,8 +3760,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Baked Beet": {
@@ -3789,8 +3789,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Baked Corn": {
@@ -3818,8 +3818,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Baked Heart Of Palm": {
@@ -3847,8 +3847,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Baked Meat": {
@@ -4302,8 +4302,8 @@
       "MaxStackSize": 10,
       "Tags": [
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Barrel Cactus Seed": {
@@ -4454,8 +4454,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Basic Engineering Skill Book": {
@@ -5062,8 +5062,8 @@
         "Herbivore Feed",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Beet Greens": {
@@ -5697,8 +5697,8 @@
       "Tags": [
         "Modules",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -5786,8 +5786,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Explosives",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Blasting Charge": {
@@ -6216,8 +6216,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Boiler": {
@@ -6472,8 +6472,8 @@
         "Bread",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Brick": {
@@ -6499,8 +6499,8 @@
       "Tags": [
         "Constructable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Brick Fireplace": {
@@ -6831,8 +6831,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -7076,8 +7076,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Camera Film": {
@@ -7670,8 +7670,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -7765,8 +7765,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -7885,8 +7885,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -7947,8 +7947,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -8164,8 +8164,8 @@
       "Weight": 100,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Cellulose Insulation": {
@@ -8297,8 +8297,8 @@
       "Weight": 100,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Ceramic Scrap": {
@@ -8413,8 +8413,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Living Room"
@@ -8692,8 +8692,8 @@
         "Charred Vegetable",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Charred Corn": {
@@ -8909,8 +8909,8 @@
         "Charred Fruit",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Charred Sausage": {
@@ -9128,11 +9128,11 @@
         "Japanese": "化学汚染物質"
       },
       "Description": {
-        "English": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water ? contain it, or keep it as far from anything living as possible.",
-        "Russian": "Ужасная куча токсичных, крайне загрязняющих химических отходов. Она опустошает землю вокруг себя и просачивается в близлежащую почву и воду — локализуй её или держи как можно дальше от всего живого.",
-        "German": "Ein schrecklicher Haufen giftiger, extrem umweltschädlicher chemischer Abfälle. Er verwüstet den Boden um sich herum und sickert in den nahegelegenen Boden und das Wasser ein – schottet ihn ab oder haltet ihn so weit wie möglich von allem Lebendigen fern.",
-        "French": "Un horrible tas de déchets chimiques toxiques et ultra-polluants. Ça dévaste le sol autour et s'infiltre dans la terre et l'eau à proximité… Contenez-le, ou gardez-le aussi loin que possible de tout ce qui vit.",
-        "Japanese": "有毒で極めて汚染度の高い化学廃棄物の恐ろしい山だ。周囲の地面を荒廃させ、近くの土壌や水に浸透していく……これを封じ込めるか、あるいはあらゆる生物から可能な限り遠ざけておく必要がある。"
+        "English": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water — contain it, or keep it as far from anything living as possible.",
+        "Russian": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water — contain it, or keep it as far from anything living as possible.",
+        "German": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water — contain it, or keep it as far from anything living as possible.",
+        "French": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water — contain it, or keep it as far from anything living as possible.",
+        "Japanese": "A horrid heap of toxic, ultra-polluting chemical waste. Devastates the ground around it and seeps into nearby soil and water — contain it, or keep it as far from anything living as possible."
       },
       "Hidden": false,
       "Tier": 0,
@@ -9590,8 +9590,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -9790,8 +9790,8 @@
         "Hardwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Birch Table": {
@@ -9817,8 +9817,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -9963,8 +9963,8 @@
         "Softwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Cedar Table": {
@@ -9990,8 +9990,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10108,8 +10108,8 @@
         "Hardwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Ceiba Table": {
@@ -10135,8 +10135,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10280,8 +10280,8 @@
         "Softwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Fir Table": {
@@ -10307,8 +10307,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10423,8 +10423,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10540,8 +10540,8 @@
         "Composite Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Joshua Table": {
@@ -10567,8 +10567,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10598,8 +10598,8 @@
         "Composite Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Lumber Bench": {
@@ -10711,8 +10711,8 @@
       "Tags": [
         "Not In Browser",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Storage Container",
         "Wardrobe"
       ]
@@ -10740,8 +10740,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -10858,8 +10858,8 @@
         "Hardwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Oak Table": {
@@ -10885,8 +10885,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -11002,8 +11002,8 @@
         "Composite Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Palm Table": {
@@ -11029,8 +11029,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -11147,8 +11147,8 @@
         "Softwood Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Redwood Table": {
@@ -11174,8 +11174,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -11291,8 +11291,8 @@
         "Composite Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Saguaro Table": {
@@ -11318,8 +11318,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -11434,8 +11434,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -11551,8 +11551,8 @@
         "Composite Lumber",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Composite Spruce Table": {
@@ -11578,8 +11578,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -12252,8 +12252,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Pigment",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Copper Ore": {
@@ -13061,8 +13061,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Product"
       ]
     },
@@ -13436,8 +13436,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Coal": {
@@ -13493,8 +13493,8 @@
       "Tags": [
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Gneiss": {
@@ -13577,8 +13577,8 @@
         "Silica",
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Iron Ore": {
@@ -13660,8 +13660,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Product",
         "Ingredient",
+        "Product",
         "Garbage"
       ]
     },
@@ -13714,8 +13714,8 @@
         "Silica",
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Shale": {
@@ -13742,8 +13742,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Slag": {
@@ -13797,8 +13797,8 @@
       "Tags": [
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Culinary Research Paper Advanced": {
@@ -13824,8 +13824,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Culinary Research Paper Basic": {
@@ -13878,8 +13878,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Culture": {
@@ -14058,8 +14058,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Pigment",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Daisy": {
@@ -14480,8 +14480,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -14510,8 +14510,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Dendrology Research Paper Basic": {
@@ -14564,8 +14564,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Derpy Hat": {
@@ -15074,8 +15074,8 @@
       "Tags": [
         "World Object",
         "Usable",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Easel": {
@@ -15325,8 +15325,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -15930,8 +15930,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Engineering Research Paper Modern": {
@@ -15957,8 +15957,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Epoxy": {
@@ -16503,8 +16503,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -16697,8 +16697,8 @@
         "Herbivore Feed",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Fern Spore": {
@@ -17659,8 +17659,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -18043,8 +18043,8 @@
         "Fried Vegetable",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Fried Vegetables": {
@@ -18286,8 +18286,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Galaxy Vase": {
@@ -18314,8 +18314,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -18360,11 +18360,11 @@
         "Japanese": "ゴミ分別機"
       },
       "Description": {
-        "English": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractioanl composition of the incoming waste, producing Mixed blocks of varies types, Bio Residue, Metal Scrap, Construction Scrap and Industrial Waste.",
-        "Russian": "Механическая сортировочная система, которая перерабатывает смешанный мусор и разделяет его на виды для первичной переработки. Материалы классифицируются в соответствии с фракционным составом поступающих отходов, в результате чего образуются: смешанные блоки различных типов, биологические, металлический лом, строительный мусор и промышленные отходы.",
-        "German": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractioanl composition of the incoming waste, producing Mixed blocks of varies types, Bio Residue, Metal Scrap, Construction Scrap and Industrial Waste.",
-        "French": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractioanl composition of the incoming waste, producing Mixed blocks of varies types, Bio Residue, Metal Scrap, Construction Scrap and Industrial Waste.",
-        "Japanese": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractioanl composition of the incoming waste, producing Mixed blocks of varies types, Bio Residue, Metal Scrap, Construction Scrap and Industrial Waste."
+        "English": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractional composition of the incoming waste, producing mixed Biowaste, Metal Scrap, Construction Scrap and Industrial Waste blocks. A line that received a single material produces that material directly.",
+        "Russian": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractional composition of the incoming waste, producing mixed Biowaste, Metal Scrap, Construction Scrap and Industrial Waste blocks. A line that received a single material produces that material directly.",
+        "German": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractional composition of the incoming waste, producing mixed Biowaste, Metal Scrap, Construction Scrap and Industrial Waste blocks. A line that received a single material produces that material directly.",
+        "French": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractional composition of the incoming waste, producing mixed Biowaste, Metal Scrap, Construction Scrap and Industrial Waste blocks. A line that received a single material produces that material directly.",
+        "Japanese": "A mechanical sorting system that processes mixed garbage and separates it into primary recycling types. Materials are categorized according to the fractional composition of the incoming waste, producing mixed Biowaste, Metal Scrap, Construction Scrap and Industrial Waste blocks. A line that received a single material produces that material directly."
       },
       "Hidden": false,
       "Tier": 0,
@@ -18560,8 +18560,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Gathering Research Paper Basic": {
@@ -18667,8 +18667,8 @@
       "Tags": [
         "Basic Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Geology Research Paper Modern": {
@@ -18694,8 +18694,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Giant Cactus Fruit": {
@@ -18776,8 +18776,8 @@
       "Tags": [
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Glass Insulation": {
@@ -18825,8 +18825,8 @@
       "Weight": 75,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Glass Scrap": {
@@ -19092,8 +19092,8 @@
         "Currency",
         "Metal",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Gold Concentrate": {
@@ -19945,8 +19945,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -20008,8 +20008,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Hardwood Lumber Bench": {
@@ -20121,8 +20121,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Storage Container",
         "Wardrobe",
@@ -20153,8 +20153,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -20183,8 +20183,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -20373,8 +20373,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Product"
       ]
     },
@@ -20388,11 +20388,11 @@
         "Japanese": "重鉱物除染剤"
       },
       "Description": {
-        "English": "Mineral binder that immobilizes heavy-metal contamination ? the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
-        "Russian": "Mineral binder that immobilizes heavy-metal contamination ? the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
-        "German": "Mineral binder that immobilizes heavy-metal contamination ? the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
-        "French": "Mineral binder that immobilizes heavy-metal contamination ? the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
-        "Japanese": "Mineral binder that immobilizes heavy-metal contamination ? the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours."
+        "English": "Mineral binder that immobilizes heavy-metal contamination — the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
+        "Russian": "Mineral binder that immobilizes heavy-metal contamination — the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
+        "German": "Mineral binder that immobilizes heavy-metal contamination — the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
+        "French": "Mineral binder that immobilizes heavy-metal contamination — the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours.",
+        "Japanese": "Mineral binder that immobilizes heavy-metal contamination — the only way down once a claim passes the self-cleaning ceiling. Apply it to any ground or built block on a claim: one unit cancels one unit of Heavy Mineral Pollution source, and half of the decontaminant waiting on an area takes effect every 24 hours."
       },
       "Hidden": false,
       "Tier": 0,
@@ -20413,11 +20413,11 @@
         "Japanese": "重金属汚染物質"
       },
       "Description": {
-        "English": "A concentrated source of pollutants from heavy industry ? leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas.",
-        "Russian": "Концентрированный источник загрязняющих веществ от тяжёлой промышленности — вымытые металлы и разложившиеся отвалы. Сильно загрязняет почву; его нужно изолировать или закапывать подальше от населённых пунктов.",
-        "German": "Eine konzentrierte Schadstoffquelle aus der Schwerindustrie – ausgewaschene Metalle und zersetzte Abraumhalden. Verursacht eine starke Bodenverseuchung; isoliere oder vergrabe sie weit entfernt von bewohnten Gebieten.",
-        "French": "Une source concentrée de polluants issus de l'industrie lourde : métaux lessivés et résidus miniers dégradés. Contamine gravement le sol ; il faut l'isoler ou l'enfouir loin des zones habitées.",
-        "Japanese": "重工業由来の汚染物質の集中源――浸出金属や劣化した尾鉱。土壌を深刻に汚染するため、居住地域から遠く離れた場所に隔離するか、埋める必要がある。"
+        "English": "A concentrated source of pollutants from heavy industry — leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas.",
+        "Russian": "A concentrated source of pollutants from heavy industry — leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas.",
+        "German": "A concentrated source of pollutants from heavy industry — leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas.",
+        "French": "A concentrated source of pollutants from heavy industry — leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas.",
+        "Japanese": "A concentrated source of pollutants from heavy industry — leached metals and degraded tailings. Severely contaminates the ground; isolate or bury it far from inhabited areas."
       },
       "Hidden": false,
       "Tier": 0,
@@ -20501,8 +20501,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Henley": {
@@ -20639,8 +20639,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Storage Container",
         "Wardrobe",
@@ -20757,8 +20757,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -20932,8 +20932,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -20962,8 +20962,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -22045,8 +22045,8 @@
       "Weight": 5000,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Iron Axe": {
@@ -22409,8 +22409,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Iron Machete": {
@@ -23471,8 +23471,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Large Door",
+        "Usable",
         "On Off",
         "Product"
       ]
@@ -24374,8 +24374,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Large Door",
+        "Usable",
         "On Off",
         "Product"
       ]
@@ -25273,8 +25273,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Large Door",
+        "Usable",
         "On Off",
         "Product"
       ]
@@ -25302,8 +25302,8 @@
       "Tags": [
         "Not In Browser",
         "World Object",
-        "Usable",
-        "Has Table Surface"
+        "Has Table Surface",
+        "Usable"
       ]
     },
     "Large Wooden Ship Frame": {
@@ -26026,8 +26026,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26056,8 +26056,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26086,8 +26086,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26116,8 +26116,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26146,8 +26146,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26176,8 +26176,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26206,8 +26206,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26236,8 +26236,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26266,8 +26266,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26296,8 +26296,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26326,8 +26326,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26356,8 +26356,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26386,8 +26386,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26416,8 +26416,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26446,8 +26446,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26476,8 +26476,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -26590,8 +26590,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Lumber Bench": {
@@ -26703,8 +26703,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Storage Container",
         "Wardrobe",
@@ -26735,8 +26735,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -26792,8 +26792,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -26953,8 +26953,8 @@
       "Tags": [
         "Modules",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -27260,8 +27260,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -27659,8 +27659,8 @@
       "Weight": 5000,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Metal Rudder": {
@@ -27741,8 +27741,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Metallurgy Research Paper Basic": {
@@ -27795,8 +27795,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Meteor Shard": {
@@ -29100,8 +29100,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -29275,8 +29275,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -29450,8 +29450,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -29649,8 +29649,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -30037,8 +30037,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -30487,8 +30487,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -31228,8 +31228,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Product"
       ]
     },
@@ -32308,8 +32308,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -32451,8 +32451,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Outdoor"
@@ -32585,8 +32585,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Polluted Salt Water": {
@@ -32761,8 +32761,8 @@
       "Tags": [
         "Modules",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -33564,8 +33564,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -33827,7 +33827,7 @@
       },
       "Hidden": false,
       "Tier": 0,
-      "Weight": 1000,
+      "Weight": 1500,
       "MaxStackSize": 1,
       "Tags": [
         "Tool",
@@ -33938,8 +33938,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -34075,8 +34075,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Product"
       ]
     },
@@ -34161,8 +34161,8 @@
         "Concrete",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Remote Detonator": {
@@ -34214,8 +34214,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Product"
@@ -35691,8 +35691,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Product"
@@ -35910,8 +35910,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Storage Container",
         "Product",
@@ -36060,11 +36060,11 @@
         "Japanese": "船大工の帽子"
       },
       "Description": {
-        "English": "A simple sailor's cap, don?t lose it or you might be walking on a plank.",
-        "Russian": "Простая моряцкая кепка, лучше не потеряйте, а то можете и по доске пройтись.",
-        "German": "Eine einfache Matrosenmütze – verlier sie nicht, sonst landest du vielleicht auf der Planke.",
-        "French": "Une simple casquette de marin, à ne pas perdre, sous peine de marcher sur une planche.",
-        "Japanese": "シンプルなセーラーキャップ、失くさないと板の上を歩くことになるかもしれない。"
+        "English": "A simple sailor's cap, don’t lose it or you might be walking on a plank.",
+        "Russian": "A simple sailor's cap, don’t lose it or you might be walking on a plank.",
+        "German": "A simple sailor's cap, don’t lose it or you might be walking on a plank.",
+        "French": "A simple sailor's cap, don’t lose it or you might be walking on a plank.",
+        "Japanese": "A simple sailor's cap, don’t lose it or you might be walking on a plank."
       },
       "Hidden": false,
       "Tier": 0,
@@ -36247,8 +36247,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Large Door",
+        "Usable",
         "On Off",
         "Product"
       ]
@@ -36301,8 +36301,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36331,8 +36331,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36361,8 +36361,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36415,8 +36415,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36445,8 +36445,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36475,8 +36475,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36505,8 +36505,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36535,8 +36535,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36565,8 +36565,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36595,8 +36595,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36625,8 +36625,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36655,8 +36655,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36685,8 +36685,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36715,8 +36715,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36745,8 +36745,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -36775,8 +36775,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -38016,8 +38016,8 @@
       "Tags": [
         "Not In Browser",
         "World Object",
-        "Usable",
-        "Has Table Surface"
+        "Has Table Surface",
+        "Usable"
       ]
     },
     "Small Nylon Bunting Green": {
@@ -39652,8 +39652,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -39715,8 +39715,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Softwood Lumber Bench": {
@@ -39828,8 +39828,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Storage Container",
         "Wardrobe",
@@ -39860,8 +39860,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -39890,8 +39890,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -41649,8 +41649,8 @@
       "Tags": [
         "Mountable",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Product"
       ]
     },
@@ -42588,8 +42588,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -42677,8 +42677,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
@@ -42809,8 +42809,8 @@
       "Tags": [
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Sulfuric Acid": {
@@ -43049,8 +43049,8 @@
         "Housing",
         "Can Be On Surface",
         "World Object",
-        "Usable",
         "Can Hold Flowers",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -43384,8 +43384,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -43505,8 +43505,8 @@
         "On Off",
         "Storage Container",
         "Housing Objects",
-        "Product",
         "Ingredient",
+        "Product",
         "Lighting"
       ]
     },
@@ -44162,11 +44162,11 @@
         "Japanese": "工具台"
       },
       "Description": {
-        "English": "A place to craft and fix up tools.",
-        "Russian": "Место для изготовления и ремонта инструментов.",
-        "German": "Ein Ort zum Erstellen und Reparieren von Werkzeugen.",
-        "French": "Un endroit pour fabriquer et réparer des outils.",
-        "Japanese": "道具の製作と修理をする場所。"
+        "English": "A place to craft and fix up tools. It also recycles salvageable items into mixed garbage, less efficiently than a Recycler.",
+        "Russian": "A place to craft and fix up tools. It also recycles salvageable items into mixed garbage, less efficiently than a Recycler.",
+        "German": "A place to craft and fix up tools. It also recycles salvageable items into mixed garbage, less efficiently than a Recycler.",
+        "French": "A place to craft and fix up tools. It also recycles salvageable items into mixed garbage, less efficiently than a Recycler.",
+        "Japanese": "A place to craft and fix up tools. It also recycles salvageable items into mixed garbage, less efficiently than a Recycler."
       },
       "Hidden": false,
       "Tier": 0,
@@ -45486,8 +45486,8 @@
       "MaxStackSize": 1,
       "Tags": [
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "On Off",
         "Crafting Table",
         "Housing Objects",
@@ -46032,8 +46032,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "White Bursage Seed": {
@@ -46159,8 +46159,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Wild Stew": {
@@ -46534,8 +46534,8 @@
         "Storage Container",
         "Vehicles",
         "Mountable",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Wood Double Shelf": {
@@ -46561,8 +46561,8 @@
       "Tags": [
         "Housing",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Decoration"
@@ -46885,8 +46885,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -47465,8 +47465,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "World Object",
-        "Usable",
         "Large Door",
+        "Usable",
         "On Off",
         "Product"
       ]
@@ -47496,8 +47496,8 @@
         "Mountable",
         "World Object",
         "Usable",
-        "Housing Objects",
         "Bed",
+        "Housing Objects",
         "Product",
         "Bedroom"
       ]
@@ -47617,8 +47617,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Wool Carpet": {
@@ -47720,8 +47720,8 @@
       "Weight": 20,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Work Backpack": {
@@ -47825,8 +47825,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Yeast": {
@@ -47852,8 +47852,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Yellow Powder": {
@@ -47878,8 +47878,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Pigment",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Zataku Table": {
@@ -47906,8 +47906,8 @@
         "Housing",
         "Mountable",
         "World Object",
-        "Usable",
         "Has Table Surface",
+        "Usable",
         "Housing Objects",
         "Product",
         "Seating"
