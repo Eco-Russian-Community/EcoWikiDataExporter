@@ -5,7 +5,7 @@ local RecipeUtils = require('Module:RecipeUtils')
 local IconUtils = require('Module:IconUtils')
 local InfoCardUtils = require('Module:InfoCardUtils')
 
-local Lang = Utils.getLanguageName()
+local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
