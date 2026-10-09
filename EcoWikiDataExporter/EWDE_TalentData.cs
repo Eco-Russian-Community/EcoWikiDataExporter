@@ -54,13 +54,22 @@ namespace Eco.Mods.EcoWikiDataExporter
                     string TalentName = talentGroup.DisplayName.NotTranslated;
                     if (!TalentDataList.ContainsKey(TalentName))
                     {
-                        TalentData talentdata = new TalentData
+                        foreach (var talentType in talentGroup.Talents)
+                        {
+                            //if (!TalentManager.TypeToTalent.TryGetValue(talentType, out var talent)) continue;
+
+
+
+                        }    
+
+                            TalentData talentdata = new TalentData
                         {
                             Name = Localization(TalentName),
                             Description = Localization(CleanText(talentGroup.GetDescription.NotTranslated)),
                             IconName = talentGroup.IconName,
                             SkillID = talentGroup.OwningSkill.Name,
-                            Level = talentGroup.Level.ToString()
+                            Level = talentGroup.Level
+                            
                         };
 
                         TalentDataList.Add(TalentName, talentdata);
@@ -68,8 +77,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                 }
             }
             // writes to json file
-            string jsonString = JsonConvert.SerializeObject(new { talents = TalentDataList }, Formatting.Indented);
-            WriteDictionaryToJsonFile("Talents", jsonString);
+            string TalentDataListjsonString = JsonConvert.SerializeObject(new { talents = TalentDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Talents", TalentDataListjsonString);
         }
     }
 }

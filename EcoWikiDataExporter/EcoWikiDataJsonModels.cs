@@ -132,7 +132,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public TranslateData Description { get; set; }
             public string IconName { get; set; }
             public string SkillID { get; set; }
-            public string Level { get; set; }
+            public int Level { get; set; }
         }
 
         public class ItemData
