@@ -7,6 +7,7 @@ local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
+	local TreeName
 	if (Lang == 'English') then TreeName = PageName else TreeName = Utils.TreeSearch(PageName) end
 	local TreeData = mw.loadData( "Module:TreeData" )
     local Tree = TreeData.trees[TreeName]

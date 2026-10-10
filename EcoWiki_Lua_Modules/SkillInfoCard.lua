@@ -7,6 +7,7 @@ local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
+	local SkillName
 	if (Lang == 'English') then SkillName = PageName else SkillName = Utils.SkillSearch(PageName) end
 	local SkillData = mw.loadData( "Module:SkillData" )
     local Skill = SkillData.skills[SkillName]

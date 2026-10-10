@@ -15,6 +15,9 @@ function p.main()
 
 	for k,v in pairs(achievements) do
 		local row = ''
+		local IconName = ''
+		local achievementName = ''
+		local achievementDescription = ''
 		row = row .. '<div class="col d-flex align-items-start">'
 		if (Utils.checkImage(v.IconName .. '_Icon.png') == "True") then IconName = v.IconName else IconName = 'NoItem' end
 		row = row .. '[[file:' .. IconName.. '_Icon.png|64px|link=|class=IconGrid]]'

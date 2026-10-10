@@ -13,7 +13,7 @@ function p.main()
 	local text = '<div class="col-lg-12"><Center><h2 class="title">' .. Utils.Translate("Skills") .. '</h2></Center></div>';
 
 	for Pname,Pdata in pairs(skillList) do
-
+		local ProfessionName
 		if Pdata.IsRoot == true then 
 		if (Pdata.Name[Lang] == "") then ProfessionName = Pdata.Name.English else ProfessionName = Pdata.Name[Lang] end
 		
@@ -26,6 +26,7 @@ function p.main()
 		text = text .. '<div class="card"> <div class="card-body">';
 
 		for Sname,Sdata in pairs(skillList) do
+			local SpecialtyName
 			if Sdata.IsRoot == false and Sdata.RootSkill == Pname then 
 				if (Sdata.Name[Lang] == "") then SpecialtyName = Sdata.Name.English else SpecialtyName = Sdata.Name[Lang] end
 				text = text .. IconUtils.main{id = Sdata.SkillID , size = 32, style = 1, link = SpecialtyName} .. '  ';

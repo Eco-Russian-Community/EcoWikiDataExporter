@@ -7,6 +7,7 @@ local Lang = Utils.WikiLang
 
 function p.main(frame)
 	local PageName = frame.args[1]
+	local PlantName
 	if (Lang == 'English') then PlantName = PageName else PlantName = Utils.PlantSearch(PageName) end
 	local PlantData = mw.loadData( "Module:PlantData" )
     local Plant = PlantData.plants[PlantName]

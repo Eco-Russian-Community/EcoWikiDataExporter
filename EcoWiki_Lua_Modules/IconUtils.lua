@@ -3,12 +3,14 @@ local p = {}
 function p.main(param)
     local Utils = require('Module:Utils')
 
-    local Icon = ''
-    local IconStyle = ''
-    local IconSize = ''
-    local IconLink = ''
-    local IconBorder = ''
-    local IconCount = ''
+    local Icon
+    local IconStyle
+    local IconSize
+    local IconLink
+    local IconBorder
+    local IconCount
+    local IconTextLine
+    local IconTextBr
 
     local args = Utils.normalise(param)
 

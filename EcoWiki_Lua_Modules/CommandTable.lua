@@ -29,7 +29,7 @@ function p.main()
 		local CommandParameters = ''
 		local CommandParent = ''
 		local CommandShortCut = ''
-		local ARG1 = ''; ARG2 = ''; ARG3 = ''; ARG4 = ''; ARG5 = ''; ARG6 = ''; ARG7 = '';
+		local ARG1 = ''; local ARG2 = ''; local ARG3 = ''; local ARG4 = ''; local ARG5 = ''; local ARG6 = ''; local ARG7 = '';
 		TableRow = TableRow .. '<tr>'
 
 		if (CommandData.Parent ~= '') then CommandParent = CommandData.Parent .. " " end
