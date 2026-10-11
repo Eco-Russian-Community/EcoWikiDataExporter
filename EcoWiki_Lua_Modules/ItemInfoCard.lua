@@ -67,6 +67,11 @@ function p.main(frame)
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Item.Name.French .. ']]' end
 	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Item.Name.Japanese .. ']]' end
 	
+	if (Item.Hidden == true) then WikiText =  Utils.Mbox("info", Utils.Translate("This item is hidden"), "primary", "black") .. WikiText end
+
+	local descriptionpage = Item.Name[Lang] .. " - " .. Item.Description[Lang]
+	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
+	
 	return WikiText
 end
 
