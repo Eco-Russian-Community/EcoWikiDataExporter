@@ -34,6 +34,7 @@ function p.main(frame)
 	if (Lang ~= 'Russian') then WikiText =  WikiText .. '[[ru:' .. Plant.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Plant.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Plant.Name.French .. ']]' end
+	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Plant.Name.Japanese .. ']]' end
 	
 	return WikiText
 end

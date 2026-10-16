@@ -50,6 +50,7 @@ function p.main(frame)
 	if (Lang ~= 'Russian') then WikiText = WikiText .. '[[ru:' .. Biome.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText = WikiText .. '[[de:' .. Biome.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText = WikiText .. '[[fr:' .. Biome.Name.French .. ']]' end
+	if (Lang ~= 'Japanese') then WikiText = WikiText .. '[[ja:' .. Biome.Name.Japanese .. ']]' end
 	end
 	
     return WikiText

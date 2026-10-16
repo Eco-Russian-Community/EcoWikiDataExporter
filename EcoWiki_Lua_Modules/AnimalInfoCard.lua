@@ -4,6 +4,7 @@ local IconUtils = require('Module:IconUtils')
 local Lang = Utils.WikiLang
 
 function p.main(frame)
+	local AnimalName
 	local PageName = frame.args[1]
 	if (Lang == 'English') then AnimalName = PageName else AnimalName = Utils.AnimalSearch(PageName) end
 	local AnimalData = mw.loadData( "Module:AnimalData" )
@@ -31,7 +32,8 @@ function p.main(frame)
 	if (Lang ~= 'Russian') then WikiText =  WikiText .. '[[ru:' .. Animal.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Animal.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Animal.Name.French .. ']]' end
-	
+	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Animal.Name.Japanese .. ']]' end
+
 	local descriptionpage = Animal.Name[Lang] .. " - " .. Animal.Description[Lang]
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
 
