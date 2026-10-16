@@ -217,7 +217,7 @@ function p.TreeList()
     	if tonumber(TreeData.MaturityAgeDays) > 10 then TableRow = TableRow .. '<td>' .. Utils.Translate("None") ..' </td>' else TableRow = TableRow .. '<td>' .. TreeData.MaturityAgeDays .. ' </td>' end
     	TableRow = TableRow .. '<td>' .. TreeData.ResourceMax .. ' </td>'
     	if tonumber(TreeData.MaturityAgeDays) > 10 then TableRow = TableRow .. '<td>' .. Utils.Translate("None") ..' </td>' else TableRow = TableRow .. '<td>' .. TreeData.ResourceMax / TreeData.MaturityAgeDays .. ' </td>' end
-    	TableRow = TableRow .. '<td>' .. TreeData.ReleasesCO2TonsPerDay .. ' </td>'
+    	TableRow = TableRow .. '<td>' .. TreeData.CO2TonsPerDay .. ' </td>'
     	TableRow = TableRow .. '</tr>'
     
     	WikiText = WikiText .. TableRow
