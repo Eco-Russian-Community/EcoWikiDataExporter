@@ -17,7 +17,7 @@
       },
       "IconName": "AdvancedBakingAbundantTalentGroup",
       "SkillID": "AdvancedBakingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Another Beat: Milling": {
       "Name": {
@@ -36,7 +36,7 @@
       },
       "IconName": "MillingAnotherBeatTalentGroup",
       "SkillID": "MillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Arrow Recovery: Hunting": {
       "Name": {
@@ -55,7 +55,7 @@
       },
       "IconName": "HuntingArrowRecoveryTalentGroup",
       "SkillID": "HuntingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Better Axes: Blacksmith": {
       "Name": {
@@ -74,7 +74,7 @@
       },
       "IconName": "BlacksmithBetterAxesTalentGroup",
       "SkillID": "BlacksmithSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Brick Layer: Pottery": {
       "Name": {
@@ -93,7 +93,7 @@
       },
       "IconName": "PotteryBrickLayerTalentGroup",
       "SkillID": "PotterySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Bright Applications: Glassworking": {
       "Name": {
@@ -112,7 +112,7 @@
       },
       "IconName": "GlassworkingBrightApplicationsTalentGroup",
       "SkillID": "GlassworkingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Carbon Enrichment: Advanced Smelting": {
       "Name": {
@@ -131,7 +131,7 @@
       },
       "IconName": "AdvancedSmeltingCarbonEnrichmentTalentGroup",
       "SkillID": "AdvancedSmeltingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Ceramic Safety: Electronics": {
       "Name": {
@@ -150,7 +150,7 @@
       },
       "IconName": "ElectronicsCeramicSafetyTalentGroup",
       "SkillID": "ElectronicsSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Clay Mastery: Pottery": {
       "Name": {
@@ -169,7 +169,7 @@
       },
       "IconName": "PotteryClayMasteryTalentGroup",
       "SkillID": "PotterySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Cleanup Crew: Logging": {
       "Name": {
@@ -188,7 +188,7 @@
       },
       "IconName": "LoggingCleanupCrewTalentGroup",
       "SkillID": "LoggingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Coastal Rock: Advanced Masonry": {
       "Name": {
@@ -207,7 +207,7 @@
       },
       "IconName": "AdvancedMasonryCoastalRockTalentGroup",
       "SkillID": "AdvancedMasonrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Concrete Applications: Masonry": {
       "Name": {
@@ -226,7 +226,7 @@
       },
       "IconName": "MasonryConcreteApplicationsTalentGroup",
       "SkillID": "MasonrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Copper Enrichment: Smelting": {
       "Name": {
@@ -245,7 +245,7 @@
       },
       "IconName": "SmeltingCopperEnrichmentTalentGroup",
       "SkillID": "SmeltingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Crude Refining: Oil Drilling": {
       "Name": {
@@ -264,7 +264,7 @@
       },
       "IconName": "OilDrillingCrudeRefiningTalentGroup",
       "SkillID": "OilDrillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Custom Made: Tailoring": {
       "Name": {
@@ -283,7 +283,7 @@
       },
       "IconName": "TailoringCustomMadeTalentGroup",
       "SkillID": "TailoringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Deadeye: Hunting": {
       "Name": {
@@ -302,7 +302,7 @@
       },
       "IconName": "HuntingDeadeyeTalentGroup",
       "SkillID": "HuntingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Deeper Pockets: Self Improvement": {
       "Name": {
@@ -321,7 +321,7 @@
       },
       "IconName": "SelfImprovementDeeperPocketsTalentGroup",
       "SkillID": "SelfImprovementSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Double Speed: Glassworking": {
       "Name": {
@@ -340,7 +340,7 @@
       },
       "IconName": "GlassworkingDoubleSpeedTalentGroup",
       "SkillID": "GlassworkingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Dual Dexterity: Cooking": {
       "Name": {
@@ -359,7 +359,7 @@
       },
       "IconName": "CookingDualDexterityTalentGroup",
       "SkillID": "CookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Electrical Efficiency: Industry": {
       "Name": {
@@ -378,7 +378,7 @@
       },
       "IconName": "IndustryElectricalEfficiencyTalentGroup",
       "SkillID": "IndustrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Empower: Blacksmith": {
       "Name": {
@@ -397,7 +397,7 @@
       },
       "IconName": "BlacksmithEmpowerTalentGroup",
       "SkillID": "BlacksmithSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Enriched Soil: Fertilizers": {
       "Name": {
@@ -416,7 +416,7 @@
       },
       "IconName": "FertilizersEnrichedSoilTalentGroup",
       "SkillID": "FertilizersSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Etching Techniques: Electronics": {
       "Name": {
@@ -435,7 +435,7 @@
       },
       "IconName": "ElectronicsEtchingTechniquesTalentGroup",
       "SkillID": "ElectronicsSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Extra Effort: Carpentry": {
       "Name": {
@@ -454,7 +454,7 @@
       },
       "IconName": "CarpentryExtraEffortTalentGroup",
       "SkillID": "CarpentrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Extra Pans: Cooking": {
       "Name": {
@@ -473,7 +473,7 @@
       },
       "IconName": "CookingExtraPansTalentGroup",
       "SkillID": "CookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Fast Food: Cooking": {
       "Name": {
@@ -492,7 +492,7 @@
       },
       "IconName": "CookingFastFoodTalentGroup",
       "SkillID": "CookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Filled Meals: Baking": {
       "Name": {
@@ -511,7 +511,7 @@
       },
       "IconName": "BakingFilledMealsTalentGroup",
       "SkillID": "BakingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Fine Carpentry: Carpentry": {
       "Name": {
@@ -530,7 +530,7 @@
       },
       "IconName": "CarpentryFineCarpentryTalentGroup",
       "SkillID": "CarpentrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Flooring Fitter: Tailoring": {
       "Name": {
@@ -549,7 +549,7 @@
       },
       "IconName": "TailoringFlooringFitterTalentGroup",
       "SkillID": "TailoringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Flour It: Milling": {
       "Name": {
@@ -568,7 +568,7 @@
       },
       "IconName": "MillingFlourItTalentGroup",
       "SkillID": "MillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Focused Workflow: Cutting Edge Cooking": {
       "Name": {
@@ -587,7 +587,7 @@
       },
       "IconName": "CuttingEdgeCookingFocusedWorkflowTalentGroup",
       "SkillID": "CuttingEdgeCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Focused Workflow: Painting": {
       "Name": {
@@ -606,7 +606,7 @@
       },
       "IconName": "PaintingFocusedWorkflowTalentGroup",
       "SkillID": "PaintingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Focused Workflow: Paper Milling": {
       "Name": {
@@ -625,7 +625,7 @@
       },
       "IconName": "PaperMillingFocusedWorkflowTalentGroup",
       "SkillID": "PaperMillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Framed: Glassworking": {
       "Name": {
@@ -644,7 +644,7 @@
       },
       "IconName": "GlassworkingFramedTalentGroup",
       "SkillID": "GlassworkingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Frugal Workspace: Cutting Edge Cooking": {
       "Name": {
@@ -663,7 +663,7 @@
       },
       "IconName": "CuttingEdgeCookingFrugalWorkspaceTalentGroup",
       "SkillID": "CuttingEdgeCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Frugal Workspace: Painting": {
       "Name": {
@@ -682,7 +682,7 @@
       },
       "IconName": "PaintingFrugalWorkspaceTalentGroup",
       "SkillID": "PaintingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Frugal Workspace: Paper Milling": {
       "Name": {
@@ -701,7 +701,7 @@
       },
       "IconName": "PaperMillingFrugalWorkspaceTalentGroup",
       "SkillID": "PaperMillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Fruit Centric: Advanced Baking": {
       "Name": {
@@ -720,7 +720,7 @@
       },
       "IconName": "AdvancedBakingFruitCentricTalentGroup",
       "SkillID": "AdvancedBakingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Fruiturist: Gathering": {
       "Name": {
@@ -739,7 +739,7 @@
       },
       "IconName": "GatheringFruituristTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Fuel Efficiency: Smelting": {
       "Name": {
@@ -758,7 +758,7 @@
       },
       "IconName": "SmeltingFuelEfficiencyTalentGroup",
       "SkillID": "SmeltingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Fuel Focus: Oil Drilling": {
       "Name": {
@@ -777,7 +777,7 @@
       },
       "IconName": "OilDrillingFuelFocusTalentGroup",
       "SkillID": "OilDrillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Fully Staffed: Advanced Cooking": {
       "Name": {
@@ -796,7 +796,7 @@
       },
       "IconName": "AdvancedCookingFullyStaffedTalentGroup",
       "SkillID": "AdvancedCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Garden Tools: Blacksmith": {
       "Name": {
@@ -815,7 +815,7 @@
       },
       "IconName": "BlacksmithGardenToolsTalentGroup",
       "SkillID": "BlacksmithSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Gentle Seeding: Farming": {
       "Name": {
@@ -834,7 +834,7 @@
       },
       "IconName": "FarmingGentleSeedingTalentGroup",
       "SkillID": "FarmingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Gilded Expert: Smelting": {
       "Name": {
@@ -853,7 +853,7 @@
       },
       "IconName": "SmeltingGildedExpertTalentGroup",
       "SkillID": "SmeltingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Glutton: Self Improvement": {
       "Name": {
@@ -872,7 +872,7 @@
       },
       "IconName": "SelfImprovementGluttonTalentGroup",
       "SkillID": "SelfImprovementSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Grainiac: Gathering": {
       "Name": {
@@ -891,7 +891,7 @@
       },
       "IconName": "GatheringGrainiacTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Hardwood Expert: Composites": {
       "Name": {
@@ -910,7 +910,7 @@
       },
       "IconName": "CompositesHardwoodExpertTalentGroup",
       "SkillID": "CompositesSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Heavy Equipment: Electronics": {
       "Name": {
@@ -929,7 +929,7 @@
       },
       "IconName": "ElectronicsHeavyEquipmentTalentGroup",
       "SkillID": "ElectronicsSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Homegrown: Baking": {
       "Name": {
@@ -948,7 +948,7 @@
       },
       "IconName": "BakingHomegrownTalentGroup",
       "SkillID": "BakingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Improved Assembly: Mechanics": {
       "Name": {
@@ -967,7 +967,7 @@
       },
       "IconName": "MechanicsImprovedAssemblyTalentGroup",
       "SkillID": "MechanicsSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Improved Extraction: Oil Drilling": {
       "Name": {
@@ -986,7 +986,7 @@
       },
       "IconName": "OilDrillingImprovedExtractionTalentGroup",
       "SkillID": "OilDrillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Ina Bowl: Advanced Cooking": {
       "Name": {
@@ -1005,7 +1005,7 @@
       },
       "IconName": "AdvancedCookingInaBowlTalentGroup",
       "SkillID": "AdvancedCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Keeping It Fresh: Gathering": {
       "Name": {
@@ -1024,7 +1024,7 @@
       },
       "IconName": "GatheringKeepingItFreshTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lavish Workspace: Cutting Edge Cooking": {
       "Name": {
@@ -1043,7 +1043,7 @@
       },
       "IconName": "CuttingEdgeCookingLavishWorkspaceTalentGroup",
       "SkillID": "CuttingEdgeCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lavish Workspace: Painting": {
       "Name": {
@@ -1062,7 +1062,7 @@
       },
       "IconName": "PaintingLavishWorkspaceTalentGroup",
       "SkillID": "PaintingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lavish Workspace: Paper Milling": {
       "Name": {
@@ -1081,7 +1081,7 @@
       },
       "IconName": "PaperMillingLavishWorkspaceTalentGroup",
       "SkillID": "PaperMillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lessons Learned: Composites": {
       "Name": {
@@ -1100,7 +1100,7 @@
       },
       "IconName": "CompositesLessonsLearnedTalentGroup",
       "SkillID": "CompositesSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Local Fauna: Butchery": {
       "Name": {
@@ -1119,7 +1119,7 @@
       },
       "IconName": "ButcheryLocalFaunaTalentGroup",
       "SkillID": "ButcherySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Loggers Luck: Logging": {
       "Name": {
@@ -1138,7 +1138,7 @@
       },
       "IconName": "LoggingLoggersLuckTalentGroup",
       "SkillID": "LoggingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lucky Break: Mining": {
       "Name": {
@@ -1157,7 +1157,7 @@
       },
       "IconName": "MiningLuckyBreakTalentGroup",
       "SkillID": "MiningSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Lumber Investment: Carpentry": {
       "Name": {
@@ -1176,7 +1176,7 @@
       },
       "IconName": "CarpentryLumberInvestmentTalentGroup",
       "SkillID": "CarpentrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Mass Production: Pottery": {
       "Name": {
@@ -1195,7 +1195,7 @@
       },
       "IconName": "PotteryMassProductionTalentGroup",
       "SkillID": "PotterySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Master Tracker: Hunting": {
       "Name": {
@@ -1214,7 +1214,7 @@
       },
       "IconName": "HuntingMasterTrackerTalentGroup",
       "SkillID": "HuntingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Meat Specialist: Baking": {
       "Name": {
@@ -1233,7 +1233,7 @@
       },
       "IconName": "BakingMeatSpecialistTalentGroup",
       "SkillID": "BakingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Metallurgy Improvements: Advanced Smelting": {
       "Name": {
@@ -1252,7 +1252,7 @@
       },
       "IconName": "AdvancedSmeltingMetallurgyImprovementsTalentGroup",
       "SkillID": "AdvancedSmeltingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Mineral Baking: Masonry": {
       "Name": {
@@ -1271,7 +1271,7 @@
       },
       "IconName": "MasonryMineralBakingTalentGroup",
       "SkillID": "MasonrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Modern Materials: Tailoring": {
       "Name": {
@@ -1290,7 +1290,7 @@
       },
       "IconName": "TailoringModernMaterialsTalentGroup",
       "SkillID": "TailoringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Natural Fibers: Tailoring": {
       "Name": {
@@ -1309,7 +1309,7 @@
       },
       "IconName": "TailoringNaturalFibersTalentGroup",
       "SkillID": "TailoringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Natural Gatherer: Gathering": {
       "Name": {
@@ -1328,7 +1328,7 @@
       },
       "IconName": "GatheringNaturalGathererTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Natural Selection: Farming": {
       "Name": {
@@ -1347,7 +1347,7 @@
       },
       "IconName": "FarmingNaturalSelectionTalentGroup",
       "SkillID": "FarmingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Nature Adventurer: Self Improvement": {
       "Name": {
@@ -1366,7 +1366,7 @@
       },
       "IconName": "SelfImprovementNatureAdventurerTalentGroup",
       "SkillID": "SelfImprovementSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Nutrient Deficient: Farming": {
       "Name": {
@@ -1385,7 +1385,7 @@
       },
       "IconName": "FarmingNutrientDeficientTalentGroup",
       "SkillID": "FarmingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Omega3: Milling": {
       "Name": {
@@ -1404,7 +1404,7 @@
       },
       "IconName": "MillingOmega3TalentGroup",
       "SkillID": "MillingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Organic Abundance: Fertilizers": {
       "Name": {
@@ -1423,7 +1423,7 @@
       },
       "IconName": "FertilizersOrganicAbundanceTalentGroup",
       "SkillID": "FertilizersSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Overdrive: Composites": {
       "Name": {
@@ -1442,7 +1442,7 @@
       },
       "IconName": "CompositesOverdriveTalentGroup",
       "SkillID": "CompositesSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Parallel Processing: Cutting Edge Cooking": {
       "Name": {
@@ -1461,7 +1461,7 @@
       },
       "IconName": "CuttingEdgeCookingParallelProcessingTalentGroup",
       "SkillID": "CuttingEdgeCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Parallel Processing: Painting": {
       "Name": {
@@ -1480,7 +1480,7 @@
       },
       "IconName": "PaintingParallelProcessingTalentGroup",
       "SkillID": "PaintingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Parallel Processing: Paper Milling": {
       "Name": {
@@ -1499,7 +1499,7 @@
       },
       "IconName": "PaperMillingParallelProcessingTalentGroup",
       "SkillID": "PaperMillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Partial Quality: Mechanics": {
       "Name": {
@@ -1518,7 +1518,7 @@
       },
       "IconName": "MechanicsPartialQualityTalentGroup",
       "SkillID": "MechanicsSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Planking: Shipwright": {
       "Name": {
@@ -1537,7 +1537,7 @@
       },
       "IconName": "ShipwrightPlankingTalentGroup",
       "SkillID": "ShipwrightSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Poor Cuts: Butchery": {
       "Name": {
@@ -1556,7 +1556,7 @@
       },
       "IconName": "ButcheryPoorCutsTalentGroup",
       "SkillID": "ButcherySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Porcelain Polish: Pottery": {
       "Name": {
@@ -1575,7 +1575,7 @@
       },
       "IconName": "PotteryPorcelainPolishTalentGroup",
       "SkillID": "PotterySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Power Shot: Hunting": {
       "Name": {
@@ -1594,7 +1594,7 @@
       },
       "IconName": "HuntingPowerShotTalentGroup",
       "SkillID": "HuntingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Precision Tooling: Industry": {
       "Name": {
@@ -1613,7 +1613,7 @@
       },
       "IconName": "IndustryPrecisionToolingTalentGroup",
       "SkillID": "IndustrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Press On: Mechanics": {
       "Name": {
@@ -1632,7 +1632,7 @@
       },
       "IconName": "MechanicsPressOnTalentGroup",
       "SkillID": "MechanicsSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Prime Examples: Butchery": {
       "Name": {
@@ -1651,7 +1651,7 @@
       },
       "IconName": "ButcheryPrimeExamplesTalentGroup",
       "SkillID": "ButcherySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Quality Control: Carpentry": {
       "Name": {
@@ -1670,7 +1670,7 @@
       },
       "IconName": "CarpentryQualityControlTalentGroup",
       "SkillID": "CarpentrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Quality Of Life: Electronics": {
       "Name": {
@@ -1689,7 +1689,7 @@
       },
       "IconName": "ElectronicsQualityOfLifeTalentGroup",
       "SkillID": "ElectronicsSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Quality Repairs: Blacksmith": {
       "Name": {
@@ -1708,7 +1708,7 @@
       },
       "IconName": "BlacksmithQualityRepairsTalentGroup",
       "SkillID": "BlacksmithSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Refined Processing: Fertilizers": {
       "Name": {
@@ -1727,7 +1727,7 @@
       },
       "IconName": "FertilizersRefinedProcessingTalentGroup",
       "SkillID": "FertilizersSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Refined Scraps: Advanced Cooking": {
       "Name": {
@@ -1746,7 +1746,7 @@
       },
       "IconName": "AdvancedCookingRefinedScrapsTalentGroup",
       "SkillID": "AdvancedCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Riveter: Shipwright": {
       "Name": {
@@ -1765,7 +1765,7 @@
       },
       "IconName": "ShipwrightRiveterTalentGroup",
       "SkillID": "ShipwrightSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Roadworks: Basic Engineering": {
       "Name": {
@@ -1784,7 +1784,7 @@
       },
       "IconName": "BasicEngineeringRoadworksTalentGroup",
       "SkillID": "BasicEngineeringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Roasted: Campfire Cooking": {
       "Name": {
@@ -1803,7 +1803,7 @@
       },
       "IconName": "CampfireCookingRoastedTalentGroup",
       "SkillID": "CampfireCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Robotic Assistance: Industry": {
       "Name": {
@@ -1822,7 +1822,7 @@
       },
       "IconName": "IndustryRoboticAssistanceTalentGroup",
       "SkillID": "IndustrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Rolling Steel: Advanced Smelting": {
       "Name": {
@@ -1841,7 +1841,7 @@
       },
       "IconName": "AdvancedSmeltingRollingSteelTalentGroup",
       "SkillID": "AdvancedSmeltingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Rope Maker: Shipwright": {
       "Name": {
@@ -1860,7 +1860,7 @@
       },
       "IconName": "ShipwrightRopeMakerTalentGroup",
       "SkillID": "ShipwrightSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Scrapped But Useful: Butchery": {
       "Name": {
@@ -1879,7 +1879,7 @@
       },
       "IconName": "ButcheryScrappedButUsefulTalentGroup",
       "SkillID": "ButcherySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Seed Sorting: Farming": {
       "Name": {
@@ -1898,7 +1898,7 @@
       },
       "IconName": "FarmingSeedSortingTalentGroup",
       "SkillID": "FarmingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Set In Stone: Masonry": {
       "Name": {
@@ -1917,7 +1917,7 @@
       },
       "IconName": "MasonrySetInStoneTalentGroup",
       "SkillID": "MasonrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Shaping Up: Mechanics": {
       "Name": {
@@ -1936,7 +1936,7 @@
       },
       "IconName": "MechanicsShapingUpTalentGroup",
       "SkillID": "MechanicsSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Sharp Blades: Advanced Masonry": {
       "Name": {
@@ -1955,7 +1955,7 @@
       },
       "IconName": "AdvancedMasonrySharpBladesTalentGroup",
       "SkillID": "AdvancedMasonrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Ship Builder: Shipwright": {
       "Name": {
@@ -1974,7 +1974,7 @@
       },
       "IconName": "ShipwrightShipBuilderTalentGroup",
       "SkillID": "ShipwrightSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Side Dishes: Campfire Cooking": {
       "Name": {
@@ -1993,7 +1993,7 @@
       },
       "IconName": "CampfireCookingSideDishesTalentGroup",
       "SkillID": "CampfireCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Skilled Labor: Industry": {
       "Name": {
@@ -2012,7 +2012,7 @@
       },
       "IconName": "IndustrySkilledLaborTalentGroup",
       "SkillID": "IndustrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Smooth Stone: Advanced Masonry": {
       "Name": {
@@ -2031,7 +2031,7 @@
       },
       "IconName": "AdvancedMasonrySmoothStoneTalentGroup",
       "SkillID": "AdvancedMasonrySkill",
-      "Level": "6"
+      "Level": 6
     },
     "Softwood Expert: Composites": {
       "Name": {
@@ -2050,7 +2050,7 @@
       },
       "IconName": "CompositesSoftwoodExpertTalentGroup",
       "SkillID": "CompositesSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Something Fishy: Cooking": {
       "Name": {
@@ -2069,7 +2069,7 @@
       },
       "IconName": "CookingSomethingFishyTalentGroup",
       "SkillID": "CookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Steel Processing: Advanced Smelting": {
       "Name": {
@@ -2088,7 +2088,7 @@
       },
       "IconName": "AdvancedSmeltingSteelProcessingTalentGroup",
       "SkillID": "AdvancedSmeltingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Stew Gourmand: Campfire Cooking": {
       "Name": {
@@ -2107,7 +2107,7 @@
       },
       "IconName": "CampfireCookingStewGourmandTalentGroup",
       "SkillID": "CampfireCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Stone Mixing: Masonry": {
       "Name": {
@@ -2126,7 +2126,7 @@
       },
       "IconName": "MasonryStoneMixingTalentGroup",
       "SkillID": "MasonrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Stuff It: Advanced Baking": {
       "Name": {
@@ -2145,7 +2145,7 @@
       },
       "IconName": "AdvancedBakingStuffItTalentGroup",
       "SkillID": "AdvancedBakingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Sub Terrain Sourced: Advanced Masonry": {
       "Name": {
@@ -2164,7 +2164,7 @@
       },
       "IconName": "AdvancedMasonrySubTerrainSourcedTalentGroup",
       "SkillID": "AdvancedMasonrySkill",
-      "Level": "3"
+      "Level": 3
     },
     "Sugar Rush: Milling": {
       "Name": {
@@ -2183,7 +2183,7 @@
       },
       "IconName": "MillingSugarRushTalentGroup",
       "SkillID": "MillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Sustainable Practice: Fertilizers": {
       "Name": {
@@ -2202,7 +2202,7 @@
       },
       "IconName": "FertilizersSustainablePracticeTalentGroup",
       "SkillID": "FertilizersSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Sweeping Hands: Mining": {
       "Name": {
@@ -2221,7 +2221,7 @@
       },
       "IconName": "MiningSweepingHandsTalentGroup",
       "SkillID": "MiningSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Sweet: Baking": {
       "Name": {
@@ -2240,7 +2240,7 @@
       },
       "IconName": "BakingSweetTalentGroup",
       "SkillID": "BakingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Synthetic Materials: Oil Drilling": {
       "Name": {
@@ -2259,7 +2259,7 @@
       },
       "IconName": "OilDrillingSyntheticMaterialsTalentGroup",
       "SkillID": "OilDrillingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tailored Glass: Glassworking": {
       "Name": {
@@ -2278,7 +2278,7 @@
       },
       "IconName": "GlassworkingTailoredGlassTalentGroup",
       "SkillID": "GlassworkingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Take Out: Advanced Cooking": {
       "Name": {
@@ -2297,7 +2297,7 @@
       },
       "IconName": "AdvancedCookingTakeOutTalentGroup",
       "SkillID": "AdvancedCookingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Tool Efficiency: Gathering": {
       "Name": {
@@ -2316,7 +2316,7 @@
       },
       "IconName": "GatheringToolEfficiencyTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tool Efficiency: Logging": {
       "Name": {
@@ -2335,7 +2335,7 @@
       },
       "IconName": "LoggingToolEfficiencyTalentGroup",
       "SkillID": "LoggingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tool Efficiency: Mining": {
       "Name": {
@@ -2354,7 +2354,7 @@
       },
       "IconName": "MiningToolEfficiencyTalentGroup",
       "SkillID": "MiningSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tool Strength: Gathering": {
       "Name": {
@@ -2373,7 +2373,7 @@
       },
       "IconName": "GatheringToolStrengthTalentGroup",
       "SkillID": "GatheringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tool Strength: Logging": {
       "Name": {
@@ -2392,7 +2392,7 @@
       },
       "IconName": "LoggingToolStrengthTalentGroup",
       "SkillID": "LoggingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Tool Strength: Mining": {
       "Name": {
@@ -2411,7 +2411,7 @@
       },
       "IconName": "MiningToolStrengthTalentGroup",
       "SkillID": "MiningSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Top It: Advanced Baking": {
       "Name": {
@@ -2430,7 +2430,7 @@
       },
       "IconName": "AdvancedBakingTopItTalentGroup",
       "SkillID": "AdvancedBakingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Urban Traveller: Self Improvement": {
       "Name": {
@@ -2449,7 +2449,7 @@
       },
       "IconName": "SelfImprovementUrbanTravellerTalentGroup",
       "SkillID": "SelfImprovementSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Using Bellows: Smelting": {
       "Name": {
@@ -2468,7 +2468,7 @@
       },
       "IconName": "SmeltingUsingBellowsTalentGroup",
       "SkillID": "SmeltingSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Using Scraps: Campfire Cooking": {
       "Name": {
@@ -2487,7 +2487,7 @@
       },
       "IconName": "CampfireCookingUsingScrapsTalentGroup",
       "SkillID": "CampfireCookingSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Vehicular Design: Basic Engineering": {
       "Name": {
@@ -2506,7 +2506,7 @@
       },
       "IconName": "BasicEngineeringVehicularDesignTalentGroup",
       "SkillID": "BasicEngineeringSkill",
-      "Level": "6"
+      "Level": 6
     },
     "Wateristheway: Basic Engineering": {
       "Name": {
@@ -2525,7 +2525,7 @@
       },
       "IconName": "BasicEngineeringWateristhewayTalentGroup",
       "SkillID": "BasicEngineeringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Windequalsenergy: Basic Engineering": {
       "Name": {
@@ -2544,7 +2544,7 @@
       },
       "IconName": "BasicEngineeringWindequalsenergyTalentGroup",
       "SkillID": "BasicEngineeringSkill",
-      "Level": "3"
+      "Level": 3
     },
     "Wood Burner: Logging": {
       "Name": {
@@ -2563,7 +2563,7 @@
       },
       "IconName": "LoggingWoodBurnerTalentGroup",
       "SkillID": "LoggingSkill",
-      "Level": "3"
+      "Level": 3
     }
   }
 }

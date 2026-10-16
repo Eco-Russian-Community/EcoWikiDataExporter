@@ -1485,8 +1485,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Agriculture Research Paper Basic": {
@@ -1512,8 +1512,8 @@
       "Tags": [
         "Basic Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Agriculture Research Paper Modern": {
@@ -3789,8 +3789,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Baked Corn": {
@@ -3818,8 +3818,8 @@
         "Baked Food",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Baked Heart Of Palm": {
@@ -4302,8 +4302,8 @@
       "MaxStackSize": 10,
       "Tags": [
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Barrel Cactus Seed": {
@@ -5786,8 +5786,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Explosives",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Blasting Charge": {
@@ -6189,8 +6189,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Boiled Sausage": {
@@ -6216,8 +6216,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Boiler": {
@@ -6242,8 +6242,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Bolete Mushroom Spores": {
@@ -6472,8 +6472,8 @@
         "Bread",
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Brick": {
@@ -6499,8 +6499,8 @@
       "Tags": [
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Brick Fireplace": {
@@ -7395,8 +7395,8 @@
       "Weight": 100,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Capitalist Top Hat": {
@@ -7919,8 +7919,8 @@
         "Crafting Table",
         "Storage Container",
         "Housing Objects",
-        "Ingredient",
         "Product",
+        "Ingredient",
         "Kitchen"
       ]
     },
@@ -8529,8 +8529,8 @@
         "Fuel",
         "Coal",
         "Burnable Fuel",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Charcoal Powder": {
@@ -8637,8 +8637,8 @@
         "Charred Vegetable",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Charred Cactus Fruit": {
@@ -8909,8 +8909,8 @@
         "Charred Fruit",
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Charred Sausage": {
@@ -9364,8 +9364,8 @@
       "Weight": 100,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Cloth": {
@@ -12081,8 +12081,8 @@
         "Concentrated Ore",
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Copper Frame Landscape": {
@@ -12252,8 +12252,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Pigment",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Copper Ore": {
@@ -12335,8 +12335,8 @@
       "Tags": [
         "Currency",
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Copper Scrap": {
@@ -12388,8 +12388,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Corn": {
@@ -13436,8 +13436,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Crushed Coal": {
@@ -13577,8 +13577,8 @@
         "Silica",
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Crushed Iron Ore": {
@@ -13632,8 +13632,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Crushed Mixed Rock": {
@@ -13660,8 +13660,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Ingredient",
         "Product",
+        "Ingredient",
         "Garbage"
       ]
     },
@@ -13714,8 +13714,8 @@
         "Silica",
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Crushed Shale": {
@@ -13742,8 +13742,8 @@
         "Crushed Rock",
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Crushed Slag": {
@@ -13878,8 +13878,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Culture": {
@@ -14510,8 +14510,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Dendrology Research Paper Basic": {
@@ -14564,8 +14564,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Derpy Hat": {
@@ -14883,8 +14883,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Dried Meat": {
@@ -14910,8 +14910,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Dumpster Compost": {
@@ -15074,8 +15074,8 @@
       "Tags": [
         "World Object",
         "Usable",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Easel": {
@@ -15930,8 +15930,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Engineering Research Paper Modern": {
@@ -15957,8 +15957,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Epoxy": {
@@ -18560,8 +18560,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Gathering Research Paper Basic": {
@@ -18640,8 +18640,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Geology Research Paper Basic": {
@@ -18694,8 +18694,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Giant Cactus Fruit": {
@@ -18776,8 +18776,8 @@
       "Tags": [
         "Constructable",
         "Block",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Glass Insulation": {
@@ -18825,8 +18825,8 @@
       "Weight": 75,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Glass Scrap": {
@@ -19092,8 +19092,8 @@
         "Currency",
         "Metal",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Gold Concentrate": {
@@ -19978,8 +19978,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Hardwood Lumber": {
@@ -20008,8 +20008,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Hardwood Lumber Bench": {
@@ -20790,8 +20790,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Hewn Nightstand": {
@@ -21157,8 +21157,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Huckleberry Fritter": {
@@ -22045,8 +22045,8 @@
       "Weight": 5000,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Iron Axe": {
@@ -22409,8 +22409,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Iron Machete": {
@@ -26590,8 +26590,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Lumber Bench": {
@@ -27659,8 +27659,8 @@
       "Weight": 5000,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Metal Rudder": {
@@ -27741,8 +27741,8 @@
       "Tags": [
         "Advanced Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Metallurgy Research Paper Basic": {
@@ -27795,8 +27795,8 @@
       "Tags": [
         "Modern Research",
         "Research",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Meteor Shard": {
@@ -29907,8 +29907,8 @@
       "Weight": 500,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Nylon Carpet": {
@@ -30094,8 +30094,8 @@
       "Weight": 1000,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Nylon Thread": {
@@ -32280,8 +32280,8 @@
         "Natural Fiber",
         "Burnable Fuel",
         "Crop",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Plant Vase": {
@@ -32585,8 +32585,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Polluted Salt Water": {
@@ -32685,8 +32685,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Pottery Skill Book": {
@@ -34765,8 +34765,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Rug Large": {
@@ -36274,8 +36274,8 @@
       "Weight": 250,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Short Basic Hardwood Shelf": {
@@ -39685,8 +39685,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Softwood Lumber": {
@@ -39715,8 +39715,8 @@
         "Burnable Fuel",
         "Constructable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Softwood Lumber Bench": {
@@ -41534,8 +41534,8 @@
       "Weight": 800,
       "MaxStackSize": 100,
       "Tags": [
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Steel Square Fixture": {
@@ -42117,8 +42117,8 @@
         "World Object",
         "Usable",
         "Economy",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Store Sign": {
@@ -42809,8 +42809,8 @@
       "Tags": [
         "Excavatable",
         "Block",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Sulfuric Acid": {
@@ -46159,8 +46159,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Wild Stew": {
@@ -46534,8 +46534,8 @@
         "Storage Container",
         "Vehicles",
         "Mountable",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Wood Double Shelf": {
@@ -47142,8 +47142,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Wooden Keel": {
@@ -47617,8 +47617,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Parts",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Wool Carpet": {
@@ -47720,8 +47720,8 @@
       "Weight": 20,
       "MaxStackSize": 100,
       "Tags": [
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Work Backpack": {
@@ -47825,8 +47825,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Yeast": {
@@ -47852,8 +47852,8 @@
       "Tags": [
         "Food",
         "Can Be On Surface",
-        "Product",
-        "Ingredient"
+        "Ingredient",
+        "Product"
       ]
     },
     "Yellow Powder": {
@@ -47878,8 +47878,8 @@
       "MaxStackSize": 100,
       "Tags": [
         "Pigment",
-        "Ingredient",
-        "Product"
+        "Product",
+        "Ingredient"
       ]
     },
     "Zataku Table": {

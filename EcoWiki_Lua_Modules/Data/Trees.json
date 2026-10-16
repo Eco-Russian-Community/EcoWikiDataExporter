@@ -8,7 +8,23 @@
         "German": "Birke",
         "French": "Bouleau",
         "Japanese": "白樺"
-      }
+      },
+      "MaturityAgeDays": "5",
+      "ExtremeTemperatureRangeMin": 10,
+      "IdealTemperatureRangeMin": 12,
+      "IdealTemperatureRangeMax": 20,
+      "ExtremeTemperatureRangeMax": 22,
+      "ExtremeMoistureRangeMin": "50",
+      "IdealMoistureRangeMin": "52",
+      "IdealMoistureRangeMax": "58",
+      "ExtremeMoistureRangeMax": "60",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.075"
     },
     "Cedar": {
       "ID": "CedarSpecies",
@@ -18,7 +34,23 @@
         "German": "Zeder",
         "French": "Cèdre",
         "Japanese": "杉"
-      }
+      },
+      "MaturityAgeDays": "5",
+      "ExtremeTemperatureRangeMin": 10,
+      "IdealTemperatureRangeMin": 12,
+      "IdealTemperatureRangeMax": 20,
+      "ExtremeTemperatureRangeMax": 22,
+      "ExtremeMoistureRangeMin": "50",
+      "IdealMoistureRangeMin": "48",
+      "IdealMoistureRangeMax": "58",
+      "ExtremeMoistureRangeMax": "60",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.075"
     },
     "Ceiba": {
       "ID": "CeibaSpecies",
@@ -28,7 +60,23 @@
         "German": "Kapokbaum",
         "French": "Ceiba",
         "Japanese": "パンヤノキ"
-      }
+      },
+      "MaturityAgeDays": "6",
+      "ExtremeTemperatureRangeMin": 14,
+      "IdealTemperatureRangeMin": 16,
+      "IdealTemperatureRangeMax": 20,
+      "ExtremeTemperatureRangeMax": 22,
+      "ExtremeMoistureRangeMin": "70",
+      "IdealMoistureRangeMin": "75",
+      "IdealMoistureRangeMax": "95",
+      "ExtremeMoistureRangeMax": "100",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.15"
     },
     "Fir": {
       "ID": "FirSpecies",
@@ -38,7 +86,23 @@
         "German": "Tanne",
         "French": "Sapin",
         "Japanese": "モミの木"
-      }
+      },
+      "MaturityAgeDays": "5.5",
+      "ExtremeTemperatureRangeMin": -2,
+      "IdealTemperatureRangeMin": -1,
+      "IdealTemperatureRangeMax": 8,
+      "ExtremeTemperatureRangeMax": 10,
+      "ExtremeMoistureRangeMin": "50",
+      "IdealMoistureRangeMin": "52",
+      "IdealMoistureRangeMax": "58",
+      "ExtremeMoistureRangeMax": "60",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.075"
     },
     "Joshua": {
       "ID": "JoshuaSpecies",
@@ -48,7 +112,23 @@
         "German": "Joshua",
         "French": "Arbre de Josué",
         "Japanese": "ジョシュア・ツリー"
-      }
+      },
+      "MaturityAgeDays": "7",
+      "ExtremeTemperatureRangeMin": 16,
+      "IdealTemperatureRangeMin": 18,
+      "IdealTemperatureRangeMax": 24,
+      "ExtremeTemperatureRangeMax": 26,
+      "ExtremeMoistureRangeMin": "12",
+      "IdealMoistureRangeMin": "20",
+      "IdealMoistureRangeMax": "30",
+      "ExtremeMoistureRangeMax": "32",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.0375"
     },
     "Oak": {
       "ID": "OakSpecies",
@@ -58,7 +138,23 @@
         "German": "Eiche",
         "French": "Chêne",
         "Japanese": "樫"
-      }
+      },
+      "MaturityAgeDays": "7",
+      "ExtremeTemperatureRangeMin": 6,
+      "IdealTemperatureRangeMin": 8,
+      "IdealTemperatureRangeMax": 20,
+      "ExtremeTemperatureRangeMax": 22,
+      "ExtremeMoistureRangeMin": "40",
+      "IdealMoistureRangeMin": "43",
+      "IdealMoistureRangeMax": "47",
+      "ExtremeMoistureRangeMax": "50",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.15"
     },
     "Old Growth Redwood": {
       "ID": "OldGrowthRedwoodSpecies",
@@ -68,7 +164,23 @@
         "German": "Mammutbaum",
         "French": "Séquoia géant",
         "Japanese": "セコイアの古木"
-      }
+      },
+      "MaturityAgeDays": "30",
+      "ExtremeTemperatureRangeMin": 3,
+      "IdealTemperatureRangeMin": 4,
+      "IdealTemperatureRangeMax": 9,
+      "ExtremeTemperatureRangeMax": 10,
+      "ExtremeMoistureRangeMin": "50",
+      "IdealMoistureRangeMin": "52",
+      "IdealMoistureRangeMax": "58",
+      "ExtremeMoistureRangeMax": "60",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.15"
     },
     "Palm": {
       "ID": "PalmSpecies",
@@ -78,7 +190,23 @@
         "German": "Palme",
         "French": "Palmier",
         "Japanese": "ヤシ"
-      }
+      },
+      "MaturityAgeDays": "4.5",
+      "ExtremeTemperatureRangeMin": 14,
+      "IdealTemperatureRangeMin": 14,
+      "IdealTemperatureRangeMax": 22,
+      "ExtremeTemperatureRangeMax": 22,
+      "ExtremeMoistureRangeMin": "70",
+      "IdealMoistureRangeMin": "75",
+      "IdealMoistureRangeMax": "95",
+      "ExtremeMoistureRangeMax": "100",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.0375"
     },
     "Redwood": {
       "ID": "RedwoodSpecies",
@@ -88,7 +216,23 @@
         "German": "Rottanne",
         "French": "Séquoia",
         "Japanese": "セコイア"
-      }
+      },
+      "MaturityAgeDays": "6",
+      "ExtremeTemperatureRangeMin": 3,
+      "IdealTemperatureRangeMin": 4,
+      "IdealTemperatureRangeMax": 9,
+      "ExtremeTemperatureRangeMax": 10,
+      "ExtremeMoistureRangeMin": "50",
+      "IdealMoistureRangeMin": "52",
+      "IdealMoistureRangeMax": "58",
+      "ExtremeMoistureRangeMax": "60",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.15"
     },
     "Saguaro Cactus": {
       "ID": "SaguaroCactusSpecies",
@@ -98,7 +242,23 @@
         "German": "Saguarokaktus",
         "French": "Cactus Saguaro",
         "Japanese": "サグアロサボテン"
-      }
+      },
+      "MaturityAgeDays": "6",
+      "ExtremeTemperatureRangeMin": 18,
+      "IdealTemperatureRangeMin": 22,
+      "IdealTemperatureRangeMax": 26,
+      "ExtremeTemperatureRangeMax": 30,
+      "ExtremeMoistureRangeMin": "0",
+      "IdealMoistureRangeMin": "5",
+      "IdealMoistureRangeMax": "25",
+      "ExtremeMoistureRangeMax": "30",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.0375"
     },
     "Spruce": {
       "ID": "SpruceSpecies",
@@ -108,7 +268,23 @@
         "German": "Fichte",
         "French": "Épicéa",
         "Japanese": "松"
-      }
+      },
+      "MaturityAgeDays": "5.5",
+      "ExtremeTemperatureRangeMin": -2,
+      "IdealTemperatureRangeMin": -1,
+      "IdealTemperatureRangeMax": 2,
+      "ExtremeTemperatureRangeMax": 3,
+      "ExtremeMoistureRangeMin": "20",
+      "IdealMoistureRangeMin": "25",
+      "IdealMoistureRangeMax": "45",
+      "ExtremeMoistureRangeMax": "55",
+      "ExtremeWaterRangeMin": "0",
+      "IdealWaterRangeMin": "0",
+      "IdealWaterRangeMax": "10",
+      "ExtremeWaterRangeMax": "20",
+      "PollutionMin": "10",
+      "PollutionMax": "70",
+      "CO2TonsPerDay": "-0.075"
     }
   }
 }

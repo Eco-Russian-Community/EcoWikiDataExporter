@@ -1,0 +1,290 @@
+{
+  "animals": {
+    "Agouti": {
+      "ID": "AgoutiSpecies",
+      "Name": {
+        "English": "Agouti",
+        "Russian": "Агути",
+        "German": "Agouti",
+        "French": "Agouti",
+        "Japanese": "アグーチ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Alligator": {
+      "ID": "AlligatorSpecies",
+      "Name": {
+        "English": "Alligator",
+        "Russian": "Аллигатор",
+        "German": "Alligator",
+        "French": "Alligator",
+        "Japanese": "ワニ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Bass": {
+      "ID": "BassSpecies",
+      "Name": {
+        "English": "Bass",
+        "Russian": "Окунь",
+        "German": "Barsch",
+        "French": "Bar",
+        "Japanese": "バス"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Bighorn Sheep": {
+      "ID": "BighornSheepSpecies",
+      "Name": {
+        "English": "Bighorn Sheep",
+        "Russian": "Толсторогий баран",
+        "German": "Dickhornschaf",
+        "French": "Mouflon",
+        "Japanese": "ビッグホーンシープ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Bison": {
+      "ID": "BisonSpecies",
+      "Name": {
+        "English": "Bison",
+        "Russian": "Бизон",
+        "German": "Bison",
+        "French": "Bison",
+        "Japanese": "バイソン"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Blue Shark": {
+      "ID": "BlueSharkSpecies",
+      "Name": {
+        "English": "Blue Shark",
+        "Russian": "Синяя акула",
+        "German": "Blauer Hai",
+        "French": "Requin bleu",
+        "Japanese": "ブルーシャーク"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Cod": {
+      "ID": "CodSpecies",
+      "Name": {
+        "English": "Cod",
+        "Russian": "Треска",
+        "German": "Kabeljau",
+        "French": "Morue",
+        "Japanese": "タラ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Coyote": {
+      "ID": "CoyoteSpecies",
+      "Name": {
+        "English": "Coyote",
+        "Russian": "Койот",
+        "German": "Kojote",
+        "French": "Coyote",
+        "Japanese": "コヨーテ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Crab": {
+      "ID": "CrabSpecies",
+      "Name": {
+        "English": "Crab",
+        "Russian": "Краб",
+        "German": "Krabbe",
+        "French": "Crabe",
+        "Japanese": "カニ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Deer": {
+      "ID": "DeerSpecies",
+      "Name": {
+        "English": "Deer",
+        "Russian": "Чернохвостый олень",
+        "German": "Reh",
+        "French": "Cerf mulet",
+        "Japanese": "鹿"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Elk": {
+      "ID": "ElkSpecies",
+      "Name": {
+        "English": "Elk",
+        "Russian": "Вапити",
+        "German": "Elch",
+        "French": "Wapiti",
+        "Japanese": "ヘラジカ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Fox": {
+      "ID": "FoxSpecies",
+      "Name": {
+        "English": "Fox",
+        "Russian": "Лиса",
+        "German": "Fuchs",
+        "French": "Renard",
+        "Japanese": "キツネ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Hare": {
+      "ID": "HareSpecies",
+      "Name": {
+        "English": "Hare",
+        "Russian": "Заяц",
+        "German": "Hase",
+        "French": "Lièvre",
+        "Japanese": "野ウサギ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Jaguar": {
+      "ID": "JaguarSpecies",
+      "Name": {
+        "English": "Jaguar",
+        "Russian": "Ягуар",
+        "German": "Jaguar",
+        "French": "Jaguar",
+        "Japanese": "ジャガー"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Moon Jellyfish": {
+      "ID": "MoonJellyfishSpecies",
+      "Name": {
+        "English": "Moon Jellyfish",
+        "Russian": "Ушастая аурелия",
+        "German": "Mondqualle",
+        "French": "Méduse lune",
+        "Japanese": "水クラゲ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Mountain Goat": {
+      "ID": "MountainGoatSpecies",
+      "Name": {
+        "English": "Mountain Goat",
+        "Russian": "Снежная коза",
+        "German": "Schneeziege",
+        "French": "Chèvre des montagnes",
+        "Japanese": "マウンテンゴート"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Otter": {
+      "ID": "OtterSpecies",
+      "Name": {
+        "English": "Otter",
+        "Russian": "Выдра",
+        "German": "Otter",
+        "French": "Loutre",
+        "Japanese": "カワウソ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Pacific Sardine": {
+      "ID": "PacificSardineSpecies",
+      "Name": {
+        "English": "Pacific Sardine",
+        "Russian": "Перуанская сардина",
+        "German": "Pazifische Sardine",
+        "French": "Sardine du Pacifique",
+        "Japanese": "パシフィック・サーディン"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Prairie Dog": {
+      "ID": "PrairieDogSpecies",
+      "Name": {
+        "English": "Prairie Dog",
+        "Russian": "Луговая собачка",
+        "German": "Präriehund",
+        "French": "Chien de prairie",
+        "Japanese": "プレーリードッグ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Salmon": {
+      "ID": "SalmonSpecies",
+      "Name": {
+        "English": "Salmon",
+        "Russian": "Лосось",
+        "German": "Lachs",
+        "French": "Saumon",
+        "Japanese": "サケ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Snapping Turtle": {
+      "ID": "SnappingTurtleSpecies",
+      "Name": {
+        "English": "Snapping Turtle",
+        "Russian": "Каймановая черепаха",
+        "German": "Schnappschildkröte",
+        "French": "Tortue alligator",
+        "Japanese": "スナッピングタートル"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Tortoise": {
+      "ID": "TortoiseSpecies",
+      "Name": {
+        "English": "Tortoise",
+        "Russian": "Черепаха",
+        "German": "Schildkröte",
+        "French": "Tortue terrestre",
+        "Japanese": "カメ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Trout": {
+      "ID": "TroutSpecies",
+      "Name": {
+        "English": "Trout",
+        "Russian": "Форель",
+        "German": "Forelle",
+        "French": "Truite",
+        "Japanese": "マス"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Tuna": {
+      "ID": "TunaSpecies",
+      "Name": {
+        "English": "Tuna",
+        "Russian": "Тунец",
+        "German": "Thunfisch",
+        "French": "Thon",
+        "Japanese": "マグロ"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Turkey": {
+      "ID": "TurkeySpecies",
+      "Name": {
+        "English": "Turkey",
+        "Russian": "Индюшка",
+        "German": "Truthahn",
+        "French": "Dinde",
+        "Japanese": "七面鳥"
+      },
+      "MaturityAgeDays": "1"
+    },
+    "Wolf": {
+      "ID": "WolfSpecies",
+      "Name": {
+        "English": "Wolf",
+        "Russian": "Волк",
+        "German": "Wolf",
+        "French": "Loup",
+        "Japanese": "オオカミ"
+      },
+      "MaturityAgeDays": "1"
+    }
+  }
+}

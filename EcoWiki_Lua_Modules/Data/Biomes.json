@@ -1,0 +1,452 @@
+{
+  "biomes": {
+    "Boreal Forest Biome": {
+      "ID": "Taiga",
+      "Name": {
+        "English": "Boreal Forest Biome",
+        "Russian": "Тайга",
+        "German": "Borealer Wald Biom",
+        "French": "Biome taïga",
+        "Japanese": "亜寒帯森林のバイオーム"
+      },
+      "Description": {
+        "English": "A cold and somewhat dry biome that supports a sparse forest of conniferous trees.",
+        "Russian": "A cold and somewhat dry biome that supports a sparse forest of conniferous trees.",
+        "German": "A cold and somewhat dry biome that supports a sparse forest of conniferous trees.",
+        "French": "A cold and somewhat dry biome that supports a sparse forest of conniferous trees.",
+        "Japanese": "A cold and somewhat dry biome that supports a sparse forest of conniferous trees."
+      },
+      "WorldLayer": "TaigaBiome",
+      "Color": "OliveDrab",
+      "IsOcean": false,
+      "PrevailingRockType": "GraniteBlock",
+      "ElevationRangeMin": "0.3",
+      "ElevationRangeMax": "1",
+      "TemperatureRangeMin": -2,
+      "TemperatureRangeMax": 2,
+      "MoistureRangeMin": "20",
+      "MoistureRangeMax": "50",
+      "UpperHeight": "0.86"
+    },
+    "Coast Biome": {
+      "ID": "Coast",
+      "Name": {
+        "English": "Coast Biome",
+        "Russian": "Coast Biome",
+        "German": "Coast Biome",
+        "French": "Coast Biome",
+        "Japanese": "Coast Biome"
+      },
+      "Description": {
+        "English": "Beaches and shallow waters.",
+        "Russian": "Beaches and shallow waters.",
+        "German": "Beaches and shallow waters.",
+        "French": "Beaches and shallow waters.",
+        "Japanese": "Beaches and shallow waters."
+      },
+      "WorldLayer": "CoastBiome",
+      "Color": "LightGoldenrodYellow",
+      "IsOcean": false,
+      "PrevailingRockType": "LimestoneBlock",
+      "ElevationRangeMin": "0.02",
+      "ElevationRangeMax": "0.1",
+      "TemperatureRangeMin": -10,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "0.08400001"
+    },
+    "Cold Coast Biome": {
+      "ID": "ColdCoast",
+      "Name": {
+        "English": "Cold Coast Biome",
+        "Russian": "Cold Coast Biome",
+        "German": "Cold Coast Biome",
+        "French": "Cold Coast Biome",
+        "Japanese": "Cold Coast Biome"
+      },
+      "Description": {
+        "English": "Beaches and shallow waters in colder climates.",
+        "Russian": "Beaches and shallow waters in colder climates.",
+        "German": "Beaches and shallow waters in colder climates.",
+        "French": "Beaches and shallow waters in colder climates.",
+        "Japanese": "Beaches and shallow waters in colder climates."
+      },
+      "WorldLayer": "ColdCoastBiome",
+      "Color": "LightCyan",
+      "IsOcean": false,
+      "PrevailingRockType": "LimestoneBlock",
+      "ElevationRangeMin": "0.05",
+      "ElevationRangeMax": "0.1",
+      "TemperatureRangeMin": -10,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "0.09"
+    },
+    "Cold Forest Biome": {
+      "ID": "ColdForest",
+      "Name": {
+        "English": "Cold Forest Biome",
+        "Russian": "Холодный Лес",
+        "German": "Kalter Wald Biom",
+        "French": "Biome forestier froid",
+        "Japanese": "冷帯森林バイオーム"
+      },
+      "Description": {
+        "English": "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate.",
+        "Russian": "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate.",
+        "German": "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate.",
+        "French": "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate.",
+        "Japanese": "A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate."
+      },
+      "WorldLayer": "ColdForestBiome",
+      "Color": "ForestGreen",
+      "IsOcean": false,
+      "PrevailingRockType": "GraniteBlock",
+      "ElevationRangeMin": "0.1",
+      "ElevationRangeMax": "0.7",
+      "TemperatureRangeMin": -2,
+      "TemperatureRangeMax": 10,
+      "MoistureRangeMin": "50",
+      "MoistureRangeMax": "60",
+      "UpperHeight": "0.58"
+    },
+    "Deep Ocean Biome": {
+      "ID": "DeepOcean",
+      "Name": {
+        "English": "Deep Ocean Biome",
+        "Russian": "Глубокий океан",
+        "German": "Tiefsee-Biom",
+        "French": "Biome abyssal",
+        "Japanese": "深海バイオーム"
+      },
+      "Description": {
+        "English": "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish.",
+        "Russian": "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish.",
+        "German": "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish.",
+        "French": "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish.",
+        "Japanese": "The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish."
+      },
+      "WorldLayer": "DeepOceanBiome",
+      "Color": "SteelBlue",
+      "IsOcean": false,
+      "PrevailingRockType": "BasaltBlock",
+      "ElevationRangeMin": "-1",
+      "ElevationRangeMax": "-0.4",
+      "TemperatureRangeMin": -10,
+      "TemperatureRangeMax": 6,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "-0.52"
+    },
+    "Desert Biome": {
+      "ID": "Desert",
+      "Name": {
+        "English": "Desert Biome",
+        "Russian": "Пустыня",
+        "German": "Wüstenbiom",
+        "French": "Biome désertique",
+        "Japanese": "砂漠バイオーム"
+      },
+      "Description": {
+        "English": "The dryest biome, and in Eco currently the hottest as well.",
+        "Russian": "The dryest biome, and in Eco currently the hottest as well.",
+        "German": "The dryest biome, and in Eco currently the hottest as well.",
+        "French": "The dryest biome, and in Eco currently the hottest as well.",
+        "Japanese": "The dryest biome, and in Eco currently the hottest as well."
+      },
+      "WorldLayer": "DesertBiome",
+      "Color": "SandyBrown",
+      "IsOcean": false,
+      "PrevailingRockType": "SandstoneBlock",
+      "ElevationRangeMin": "0.02",
+      "ElevationRangeMax": "0.2",
+      "TemperatureRangeMin": 18,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "30",
+      "UpperHeight": "0.164"
+    },
+    "Grassland Biome": {
+      "ID": "Grassland",
+      "Name": {
+        "English": "Grassland Biome",
+        "Russian": "Луг",
+        "German": "Grasland Biom",
+        "French": "Biome herbeux",
+        "Japanese": "草原バイオーム"
+      },
+      "Description": {
+        "English": "A biome where there is enough water to support grasses but not many trees.",
+        "Russian": "A biome where there is enough water to support grasses but not many trees.",
+        "German": "A biome where there is enough water to support grasses but not many trees.",
+        "French": "A biome where there is enough water to support grasses but not many trees.",
+        "Japanese": "A biome where there is enough water to support grasses but not many trees."
+      },
+      "WorldLayer": "GrasslandBiome",
+      "Color": "LightGreen",
+      "IsOcean": false,
+      "PrevailingRockType": "LimestoneBlock",
+      "ElevationRangeMin": "0.02",
+      "ElevationRangeMax": "0.4",
+      "TemperatureRangeMin": 6,
+      "TemperatureRangeMax": 22,
+      "MoistureRangeMin": "30",
+      "MoistureRangeMax": "50",
+      "UpperHeight": "0.324"
+    },
+    "High Desert Biome": {
+      "ID": "HighDesert",
+      "Name": {
+        "English": "High Desert Biome",
+        "Russian": "High Desert Biome",
+        "German": "High Desert Biome",
+        "French": "High Desert Biome",
+        "Japanese": "High Desert Biome"
+      },
+      "Description": {
+        "English": "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion.",
+        "Russian": "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion.",
+        "German": "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion.",
+        "French": "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion.",
+        "Japanese": "A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion."
+      },
+      "WorldLayer": "HighDesertBiome",
+      "Color": "SandyBrown",
+      "IsOcean": false,
+      "PrevailingRockType": "SandstoneBlock",
+      "ElevationRangeMin": "0.225",
+      "ElevationRangeMax": "0.3",
+      "TemperatureRangeMin": 18,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "30",
+      "UpperHeight": "0.285"
+    },
+    "Ice Biome": {
+      "ID": "Ice",
+      "Name": {
+        "English": "Ice Biome",
+        "Russian": "Ледяной биом",
+        "German": "Eis Biom",
+        "French": "Biome enneigé",
+        "Japanese": "氷のバイオーム"
+      },
+      "Description": {
+        "English": "The coldest areas of the land, covered by glacial ice.",
+        "Russian": "The coldest areas of the land, covered by glacial ice.",
+        "German": "The coldest areas of the land, covered by glacial ice.",
+        "French": "The coldest areas of the land, covered by glacial ice.",
+        "Japanese": "The coldest areas of the land, covered by glacial ice."
+      },
+      "WorldLayer": "IceBiome",
+      "Color": "White",
+      "IsOcean": false,
+      "PrevailingRockType": "GraniteBlock",
+      "ElevationRangeMin": "0.6",
+      "ElevationRangeMax": "1",
+      "TemperatureRangeMin": -10,
+      "TemperatureRangeMax": -6,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "60",
+      "UpperHeight": "0.92"
+    },
+    "Ocean Biome": {
+      "ID": "Ocean",
+      "Name": {
+        "English": "Ocean Biome",
+        "Russian": "Океан",
+        "German": "Ozeanbiom",
+        "French": "Biome océanique",
+        "Japanese": "海バイオーム"
+      },
+      "Description": {
+        "English": "The parts of the ocean on the continental shelves, abundant with life.",
+        "Russian": "The parts of the ocean on the continental shelves, abundant with life.",
+        "German": "The parts of the ocean on the continental shelves, abundant with life.",
+        "French": "The parts of the ocean on the continental shelves, abundant with life.",
+        "Japanese": "The parts of the ocean on the continental shelves, abundant with life."
+      },
+      "WorldLayer": "OceanBiome",
+      "Color": "LightSkyBlue",
+      "IsOcean": false,
+      "PrevailingRockType": "BasaltBlock",
+      "ElevationRangeMin": "-0.3",
+      "ElevationRangeMax": "-0.05",
+      "TemperatureRangeMin": 6,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "-0.10000001"
+    },
+    "Rainforest Biome": {
+      "ID": "RainForest",
+      "Name": {
+        "English": "Rainforest Biome",
+        "Russian": "Тропический лес",
+        "German": "Regenwaldbiom",
+        "French": "Biome tropical",
+        "Japanese": "熱帯雨林バイオーム"
+      },
+      "Description": {
+        "English": "A wet and warm biome that supports a forest abundant with plant and animal life.",
+        "Russian": "A wet and warm biome that supports a forest abundant with plant and animal life.",
+        "German": "A wet and warm biome that supports a forest abundant with plant and animal life.",
+        "French": "A wet and warm biome that supports a forest abundant with plant and animal life.",
+        "Japanese": "A wet and warm biome that supports a forest abundant with plant and animal life."
+      },
+      "WorldLayer": "RainforestBiome",
+      "Color": "LightSeaGreen",
+      "IsOcean": false,
+      "PrevailingRockType": "ShaleBlock",
+      "ElevationRangeMin": "0.1",
+      "ElevationRangeMax": "0.5",
+      "TemperatureRangeMin": 14,
+      "TemperatureRangeMax": 22,
+      "MoistureRangeMin": "70",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "0.42000002"
+    },
+    "Steppe Biome": {
+      "ID": "Steppe",
+      "Name": {
+        "English": "Steppe Biome",
+        "Russian": "Steppe Biome",
+        "German": "Steppe Biome",
+        "French": "Steppe Biome",
+        "Japanese": "Steppe Biome"
+      },
+      "Description": {
+        "English": "A slightly colder grassland, often characterized by even fewer trees and larger open spaces.",
+        "Russian": "A slightly colder grassland, often characterized by even fewer trees and larger open spaces.",
+        "German": "A slightly colder grassland, often characterized by even fewer trees and larger open spaces.",
+        "French": "A slightly colder grassland, often characterized by even fewer trees and larger open spaces.",
+        "Japanese": "A slightly colder grassland, often characterized by even fewer trees and larger open spaces."
+      },
+      "WorldLayer": "SteppeBiome",
+      "Color": "LightGreen",
+      "IsOcean": false,
+      "PrevailingRockType": "LimestoneBlock",
+      "ElevationRangeMin": "0.325",
+      "ElevationRangeMax": "0.4",
+      "TemperatureRangeMin": 6,
+      "TemperatureRangeMax": 22,
+      "MoistureRangeMin": "30",
+      "MoistureRangeMax": "50",
+      "UpperHeight": "0.385"
+    },
+    "Tundra Biome": {
+      "ID": "Tundra",
+      "Name": {
+        "English": "Tundra Biome",
+        "Russian": "Тундра",
+        "German": "Tundrabiom",
+        "French": "Biome de toundra",
+        "Japanese": "ツンドラバイオーム"
+      },
+      "Description": {
+        "English": "A very cold biome that cannot support trees but is host to a unique plant and animal community.",
+        "Russian": "A very cold biome that cannot support trees but is host to a unique plant and animal community.",
+        "German": "A very cold biome that cannot support trees but is host to a unique plant and animal community.",
+        "French": "A very cold biome that cannot support trees but is host to a unique plant and animal community.",
+        "Japanese": "A very cold biome that cannot support trees but is host to a unique plant and animal community."
+      },
+      "WorldLayer": "TundraBiome",
+      "Color": "DarkKhaki",
+      "IsOcean": false,
+      "PrevailingRockType": "GraniteBlock",
+      "ElevationRangeMin": "0.4",
+      "ElevationRangeMax": "1",
+      "TemperatureRangeMin": -6,
+      "TemperatureRangeMax": -2,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "60",
+      "UpperHeight": "0.88"
+    },
+    "Warm Coast Biome": {
+      "ID": "WarmCoast",
+      "Name": {
+        "English": "Warm Coast Biome",
+        "Russian": "Warm Coast Biome",
+        "German": "Warm Coast Biome",
+        "French": "Warm Coast Biome",
+        "Japanese": "Warm Coast Biome"
+      },
+      "Description": {
+        "English": "Beaches and shallow waters in warmer climates.",
+        "Russian": "Beaches and shallow waters in warmer climates.",
+        "German": "Beaches and shallow waters in warmer climates.",
+        "French": "Beaches and shallow waters in warmer climates.",
+        "Japanese": "Beaches and shallow waters in warmer climates."
+      },
+      "WorldLayer": "WarmCoastBiome",
+      "Color": "LightGoldenrodYellow",
+      "IsOcean": false,
+      "PrevailingRockType": "SandstoneBlock",
+      "ElevationRangeMin": "0.05",
+      "ElevationRangeMax": "0.1",
+      "TemperatureRangeMin": -10,
+      "TemperatureRangeMax": 30,
+      "MoistureRangeMin": "0",
+      "MoistureRangeMax": "100",
+      "UpperHeight": "0.09"
+    },
+    "Warm Forest Biome": {
+      "ID": "WarmForest",
+      "Name": {
+        "English": "Warm Forest Biome",
+        "Russian": "Тёплый лес",
+        "German": "Warmer Wald Biom",
+        "French": "Biome tempéré",
+        "Japanese": "温帯森林バイオーム"
+      },
+      "Description": {
+        "English": "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate.",
+        "Russian": "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate.",
+        "German": "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate.",
+        "French": "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate.",
+        "Japanese": "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate."
+      },
+      "WorldLayer": "WarmForestBiome",
+      "Color": "DarkGoldenrod",
+      "IsOcean": false,
+      "PrevailingRockType": "GraniteBlock",
+      "ElevationRangeMin": "0.1",
+      "ElevationRangeMax": "0.5",
+      "TemperatureRangeMin": 10,
+      "TemperatureRangeMax": 22,
+      "MoistureRangeMin": "50",
+      "MoistureRangeMax": "60",
+      "UpperHeight": "0.42000002"
+    },
+    "Wetland Biome": {
+      "ID": "Wetland",
+      "Name": {
+        "English": "Wetland Biome",
+        "Russian": "Болото",
+        "German": "Sumpf Biom",
+        "French": "Biome marécageux",
+        "Japanese": "湿地バイオーム"
+      },
+      "Description": {
+        "English": "A unique biome characterized by a saturation of the soil with fresh or brackish water.",
+        "Russian": "A unique biome characterized by a saturation of the soil with fresh or brackish water.",
+        "German": "A unique biome characterized by a saturation of the soil with fresh or brackish water.",
+        "French": "A unique biome characterized by a saturation of the soil with fresh or brackish water.",
+        "Japanese": "A unique biome characterized by a saturation of the soil with fresh or brackish water."
+      },
+      "WorldLayer": "WetlandBiome",
+      "Color": "DarkGreen",
+      "IsOcean": false,
+      "PrevailingRockType": "ShaleBlock",
+      "ElevationRangeMin": "0.02",
+      "ElevationRangeMax": "0.3",
+      "TemperatureRangeMin": 6,
+      "TemperatureRangeMax": 14,
+      "MoistureRangeMin": "60",
+      "MoistureRangeMax": "80",
+      "UpperHeight": "0.244"
+    }
+  }
+}
