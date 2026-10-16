@@ -23,6 +23,7 @@ using Eco.Shared.Utils;
 using Eco.Simulation;
 using Eco.Simulation.Agents;
 using Eco.Simulation.Types;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -41,65 +42,57 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Mods.EcoWikiDataExporter.WikiData;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
         // dictionary of animals and their dictionary of stats
-        private static SortedDictionary<string, Dictionary<string, string>> AnimalData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, AnimalData> AnimalDataList = new SortedDictionary<string, AnimalData>();
 
         public static void ExportAnimalData()
         {
-
-        Dictionary<string, string> animalDetails = new Dictionary<string, string>()
-        {
-            { "ID", "nil" },
-            { "Name", "nil" },
-            { "Description", "nil" }
-        };
 
          IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is AnimalSpecies);
             foreach (Species s in species)
             {
                 AnimalSpecies animal = s as AnimalSpecies;
-                string animalName = animal.DisplayName.NotTranslated;
-                if (!AnimalData.ContainsKey(animalName))
+                string AnimalName = animal.DisplayName.NotTranslated;
+                if (!AnimalDataList.ContainsKey(AnimalName))
                 {
-                    AnimalData.Add(animalName, new Dictionary<string, string>(animalDetails));
-                    AnimalData[animalName]["ID"] = $"'{animal.Name}" + "Species'";
-                    //AnimalData[animalName]["Name"] = WriteDictionaryAsSubObject(Localization(animalName), 1);
+
 
                     //if (animal.Aquatic == false) { AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1); }
-                    
+
                     // Behavior
-                    AnimalData[animalName]["MaturityAgeDays"] = $"'{WikiFloat(animal.MaturityAgeDays)}'";
-                    AnimalData[animalName]["IsSwimming"] = $"'{animal.Swimming}'";
-                    AnimalData[animalName]["IsFishable"] = $"'{animal.IsFishable}'";
-                    AnimalData[animalName]["Nocturnal"] = $"'{animal.Nocturnal}'";
-                    AnimalData[animalName]["Aquatic"] = $"'{animal.Aquatic}'";
+
+                    // AnimalData[animalName]["IsSwimming"] = $"'{animal.Swimming}'";
+                    // AnimalData[animalName]["IsFishable"] = $"'{animal.IsFishable}'";
+                    // AnimalData[animalName]["Nocturnal"] = $"'{animal.Nocturnal}'";
+                    // AnimalData[animalName]["Aquatic"] = $"'{animal.Aquatic}'";
 
 
-                    AnimalData[animalName]["Health"] = $"'{WikiFloat(animal.Health)}'";
-                    AnimalData[animalName]["Flags"] = $"'{animal.Flags}'";
+                    // AnimalData[animalName]["Health"] = $"'{WikiFloat(animal.Health)}'";
+                    // AnimalData[animalName]["Flags"] = $"'{animal.Flags}'";
 
 
-                    AnimalData[animalName]["TooCloseDistance"] = $"'{WikiFloat(animal.TooCloseDistance)}'";
-                    AnimalData[animalName]["MaxVisibilityDistance"] = $"'{WikiFloat(animal.MaxVisibilityDistance)}'";
-                    AnimalData[animalName]["MaxVisibilityAngle"] = $"'{WikiFloat(animal.MaxVisibilityAngle)}'";
-                    AnimalData[animalName]["AttackRange"] = $"'{WikiFloat(animal.AttackRange)}'";
-                    AnimalData[animalName]["ChanceToAttack"] = $"'{WikiFloat(animal.ChanceToAttack)}'";
-                    AnimalData[animalName]["ChanceToAttackUnprovoked"] = $"'{WikiFloat(animal.ChanceToAttackUnprovoked)}'";
-                    AnimalData[animalName]["AttackUnprovokedDistance"] = $"'{WikiFloat(animal.AttackUnprovokedDistance)}'";
-                    AnimalData[animalName]["ChanceOfAlertNoise"] = $"'{WikiFloat(animal.ChanceOfAlertNoise)}'";
-                    AnimalData[animalName]["AnimalDamage"] = $"'{WikiFloat(animal.AnimalDamage)}'";
-                    AnimalData[animalName]["PlayerDamage"] = $"'{WikiFloat(animal.PlayerDamage)}'";
-                    AnimalData[animalName]["HerdSizeMin"] = $"'{animal.HerdSize.Min}'";
-                    AnimalData[animalName]["HerdSizeMax"] = $"'{animal.HerdSize.Max}'";
+                    // AnimalData[animalName]["TooCloseDistance"] = $"'{WikiFloat(animal.TooCloseDistance)}'";
+                    // AnimalData[animalName]["MaxVisibilityDistance"] = $"'{WikiFloat(animal.MaxVisibilityDistance)}'";
+                    // AnimalData[animalName]["MaxVisibilityAngle"] = $"'{WikiFloat(animal.MaxVisibilityAngle)}'";
+                    // AnimalData[animalName]["AttackRange"] = $"'{WikiFloat(animal.AttackRange)}'";
+                    // AnimalData[animalName]["ChanceToAttack"] = $"'{WikiFloat(animal.ChanceToAttack)}'";
+                    // AnimalData[animalName]["ChanceToAttackUnprovoked"] = $"'{WikiFloat(animal.ChanceToAttackUnprovoked)}'";
+                    // AnimalData[animalName]["AttackUnprovokedDistance"] = $"'{WikiFloat(animal.AttackUnprovokedDistance)}'";
+                    // AnimalData[animalName]["ChanceOfAlertNoise"] = $"'{WikiFloat(animal.ChanceOfAlertNoise)}'";
+                    // AnimalData[animalName]["AnimalDamage"] = $"'{WikiFloat(animal.AnimalDamage)}'";
+                    // AnimalData[animalName]["PlayerDamage"] = $"'{WikiFloat(animal.PlayerDamage)}'";
+                    // AnimalData[animalName]["HerdSizeMin"] = $"'{animal.HerdSize.Min}'";
+                    // AnimalData[animalName]["HerdSizeMax"] = $"'{animal.HerdSize.Max}'";
 
                     //Food
-                    AnimalData[animalName]["CalorieValue"] = $"'{WikiFloat(animal.CalorieValue)}'";
-                    AnimalData[animalName]["EatTags"] = $"'{animal.EatTags}'";
+                    // AnimalData[animalName]["CalorieValue"] = $"'{WikiFloat(animal.CalorieValue)}'";
+                    // AnimalData[animalName]["EatTags"] = $"'{animal.EatTags}'";
 
                     //Food Sources
                     var FoodSource = animal.FoodSourcesSpecies;
@@ -110,30 +103,45 @@ namespace Eco.Mods.EcoWikiDataExporter
                         else { FoodSourceList = FoodSourceList + ",'" + sp.DisplayName.NotTranslated + "'";  }
                     }
                     FoodSourceList = "{" + FoodSourceList + "}";
-                    AnimalData[animalName]["FoodSourcesSpecies"] = $"{FoodSourceList}";
+                    // AnimalData[animalName]["FoodSourcesSpecies"] = $"{FoodSourceList}";
 
                     // Movement
-                    AnimalData[animalName]["CanSwimNearCoast"] = $"'{animal.CanSwimNearCoast}'";
+                    // AnimalData[animalName]["CanSwimNearCoast"] = $"'{animal.CanSwimNearCoast}'";
 
                     // Resources
                     if (animal.ResourceItemType != null)
                     {
-                        AnimalData[animalName]["ResourceItem"] = $"'{animal.ResourceItemType.Name}'";
-                        AnimalData[animalName]["ResourceMin"] = $"'{animal.ResourceRange.Min}'";
-                        AnimalData[animalName]["ResourceMax"] = $"'{animal.ResourceRange.Max}'";
-                        AnimalData[animalName]["ResourceBonusAtGrowth"] = $"'{WikiFloat(animal.ResourceBonusAtGrowth)}'";
+                        // AnimalData[animalName]["ResourceItem"] = $"'{animal.ResourceItemType.Name}'";
+                        // AnimalData[animalName]["ResourceMin"] = $"'{animal.ResourceRange.Min}'";
+                        // AnimalData[animalName]["ResourceMax"] = $"'{animal.ResourceRange.Max}'";
+                        // AnimalData[animalName]["ResourceBonusAtGrowth"] = $"'{WikiFloat(animal.ResourceBonusAtGrowth)}'";
                     }
 
                     // Population Growth
-                    AnimalData[animalName]["TimeTill50PercentCloserToMaxInHours"] = $"'{WikiFloat(animal.TimeTill50PercentCloserToMaxInHours)}'";
-                    AnimalData[animalName]["MaxGrowthRatePerHour"] = $"'{WikiFloat(animal.MaxGrowthRatePerHour)}'";
-                    AnimalData[animalName]["TimeToSpread1ToNeighborInHours"] = $"'{WikiFloat(animal.TimeToSpread1ToNeighborInHours)}'";
+                    // AnimalData[animalName]["TimeTill50PercentCloserToMaxInHours"] = $"'{WikiFloat(animal.TimeTill50PercentCloserToMaxInHours)}'";
+                    // AnimalData[animalName]["MaxGrowthRatePerHour"] = $"'{WikiFloat(animal.MaxGrowthRatePerHour)}'";
+                    // AnimalData[animalName]["TimeToSpread1ToNeighborInHours"] = $"'{WikiFloat(animal.TimeToSpread1ToNeighborInHours)}'";
 
                     // Climate
-                    AnimalData[animalName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(animal.ReleasesCO2TonsPerDay)}'";
+                    // AnimalData[animalName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(animal.ReleasesCO2TonsPerDay)}'";
+
+                    AnimalData animaldata = new AnimalData
+                    {
+                        ID = animal.Name + "Species",
+                        Name = Localization(AnimalName),
+                        MaturityAgeDays = WikiFloat(animal.MaturityAgeDays),
+
+                        CO2TonsPerDay = WikiFloat(animal.ReleasesCO2TonsPerDay)
+                    };
+
+                    AnimalDataList.Add(AnimalName, animaldata);
+
                 }
             }
-        // writes to txt file
+
+        // writes to json file
+        string AnimalDataListjsonString = JsonConvert.SerializeObject(new { animals = AnimalDataList }, Formatting.Indented);
+        WriteDictionaryToJsonFile("Animals", AnimalDataListjsonString);
 
         }
 

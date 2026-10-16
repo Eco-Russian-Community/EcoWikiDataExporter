@@ -94,10 +94,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             return tagslist;
         }
 
-        public static string WorldTemp(float ServerTemp)
+        public static int WorldTemp(float ServerTemp)
         {
             var temp = Math.Round(ServerTemp * 40 - 10);
-            return temp.ToString("G", CultureInfo.InvariantCulture);
+            return Convert.ToInt32(temp);
         }
 
         public static string Percent(float Percent)

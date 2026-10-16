@@ -21,10 +21,12 @@ using Eco.Shared.Localization;
 using Eco.Shared.Logging;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Eco.Simulation.Agents;
 using Eco.Simulation.Types;
 using Eco.Simulation.WorldLayers;
 using Eco.Simulation.WorldLayers.Layers;
 using Eco.WorldGenerator;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -50,19 +52,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 	public partial class WikiData
     {
         // Dictionary of tags
-        private static SortedDictionary<string, Dictionary<string, string>> BiomeData = new SortedDictionary<string, Dictionary<string, string>>();
-
-        // Dictionary of biomes properties
-        private static Dictionary<string, string> biomeDetails = new Dictionary<string, string>()
-        {
-            { "ID","nil" },
-            { "Name","nil" },
-            { "Description","nil" },
-            { "Color","nil" },
-            { "CanSpawnLake","nil" },
-            { "IsOcean","nil" }
-
-        };
+        private static SortedDictionary<string, BiomeData> BiomeDataList = new SortedDictionary<string, BiomeData>();
 
         public static void ExportBiomeData()
         {
@@ -85,18 +75,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                 {
                     BiomeNameLoc = BiomeName + " Biome";
                 }
-                
-                BiomeData.Add(BiomeName, new Dictionary<string, string>(biomeDetails));
-                
-                BiomeData[BiomeName]["ID"] = $"'{BiomeID}'";
-                BiomeData[BiomeName]["WorldLayer"] = $"'{BiomeLayer}'";
-                BiomeData[BiomeName]["Color"] = $"'{BiomeItem.Color.Name}'";
 
-                if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
-                if (BiomeExtensions.IsOcean(BiomeItem)) { BiomeData[BiomeName]["IsOcean"] = $"'True'"; }
-                
 
-                //BiomeData[BiomeName]["Name"] = WriteDictionaryAsSubObject(Localization(BiomeNameLoc), 1);
+
+                //if (BiomeExtensions.CanSpawnLake(BiomeItem)) { BiomeData[BiomeName]["CanSpawnLake"] = $"'True'";  }
+
 
                 string BiomeDescription = "";
                 if (BiomeID == "Coast") { BiomeDescription = "Beaches and shallow waters."; }
@@ -116,19 +99,34 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (BiomeID == "WarmForest") { BiomeDescription = "A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate."; }
                 if (BiomeID == "Wetland") { BiomeDescription = "A unique biome characterized by a saturation of the soil with fresh or brackish water."; }
 
-                //BiomeData[BiomeName]["Description"] = WriteDictionaryAsSubObject(Localization(BiomeDescription), 1);
-                BiomeData[BiomeName]["PrevailingRockType"] = $"'{BiomeItem.PrevailingRockType.Name}'";
-                //BiomeData[BiomeName]["ElevationRangeMin"] = $"'{BiomeItem.ElevationRange.Min}'";
-                //BiomeData[BiomeName]["ElevationRangeMax"] = $"'{BiomeItem.ElevationRange.Max}'";
-                BiomeData[BiomeName]["TemperatureRangeMin"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Min)}'";
-                BiomeData[BiomeName]["TemperatureRangeMax"] = $"'{WorldTemp(BiomeItem.TemperatureRange.Max)}'";
-                BiomeData[BiomeName]["MoistureRangeMin"] = $"'{Percent(BiomeItem.MoistureRange.Min)}'";
-                BiomeData[BiomeName]["MoistureRangeMax"] = $"'{Percent(BiomeItem.MoistureRange.Max)}'";
-                //BiomeData[BiomeName]["UpperHeight"] = $"'{BiomeItem.UpperHeight}'";
                 //BiomeData[BiomeName]["BadNeighbors"] = $"'{BiomeItem.BadNeighbors}'";
+
+                BiomeData biomedata = new BiomeData
+                {
+                    ID = BiomeID,
+                    Name = Localization(BiomeNameLoc),
+                    Description = Localization(BiomeDescription),
+                    WorldLayer = BiomeLayer,
+                    Color = BiomeItem.Color.Name,
+                    IsOcean = BiomeExtensions.IsOcean(BiomeItem) ? true : false,
+                    PrevailingRockType = BiomeItem.PrevailingRockType.Name,
+                    ElevationRangeMin = WikiFloat(BiomeItem.ElevationRange.Min),
+                    ElevationRangeMax = WikiFloat(BiomeItem.ElevationRange.Max),
+                    TemperatureRangeMin = WorldTemp(BiomeItem.TemperatureRange.Min),
+                    TemperatureRangeMax = WorldTemp(BiomeItem.TemperatureRange.Max),
+                    MoistureRangeMin = Percent(BiomeItem.MoistureRange.Min),
+                    MoistureRangeMax = Percent(BiomeItem.MoistureRange.Max),
+                    UpperHeight = WikiFloat(BiomeItem.UpperHeight)
+
+                };
+
+                BiomeDataList.Add(BiomeNameLoc, biomedata);
+
             }
 
-
+            // writes to json file
+            string BiomeDataListjsonString = JsonConvert.SerializeObject(new { biomes = BiomeDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Biomes", BiomeDataListjsonString);
         }
     }
 }

@@ -24,6 +24,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Text.RegularExpressions;
 using static Eco.Simulation.Types.PlantSpecies;
@@ -47,39 +48,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                 string TreeName = tree.DisplayName.NotTranslated;
                 if (!TreeDataList.ContainsKey(TreeName))
                 {
-                    
 
-
-
-
-
-
-
-
-
-
-                    TreeData treedata = new TreeData
-                    {
-                        ID = tree.Name + "Species",
-                        Name = Localization(TreeName),
-                        MaturityAgeDays = WikiFloat(tree.MaturityAgeDays)
-
-                    };
-
-                    TreeDataList.Add(TreeName, treedata);
-
-
-
-
-
-
-
-                    // Info
-
-                    // TreeData[treeName]["IsDecorative"] = $"'{tree.Decorative}'";
                     // Lifetime
-                    // TreeData[treeName]["MaturityAgeDays"] = $"'{WikiFloat(tree.MaturityAgeDays)}'";
-                    // TreeData[treeName]["TreeHealth"] = $"'{tree.TreeHealth}'";
+
                     // TreeData[treeName]["BranchCount"] = $"'{tree.BranchingDef.Count}'";
                     // TreeData[treeName]["Density"] = $"'{tree.Density}'";
 
@@ -116,7 +87,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     // TreeData[treeName]["ChanceToSpawnDebris"] = $"'{Percent(tree.ChanceToSpawnDebris)}'";
                     // TreeData[treeName]["DebrisType"] = $"'{tree.DebrisType.Name}'";
 
-                    if (tree.ResourceItemType != null) 
+                    if (tree.ResourceItemType != null)
                     {
                         // TreeData[treeName]["ResourceItem"] = $"'{tree.ResourceItemType.Name}'";
                         // TreeData[treeName]["ResourceMax"] = $"'{tree.ResourceRange.Max}'";
@@ -125,7 +96,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     foreach (var debrisresources in tree.DebrisResources)
                     {
-                        
+
                         //debrisresources.Key
                         //debrisresources.Value.Min
                         //debrisresources.Value.Max
@@ -156,30 +127,36 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
 
+                    TreeData treedata = new TreeData
+                    {
+                        ID = tree.Name + "Species",
+                        Name = Localization(TreeName),
+                        MaturityAgeDays = WikiFloat(tree.MaturityAgeDays),
 
+                        TreeHealth = WikiFloat(tree.TreeHealth),
 
-                    // Capacity
-                    // TreeData[treeName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(tree.IdealTemperatureRange.Min)}'";
-                    // TreeData[treeName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(tree.IdealTemperatureRange.Max)}'";
-                    // TreeData[treeName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(tree.TemperatureExtremes.Min)}'";
-                    // TreeData[treeName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(tree.TemperatureExtremes.Max)}'";
+                        ExtremeTemperatureRangeMin = WorldTemp(tree.TemperatureExtremes.Min),
+                        IdealTemperatureRangeMin = WorldTemp(tree.IdealTemperatureRange.Min),
+                        IdealTemperatureRangeMax = WorldTemp(tree.IdealTemperatureRange.Max),
+                        ExtremeTemperatureRangeMax = WorldTemp(tree.TemperatureExtremes.Max),
 
-                    // TreeData[treeName]["IdealMoistureRangeMin"] = $"'{Percent(tree.IdealMoistureRange.Min)}'";
-                    // TreeData[treeName]["IdealMoistureRangeMax"] = $"'{Percent(tree.IdealMoistureRange.Max)}'";
-                    // TreeData[treeName]["ExtremeMoistureRangeMin"] = $"'{Percent(tree.MoistureExtremes.Min)}'";
-                    // TreeData[treeName]["ExtremeMoistureRangeMax"] = $"'{Percent(tree.MoistureExtremes.Max)}'";
+                        ExtremeMoistureRangeMin = Percent(tree.MoistureExtremes.Min),
+                        IdealMoistureRangeMin = Percent(tree.IdealMoistureRange.Min),
+                        IdealMoistureRangeMax = Percent(tree.IdealMoistureRange.Max),
+                        ExtremeMoistureRangeMax = Percent(tree.MoistureExtremes.Max),
 
-                    // TreeData[treeName]["IdealWaterRangeMin"] = $"'{Percent(tree.IdealWaterRange.Min)}'";
-                    // TreeData[treeName]["IdealWaterRangeMax"] = $"'{Percent(tree.IdealWaterRange.Max)}'";
-                    // TreeData[treeName]["ExtremeWaterRangeMin"] = $"'{Percent(tree.WaterExtremes.Min)}'";
-                    // TreeData[treeName]["ExtremeWaterRangeMax"] = $"'{Percent(tree.WaterExtremes.Max)}'";
+                        ExtremeWaterRangeMin = Percent(tree.WaterExtremes.Min),
+                        IdealWaterRangeMin = Percent(tree.IdealWaterRange.Min),
+                        IdealWaterRangeMax = Percent(tree.IdealWaterRange.Max),
+                        ExtremeWaterRangeMax = Percent(tree.WaterExtremes.Max),
 
-                    // Climate
-                    // TreeData[treeName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(tree.ReleasesCO2TonsPerDay)}'";
-                    // TreeData[treeName]["PollutionDensityMin"] = $"'{Percent(tree.PollutionDensityTolerance)}'";
-                    // TreeData[treeName]["PollutionDensityMax"] = $"'{Percent(tree.MaxPollutionDensity)}'";
+                        PollutionMin = Percent(tree.PollutionDensityTolerance),
+                        PollutionMax = Percent(tree.MaxPollutionDensity),
 
+                        CO2TonsPerDay = WikiFloat(tree.ReleasesCO2TonsPerDay)
+                    };
 
+                    TreeDataList.Add(TreeName, treedata);
 
                 }
             }

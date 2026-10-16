@@ -21,6 +21,7 @@ using Eco.Shared.IoC;
 using Eco.Shared.Localization;
 using Eco.Shared.Networking;
 using Eco.Shared.Utils;
+using Eco.WorldGenerator;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -241,6 +242,82 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string ID { get; set; }
             public TranslateData Name { get; set; }
             public string MaturityAgeDays { get; set; }
+            public string TreeHealth { get; set; }
+            public int ExtremeTemperatureRangeMin { get; set; }
+            public int IdealTemperatureRangeMin { get; set; }
+            public int IdealTemperatureRangeMax { get; set; }
+            public int ExtremeTemperatureRangeMax { get; set; }
+            public string ExtremeMoistureRangeMin { get; set; }
+            public string IdealMoistureRangeMin { get; set; }
+            public string IdealMoistureRangeMax { get; set; }
+            public string ExtremeMoistureRangeMax { get; set; }
+            public string ExtremeWaterRangeMin { get; set; }
+            public string IdealWaterRangeMin { get; set; }
+            public string IdealWaterRangeMax { get; set; }
+            public string ExtremeWaterRangeMax { get; set; }
+            public string PollutionMin { get; set; }
+            public string PollutionMax { get; set; }
+            public string CO2TonsPerDay { get; set; }
+
+        }
+
+        public class PlantData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+            public string MaturityAgeDays { get; set; }
+            public string StartBiome { get; set; }
+            public bool WaterPlant { get; set; }
+            public bool IsHarvestable { get; set; }
+            public bool IsDiggable { get; set; }
+            public bool IsReapable { get; set; }
+            public int Height { get; set; }
+
+            public int ExtremeTemperatureRangeMin { get; set; }
+            public int IdealTemperatureRangeMin { get; set; }
+            public int IdealTemperatureRangeMax { get; set; }
+            public int ExtremeTemperatureRangeMax { get; set; }
+            public string ExtremeMoistureRangeMin { get; set; }
+            public string IdealMoistureRangeMin { get; set; }
+            public string IdealMoistureRangeMax { get; set; }
+            public string ExtremeMoistureRangeMax { get; set; }
+            public string ExtremeWaterRangeMin { get; set; }
+            public string IdealWaterRangeMin { get; set; }
+            public string IdealWaterRangeMax { get; set; }
+            public string ExtremeWaterRangeMax { get; set; }
+            public string PollutionMin { get; set; }
+            public string PollutionMax { get; set; }
+            public string CO2TonsPerDay { get; set; }
+
+        }
+
+        public class AnimalData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+            public string MaturityAgeDays { get; set; }
+
+
+
+            public string CO2TonsPerDay { get; set; }
+        }
+
+        public class BiomeData
+        {
+            public string ID { get; set; }
+            public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public string WorldLayer { get; set; }
+            public string Color { get; set; }
+            public bool IsOcean { get; set; }
+            public string PrevailingRockType { get; set; }
+            public string ElevationRangeMin { get; set; }
+            public string ElevationRangeMax { get; set; }
+            public int TemperatureRangeMin { get; set; }
+            public int TemperatureRangeMax { get; set; }
+            public string MoistureRangeMin { get; set; }
+            public string MoistureRangeMax { get; set; }
+            public string UpperHeight { get; set; }
 
         }
 

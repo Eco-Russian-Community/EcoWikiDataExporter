@@ -1,4 +1,27 @@
-﻿using System;
+﻿using Eco.Core.Controller;
+using Eco.Core.Plugins;
+using Eco.Core.Plugins.Interfaces;
+using Eco.Core.Utils;
+using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Components;
+using Eco.Gameplay.Items;
+using Eco.Gameplay.Objects;
+using Eco.Gameplay.Players;
+using Eco.Gameplay.Systems;
+using Eco.Gameplay.Systems.Messaging.Chat;
+using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+using Eco.Shared;
+using Eco.Shared.Icons;
+using Eco.Shared.IoC;
+using Eco.Shared.Localization;
+using Eco.Shared.Networking;
+using Eco.Shared.Utils;
+using Eco.Simulation;
+using Eco.Simulation.Agents;
+using Eco.Simulation.Types;
+using Eco.World.Blocks;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
@@ -15,98 +38,77 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Eco.Core.Controller;
-using Eco.Core.Plugins;
-using Eco.Core.Plugins.Interfaces;
-using Eco.Core.Utils;
-using Eco.Gameplay.Blocks;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Players;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using Eco.Gameplay.Systems.Messaging.Chat;
-using Eco.Shared.Icons;
-using Eco.Shared.Localization;
-using Eco.Shared.Networking;
-using Eco.Shared.Utils;
-using Eco.Gameplay.Systems;
-using Eco.Shared;
-using Eco.Shared.IoC;
-using Eco.Simulation.Types;
-using Eco.Simulation;
-using Eco.Simulation.Agents;
-using Eco.World.Blocks;
 
 namespace Eco.Mods.EcoWikiDataExporter
 {
 	public partial class WikiData
     {
         // dictionary of plants and their dictionary of stats
-        private static SortedDictionary<string, Dictionary<string, string>> PlantData = new SortedDictionary<string, Dictionary<string, string>>();
+        private static SortedDictionary<string, PlantData> PlantDataList = new SortedDictionary<string, PlantData>();
 
         public static void ExportPlantData()
         {
-            // dictionary of plant properties
-            Dictionary<string, string> plantDetails = new Dictionary<string, string>()
-            {
-                { "ID","nil" },
-                { "Name","nil" },
-                { "MaturityAgeDays","nil" },
-                { "StartBiomes","nil" },
-                { "Height","nil" },
-                { "IsReapable","nil" },
-                { "IsDiggable","nil" }
-            };
 
             IEnumerable<Species> species = EcoSim.AllSpecies.Where(s => s is PlantSpecies && s is not TreeSpecies);
             foreach (Species s in species)
             {
                 PlantSpecies plant = s as PlantSpecies;
-                string plantName = plant.DisplayName.NotTranslated;
-                if (!PlantData.ContainsKey(plantName))
+                string PlantName = plant.DisplayName.NotTranslated;
+                if (!PlantDataList.ContainsKey(PlantName))
                 {
-                        
-                    PlantData.Add(plantName, new Dictionary<string, string>(plantDetails));
-                    PlantData[plantName]["ID"] = $"'{plant.Name}" + "Species'";
-                    //PlantData[plantName]["Name"] = WriteDictionaryAsSubObject(Localization(plantName), 1);
-                    PlantData[plantName]["MaturityAgeDays"] = $"'{WikiFloat(plant.MaturityAgeDays)}'";
-                    PlantData[plantName]["StartBiomes"] = $"'{plant.GenerationDefinitions.StartBiomes}'";
-                    PlantData[plantName]["IsWater"] = plant.Water ? $"'True'" : "nil";
-                    PlantData[plantName]["IsHarvestable"] = plant.RequireHarvestable ? $"'True'" : "nil";
-                    if (Block.Is<Reapable>(plant.BlockType)) { PlantData[plantName]["IsReapable"] = $"'True'"; }
-                    if (Block.Is<Diggable>(plant.BlockType)) { PlantData[plantName]["IsDiggable"] = $"'True'"; }
-                    PlantData[plantName]["Height"] = $"'{plant.Height}'";
-                    PlantData[plantName]["CalorieValue"] = $"'{plant.CalorieValue}'";
 
-                    // Capacity
-                    PlantData[plantName]["IdealTemperatureRangeMin"] = $"'{WorldTemp(plant.IdealTemperatureRange.Min)}'";
-                    PlantData[plantName]["IdealTemperatureRangeMax"] = $"'{WorldTemp(plant.IdealTemperatureRange.Max)}'";
-                    PlantData[plantName]["ExtremeTemperatureRangeMin"] = $"'{WorldTemp(plant.TemperatureExtremes.Min)}'";
-                    PlantData[plantName]["ExtremeTemperatureRangeMax"] = $"'{WorldTemp(plant.TemperatureExtremes.Max)}'";
+                    // PlantData[plantName]["CalorieValue"] = $"'{plant.CalorieValue}'";
 
-                    PlantData[plantName]["IdealMoistureRangeMin"] = $"'{Percent(plant.IdealMoistureRange.Min)}'";
-                    PlantData[plantName]["IdealMoistureRangeMax"] = $"'{Percent(plant.IdealMoistureRange.Max)}'";
-                    PlantData[plantName]["ExtremeMoistureRangeMin"] = $"'{Percent(plant.MoistureExtremes.Min)}'";
-                    PlantData[plantName]["ExtremeMoistureRangeMax"] = $"'{Percent(plant.MoistureExtremes.Max)}'";
-
-                    PlantData[plantName]["IdealWaterRangeMin"] = $"'{Percent(plant.IdealWaterRange.Min)}'";
-                    PlantData[plantName]["IdealWaterRangeMax"] = $"'{Percent(plant.IdealWaterRange.Max)}'";
-                    PlantData[plantName]["ExtremeWaterRangeMin"] = $"'{Percent(plant.WaterExtremes.Min)}'";
-                    PlantData[plantName]["ExtremeWaterRangeMax"] = $"'{Percent(plant.WaterExtremes.Max)}'";
-
-                    PlantData[plantName]["PollutionDensityMin"] = $"'{Percent(plant.PollutionDensityTolerance)}'";
-                    PlantData[plantName]["PollutionDensityMax"] = $"'{Percent(plant.MaxPollutionDensity)}'";
-
-                    // Climate
-                    PlantData[plantName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(plant.ReleasesCO2TonsPerDay)}'";
+                    if (plant.ResourceItemType != null)
+                    {
+                        // TreeData[treeName]["ResourceItem"] = $"'{plant.ResourceItemType.Name}'";
+                        // TreeData[treeName]["ResourceMax"] = $"'{plant.ResourceRange.Max}'";
+                    }
 
 
 
+                    PlantData plantdata = new PlantData
+                    {
+                        ID = plant.Name + "Species",
+                        Name = Localization(PlantName),
+                        Height = plant.Height,
+                        MaturityAgeDays = WikiFloat(plant.MaturityAgeDays),
+                        StartBiome = plant.GenerationDefinitions.StartBiomes,
+                        WaterPlant = plant.Water ? true : false,
+                        IsHarvestable = plant.RequireHarvestable ? true : false,
+                        IsDiggable = Block.Is<Diggable>(plant.BlockType) ? true : false,
+                        IsReapable = Block.Is<Reapable>(plant.BlockType) ? true : false,
+
+
+
+                        ExtremeTemperatureRangeMin = WorldTemp(plant.TemperatureExtremes.Min),
+                        IdealTemperatureRangeMin = WorldTemp(plant.IdealTemperatureRange.Min),
+                        IdealTemperatureRangeMax = WorldTemp(plant.IdealTemperatureRange.Max),
+                        ExtremeTemperatureRangeMax = WorldTemp(plant.TemperatureExtremes.Max),
+
+                        ExtremeMoistureRangeMin = Percent(plant.MoistureExtremes.Min),
+                        IdealMoistureRangeMin = Percent(plant.IdealMoistureRange.Min),
+                        IdealMoistureRangeMax = Percent(plant.IdealMoistureRange.Max),
+                        ExtremeMoistureRangeMax = Percent(plant.MoistureExtremes.Max),
+
+                        ExtremeWaterRangeMin = Percent(plant.WaterExtremes.Min),
+                        IdealWaterRangeMin = Percent(plant.IdealWaterRange.Min),
+                        IdealWaterRangeMax = Percent(plant.IdealWaterRange.Max),
+                        ExtremeWaterRangeMax = Percent(plant.WaterExtremes.Max),
+
+                        PollutionMin = Percent(plant.PollutionDensityTolerance),
+                        PollutionMax = Percent(plant.MaxPollutionDensity),
+
+                        CO2TonsPerDay = WikiFloat(plant.ReleasesCO2TonsPerDay)
+                    };
+
+                    PlantDataList.Add(PlantName, plantdata);
 
                 }
-                
-             // writes to txt file
+
+                // writes to json file
+                string PlantDataListjsonString = JsonConvert.SerializeObject(new { plants = PlantDataList }, Formatting.Indented);
+                WriteDictionaryToJsonFile("Plants", PlantDataListjsonString);
 
             }
         }
