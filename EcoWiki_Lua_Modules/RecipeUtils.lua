@@ -34,7 +34,7 @@ end
 function p.TagsIngredient(TagsList)
     local Recipes = ""
 	for Count, TagName in pairs(TagsList) do
-		RecipeList = p.TagIngredient(TagName)
+		local RecipeList = p.TagIngredient(TagName)
 		if (Recipes == "") then Recipes = Recipes .. RecipeList else Recipes = Recipes .. "," .. RecipeList end
 	end
 	
