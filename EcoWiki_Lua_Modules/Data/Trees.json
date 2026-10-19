@@ -10,6 +10,7 @@
         "Japanese": "白樺"
       },
       "MaturityAgeDays": "5",
+      "TreeHealth": "15",
       "ExtremeTemperatureRangeMin": 10,
       "IdealTemperatureRangeMin": 12,
       "IdealTemperatureRangeMax": 20,
@@ -36,6 +37,7 @@
         "Japanese": "杉"
       },
       "MaturityAgeDays": "5",
+      "TreeHealth": "15",
       "ExtremeTemperatureRangeMin": 10,
       "IdealTemperatureRangeMin": 12,
       "IdealTemperatureRangeMax": 20,
@@ -62,6 +64,7 @@
         "Japanese": "パンヤノキ"
       },
       "MaturityAgeDays": "6",
+      "TreeHealth": "45",
       "ExtremeTemperatureRangeMin": 14,
       "IdealTemperatureRangeMin": 16,
       "IdealTemperatureRangeMax": 20,
@@ -88,6 +91,7 @@
         "Japanese": "モミの木"
       },
       "MaturityAgeDays": "5.5",
+      "TreeHealth": "15",
       "ExtremeTemperatureRangeMin": -2,
       "IdealTemperatureRangeMin": -1,
       "IdealTemperatureRangeMax": 8,
@@ -114,6 +118,7 @@
         "Japanese": "ジョシュア・ツリー"
       },
       "MaturityAgeDays": "7",
+      "TreeHealth": "12",
       "ExtremeTemperatureRangeMin": 16,
       "IdealTemperatureRangeMin": 18,
       "IdealTemperatureRangeMax": 24,
@@ -140,6 +145,7 @@
         "Japanese": "樫"
       },
       "MaturityAgeDays": "7",
+      "TreeHealth": "30",
       "ExtremeTemperatureRangeMin": 6,
       "IdealTemperatureRangeMin": 8,
       "IdealTemperatureRangeMax": 20,
@@ -166,6 +172,7 @@
         "Japanese": "セコイアの古木"
       },
       "MaturityAgeDays": "30",
+      "TreeHealth": "300",
       "ExtremeTemperatureRangeMin": 3,
       "IdealTemperatureRangeMin": 4,
       "IdealTemperatureRangeMax": 9,
@@ -192,6 +199,7 @@
         "Japanese": "ヤシ"
       },
       "MaturityAgeDays": "4.5",
+      "TreeHealth": "9",
       "ExtremeTemperatureRangeMin": 14,
       "IdealTemperatureRangeMin": 14,
       "IdealTemperatureRangeMax": 22,
@@ -218,6 +226,7 @@
         "Japanese": "セコイア"
       },
       "MaturityAgeDays": "6",
+      "TreeHealth": "15",
       "ExtremeTemperatureRangeMin": 3,
       "IdealTemperatureRangeMin": 4,
       "IdealTemperatureRangeMax": 9,
@@ -244,6 +253,7 @@
         "Japanese": "サグアロサボテン"
       },
       "MaturityAgeDays": "6",
+      "TreeHealth": "10.5",
       "ExtremeTemperatureRangeMin": 18,
       "IdealTemperatureRangeMin": 22,
       "IdealTemperatureRangeMax": 26,
@@ -270,6 +280,7 @@
         "Japanese": "松"
       },
       "MaturityAgeDays": "5.5",
+      "TreeHealth": "15",
       "ExtremeTemperatureRangeMin": -2,
       "IdealTemperatureRangeMin": -1,
       "IdealTemperatureRangeMax": 2,

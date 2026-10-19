@@ -9,7 +9,8 @@
         "French": "Agouti",
         "Japanese": "アグーチ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Alligator": {
       "ID": "AlligatorSpecies",
@@ -20,7 +21,8 @@
         "French": "Alligator",
         "Japanese": "ワニ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Bass": {
       "ID": "BassSpecies",
@@ -31,7 +33,8 @@
         "French": "Bar",
         "Japanese": "バス"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Bighorn Sheep": {
       "ID": "BighornSheepSpecies",
@@ -42,7 +45,8 @@
         "French": "Mouflon",
         "Japanese": "ビッグホーンシープ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Bison": {
       "ID": "BisonSpecies",
@@ -53,7 +57,8 @@
         "French": "Bison",
         "Japanese": "バイソン"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.2"
     },
     "Blue Shark": {
       "ID": "BlueSharkSpecies",
@@ -64,7 +69,8 @@
         "French": "Requin bleu",
         "Japanese": "ブルーシャーク"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Cod": {
       "ID": "CodSpecies",
@@ -75,7 +81,8 @@
         "French": "Morue",
         "Japanese": "タラ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Coyote": {
       "ID": "CoyoteSpecies",
@@ -86,7 +93,8 @@
         "French": "Coyote",
         "Japanese": "コヨーテ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Crab": {
       "ID": "CrabSpecies",
@@ -97,7 +105,8 @@
         "French": "Crabe",
         "Japanese": "カニ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Deer": {
       "ID": "DeerSpecies",
@@ -108,7 +117,8 @@
         "French": "Cerf mulet",
         "Japanese": "鹿"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Elk": {
       "ID": "ElkSpecies",
@@ -119,7 +129,8 @@
         "French": "Wapiti",
         "Japanese": "ヘラジカ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Fox": {
       "ID": "FoxSpecies",
@@ -130,7 +141,8 @@
         "French": "Renard",
         "Japanese": "キツネ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Hare": {
       "ID": "HareSpecies",
@@ -141,7 +153,8 @@
         "French": "Lièvre",
         "Japanese": "野ウサギ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Jaguar": {
       "ID": "JaguarSpecies",
@@ -152,7 +165,8 @@
         "French": "Jaguar",
         "Japanese": "ジャガー"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Moon Jellyfish": {
       "ID": "MoonJellyfishSpecies",
@@ -163,7 +177,8 @@
         "French": "Méduse lune",
         "Japanese": "水クラゲ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Mountain Goat": {
       "ID": "MountainGoatSpecies",
@@ -174,7 +189,8 @@
         "French": "Chèvre des montagnes",
         "Japanese": "マウンテンゴート"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Otter": {
       "ID": "OtterSpecies",
@@ -185,7 +201,8 @@
         "French": "Loutre",
         "Japanese": "カワウソ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Pacific Sardine": {
       "ID": "PacificSardineSpecies",
@@ -196,7 +213,8 @@
         "French": "Sardine du Pacifique",
         "Japanese": "パシフィック・サーディン"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Prairie Dog": {
       "ID": "PrairieDogSpecies",
@@ -207,7 +225,8 @@
         "French": "Chien de prairie",
         "Japanese": "プレーリードッグ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Salmon": {
       "ID": "SalmonSpecies",
@@ -218,7 +237,8 @@
         "French": "Saumon",
         "Japanese": "サケ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Snapping Turtle": {
       "ID": "SnappingTurtleSpecies",
@@ -229,7 +249,8 @@
         "French": "Tortue alligator",
         "Japanese": "スナッピングタートル"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Tortoise": {
       "ID": "TortoiseSpecies",
@@ -240,7 +261,8 @@
         "French": "Tortue terrestre",
         "Japanese": "カメ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Trout": {
       "ID": "TroutSpecies",
@@ -251,7 +273,8 @@
         "French": "Truite",
         "Japanese": "マス"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Tuna": {
       "ID": "TunaSpecies",
@@ -262,7 +285,8 @@
         "French": "Thon",
         "Japanese": "マグロ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Turkey": {
       "ID": "TurkeySpecies",
@@ -273,7 +297,8 @@
         "French": "Dinde",
         "Japanese": "七面鳥"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     },
     "Wolf": {
       "ID": "WolfSpecies",
@@ -284,7 +309,8 @@
         "French": "Loup",
         "Japanese": "オオカミ"
       },
-      "MaturityAgeDays": "1"
+      "MaturityAgeDays": "1",
+      "CO2TonsPerDay": "0.02"
     }
   }
 }
