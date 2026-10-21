@@ -146,6 +146,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public int Weight { get; set; }
             public int MaxStackSize { get; set; }
             public List<string> Tags { get; set; }
+            public string Types { get; set; }
         }
 
         public class FoodData

@@ -190,10 +190,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
 
 
-					if (item is ModuleItem)
-					{ 
-						//ItemData[ItemName]["ModuleItem"] = $"'True'";
-					}
+					if (item is ModuleItem Module)
+					{
+                        //ItemData[ItemName]["ModuleItem"] = $"'True'";
+
+
+                    }
 
 					if (item is PartItem Part)
 					{
@@ -228,16 +230,28 @@ namespace Eco.Mods.EcoWikiDataExporter
 					}
 
 
-
-
-                    //if (item is SkillBook) { ItemData[ItemName]["SkillBook"] = $"'True'"; }
-                    //if (item is SkillScroll) { ItemData[ItemName]["SkillScroll"] = $"'True'"; }
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
                     // -------------------------------------------------------------------------------------------------------
 
+                    List<int> ItemTypesList = 
+                    [
+                        item is FoodItem ? 1 : 0, 
+                        item is SeedItem ? 1 : 0,
+                        item is BlockItem ? 1 : 0,
+                        item is ClothingItem ? 1 : 0,
+                        item is FertilizerItem ? 1 : 0,
+                        item is SkillBook ? 1 : 0,
+                        item is SkillScroll ? 1 : 0,
+                        item is ModuleItem ? 1 : 0,
+                        item is PartItem ? 1 : 0,
+                        item is DecontaminantItem ? 1 : 0,
+                        item is WorldObjectItem ? 1 : 0,
+                        item is VehicleToolItem ? 1 : 0
+                    ];
 
+                    string ItemTypes = string.Join(",", ItemTypesList);
 
                     ItemData itemdata = new ItemData
                     {
@@ -247,7 +261,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                         Hidden = item.Hidden,
                         Weight = item.Weight,
                         MaxStackSize = item.MaxStackSize,
-						Tags = GetItemTags(item)
+                        Types = ItemTypes,
+                        Tags = GetItemTags(item)
                     };
 
                     ItemDataList.Add(ItemName, itemdata);
