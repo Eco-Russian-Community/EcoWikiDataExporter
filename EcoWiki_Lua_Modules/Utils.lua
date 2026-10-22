@@ -262,8 +262,21 @@ function p.DecodeItemTypes(TypesString)
 	local RawList = p.StringListToArray(TypesString)
 	local Types = {}
 	
-	if RawList[1] == 1 then Types['Food'] = true else Types['Food'] = false end
-	if RawList[2] == 1 then Types['Seed'] = true else Types['Seed'] = false end
+	if RawList[1] == "1" then Types['Food'] = true else Types['Food'] = false end
+	if RawList[2] == "1" then Types['Seed'] = true else Types['Seed'] = false end
+	if RawList[3] == "1" then Types['Block'] = true else Types['Block'] = false end
+	if RawList[4] == "1" then Types['Clothing'] = true else Types['Clothing'] = false end
+	if RawList[5] == "1" then Types['Fertilizer'] = true else Types['Fertilizer'] = false end
+	if RawList[6] == "1" then Types['SkillBook'] = true else Types['SkillBook'] = false end
+	if RawList[7] == "1" then Types['SkillScroll'] = true else Types['SkillScroll'] = false end
+	if RawList[8] == "1" then Types['Module'] = true else Types['Module'] = false end
+	if RawList[9] == "1" then Types['Part'] = true else Types['Part'] = false end
+	if RawList[10] == "1" then Types['Decontaminant'] = true else Types['Decontaminant'] = false end
+	if RawList[11] == "1" then Types['WorldObject'] = true else Types['WorldObject'] = false end
+	if RawList[12] == "1" then Types['VehicleTool'] = true else Types['VehicleTool'] = false end
+	if RawList[13] == "1" then Types['Fuel'] = true else Types['Fuel'] = false end
+	if RawList[14] == "1" then Types['Waste'] = true else Types['Waste'] = false end
+	if RawList[15] == "1" then Types['Currency'] = true else Types['Currency'] = false end
 
 	return Types
 end
