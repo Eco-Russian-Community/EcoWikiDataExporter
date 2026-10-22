@@ -172,49 +172,43 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
-                    // -------------------------------------------------------------------------------------------------------
-
-                    if (item.IsStackable)
-					{ 
-						//ItemData[ItemName]["IsStackable"] = $"'True'"; 
-					}
-
-					//item.IsCarried
-
-
-
-					if (item is BlockItem Block)
+                    #region BlockItem
+                    if (item is BlockItem Block)
 					{
 						//ItemData[ItemName]["BlockItem"] = $"'True'";
 						//ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
                         //if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
 
                     }
+                    #endregion
 
-
-					if (item is ModuleItem Module)
+                    #region ModuleItem
+                    if (item is ModuleItem Module)
 					{
                         //ItemData[ItemName]["ModuleItem"] = $"'True'";
 
 
                     }
+                    #endregion
 
-					if (item is PartItem Part)
+                    #region PartItem
+                    if (item is PartItem Part)
 					{
 						//ItemData[ItemName]["PartItem"] = $"'True'";
 						//ItemData[ItemName]["MaxDurability"] = $"'{Part.IntegrityAmount}'";
 					}
+                    #endregion
 
-
-                    //vehicleToolItem
+                    #region vehicleToolItem
                     if (item is VehicleToolItem vehicleToolItem)
 					{ 
 						//ItemData[ItemName]["VehicleToolItem"] = $"'True'";
                         
 
                     }
+                    #endregion
 
-                    //Decontaminant
+                    #region Decontaminant
                     if (item is DecontaminantItem decontaminantItem)
 					{
                         //decontaminantItem.TargetType
@@ -222,20 +216,31 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
                     }
+                    #endregion
 
 
-					//SalvageCost
-					if (item.IsWasteProduct)
+                    // -------------------------------------------------------------------------------------------------------
+
+                    //SalvageCost
+                    if (item.IsWasteProduct)
 					{
 
 
 					}
 
 
+                    if (item.IsStackable)
+                    {
+                        //ItemData[ItemName]["IsStackable"] = $"'True'"; 
+                    }
+
+                    //item.IsCarried
+
+
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
-                    // -------------------------------------------------------------------------------------------------------
+                    // ------------------   Item Types List  -------------------------------------------------------------------------------------
 
                     List<int> ItemTypesList = 
                     [
