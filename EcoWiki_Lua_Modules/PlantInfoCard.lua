@@ -3,19 +3,23 @@ local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 local InfoCardUtils = require('Module:InfoCardUtils')
+
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
 	local PlantName
 	if (Lang == 'English') then PlantName = PageName else PlantName = Utils.PlantSearch(PageName) end
 	local PlantData = mw.loadData( "Module:PlantData" )
     local Plant = PlantData.plants[PlantName]
 	local WikiText =''
+	local DebugText =''
 	
 	WikiText =  WikiText ..'__NOTOC__'
-	WikiText =  WikiText ..'Page name get test: ' .. PageName ..'</br>'
-	WikiText =  WikiText ..'Plant name get test: ' .. PlantName ..'</br>'
+	DebugText =  DebugText ..'Page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Plant name get test: ' .. PlantName ..'</br>'
 	
 	WikiText =  WikiText .. '<div class="row gy-4 gx-5"><div class="col-md-6">'
 	local GalleryImagesList = PlantName .. "_Plant.jpg|" .. PlantName .."\n" .. PlantName .. "_Plant.jpg"
@@ -35,6 +39,10 @@ function p.main(frame)
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Plant.Name.German .. ']]' end
 	if (Lang ~= 'French') then WikiText =  WikiText .. '[[fr:' .. Plant.Name.French .. ']]' end
 	if (Lang ~= 'Japanese') then WikiText =  WikiText .. '[[ja:' .. Plant.Name.Japanese .. ']]' end
+	
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
 	
 	return WikiText
 end

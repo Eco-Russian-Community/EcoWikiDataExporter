@@ -4,8 +4,10 @@ local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 local RecipeUtils = require('Module:RecipeUtils')
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
 	local SkillName
 	if (Lang == 'English') then SkillName = PageName else SkillName = Utils.SkillSearch(PageName) end
@@ -20,8 +22,14 @@ function p.main(frame)
     local SkillScroll = ItemData.items[SkillScroll]
     local ClaimPaper = ItemData.items['Claim Paper Item']
 	local WikiText =''
+	local DebugText =''
 	
 	WikiText =  WikiText ..'__NOTOC__'
+	DebugText =  DebugText ..'Page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Item name get test: ' .. SkillName ..'</br>'
+
+
+
 	WikiText =  WikiText .. IconUtils.main{name = Skill.Name[Lang], id = Skill.SkillID , size = 32, style = 1} .. ' '
 	if (Skill.IsRoot == true) then WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Profession]].<br>'   else WikiText =  WikiText .. Skill.Name[Lang] .. ' is [[Skills|Specialty]] related to the profession of [[' .. RootSkill.Name[Lang] ..']].<br>' end
 	WikiText =  WikiText .. Skill.Description[Lang] .. '<br>'
@@ -157,6 +165,10 @@ function p.main(frame)
 	local descriptionpage = Skill.Name[Lang] .. " - " .. Skill.Description[Lang]
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
 	
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
+
 	return WikiText
 end
 

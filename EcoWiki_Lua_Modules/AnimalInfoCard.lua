@@ -2,18 +2,21 @@ local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
-	local AnimalName
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
+	local AnimalName
 	if (Lang == 'English') then AnimalName = PageName else AnimalName = Utils.AnimalSearch(PageName) end
 	local AnimalData = mw.loadData( "Module:AnimalData" )
     local Animal = AnimalData.animals[AnimalName]
 	local WikiText =''
+	local DebugText =''
 	
 	WikiText =  WikiText ..'__NOTOC__'
-	WikiText =  WikiText ..'page name get test: ' .. PageName ..'</br>'
-	WikiText =  WikiText ..'Animal name get test: ' .. AnimalName ..'</br>'
+	DebugText =  DebugText ..'page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Animal name get test: ' .. AnimalName ..'</br>'
 	
 	WikiText =  WikiText .. '<div class="row gy-4 gx-5"><div class="col-md-6">'
 	local GalleryImagesList = AnimalName .. "_Animal.jpg|" .. AnimalName .."\n" .. AnimalName .. "_Animal.jpg"
@@ -39,6 +42,9 @@ function p.main(frame)
 
 	WikiText =  WikiText .. Utils.checkImage(AnimalName .. '_Animal.jpg')
 	
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
 	
 	return WikiText
 end

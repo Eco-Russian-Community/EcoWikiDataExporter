@@ -6,18 +6,22 @@ local IconUtils = require('Module:IconUtils')
 local InfoCardUtils = require('Module:InfoCardUtils')
 
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
 	local ItemName
 	if (Lang == 'English') then ItemName = PageName else ItemName = Utils.ItemSearch(PageName) end
 	local ItemData = mw.loadData( "Module:ItemData" )
     local Item = ItemData.items[ItemName]
+	local ItemTypes = Utils.DecodeItemTypes(Item['Types'])
 	local WikiText =''
+	local DebugText =''
 	
 	WikiText =  WikiText ..'__NOTOC__'
-	WikiText =  WikiText ..'Page name get test: ' .. PageName ..'</br>'
-	WikiText =  WikiText ..'Item name get test: ' .. ItemName ..'</br>'
+	DebugText =  DebugText ..'Page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Item name get test: ' .. ItemName ..'</br>'
 	
 	WikiText =  WikiText .. '<div class="row gy-4 gx-5"><div class="col-md-6">'
 	
@@ -28,7 +32,7 @@ function p.main(frame)
 	
 	WikiText =  WikiText ..'</div></div></div></div>'
 	
-	if (Item.FoodItem == "True") then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
+	if (ItemTypes['Food'] == true) then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
 	
 	local RecipeItemCraft = RecipeUtils.ItemCraft(ItemName)
 	if (RecipeItemCraft ~= "") then
@@ -71,6 +75,10 @@ function p.main(frame)
 
 	local descriptionpage = Item.Name[Lang] .. " - " .. Item.Description[Lang]
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
+	
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
 	
 	return WikiText
 end

@@ -3,6 +3,7 @@ local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.WorldObjectModule(ItemName)
     local WorldObjectData = mw.loadData( "Module:WorldObjectData" )

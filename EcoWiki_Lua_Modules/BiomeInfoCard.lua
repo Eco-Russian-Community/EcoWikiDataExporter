@@ -1,15 +1,20 @@
 local p = {}
 local Utils = require('Module:Utils')
-local Lang = Utils.WikiLang
+local IconUtils = require('Module:IconUtils')
+local InfoCardUtils = require('Module:InfoCardUtils')
 
+local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
-	local WikiText =''
 	local BiomeName = Utils.BiomeSearch(PageName)
+	local WikiText =''
+	local DebugText =''
 	
-	WikiText =  WikiText ..'page name get test: ' .. PageName ..'</br>'
-	WikiText =  WikiText ..'Biome name get test: ' .. BiomeName ..'</br>'
+	DebugText =  DebugText ..'page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Biome name get test: ' .. BiomeName ..'</br>'
 
 	if (BiomeName ~= "None") then
 		local BiomeData = mw.loadData( "Module:BiomeData" )
@@ -52,7 +57,11 @@ function p.main(frame)
 	if (Lang ~= 'French') then WikiText = WikiText .. '[[fr:' .. Biome.Name.French .. ']]' end
 	if (Lang ~= 'Japanese') then WikiText = WikiText .. '[[ja:' .. Biome.Name.Japanese .. ']]' end
 	end
-	
+
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
+
     return WikiText
 end
 

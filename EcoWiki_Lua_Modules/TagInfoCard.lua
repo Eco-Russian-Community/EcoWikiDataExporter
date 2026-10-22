@@ -4,8 +4,10 @@ local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
 local RecipeUtils = require('Module:RecipeUtils')
 local Lang = Utils.WikiLang
+local Debug = Utils.WikiDebug
 
 function p.main(frame)
+	local DebugStart = os.clock()
 	local PageName = frame.args[1]
 	local TagLoc = string.gsub(Utils.Translate("{0} Tag"),"{0}","")
 	PageName = string.gsub(PageName,TagLoc,"")
@@ -17,10 +19,11 @@ function p.main(frame)
     local TagID = Tag.ID
     local ItemList = Tag.Items
 	local WikiText =''
+	local DebugText =''
 	
 	WikiText =  WikiText ..'__NOTOC__'
-	WikiText =  WikiText ..'page name get test: ' .. PageName ..'</br>'
-	WikiText =  WikiText ..'Tag name get test: ' .. TagName ..'</br>'
+	DebugText =  DebugText ..'page name get test: ' .. PageName ..'</br>'
+	DebugText =  DebugText ..'Tag name get test: ' .. TagName ..'</br>'
 	
 	WikiText =  WikiText .. "[[Category:" .. Utils.Translate("Tags") .. "]]"
 	WikiText =  WikiText .. IconUtils.main{ name = Tag.Name[Lang], id = TagID, size = 128, style = 4, }
@@ -45,6 +48,10 @@ function p.main(frame)
 	local descriptionpage = Tag.Name[Lang] .. " - " ..  Utils.Translate("Tags represent a group of items.")
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
 	
+	local DebugEnd = os.clock()
+	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'
+	if (Debug == true) then WikiText =  WikiText .. DebugText end
+
 	return WikiText
 end
 
