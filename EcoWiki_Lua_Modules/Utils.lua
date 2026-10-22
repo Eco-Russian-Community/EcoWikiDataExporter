@@ -255,6 +255,19 @@ function p.StringListToArray(StringList)
 	return	Array
 end
 
+--- Decodes the "Types" string from Items.json into a table of booleans
+function p.DecodeItemTypes(TypesString)
+	assert(type(TypesString) == 'string', 'Utils.DecodeItemTypes: Types must be a string')
+
+	local RawList = p.StringListToArray(TypesString)
+	local Types = {}
+	
+	if RawList[1] == 1 then Types['Food'] = true else Types['Food'] = false end
+	if RawList[2] == 1 then Types['Seed'] = true else Types['Seed'] = false end
+
+	return Types
+end
+
 function p.Mbox(Icon, Text, TextColor, BorderColor)
 	local WikiText = ""
 	WikiText = '<center><div class="alert alert-' .. TextColor .. '" style="border-style: solid; border-width: 5px; border-color: ' .. BorderColor .. ';" role="alert"><i class="fa fa-2x fa-' .. Icon .. '"></i>'
@@ -262,7 +275,8 @@ function p.Mbox(Icon, Text, TextColor, BorderColor)
 	return WikiText
 end
 
---- Global Language Wiki
+--- Global Wiki variables
 p.WikiLang = p.getLanguageName()
+p.WikiDebug = true
 
 return p

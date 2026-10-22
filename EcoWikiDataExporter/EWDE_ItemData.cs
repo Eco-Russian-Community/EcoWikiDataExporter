@@ -158,7 +158,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
-                    if (item.IsFuel) 
+                    #region FuelItem
+                    if (item.IsFuel)
 					{
 						//ItemData[ItemName]["IsFuel"] = $"'True'";
 
@@ -169,6 +170,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         FuelDataList.Add(ItemName, fueldata);
                     }
+                    #endregion
 
                     // -------------------------------------------------------------------------------------------------------
 
@@ -248,7 +250,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                         item is PartItem ? 1 : 0,
                         item is DecontaminantItem ? 1 : 0,
                         item is WorldObjectItem ? 1 : 0,
-                        item is VehicleToolItem ? 1 : 0
+                        item is VehicleToolItem ? 1 : 0,
+                        item.IsFuel ? 1 : 0,
+                        item.IsWasteProduct ? 1 : 0,
+                        item.CanBeCurrency ? 1 : 0,
                     ];
 
                     string ItemTypes = string.Join(",", ItemTypesList);
