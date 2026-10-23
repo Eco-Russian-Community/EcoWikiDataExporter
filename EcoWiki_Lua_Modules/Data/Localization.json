@@ -483,6 +483,13 @@
       "French": "Biomes",
       "Japanese": "バイオーム"
     },
+    "Animal": {
+      "English": "Animal",
+      "Russian": "Животное",
+      "German": "Tier",
+      "French": "Animal",
+      "Japanese": "動物"
+    },
     "Animals": {
       "English": "Animals",
       "Russian": "Животные",
@@ -490,12 +497,26 @@
       "French": "Animaux",
       "Japanese": "動物"
     },
+    "Tree": {
+      "English": "Tree",
+      "Russian": "Дерево",
+      "German": "Bäume",
+      "French": "Arbre",
+      "Japanese": "木"
+    },
     "Trees": {
       "English": "Trees",
       "Russian": "Деревья",
       "German": "Bäume",
       "French": "Arbres",
       "Japanese": "木"
+    },
+    "Plant": {
+      "English": "Plant",
+      "Russian": "Растение",
+      "German": "Pflanzen",
+      "French": "Plante",
+      "Japanese": "植物"
     },
     "Plants": {
       "English": "Plants",
@@ -587,6 +608,13 @@
       "German": "DevTier",
       "French": "DevTier",
       "Japanese": "DevTier(開発階層)"
+    },
+    "Benefits": {
+      "English": "Benefits",
+      "Russian": "Преимущество",
+      "German": "Vorteile",
+      "French": "Avantages",
+      "Japanese": "特典"
     },
     "Carry Weight: {0}": {
       "English": "Carry Weight: {0}",

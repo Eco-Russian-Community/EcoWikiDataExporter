@@ -259,6 +259,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         item.IsFuel ? 1 : 0,
                         item.IsWasteProduct ? 1 : 0,
                         item.CanBeCurrency ? 1 : 0,
+                        MarketplaceExtensions.IsPaidItem(item) ? 1 : 0,
                     ];
 
                     string ItemTypes = string.Join(",", ItemTypesList);
