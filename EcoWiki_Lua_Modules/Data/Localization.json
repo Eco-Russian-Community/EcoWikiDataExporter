@@ -616,6 +616,20 @@
       "French": "Avantages",
       "Japanese": "特典"
     },
+    "Talent Effects": {
+      "English": "Talent Effects",
+      "Russian": "Эффекты талантов",
+      "German": "Talent-Effekte",
+      "French": "Effets des talents",
+      "Japanese": "タレント効果"
+    },
+    "Required Talent": {
+      "English": "Required Talent",
+      "Russian": "Требуемые навыки",
+      "German": "Erforderliche Fähigkeiten",
+      "French": "Compétences requises",
+      "Japanese": "必要なスキル"
+    },
     "Carry Weight: {0}": {
       "English": "Carry Weight: {0}",
       "Russian": "Переносимый вес: {0}",

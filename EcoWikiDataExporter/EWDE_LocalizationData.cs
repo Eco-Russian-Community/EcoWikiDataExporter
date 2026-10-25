@@ -11,6 +11,7 @@ using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Players;
 using Eco.Gameplay.Rooms;
+using Eco.Gameplay.Skills;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.Messaging.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
@@ -141,6 +142,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "User",
                     "DevTier",
                     "Benefits",
+                    "Talent Effects",
+                    "Required Talent",
                     "Carry Weight: {0}",
                     "Max Calories: {0}",
                     "Calorie Cost: {0}",
