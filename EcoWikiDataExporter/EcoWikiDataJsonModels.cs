@@ -187,7 +187,11 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string ToolType { get; set; }
             public bool Hidden { get; set; }
             public string Tier { get; set; }
+            public string CaloriesBurn { get; set; }
             public bool Weapon { get; set; }
+            public string Damage { get; set; }
+            public string MaxTake { get; set; }
+            public bool DevTool { get; set; }
         }
 
         public class FuelData

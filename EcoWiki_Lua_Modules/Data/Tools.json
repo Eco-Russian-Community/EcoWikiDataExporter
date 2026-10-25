@@ -1,0 +1,554 @@
+{
+  "tools": {
+    "Blasting Charge": {
+      "ToolType": "BlastingCharge",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "1",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Chainsaw": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "15",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Claim Tool": {
+      "ToolType": "ClaimTool",
+      "Hidden": false,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Composite Bow": {
+      "ToolType": "Bow",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1.5",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Dev Flood Tool": {
+      "ToolType": "Tool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": true
+    },
+    "Dev Paint Tool": {
+      "ToolType": "PaintTool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": true
+    },
+    "Dev Tool": {
+      "ToolType": "Hammer",
+      "Hidden": true,
+      "Tier": "4",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": true
+    },
+    "Ecko The Dolphin": {
+      "ToolType": "Tool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Fishing Pole": {
+      "ToolType": "FishingPole",
+      "Hidden": false,
+      "Tier": "0",
+      "CaloriesBurn": "1",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Handheld Camera": {
+      "ToolType": "Camera",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "5",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Hands": {
+      "ToolType": "Tool",
+      "Hidden": false,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Hydrometer": {
+      "ToolType": "Tool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "1",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": true
+    },
+    "Iron Axe": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1.5",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Hammer": {
+      "ToolType": "Hammer",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "8",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Hoe": {
+      "ToolType": "Hoe",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Machete": {
+      "ToolType": "Machete",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "17",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Paint Sprayer": {
+      "ToolType": "PaintTool",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Pickaxe": {
+      "ToolType": "Pickaxe",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "2",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Road Tool": {
+      "ToolType": "RoadTool",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "15",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Iron Rock Drill": {
+      "ToolType": "Drill",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "15",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "1",
+      "DevTool": false
+    },
+    "Iron Shovel": {
+      "ToolType": "Shovel",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "3",
+      "DevTool": false
+    },
+    "Iron Sickle": {
+      "ToolType": "Sickle",
+      "Hidden": false,
+      "Tier": "2",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Meteor Shard": {
+      "ToolType": "Tool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Axe": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "2.5",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Hammer": {
+      "ToolType": "Hammer",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "5",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Hoe": {
+      "ToolType": "Hoe",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Machete": {
+      "ToolType": "Machete",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "10",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Paint Sprayer": {
+      "ToolType": "PaintTool",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Pickaxe": {
+      "ToolType": "Pickaxe",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "4",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Rock Drill": {
+      "ToolType": "Drill",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "15",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "1",
+      "DevTool": false
+    },
+    "Modern Scythe": {
+      "ToolType": "Sickle",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Modern Shovel": {
+      "ToolType": "Shovel",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "10",
+      "DevTool": false
+    },
+    "Norse Axe": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "2",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Paint Tool Item": {
+      "ToolType": "PaintTool",
+      "Hidden": true,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Recurve Bow": {
+      "ToolType": "Bow",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1.2",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Remote Detonator": {
+      "ToolType": "Detonator",
+      "Hidden": false,
+      "Tier": "4",
+      "CaloriesBurn": "5",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Soil Sampler": {
+      "ToolType": "SoilSampler",
+      "Hidden": false,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Axe": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "2",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Hammer": {
+      "ToolType": "Hammer",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "6",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Hoe": {
+      "ToolType": "Hoe",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Machete": {
+      "ToolType": "Machete",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "15",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Pickaxe": {
+      "ToolType": "Pickaxe",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "3",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Steel Shovel": {
+      "ToolType": "Shovel",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "5",
+      "DevTool": false
+    },
+    "Steel Sickle": {
+      "ToolType": "Sickle",
+      "Hidden": false,
+      "Tier": "3",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Axe": {
+      "ToolType": "Axe",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Hammer": {
+      "ToolType": "Hammer",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "10",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Machete": {
+      "ToolType": "Machete",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Pickaxe": {
+      "ToolType": "Pickaxe",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Road Tool": {
+      "ToolType": "RoadTool",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Stone Sickle": {
+      "ToolType": "Sickle",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Torch": {
+      "ToolType": "Torch",
+      "Hidden": false,
+      "Tier": "0",
+      "CaloriesBurn": "0",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Wooden Bow": {
+      "ToolType": "Bow",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": true,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Wooden Hoe": {
+      "ToolType": "Hoe",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Wooden Paint Sprayer": {
+      "ToolType": "PaintTool",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "0",
+      "DevTool": false
+    },
+    "Wooden Shovel": {
+      "ToolType": "Shovel",
+      "Hidden": false,
+      "Tier": "1",
+      "CaloriesBurn": "20",
+      "Weapon": false,
+      "Damage": "1",
+      "MaxTake": "1",
+      "DevTool": false
+    }
+  }
+}

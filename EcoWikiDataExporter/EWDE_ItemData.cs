@@ -199,7 +199,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 					}
                     #endregion
 
-                    #region vehicleToolItem
+                    #region VehicleToolItem
                     if (item is VehicleToolItem vehicleToolItem)
 					{ 
 						//ItemData[ItemName]["VehicleToolItem"] = $"'True'";
@@ -208,7 +208,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
-                    #region Decontaminant
+                    #region DecontaminantItem
                     if (item is DecontaminantItem decontaminantItem)
 					{
                         //decontaminantItem.TargetType
@@ -218,6 +218,64 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
+                    #region ToolItem
+                    if (item is ToolItem toolItem)
+                    {
+                        string ToolType = "Tool";
+                        bool DevTool = false;
+
+                        if (item is AxeItem) { ToolType = "Axe"; }
+                        if (item is PickaxeItem) { ToolType = "Pickaxe"; }
+                        if (item is ShovelItem) { ToolType = "Shovel"; }
+                        if (item is HammerItem) { ToolType = "Hammer"; }
+                        if (item is HoeItem) { ToolType = "Hoe"; }
+                        if (item is SickleItem) { ToolType = "Sickle"; }
+                        if (item is ScytheItem) { ToolType = "Sickle"; }
+                        if (item is MacheteItem) { ToolType = "Machete"; }
+                        if (item is PaintToolItem) { ToolType = "PaintTool"; }
+                        if (item is DrillItem) { ToolType = "Drill"; }
+                        if (item is BlastingChargeItem) { ToolType = "BlastingCharge"; }
+                        if (item is DetonatorBaseItem) { ToolType = "Detonator"; }
+                        if (item is BowItem) { ToolType = "Bow"; }
+                        if (item is RoadToolItem) { ToolType = "RoadTool"; }
+                        if (item is TorchItem) { ToolType = "Torch"; }
+                        if (item is ClaimToolItem) { ToolType = "ClaimTool"; }
+                        if (item is CameraItem) { ToolType = "Camera"; }
+                        if (ItemName == "Fishing Pole") { ToolType = "FishingPole"; }
+                        if (ItemName == "Soil Sampler") { ToolType = "SoilSampler"; }
+
+                        //if (item is BuildingToolItem) { ItemData[ItemName]["BuildingToolItem"] = $"'True'"; }
+                        //if (item is BlockHarvestItem) { ToolData[ItemName]["ToolType"] = $"'BlockHarvest'"; }
+
+                        if (item is WeaponItem Weapon)
+                        {
+
+                        }
+
+                        if (ItemName == "Dev Tool" | ItemName == "Dev Flood Tool" | ItemName == "Hydrometer" | ItemName == "Dev Paint Tool") { DevTool = true; }
+
+                        ToolData tooldata = new ToolData
+                        {
+                            ToolType = ToolType,
+                            Hidden = item.Hidden,
+                            Tier = WikiFloat(toolItem.Tier.GetBaseValue),
+                            CaloriesBurn = WikiFloat(toolItem.CaloriesBurn.GetBaseValue),
+                            Weapon = item is WeaponItem,
+                            Damage = WikiFloat(toolItem.Damage.GetBaseValue),
+                            MaxTake = WikiFloat(toolItem.MaxTake),
+                            DevTool = DevTool
+                        };
+
+                        ToolDataList.Add(ItemName, tooldata);
+
+                    }
+                    #endregion
+
+                    #region WorldObjectItem
+
+
+
+                    #endregion
 
                     // -------------------------------------------------------------------------------------------------------
 
@@ -240,6 +298,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
+
+
+
+
+
                     // ------------------   Item Types List  -------------------------------------------------------------------------------------
 
                     List<int> ItemTypesList = 
@@ -253,6 +316,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         item is SkillScroll ? 1 : 0,
                         item is ModuleItem ? 1 : 0,
                         item is PartItem ? 1 : 0,
+                        item is ToolItem ? 1 : 0,
                         item is DecontaminantItem ? 1 : 0,
                         item is WorldObjectItem ? 1 : 0,
                         item is VehicleToolItem ? 1 : 0,
@@ -293,9 +357,10 @@ namespace Eco.Mods.EcoWikiDataExporter
             WriteDictionaryToJsonFile("Clothing", ClothingDataListjsonString);
             string FuelDataListjsonString = JsonConvert.SerializeObject(new { fuels = FuelDataList }, Formatting.Indented);
             WriteDictionaryToJsonFile("Fuels", FuelDataListjsonString);
-
-            //WriteDictionaryToFile("ToolData", "tools", ToolData);
-            //WriteDictionaryToFile("WorldObjectData", "WorldObjects", WorldObjectData);
+            string ToolDataListjsonString = JsonConvert.SerializeObject(new { tools = ToolDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("Tools", ToolDataListjsonString);
+            string WorldObjectDataListjsonString = JsonConvert.SerializeObject(new { WorldObjects = WorldObjectDataList }, Formatting.Indented);
+            WriteDictionaryToJsonFile("WorldObjects", WorldObjectDataListjsonString);
 
         }
 	}
