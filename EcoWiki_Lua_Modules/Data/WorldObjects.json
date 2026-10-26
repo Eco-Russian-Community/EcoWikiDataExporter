@@ -1,0 +1,4954 @@
+{
+  "WorldObjects": {
+    "Adobe Door": {
+      "Name": "AdobeDoorObject",
+      "Size": "3,1,2",
+      "Tier": 1,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Basalt Bench": {
+      "Name": "AdornedAshlarBasaltBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Basalt Chair": {
+      "Name": "AdornedAshlarBasaltChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Basalt Table": {
+      "Name": "AdornedAshlarBasaltTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Gneiss Bench": {
+      "Name": "AdornedAshlarGneissBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Gneiss Chair": {
+      "Name": "AdornedAshlarGneissChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Gneiss Table": {
+      "Name": "AdornedAshlarGneissTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Granite Bench": {
+      "Name": "AdornedAshlarGraniteBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Granite Chair": {
+      "Name": "AdornedAshlarGraniteChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Granite Table": {
+      "Name": "AdornedAshlarGraniteTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Limestone Bench": {
+      "Name": "AdornedAshlarLimestoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Limestone Chair": {
+      "Name": "AdornedAshlarLimestoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Limestone Table": {
+      "Name": "AdornedAshlarLimestoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Sandstone Bench": {
+      "Name": "AdornedAshlarSandstoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Sandstone Chair": {
+      "Name": "AdornedAshlarSandstoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Sandstone Table": {
+      "Name": "AdornedAshlarSandstoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Shale Bench": {
+      "Name": "AdornedAshlarShaleBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Shale Chair": {
+      "Name": "AdornedAshlarShaleChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Shale Table": {
+      "Name": "AdornedAshlarShaleTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Stone Bench": {
+      "Name": "AdornedAshlarStoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Stone Chair": {
+      "Name": "AdornedAshlarStoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Adorned Ashlar Stone Table": {
+      "Name": "AdornedAshlarStoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Advanced Carpentry Table": {
+      "Name": "AdvancedCarpentryTableObject",
+      "Size": "2,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Advanced Masonry Table": {
+      "Name": "AdvancedMasonryTableObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Advanced Tailoring Table": {
+      "Name": "AdvancedTailoringTableObject",
+      "Size": "2,4,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Air Pollution Generator": {
+      "Name": "AirPollutionGeneratorObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Amendments": {
+      "Name": "AmendmentsObject",
+      "Size": "2,3,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Anatomy Book": {
+      "Name": "AnatomyBookObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Anvil": {
+      "Name": "AnvilObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Arrastra": {
+      "Name": "ArrastraObject",
+      "Size": "3,4,3",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Basalt Bench": {
+      "Name": "AshlarBasaltBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Basalt Chair": {
+      "Name": "AshlarBasaltChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Basalt Door": {
+      "Name": "AshlarBasaltDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Basalt Fireplace": {
+      "Name": "AshlarBasaltFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Basalt Table": {
+      "Name": "AshlarBasaltTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Gneiss Bench": {
+      "Name": "AshlarGneissBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Gneiss Chair": {
+      "Name": "AshlarGneissChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Gneiss Door": {
+      "Name": "AshlarGneissDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Gneiss Fireplace": {
+      "Name": "AshlarGneissFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Gneiss Table": {
+      "Name": "AshlarGneissTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Granite Bench": {
+      "Name": "AshlarGraniteBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Granite Chair": {
+      "Name": "AshlarGraniteChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Granite Door": {
+      "Name": "AshlarGraniteDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Granite Fireplace": {
+      "Name": "AshlarGraniteFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Granite Table": {
+      "Name": "AshlarGraniteTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Basalt Fountain": {
+      "Name": "AshlarLargeBasaltFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Gneiss Fountain": {
+      "Name": "AshlarLargeGneissFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Granite Fountain": {
+      "Name": "AshlarLargeGraniteFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Limestone Fountain": {
+      "Name": "AshlarLargeLimestoneFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Sandstone Fountain": {
+      "Name": "AshlarLargeSandstoneFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Shale Fountain": {
+      "Name": "AshlarLargeShaleFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Large Stone Fountain": {
+      "Name": "AshlarLargeStoneFountainObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Limestone Bench": {
+      "Name": "AshlarLimestoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Limestone Chair": {
+      "Name": "AshlarLimestoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Limestone Door": {
+      "Name": "AshlarLimestoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Limestone Fireplace": {
+      "Name": "AshlarLimestoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Limestone Table": {
+      "Name": "AshlarLimestoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Sandstone Bench": {
+      "Name": "AshlarSandstoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Sandstone Chair": {
+      "Name": "AshlarSandstoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Sandstone Door": {
+      "Name": "AshlarSandstoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Sandstone Fireplace": {
+      "Name": "AshlarSandstoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Sandstone Table": {
+      "Name": "AshlarSandstoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Shale Bench": {
+      "Name": "AshlarShaleBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Shale Chair": {
+      "Name": "AshlarShaleChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Shale Door": {
+      "Name": "AshlarShaleDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Shale Fireplace": {
+      "Name": "AshlarShaleFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Shale Table": {
+      "Name": "AshlarShaleTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Basalt Fountain": {
+      "Name": "AshlarSmallBasaltFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Gneiss Fountain": {
+      "Name": "AshlarSmallGneissFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Granite Fountain": {
+      "Name": "AshlarSmallGraniteFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Limestone Fountain": {
+      "Name": "AshlarSmallLimestoneFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Sandstone Fountain": {
+      "Name": "AshlarSmallSandstoneFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Shale Fountain": {
+      "Name": "AshlarSmallShaleFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Small Stone Fountain": {
+      "Name": "AshlarSmallStoneFountainObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Stone Bench": {
+      "Name": "AshlarStoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Stone Chair": {
+      "Name": "AshlarStoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Stone Door": {
+      "Name": "AshlarStoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Stone Fireplace": {
+      "Name": "AshlarStoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ashlar Stone Table": {
+      "Name": "AshlarStoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Assembly Line": {
+      "Name": "AssemblyLineObject",
+      "Size": "7,6,4",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Atlas Book": {
+      "Name": "AtlasBookObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Automatic Loom": {
+      "Name": "AutomaticLoomObject",
+      "Size": "5,4,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Axe Calorie Buff Item": {
+      "Name": "AxeCalorieBuffObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Baker Sign": {
+      "Name": "BakerSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bakery Oven": {
+      "Name": "BakeryOvenObject",
+      "Size": "2,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ballot Box": {
+      "Name": "BallotBoxObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Banana Rug": {
+      "Name": "BananaRugObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bank": {
+      "Name": "BankObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bathroom": {
+      "Name": "BathroomObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Bathtub": {
+      "Name": "BathtubObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bedroom": {
+      "Name": "BedroomObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Biowaste Sorter": {
+      "Name": "BiowasteSorterObject",
+      "Size": "7,14,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bison Mount": {
+      "Name": "BisonMountObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bison Pelt": {
+      "Name": "BisonPeltObject",
+      "Size": "3,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Blackboard": {
+      "Name": "BlackboardObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Blacksmith Table": {
+      "Name": "BlacksmithTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Blast Furnace": {
+      "Name": "BlastFurnaceObject",
+      "Size": "3,3,5",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Bloomery": {
+      "Name": "BloomeryObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Blueprint Item": {
+      "Name": "FoundationStoneObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Board Of Elections": {
+      "Name": "BoardOfElectionsObject",
+      "Size": "2,4,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Bonsai": {
+      "Name": "BonsaiObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Bookshelf": {
+      "Name": "BookshelfObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Botanical Book": {
+      "Name": "BotanicalBookObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Brazier": {
+      "Name": "BrazierObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Brick Fireplace": {
+      "Name": "BrickFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Butchery Table": {
+      "Name": "ButcheryTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Button": {
+      "Name": "ButtonObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Campfire": {
+      "Name": "CampfireObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "1,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Campsite": {
+      "Name": "CampsiteObject",
+      "Size": "2,4,3",
+      "Tier": 0,
+      "Components": "1,0,0,0,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Candle Stand": {
+      "Name": "CandleStandObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Canning Assembly": {
+      "Name": "CanningAssemblyObject",
+      "Size": "6,6,3",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Capitol": {
+      "Name": "CapitolObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Carpenter Sign": {
+      "Name": "CarpenterSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Carpentry Table": {
+      "Name": "CarpentryTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cart Blueprint Poster": {
+      "Name": "CartBlueprintPosterObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Carved Pumpkin": {
+      "Name": "CarvedPumpkinObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Bed": {
+      "Name": "CastIronBedObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Bench": {
+      "Name": "CastIronBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Chair": {
+      "Name": "CastIronChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Plaque": {
+      "Name": "CastIronPlaqueObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Royal Bed": {
+      "Name": "CastIronRoyalBedObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Stove": {
+      "Name": "CastIronStoveObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cast Iron Table": {
+      "Name": "CastIronTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ceiling Candle": {
+      "Name": "CeilingCandleObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cement Kiln": {
+      "Name": "CementKilnObject",
+      "Size": "1,4,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Census Bureau": {
+      "Name": "CensusBureauObject",
+      "Size": "3,3,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ceramic Tea Cup": {
+      "Name": "CeramicTeaCupObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ceramic Tea Pot": {
+      "Name": "CeramicTeaPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ceramic Tray": {
+      "Name": "CeramicTrayObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Chandelier": {
+      "Name": "ChandelierObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Coffee Table": {
+      "Name": "CoffeeTableObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Combustion Generator": {
+      "Name": "CombustionGeneratorObject",
+      "Size": "3,5,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Composite Birch Bench": {
+      "Name": "CompositeBirchBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Birch Chair": {
+      "Name": "CompositeBirchChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Birch Door": {
+      "Name": "CompositeBirchDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Birch Table": {
+      "Name": "CompositeBirchTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Cedar Bench": {
+      "Name": "CompositeCedarBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Cedar Chair": {
+      "Name": "CompositeCedarChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Cedar Door": {
+      "Name": "CompositeCedarDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Cedar Table": {
+      "Name": "CompositeCedarTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Ceiba Bench": {
+      "Name": "CompositeCeibaBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Ceiba Chair": {
+      "Name": "CompositeCeibaChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Ceiba Door": {
+      "Name": "CompositeCeibaDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Ceiba Table": {
+      "Name": "CompositeCeibaTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Fir Bench": {
+      "Name": "CompositeFirBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Fir Chair": {
+      "Name": "CompositeFirChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Fir Door": {
+      "Name": "CompositeFirDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Fir Table": {
+      "Name": "CompositeFirTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Hardwood Bench": {
+      "Name": "CompositeHardwoodBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Hardwood Chair": {
+      "Name": "CompositeHardwoodChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Hardwood Door": {
+      "Name": "CompositeHardwoodDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Hardwood Table": {
+      "Name": "CompositeHardwoodTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Joshua Bench": {
+      "Name": "CompositeJoshuaBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Joshua Chair": {
+      "Name": "CompositeJoshuaChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Joshua Door": {
+      "Name": "CompositeJoshuaDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Joshua Table": {
+      "Name": "CompositeJoshuaTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Lumber Bench": {
+      "Name": "CompositeLumberBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Lumber Chair": {
+      "Name": "CompositeLumberChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Lumber Door": {
+      "Name": "CompositeLumberDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Lumber Dresser": {
+      "Name": "CompositeLumberDresserObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Composite Lumber Table": {
+      "Name": "CompositeLumberTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Oak Bench": {
+      "Name": "CompositeOakBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Oak Chair": {
+      "Name": "CompositeOakChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Oak Door": {
+      "Name": "CompositeOakDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Oak Table": {
+      "Name": "CompositeOakTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Palm Bench": {
+      "Name": "CompositePalmBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Palm Chair": {
+      "Name": "CompositePalmChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Palm Door": {
+      "Name": "CompositePalmDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Palm Table": {
+      "Name": "CompositePalmTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Redwood Bench": {
+      "Name": "CompositeRedwoodBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Redwood Chair": {
+      "Name": "CompositeRedwoodChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Redwood Door": {
+      "Name": "CompositeRedwoodDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Redwood Table": {
+      "Name": "CompositeRedwoodTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Saguaro Bench": {
+      "Name": "CompositeSaguaroBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Saguaro Chair": {
+      "Name": "CompositeSaguaroChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Saguaro Door": {
+      "Name": "CompositeSaguaroDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Saguaro Table": {
+      "Name": "CompositeSaguaroTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Softwood Bench": {
+      "Name": "CompositeSoftwoodBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Softwood Chair": {
+      "Name": "CompositeSoftwoodChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Softwood Door": {
+      "Name": "CompositeSoftwoodDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Softwood Table": {
+      "Name": "CompositeSoftwoodTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Spruce Bench": {
+      "Name": "CompositeSpruceBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Spruce Chair": {
+      "Name": "CompositeSpruceChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Spruce Door": {
+      "Name": "CompositeSpruceDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Composite Spruce Table": {
+      "Name": "CompositeSpruceTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Computer Lab": {
+      "Name": "ComputerLabObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Construction Post": {
+      "Name": "ConstructionPostObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Construction Scrap Sorter": {
+      "Name": "ConstructionScrapSorterObject",
+      "Size": "7,14,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Contract Board": {
+      "Name": "ContractBoardObject",
+      "Size": "1,3,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Copper Frame Landscape": {
+      "Name": "CopperFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Copper Frame Portrait": {
+      "Name": "CopperFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Copper Frame Square": {
+      "Name": "CopperFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Copper Frame Tall": {
+      "Name": "CopperFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Copper Frame Wide": {
+      "Name": "CopperFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Corrugated Steel Door": {
+      "Name": "CorrugatedSteelDoorObject",
+      "Size": "3,1,2",
+      "Tier": 4,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Corrugated Steel Fence Door": {
+      "Name": "CorrugatedSteelFenceDoorObject",
+      "Size": "3,1,2",
+      "Tier": 4,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cotton Streamer Stars": {
+      "Name": "CottonStreamerStarsObject",
+      "Size": "1,6,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Cotton Streamer Stripes": {
+      "Name": "CottonStreamerStripesObject",
+      "Size": "1,6,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Couch": {
+      "Name": "CouchObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Country Claim Stake": {
+      "Name": "CountryClaimStakeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Country Foundation": {
+      "Name": "CountryFoundationObject",
+      "Size": "3,4,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Court Chair": {
+      "Name": "CourtChairObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Court Table": {
+      "Name": "CourtTableObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Crab Pot": {
+      "Name": "CrabPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Crane": {
+      "Name": "CraneObject",
+      "Size": "3,3,8",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Culture": {
+      "Name": "CultureObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Currency Exchange": {
+      "Name": "CurrencyExchangeObject",
+      "Size": "2,1,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Anchor": {
+      "Name": "DecorativeAnchorObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Bowl": {
+      "Name": "DecorativeBowlObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Decorative Glass Buoy Blue": {
+      "Name": "DecorativeGlassBuoyBlueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Glass Buoy Green": {
+      "Name": "DecorativeGlassBuoyGreenObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Glass Buoy Red": {
+      "Name": "DecorativeGlassBuoyRedObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Glass Buoy Violet": {
+      "Name": "DecorativeGlassBuoyVioletObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Glass Buoy Yellow": {
+      "Name": "DecorativeGlassBuoyYellowObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Hanging Buoy": {
+      "Name": "DecorativeHangingBuoyObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Life Preserver": {
+      "Name": "DecorativeLifePreserverObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Decorative Ship Wheel": {
+      "Name": "DecorativeShipWheelObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Deer Pelt": {
+      "Name": "DeerPeltObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Desalinator": {
+      "Name": "DesalinatorObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Digital Work Station": {
+      "Name": "DigitalWorkStationObject",
+      "Size": "2,4,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Dirt Ramp": {
+      "Name": "DirtRampObject",
+      "Size": "1,4,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Distribution Station": {
+      "Name": "DistributionStationObject",
+      "Size": "7,7,6",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Dumpster Compost": {
+      "Name": "DumpsterCompostObject",
+      "Size": "4,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Dumpster Garbage": {
+      "Name": "DumpsterGarbageObject",
+      "Size": "4,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Dumpster Recycle": {
+      "Name": "DumpsterRecycleObject",
+      "Size": "4,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Dynamite": {
+      "Name": "DynamiteObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Easel": {
+      "Name": "EaselObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ecko Statue": {
+      "Name": "EckoStatueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Eco Book": {
+      "Name": "EcoBookObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Egyptian Canoe": {
+      "Name": "EgyptianCanoeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Election Poster": {
+      "Name": "ElectionPosterObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Lathe": {
+      "Name": "ElectricLatheObject",
+      "Size": "7,2,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Machinist Table": {
+      "Name": "ElectricMachinistTableObject",
+      "Size": "2,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Planer": {
+      "Name": "ElectricPlanerObject",
+      "Size": "6,5,5",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Stamping Press": {
+      "Name": "ElectricStampingPressObject",
+      "Size": "5,5,6",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Wall Lamp": {
+      "Name": "ElectricWallLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Electric Water Pump": {
+      "Name": "ElectricWaterPumpObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1"
+    },
+    "Electronics Assembly": {
+      "Name": "ElectronicsAssemblyObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Elevator Call Post": {
+      "Name": "ElevatorCallPostObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Elk Gong": {
+      "Name": "ElkGongObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Elk Mount": {
+      "Name": "ElkMountObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Elk Skypiercer": {
+      "Name": "ElkSkypiercerObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Elk Statuette": {
+      "Name": "ElkStatuetteObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Embassy Desk": {
+      "Name": "EmbassyDeskObject",
+      "Size": "2,3,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Engineer Sign": {
+      "Name": "EngineerSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Excavator": {
+      "Name": "ExcavatorObject",
+      "Size": "8,3,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Executive Office": {
+      "Name": "ExecutiveOfficeObject",
+      "Size": "3,3,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Extruder": {
+      "Name": "ExtruderObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Fancy Hewn Door": {
+      "Name": "FancyHewnDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fancy Medium Lumber Store Window": {
+      "Name": "FancyMediumLumberStoreWindowObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Farmer Sign": {
+      "Name": "FarmerSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Farmers Table": {
+      "Name": "FarmersTableObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Federation Claim Stake": {
+      "Name": "FederationClaimStakeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Federation Foundation": {
+      "Name": "FederationFoundationObject",
+      "Size": "1,4,4",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Feminine Mannequin": {
+      "Name": "FeminineMannequinObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Fiber Scutching Station": {
+      "Name": "FiberScutchingStationObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fish Kites": {
+      "Name": "FishKitesObject",
+      "Size": "1,1,5",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fish Rack": {
+      "Name": "FishRackObject",
+      "Size": "5,2,4",
+      "Tier": 0,
+      "Components": "1,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fish Trap": {
+      "Name": "FishTrapObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fishery": {
+      "Name": "FisheryObject",
+      "Size": "2,3,4",
+      "Tier": 0,
+      "Components": "1,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Flat Steel Door": {
+      "Name": "FlatSteelDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fletching Table": {
+      "Name": "FletchingTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Food Sign": {
+      "Name": "FoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Fox Pelt": {
+      "Name": "FoxPeltObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Framed Glass Door": {
+      "Name": "FramedGlassDoorObject",
+      "Size": "3,1,2",
+      "Tier": 5,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Friendly Scarecrow": {
+      "Name": "FriendlyScarecrowObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Froth Floatation Cell": {
+      "Name": "FrothFloatationCellObject",
+      "Size": "4,4,4",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Galaxy Vase": {
+      "Name": "GalaxyVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Garbage Sorter": {
+      "Name": "GarbageSorterObject",
+      "Size": "7,16,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Garden Pond": {
+      "Name": "GardenPondObject",
+      "Size": "3,3,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Glassworks": {
+      "Name": "GlassworksObject",
+      "Size": "5,5,5",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Global Calorie Buff Item": {
+      "Name": "GlobalCalorieBuffObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Goat Mount": {
+      "Name": "GoatMountObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Frame Landscape": {
+      "Name": "GoldFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Frame Portrait": {
+      "Name": "GoldFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Frame Square": {
+      "Name": "GoldFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Frame Tall": {
+      "Name": "GoldFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Frame Wide": {
+      "Name": "GoldFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Gold Trim Book": {
+      "Name": "GoldTrimBookObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Government Office": {
+      "Name": "GovernmentOfficeObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Granite Spiral Fountain": {
+      "Name": "GraniteSpiralFountainObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Granite Terrace Fountain": {
+      "Name": "GraniteTerraceFountainObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Grindstone": {
+      "Name": "GrindstoneObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hand Plow": {
+      "Name": "HandPlowObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Basket": {
+      "Name": "HangingBasketObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Electric Wall Lamp": {
+      "Name": "HangingElectricWallLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Long Steel Sign": {
+      "Name": "HangingLongSteelSignObject",
+      "Size": "1,4,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Steel Framed Sign": {
+      "Name": "HangingSteelFramedSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Steel Mine Sign": {
+      "Name": "HangingSteelMineSignObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Steel Plain Sign": {
+      "Name": "HangingSteelPlainSignObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hanging Steel Shop Sign": {
+      "Name": "HangingSteelShopSignObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Double Shelf": {
+      "Name": "HardwoodDoubleShelfObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Bench": {
+      "Name": "HardwoodLumberBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Chair": {
+      "Name": "HardwoodLumberChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Door": {
+      "Name": "HardwoodLumberDoorObject",
+      "Size": "3,1,2",
+      "Tier": 3,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Dresser": {
+      "Name": "HardwoodLumberDresserObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Hallway Table": {
+      "Name": "HardwoodLumberHallwayTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hardwood Lumber Table": {
+      "Name": "HardwoodLumberTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hare Pelt": {
+      "Name": "HarePeltObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Heated Display Cabinet": {
+      "Name": "HeatedDisplayCabinetObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Bench": {
+      "Name": "HewnBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Chair": {
+      "Name": "HewnChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Door": {
+      "Name": "HewnDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Dresser": {
+      "Name": "HewnDresserObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Hardwood Bench": {
+      "Name": "HewnHardwoodBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Hardwood Chair": {
+      "Name": "HewnHardwoodChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Hardwood Door": {
+      "Name": "HewnHardwoodDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Hardwood Table": {
+      "Name": "HewnHardwoodTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Nightstand": {
+      "Name": "HewnNightstandObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Softwood Bench": {
+      "Name": "HewnSoftwoodBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Softwood Chair": {
+      "Name": "HewnSoftwoodChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Softwood Door": {
+      "Name": "HewnSoftwoodDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Softwood Table": {
+      "Name": "HewnSoftwoodTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hewn Table": {
+      "Name": "HewnTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Homestead Claim Stake": {
+      "Name": "HomesteadClaimStakeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Hourglass": {
+      "Name": "HourglassObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Banner Sign": {
+      "Name": "HugeBannerSignObject",
+      "Size": "10,1,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Iron Banner Sign": {
+      "Name": "HugeIronBannerSignObject",
+      "Size": "10,1,9",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Iron Sign": {
+      "Name": "HugeIronSignObject",
+      "Size": "9,1,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Steel Banner Sign": {
+      "Name": "HugeSteelBannerSignObject",
+      "Size": "10,2,8",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Steel Sign": {
+      "Name": "HugeSteelSignObject",
+      "Size": "9,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Huge Wooden Banner Sign": {
+      "Name": "HugeWoodenBannerSignObject",
+      "Size": "10,1,9",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Icebox": {
+      "Name": "IceboxObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Immigration Desk": {
+      "Name": "ImmigrationDeskObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Incinerator": {
+      "Name": "IncineratorObject",
+      "Size": "5,3,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Industrial": {
+      "Name": "IndustrialObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Industrial Barge": {
+      "Name": "IndustrialBargeObject",
+      "Size": "18,9,6",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Industrial Elevator": {
+      "Name": "IndustrialElevatorObject",
+      "Size": "12,8,6",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Industrial Generator": {
+      "Name": "IndustrialGeneratorObject",
+      "Size": "9,5,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Industrial Mill": {
+      "Name": "IndustrialMillObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Industrial Refrigerator": {
+      "Name": "IndustrialRefrigeratorObject",
+      "Size": "2,4,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Industrial Waste Sorter": {
+      "Name": "IndustrialWasteSorterObject",
+      "Size": "7,14,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Injection Mold Machine": {
+      "Name": "InjectionMoldMachineObject",
+      "Size": "2,5,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Iron Frame Landscape": {
+      "Name": "IronFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Iron Frame Portrait": {
+      "Name": "IronFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Iron Frame Square": {
+      "Name": "IronFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Iron Frame Tall": {
+      "Name": "IronFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Iron Frame Wide": {
+      "Name": "IronFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Jaw Crusher": {
+      "Name": "JawCrusherObject",
+      "Size": "3,3,2",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Kiln": {
+      "Name": "KilnObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Kitchen": {
+      "Name": "KitchenObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Kitchenroom": {
+      "Name": "KitchenroomObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Kite": {
+      "Name": "KiteObject",
+      "Size": "1,1,4",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Koi Pond": {
+      "Name": "KoiPondObject",
+      "Size": "4,3,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Laboratory": {
+      "Name": "LaboratoryObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Large Bath Mat": {
+      "Name": "LargeBathMatObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Canoe": {
+      "Name": "LargeCanoeObject",
+      "Size": "6,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Corrugated Steel Door": {
+      "Name": "LargeCorrugatedSteelDoorObject",
+      "Size": "5,1,4",
+      "Tier": 4,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Cotton Bunting Festive": {
+      "Name": "LargeCottonBuntingFestiveObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Cotton Bunting Red": {
+      "Name": "LargeCottonBuntingRedObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Cotton Bunting Regal": {
+      "Name": "LargeCottonBuntingRegalObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Cotton Bunting Vibrant": {
+      "Name": "LargeCottonBuntingVibrantObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Court": {
+      "Name": "LargeCourtObject",
+      "Size": "6,6,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Festive Paper Lantern": {
+      "Name": "LargeFestivePaperLanternObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Glass Store Window": {
+      "Name": "LargeGlassStoreWindowObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Large Hanging Ashlar Basalt Sign": {
+      "Name": "LargeHangingAshlarBasaltSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Gneiss Sign": {
+      "Name": "LargeHangingAshlarGneissSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Granite Sign": {
+      "Name": "LargeHangingAshlarGraniteSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Limestone Sign": {
+      "Name": "LargeHangingAshlarLimestoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Sandstone Sign": {
+      "Name": "LargeHangingAshlarSandstoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Shale Sign": {
+      "Name": "LargeHangingAshlarShaleSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ashlar Stone Sign": {
+      "Name": "LargeHangingAshlarStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Birch Sign": {
+      "Name": "LargeHangingBirchSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Cedar Sign": {
+      "Name": "LargeHangingCedarSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Ceiba Sign": {
+      "Name": "LargeHangingCeibaSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Fir Sign": {
+      "Name": "LargeHangingFirSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Hardwood Sign": {
+      "Name": "LargeHangingHardwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Joshua Sign": {
+      "Name": "LargeHangingJoshuaSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Lumber Sign": {
+      "Name": "LargeHangingLumberSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Mortared Granite Sign": {
+      "Name": "LargeHangingMortaredGraniteSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Mortared Limestone Sign": {
+      "Name": "LargeHangingMortaredLimestoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Mortared Sandstone Sign": {
+      "Name": "LargeHangingMortaredSandstoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Mortared Stone Sign": {
+      "Name": "LargeHangingMortaredStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Oak Sign": {
+      "Name": "LargeHangingOakSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Palm Sign": {
+      "Name": "LargeHangingPalmSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Redwood Sign": {
+      "Name": "LargeHangingRedwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Saguaro Sign": {
+      "Name": "LargeHangingSaguaroSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Softwood Sign": {
+      "Name": "LargeHangingSoftwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Spruce Sign": {
+      "Name": "LargeHangingSpruceSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Stone Sign": {
+      "Name": "LargeHangingStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Hanging Wood Sign": {
+      "Name": "LargeHangingWoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Lumber Door": {
+      "Name": "LargeLumberDoorObject",
+      "Size": "5,4,4",
+      "Tier": 3,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Lumber Stockpile": {
+      "Name": "LargeLumberStockpileObject",
+      "Size": "12,12,11",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Large Lumber Store Window": {
+      "Name": "LargeLumberStoreWindowObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Large Nylon Bunting Green": {
+      "Name": "LargeNylonBuntingGreenObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Nylon Bunting Purple": {
+      "Name": "LargeNylonBuntingPurpleObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Nylon Bunting Yellow": {
+      "Name": "LargeNylonBuntingYellowObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Paper Lantern": {
+      "Name": "LargePaperLanternObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Basalt Sign": {
+      "Name": "LargeStandingAshlarBasaltSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Gneiss Sign": {
+      "Name": "LargeStandingAshlarGneissSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Granite Sign": {
+      "Name": "LargeStandingAshlarGraniteSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Limestone Sign": {
+      "Name": "LargeStandingAshlarLimestoneSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Sandstone Sign": {
+      "Name": "LargeStandingAshlarSandstoneSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Shale Sign": {
+      "Name": "LargeStandingAshlarShaleSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ashlar Stone Sign": {
+      "Name": "LargeStandingAshlarStoneSignObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Birch Sign": {
+      "Name": "LargeStandingBirchSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Cedar Sign": {
+      "Name": "LargeStandingCedarSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Ceiba Sign": {
+      "Name": "LargeStandingCeibaSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Fir Sign": {
+      "Name": "LargeStandingFirSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Hardwood Sign": {
+      "Name": "LargeStandingHardwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Joshua Sign": {
+      "Name": "LargeStandingJoshuaSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Lumber Sign": {
+      "Name": "LargeStandingLumberSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Mortared Granite Sign": {
+      "Name": "LargeStandingMortaredGraniteSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Mortared Limestone Sign": {
+      "Name": "LargeStandingMortaredLimestoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Mortared Sandstone Sign": {
+      "Name": "LargeStandingMortaredSandstoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Mortared Stone Sign": {
+      "Name": "LargeStandingMortaredStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Oak Sign": {
+      "Name": "LargeStandingOakSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Palm Sign": {
+      "Name": "LargeStandingPalmSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Redwood Sign": {
+      "Name": "LargeStandingRedwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Saguaro Sign": {
+      "Name": "LargeStandingSaguaroSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Softwood Sign": {
+      "Name": "LargeStandingSoftwoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Spruce Sign": {
+      "Name": "LargeStandingSpruceSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Stone Sign": {
+      "Name": "LargeStandingStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Standing Wood Sign": {
+      "Name": "LargeStandingWoodSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Windowed Lumber Door": {
+      "Name": "LargeWindowedLumberDoorObject",
+      "Size": "5,4,4",
+      "Tier": 3,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Large Wooden Bookshelf": {
+      "Name": "LargeWoodenBookshelfObject",
+      "Size": "1,4,3",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Laser": {
+      "Name": "LaserObject",
+      "Size": "5,5,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lathe": {
+      "Name": "LatheObject",
+      "Size": "4,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lighthouse Lamp": {
+      "Name": "LighthouseLampObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Limestone Bison Statue": {
+      "Name": "LimestoneBisonStatueObject",
+      "Size": "4,2,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Limestone Otter Statue": {
+      "Name": "LimestoneOtterStatueObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Limestone Owl Statue": {
+      "Name": "LimestoneOwlStatueObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Limestone Podium": {
+      "Name": "LimestonePodiumObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Limestone Wolf Statue": {
+      "Name": "LimestoneWolfStatueObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Liquid Converter": {
+      "Name": "LiquidCrafterObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Livingroom": {
+      "Name": "LivingroomObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Logic Gate Item": {
+      "Name": "LogicGateObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Long Basic Hardwood Shelf": {
+      "Name": "LongBasicHardwoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Basic Softwood Shelf": {
+      "Name": "LongBasicSoftwoodShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Basic Wood Shelf": {
+      "Name": "LongBasicWoodShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Floating Hardwood Shelf": {
+      "Name": "LongFloatingHardwoodShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Floating Softwood Shelf": {
+      "Name": "LongFloatingSoftwoodShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Floating Wood Shelf": {
+      "Name": "LongFloatingWoodShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Hardwood Lumber Shelf": {
+      "Name": "LongHardwoodLumberShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Hardwood Veneer Shelf": {
+      "Name": "LongHardwoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Lumber Shelf": {
+      "Name": "LongLumberShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Softwood Lumber Shelf": {
+      "Name": "LongSoftwoodLumberShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Softwood Veneer Shelf": {
+      "Name": "LongSoftwoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Steel Shelf": {
+      "Name": "LongSteelShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Thin Hardwood Veneer Shelf": {
+      "Name": "LongThinHardwoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Thin Softwood Veneer Shelf": {
+      "Name": "LongThinSoftwoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Thin Wood Veneer Shelf": {
+      "Name": "LongThinWoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Long Wood Veneer Shelf": {
+      "Name": "LongWoodVeneerShelfObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Loom": {
+      "Name": "LoomObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Bench": {
+      "Name": "LumberBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Chair": {
+      "Name": "LumberChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Door": {
+      "Name": "LumberDoorObject",
+      "Size": "3,1,2",
+      "Tier": 3,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Dresser": {
+      "Name": "LumberDresserObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Hallway Table": {
+      "Name": "LumberHallwayTableObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Stockpile": {
+      "Name": "LumberStockpileObject",
+      "Size": "10,10,9",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Table": {
+      "Name": "LumberTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Lumber Warehouse Shelves": {
+      "Name": "LumberWarehouseShelvesObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Machinist Table": {
+      "Name": "MachinistTableObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mailbox": {
+      "Name": "MailboxObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Masculine Mannequin": {
+      "Name": "MasculineMannequinObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Mason Sign": {
+      "Name": "MasonSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Masonry Table": {
+      "Name": "MasonryTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mechanical Water Pump": {
+      "Name": "MechanicalWaterPumpObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1"
+    },
+    "Medium Fishing Trawler": {
+      "Name": "MediumFishingTrawlerObject",
+      "Size": "14,6,10",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Medium Lumber Store Window": {
+      "Name": "MediumLumberStoreWindowObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Medium Shipyard": {
+      "Name": "MediumShipyardObject",
+      "Size": "16,9,6",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Metal Scrap Sorter": {
+      "Name": "MetalScrapSorterObject",
+      "Size": "7,14,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mill": {
+      "Name": "MillObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mining Charge": {
+      "Name": "MiningChargeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mint": {
+      "Name": "MintObject",
+      "Size": "2,4,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Modern Compost Bin": {
+      "Name": "ModernCompostBinObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Modern Double Street Light": {
+      "Name": "ModernDoubleStreetLightObject",
+      "Size": "5,1,7",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Modern Garbage Bin": {
+      "Name": "ModernGarbageBinObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Modern Recycling Bin": {
+      "Name": "ModernRecyclingBinObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Modern Street Light": {
+      "Name": "ModernStreetLightObject",
+      "Size": "3,1,7",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Granite Bench": {
+      "Name": "MortaredGraniteBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Granite Chair": {
+      "Name": "MortaredGraniteChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Granite Door": {
+      "Name": "MortaredGraniteDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Granite Fireplace": {
+      "Name": "MortaredGraniteFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Granite Table": {
+      "Name": "MortaredGraniteTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Limestone Bench": {
+      "Name": "MortaredLimestoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Limestone Chair": {
+      "Name": "MortaredLimestoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Limestone Door": {
+      "Name": "MortaredLimestoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Limestone Fireplace": {
+      "Name": "MortaredLimestoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Limestone Table": {
+      "Name": "MortaredLimestoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Sandstone Bench": {
+      "Name": "MortaredSandstoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Sandstone Chair": {
+      "Name": "MortaredSandstoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Sandstone Door": {
+      "Name": "MortaredSandstoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Sandstone Fireplace": {
+      "Name": "MortaredSandstoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Sandstone Table": {
+      "Name": "MortaredSandstoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Stone Bench": {
+      "Name": "MortaredStoneBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Stone Chair": {
+      "Name": "MortaredStoneChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Stone Door": {
+      "Name": "MortaredStoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 2,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Stone Fireplace": {
+      "Name": "MortaredStoneFireplaceObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Mortared Stone Table": {
+      "Name": "MortaredStoneTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Norse Canoe": {
+      "Name": "NorseCanoeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Nylon Futon Bed": {
+      "Name": "NylonFutonBedObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Nylon Futon Couch": {
+      "Name": "NylonFutonCouchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Office Mailbox": {
+      "Name": "OfficeMailboxObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Oil Refinery": {
+      "Name": "OilRefineryObject",
+      "Size": "5,5,8",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Orange Vase": {
+      "Name": "OrangeVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Cast Iron Plaque": {
+      "Name": "OrnateCastIronPlaqueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Gold Frame Landscape": {
+      "Name": "OrnateGoldFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Gold Frame Portrait": {
+      "Name": "OrnateGoldFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Gold Frame Square": {
+      "Name": "OrnateGoldFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Gold Frame Tall": {
+      "Name": "OrnateGoldFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Gold Frame Wide": {
+      "Name": "OrnateGoldFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Iron Frame Landscape": {
+      "Name": "OrnateIronFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Iron Frame Portrait": {
+      "Name": "OrnateIronFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Iron Frame Square": {
+      "Name": "OrnateIronFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Iron Frame Tall": {
+      "Name": "OrnateIronFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Iron Frame Wide": {
+      "Name": "OrnateIronFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Stone Plaque": {
+      "Name": "OrnateStonePlaqueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wood Plaque": {
+      "Name": "OrnateWoodPlaqueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wooden Frame Landscape": {
+      "Name": "OrnateWoodenFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wooden Frame Portrait": {
+      "Name": "OrnateWoodenFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wooden Frame Square": {
+      "Name": "OrnateWoodenFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wooden Frame Tall": {
+      "Name": "OrnateWoodenFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Ornate Wooden Frame Wide": {
+      "Name": "OrnateWoodenFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Orrery": {
+      "Name": "OrreryObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Outpost Claim Stake Item": {
+      "Name": "OutpostClaimStakeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Outpost Netting": {
+      "Name": "OutpostNettingObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Outpost Table": {
+      "Name": "OutpostTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Padded Chair": {
+      "Name": "PaddedChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Paint Mixer": {
+      "Name": "PaintMixerObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Paper Machine": {
+      "Name": "PaperMachineObject",
+      "Size": "8,4,5",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Paper Streamers": {
+      "Name": "PaperStreamersObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Participation Trophy": {
+      "Name": "ParticipationTrophyObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Periodic Table Poster": {
+      "Name": "PeriodicTablePosterObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plant Vase": {
+      "Name": "PlantVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plastic Buoy": {
+      "Name": "PlasticBuoyObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plastic Outdoor Bench": {
+      "Name": "PlasticOutdoorBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plastic Outdoor Chair": {
+      "Name": "PlasticOutdoorChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plastic Outdoor Table": {
+      "Name": "PlasticOutdoorTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Plastic Window Planter": {
+      "Name": "PlasticWindowPlanterObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Pottery Table": {
+      "Name": "PotteryTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Power Hammer": {
+      "Name": "PowerHammerObject",
+      "Size": "4,3,4",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Powered Cart": {
+      "Name": "PoweredCartObject",
+      "Size": "5,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Powered Storage Silo": {
+      "Name": "PoweredStorageSiloObject",
+      "Size": "4,5,8",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Primitive Bin": {
+      "Name": "PrimitiveBinObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Primitive Dump": {
+      "Name": "PrimitiveDumpObject",
+      "Size": "3,4,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Printing Press": {
+      "Name": "PrintingPressObject",
+      "Size": "4,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Pump Jack": {
+      "Name": "PumpJackObject",
+      "Size": "2,5,4",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Punch Card Time Clock": {
+      "Name": "PunchCardObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Purple Vase": {
+      "Name": "PurpleVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Real Estate Desk": {
+      "Name": "RealEstateDeskObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0"
+    },
+    "Recycler": {
+      "Name": "RecyclerObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Red Vase": {
+      "Name": "RedVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Redwoods Poster": {
+      "Name": "RedwoodsPosterObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Refrigerated Display Cabinet": {
+      "Name": "RefrigeratedDisplayCabinetObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Refrigerator": {
+      "Name": "RefrigeratorObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Registrar": {
+      "Name": "RegistrarObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0"
+    },
+    "Research Table": {
+      "Name": "ResearchTableObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Residual Waste Sorter": {
+      "Name": "ResidualWasteSorterObject",
+      "Size": "7,18,5",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Robotic Assembly Line": {
+      "Name": "RoboticAssemblyLineObject",
+      "Size": "4,5,4",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rocker Box": {
+      "Name": "RockerBoxObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rolling Mill": {
+      "Name": "RollingMillObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rotating Cube": {
+      "Name": "RotatingCubeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Round Pot": {
+      "Name": "PlanterPotRoundObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rug Large": {
+      "Name": "RugLargeObject",
+      "Size": "3,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rug Medium": {
+      "Name": "RugMediumObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rug Small": {
+      "Name": "RugSmallObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Rustic Window Planter": {
+      "Name": "RusticWindowPlanterObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Salt Basket": {
+      "Name": "SaltBasketObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Saved The World Achievement Trophy": {
+      "Name": "SavedTheWorldAchievementTrophyObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Sawmill": {
+      "Name": "SawmillObject",
+      "Size": "4,7,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Scarecrow": {
+      "Name": "ScarecrowObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "School Supply Station Item": {
+      "Name": "SchoolSupplyStationObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Scorpion": {
+      "Name": "ScorpionObject",
+      "Size": "10,3,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Screening Machine": {
+      "Name": "ScreeningMachineObject",
+      "Size": "4,3,3",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Screw Press": {
+      "Name": "ScrewPressObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Sensor Based Belt Sorter": {
+      "Name": "SensorBasedBeltSorterObject",
+      "Size": "4,2,3",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Settlement Crafting Table": {
+      "Name": "SettlementCraftingTableObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Shaper": {
+      "Name": "ShaperObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Shark Jaws": {
+      "Name": "SharkJawsObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Sheep Mount": {
+      "Name": "SheepMountObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Shelf Cabinet": {
+      "Name": "ShelfCabinetObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Shipping Container Blue": {
+      "Name": "ShippingContainerBlueObject",
+      "Size": "7,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Shipping Container Green": {
+      "Name": "ShippingContainerGreenObject",
+      "Size": "7,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Shipping Container Red": {
+      "Name": "ShippingContainerRedObject",
+      "Size": "7,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Shipwright Sign": {
+      "Name": "ShipwrightSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Shoji Door": {
+      "Name": "ShojiDoorObject",
+      "Size": "1,4,2",
+      "Tier": 3,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Basic Hardwood Shelf": {
+      "Name": "ShortBasicHardwoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Basic Softwood Shelf": {
+      "Name": "ShortBasicSoftwoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Basic Wood Shelf": {
+      "Name": "ShortBasicWoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Curved Hardwood Veneer Shelf": {
+      "Name": "ShortCurvedHardwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Curved Softwood Veneer Shelf": {
+      "Name": "ShortCurvedSoftwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Curved Wood Veneer Shelf": {
+      "Name": "ShortCurvedWoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Floating Hardwood Shelf": {
+      "Name": "ShortFloatingHardwoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Floating Softwood Shelf": {
+      "Name": "ShortFloatingSoftwoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Floating Wood Shelf": {
+      "Name": "ShortFloatingWoodShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Hardwood Veneer Shelf": {
+      "Name": "ShortHardwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Softwood Veneer Shelf": {
+      "Name": "ShortSoftwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Steel Shelf": {
+      "Name": "ShortSteelShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Thin Hardwood Veneer Shelf": {
+      "Name": "ShortThinHardwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Thin Softwood Veneer Shelf": {
+      "Name": "ShortThinSoftwoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Thin Wood Veneer Shelf": {
+      "Name": "ShortThinWoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Short Wood Veneer Shelf": {
+      "Name": "ShortWoodVeneerShelfObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Sink": {
+      "Name": "SinkObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Skid Steer": {
+      "Name": "SkidSteerObject",
+      "Size": "4,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Bath Mat": {
+      "Name": "SmallBathMatObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Canoe": {
+      "Name": "SmallCanoeObject",
+      "Size": "4,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Clay Pot": {
+      "Name": "SmallClayPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Cotton Bunting Festive": {
+      "Name": "SmallCottonBuntingFestiveObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Cotton Bunting Red": {
+      "Name": "SmallCottonBuntingRedObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Cotton Bunting Regal": {
+      "Name": "SmallCottonBuntingRegalObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Cotton Bunting Vibrant": {
+      "Name": "SmallCottonBuntingVibrantObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Court": {
+      "Name": "SmallCourtObject",
+      "Size": "6,3,3",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Faceted Steel Pot": {
+      "Name": "SmallFacetedSteelPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Festive Paper Lantern": {
+      "Name": "SmallFestivePaperLanternObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Small Hanging Ashlar Basalt Sign": {
+      "Name": "SmallHangingAshlarBasaltSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Gneiss Sign": {
+      "Name": "SmallHangingAshlarGneissSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Granite Sign": {
+      "Name": "SmallHangingAshlarGraniteSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Limestone Sign": {
+      "Name": "SmallHangingAshlarLimestoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Sandstone Sign": {
+      "Name": "SmallHangingAshlarSandstoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Shale Sign": {
+      "Name": "SmallHangingAshlarShaleSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ashlar Stone Sign": {
+      "Name": "SmallHangingAshlarStoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Birch Sign": {
+      "Name": "SmallHangingBirchSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Cedar Sign": {
+      "Name": "SmallHangingCedarSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Ceiba Sign": {
+      "Name": "SmallHangingCeibaSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Fir Sign": {
+      "Name": "SmallHangingFirSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Hardwood Sign": {
+      "Name": "SmallHangingHardwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Joshua Sign": {
+      "Name": "SmallHangingJoshuaSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Lumber Sign": {
+      "Name": "SmallHangingLumberSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Mortared Granite Sign": {
+      "Name": "SmallHangingMortaredGraniteSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Mortared Limestone Sign": {
+      "Name": "SmallHangingMortaredLimestoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Mortared Sandstone Sign": {
+      "Name": "SmallHangingMortaredSandstoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Mortared Stone Sign": {
+      "Name": "SmallHangingMortaredStoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Oak Sign": {
+      "Name": "SmallHangingOakSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Palm Sign": {
+      "Name": "SmallHangingPalmSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Redwood Sign": {
+      "Name": "SmallHangingRedwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Saguaro Sign": {
+      "Name": "SmallHangingSaguaroSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Softwood Sign": {
+      "Name": "SmallHangingSoftwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Spruce Sign": {
+      "Name": "SmallHangingSpruceSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Stone Sign": {
+      "Name": "SmallHangingStoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Hanging Wood Sign": {
+      "Name": "SmallHangingWoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Lumber Store Window": {
+      "Name": "SmallLumberStoreWindowObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Small Meeting Chair": {
+      "Name": "SmallMeetingChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Small Meeting Table": {
+      "Name": "SmallMeetingTableObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Small Nylon Bunting Green": {
+      "Name": "SmallNylonBuntingGreenObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Nylon Bunting Purple": {
+      "Name": "SmallNylonBuntingPurpleObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Nylon Bunting Yellow": {
+      "Name": "SmallNylonBuntingYellowObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Paper Lantern": {
+      "Name": "SmallPaperLanternObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Paper Machine": {
+      "Name": "SmallPaperMachineObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Rough Basalt Pot": {
+      "Name": "SmallRoughBasaltPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Rough Limestone Pot": {
+      "Name": "SmallRoughLimestonePotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Round Limestone Pot": {
+      "Name": "SmallRoundLimestonePotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Shipyard": {
+      "Name": "SmallShipyardObject",
+      "Size": "4,5,2",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Sink": {
+      "Name": "SmallSinkObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Square Basalt Pot": {
+      "Name": "SmallSquareBasaltPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Square Clay Pot": {
+      "Name": "SmallSquareClayPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Square Limestone Pot": {
+      "Name": "SmallSquareLimestonePotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Basalt Sign": {
+      "Name": "SmallStandingAshlarBasaltSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Gneiss Sign": {
+      "Name": "SmallStandingAshlarGneissSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Granite Sign": {
+      "Name": "SmallStandingAshlarGraniteSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Limestone Sign": {
+      "Name": "SmallStandingAshlarLimestoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Sandstone Sign": {
+      "Name": "SmallStandingAshlarSandstoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Shale Sign": {
+      "Name": "SmallStandingAshlarShaleSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ashlar Stone Sign": {
+      "Name": "SmallStandingAshlarStoneSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Birch Sign": {
+      "Name": "SmallStandingBirchSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Cedar Sign": {
+      "Name": "SmallStandingCedarSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Ceiba Sign": {
+      "Name": "SmallStandingCeibaSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Fir Sign": {
+      "Name": "SmallStandingFirSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Hardwood Sign": {
+      "Name": "SmallStandingHardwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Joshua Sign": {
+      "Name": "SmallStandingJoshuaSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Lumber Sign": {
+      "Name": "SmallStandingLumberSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Mortared Granite Sign": {
+      "Name": "SmallStandingMortaredGraniteSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Mortared Limestone Sign": {
+      "Name": "SmallStandingMortaredLimestoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Mortared Sandstone Sign": {
+      "Name": "SmallStandingMortaredSandstoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Mortared Stone Sign": {
+      "Name": "SmallStandingMortaredStoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Oak Sign": {
+      "Name": "SmallStandingOakSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Palm Sign": {
+      "Name": "SmallStandingPalmSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Redwood Sign": {
+      "Name": "SmallStandingRedwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Saguaro Sign": {
+      "Name": "SmallStandingSaguaroSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Softwood Sign": {
+      "Name": "SmallStandingSoftwoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Spruce Sign": {
+      "Name": "SmallStandingSpruceSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Stone Sign": {
+      "Name": "SmallStandingStoneSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Standing Wood Sign": {
+      "Name": "SmallStandingWoodSignObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Steel Pot": {
+      "Name": "SmallSteelPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Stockpile": {
+      "Name": "SmallStockpileObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Small Stump Store Window": {
+      "Name": "SmallStumpStoreWindowObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Small Wood Cart": {
+      "Name": "SmallWoodCartObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Small Wooden Boat": {
+      "Name": "SmallWoodenBoatObject",
+      "Size": "5,2,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Double Shelf": {
+      "Name": "SoftwoodDoubleShelfObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Bench": {
+      "Name": "SoftwoodLumberBenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Chair": {
+      "Name": "SoftwoodLumberChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Door": {
+      "Name": "SoftwoodLumberDoorObject",
+      "Size": "3,1,2",
+      "Tier": 3,
+      "Components": "0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Dresser": {
+      "Name": "SoftwoodLumberDresserObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Hallway Table": {
+      "Name": "SoftwoodLumberHallwayTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Softwood Lumber Table": {
+      "Name": "SoftwoodLumberTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Solar Generator": {
+      "Name": "SolarGeneratorObject",
+      "Size": "7,6,4",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Spin Melter": {
+      "Name": "SpinMelterObject",
+      "Size": "2,3,3",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Spinning Jenny": {
+      "Name": "SpinningJennyObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Square Lumber Pot": {
+      "Name": "SquareLumberPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Square Pot": {
+      "Name": "PlanterPotSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stamp Mill": {
+      "Name": "StampMillObject",
+      "Size": "2,2,4",
+      "Tier": 0,
+      "Components": "1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Standing Basalt Pot": {
+      "Name": "StandingBasaltPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Standing Clay Pot": {
+      "Name": "StandingClayPotObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Standing Glass Sign": {
+      "Name": "StandingGlassSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Standing Long Steel Sign": {
+      "Name": "StandingLongSteelSignObject",
+      "Size": "1,3,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Standing Steel Brick Sign": {
+      "Name": "StandingSteelBrickSignObject",
+      "Size": "1,4,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Starter Camp": {
+      "Name": "StarterCampObject",
+      "Size": "3,6,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steam Engine": {
+      "Name": "SteamEngineObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Steam Tractor": {
+      "Name": "SteamTractorObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steam Truck": {
+      "Name": "SteamTruckObject",
+      "Size": "4,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Abstract Fixture": {
+      "Name": "SteelAbstractFixtureObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Bin": {
+      "Name": "SteelBinObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Buoy": {
+      "Name": "SteelBuoyObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Ceiling Light": {
+      "Name": "SteelCeilingLightObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Floor Lamp": {
+      "Name": "SteelFloorLampObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Hanging Fixture": {
+      "Name": "SteelHangingFixtureObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Hanging Lamp": {
+      "Name": "SteelHangingLampObject",
+      "Size": "2,2,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Kitchen Lamp": {
+      "Name": "SteelKitchenLampObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Liquid Tank": {
+      "Name": "SteelLiquidTankObject",
+      "Size": "5,5,6",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Moorage Post": {
+      "Name": "SteelMooragePostObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Podium": {
+      "Name": "SteelPodiumObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Steel Row Seating": {
+      "Name": "SteelRowSeatingObject",
+      "Size": "1,3,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Steel Searchlight": {
+      "Name": "SteelSearchlightObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Square Fixture": {
+      "Name": "SteelSquareFixtureObject",
+      "Size": "2,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Table Lamp": {
+      "Name": "SteelTableLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Steel Warehouse Shelves": {
+      "Name": "SteelWarehouseShelvesObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Stenographers Table": {
+      "Name": "StenographersTableObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stockpile": {
+      "Name": "StockpileObject",
+      "Size": "5,5,5",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Stone Brazier": {
+      "Name": "StoneBrazierObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stone Door": {
+      "Name": "StoneDoorObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Stone Plaque": {
+      "Name": "StonePlaqueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stop Sign": {
+      "Name": "StopSignObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Storage Chest": {
+      "Name": "StorageChestObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Storage Silo": {
+      "Name": "StorageSiloObject",
+      "Size": "4,4,8",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Store": {
+      "Name": "StoreObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Store Sign": {
+      "Name": "StoreSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stove": {
+      "Name": "StoveObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Street Sign": {
+      "Name": "StreetSignObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Streetlamp": {
+      "Name": "StreetlampObject",
+      "Size": "1,1,5",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Students Desk Item": {
+      "Name": "StudentsDeskObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Students Desk T1": {
+      "Name": "StudentsDeskT1Object",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Students Desk T2": {
+      "Name": "StudentsDeskT2Object",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Students Desk T3": {
+      "Name": "StudentsDeskT3Object",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Stuffed Alligator": {
+      "Name": "StuffedAlligatorObject",
+      "Size": "3,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stuffed Bison": {
+      "Name": "StuffedBisonObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stuffed Elk": {
+      "Name": "StuffedElkObject",
+      "Size": "3,2,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stuffed Goat": {
+      "Name": "StuffedGoatObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stuffed Jaguar": {
+      "Name": "StuffedJaguarObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stuffed Wolf": {
+      "Name": "StuffedWolfObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stump Bed": {
+      "Name": "StumpBedObject",
+      "Size": "1,3,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stump Chair": {
+      "Name": "StumpChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stump Latrine": {
+      "Name": "StumpLatrineObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Stump Table": {
+      "Name": "StumpTableObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Swirl Vase": {
+      "Name": "SwirlVaseObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Switch": {
+      "Name": "SwitchObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Tailor Sign": {
+      "Name": "TailorSignObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tailoring Table": {
+      "Name": "TailoringTableObject",
+      "Size": "3,1,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tall Limestone Pot": {
+      "Name": "TallLimestonePotObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tallow Candle": {
+      "Name": "TallowCandleObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tallow Lamp": {
+      "Name": "TallowLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tallow Wall Lamp": {
+      "Name": "TallowWallLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tapestry": {
+      "Name": "TapestryObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tapestry Fish": {
+      "Name": "TapestryFishObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tapestry Sunset": {
+      "Name": "TapestrySunsetObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Teachers Desk Item": {
+      "Name": "TeachersDeskObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Teachers Desk T1": {
+      "Name": "TeachersDeskT1Object",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Teachers Desk T2": {
+      "Name": "TeachersDeskT2Object",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Teachers Desk T3": {
+      "Name": "TeachersDeskT3Object",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Tiki Torch": {
+      "Name": "TikiTorchObject",
+      "Size": "1,1,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Tiny Stockpile": {
+      "Name": "TinyStockpileObject",
+      "Size": "2,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0"
+    },
+    "Toilet": {
+      "Name": "ToiletObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Toll": {
+      "Name": "TollObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Tool Bench": {
+      "Name": "ToolBenchObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "1,0,0,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Torch Stand": {
+      "Name": "TorchStandObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Towel Rack": {
+      "Name": "TowelRackObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Town Bell": {
+      "Name": "TownBellObject",
+      "Size": "4,4,3",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Town Claim Stake": {
+      "Name": "TownClaimStakeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Town Foundation": {
+      "Name": "TownFoundationObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trailer Truck": {
+      "Name": "TrailerTruckObject",
+      "Size": "7,2,3",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Transmission Pole": {
+      "Name": "TransmissionPoleObject",
+      "Size": "1,1,8",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Treasury": {
+      "Name": "TreasuryObject",
+      "Size": "3,3,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0"
+    },
+    "Tripod Camera": {
+      "Name": "TripodCameraObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trophy Artist": {
+      "Name": "TrophyArtistObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trophy Baker": {
+      "Name": "TrophyBakerObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trophy Farmer": {
+      "Name": "TrophyFarmerObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trophy Logger": {
+      "Name": "TrophyLoggerObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Trophy Miner": {
+      "Name": "TrophyMinerObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Truck": {
+      "Name": "TruckObject",
+      "Size": "5,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Upholstered Chair": {
+      "Name": "UpholsteredChairObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Upholstered Couch": {
+      "Name": "UpholsteredCouchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wainwright Table": {
+      "Name": "WainwrightTableObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wall Candle": {
+      "Name": "WallCandleObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wall Mounted Chest": {
+      "Name": "WallMountedChestObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wall Mounted Trunk": {
+      "Name": "WallMountedTrunkObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Washboard": {
+      "Name": "WashboardObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Washing Machine": {
+      "Name": "WashingMachineObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Waste Filter": {
+      "Name": "WasteFilterObject",
+      "Size": "3,3,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Water Filter": {
+      "Name": "WaterFilterObject",
+      "Size": "2,1,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1"
+    },
+    "Waterwheel": {
+      "Name": "WaterwheelObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wheelbarrow": {
+      "Name": "WheelbarrowObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Wind Turbine": {
+      "Name": "WindTurbineObject",
+      "Size": "3,7,10",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Windmill": {
+      "Name": "WindmillObject",
+      "Size": "2,7,7",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Window Shutters Center": {
+      "Name": "WindowShuttersCenterObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Window Shutters Left": {
+      "Name": "WindowShuttersLeftObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Window Shutters Right": {
+      "Name": "WindowShuttersRightObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wolf Pelt": {
+      "Name": "WolfPeltObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wood Cart": {
+      "Name": "WoodCartObject",
+      "Size": "2,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Wood Double Shelf": {
+      "Name": "WoodDoubleShelfObject",
+      "Size": "1,3,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wood Plaque": {
+      "Name": "WoodPlaqueObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wood Shop Cart": {
+      "Name": "WoodShopCartObject",
+      "Size": "3,2,3",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0"
+    },
+    "Wood Window Planter": {
+      "Name": "WoodWindowPlanterObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Barge": {
+      "Name": "WoodenBargeObject",
+      "Size": "9,7,5",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Ceiling Light": {
+      "Name": "WoodenCeilingLightObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Dumpster": {
+      "Name": "WoodenDumpsterObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Elevator": {
+      "Name": "WoodenElevatorObject",
+      "Size": "3,4,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Fabric Bed": {
+      "Name": "WoodenFabricBedObject",
+      "Size": "3,2,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Floor Lamp": {
+      "Name": "WoodenFloorLampObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Frame Landscape": {
+      "Name": "WoodenFrameLandscapeObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Frame Portrait": {
+      "Name": "WoodenFramePortraitObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Frame Square": {
+      "Name": "WoodenFrameSquareObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Frame Tall": {
+      "Name": "WoodenFrameTallObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Frame Wide": {
+      "Name": "WoodenFrameWideObject",
+      "Size": "1,2,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Kitchen Lamp": {
+      "Name": "WoodenKitchenLampObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Latrine": {
+      "Name": "LatrineObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Liquid Tank": {
+      "Name": "WoodenLiquidTankObject",
+      "Size": "3,3,5",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Moorage Post": {
+      "Name": "WoodenMooragePostObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Podium": {
+      "Name": "WoodenPodiumObject",
+      "Size": "1,1,2",
+      "Tier": 0,
+      "Components": ""
+    },
+    "Wooden Sliding Door": {
+      "Name": "WoodenSlidingDoorObject",
+      "Size": "1,4,2",
+      "Tier": 3,
+      "Components": "0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Straw Bed": {
+      "Name": "WoodenStrawBedObject",
+      "Size": "3,1,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Table Lamp": {
+      "Name": "WoodenTableLampObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Transport Ship": {
+      "Name": "WoodenTransportShipObject",
+      "Size": "8,4,4",
+      "Tier": 0,
+      "Components": "0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Wooden Wall Torch Stand": {
+      "Name": "WoodenWallTorchStandObject",
+      "Size": "1,1,1",
+      "Tier": 0,
+      "Components": "0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Workbench": {
+      "Name": "WorkbenchObject",
+      "Size": "1,2,2",
+      "Tier": 0,
+      "Components": "1,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Zataku Table": {
+      "Name": "ZatakuTableObject",
+      "Size": "3,3,1",
+      "Tier": 0,
+      "Components": "0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+    "Zoning Office": {
+      "Name": "ZoningOfficeObject",
+      "Size": "2,3,2",
+      "Tier": 0,
+      "Components": "0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"
+    }
+  }
+}

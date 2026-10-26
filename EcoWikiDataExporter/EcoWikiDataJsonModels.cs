@@ -201,6 +201,10 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public class WorldObjectData
         {
+            public string Name { get; set; }
+            public string Size { get; set; }
+            public int Tier { get; set; }
+
             public string Components { get; set; }
         }
 

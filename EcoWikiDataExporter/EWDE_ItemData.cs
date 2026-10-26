@@ -4,7 +4,9 @@ using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
 using Eco.Gameplay.Components;
+using Eco.Gameplay.Components.Auth;
 using Eco.Gameplay.Components.Storage;
+using Eco.Gameplay.Components.Store;
 using Eco.Gameplay.Garbage;
 using Eco.Gameplay.Housing;
 using Eco.Gameplay.Housing.PropertyValues;
@@ -16,6 +18,7 @@ using Eco.Gameplay.Pipes.LiquidComponents;
 using Eco.Gameplay.Players;
 using Eco.Gameplay.Property;
 using Eco.Gameplay.Rooms;
+using Eco.Gameplay.Settlements.Components;
 using Eco.Gameplay.Systems;
 using Eco.Gameplay.Systems.EcoMarketplace;
 using Eco.Gameplay.Systems.Messaging.Chat;
@@ -81,9 +84,14 @@ namespace Eco.Mods.EcoWikiDataExporter
 			foreach (Item item in Item.AllItemsIncludingHidden)
 			{
 				ItemName = item.DisplayName.NotTranslated;
+                
 
-				if (!ItemDataList.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
+
+                if (!ItemDataList.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
 				{
+                    int Tier = 0;
+                    List<int> WorldObjectComponentsList = [];
+
                     #region FoodItem
                     if (item is FoodItem foodItem)
                     {
@@ -175,9 +183,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region BlockItem
                     if (item is BlockItem Block)
 					{
-						//ItemData[ItemName]["BlockItem"] = $"'True'";
-						//ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
-                        //if (Block.HasTier) { ItemData[ItemName]["Tier"] = $"'{Block.Tier}'";  }
+                        //ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
+                        Tier = Block.Tier;
 
                     }
                     #endregion
@@ -273,14 +280,104 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     #region WorldObjectItem
 
+                    if (item is WorldObjectItem worldObjectItem)
+                    {
+                        Type worldObjecttype = worldObjectItem.WorldObjectType;
+
+                        var occupancy = WorldObject.GetOccupancy(worldObjecttype).Select(x => x.Offset).ToList();
+                        var size = Vector3i.One + new Vector3i(occupancy.Max(i => i.x) - occupancy.Min(i => i.x),
+                                                               occupancy.Max(i => i.y) - occupancy.Min(i => i.y),
+                                                               occupancy.Max(i => i.z) - occupancy.Min(i => i.z));
+                        string FullSize = size.z + "," + size.x + "," + size.y;
+
+                        if (item.Category == "WorldObject")
+                        {
+                            try
+                            {
+                                WorldObject? worldObject = objectInitializer.Init(worldObjectItem) ?? throw new Exception($"Initializer error for WorldObjectItem: {worldObjectItem.Name}");
+
+                                if (worldObject != null)
+                                {
+                                    Tier = worldObject.Tier;
 
 
+                                    WorldObjectComponentsList =
+                                    [
+                                        worldObject.HasComponent<CraftingComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<RoomRequirementsComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<HousingComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<DoorComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<BedComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<MountComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<ForSaleComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<MintComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<PropertyAuthComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<LinkComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<MinimapComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<StoreComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<SharedLinkComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<OnOffComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<VehicleComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<BankComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<AirPollutionComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<JurisdictionComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<ConstitutionComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<CivicObjectComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<AnnexationComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<CultureControlComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<PowerGridComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<PowerGridNetworkComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<PublicStorageComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<AnimalTrapComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<ExchangeComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<FilterComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<CustomTextComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<MustBeOwnedComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<ItemDistributionComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<ElevatorCallPostComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<StatusComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<SortingComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<LiquidTankComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<StockpileComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<WorldStockpileComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<DeedManagementComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<DeedSalesComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<RegistrarComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<PumpComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<LiquidProducerComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<TollComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<TreasuryComponent>() ? 1 : 0,
+                                        worldObject.HasComponent<AttachmentComponent>() ? 1 : 0,
+                                    ];
+                                }
+                                else
+                                {
+                                    Log.WriteLineLoc($"{worldObject.Name} Not Init");
+                                }
+                                WorldObjectManager.DestroyPermanently(worldObject);
+                            }
+                            catch (Exception ex) { Log.WriteException(ex); }
+                        }
+
+                        string WorldObjectComponents = string.Join(",", WorldObjectComponentsList);
+
+                        WorldObjectData worldobjectdata = new WorldObjectData
+                        {
+                            Name = worldObjecttype.Name,
+                            Size = FullSize,
+                            Tier = Tier,
+                            Components = WorldObjectComponents,
+                        };
+
+                        WorldObjectDataList.Add(ItemName, worldobjectdata);
+
+                    }
                     #endregion
 
-                    // -------------------------------------------------------------------------------------------------------
+                        // -------------------------------------------------------------------------------------------------------
 
-                    //SalvageCost
-                    if (item.IsWasteProduct)
+                        //SalvageCost
+                        if (item.IsWasteProduct)
 					{
 
 
@@ -334,6 +431,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         Name = Localization(ItemName),
                         Description = Localization(CleanText(item.GetDescription.NotTranslated)),
                         Hidden = item.Hidden,
+                        Tier = Tier,
                         Weight = item.Weight,
                         MaxStackSize = item.MaxStackSize,
                         Types = ItemTypes,
