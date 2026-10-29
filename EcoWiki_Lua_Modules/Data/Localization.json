@@ -678,6 +678,13 @@
       "German": "Carried Slots: {0}",
       "French": "Carried Slots: {0}",
       "Japanese": "Carried Slots: {0}"
+    },
+    "Tier": {
+      "English": "Tier",
+      "Russian": "Уровень",
+      "German": "Stufe",
+      "French": "Niveau",
+      "Japanese": "ティア"
     }
   }
 }

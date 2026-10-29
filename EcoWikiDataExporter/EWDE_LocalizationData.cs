@@ -151,6 +151,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Animal Detection Range: {0}",
                     "Backpack Slots: {0}",
                     "Carried Slots: {0}",
+                    "Tier",
             }
             ;
 
