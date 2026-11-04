@@ -57,8 +57,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!PlantDataList.ContainsKey(PlantName))
                 {
 
-                    // PlantData[plantName]["CalorieValue"] = $"'{plant.CalorieValue}'";
-
                     if (plant.ResourceItemType != null)
                     {
                         // TreeData[treeName]["ResourceItem"] = $"'{plant.ResourceItemType.Name}'";
@@ -72,6 +70,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         ID = plant.Name + "Species",
                         Name = Localization(PlantName),
                         Height = plant.Height,
+                        Calories = WikiFloat(plant.CalorieValue),
                         MaturityAgeDays = WikiFloat(plant.MaturityAgeDays),
                         StartBiome = plant.GenerationDefinitions.StartBiomes,
                         WaterPlant = plant.Water ? true : false,
