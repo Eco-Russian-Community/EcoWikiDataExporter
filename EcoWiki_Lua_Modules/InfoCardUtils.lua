@@ -125,7 +125,7 @@ function p.PlantList()
     local PlantData = mw.loadData( "Module:PlantData" )
     local PlantList = PlantData.plants
     
-        -- Create the header of the table
+    -- Create the header of the table
 	TableHeader = '<table class="table table-striped table-bordered sortable"><tr class="table-dark">'
 	TableHeader = TableHeader .. '<tr class="table-dark">'
 	TableHeader = TableHeader .. '<th rowspan="2">Plant</th>'
@@ -159,7 +159,7 @@ function p.PlantList()
     for PlantName,PlantData in pairs(PlantList) do
 		local TableRow = ''
 		local Habitat = ''
-		if (PlantData.IsWater == 'True') then Habitat = 'Water' else Habitat = 'Land' end
+		if (PlantData.WaterPlant == true) then Habitat = 'Water' else Habitat = 'Land' end
 		
     	TableRow = TableRow .. '<tr>'
     	TableRow = TableRow .. '<td>[[' .. PlantData.Name[Lang] .. ']] </td>'
