@@ -271,14 +271,41 @@ function p.DecodeItemTypes(TypesString)
 	if RawList[7] == "1" then Types['SkillScroll'] = true else Types['SkillScroll'] = false end
 	if RawList[8] == "1" then Types['Module'] = true else Types['Module'] = false end
 	if RawList[9] == "1" then Types['Part'] = true else Types['Part'] = false end
-	if RawList[10] == "1" then Types['Decontaminant'] = true else Types['Decontaminant'] = false end
-	if RawList[11] == "1" then Types['WorldObject'] = true else Types['WorldObject'] = false end
-	if RawList[12] == "1" then Types['VehicleTool'] = true else Types['VehicleTool'] = false end
-	if RawList[13] == "1" then Types['Fuel'] = true else Types['Fuel'] = false end
-	if RawList[14] == "1" then Types['Waste'] = true else Types['Waste'] = false end
-	if RawList[15] == "1" then Types['Currency'] = true else Types['Currency'] = false end
+	if RawList[10] == "1" then Types['Tool'] = true else Types['Tool'] = false end
+	if RawList[11] == "1" then Types['Decontaminant'] = true else Types['Decontaminant'] = false end
+	if RawList[12] == "1" then Types['WorldObject'] = true else Types['WorldObject'] = false end
+	if RawList[13] == "1" then Types['VehicleTool'] = true else Types['VehicleTool'] = false end
+	if RawList[14] == "1" then Types['Fuel'] = true else Types['Fuel'] = false end
+	if RawList[15] == "1" then Types['Waste'] = true else Types['Waste'] = false end
+	if RawList[16] == "1" then Types['Currency'] = true else Types['Currency'] = false end
+	if RawList[17] == "1" then Types['PaidItem'] = true else Types['PaidItem'] = false end
 
 	return Types
+end
+
+function p.DecodeWorldObjectComponents(ComponentsString)
+	assert(type(ComponentsString) == 'string', 'Utils.DecodeItemTypes: Types must be a string')
+
+	local RawList = p.StringListToArray(ComponentsString)
+	local Components = {}
+	
+	if RawList[1] == "1" then Components['Crafting'] = true else Components['Crafting'] = false end
+	if RawList[2] == "1" then Components['RoomRequirements'] = true else Components['RoomRequirements'] = false end
+	if RawList[3] == "1" then Components['Housing'] = true else Components['Housing'] = false end
+	if RawList[4] == "1" then Components['Door'] = true else Components['Door'] = false end
+	if RawList[5] == "1" then Components['Bed'] = true else Components['Bed'] = false end
+	if RawList[6] == "1" then Components['Mount'] = true else Components['Mount'] = false end
+	if RawList[7] == "1" then Components['ForSale'] = true else Components['ForSale'] = false end
+	if RawList[8] == "1" then Components['Mint'] = true else Components['Mint'] = false end
+	if RawList[9] == "1" then Components['PropertyAuth'] = true else Components['PropertyAuth'] = false end
+	if RawList[10] == "1" then Components['Link'] = true else Components['Link'] = false end
+	if RawList[11] == "1" then Components['Minimap'] = true else Components['Minimap'] = false end
+	if RawList[12] == "1" then Components['Store'] = true else Components['Store'] = false end
+	if RawList[13] == "1" then Components['SharedLink'] = true else Components['SharedLink'] = false end
+	if RawList[14] == "1" then Components['OnOff'] = true else Components['OnOff'] = false end
+	if RawList[15] == "1" then Components['Vehicle'] = true else Components['Vehicle'] = false end
+	
+	return Components
 end
 
 function p.Mbox(Icon, Text, TextColor, BorderColor)

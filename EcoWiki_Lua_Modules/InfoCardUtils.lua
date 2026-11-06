@@ -10,12 +10,13 @@ function p.WorldObjectModule(ItemName)
     local WorldObject = WorldObjectData.WorldObjects[ItemName]
     local WikiText = ''
 
-	
-    if WorldObject.CraftingComponent == 'True' then WikiText = WikiText .. p.CraftingComponentModule(ItemName) end
-    if WorldObject.ForSaleComponent == 'True' then WikiText = WikiText .. p.ForSaleComponentModule(ItemName) end
-    if WorldObject.HousingComponent == 'True' then WikiText = WikiText .. p.HousingComponentModule(ItemName) end
-    if WorldObject.BedComponent == 'True' then WikiText = WikiText .. p.BedComponentModule(ItemName) end
-    if WorldObject.MintComponent == 'True' then WikiText = WikiText .. p.MintComponentModule(ItemName) end
+	local WorldObjectComponents = Utils.DecodeWorldObjectComponents(WorldObject['Components'])
+
+    if WorldObjectComponents["Crafting"] == true then WikiText = WikiText .. p.CraftingComponentModule(ItemName) end
+    if WorldObjectComponents["ForSale"] == true then WikiText = WikiText .. p.ForSaleComponentModule(ItemName) end
+    if WorldObjectComponents["Housing"] == true then WikiText = WikiText .. p.HousingComponentModule(ItemName) end
+    if WorldObjectComponents["Bed"] == true then WikiText = WikiText .. p.BedComponentModule(ItemName) end
+    if WorldObjectComponents["Mint"] == true then WikiText = WikiText .. p.MintComponentModule(ItemName) end
       
     return WikiText
 end
