@@ -63,6 +63,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Items",
                     "Used in",
                     "Crafted At",
+                    "Crafting",
                     "Crafting Table",
                     "Products",
                     "Ingredients",
@@ -152,6 +153,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     "Backpack Slots: {0}",
                     "Carried Slots: {0}",
                     "Tier",
+                    "Mint",
             }
             ;
 

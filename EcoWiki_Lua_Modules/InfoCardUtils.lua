@@ -10,6 +10,7 @@ function p.WorldObjectModule(ItemName)
     local WorldObject = WorldObjectData.WorldObjects[ItemName]
     local WikiText = ''
 
+	
     if WorldObject.CraftingComponent == 'True' then WikiText = WikiText .. p.CraftingComponentModule(ItemName) end
     if WorldObject.ForSaleComponent == 'True' then WikiText = WikiText .. p.ForSaleComponentModule(ItemName) end
     if WorldObject.HousingComponent == 'True' then WikiText = WikiText .. p.HousingComponentModule(ItemName) end
@@ -24,7 +25,7 @@ function p.CraftingComponentModule(ItemName)
     local RecipeUtils = require('Module:RecipeUtils')
     local CraftingTableRecipes = RecipeUtils.CraftingTableRecipes(ItemName)
 	if (CraftingTableRecipes ~= "") then
-		WikiText = WikiText .. '<h3>Crafting</h3>'
+		WikiText = WikiText .. '<h3>' .. Utils.Translate("Crafting") .. '</h3>'
 		WikiText =  WikiText .. RecipeUtils.CraftTable(CraftingTableRecipes);
 	end
 	
@@ -44,13 +45,13 @@ end
 
 function p.BedComponentModule(ItemName)
     local WikiText = ''
-    WikiText = WikiText .. '<h3>Bed</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("Bed") .. '</h3>'
     return WikiText
 end
 
 function p.MintComponentModule(ItemName)
     local WikiText = ''
-    WikiText = WikiText .. '<h3>Mint</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("Mint") .. '</h3>'
     return WikiText
 end
 
@@ -58,7 +59,7 @@ function p.FoodDetailsModule(ItemName)
     local WikiText = ''
     local FoodData = mw.loadData( "Module:FoodData" )
     local FoodItem = FoodData.foods[ItemName]
-    WikiText = WikiText .. '<h3>Food</h3>'
+    WikiText = WikiText .. '<h3>' .. Utils.Translate("Food") .. '</h3>'
     WikiText = WikiText .. '<p>' .. Utils.Translate("Calories") .. ': ' .. FoodItem.Calories .. '</p>'
     WikiText = WikiText .. '<p>' .. Utils.Translate("Protein") .. ': ' .. FoodItem.Protein .. '</p>'
     WikiText = WikiText .. '<p>' .. Utils.Translate("Carbs") .. ': ' .. FoodItem.Carbs .. '</p>'

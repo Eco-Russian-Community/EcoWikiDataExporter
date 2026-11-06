@@ -23,6 +23,7 @@ using Eco.Shared.Utils;
 using Eco.Simulation;
 using Eco.Simulation.Agents;
 using Eco.Simulation.Types;
+using Eco.World.Blocks;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -62,9 +63,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                 if (!AnimalDataList.ContainsKey(AnimalName))
                 {
 
-
-                    //if (animal.Aquatic == false) { AnimalData[animalName]["Description"] = WriteDictionaryAsSubObject(Localization(animal.DisplayDescription.NotTranslated), 1); }
-
                     // Behavior
 
                     // AnimalData[animalName]["IsSwimming"] = $"'{animal.Swimming}'";
@@ -73,7 +71,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     // AnimalData[animalName]["Aquatic"] = $"'{animal.Aquatic}'";
 
 
-                    // AnimalData[animalName]["Health"] = $"'{WikiFloat(animal.Health)}'";
                     // AnimalData[animalName]["Flags"] = $"'{animal.Flags}'";
 
 
@@ -91,7 +88,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     // AnimalData[animalName]["HerdSizeMax"] = $"'{animal.HerdSize.Max}'";
 
                     //Food
-                    // AnimalData[animalName]["CalorieValue"] = $"'{WikiFloat(animal.CalorieValue)}'";
                     // AnimalData[animalName]["EatTags"] = $"'{animal.EatTags}'";
 
                     //Food Sources
@@ -99,12 +95,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                     string FoodSourceList = "";
                     foreach (Species sp in FoodSource)
                     {
-                        if (FoodSourceList == "") { FoodSourceList = "'" + sp.DisplayName.NotTranslated + "'"; }
-                        else { FoodSourceList = FoodSourceList + ",'" + sp.DisplayName.NotTranslated + "'";  }
+                        if (FoodSourceList == "") { FoodSourceList = sp.DisplayName.NotTranslated; }
+                        else { FoodSourceList = FoodSourceList + "," + sp.DisplayName.NotTranslated;  }
                     }
-                    FoodSourceList = "{" + FoodSourceList + "}";
-                    // AnimalData[animalName]["FoodSourcesSpecies"] = $"{FoodSourceList}";
-
+                    
                     // Movement
                     // AnimalData[animalName]["CanSwimNearCoast"] = $"'{animal.CanSwimNearCoast}'";
 
@@ -122,16 +116,18 @@ namespace Eco.Mods.EcoWikiDataExporter
                     // AnimalData[animalName]["MaxGrowthRatePerHour"] = $"'{WikiFloat(animal.MaxGrowthRatePerHour)}'";
                     // AnimalData[animalName]["TimeToSpread1ToNeighborInHours"] = $"'{WikiFloat(animal.TimeToSpread1ToNeighborInHours)}'";
 
-                    // Climate
-                    // AnimalData[animalName]["ReleasesCO2TonsPerDay"] = $"'{WikiFloat(animal.ReleasesCO2TonsPerDay)}'";
-
+                    TranslateData AnimalDescription = animal.Aquatic ? Localization(animal.DisplayDescription.NotTranslated) : null;
                     AnimalData animaldata = new AnimalData
                     {
                         ID = animal.Name + "Species",
                         Name = Localization(AnimalName),
+                        Description = AnimalDescription,
+                        Health = WikiFloat(animal.Health),
+                        Calories = WikiFloat(animal.CalorieValue),
                         MaturityAgeDays = WikiFloat(animal.MaturityAgeDays),
-
-                        CO2TonsPerDay = WikiFloat(animal.ReleasesCO2TonsPerDay)
+                        Food = FoodSourceList,
+                        //Resources = 
+                        CO2TonsPerDay = WikiFloat(animal.ReleasesCO2TonsPerDay),
                     };
 
                     AnimalDataList.Add(AnimalName, animaldata);

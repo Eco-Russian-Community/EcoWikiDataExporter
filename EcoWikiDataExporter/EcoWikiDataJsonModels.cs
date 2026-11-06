@@ -282,7 +282,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public bool IsDiggable { get; set; }
             public bool IsReapable { get; set; }
             public int Height { get; set; }
-
+            public string Calories { get; set; }
             public int ExtremeTemperatureRangeMin { get; set; }
             public int IdealTemperatureRangeMin { get; set; }
             public int IdealTemperatureRangeMax { get; set; }
@@ -305,10 +305,13 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             public string ID { get; set; }
             public TranslateData Name { get; set; }
+            public TranslateData Description { get; set; }
+            public string Health { get; set; }
+            public string Calories { get; set; }
+
+
             public string MaturityAgeDays { get; set; }
-
-
-
+            public string Food { get; set; }
             public string CO2TonsPerDay { get; set; }
         }
 

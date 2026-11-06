@@ -77,7 +77,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 
         public static void ExportItemData()
 		{
-
             WorldObjectInitializer objectInitializer = new WorldObjectInitializer();
 
 			string ItemName;
@@ -85,8 +84,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 			{
 				ItemName = item.DisplayName.NotTranslated;
                 
-
-
                 if (!ItemDataList.ContainsKey(ItemName) && (ItemName != "Chat Log") && (item.Group != "Skills") && (item.Group != "Talents") && (item.Group != "Actionbar Items"))
 				{
                     int Tier = 0;
@@ -185,7 +182,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 					{
                         //ItemData[ItemName]["HasForms"] = $"'{Block.HasForms}'";
                         Tier = Block.Tier;
-
+                        var BlockList = Block.BlockTypes;
                     }
                     #endregion
 
@@ -300,7 +297,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                                 {
                                     Tier = worldObject.Tier;
 
-
                                     WorldObjectComponentsList =
                                     [
                                         worldObject.HasComponent<CraftingComponent>() ? 1 : 0,
@@ -370,7 +366,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                         };
 
                         WorldObjectDataList.Add(ItemName, worldobjectdata);
-
                     }
                     #endregion
 
@@ -383,7 +378,6 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 					}
 
-
                     if (item.IsStackable)
                     {
                         //ItemData[ItemName]["IsStackable"] = $"'True'"; 
@@ -391,13 +385,8 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     //item.IsCarried
 
-
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
-
-
-
-
 
 
                     // ------------------   Item Types List  -------------------------------------------------------------------------------------
