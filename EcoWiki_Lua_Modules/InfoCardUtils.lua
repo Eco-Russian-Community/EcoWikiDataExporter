@@ -75,16 +75,41 @@ function p.FoodDetailsModule(ItemName)
     local WikiText = ''
     local FoodData = mw.loadData( "Module:FoodData" )
     local FoodItem = FoodData.foods[ItemName]
-    WikiText = WikiText .. '<h3>' .. Utils.Translate("Food") .. '</h3>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Calories") .. ': ' .. FoodItem.Calories .. '</p>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Protein") .. ': ' .. FoodItem.Protein .. '</p>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Carbs") .. ': ' .. FoodItem.Carbs .. '</p>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Fat") .. ': ' .. FoodItem.Fat .. '</p>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Vitamins") .. ': ' .. FoodItem.Vitamins .. '</p>'
-    WikiText = WikiText .. '<p>' .. Utils.Translate("Shelf Life") .. ': ' .. Utils.FoodsShelfLife(FoodItem.ShelfLife) .. '</p>'
+	WikiText = WikiText .. '<div class="row gy-2 gx-4">'
+    WikiText = WikiText .. '<div class="col-auto"><h3>' .. Utils.Translate("Food") .. '</h3></div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Calories") .. ': ' .. FoodItem.Calories .. '</div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Protein") .. ': ' .. FoodItem.Protein .. '</div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Carbs") .. ': ' .. FoodItem.Carbs .. '</div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Fat") .. ': ' .. FoodItem.Fat .. '</div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Vitamins") .. ': ' .. FoodItem.Vitamins .. '</div>'
+    WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Shelf Life") .. ': ' .. Utils.FoodsShelfLife(FoodItem.ShelfLife) .. '</div>'
+	WikiText = WikiText .. '</div>'
 
     return WikiText
 end
+
+function p.ClothingDetailsModule(ItemName)
+	local WikiText = ''
+	local ClothingData = mw.loadData( "Module:ClothingData" )
+    local ClothingItem = ClothingData.clothing[ItemName]
+	local ClothingAvatarCreaterAccess = ''
+	local ClothingBonuses = ''
+	if (ClothingItem.StartClothing == true) then  ClothingAvatarCreaterAccess =  Utils.Translate("Yes") else ClothingAvatarCreaterAccess =  Utils.Translate("No") end
+	
+	for Bname,Bdata in pairs(ClothingItem.FlatStats) do
+		ClothingBonuses = ClothingBonuses .. Bname .. ': ' .. Bdata .. ';  '
+    end
+
+
+	WikiText = WikiText .. '<div class="row gy-2 gx-4">'
+	WikiText = WikiText .. '<div class="col-auto"><h3>' .. Utils.Translate("Clothing") .. '</h3></div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Avatar Slot") .. ': ' .. ClothingItem.AvatarSlot .. '</div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Access in the avatar creator") .. ': ' .. ClothingAvatarCreaterAccess .. '</div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Bonuses") .. ': ' .. ClothingBonuses .. '</div>'
+	WikiText = WikiText .. '</div>'
+    
+    return WikiText
+end	
 
 function p.FoodListDetails()
 	local WikiText = ''
