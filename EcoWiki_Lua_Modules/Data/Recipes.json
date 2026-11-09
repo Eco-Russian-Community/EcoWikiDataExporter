@@ -2777,9 +2777,9 @@
       "CraftTime": "60",
       "Experience": "0.5",
       "LaborInCalories": "40",
-      "RequiredSkill": "PaintingSkill,1",
+      "RequiredSkill": "CarpentrySkill,1",
       "RequiresModule": "nil",
-      "CraftingTable": "Paint Mixer",
+      "CraftingTable": "Carpentry Table",
       "RequiresBlueprint": false,
       "Ingredients": {
         "Canvas": {
@@ -6314,7 +6314,7 @@
           "Name": "Base Paint",
           "ID": "BasePaintItem",
           "Type": "ITEM",
-          "Quantity": "10",
+          "Quantity": "20",
           "IsStatic": true
         }
       },
@@ -44052,24 +44052,24 @@
     },
     "OilPaintRecipe": {
       "CraftTime": "48",
-      "Experience": "0.5",
+      "Experience": "1",
       "LaborInCalories": "40",
-      "RequiredSkill": "PaintingSkill,1",
+      "RequiredSkill": "nil,0",
       "RequiresModule": "nil",
-      "CraftingTable": "Paint Mixer",
+      "CraftingTable": "Workbench",
       "RequiresBlueprint": false,
       "Ingredients": {
-        "Colored Powder": {
-          "Type": "ITEM",
-          "Name": "Colored Powder",
-          "ID": "ColoredPowderItem",
-          "Quantity": "4",
+        "Petals": {
+          "Type": "TAG",
+          "Name": "Petals",
+          "ID": "Petals",
+          "Quantity": "8",
           "IsStatic": false
         },
-        "Flaxseed Oil": {
+        "Tallow": {
           "Type": "ITEM",
-          "Name": "Flaxseed Oil",
-          "ID": "FlaxseedOilItem",
+          "Name": "Tallow",
+          "ID": "TallowItem",
           "Quantity": "2",
           "IsStatic": false
         }
@@ -44084,15 +44084,10 @@
         }
       },
       "Garbages": {
-        "BioResidue": {
-          "Name": "Bio Residue",
-          "ID": "BioResidueItem",
-          "Quantity": "6.4"
-        },
         "FoodScrap": {
           "Name": "Food Scrap",
           "ID": "FoodScrapItem",
-          "Quantity": "8"
+          "Quantity": "4.8"
         }
       }
     },

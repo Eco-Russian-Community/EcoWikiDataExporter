@@ -144,10 +144,12 @@ namespace Eco.Mods.EcoWikiDataExporter
             public bool Hidden { get; set; }
             public int Tier { get; set; }
             public int Weight { get; set; }
+            public bool Carried { get; set; }
             public int MaxStackSize { get; set; }
             public string Types { get; set; }
             public List<string> Tags { get; set; }
-            
+            public Dictionary<string, string> SalvageCost { get; set; }
+
         }
 
         public class FoodData
@@ -204,8 +206,8 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string Name { get; set; }
             public string Size { get; set; }
             public int Tier { get; set; }
-
             public string Components { get; set; }
+            public Dictionary<string, string> Parameters { get; set; }
         }
 
         public class RecipeData

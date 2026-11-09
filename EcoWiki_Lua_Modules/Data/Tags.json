@@ -4,7 +4,7 @@
       "ID": "AdvancedModule",
       "Name": {
         "English": "Advanced Module",
-        "Russian": "Расширенный модуль",
+        "Russian": "Продвинутый модуль",
         "German": "Erweiterungsmodul",
         "French": "Module avancé",
         "Japanese": "アドバンスト・モジュール"
@@ -4621,7 +4621,7 @@
       "Name": {
         "English": "Loader Liftable",
         "Russian": "Портальный подъемник",
-        "German": "Loader Liftable",
+        "German": "Lader anhebbar",
         "French": "Loader Liftable",
         "Japanese": "Loader Liftable"
       },
@@ -5665,11 +5665,13 @@
       "Items": [
         "Dirt Ramp",
         "Country Claim Stake",
+        "Country Exclave Stake",
         "Country Foundation",
         "Crane",
         "Egyptian Canoe",
         "Excavator",
         "Federation Claim Stake",
+        "Federation Exclave Stake",
         "Federation Foundation",
         "Hand Plow",
         "Homestead Claim Stake",
@@ -5689,6 +5691,7 @@
         "Steam Tractor",
         "Steam Truck",
         "Town Claim Stake",
+        "Town Exclave Stake",
         "Town Foundation",
         "Truck",
         "Wheelbarrow",
@@ -5802,14 +5805,22 @@
       "IsVisibleInEcopedia": false,
       "IsVisibleInFilter": false,
       "Items": [
+        "Bloomery",
+        "Bakery Oven",
         "Blast Furnace",
+        "Campfire",
+        "Cast Iron Stove",
         "Cement Kiln",
         "Combustion Generator",
         "Crane",
+        "Desalinator",
         "Excavator",
+        "Glassworks",
         "Incinerator",
         "Industrial Barge",
         "Industrial Generator",
+        "Industrial Mill",
+        "Kiln",
         "Medium Fishing Trawler",
         "Oil Refinery",
         "Powered Cart",
@@ -5819,7 +5830,8 @@
         "Steam Tractor",
         "Steam Truck",
         "Stove",
-        "Truck"
+        "Truck",
+        "Wooden Transport Ship"
       ]
     },
     "Product": {
@@ -7192,6 +7204,21 @@
         "Survivalist"
       ]
     },
+    "Quick Takeable": {
+      "ID": "QuickTakeable",
+      "Name": {
+        "English": "Quick Takeable",
+        "Russian": "Quick Takeable",
+        "German": "Quick Takeable",
+        "French": "Quick Takeable",
+        "Japanese": "Quick Takeable"
+      },
+      "Hidden": false,
+      "IsVisibleInTooltip": true,
+      "IsVisibleInEcopedia": true,
+      "IsVisibleInFilter": false,
+      "Items": []
+    },
     "Raw Food": {
       "ID": "Raw Food",
       "Name": {
@@ -7922,7 +7949,7 @@
       "ID": "SpecialtyModule",
       "Name": {
         "English": "Specialty Module",
-        "Russian": "Специализированный модуль",
+        "Russian": "Модуль специализации",
         "German": "Spezialmodul",
         "French": "Module de spécialité",
         "Japanese": "専門モジュール"
@@ -8014,6 +8041,7 @@
         "Cement Kiln",
         "Combustion Generator",
         "Country Claim Stake",
+        "Country Exclave Stake",
         "Country Foundation",
         "Crane",
         "Desalinator",
@@ -8024,6 +8052,7 @@
         "Egyptian Canoe",
         "Excavator",
         "Federation Claim Stake",
+        "Federation Exclave Stake",
         "Federation Foundation",
         "Glassworks",
         "Hardwood Lumber Dresser",
@@ -8082,6 +8111,7 @@
         "Tool Bench",
         "Torch Stand",
         "Town Claim Stake",
+        "Town Exclave Stake",
         "Town Foundation",
         "Truck",
         "Wall Candle",
@@ -8118,7 +8148,7 @@
       "Name": {
         "English": "Tamper",
         "Russian": "Вытаптывающий",
-        "German": "Tamper",
+        "German": "Stampfer",
         "French": "Altérer",
         "Japanese": "切り株"
       },
@@ -8752,6 +8782,7 @@
         "Cotton Streamer Stripes",
         "Couch",
         "Country Claim Stake",
+        "Country Exclave Stake",
         "Country Foundation",
         "Court Chair",
         "Court Table",
@@ -8797,6 +8828,7 @@
         "Farmer Sign",
         "Farmers Table",
         "Federation Claim Stake",
+        "Federation Exclave Stake",
         "Federation Foundation",
         "Fiber Scutching Station",
         "Fish Kites",
@@ -9264,6 +9296,7 @@
         "Towel Rack",
         "Town Bell",
         "Town Claim Stake",
+        "Town Exclave Stake",
         "Town Foundation",
         "Transmission Pole",
         "Treasury",
@@ -9678,6 +9711,7 @@
         "Cotton Streamer Stripes",
         "Couch",
         "Country Claim Stake",
+        "Country Exclave Stake",
         "Country Foundation",
         "Court Chair",
         "Court Table",
@@ -9723,6 +9757,7 @@
         "Farmer Sign",
         "Farmers Table",
         "Federation Claim Stake",
+        "Federation Exclave Stake",
         "Federation Foundation",
         "Fiber Scutching Station",
         "Fish Kites",
@@ -10190,6 +10225,7 @@
         "Towel Rack",
         "Town Bell",
         "Town Claim Stake",
+        "Town Exclave Stake",
         "Town Foundation",
         "Transmission Pole",
         "Treasury",

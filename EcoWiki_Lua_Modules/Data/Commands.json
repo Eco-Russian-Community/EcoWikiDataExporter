@@ -608,7 +608,7 @@
       "Description": {
         "English": "Generate PM history for testing: sends messages to yourself from several distinct test users.",
         "Russian": "Создать историю ЛС для тестирования: отправлять себе сообщения от нескольких разных тестовых пользователей.",
-        "German": "Generate PM history for testing: sends messages to yourself from several distinct test users.",
+        "German": "Generiere einen Verlauf privater Nachrichten zum Test: sendet dir selbst Nachrichten von einigen unterschiedlichen Test Nutzern.",
         "French": "Generate PM history for testing: sends messages to yourself from several distinct test users.",
         "Japanese": "Generate PM history for testing: sends messages to yourself from several distinct test users."
       },
@@ -1954,7 +1954,7 @@
       "Parent": "food",
       "Description": {
         "English": "Sets nutrition to a value split evenly across all nutrients.",
-        "Russian": "Устанавливает питание на значение, равномерно распределенное между всеми питательными веществами.",
+        "Russian": "Устанавливает качество питания с равномерно распределёнными нутриентами.",
         "German": "Stellt die Nährwerte auf einen Wert ein, der gleichmäßig auf alle Nährstoffe verteilt ist.",
         "French": "Règle la valeur nutritionnelle de manière à ce qu'elle soit répartie de manière égale entre tous les nutriments.",
         "Japanese": "栄養価を、すべての栄養素に均等に分割された値に設定する。"
@@ -2395,7 +2395,7 @@
       "Parent": "inventory",
       "Description": {
         "English": "Set the number of carried slots. DO NOT persist after server restart.",
-        "Russian": "Установи количество слотов для переноса предметов. НЕ сохраняется после перезапуска сервера.",
+        "Russian": "Устанавливает количество ячеек для переноса предметов. НЕ сохраняется после перезапуска сервера.",
         "German": "Lege die Anzahl der Transportplätze fest. Diese Einstellung bleibt nach einem Server-Neustart NICHT erhalten.",
         "French": "Définis le nombre d'emplacements disponibles. NE S'ENREGISTRE PAS après le redémarrage du serveur.",
         "Japanese": "持ち運びスロットの数を設定する。サーバー再起動後は設定が保持されない。"
@@ -2410,11 +2410,11 @@
       "ShortCut": "",
       "Parent": "land",
       "Description": {
-        "English": "Clears paint in area with radius specified around the player. Max = 20",
-        "Russian": "Удаляет краску в области с заданным радиусом вокруг игрока. Макс. = 20",
-        "German": "Löscht Farbe in einem Bereich mit einem bestimmten Radius um den Spieler herum. Max = 20",
-        "French": "Efface la peinture de la zone avec un rayon spécifié autour du joueur. Max = 20",
-        "Japanese": "プレイヤーの周囲に指定された半径の範囲内のペイントをクリアします。最大値 = 20"
+        "English": "Clears paint in area with radius specified around the player. Max = 50",
+        "Russian": "Clears paint in area with radius specified around the player. Max = 50",
+        "German": "Clears paint in area with radius specified around the player. Max = 50",
+        "French": "Clears paint in area with radius specified around the player. Max = 50",
+        "Japanese": "Clears paint in area with radius specified around the player. Max = 50"
       },
       "Parameters": {
         "Arg1": "radius,Int32"
@@ -2524,21 +2524,41 @@
         "Arg1": "text,String"
       }
     },
+    "/land paintrandom": {
+      "Command": "paintrandom",
+      "Level": "Admin",
+      "ShortCut": "paintrandom",
+      "Parent": "land",
+      "Description": {
+        "English": "Paints every face of the constructed blocks within radius with random colors and patterns, \\'layers\\' coats per face (1-3)",
+        "Russian": "Paints every face of the constructed blocks within radius with random colors and patterns, \\'layers\\' coats per face (1-3)",
+        "German": "Paints every face of the constructed blocks within radius with random colors and patterns, \\'layers\\' coats per face (1-3)",
+        "French": "Paints every face of the constructed blocks within radius with random colors and patterns, \\'layers\\' coats per face (1-3)",
+        "Japanese": "Paints every face of the constructed blocks within radius with random colors and patterns, \\'layers\\' coats per face (1-3)"
+      },
+      "Parameters": {
+        "Arg1": "radius,Int32",
+        "Arg2": "layers,Int32"
+      }
+    },
     "/land painttest": {
       "Command": "painttest",
       "Level": "Admin",
       "ShortCut": "painttest",
       "Parent": "land",
       "Description": {
-        "English": "Spawns giant walls and paints them with random colors",
-        "Russian": "Генерирует гигантские стены и раскрашивает их в случайные цвета",
-        "German": "Erzeugt riesige Mauern und bemalt sie mit zufälligen Farben",
-        "French": "Il génère des murs géants et les peint avec des couleurs aléatoires",
-        "Japanese": "巨大な壁を生成し、ランダムな色で塗り分ける"
+        "English": "Spawns walls of painted blocks for performance tests: random colors and patterns on every face, \\'layers\\' coats per face (1-3), \\'shapes\\' mixes every form of \\'material\\' (stairs, ramps, glass panes...)",
+        "Russian": "Spawns walls of painted blocks for performance tests: random colors and patterns on every face, \\'layers\\' coats per face (1-3), \\'shapes\\' mixes every form of \\'material\\' (stairs, ramps, glass panes...)",
+        "German": "Spawns walls of painted blocks for performance tests: random colors and patterns on every face, \\'layers\\' coats per face (1-3), \\'shapes\\' mixes every form of \\'material\\' (stairs, ramps, glass panes...)",
+        "French": "Spawns walls of painted blocks for performance tests: random colors and patterns on every face, \\'layers\\' coats per face (1-3), \\'shapes\\' mixes every form of \\'material\\' (stairs, ramps, glass panes...)",
+        "Japanese": "Spawns walls of painted blocks for performance tests: random colors and patterns on every face, \\'layers\\' coats per face (1-3), \\'shapes\\' mixes every form of \\'material\\' (stairs, ramps, glass panes...)"
       },
       "Parameters": {
         "Arg1": "size,Int32",
-        "Arg2": "walls,Int32"
+        "Arg2": "walls,Int32",
+        "Arg3": "layers,Int32",
+        "Arg4": "shapes,Boolean",
+        "Arg5": "material,String"
       }
     },
     "/land remove": {
@@ -3851,7 +3871,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Stop the sun where it currently is, for you only.",
-        "Russian": "Stop the sun where it currently is, for you only.",
+        "Russian": "Остановить солнце где оно сейчас, только для вас.",
         "German": "Stop the sun where it currently is, for you only.",
         "French": "Stop the sun where it currently is, for you only.",
         "Japanese": "Stop the sun where it currently is, for you only."
@@ -3865,7 +3885,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Move the sun to midnight, for you only.",
-        "Russian": "Move the sun to midnight, for you only.",
+        "Russian": "Сдвинуть солнце на полночь, только для вас.",
         "German": "Move the sun to midnight, for you only.",
         "French": "Move the sun to midnight, for you only.",
         "Japanese": "Move the sun to midnight, for you only."
@@ -3879,7 +3899,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Move the sun to noon, for you only.",
-        "Russian": "Move the sun to noon, for you only.",
+        "Russian": "Сдвинуть солнце на полдень, только для вас.",
         "German": "Move the sun to noon, for you only.",
         "French": "Move the sun to noon, for you only.",
         "Japanese": "Move the sun to noon, for you only."
@@ -3893,7 +3913,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Put your sky back on the shared world time.",
-        "Russian": "Put your sky back on the shared world time.",
+        "Russian": "Вернуть состояние неба к общему серверному.",
         "German": "Put your sky back on the shared world time.",
         "French": "Put your sky back on the shared world time.",
         "Japanese": "Put your sky back on the shared world time."
@@ -3907,7 +3927,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Start your sun moving again from where you stopped it.",
-        "Russian": "Start your sun moving again from where you stopped it.",
+        "Russian": "Запустить движение солнца с того момента, где вы его остановили.",
         "German": "Start your sun moving again from where you stopped it.",
         "French": "Start your sun moving again from where you stopped it.",
         "Japanese": "Start your sun moving again from where you stopped it."
@@ -3921,7 +3941,7 @@
       "Parent": "mytime",
       "Description": {
         "English": "Move the sun to the specified hour, for you only.",
-        "Russian": "Move the sun to the specified hour, for you only.",
+        "Russian": "Сдвинуть солнце на конкретное время дня, только для вас.",
         "German": "Move the sun to the specified hour, for you only.",
         "French": "Move the sun to the specified hour, for you only.",
         "Japanese": "Move the sun to the specified hour, for you only."
@@ -3937,7 +3957,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Clear the weather, for you only.",
-        "Russian": "Clear the weather, for you only.",
+        "Russian": "Убрать погодные эффекты, только для вас.",
         "German": "Clear the weather, for you only.",
         "French": "Clear the weather, for you only.",
         "Japanese": "Clear the weather, for you only."
@@ -3951,7 +3971,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Create some clouds, for you only.",
-        "Russian": "Create some clouds, for you only.",
+        "Russian": "Создаёт облачность, только для вас.",
         "German": "Create some clouds, for you only.",
         "French": "Create some clouds, for you only.",
         "Japanese": "Create some clouds, for you only."
@@ -3965,7 +3985,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Create some fog, for you only.",
-        "Russian": "Create some fog, for you only.",
+        "Russian": "Создаёт туман, только для вас.",
         "German": "Create some fog, for you only.",
         "French": "Create some fog, for you only.",
         "Japanese": "Create some fog, for you only."
@@ -3979,7 +3999,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Create a heavy rain storm, for you only.",
-        "Russian": "Create a heavy rain storm, for you only.",
+        "Russian": "Создаёт сильную грозу, только для вас.",
         "German": "Create a heavy rain storm, for you only.",
         "French": "Create a heavy rain storm, for you only.",
         "Japanese": "Create a heavy rain storm, for you only."
@@ -3993,7 +4013,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Create a light rain, for you only.",
-        "Russian": "Create a light rain, for you only.",
+        "Russian": "Создаёт легкий дождь, только для вас.",
         "German": "Create a light rain, for you only.",
         "French": "Create a light rain, for you only.",
         "Japanese": "Create a light rain, for you only."
@@ -4007,7 +4027,7 @@
       "Parent": "myweather",
       "Description": {
         "English": "Put your weather back on the shared server weather.",
-        "Russian": "Put your weather back on the shared server weather.",
+        "Russian": "Возвращает погодные условия, отображаемые вам, к актуальным на сервере.",
         "German": "Put your weather back on the shared server weather.",
         "French": "Put your weather back on the shared server weather.",
         "Japanese": "Put your weather back on the shared server weather."
@@ -4422,7 +4442,7 @@
       "Description": {
         "English": "Clears all pollution layers and the buffer cache (resets the pollution system).",
         "Russian": "Очищает все слои загрязнения и буферный кэш (перезапускает систему загрязнения).",
-        "German": "Clears all pollution layers and the buffer cache (resets the pollution system).",
+        "German": "Entfernt alle Ebenen der Umweltverschmutzung und den entsprechenden Zwischenspeicher (setzt das Umweltverschmutzungmodul zurück).",
         "French": "Clears all pollution layers and the buffer cache (resets the pollution system).",
         "Japanese": "Clears all pollution layers and the buffer cache (resets the pollution system)."
       },
@@ -6441,15 +6461,14 @@
       "ShortCut": "",
       "Parent": "sim",
       "Description": {
-        "English": "Set the percent of a destroyed atmosphere to display, blended to over a given number of seconds.",
-        "Russian": "Задать процент уничтожения атмосферы, который рассеется за указанное количество секунд.",
-        "German": "Lege die Rate der zerstörten Atmosphäre fest, die über eine bestimmte Anzahl an Sekunden angezeigt wird.",
-        "French": "Définir le pourcentage d'atmosphère détruite à montrer, fondu sur une durée en seconde.",
-        "Japanese": "破壊された大気のパーセンテージを表示に設定し、ブレンドした時間を一定数秒以上に設定します。"
+        "English": "Set the percent of a destroyed atmosphere.",
+        "Russian": "Set the percent of a destroyed atmosphere.",
+        "German": "Set the percent of a destroyed atmosphere.",
+        "French": "Set the percent of a destroyed atmosphere.",
+        "Japanese": "Set the percent of a destroyed atmosphere."
       },
       "Parameters": {
-        "Arg1": "percent,Single",
-        "Arg2": "time,Single"
+        "Arg1": "percent,Single"
       }
     },
     "/sim donotcontrol": {
@@ -6982,7 +7001,7 @@
       "Parent": "sim",
       "Description": {
         "English": "Spawns debris in an area.",
-        "Russian": "Spawns debris in an area.",
+        "Russian": "Создает мусорные обломки в округе.",
         "German": "Spawns debris in an area.",
         "French": "Spawns debris in an area.",
         "Japanese": "Spawns debris in an area."
@@ -7414,6 +7433,271 @@
       "Parameters": {
         "Arg1": "targetUser,User",
         "Arg2": "skillName,String"
+      }
+    },
+    "/structural at": {
+      "Command": "at",
+      "Level": "Admin",
+      "ShortCut": "siat",
+      "Parent": "structural",
+      "Description": {
+        "English": "Show what a block carries and how close it is to breaking.",
+        "Russian": "Show what a block carries and how close it is to breaking.",
+        "German": "Show what a block carries and how close it is to breaking.",
+        "French": "Show what a block carries and how close it is to breaking.",
+        "Japanese": "Show what a block carries and how close it is to breaking."
+      },
+      "Parameters": {
+        "Arg1": "x,Int32",
+        "Arg2": "y,Int32",
+        "Arg3": "z,Int32"
+      }
+    },
+    "/structural bake": {
+      "Command": "bake",
+      "Level": "Admin",
+      "ShortCut": "sibake",
+      "Parent": "structural",
+      "Description": {
+        "English": "Re-measure the structural view map in a radius of chunks around you.",
+        "Russian": "Re-measure the structural view map in a radius of chunks around you.",
+        "German": "Re-measure the structural view map in a radius of chunks around you.",
+        "French": "Re-measure the structural view map in a radius of chunks around you.",
+        "Japanese": "Re-measure the structural view map in a radius of chunks around you."
+      },
+      "Parameters": {
+        "Arg1": "chunkRadius,Int32"
+      }
+    },
+    "/structural collapsenow": {
+      "Command": "collapsenow",
+      "Level": "Admin",
+      "ShortCut": "sicollapse",
+      "Parent": "structural",
+      "Description": {
+        "English": "End every reprieve now, so cracking blocks fall without waiting out their delay.",
+        "Russian": "End every reprieve now, so cracking blocks fall without waiting out their delay.",
+        "German": "End every reprieve now, so cracking blocks fall without waiting out their delay.",
+        "French": "End every reprieve now, so cracking blocks fall without waiting out their delay.",
+        "Japanese": "End every reprieve now, so cracking blocks fall without waiting out their delay."
+      },
+      "Parameters": {}
+    },
+    "/structural exemptclaim": {
+      "Command": "exemptclaim",
+      "Level": "Admin",
+      "ShortCut": "siexemptclaim",
+      "Parent": "structural",
+      "Description": {
+        "English": "Turn integrity systems off in the claim you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Russian": "Turn integrity systems off in the claim you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "German": "Turn integrity systems off in the claim you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "French": "Turn integrity systems off in the claim you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Japanese": "Turn integrity systems off in the claim you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces)."
+      },
+      "Parameters": {
+        "Arg1": "systems,String"
+      }
+    },
+    "/structural exemptdistrict": {
+      "Command": "exemptdistrict",
+      "Level": "Admin",
+      "ShortCut": "siexemptdistrict",
+      "Parent": "structural",
+      "Description": {
+        "English": "Turn integrity systems off in the district you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces); name the district or its map when several cover this place.",
+        "Russian": "Turn integrity systems off in the district you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces); name the district or its map when several cover this place.",
+        "German": "Turn integrity systems off in the district you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces); name the district or its map when several cover this place.",
+        "French": "Turn integrity systems off in the district you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces); name the district or its map when several cover this place.",
+        "Japanese": "Turn integrity systems off in the district you stand in (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces); name the district or its map when several cover this place."
+      },
+      "Parameters": {
+        "Arg1": "systems,String",
+        "Arg2": "district,String"
+      }
+    },
+    "/structural exemptions": {
+      "Command": "exemptions",
+      "Level": "Admin",
+      "ShortCut": "siexemptions",
+      "Parent": "structural",
+      "Description": {
+        "English": "List the exempt claims and districts.",
+        "Russian": "List the exempt claims and districts.",
+        "German": "List the exempt claims and districts.",
+        "French": "List the exempt claims and districts.",
+        "Japanese": "List the exempt claims and districts."
+      },
+      "Parameters": {}
+    },
+    "/structural map": {
+      "Command": "map",
+      "Level": "Admin",
+      "ShortCut": "simap",
+      "Parent": "structural",
+      "Description": {
+        "English": "Describe the structural view map and chunk cache state around you.",
+        "Russian": "Describe the structural view map and chunk cache state around you.",
+        "German": "Describe the structural view map and chunk cache state around you.",
+        "French": "Describe the structural view map and chunk cache state around you.",
+        "Japanese": "Describe the structural view map and chunk cache state around you."
+      },
+      "Parameters": {
+        "Arg1": "chunkRadius,Int32"
+      }
+    },
+    "/structural off": {
+      "Command": "off",
+      "Level": "Admin",
+      "ShortCut": "sioff",
+      "Parent": "structural",
+      "Description": {
+        "English": "Turn integrity systems off server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Russian": "Turn integrity systems off server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "German": "Turn integrity systems off server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "French": "Turn integrity systems off server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Japanese": "Turn integrity systems off server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces)."
+      },
+      "Parameters": {
+        "Arg1": "systems,String"
+      }
+    },
+    "/structural on": {
+      "Command": "on",
+      "Level": "Admin",
+      "ShortCut": "sion",
+      "Parent": "structural",
+      "Description": {
+        "English": "Turn integrity systems on server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Russian": "Turn integrity systems on server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "German": "Turn integrity systems on server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "French": "Turn integrity systems on server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces).",
+        "Japanese": "Turn integrity systems on server-wide (systems: floatingblocks, buildings, caveins, foundations, worldobjects or all, separated by spaces)."
+      },
+      "Parameters": {
+        "Arg1": "systems,String"
+      }
+    },
+    "/structural recalc": {
+      "Command": "recalc",
+      "Level": "Admin",
+      "ShortCut": "sirecalc",
+      "Parent": "structural",
+      "Description": {
+        "English": "Re-judge every block in a cube around you.",
+        "Russian": "Re-judge every block in a cube around you.",
+        "German": "Re-judge every block in a cube around you.",
+        "French": "Re-judge every block in a cube around you.",
+        "Japanese": "Re-judge every block in a cube around you."
+      },
+      "Parameters": {
+        "Arg1": "radius,Int32"
+      }
+    },
+    "/structural stats": {
+      "Command": "stats",
+      "Level": "Admin",
+      "ShortCut": "sistats",
+      "Parent": "structural",
+      "Description": {
+        "English": "Show engine queue stats.",
+        "Russian": "Show engine queue stats.",
+        "German": "Show engine queue stats.",
+        "French": "Show engine queue stats.",
+        "Japanese": "Show engine queue stats."
+      },
+      "Parameters": {}
+    },
+    "/structural status": {
+      "Command": "status",
+      "Level": "Admin",
+      "ShortCut": "sistatus",
+      "Parent": "structural",
+      "Description": {
+        "English": "Show which integrity systems are on and the exempt areas.",
+        "Russian": "Show which integrity systems are on and the exempt areas.",
+        "German": "Show which integrity systems are on and the exempt areas.",
+        "French": "Show which integrity systems are on and the exempt areas.",
+        "Japanese": "Show which integrity systems are on and the exempt areas."
+      },
+      "Parameters": {}
+    },
+    "/structural testbuild": {
+      "Command": "testbuild",
+      "Level": "DevTier",
+      "ShortCut": "sitestbuild",
+      "Parent": "structural",
+      "Description": {
+        "English": "Build the reference buildings in front of you (toward +x and +z) on a stone pad, each with the best materials of the tier (1 to 5), and report which stand, flagging any the engine judges differently from the dry run. Filter by number (#12), group or name.",
+        "Russian": "Build the reference buildings in front of you (toward +x and +z) on a stone pad, each with the best materials of the tier (1 to 5), and report which stand, flagging any the engine judges differently from the dry run. Filter by number (#12), group or name.",
+        "German": "Build the reference buildings in front of you (toward +x and +z) on a stone pad, each with the best materials of the tier (1 to 5), and report which stand, flagging any the engine judges differently from the dry run. Filter by number (#12), group or name.",
+        "French": "Build the reference buildings in front of you (toward +x and +z) on a stone pad, each with the best materials of the tier (1 to 5), and report which stand, flagging any the engine judges differently from the dry run. Filter by number (#12), group or name.",
+        "Japanese": "Build the reference buildings in front of you (toward +x and +z) on a stone pad, each with the best materials of the tier (1 to 5), and report which stand, flagging any the engine judges differently from the dry run. Filter by number (#12), group or name."
+      },
+      "Parameters": {
+        "Arg1": "tier,Int32",
+        "Arg2": "filter,String"
+      }
+    },
+    "/structural testclear": {
+      "Command": "testclear",
+      "Level": "DevTier",
+      "ShortCut": "sitestclear",
+      "Parent": "structural",
+      "Description": {
+        "English": "Take down the test bench\\'s buildings (the stone pad stays).",
+        "Russian": "Take down the test bench\\'s buildings (the stone pad stays).",
+        "German": "Take down the test bench\\'s buildings (the stone pad stays).",
+        "French": "Take down the test bench\\'s buildings (the stone pad stays).",
+        "Japanese": "Take down the test bench\\'s buildings (the stone pad stays)."
+      },
+      "Parameters": {}
+    },
+    "/structural testtown": {
+      "Command": "testtown",
+      "Level": "DevTier",
+      "ShortCut": "sitesttown",
+      "Parent": "structural",
+      "Description": {
+        "English": "Build a town of everyday buildings (cabins, houses, a barn, a tower, a shop...) in front of you on a stone pad, in the forms players build with and the best materials of the tier (1 to 5), and report which stand. Filter by number (#104) or name.",
+        "Russian": "Build a town of everyday buildings (cabins, houses, a barn, a tower, a shop...) in front of you on a stone pad, in the forms players build with and the best materials of the tier (1 to 5), and report which stand. Filter by number (#104) or name.",
+        "German": "Build a town of everyday buildings (cabins, houses, a barn, a tower, a shop...) in front of you on a stone pad, in the forms players build with and the best materials of the tier (1 to 5), and report which stand. Filter by number (#104) or name.",
+        "French": "Build a town of everyday buildings (cabins, houses, a barn, a tower, a shop...) in front of you on a stone pad, in the forms players build with and the best materials of the tier (1 to 5), and report which stand. Filter by number (#104) or name.",
+        "Japanese": "Build a town of everyday buildings (cabins, houses, a barn, a tower, a shop...) in front of you on a stone pad, in the forms players build with and the best materials of the tier (1 to 5), and report which stand. Filter by number (#104) or name."
+      },
+      "Parameters": {
+        "Arg1": "tier,Int32",
+        "Arg2": "filter,String"
+      }
+    },
+    "/structural unexemptclaim": {
+      "Command": "unexemptclaim",
+      "Level": "Admin",
+      "ShortCut": "siunexemptclaim",
+      "Parent": "structural",
+      "Description": {
+        "English": "Remove the exemption of the claim you stand in.",
+        "Russian": "Remove the exemption of the claim you stand in.",
+        "German": "Remove the exemption of the claim you stand in.",
+        "French": "Remove the exemption of the claim you stand in.",
+        "Japanese": "Remove the exemption of the claim you stand in."
+      },
+      "Parameters": {}
+    },
+    "/structural unexemptdistrict": {
+      "Command": "unexemptdistrict",
+      "Level": "Admin",
+      "ShortCut": "siunexemptdistrict",
+      "Parent": "structural",
+      "Description": {
+        "English": "Remove the exemption of the district you stand in; name the district or its map when several cover this place.",
+        "Russian": "Remove the exemption of the district you stand in; name the district or its map when several cover this place.",
+        "German": "Remove the exemption of the district you stand in; name the district or its map when several cover this place.",
+        "French": "Remove the exemption of the district you stand in; name the district or its map when several cover this place.",
+        "Japanese": "Remove the exemption of the district you stand in; name the district or its map when several cover this place."
+      },
+      "Parameters": {
+        "Arg1": "district,String"
       }
     },
     "/teleport atob": {
@@ -7955,6 +8239,20 @@
       },
       "Parameters": {}
     },
+    "/test structuralbench": {
+      "Command": "structuralbench",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Builds the structural integrity reference buildings at every tier and checks which stand.",
+        "Russian": "Builds the structural integrity reference buildings at every tier and checks which stand.",
+        "German": "Builds the structural integrity reference buildings at every tier and checks which stand.",
+        "French": "Builds the structural integrity reference buildings at every tier and checks which stand.",
+        "Japanese": "Builds the structural integrity reference buildings at every tier and checks which stand."
+      },
+      "Parameters": {}
+    },
     "/test testspoilage": {
       "Command": "testspoilage",
       "Level": "DevTier",
@@ -8040,7 +8338,7 @@
       "Parent": "time",
       "Description": {
         "English": "Stop the sun where it currently is, for every player.",
-        "Russian": "Stop the sun where it currently is, for every player.",
+        "Russian": "Остановить солнце в текущей позиции, для всех игроков.",
         "German": "Stop the sun where it currently is, for every player.",
         "French": "Stop the sun where it currently is, for every player.",
         "Japanese": "Stop the sun where it currently is, for every player."
@@ -8054,7 +8352,7 @@
       "Parent": "time",
       "Description": {
         "English": "Move the sun to midnight for every player.",
-        "Russian": "Move the sun to midnight for every player.",
+        "Russian": "Установить положение солнца на полночь для всех игроков.",
         "German": "Move the sun to midnight for every player.",
         "French": "Move the sun to midnight for every player.",
         "Japanese": "Move the sun to midnight for every player."
@@ -8068,7 +8366,7 @@
       "Parent": "time",
       "Description": {
         "English": "Move the sun to noon for every player.",
-        "Russian": "Move the sun to noon for every player.",
+        "Russian": "Установить положение солнца на полдень для всех игроков.",
         "German": "Move the sun to noon for every player.",
         "French": "Move the sun to noon for every player.",
         "Japanese": "Move the sun to noon for every player."
@@ -8096,7 +8394,7 @@
       "Parent": "time",
       "Description": {
         "English": "Put the sky back on the world clock, for every player.",
-        "Russian": "Put the sky back on the world clock, for every player.",
+        "Russian": "Возвращает состояние неба к текущему времени мира, для всех игроков.",
         "German": "Put the sky back on the world clock, for every player.",
         "French": "Put the sky back on the world clock, for every player.",
         "Japanese": "Put the sky back on the world clock, for every player."
@@ -8110,7 +8408,7 @@
       "Parent": "time",
       "Description": {
         "English": "Start the sun moving again from where it was stopped, for every player.",
-        "Russian": "Start the sun moving again from where it was stopped, for every player.",
+        "Russian": "Отменить остановку солнца, чтобы оно продолжило своё движение, для всех игроков.",
         "German": "Start the sun moving again from where it was stopped, for every player.",
         "French": "Start the sun moving again from where it was stopped, for every player.",
         "Japanese": "Start the sun moving again from where it was stopped, for every player."
@@ -8124,7 +8422,7 @@
       "Parent": "time",
       "Description": {
         "English": "Move the sun to the specified hour for every player.",
-        "Russian": "Move the sun to the specified hour for every player.",
+        "Russian": "Установить положение солнца на конкретное время суток, для всех игроков.",
         "German": "Move the sun to the specified hour for every player.",
         "French": "Move the sun to the specified hour for every player.",
         "Japanese": "Move the sun to the specified hour for every player."
@@ -8727,6 +9025,22 @@
         "Japanese": "倒木の除去"
       },
       "Parameters": {}
+    },
+    "/world exportmap": {
+      "Command": "exportmap",
+      "Level": "Admin",
+      "ShortCut": "",
+      "Parent": "world",
+      "Description": {
+        "English": "Exports the world generator layers as an image map in Configs/Maps, to edit and load back with Map Source \\'Image\\'. After a restart the layers are regenerated from the config first.",
+        "Russian": "Exports the world generator layers as an image map in Configs/Maps, to edit and load back with Map Source \\'Image\\'. After a restart the layers are regenerated from the config first.",
+        "German": "Exports the world generator layers as an image map in Configs/Maps, to edit and load back with Map Source \\'Image\\'. After a restart the layers are regenerated from the config first.",
+        "French": "Exports the world generator layers as an image map in Configs/Maps, to edit and load back with Map Source \\'Image\\'. After a restart the layers are regenerated from the config first.",
+        "Japanese": "Exports the world generator layers as an image map in Configs/Maps, to edit and load back with Map Source \\'Image\\'. After a restart the layers are regenerated from the config first."
+      },
+      "Parameters": {
+        "Arg1": "name,String"
+      }
     },
     "/world fixobjects": {
       "Command": "fixobjects",

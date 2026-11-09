@@ -17,7 +17,8 @@ function p.WorldObjectModule(ItemName)
     if WorldObjectComponents["Housing"] == true then WikiText = WikiText .. p.HousingComponentModule(ItemName) end
     if WorldObjectComponents["Bed"] == true then WikiText = WikiText .. p.BedComponentModule(ItemName) end
     if WorldObjectComponents["Mint"] == true then WikiText = WikiText .. p.MintComponentModule(ItemName) end
-      
+    
+	
     return WikiText
 end
 
@@ -54,6 +55,20 @@ function p.MintComponentModule(ItemName)
     local WikiText = ''
     WikiText = WikiText .. '<h3>' .. Utils.Translate("Mint") .. '</h3>'
     return WikiText
+end
+
+function p.ItemDetailsModule(Item)
+	local WikiText = ''
+	local CarriedText = ''
+	if (Item.Carried == true) then CarriedText = "Hands" else CarriedText = "Backpack" end
+	WikiText = WikiText .. '<div class="row gy-2 gx-4">'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Weight") .. ': ' .. Utils.Weight(Item.Weight) .. '</div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Tier") .. ': ' .. Item.Tier .. '</div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Carried") .. ': ' .. CarriedText .. '</div>'
+	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Stack Size") .. ': ' .. Item.MaxStackSize .. '</div>'
+	WikiText = WikiText .. '</div>'
+
+	return WikiText
 end
 
 function p.FoodDetailsModule(ItemName)

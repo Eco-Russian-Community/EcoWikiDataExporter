@@ -9,7 +9,11 @@
         "French": "Agouti",
         "Japanese": "アグーチ"
       },
+      "Description": null,
+      "Health": "1.5",
+      "Calories": "80",
       "MaturityAgeDays": "1",
+      "Food": "Filmy Fern,Taro,Papaya,Lattice Mushroom,Heliconia,Ceiba,King Fern,Orchid",
       "CO2TonsPerDay": "0.02"
     },
     "Alligator": {
@@ -21,7 +25,11 @@
         "French": "Alligator",
         "Japanese": "ワニ"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Turkey,Tuna,Salmon,Trout,Deer,Elk,Hare,Agouti,Snapping Turtle,Tortoise,Crab",
       "CO2TonsPerDay": "0.02"
     },
     "Bass": {
@@ -33,7 +41,11 @@
         "French": "Bar",
         "Japanese": "バス"
       },
+      "Description": null,
+      "Health": "4",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Kelp,Seagrass",
       "CO2TonsPerDay": "0.02"
     },
     "Bighorn Sheep": {
@@ -45,7 +57,11 @@
         "French": "Mouflon",
         "Japanese": "ビッグホーンシープ"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "150",
       "MaturityAgeDays": "1",
+      "Food": "Dwarf Willow,Prickly Pear,Agave,Creosote Bush,White Bursage",
       "CO2TonsPerDay": "0.02"
     },
     "Bison": {
@@ -57,7 +73,11 @@
         "French": "Bison",
         "Japanese": "バイソン"
       },
+      "Description": null,
+      "Health": "12",
+      "Calories": "250",
       "MaturityAgeDays": "1",
+      "Food": "Common Grass,Bunchgrass,Wheat,Big Bluestem,Switchgrass",
       "CO2TonsPerDay": "0.2"
     },
     "Blue Shark": {
@@ -69,7 +89,11 @@
         "French": "Requin bleu",
         "Japanese": "ブルーシャーク"
       },
+      "Description": null,
+      "Health": "9",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Bass,Pacific Sardine,Tuna,Crab,Moon Jellyfish",
       "CO2TonsPerDay": "0.02"
     },
     "Cod": {
@@ -81,7 +105,11 @@
         "French": "Morue",
         "Japanese": "タラ"
       },
+      "Description": null,
+      "Health": "4",
+      "Calories": "50",
       "MaturityAgeDays": "1",
+      "Food": "Kelp,Seagrass",
       "CO2TonsPerDay": "0.02"
     },
     "Coyote": {
@@ -93,7 +121,11 @@
         "French": "Coyote",
         "Japanese": "コヨーテ"
       },
+      "Description": null,
+      "Health": "4.5",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Hare,Bighorn Sheep,Deer,Tortoise,Turkey,Otter,Prairie Dog",
       "CO2TonsPerDay": "0.02"
     },
     "Crab": {
@@ -105,7 +137,11 @@
         "French": "Crabe",
         "Japanese": "カニ"
       },
+      "Description": null,
+      "Health": "3",
+      "Calories": "50",
       "MaturityAgeDays": "1",
+      "Food": "Clam,Urchin",
       "CO2TonsPerDay": "0.02"
     },
     "Deer": {
@@ -117,7 +153,11 @@
         "French": "Cerf mulet",
         "Japanese": "鹿"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "180",
       "MaturityAgeDays": "1",
+      "Food": "Huckleberry,Fern,Beans,Salal,Switchgrass,Bunchgrass,Wheat,Deer Lichen,Trillium",
       "CO2TonsPerDay": "0.02"
     },
     "Elk": {
@@ -129,7 +169,11 @@
         "French": "Wapiti",
         "Japanese": "ヘラジカ"
       },
+      "Description": null,
+      "Health": "8.5",
+      "Calories": "200",
       "MaturityAgeDays": "1",
+      "Food": "Huckleberry,Ocean Spray,Fireweed,Fern,Beans,Salal,Deer Lichen",
       "CO2TonsPerDay": "0.02"
     },
     "Fox": {
@@ -141,7 +185,11 @@
         "French": "Renard",
         "Japanese": "キツネ"
       },
+      "Description": null,
+      "Health": "3.5",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Hare,Turkey,Prairie Dog",
       "CO2TonsPerDay": "0.02"
     },
     "Hare": {
@@ -153,7 +201,11 @@
         "French": "Lièvre",
         "Japanese": "野ウサギ"
       },
+      "Description": null,
+      "Health": "1.5",
+      "Calories": "30",
       "MaturityAgeDays": "1",
+      "Food": "Camas,Wheat,Bunchgrass,Corn,Huckleberry,Big Bluestem,Creosote Bush,Prickly Pear,Agave",
       "CO2TonsPerDay": "0.02"
     },
     "Jaguar": {
@@ -165,7 +217,11 @@
         "French": "Jaguar",
         "Japanese": "ジャガー"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Agouti,Snapping Turtle",
       "CO2TonsPerDay": "0.02"
     },
     "Moon Jellyfish": {
@@ -177,7 +233,11 @@
         "French": "Méduse lune",
         "Japanese": "水クラゲ"
       },
+      "Description": null,
+      "Health": "3",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "",
       "CO2TonsPerDay": "0.02"
     },
     "Mountain Goat": {
@@ -189,7 +249,11 @@
         "French": "Chèvre des montagnes",
         "Japanese": "マウンテンゴート"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Saxifrage,Lupine,Fireweed,Dwarf Willow,Arctic Willow",
       "CO2TonsPerDay": "0.02"
     },
     "Otter": {
@@ -201,7 +265,11 @@
         "French": "Loutre",
         "Japanese": "カワウソ"
       },
+      "Description": null,
+      "Health": "1.5",
+      "Calories": "50",
       "MaturityAgeDays": "1",
+      "Food": "Clam,Urchin,Tuna,Salmon,Trout",
       "CO2TonsPerDay": "0.02"
     },
     "Pacific Sardine": {
@@ -213,7 +281,11 @@
         "French": "Sardine du Pacifique",
         "Japanese": "パシフィック・サーディン"
       },
+      "Description": null,
+      "Health": "3",
+      "Calories": "20",
       "MaturityAgeDays": "1",
+      "Food": "Kelp,Seagrass",
       "CO2TonsPerDay": "0.02"
     },
     "Prairie Dog": {
@@ -225,7 +297,11 @@
         "French": "Chien de prairie",
         "Japanese": "プレーリードッグ"
       },
+      "Description": null,
+      "Health": "1.5",
+      "Calories": "30",
       "MaturityAgeDays": "1",
+      "Food": "Big Bluestem,Corn,Switchgrass,Sunflower,Tomatoes,Wheat",
       "CO2TonsPerDay": "0.02"
     },
     "Salmon": {
@@ -237,7 +313,11 @@
         "French": "Saumon",
         "Japanese": "サケ"
       },
+      "Description": null,
+      "Health": "4",
+      "Calories": "50",
       "MaturityAgeDays": "1",
+      "Food": "Waterweed",
       "CO2TonsPerDay": "0.02"
     },
     "Snapping Turtle": {
@@ -249,7 +329,11 @@
         "French": "Tortue alligator",
         "Japanese": "スナッピングタートル"
       },
+      "Description": null,
+      "Health": "4.5",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Clam,Peat Moss,Bullrush,Filmy Fern,Buttonbush",
       "CO2TonsPerDay": "0.02"
     },
     "Tortoise": {
@@ -261,7 +345,11 @@
         "French": "Tortue terrestre",
         "Japanese": "カメ"
       },
+      "Description": null,
+      "Health": "5",
+      "Calories": "50",
       "MaturityAgeDays": "1",
+      "Food": "Creosote Bush",
       "CO2TonsPerDay": "0.02"
     },
     "Trout": {
@@ -273,7 +361,11 @@
         "French": "Truite",
         "Japanese": "マス"
       },
+      "Description": null,
+      "Health": "4",
+      "Calories": "25",
       "MaturityAgeDays": "1",
+      "Food": "Waterweed",
       "CO2TonsPerDay": "0.02"
     },
     "Tuna": {
@@ -285,7 +377,11 @@
         "French": "Thon",
         "Japanese": "マグロ"
       },
+      "Description": null,
+      "Health": "6",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Kelp,Seagrass",
       "CO2TonsPerDay": "0.02"
     },
     "Turkey": {
@@ -297,7 +393,11 @@
         "French": "Dinde",
         "Japanese": "七面鳥"
       },
+      "Description": null,
+      "Health": "2",
+      "Calories": "75",
       "MaturityAgeDays": "1",
+      "Food": "Camas,Wheat,Bunchgrass,Corn,Huckleberry,Big Bluestem",
       "CO2TonsPerDay": "0.02"
     },
     "Wolf": {
@@ -309,7 +409,11 @@
         "French": "Loup",
         "Japanese": "オオカミ"
       },
+      "Description": null,
+      "Health": "5.5",
+      "Calories": "100",
       "MaturityAgeDays": "1",
+      "Food": "Hare,Elk,Mountain Goat,Deer,Turkey,Bison",
       "CO2TonsPerDay": "0.02"
     }
   }

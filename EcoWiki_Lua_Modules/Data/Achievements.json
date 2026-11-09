@@ -37,7 +37,7 @@
     "GatheringofMinds": {
       "Name": {
         "English": "Gathering of Minds",
-        "Russian": "Сбор умов",
+        "Russian": "Собрание умов",
         "German": "Gathering of Minds",
         "French": "Rassemblement des esprits",
         "Japanese": "知恵の結集"
@@ -71,7 +71,7 @@
     "VisionaryWork": {
       "Name": {
         "English": "Visionary Work",
-        "Russian": "Дальновидная работа",
+        "Russian": "Инновационная работа",
         "German": "Visionäres Werk",
         "French": "Ouvrage visionnaire",
         "Japanese": "先見の明のある活動"
@@ -146,7 +146,7 @@
       },
       "Description": {
         "English": "Successfully hunt a wolf.",
-        "Russian": "Успешно охоться на волка.",
+        "Russian": "Успешная охота на волка.",
         "German": "Jage erfolgreich einen Wolf.",
         "French": "Chasse un loup avec succès.",
         "Japanese": "オオカミを狩り上げろ。"
@@ -173,7 +173,7 @@
     "Rockhound": {
       "Name": {
         "English": "Rockhound",
-        "Russian": "Rockhound",
+        "Russian": "Рудокоп",
         "German": "Rockhound",
         "French": "Rockhound",
         "Japanese": "ロックハウンド"
@@ -181,7 +181,7 @@
       "Description": {
         "English": "Mine 1000 ore.",
         "Russian": "Добывай 1000 единиц руды.",
-        "German": "Folge 1000 Erz.",
+        "German": "Fördere 1.000 Erz.",
         "French": "Extraye 1 000 minerais.",
         "Japanese": "鉱石を1000個採掘する。"
       },
@@ -385,7 +385,7 @@
       "Description": {
         "English": "Craft a skill book.",
         "Russian": "Создайте книгу навыков.",
-        "German": "Erstelle ein Fertigkeitenbuch.",
+        "German": "Erstelle ein Fertigkeitsbuch.",
         "French": "Crée un livre de compétences.",
         "Japanese": "スキルブックをクラフトする。"
       },
@@ -418,7 +418,7 @@
       },
       "Description": {
         "English": "Successfully hunt a bison.",
-        "Russian": "Успешно охотиться на бизона.",
+        "Russian": "Успешная охота на бизона.",
         "German": "Jage erfolgreich einen Bison.",
         "French": "Réussis à chasser un bison.",
         "Japanese": "バイソンを無事に狩り上げろ。"
@@ -564,7 +564,7 @@
     "Visionary": {
       "Name": {
         "English": "Visionary",
-        "Russian": "Провидец",
+        "Russian": "Визионер",
         "German": "Visionär",
         "French": "Visionnaire",
         "Japanese": "ビジョナリー"
@@ -656,7 +656,7 @@
       },
       "Description": {
         "English": "A species went extinct.",
-        "Russian": "Вымершие виды.",
+        "Russian": "Популяция вида полностью вымерла.",
         "German": "Eine Spezies ist ausgestorben.",
         "French": "Une espèce vient de s'éteindre.",
         "Japanese": "ある種が絶滅した。"
@@ -979,7 +979,7 @@
       },
       "Description": {
         "English": "Online for the destruction of the meteor.",
-        "Russian": "Онлайн для уничтожения астероида.",
+        "Russian": "Быть в игре во время уничтожения астероида.",
         "German": "Online für die Zerstörung des Meteors.",
         "French": "Être connecté lors de la destruction du météore.",
         "Japanese": "隕石破壊のためにオンライン。"
@@ -1013,7 +1013,7 @@
       },
       "Description": {
         "English": "Gather 100 farmable items on land you own.",
-        "Russian": "Соберите 100 предметов, которые можно выращивать на своей земле.",
+        "Russian": "Соберите 100 единиц урожая, который вы вырастили на своей земле.",
         "German": "Sammle 100 erntbare Gegenstände auf dem Land, das dir gehört.",
         "French": "Récolte 100 objets cultivables sur les terres que tu possèdes.",
         "Japanese": "所有する土地で、収穫可能なアイテムを100個集めろ。"
@@ -1251,7 +1251,7 @@
       },
       "Description": {
         "English": "Minted First Currency.",
-        "Russian": "Отчеканил первую валюту.",
+        "Russian": "Отчеканить первую валюту.",
         "German": "Erste geprägte Währung.",
         "French": "Première monnaie frappée.",
         "Japanese": "最初の通貨が鋳造されました。"
@@ -1278,7 +1278,7 @@
     "BythePeopleForthePeople": {
       "Name": {
         "English": "By the People, For the People",
-        "Russian": "Народный, для Людей",
+        "Russian": "Избрано народом, для народа",
         "German": "Von Menschen für Menschen",
         "French": "Par le peuple, pour le peuple",
         "Japanese": "民衆によって、民衆のために"
@@ -1659,8 +1659,8 @@
       },
       "Description": {
         "English": "Mine 100 ore.",
-        "Russian": "Добывай 100 единиц руды.",
-        "German": "Folge 100 Erz.",
+        "Russian": "Добудьте 100 единиц руды.",
+        "German": "Fördere 100 Erz.",
         "French": "Extraye 100 minerais.",
         "Japanese": "鉱石を100個採掘する。"
       },

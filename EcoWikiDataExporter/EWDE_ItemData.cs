@@ -54,6 +54,7 @@ using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
 using System.Runtime.Loader;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -92,8 +93,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region FoodItem
                     if (item is FoodItem foodItem)
                     {
-                        //ItemData[ItemName]["FoodItem"] = $"'True'";
-
                         FoodData fooddata = new FoodData
                         {
                             Calories = WikiFloat(foodItem.Calories),
@@ -111,8 +110,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region SeedItem
                     if (item is SeedItem Seed)
                     {
-                        //ItemData[ItemName]["SeedItem"] = $"'True'";
-
                         SeedData seeddata = new SeedData
                         {
                             Species = Seed.SpeciesName.NotTranslated.AddSpacesBetweenCapitals(),
@@ -125,8 +122,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region  FertilizerItem
                     if (item is FertilizerItem Fertilizer)
                     {
-                        //ItemData[ItemName]["FertilizerItem"] = $"'True'";
-
                         FertilizerData fertilizerdata = new FertilizerData
                         {
                             Nitrogen = WikiFloat(Fertilizer.Nutrients.GetPropertyValueByName<float>("Nitrogen")),
@@ -141,13 +136,10 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region ClothingItem
                     if (item is ClothingItem Clothing)
                     {
-                        //ItemData[ItemName]["ClothingItem"] = $"'True'";
-
                         Dictionary<UserStatType, float> сlothingStats = Clothing.GetFlatStats();
                         var FlatStats = new Dictionary<string, string>();
                         if (сlothingStats != null)
                         {
-                            
                             foreach (var stat in Clothing.GetFlatStats()) { FlatStats.Add(stat.Key.ToString(), WikiFloat(stat.Value)); }
                         }
 
@@ -166,8 +158,6 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region FuelItem
                     if (item.IsFuel)
 					{
-						//ItemData[ItemName]["IsFuel"] = $"'True'";
-
                         FuelData fueldata = new FuelData
                         {
                             Power = WikiFloat(item.Fuel)
@@ -189,7 +179,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region ModuleItem
                     if (item is ModuleItem Module)
 					{
-                        //ItemData[ItemName]["ModuleItem"] = $"'True'";
+
 
 
                     }
@@ -198,17 +188,14 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #region PartItem
                     if (item is PartItem Part)
 					{
-						//ItemData[ItemName]["PartItem"] = $"'True'";
 						//ItemData[ItemName]["MaxDurability"] = $"'{Part.IntegrityAmount}'";
 					}
                     #endregion
 
                     #region VehicleToolItem
                     if (item is VehicleToolItem vehicleToolItem)
-					{ 
-						//ItemData[ItemName]["VehicleToolItem"] = $"'True'";
-                        
-
+					{
+          
                     }
                     #endregion
 
@@ -276,7 +263,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     #endregion
 
                     #region WorldObjectItem
-
+                    Dictionary<string, string> WorldObjectComponentsParameters = new Dictionary<string, string>();
                     if (item is WorldObjectItem worldObjectItem)
                     {
                         Type worldObjecttype = worldObjectItem.WorldObjectType;
@@ -296,6 +283,35 @@ namespace Eco.Mods.EcoWikiDataExporter
                                 if (worldObject != null)
                                 {
                                     Tier = worldObject.Tier;
+                                                                      
+                                    if (worldObject.HasComponent<MountComponent>())
+                                    {
+                                        var MountComponent = worldObject.GetComponent<MountComponent>();
+
+                                        WorldObjectComponentsParameters["MountSeats"] = MountComponent.Seats.ToString();
+                                    }
+
+                                    if (worldObject.HasComponent<HousingComponent>())
+                                    {
+                                        var HousingComponent = worldObject.GetComponent<HousingComponent>().HomeValue;
+                                        WorldObjectComponentsParameters["RoomCategory"] = HousingComponent.Category.DisplayName.NotTranslated;
+
+                                        if (HousingComponent.Category != RoomCategory.Industrial)
+                                        {
+                                            WorldObjectComponentsParameters["HomeBaseValue"] = WikiFloat(HousingComponent.BaseValue);
+                                            WorldObjectComponentsParameters["TypeForRoomLimit"] = HousingComponent.TypeForRoomLimit;
+                                            WorldObjectComponentsParameters["DiminishingReturnMultiplier"] = WikiFloat(HousingComponent.DiminishingReturnMultiplier);
+                                        }
+                                    }
+
+                                    if (worldObject.HasComponent<FuelSupplyComponent>())
+                                    {
+                                        //Log.WriteLineLoc($"WO Component: FuelSupplyComponent");
+                                        var FuelSupplyComponent = worldObject.GetComponent<FuelSupplyComponent>();
+                                        //FuelSupplyComponent.FuelTags
+
+
+                                    }
 
                                     WorldObjectComponentsList =
                                     [
@@ -363,27 +379,25 @@ namespace Eco.Mods.EcoWikiDataExporter
                             Size = FullSize,
                             Tier = Tier,
                             Components = WorldObjectComponents,
+                            Parameters = WorldObjectComponentsParameters,
+
                         };
 
                         WorldObjectDataList.Add(ItemName, worldobjectdata);
                     }
                     #endregion
 
-                        // -------------------------------------------------------------------------------------------------------
+                    //SalvageCost
 
-                        //SalvageCost
-                        if (item.IsWasteProduct)
+
+                    // -------------------------------------------------------------------------------------------------------
+
+                    if (item.IsWasteProduct)
 					{
 
 
 					}
 
-                    if (item.IsStackable)
-                    {
-                        //ItemData[ItemName]["IsStackable"] = $"'True'"; 
-                    }
-
-                    //item.IsCarried
 
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
@@ -422,9 +436,11 @@ namespace Eco.Mods.EcoWikiDataExporter
                         Hidden = item.Hidden,
                         Tier = Tier,
                         Weight = item.Weight,
+                        Carried = item.IsCarried,
                         MaxStackSize = item.MaxStackSize,
                         Types = ItemTypes,
-                        Tags = GetItemTags(item)
+                        Tags = GetItemTags(item),
+                        //SalvageCost = 
                     };
 
                     ItemDataList.Add(ItemName, itemdata);

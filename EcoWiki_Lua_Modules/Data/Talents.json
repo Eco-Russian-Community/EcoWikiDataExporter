@@ -10,7 +10,7 @@
       },
       "Description": {
         "English": "Reduce resource cost for Pirozhok.",
-        "Russian": "Уменьшает стоимость ресурсов для пирожка.",
+        "Russian": "Уменьшает затраты ресурсов для пирожка.",
         "German": "Reduzier die Ressourcenkosten für Pirozhok.",
         "French": "Réduis le coût des ressources pour Pirozhok.",
         "Japanese": "ピロシクの資源コストを削減する。"
@@ -162,7 +162,7 @@
       },
       "Description": {
         "English": "Faster crafting and reduced labor cost at the Pottery Table.",
-        "Russian": "Ускоряет производство предметов и снижает затраты очков работы на гончарном круге.",
+        "Russian": "Ускоряет производство предметов и снижает стоимость работы на гончарном круге.",
         "German": "Schnelleres Herstellen und geringere Arbeitskosten am Töpfertisch.",
         "French": "Fabrication plus rapide et coût de main-d'œuvre réduit à la table de poterie.",
         "Japanese": "陶芸台でのクラフト速度が向上し、労働コストが削減された。"
@@ -200,7 +200,7 @@
       },
       "Description": {
         "English": "Reduce resource cost for specific recipes.",
-        "Russian": "Снижает стоимость ресурсов для определенных рецептов.",
+        "Russian": "Снижает затраты ресурсов для определенных рецептов.",
         "German": "Reduziere die Ressourcenkosten für bestimmte Rezepte.",
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
@@ -310,12 +310,12 @@
         "Russian": "Глубокие карманы: Самосовершенствование",
         "German": "Deeper Pockets: Self Improvement",
         "French": "Deeper Pockets: Self Improvement",
-        "Japanese": "Deeper Pockets: Self Improvement"
+        "Japanese": "より深いポケット：自己改善"
       },
       "Description": {
         "English": "Increase your inventory size by 10kg.",
         "Russian": "Увеличивает переносимый вес на 10кг.",
-        "German": "Increase your inventory size by 10kg.",
+        "German": "Vergrößere deine Inventargröße um 10kg.",
         "French": "Increase your inventory size by 10kg.",
         "Japanese": "Increase your inventory size by 10kg."
       },
@@ -649,7 +649,7 @@
     "Frugal Workspace: Cutting Edge Cooking": {
       "Name": {
         "English": "Frugal Workspace: Cutting Edge Cooking",
-        "Russian": "Frugal Workspace: Cutting Edge Cooking",
+        "Russian": "Скромное рабочее место: Передовая кулинария",
         "German": "Frugal Workspace: Cutting Edge Cooking",
         "French": "Frugal Workspace: Cutting Edge Cooking",
         "Japanese": "Frugal Workspace: Cutting Edge Cooking"
@@ -687,7 +687,7 @@
     "Frugal Workspace: Paper Milling": {
       "Name": {
         "English": "Frugal Workspace: Paper Milling",
-        "Russian": "Frugal Workspace: Paper Milling",
+        "Russian": "Скромное рабочее место: Производство бумаги",
         "German": "Frugal Workspace: Paper Milling",
         "French": "Frugal Workspace: Paper Milling",
         "Japanese": "Frugal Workspace: Paper Milling"
@@ -866,7 +866,7 @@
       "Description": {
         "English": "Increase your stomach capacity count by 2000 calories.",
         "Russian": "Увеличивает вместимость вашего желудка на 2000 калорий.",
-        "German": "Increase your stomach capacity count by 2000 calories.",
+        "German": "Vergrößere deine Magenkapazität um 2000 Kalorien.",
         "French": "Increase your stomach capacity count by 2000 calories.",
         "Japanese": "Increase your stomach capacity count by 2000 calories."
       },
@@ -1197,6 +1197,25 @@
       "SkillID": "PotterySkill",
       "Level": 3
     },
+    "Master Artist: Painting": {
+      "Name": {
+        "English": "Master Artist: Painting",
+        "Russian": "Master Artist: Painting",
+        "German": "Master Artist: Painting",
+        "French": "Master Artist: Painting",
+        "Japanese": "Master Artist: Painting"
+      },
+      "Description": {
+        "English": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars.",
+        "Russian": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars.",
+        "German": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars.",
+        "French": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars.",
+        "Japanese": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars."
+      },
+      "IconName": "PaintingMasterArtistTalentGroup",
+      "SkillID": "PaintingSkill",
+      "Level": 3
+    },
     "Master Tracker: Hunting": {
       "Name": {
         "English": "Master Tracker: Hunting",
@@ -1358,11 +1377,11 @@
         "Japanese": "Nature Adventurer: Self Improvement"
       },
       "Description": {
-        "English": "Slightly increases movement speed in low activity areas.",
-        "Russian": "Немного повышает скорость передвижения в регионах с низкой активностью.",
-        "German": "Erhöht die Bewegungsgeschwindigkeit in Bereichen mit niedriger Aktivität leicht.",
-        "French": "Augmente légèrement la vitesse de déplacement dans les zones de faible activité.",
-        "Japanese": "低活性領域内で移動速度がわずかに増加します。"
+        "English": "Plants and fallen tree debris slow you down half as much.",
+        "Russian": "Plants and fallen tree debris slow you down half as much.",
+        "German": "Plants and fallen tree debris slow you down half as much.",
+        "French": "Plants and fallen tree debris slow you down half as much.",
+        "Japanese": "Plants and fallen tree debris slow you down half as much."
       },
       "IconName": "SelfImprovementNatureAdventurerTalentGroup",
       "SkillID": "SelfImprovementSkill",
@@ -1416,7 +1435,7 @@
       },
       "Description": {
         "English": "Reduce resource cost for specific recipes.",
-        "Russian": "Снижает стоимость ресурсов для определенных рецептов.",
+        "Russian": "Снижает затраты ресурсов для определенных рецептов.",
         "German": "Reduziere die Ressourcenkosten für bestimmte Rezepte.",
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
@@ -1568,7 +1587,7 @@
       },
       "Description": {
         "English": "Reduced resource cost for Housing furniture in Pottery.",
-        "Russian": "Снижает затраты ресурсов на создание предметов жилья в Гончарном деле.",
+        "Russian": "Снижает затраты ресурсов на создание предметов мебели для жилища в Гончарном деле.",
         "German": "Reduzierte Ressourcenkosten für Wohnmöbel in der Töpferei.",
         "French": "Réduction du coût des ressources pour le mobilier de maison en poterie.",
         "Japanese": "陶器工房における住宅用家具の資源コストを削減した。"
@@ -1720,7 +1739,7 @@
       },
       "Description": {
         "English": "Reduce resource cost for specific recipes.",
-        "Russian": "Снижает стоимость ресурсов для определенных рецептов.",
+        "Russian": "Снижает затраты ресурсов для определенных рецептов.",
         "German": "Reduziere die Ressourcenkosten für bestimmte Rezepte.",
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
@@ -1986,7 +2005,7 @@
       },
       "Description": {
         "English": "Reduces resource cost of salads.",
-        "Russian": "Снижает стоимость салатов.",
+        "Russian": "Снижает затраты ресурсов для салатов.",
         "German": "Senkt die Ressourcenkosten für Salate.",
         "French": "Réduit le coût des ressources pour les salades.",
         "Japanese": "サラダの資源コストを削減する。"
@@ -2100,7 +2119,7 @@
       },
       "Description": {
         "English": "Reduces resource cost of stews.",
-        "Russian": "Снижает стоимость ресурсов для приготовления рагу.",
+        "Russian": "Снижает затраты ресурсов для приготовления рагу.",
         "German": "Reduziert die Ressourcenkosten für Eintöpfe.",
         "French": "Réduit le coût en ressources des ragoûts.",
         "Japanese": "シチューの資源コストを削減する。"
@@ -2157,7 +2176,7 @@
       },
       "Description": {
         "English": "Reduce resource cost for specific recipes.",
-        "Russian": "Снижает стоимость ресурсов для определенных рецептов.",
+        "Russian": "Снижает затраты ресурсов для определенных рецептов.",
         "German": "Reduziere die Ressourcenkosten für bestimmte Rezepte.",
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
@@ -2441,11 +2460,11 @@
         "Japanese": "Urban Traveller: Self Improvement"
       },
       "Description": {
-        "English": "Slightly increases movement speed in high activity areas.",
-        "Russian": "Немного повышает скорость передвижения в регионах с высокой активностью.",
-        "German": "Erhöht die Bewegungsgeschwindigkeit in Bereichen mit hoher Aktivität leicht.",
-        "French": "Augmente légèrement la vitesse de déplacement dans les zones de forte activité.",
-        "Japanese": "高活性領域内で移動速度がわずかに増加します。"
+        "English": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt.",
+        "Russian": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt.",
+        "German": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt.",
+        "French": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt.",
+        "Japanese": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt."
       },
       "IconName": "SelfImprovementUrbanTravellerTalentGroup",
       "SkillID": "SelfImprovementSkill",

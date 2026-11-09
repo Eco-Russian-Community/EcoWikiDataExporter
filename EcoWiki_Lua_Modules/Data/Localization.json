@@ -59,9 +59,16 @@
     "Crafted At": {
       "English": "Crafted At",
       "Russian": "Создаётся в",
-      "German": "Herstellbar bei",
+      "German": "Hergestellt an",
       "French": "Se fabrique sur",
       "Japanese": "以下で製作"
+    },
+    "Crafting": {
+      "English": "Crafting",
+      "Russian": "Изготовление",
+      "German": "Herstellung",
+      "French": "Fabrication",
+      "Japanese": "製作中"
     },
     "Crafting Table": {
       "English": "Crafting Table",
@@ -255,7 +262,7 @@
     "Pollution Containment": {
       "English": "Pollution Containment",
       "Russian": "Сдерживание загрязнения",
-      "German": "Pollution Containment",
+      "German": "Schadstoffeindämmung",
       "French": "Pollution Containment",
       "Japanese": "Pollution Containment"
     },
@@ -269,14 +276,14 @@
     "When Recycled": {
       "English": "When Recycled",
       "Russian": "При утилизации",
-      "German": "When Recycled",
+      "German": "Beim Recyceln",
       "French": "When Recycled",
       "Japanese": "When Recycled"
     },
     "Produced When Crafting": {
       "English": "Produced When Crafting",
       "Russian": "Производится при крафте",
-      "German": "Produced When Crafting",
+      "German": "Bei der Herstellung produziert",
       "French": "Produced When Crafting",
       "Japanese": "Produced When Crafting"
     },
@@ -296,7 +303,7 @@
     },
     "May Contain": {
       "English": "May Contain",
-      "Russian": "May Contain",
+      "Russian": "Может содержать",
       "German": "May Contain",
       "French": "May Contain",
       "Japanese": "May Contain"
@@ -639,7 +646,7 @@
     },
     "Max Calories: {0}": {
       "English": "Max Calories: {0}",
-      "Russian": "Max Calories: {0}",
+      "Russian": "Макс калорий: {0}",
       "German": "Max Calories: {0}",
       "French": "Max Calories: {0}",
       "Japanese": "Max Calories: {0}"
@@ -660,7 +667,7 @@
     },
     "Animal Detection Range: {0}": {
       "English": "Animal Detection Range: {0}",
-      "Russian": "Animal Detection Range: {0}",
+      "Russian": "Радиус обнаружения животными: {0}",
       "German": "Animal Detection Range: {0}",
       "French": "Animal Detection Range: {0}",
       "Japanese": "Animal Detection Range: {0}"
@@ -674,7 +681,7 @@
     },
     "Carried Slots: {0}": {
       "English": "Carried Slots: {0}",
-      "Russian": "Carried Slots: {0}",
+      "Russian": "Дополнительные ячейки рук: {0}",
       "German": "Carried Slots: {0}",
       "French": "Carried Slots: {0}",
       "Japanese": "Carried Slots: {0}"
@@ -685,6 +692,13 @@
       "German": "Stufe",
       "French": "Niveau",
       "Japanese": "ティア"
+    },
+    "Mint": {
+      "English": "Mint",
+      "Russian": "Пресс для чеканки монет",
+      "German": "Münzprägemaschine",
+      "French": "Hôtel de la monnaie",
+      "Japanese": "造幣機"
     }
   }
 }

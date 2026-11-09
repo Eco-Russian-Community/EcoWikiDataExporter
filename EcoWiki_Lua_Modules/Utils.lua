@@ -226,8 +226,14 @@ function p.gallery(context)
 end
 
 function p.FoodsShelfLife(ShelfLife)
-	local WikiText = tonumber(ShelfLife)/86400 .. ' days'
-	return WikiText
+	local Days = tonumber(ShelfLife)/86400
+	return Days .. ' days'
+end
+
+function p.Weight(Grams)
+	local Weight = tonumber(Grams)
+	local Kilograms = string.format('%.3f', Weight / 1000)
+	return Kilograms .. ' kg'
 end
 
 function p.Stars(StarCost)

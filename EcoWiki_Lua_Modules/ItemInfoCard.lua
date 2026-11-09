@@ -31,7 +31,9 @@ function p.main(frame)
 	WikiText =  WikiText ..'<p class="col-lg-10 card-text">' .. Item.Description[Lang] .. '</p>'
 	
 	WikiText =  WikiText ..'</div></div></div></div>'
-	
+
+	WikiText = WikiText .. InfoCardUtils.ItemDetailsModule(Item)
+
 	if (ItemTypes['Food'] == true) then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
 	
 	local RecipeItemCraft = RecipeUtils.ItemCraft(ItemName)

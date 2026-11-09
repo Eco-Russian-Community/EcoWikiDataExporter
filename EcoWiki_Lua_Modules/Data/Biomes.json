@@ -5,7 +5,7 @@
       "Name": {
         "English": "Boreal Forest Biome",
         "Russian": "Тайга",
-        "German": "Borealer Wald Biom",
+        "German": "Borealer-Wald-Biom",
         "French": "Biome taïga",
         "Japanese": "亜寒帯森林のバイオーム"
       },
@@ -89,7 +89,7 @@
       "Name": {
         "English": "Cold Forest Biome",
         "Russian": "Холодный Лес",
-        "German": "Kalter Wald Biom",
+        "German": "Kalter-Wald-Biom",
         "French": "Biome forestier froid",
         "Japanese": "冷帯森林バイオーム"
       },
@@ -145,7 +145,7 @@
       "Name": {
         "English": "Desert Biome",
         "Russian": "Пустыня",
-        "German": "Wüstenbiom",
+        "German": "Wüsten-Biom",
         "French": "Biome désertique",
         "Japanese": "砂漠バイオーム"
       },
@@ -173,7 +173,7 @@
       "Name": {
         "English": "Grassland Biome",
         "Russian": "Луг",
-        "German": "Grasland Biom",
+        "German": "Grasland-Biom",
         "French": "Biome herbeux",
         "Japanese": "草原バイオーム"
       },
@@ -229,7 +229,7 @@
       "Name": {
         "English": "Ice Biome",
         "Russian": "Ледяной биом",
-        "German": "Eis Biom",
+        "German": "Eis-Biom",
         "French": "Biome enneigé",
         "Japanese": "氷のバイオーム"
       },
@@ -285,7 +285,7 @@
       "Name": {
         "English": "Rainforest Biome",
         "Russian": "Тропический лес",
-        "German": "Regenwaldbiom",
+        "German": "Regenwald-Biom",
         "French": "Biome tropical",
         "Japanese": "熱帯雨林バイオーム"
       },
@@ -341,7 +341,7 @@
       "Name": {
         "English": "Tundra Biome",
         "Russian": "Тундра",
-        "German": "Tundrabiom",
+        "German": "Tundra-Biom",
         "French": "Biome de toundra",
         "Japanese": "ツンドラバイオーム"
       },
@@ -397,7 +397,7 @@
       "Name": {
         "English": "Warm Forest Biome",
         "Russian": "Тёплый лес",
-        "German": "Warmer Wald Biom",
+        "German": "Warmer-Wald-Biom",
         "French": "Biome tempéré",
         "Japanese": "温帯森林バイオーム"
       },
@@ -425,7 +425,7 @@
       "Name": {
         "English": "Wetland Biome",
         "Russian": "Болото",
-        "German": "Sumpf Biom",
+        "German": "Sumpf-Biom",
         "French": "Biome marécageux",
         "Japanese": "湿地バイオーム"
       },
