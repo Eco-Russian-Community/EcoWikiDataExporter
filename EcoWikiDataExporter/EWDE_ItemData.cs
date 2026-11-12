@@ -11,8 +11,10 @@ using Eco.Gameplay.Garbage;
 using Eco.Gameplay.Housing;
 using Eco.Gameplay.Housing.PropertyValues;
 using Eco.Gameplay.Items;
+using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Objects;
 using Eco.Gameplay.Occupancy;
+using Eco.Gameplay.Pipes;
 using Eco.Gameplay.Pipes.Gases;
 using Eco.Gameplay.Pipes.LiquidComponents;
 using Eco.Gameplay.Players;
@@ -58,6 +60,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Eco.Core.Controller.ControllerNotificationStats;
 using static Eco.Mods.EcoWikiDataExporter.WikiData;
 using static Eco.Simulation.Types.PlantSpecies;
 
@@ -140,7 +143,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         var FlatStats = new Dictionary<string, string>();
                         if (сlothingStats != null)
                         {
-                            foreach (var stat in Clothing.GetFlatStats()) { FlatStats.Add(stat.Key.ToString(), WikiFloat(stat.Value)); }
+                            foreach (var stat in сlothingStats) { FlatStats.Add(stat.Key.ToString(), WikiFloat(stat.Value)); }
                         }
 
 						ClothingData clothingdata = new ClothingData
@@ -242,6 +245,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                         {
 
                         }
+
+                        if (item is DurabilityItem Repair)
+                        {
+
+                        }
+
 
                         if (ItemName == "Dev Tool" | ItemName == "Dev Flood Tool" | ItemName == "Hydrometer" | ItemName == "Dev Paint Tool") { DevTool = true; }
 
@@ -387,8 +396,22 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
-                    //SalvageCost
+                    #region SalvageCost
+                    Dictionary<string, string> SalvageCostList = new Dictionary<string, string>();
+                    var SalvageCost = ItemAttribute.Get<SalvageCostAttribute>(item.Type);
+                    var rows = SalvageCost.Costs.OrderByDescending(kv => kv.Value).Select(kv => (Amount: GarbageTooltipUtils.CompactBlockAmount(kv.Value), Style: Text.Styles.Positive, Label: GarbageTooltipUtils.MaterialLabel(kv.Key))).ToList();
 
+                    //Log.WriteLineLoc($"SalvageCost: {SalvageCost.Costs.Count}");
+                    //if (SalvageCost != null || SalvageCost.Costs.Count != 0)
+                    //{
+                    //Log.WriteLineLoc($"SalvageCost: { SalvageCost.Costs.Count}");
+                    //foreach (var ItemSalvageCost in SalvageCost.Costs)
+                    //{
+                    //SalvageCostList[ItemSalvageCost.Key.ToString()] = WikiFloat(ItemSalvageCost.Value);
+                    //SalvageCostList.Add(ItemSalvageCost.Key.ToString(), WikiFloat(ItemSalvageCost.Value));
+                    //}
+                    //}
+                    #endregion
 
                     // -------------------------------------------------------------------------------------------------------
 
@@ -440,7 +463,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         MaxStackSize = item.MaxStackSize,
                         Types = ItemTypes,
                         Tags = GetItemTags(item),
-                        //SalvageCost = 
+                        SalvageCost = SalvageCostList
                     };
 
                     ItemDataList.Add(ItemName, itemdata);
