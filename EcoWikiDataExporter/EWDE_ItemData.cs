@@ -398,34 +398,25 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                     #region SalvageCost
                     Dictionary<string, string> SalvageCostList = new Dictionary<string, string>();
-                    var SalvageCost = ItemAttribute.Get<SalvageCostAttribute>(item.Type);
-                    var rows = SalvageCost.Costs.OrderByDescending(kv => kv.Value).Select(kv => (Amount: GarbageTooltipUtils.CompactBlockAmount(kv.Value), Style: Text.Styles.Positive, Label: GarbageTooltipUtils.MaterialLabel(kv.Key))).ToList();
-
-                    //Log.WriteLineLoc($"SalvageCost: {SalvageCost.Costs.Count}");
-                    //if (SalvageCost != null || SalvageCost.Costs.Count != 0)
-                    //{
-                    //Log.WriteLineLoc($"SalvageCost: { SalvageCost.Costs.Count}");
-                    //foreach (var ItemSalvageCost in SalvageCost.Costs)
-                    //{
-                    //SalvageCostList[ItemSalvageCost.Key.ToString()] = WikiFloat(ItemSalvageCost.Value);
-                    //SalvageCostList.Add(ItemSalvageCost.Key.ToString(), WikiFloat(ItemSalvageCost.Value));
-                    //}
-                    //}
+                    var salvageCost = ItemAttribute.Get<SalvageCostAttribute>(item.Type);
+                    if (salvageCost != null && salvageCost.Costs.Count > 0)
+                    {
+                        foreach (var (material, amount) in salvageCost.Costs) { SalvageCostList.Add(material.Name.AddSpacesBetweenCapitals(), WikiFloat(amount)); }
+                    }
                     #endregion
 
                     // -------------------------------------------------------------------------------------------------------
 
                     if (item.IsWasteProduct)
 					{
+                        //Log.WriteLineLoc($"Waste: {ItemName}");
 
-
-					}
-
+                    }
 
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
 
-
+                    #region Item Types List
                     // ------------------   Item Types List  -------------------------------------------------------------------------------------
 
                     List<int> ItemTypesList = 
@@ -450,6 +441,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                     ];
 
                     string ItemTypes = string.Join(",", ItemTypesList);
+                    #endregion
 
                     ItemData itemdata = new ItemData
                     {
