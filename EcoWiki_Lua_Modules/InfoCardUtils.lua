@@ -100,7 +100,6 @@ function p.ClothingDetailsModule(ItemName)
 		ClothingBonuses = ClothingBonuses .. Bname .. ': ' .. Bdata .. ';  '
     end
 
-
 	WikiText = WikiText .. '<div class="row gy-2 gx-4">'
 	WikiText = WikiText .. '<div class="col-auto"><h3>' .. Utils.Translate("Clothing") .. '</h3></div>'
 	WikiText = WikiText .. '<div class="col-auto">' .. Utils.Translate("Avatar Slot") .. ': ' .. ClothingItem.AvatarSlot .. '</div>'
@@ -227,9 +226,7 @@ function p.PlantList()
     	TableRow = TableRow .. '</tr>'
     	
     	WikiText = WikiText .. TableRow
-    end
-    
-    
+    end 
     
     return WikiText
 end
@@ -267,6 +264,14 @@ function p.TreeList()
     end
     
     return WikiText
+end
+
+function p.FoodSourceList(AnimalFood)
+    local WikiText = ''
+
+	
+	
+	return WikiText
 end
 
 return p

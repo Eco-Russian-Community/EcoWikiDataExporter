@@ -1,6 +1,7 @@
 local p = {}
 local Utils = require('Module:Utils')
 local IconUtils = require('Module:IconUtils')
+local InfoCardUtils = require('Module:InfoCardUtils')
 local Lang = Utils.WikiLang
 local Debug = Utils.WikiDebug
 
@@ -31,6 +32,13 @@ function p.main(frame)
 	WikiText =  WikiText .. '</table>'
 	WikiText =  WikiText ..'</div></div></div></div>'
 	
+	---Food
+	local FoodSourceList = InfoCardUtils.FoodSourceList(Animal.Food)
+	if (FoodSourceList ~= '' ) then 
+		WikiText = WikiText .. '<h3>' .. Utils.Translate("Food") .. '</h3>'
+		WikiText = WikiText .. FoodSourceList
+	end
+
 	if (Lang ~= 'English') then WikiText =  WikiText .. '[[en:' .. Animal.Name.English .. ']]' end
 	if (Lang ~= 'Russian') then WikiText =  WikiText .. '[[ru:' .. Animal.Name.Russian .. ']]' end
 	if (Lang ~= 'German') then WikiText =  WikiText .. '[[de:' .. Animal.Name.German .. ']]' end
@@ -40,7 +48,7 @@ function p.main(frame)
 	local descriptionpage = Animal.Name[Lang] .. " - " .. Animal.Description[Lang]
 	WikiText =  WikiText .. frame:callParserFunction{ name = '#description2', args = { descriptionpage }}
 
-	WikiText =  WikiText .. Utils.checkImage(AnimalName .. '_Animal.jpg')
+	---WikiText =  WikiText .. Utils.checkImage(AnimalName .. '_Animal.jpg')
 	
 	local DebugEnd = os.clock()
 	DebugText =  DebugText ..'Time run: ' .. DebugEnd - DebugStart ..'</br>'

@@ -60,9 +60,9 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (plant.ResourceItemType != null)
                     {
                         // TreeData[treeName]["ResourceItem"] = $"'{plant.ResourceItemType.Name}'";
+                        //plant.ResourceRange.Min
                         // TreeData[treeName]["ResourceMax"] = $"'{plant.ResourceRange.Max}'";
                     }
-
 
 
                     PlantData plantdata = new PlantData

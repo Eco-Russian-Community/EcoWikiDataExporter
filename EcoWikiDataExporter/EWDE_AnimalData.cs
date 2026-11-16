@@ -116,12 +116,12 @@ namespace Eco.Mods.EcoWikiDataExporter
                     // AnimalData[animalName]["MaxGrowthRatePerHour"] = $"'{WikiFloat(animal.MaxGrowthRatePerHour)}'";
                     // AnimalData[animalName]["TimeToSpread1ToNeighborInHours"] = $"'{WikiFloat(animal.TimeToSpread1ToNeighborInHours)}'";
 
-                    TranslateData AnimalDescription = animal.Aquatic ? Localization(animal.DisplayDescription.NotTranslated) : null;
+                    //TranslateData AnimalDescription = animal.Aquatic ? Localization(animal.DisplayDescription.NotTranslated) : null;
                     AnimalData animaldata = new AnimalData
                     {
                         ID = animal.Name + "Species",
                         Name = Localization(AnimalName),
-                        Description = AnimalDescription,
+                        //Description = AnimalDescription,
                         Health = WikiFloat(animal.Health),
                         Calories = WikiFloat(animal.CalorieValue),
                         MaturityAgeDays = WikiFloat(animal.MaturityAgeDays),
