@@ -47,9 +47,8 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
         public class EcoVersionData
         {
-            public string Version { get; set; }
-            public string VersionNumber { get; set; }
             public string FullVersion { get; set; }
+            public string VersionNumber { get; set; }
         }
         public class TranslateData
         {

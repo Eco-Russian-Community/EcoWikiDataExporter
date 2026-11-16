@@ -41,10 +41,9 @@ namespace Eco.Mods.EcoWikiDataExporter
     {
         public static void ExportVersionData()
         {
-            EcoVersionData ecoversiondata = new EcoVersionData { 
-                Version = EcoVersion.Version, 
+            EcoVersionData ecoversiondata = new EcoVersionData {
+                FullVersion = EcoVersion.Version, 
                 VersionNumber = EcoVersion.VersionNumber,
-                FullVersion = EcoVersion.FullInfo.Replace("\r\n", " ")
             };
 
             // Writes Data to json file
