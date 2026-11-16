@@ -396,3 +396,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 /EcoWiki_Lua_Modules/Test
+EcoWiki_Lua_Modules/Data/Update.bat
