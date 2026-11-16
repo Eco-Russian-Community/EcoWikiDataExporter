@@ -269,6 +269,14 @@ end
 function p.FoodSourceList(AnimalFood)
     local WikiText = ''
 
+
+	
+	return WikiText
+end
+
+function p.SalvageCost(Item)
+    local WikiText = ''
+
 	
 	
 	return WikiText

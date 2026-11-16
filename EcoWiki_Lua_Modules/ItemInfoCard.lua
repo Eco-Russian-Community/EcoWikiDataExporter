@@ -37,6 +37,12 @@ function p.main(frame)
 	if (ItemTypes['Food'] == true) then WikiText =  WikiText .. InfoCardUtils.FoodDetailsModule(ItemName) end
 	if (ItemTypes['Clothing'] == true) then WikiText =  WikiText .. InfoCardUtils.ClothingDetailsModule(ItemName) end
 
+	local SalvageCost = InfoCardUtils.SalvageCost(Item)
+	if (SalvageCost ~= "None") then
+		WikiText =  WikiText .. '<h3>' .. Utils.Translate("When Recycled") .. ':</h3>';
+		WikiText =  WikiText .. SalvageCost;
+	end
+
 	local RecipeItemCraft = RecipeUtils.ItemCraft(ItemName)
 	if (RecipeItemCraft ~= "") then
 		WikiText =  WikiText .. '<h3>' .. Utils.Translate("Crafted At") .. ':</h3>';
