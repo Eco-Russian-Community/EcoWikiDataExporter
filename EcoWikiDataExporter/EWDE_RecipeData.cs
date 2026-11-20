@@ -72,6 +72,7 @@ namespace Eco.Mods.EcoWikiDataExporter
 
                         var module = recipe.RequiredModules.FirstOrDefault();
                         string requiredmodule = module != null ? Item.CreatingItem(module.ModuleType).DisplayName.NotTranslated : "nil";
+                        string requirestalent = recipe.RequiresTalentUnlock ? recipe.RequiredTalentName : "nil";
 
                         SortedDictionary<string, RecipeIngredientData> IngredientsList = new SortedDictionary<string, RecipeIngredientData>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
@@ -149,6 +150,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                             LaborInCalories = WikiFloat(recipe.LaborInCalories.GetBaseValue),
                             RequiredSkill = requiredskill + "," + requiredskilllevel,
                             RequiresModule = requiredmodule,
+                            RequiresTalent = requirestalent,
                             CraftingTable = recipe.CraftingTable.DisplayName.NotTranslated,
                             RequiresBlueprint = recipevariant.RequiresStrangeBlueprint,
                             Ingredients = IngredientsList,

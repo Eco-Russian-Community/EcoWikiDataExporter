@@ -216,6 +216,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             public string LaborInCalories { get; set; }
             public string RequiredSkill { get; set; }
             public string RequiresModule { get; set; }
+            public string RequiresTalent { get; set; }
             public string CraftingTable { get; set; }
             public bool RequiresBlueprint { get; set; }
             public SortedDictionary<string, RecipeIngredientData> Ingredients { get; set; }
