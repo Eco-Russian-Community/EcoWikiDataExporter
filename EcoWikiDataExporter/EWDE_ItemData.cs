@@ -405,6 +405,13 @@ namespace Eco.Mods.EcoWikiDataExporter
                     }
                     #endregion
 
+                    #region Garbage
+                    if (item is GarbageItem) 
+                    {
+                        //Log.WriteLineLoc($"Garbage: {ItemName}");
+                    }
+                    #endregion
+
                     // -------------------------------------------------------------------------------------------------------
 
                     if (item.IsWasteProduct)
@@ -412,6 +419,8 @@ namespace Eco.Mods.EcoWikiDataExporter
                         //Log.WriteLineLoc($"Waste: {ItemName}");
 
                     }
+
+
 
                     //if (item is SuitItem) { ItemData[ItemName]["SuitItem"] = $"'True'"; }
                     //if (item is ColorItem) { ItemData[ItemName]["ColorItem"] = $"'True'"; }
@@ -438,6 +447,7 @@ namespace Eco.Mods.EcoWikiDataExporter
                         item.IsWasteProduct ? 1 : 0,
                         item.CanBeCurrency ? 1 : 0,
                         MarketplaceExtensions.IsPaidItem(item) ? 1 : 0,
+                        item is GarbageItem ? 1 : 0,
                     ];
 
                     string ItemTypes = string.Join(",", ItemTypesList);
@@ -465,6 +475,7 @@ namespace Eco.Mods.EcoWikiDataExporter
             // writes to json file
             string ItemDataListjsonString = JsonConvert.SerializeObject(new { items = ItemDataList }, Formatting.Indented);
             WriteDictionaryToJsonFile("Items", ItemDataListjsonString);
+
             string FoodDataListjsonString = JsonConvert.SerializeObject(new { foods = FoodDataList }, Formatting.Indented);
             WriteDictionaryToJsonFile("Food", FoodDataListjsonString);
             string SeedDataListjsonString = JsonConvert.SerializeObject(new { seeds = SeedDataList }, Formatting.Indented);
