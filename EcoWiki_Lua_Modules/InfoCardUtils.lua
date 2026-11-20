@@ -275,10 +275,19 @@ function p.FoodSourceList(AnimalFood)
 end
 
 function p.SalvageCost(Item)
-    local WikiText = ''
+    local WikiText = 'None'
+	local SCText = ''
+	local SCCount = 0
+	local SC = Item.SalvageCost
+	local ItemsData = mw.loadData( "Module:ItemData" )
+	
+	for name, amount in pairs(SC) do
+    	SCCount = SCCount + 1
+		local SCItem = ItemsData.items[name]
+		SCText = SCText .. '<span style="display: inline-block;">' .. IconUtils.main{ name = SCItem.Name[Lang], id = SCItem.ID, size = 48, style = 5, link = SCItem.Name[Lang], border = 'yellow', count = amount } .. '</span>'
+	end
+	if (SCCount > 0) then WikiText = SCText end
 
-	
-	
 	return WikiText
 end
 
