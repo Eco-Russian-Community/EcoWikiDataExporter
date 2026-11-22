@@ -15,9 +15,11 @@
         "French": "Réduis le coût des ressources pour Pirozhok.",
         "Japanese": "ピロシクの資源コストを削減する。"
       },
-      "IconName": "AdvancedBakingAbundantTalentGroup",
-      "SkillID": "AdvancedBakingSkill",
-      "Level": 3
+      "ID": "AdvancedBakingAbundantTalentGroup",
+      "Skill": "Advanced Baking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Another Beat: Milling": {
       "Name": {
@@ -34,9 +36,11 @@
         "French": "Débloque la recette du sucre de betterave.",
         "Japanese": "ビート糖のレシピをアンロックする。"
       },
-      "IconName": "MillingAnotherBeatTalentGroup",
-      "SkillID": "MillingSkill",
-      "Level": 6
+      "ID": "MillingAnotherBeatTalentGroup",
+      "Skill": "Milling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Arrow Recovery: Hunting": {
       "Name": {
@@ -53,9 +57,11 @@
         "French": "Permet de récupérer les flèches tirées sur les animaux lors de leur collecte avec une probabilité de 50 %.",
         "Japanese": "動物を収穫した際に射られた矢を50%の確率で回収できます。"
       },
-      "IconName": "HuntingArrowRecoveryTalentGroup",
-      "SkillID": "HuntingSkill",
-      "Level": 3
+      "ID": "HuntingArrowRecoveryTalentGroup",
+      "Skill": "Hunting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Better Axes: Blacksmith": {
       "Name": {
@@ -72,9 +78,11 @@
         "French": "Augmente l'intégrité et la durabilité des outils spécifiés, mais augmente aussi leur coût.",
         "Japanese": "指定したツールの耐久性と堅牢性を高めるが、そのコストも上昇する。"
       },
-      "IconName": "BlacksmithBetterAxesTalentGroup",
-      "SkillID": "BlacksmithSkill",
-      "Level": 6
+      "ID": "BlacksmithBetterAxesTalentGroup",
+      "Skill": "Blacksmith",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Brick Layer: Pottery": {
       "Name": {
@@ -91,9 +99,11 @@
         "French": "Le coût des ressources pour les blocs de construction a été réduit, mais celui des éléments de logement a augmenté.",
         "Japanese": "建設用ブロックの資源コストは削減されたが、住宅アイテムのコストは上昇した。"
       },
-      "IconName": "PotteryBrickLayerTalentGroup",
-      "SkillID": "PotterySkill",
-      "Level": 6
+      "ID": "PotteryBrickLayerTalentGroup",
+      "Skill": "Pottery",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Bright Applications: Glassworking": {
       "Name": {
@@ -110,9 +120,11 @@
         "French": "Fabrication plus rapide pour les recettes de verrerie et rendement accru pour les recettes d'ampoules électriques.",
         "Japanese": "ガラス加工のレシピのクラフト速度が向上し、電球のレシピの生産量が増加した。"
       },
-      "IconName": "GlassworkingBrightApplicationsTalentGroup",
-      "SkillID": "GlassworkingSkill",
-      "Level": 3
+      "ID": "GlassworkingBrightApplicationsTalentGroup",
+      "Skill": "Glassworking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Carbon Enrichment: Advanced Smelting": {
       "Name": {
@@ -129,9 +141,11 @@
         "French": "Débloque la recette de l'acier au charbon et réduit la pollution des recettes de fusion avancée.",
         "Japanese": "チャコールスチールのレシピを解放し、高度な精錬レシピによる汚染を軽減する。"
       },
-      "IconName": "AdvancedSmeltingCarbonEnrichmentTalentGroup",
-      "SkillID": "AdvancedSmeltingSkill",
-      "Level": 3
+      "ID": "AdvancedSmeltingCarbonEnrichmentTalentGroup",
+      "Skill": "Advanced Smelting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Ceramic Safety: Electronics": {
       "Name": {
@@ -148,9 +162,11 @@
         "French": "Débloque la recette du fusible en céramique et augmente la vitesse de fabrication de la compétence Électronique.",
         "Japanese": "「セラミックヒューズ」のレシピを解放し、電子工学スキルのクラフト速度を向上させる。"
       },
-      "IconName": "ElectronicsCeramicSafetyTalentGroup",
-      "SkillID": "ElectronicsSkill",
-      "Level": 3
+      "ID": "ElectronicsCeramicSafetyTalentGroup",
+      "Skill": "Electronics",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Clay Mastery: Pottery": {
       "Name": {
@@ -167,9 +183,11 @@
         "French": "Fabrication plus rapide et coût de main-d'œuvre réduit à la table de poterie.",
         "Japanese": "陶芸台でのクラフト速度が向上し、労働コストが削減された。"
       },
-      "IconName": "PotteryClayMasteryTalentGroup",
-      "SkillID": "PotterySkill",
-      "Level": 3
+      "ID": "PotteryClayMasteryTalentGroup",
+      "Skill": "Pottery",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Cleanup Crew: Logging": {
       "Name": {
@@ -186,9 +204,11 @@
         "French": "Tu peux ramasser des débris de bois à la main.",
         "Japanese": "手で木材の破片を拾うことができる。"
       },
-      "IconName": "LoggingCleanupCrewTalentGroup",
-      "SkillID": "LoggingSkill",
-      "Level": 6
+      "ID": "LoggingCleanupCrewTalentGroup",
+      "Skill": "Logging",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Coastal Rock: Advanced Masonry": {
       "Name": {
@@ -205,9 +225,11 @@
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
       },
-      "IconName": "AdvancedMasonryCoastalRockTalentGroup",
-      "SkillID": "AdvancedMasonrySkill",
-      "Level": 3
+      "ID": "AdvancedMasonryCoastalRockTalentGroup",
+      "Skill": "Advanced Masonry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Concrete Applications: Masonry": {
       "Name": {
@@ -224,9 +246,11 @@
         "French": "Débloque la recette du béton fibré.",
         "Japanese": "ファイバーコンクリートのレシピをアンロックする。"
       },
-      "IconName": "MasonryConcreteApplicationsTalentGroup",
-      "SkillID": "MasonrySkill",
-      "Level": 6
+      "ID": "MasonryConcreteApplicationsTalentGroup",
+      "Skill": "Masonry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Copper Enrichment: Smelting": {
       "Name": {
@@ -243,9 +267,11 @@
         "French": "Réduire le coût en ressources des recettes de lingots de cuivre diminue la pollution, mais augmente le coût des lingots d'or.",
         "Japanese": "銅インゴットのレシピの資源コストと汚染を削減するが、金インゴットのコストは増加する。"
       },
-      "IconName": "SmeltingCopperEnrichmentTalentGroup",
-      "SkillID": "SmeltingSkill",
-      "Level": 3
+      "ID": "SmeltingCopperEnrichmentTalentGroup",
+      "Skill": "Smelting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Crude Refining: Oil Drilling": {
       "Name": {
@@ -262,9 +288,11 @@
         "French": "Increasing craft speed of the Pumpjack.",
         "Japanese": "Increasing craft speed of the Pumpjack."
       },
-      "IconName": "OilDrillingCrudeRefiningTalentGroup",
-      "SkillID": "OilDrillingSkill",
-      "Level": 6
+      "ID": "OilDrillingCrudeRefiningTalentGroup",
+      "Skill": "Oil Drilling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Custom Made: Tailoring": {
       "Name": {
@@ -281,9 +309,11 @@
         "French": "Réduit le coût des ressources pour les vêtements et le mobilier, mais augmente les coûts de main-d'œuvre.",
         "Japanese": "衣類や家具の資源コストは削減されるが、労働コストは増加する。"
       },
-      "IconName": "TailoringCustomMadeTalentGroup",
-      "SkillID": "TailoringSkill",
-      "Level": 6
+      "ID": "TailoringCustomMadeTalentGroup",
+      "Skill": "Tailoring",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Deadeye: Hunting": {
       "Name": {
@@ -300,9 +330,11 @@
         "French": "Augmente les dégâts de tir à la tête de 50 %.",
         "Japanese": "ヘッドショットのダメージが50%増加します。"
       },
-      "IconName": "HuntingDeadeyeTalentGroup",
-      "SkillID": "HuntingSkill",
-      "Level": 6
+      "ID": "HuntingDeadeyeTalentGroup",
+      "Skill": "Hunting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Deeper Pockets: Self Improvement": {
       "Name": {
@@ -319,9 +351,11 @@
         "French": "Increase your inventory size by 10kg.",
         "Japanese": "Increase your inventory size by 10kg."
       },
-      "IconName": "SelfImprovementDeeperPocketsTalentGroup",
-      "SkillID": "SelfImprovementSkill",
-      "Level": 3
+      "ID": "SelfImprovementDeeperPocketsTalentGroup",
+      "Skill": "Self Improvement",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Double Speed: Glassworking": {
       "Name": {
@@ -338,9 +372,11 @@
         "French": "Fabrication plus rapide pour toutes les recettes de travail du verre et réduction du coût des blocs de verre.",
         "Japanese": "すべてのガラス加工レシピのクラフト速度が向上し、ガラスブロックのコストが削減された。"
       },
-      "IconName": "GlassworkingDoubleSpeedTalentGroup",
-      "SkillID": "GlassworkingSkill",
-      "Level": 3
+      "ID": "GlassworkingDoubleSpeedTalentGroup",
+      "Skill": "Glassworking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Dual Dexterity: Cooking": {
       "Name": {
@@ -357,9 +393,11 @@
         "French": "Augmentation de la vitesse de préparation des salades et réduction des coûts de main-d'œuvre pour toutes les recettes de cuisine",
         "Japanese": "サラダのクラフト速度が向上し、すべての料理レシピの労働コストが削減された"
       },
-      "IconName": "CookingDualDexterityTalentGroup",
-      "SkillID": "CookingSkill",
-      "Level": 3
+      "ID": "CookingDualDexterityTalentGroup",
+      "Skill": "Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Electrical Efficiency: Industry": {
       "Name": {
@@ -376,9 +414,11 @@
         "French": "Réduis la consommation d'énergie et les coûts de main-d'œuvre des tables d'artisanat industrielles.",
         "Japanese": "産業用作業台の電力消費量と人件費を削減する。"
       },
-      "IconName": "IndustryElectricalEfficiencyTalentGroup",
-      "SkillID": "IndustrySkill",
-      "Level": 6
+      "ID": "IndustryElectricalEfficiencyTalentGroup",
+      "Skill": "Industry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Empower: Blacksmith": {
       "Name": {
@@ -395,9 +435,11 @@
         "French": "Les haches et les pioches infligent +1 point de dégâts lorsqu'elles sont utilisées.",
         "Japanese": "斧とつるはしは、使用時にダメージが+1になる。"
       },
-      "IconName": "BlacksmithEmpowerTalentGroup",
-      "SkillID": "BlacksmithSkill",
-      "Level": 3
+      "ID": "BlacksmithEmpowerTalentGroup",
+      "Skill": "Blacksmith",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Enriched Soil: Fertilizers": {
       "Name": {
@@ -414,9 +456,11 @@
         "French": "Augmente la valeur nutritive des engrais lorsqu'ils sont appliqués.",
         "Japanese": "施用すると、肥料の栄養価を高める。"
       },
-      "IconName": "FertilizersEnrichedSoilTalentGroup",
-      "SkillID": "FertilizersSkill",
-      "Level": 6
+      "ID": "FertilizersEnrichedSoilTalentGroup",
+      "Skill": "Fertilizers",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Etching Techniques: Electronics": {
       "Name": {
@@ -433,9 +477,11 @@
         "French": "Débloque les recettes de gravure de circuits de base et avancées.",
         "Japanese": "基本および上級回路のエッチングレシピをアンロックする。"
       },
-      "IconName": "ElectronicsEtchingTechniquesTalentGroup",
-      "SkillID": "ElectronicsSkill",
-      "Level": 3
+      "ID": "ElectronicsEtchingTechniquesTalentGroup",
+      "Skill": "Electronics",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Extra Effort: Carpentry": {
       "Name": {
@@ -452,9 +498,11 @@
         "French": "Augmente la vitesse de fabrication des recettes de la compétence Menuiserie, mais augmente aussi les coûts de main-d'œuvre.",
         "Japanese": "クラフトスキルのレシピの製作速度が上がるが、人件費も増加する。"
       },
-      "IconName": "CarpentryExtraEffortTalentGroup",
-      "SkillID": "CarpentrySkill",
-      "Level": 6
+      "ID": "CarpentryExtraEffortTalentGroup",
+      "Skill": "Carpentry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Extra Pans: Cooking": {
       "Name": {
@@ -471,9 +519,11 @@
         "French": "Augmentation de la vitesse de fabrication de la viande mijotée et des bouillons, et réduction des coûts de main-d'œuvre pour toutes les recettes de cuisine.",
         "Japanese": "「煮込んだ肉」と「ストック」のクラフト速度が向上し、すべての調理レシピの労働コストが削減された。"
       },
-      "IconName": "CookingExtraPansTalentGroup",
-      "SkillID": "CookingSkill",
-      "Level": 3
+      "ID": "CookingExtraPansTalentGroup",
+      "Skill": "Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fast Food: Cooking": {
       "Name": {
@@ -490,9 +540,11 @@
         "French": "Coût des ressources réduit pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減した。"
       },
-      "IconName": "CookingFastFoodTalentGroup",
-      "SkillID": "CookingSkill",
-      "Level": 6
+      "ID": "CookingFastFoodTalentGroup",
+      "Skill": "Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Filled Meals: Baking": {
       "Name": {
@@ -509,9 +561,11 @@
         "French": "Le coût des tartes a été réduit, mais celui des pâtisseries a augmenté.",
         "Japanese": "パイの資源コストは引き下げられたが、ペイストリーのコストは引き上げられた。"
       },
-      "IconName": "BakingFilledMealsTalentGroup",
-      "SkillID": "BakingSkill",
-      "Level": 6
+      "ID": "BakingFilledMealsTalentGroup",
+      "Skill": "Baking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fine Carpentry: Carpentry": {
       "Name": {
@@ -528,9 +582,11 @@
         "French": "Réduis le coût des objets d'habitation et le coût de la main-d'œuvre pour les recettes de menuiserie.",
         "Japanese": "住宅アイテムのコストと、大工レシピの人件費を削減する。"
       },
-      "IconName": "CarpentryFineCarpentryTalentGroup",
-      "SkillID": "CarpentrySkill",
-      "Level": 3
+      "ID": "CarpentryFineCarpentryTalentGroup",
+      "Skill": "Carpentry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Flooring Fitter: Tailoring": {
       "Name": {
@@ -547,9 +603,11 @@
         "French": "Réduit le coût des ressources pour la fabrication de blocs.",
         "Japanese": "ブロックの加工にかかる資源コストを削減する。"
       },
-      "IconName": "TailoringFlooringFitterTalentGroup",
-      "SkillID": "TailoringSkill",
-      "Level": 6
+      "ID": "TailoringFlooringFitterTalentGroup",
+      "Skill": "Tailoring",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Flour It: Milling": {
       "Name": {
@@ -566,9 +624,11 @@
         "French": "Augmente la vitesse de fabrication et la réduction des ressources pour tous les types de farine.",
         "Japanese": "すべての小麦粉の種類について、クラフト速度を向上させ、資源消費量を削減する。"
       },
-      "IconName": "MillingFlourItTalentGroup",
-      "SkillID": "MillingSkill",
-      "Level": 3
+      "ID": "MillingFlourItTalentGroup",
+      "Skill": "Milling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Focused Workflow: Cutting Edge Cooking": {
       "Name": {
@@ -585,9 +645,11 @@
         "French": "Double la vitesse des établis associés lorsqu'il est seul.",
         "Japanese": "関連するテーブルが一つだけのとき、速度が二倍になります。"
       },
-      "IconName": "CuttingEdgeCookingFocusedWorkflowTalentGroup",
-      "SkillID": "CuttingEdgeCookingSkill",
-      "Level": 3
+      "ID": "CuttingEdgeCookingFocusedWorkflowTalentGroup",
+      "Skill": "Cutting Edge Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Focused Workflow: Painting": {
       "Name": {
@@ -604,9 +666,11 @@
         "French": "Double la vitesse des établis associés lorsqu'il est seul.",
         "Japanese": "関連するテーブルが一つだけのとき、速度が二倍になります。"
       },
-      "IconName": "PaintingFocusedWorkflowTalentGroup",
-      "SkillID": "PaintingSkill",
-      "Level": 3
+      "ID": "PaintingFocusedWorkflowTalentGroup",
+      "Skill": "Painting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Focused Workflow: Paper Milling": {
       "Name": {
@@ -623,9 +687,11 @@
         "French": "Double la vitesse des établis associés lorsqu'il est seul.",
         "Japanese": "関連するテーブルが一つだけのとき、速度が二倍になります。"
       },
-      "IconName": "PaperMillingFocusedWorkflowTalentGroup",
-      "SkillID": "PaperMillingSkill",
-      "Level": 3
+      "ID": "PaperMillingFocusedWorkflowTalentGroup",
+      "Skill": "Paper Milling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Framed: Glassworking": {
       "Name": {
@@ -642,9 +708,11 @@
         "French": "Réduction des ressources pour la recette du verre encadré.",
         "Japanese": "「枠付きガラス」のレシピにおける資源削減。"
       },
-      "IconName": "GlassworkingFramedTalentGroup",
-      "SkillID": "GlassworkingSkill",
-      "Level": 6
+      "ID": "GlassworkingFramedTalentGroup",
+      "Skill": "Glassworking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Frugal Workspace: Cutting Edge Cooking": {
       "Name": {
@@ -661,9 +729,11 @@
         "French": "Réduit l'exigence de niveau des tables associées de 0,2 (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "関連テーブルのティア要件を0.2%下げます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "CuttingEdgeCookingFrugalWorkspaceTalentGroup",
-      "SkillID": "CuttingEdgeCookingSkill",
-      "Level": 6
+      "ID": "CuttingEdgeCookingFrugalWorkspaceTalentGroup",
+      "Skill": "Cutting Edge Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Frugal Workspace: Painting": {
       "Name": {
@@ -680,9 +750,11 @@
         "French": "Réduit l'exigence de niveau des tables associées de 0,2 (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "関連テーブルのティア要件を0.2%下げます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "PaintingFrugalWorkspaceTalentGroup",
-      "SkillID": "PaintingSkill",
-      "Level": 6
+      "ID": "PaintingFrugalWorkspaceTalentGroup",
+      "Skill": "Painting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Frugal Workspace: Paper Milling": {
       "Name": {
@@ -699,9 +771,11 @@
         "French": "Réduit l'exigence de niveau des tables associées de 0,2 (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "関連テーブルのティア要件を0.2%下げます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "PaperMillingFrugalWorkspaceTalentGroup",
-      "SkillID": "PaperMillingSkill",
-      "Level": 6
+      "ID": "PaperMillingFrugalWorkspaceTalentGroup",
+      "Skill": "Paper Milling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fruit Centric: Advanced Baking": {
       "Name": {
@@ -718,9 +792,11 @@
         "French": "Réduis le coût des ressources pour les tartelettes aux fruits.",
         "Japanese": "フルーツタルトの資源コストを削減する。"
       },
-      "IconName": "AdvancedBakingFruitCentricTalentGroup",
-      "SkillID": "AdvancedBakingSkill",
-      "Level": 3
+      "ID": "AdvancedBakingFruitCentricTalentGroup",
+      "Skill": "Advanced Baking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fruiturist: Gathering": {
       "Name": {
@@ -737,9 +813,11 @@
         "French": "Augmente le rendement des fruits de +1 lorsqu'ils sont récoltés.",
         "Japanese": "収穫時に果物の収穫量が+1増加する。"
       },
-      "IconName": "GatheringFruituristTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 3
+      "ID": "GatheringFruituristTalentGroup",
+      "Skill": "Gathering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fuel Efficiency: Smelting": {
       "Name": {
@@ -756,9 +834,11 @@
         "French": "Réduit considérablement la consommation de combustible de la fonderie et du haut fourneau, mais augmente légèrement le temps de fabrication.",
         "Japanese": "ブルメリーと高炉の燃料消費量を大幅に削減するが、クラフト時間はわずかに長くなる。"
       },
-      "IconName": "SmeltingFuelEfficiencyTalentGroup",
-      "SkillID": "SmeltingSkill",
-      "Level": 6
+      "ID": "SmeltingFuelEfficiencyTalentGroup",
+      "Skill": "Smelting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fuel Focus: Oil Drilling": {
       "Name": {
@@ -775,9 +855,11 @@
         "French": "Réduit le coût de fabrication d'une recette spécifique, mais augmente la pollution.",
         "Japanese": "特定のレシピのクラフトコストは下がるが、汚染は増加する。"
       },
-      "IconName": "OilDrillingFuelFocusTalentGroup",
-      "SkillID": "OilDrillingSkill",
-      "Level": 6
+      "ID": "OilDrillingFuelFocusTalentGroup",
+      "Skill": "Oil Drilling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Fully Staffed: Advanced Cooking": {
       "Name": {
@@ -794,9 +876,11 @@
         "French": "Augmentation de la vitesse de fabrication de 30 % et réduction des ressources de 15 % pour les recettes de cuisine avancée.",
         "Japanese": "「上級クラフト」レシピについて、クラフト速度を30%向上させ、資源消費量を15%削減した。"
       },
-      "IconName": "AdvancedCookingFullyStaffedTalentGroup",
-      "SkillID": "AdvancedCookingSkill",
-      "Level": 3
+      "ID": "AdvancedCookingFullyStaffedTalentGroup",
+      "Skill": "Advanced Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Garden Tools: Blacksmith": {
       "Name": {
@@ -813,9 +897,11 @@
         "French": "Augmente l'intégrité et la durabilité des outils spécifiés, mais augmente aussi leur coût.",
         "Japanese": "指定したツールの耐久性と堅牢性を高めるが、そのコストも上昇する。"
       },
-      "IconName": "BlacksmithGardenToolsTalentGroup",
-      "SkillID": "BlacksmithSkill",
-      "Level": 6
+      "ID": "BlacksmithGardenToolsTalentGroup",
+      "Skill": "Blacksmith",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Gentle Seeding: Farming": {
       "Name": {
@@ -832,9 +918,11 @@
         "French": "Augmente la maturité de base d'une plante lorsqu'elle est semée.",
         "Japanese": "種を蒔くと、植物の成長度合いが上がる。"
       },
-      "IconName": "FarmingGentleSeedingTalentGroup",
-      "SkillID": "FarmingSkill",
-      "Level": 6
+      "ID": "FarmingGentleSeedingTalentGroup",
+      "Skill": "Farming",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Gilded Expert: Smelting": {
       "Name": {
@@ -851,9 +939,11 @@
         "French": "Réduire le coût en ressources des recettes de lingots d'or diminue la pollution, mais augmente le coût des lingots de cuivre.",
         "Japanese": "金塊のレシピの資源コストと汚染を削減するが、銅塊のコストは増加する。"
       },
-      "IconName": "SmeltingGildedExpertTalentGroup",
-      "SkillID": "SmeltingSkill",
-      "Level": 3
+      "ID": "SmeltingGildedExpertTalentGroup",
+      "Skill": "Smelting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Glutton: Self Improvement": {
       "Name": {
@@ -870,9 +960,11 @@
         "French": "Increase your stomach capacity count by 2000 calories.",
         "Japanese": "Increase your stomach capacity count by 2000 calories."
       },
-      "IconName": "SelfImprovementGluttonTalentGroup",
-      "SkillID": "SelfImprovementSkill",
-      "Level": 3
+      "ID": "SelfImprovementGluttonTalentGroup",
+      "Skill": "Self Improvement",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Grainiac: Gathering": {
       "Name": {
@@ -889,9 +981,11 @@
         "French": "Augmente le rendement des céréales de +1 lors de la récolte.",
         "Japanese": "収穫時に穀物の収穫量が+1増加する。"
       },
-      "IconName": "GatheringGrainiacTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 3
+      "ID": "GatheringGrainiacTalentGroup",
+      "Skill": "Gathering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Hardwood Expert: Composites": {
       "Name": {
@@ -908,9 +1002,11 @@
         "French": "Réduit le coût des ressources du bois composite de feuillus.",
         "Japanese": "ハードウッド複合材の資源コストを削減する。"
       },
-      "IconName": "CompositesHardwoodExpertTalentGroup",
-      "SkillID": "CompositesSkill",
-      "Level": 3
+      "ID": "CompositesHardwoodExpertTalentGroup",
+      "Skill": "Composites",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Heavy Equipment: Electronics": {
       "Name": {
@@ -927,9 +1023,11 @@
         "French": "Réduis le coût des ressources pour les tables d'artisanat.",
         "Japanese": "作業台の資源コストを削減する。"
       },
-      "IconName": "ElectronicsHeavyEquipmentTalentGroup",
-      "SkillID": "ElectronicsSkill",
-      "Level": 6
+      "ID": "ElectronicsHeavyEquipmentTalentGroup",
+      "Skill": "Electronics",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Homegrown: Baking": {
       "Name": {
@@ -946,9 +1044,11 @@
         "French": "Augmentation de la vitesse de fabrication des légumes cuits.",
         "Japanese": "焼き野菜のクラフト速度が向上した。"
       },
-      "IconName": "BakingHomegrownTalentGroup",
-      "SkillID": "BakingSkill",
-      "Level": 3
+      "ID": "BakingHomegrownTalentGroup",
+      "Skill": "Baking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Improved Assembly: Mechanics": {
       "Name": {
@@ -965,9 +1065,11 @@
         "French": "Réduit les coûts des recettes de la chaîne de montage par niveau de talent.",
         "Japanese": "タレントレベルごとに、組立ラインのレシピコストを削減する。"
       },
-      "IconName": "MechanicsImprovedAssemblyTalentGroup",
-      "SkillID": "MechanicsSkill",
-      "Level": 6
+      "ID": "MechanicsImprovedAssemblyTalentGroup",
+      "Skill": "Mechanics",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Improved Extraction: Oil Drilling": {
       "Name": {
@@ -984,9 +1086,11 @@
         "French": "Coût de main-d'œuvre réduit pour une recette spécifique.",
         "Japanese": "特定のレシピの労働コストが削減された。"
       },
-      "IconName": "OilDrillingImprovedExtractionTalentGroup",
-      "SkillID": "OilDrillingSkill",
-      "Level": 3
+      "ID": "OilDrillingImprovedExtractionTalentGroup",
+      "Skill": "Oil Drilling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Ina Bowl: Advanced Cooking": {
       "Name": {
@@ -1003,9 +1107,11 @@
         "French": "Augmente la vitesse de fabrication et réduis la consommation de ressources pour certaines recettes.",
         "Japanese": "特定のレシピについて、クラフト速度の向上と資源消費量の削減を行う。"
       },
-      "IconName": "AdvancedCookingInaBowlTalentGroup",
-      "SkillID": "AdvancedCookingSkill",
-      "Level": 6
+      "ID": "AdvancedCookingInaBowlTalentGroup",
+      "Skill": "Advanced Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Keeping It Fresh: Gathering": {
       "Name": {
@@ -1022,9 +1128,11 @@
         "French": "Augmente la fraîcheur de toutes les récoltes de 50 %.",
         "Japanese": "収穫したすべての作物の鮮度を50%向上させる。"
       },
-      "IconName": "GatheringKeepingItFreshTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 6
+      "ID": "GatheringKeepingItFreshTalentGroup",
+      "Skill": "Gathering",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lavish Workspace: Cutting Edge Cooking": {
       "Name": {
@@ -1041,9 +1149,11 @@
         "French": "Augmente l'exigence de niveau des tables de 0,2, mais réduit les ressources nécessaires de 5 %. (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "テーブルの階層要件を0.2増加させますが、必要なリソースは5%削減されます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "CuttingEdgeCookingLavishWorkspaceTalentGroup",
-      "SkillID": "CuttingEdgeCookingSkill",
-      "Level": 6
+      "ID": "CuttingEdgeCookingLavishWorkspaceTalentGroup",
+      "Skill": "Cutting Edge Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lavish Workspace: Painting": {
       "Name": {
@@ -1060,9 +1170,11 @@
         "French": "Augmente l'exigence de niveau des tables de 0,2, mais réduit les ressources nécessaires de 5 %. (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "テーブルの階層要件を0.2増加させますが、必要なリソースは5%削減されます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "PaintingLavishWorkspaceTalentGroup",
-      "SkillID": "PaintingSkill",
-      "Level": 6
+      "ID": "PaintingLavishWorkspaceTalentGroup",
+      "Skill": "Painting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lavish Workspace: Paper Milling": {
       "Name": {
@@ -1079,9 +1191,11 @@
         "French": "Augmente l'exigence de niveau des tables de 0,2, mais réduit les ressources nécessaires de 5 %. (S'applique uniquement aux tables de fabrication revendiquée)",
         "Japanese": "テーブルの階層要件を0.2増加させますが、必要なリソースは5%削減されます。(請求されたワークステーションにのみ適用)"
       },
-      "IconName": "PaperMillingLavishWorkspaceTalentGroup",
-      "SkillID": "PaperMillingSkill",
-      "Level": 6
+      "ID": "PaperMillingLavishWorkspaceTalentGroup",
+      "Skill": "Paper Milling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lessons Learned: Composites": {
       "Name": {
@@ -1098,9 +1212,11 @@
         "French": "Réduit tous les coûts de main-d'œuvre des recettes composites.",
         "Japanese": "すべての複合レシピの労働コストを削減する。"
       },
-      "IconName": "CompositesLessonsLearnedTalentGroup",
-      "SkillID": "CompositesSkill",
-      "Level": 6
+      "ID": "CompositesLessonsLearnedTalentGroup",
+      "Skill": "Composites",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Local Fauna: Butchery": {
       "Name": {
@@ -1117,9 +1233,11 @@
         "French": "Augmente la production de recettes spécifiques.",
         "Japanese": "特定のレシピの生産量を増やす。"
       },
-      "IconName": "ButcheryLocalFaunaTalentGroup",
-      "SkillID": "ButcherySkill",
-      "Level": 3
+      "ID": "ButcheryLocalFaunaTalentGroup",
+      "Skill": "Butchery",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Loggers Luck: Logging": {
       "Name": {
@@ -1136,9 +1254,11 @@
         "French": "Quand tu abats un arbre, il y a un risque que la souche soit détruite et que le tronc se fende immédiatement.",
         "Japanese": "木を伐採すると、切り株が破壊されたり、幹が即座に割れたりする可能性がある。"
       },
-      "IconName": "LoggingLoggersLuckTalentGroup",
-      "SkillID": "LoggingSkill",
-      "Level": 6
+      "ID": "LoggingLoggersLuckTalentGroup",
+      "Skill": "Logging",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lucky Break: Mining": {
       "Name": {
@@ -1155,9 +1275,11 @@
         "French": "Les roches minières n'ont plus la possibilité de créer de gros morceaux.",
         "Japanese": "岩を採掘する際に大きな破片に割れることがなくなります。"
       },
-      "IconName": "MiningLuckyBreakTalentGroup",
-      "SkillID": "MiningSkill",
-      "Level": 6
+      "ID": "MiningLuckyBreakTalentGroup",
+      "Skill": "Mining",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Lumber Investment: Carpentry": {
       "Name": {
@@ -1174,9 +1296,11 @@
         "French": "Réduis le coût des blocs de bois et le coût de la main-d'œuvre pour les recettes de menuiserie.",
         "Japanese": "木材ブロックのコストと、大工仕事のレシピにかかる人件費を削減する。"
       },
-      "IconName": "CarpentryLumberInvestmentTalentGroup",
-      "SkillID": "CarpentrySkill",
-      "Level": 3
+      "ID": "CarpentryLumberInvestmentTalentGroup",
+      "Skill": "Carpentry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Mass Production: Pottery": {
       "Name": {
@@ -1193,9 +1317,11 @@
         "French": "Fabrication plus rapide et coût de main-d'œuvre réduit au four.",
         "Japanese": "キルンでのクラフト速度が向上し、労働コストが削減された。"
       },
-      "IconName": "PotteryMassProductionTalentGroup",
-      "SkillID": "PotterySkill",
-      "Level": 3
+      "ID": "PotteryMassProductionTalentGroup",
+      "Skill": "Pottery",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Master Artist: Painting": {
       "Name": {
@@ -1212,9 +1338,11 @@
         "French": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars.",
         "Japanese": "Pictures you create generate more Culture wherever they are displayed. Costs 5 stars."
       },
-      "IconName": "PaintingMasterArtistTalentGroup",
-      "SkillID": "PaintingSkill",
-      "Level": 3
+      "ID": "PaintingMasterArtistTalentGroup",
+      "Skill": "Painting",
+      "Level": 3,
+      "StarCost": 5,
+      "MaxTalentLevel": 1
     },
     "Master Tracker: Hunting": {
       "Name": {
@@ -1231,9 +1359,11 @@
         "French": "Un maître traqueur est capable de suivre sa proie sur les plus hauts sommets ou à travers la jungle la plus dense.",
         "Japanese": "マスタートラッカーは獲物を最も高い山頂や最も密生したジャングルの中まで追跡することができます。"
       },
-      "IconName": "HuntingMasterTrackerTalentGroup",
-      "SkillID": "HuntingSkill",
-      "Level": 3
+      "ID": "HuntingMasterTrackerTalentGroup",
+      "Skill": "Hunting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Meat Specialist: Baking": {
       "Name": {
@@ -1250,9 +1380,11 @@
         "French": "Augmentation de la vitesse de fabrication des viandes cuites.",
         "Japanese": "焼き肉のクラフト速度が向上した。"
       },
-      "IconName": "BakingMeatSpecialistTalentGroup",
-      "SkillID": "BakingSkill",
-      "Level": 3
+      "ID": "BakingMeatSpecialistTalentGroup",
+      "Skill": "Baking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Metallurgy Improvements: Advanced Smelting": {
       "Name": {
@@ -1269,9 +1401,11 @@
         "French": "Réduction du coût en ressources des barres d'acier et réduction de la pollution des recettes de fusion avancée dans le haut fourneau.",
         "Japanese": "高炉における「鋼鉄棒」の資源コストを削減し、「高度な精錬」レシピの汚染を低減した。"
       },
-      "IconName": "AdvancedSmeltingMetallurgyImprovementsTalentGroup",
-      "SkillID": "AdvancedSmeltingSkill",
-      "Level": 3
+      "ID": "AdvancedSmeltingMetallurgyImprovementsTalentGroup",
+      "Skill": "Advanced Smelting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Mineral Baking: Masonry": {
       "Name": {
@@ -1288,9 +1422,11 @@
         "French": "Augmente la production de la recette de chaux vive.",
         "Japanese": "生石灰のレシピの生産量を増やす。"
       },
-      "IconName": "MasonryMineralBakingTalentGroup",
-      "SkillID": "MasonrySkill",
-      "Level": 6
+      "ID": "MasonryMineralBakingTalentGroup",
+      "Skill": "Masonry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Modern Materials: Tailoring": {
       "Name": {
@@ -1307,9 +1443,11 @@
         "French": "Réduit le coût des ressources pour le tissu en nylon.",
         "Japanese": "ナイロン生地の資源コストを削減する。"
       },
-      "IconName": "TailoringModernMaterialsTalentGroup",
-      "SkillID": "TailoringSkill",
-      "Level": 3
+      "ID": "TailoringModernMaterialsTalentGroup",
+      "Skill": "Tailoring",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Natural Fibers: Tailoring": {
       "Name": {
@@ -1326,9 +1464,11 @@
         "French": "Réduit le coût des ressources pour la laine et le coton.",
         "Japanese": "ウールと綿織物の資源コストを削減する。"
       },
-      "IconName": "TailoringNaturalFibersTalentGroup",
-      "SkillID": "TailoringSkill",
-      "Level": 3
+      "ID": "TailoringNaturalFibersTalentGroup",
+      "Skill": "Tailoring",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Natural Gatherer: Gathering": {
       "Name": {
@@ -1345,9 +1485,11 @@
         "French": "Augmente le rendement de toutes les récoltes de +1.",
         "Japanese": "作物の収穫量をすべて+1増加させる。"
       },
-      "IconName": "GatheringNaturalGathererTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 6
+      "ID": "GatheringNaturalGathererTalentGroup",
+      "Skill": "Gathering",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Natural Selection: Farming": {
       "Name": {
@@ -1364,9 +1506,11 @@
         "French": "Réduis le coût de main-d'œuvre pour les recettes agricoles.",
         "Japanese": "農業レシピの労働コストを削減する。"
       },
-      "IconName": "FarmingNaturalSelectionTalentGroup",
-      "SkillID": "FarmingSkill",
-      "Level": 6
+      "ID": "FarmingNaturalSelectionTalentGroup",
+      "Skill": "Farming",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Nature Adventurer: Self Improvement": {
       "Name": {
@@ -1383,9 +1527,11 @@
         "French": "Plants and fallen tree debris slow you down half as much.",
         "Japanese": "Plants and fallen tree debris slow you down half as much."
       },
-      "IconName": "SelfImprovementNatureAdventurerTalentGroup",
-      "SkillID": "SelfImprovementSkill",
-      "Level": 6
+      "ID": "SelfImprovementNatureAdventurerTalentGroup",
+      "Skill": "Self Improvement",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Nutrient Deficient: Farming": {
       "Name": {
@@ -1402,9 +1548,11 @@
         "French": "Réduis le coût des ressources pour les recettes d'agriculture.",
         "Japanese": "農業レシピの資源コストを削減する。"
       },
-      "IconName": "FarmingNutrientDeficientTalentGroup",
-      "SkillID": "FarmingSkill",
-      "Level": 3
+      "ID": "FarmingNutrientDeficientTalentGroup",
+      "Skill": "Farming",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Omega3: Milling": {
       "Name": {
@@ -1421,9 +1569,11 @@
         "French": "Débloque la recette de l'huile de poisson.",
         "Japanese": "魚油のレシピをアンロックする。"
       },
-      "IconName": "MillingOmega3TalentGroup",
-      "SkillID": "MillingSkill",
-      "Level": 6
+      "ID": "MillingOmega3TalentGroup",
+      "Skill": "Milling",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Organic Abundance: Fertilizers": {
       "Name": {
@@ -1440,9 +1590,11 @@
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
       },
-      "IconName": "FertilizersOrganicAbundanceTalentGroup",
-      "SkillID": "FertilizersSkill",
-      "Level": 3
+      "ID": "FertilizersOrganicAbundanceTalentGroup",
+      "Skill": "Fertilizers",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Overdrive: Composites": {
       "Name": {
@@ -1459,9 +1611,11 @@
         "French": "Augmente la vitesse de fabrication de la table de menuiserie avancée, mais augmente aussi la consommation d'énergie.",
         "Japanese": "「高度な大工作業台」のクラフト速度を上げるが、消費電力も増加する。"
       },
-      "IconName": "CompositesOverdriveTalentGroup",
-      "SkillID": "CompositesSkill",
-      "Level": 6
+      "ID": "CompositesOverdriveTalentGroup",
+      "Skill": "Composites",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Parallel Processing: Cutting Edge Cooking": {
       "Name": {
@@ -1478,9 +1632,11 @@
         "French": "Augmente de 20 % la vitesse de fabrication des établis identiques lorsqu'elles partagent une pièce.",
         "Japanese": "同じテーブルがルームを共有する場合、クラフト速度が20％向上。"
       },
-      "IconName": "CuttingEdgeCookingParallelProcessingTalentGroup",
-      "SkillID": "CuttingEdgeCookingSkill",
-      "Level": 3
+      "ID": "CuttingEdgeCookingParallelProcessingTalentGroup",
+      "Skill": "Cutting Edge Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Parallel Processing: Painting": {
       "Name": {
@@ -1497,9 +1653,11 @@
         "French": "Augmente de 20 % la vitesse de fabrication des établis identiques lorsqu'elles partagent une pièce.",
         "Japanese": "同じテーブルがルームを共有する場合、クラフト速度が20％向上。"
       },
-      "IconName": "PaintingParallelProcessingTalentGroup",
-      "SkillID": "PaintingSkill",
-      "Level": 3
+      "ID": "PaintingParallelProcessingTalentGroup",
+      "Skill": "Painting",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Parallel Processing: Paper Milling": {
       "Name": {
@@ -1516,9 +1674,11 @@
         "French": "Augmente de 20 % la vitesse de fabrication des établis identiques lorsqu'elles partagent une pièce.",
         "Japanese": "同じテーブルがルームを共有する場合、クラフト速度が20％向上。"
       },
-      "IconName": "PaperMillingParallelProcessingTalentGroup",
-      "SkillID": "PaperMillingSkill",
-      "Level": 3
+      "ID": "PaperMillingParallelProcessingTalentGroup",
+      "Skill": "Paper Milling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Partial Quality: Mechanics": {
       "Name": {
@@ -1535,9 +1695,11 @@
         "French": "La durabilité et l'intégrité des pièces augmentent en fonction du niveau de talent.",
         "Japanese": "タレントレベルごとに、パーツの耐久性と完全性が向上する。"
       },
-      "IconName": "MechanicsPartialQualityTalentGroup",
-      "SkillID": "MechanicsSkill",
-      "Level": 6
+      "ID": "MechanicsPartialQualityTalentGroup",
+      "Skill": "Mechanics",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Planking: Shipwright": {
       "Name": {
@@ -1554,9 +1716,11 @@
         "French": "Réduit le coût en ressources des planches de coque par niveau de talent.",
         "Japanese": "才能レベルごとに、船体用板材の資源コストを削減する。"
       },
-      "IconName": "ShipwrightPlankingTalentGroup",
-      "SkillID": "ShipwrightSkill",
-      "Level": 3
+      "ID": "ShipwrightPlankingTalentGroup",
+      "Skill": "Shipwright",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Poor Cuts: Butchery": {
       "Name": {
@@ -1573,9 +1737,11 @@
         "French": "Réduction du coût en ressources de certaines recettes et augmentation de la vitesse de fabrication des recettes de boucherie.",
         "Japanese": "特定のレシピの資源コストを削減し、肉加工レシピのクラフト速度を向上させた。"
       },
-      "IconName": "ButcheryPoorCutsTalentGroup",
-      "SkillID": "ButcherySkill",
-      "Level": 6
+      "ID": "ButcheryPoorCutsTalentGroup",
+      "Skill": "Butchery",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Porcelain Polish: Pottery": {
       "Name": {
@@ -1592,9 +1758,11 @@
         "French": "Réduction du coût des ressources pour le mobilier de maison en poterie.",
         "Japanese": "陶器工房における住宅用家具の資源コストを削減した。"
       },
-      "IconName": "PotteryPorcelainPolishTalentGroup",
-      "SkillID": "PotterySkill",
-      "Level": 6
+      "ID": "PotteryPorcelainPolishTalentGroup",
+      "Skill": "Pottery",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Power Shot: Hunting": {
       "Name": {
@@ -1611,9 +1779,11 @@
         "French": "Augmente le niveau de dégâts des arcs",
         "Japanese": "弓のダメージレベルが上がる"
       },
-      "IconName": "HuntingPowerShotTalentGroup",
-      "SkillID": "HuntingSkill",
-      "Level": 6
+      "ID": "HuntingPowerShotTalentGroup",
+      "Skill": "Hunting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Precision Tooling: Industry": {
       "Name": {
@@ -1630,9 +1800,11 @@
         "French": "Réduit le coût en ressources des pièces de la compétence Industrie et augmente leur durabilité et leur intégrité par niveau de talent.",
         "Japanese": "産業スキルの部品の資源コストを削減し、才能レベルごとに耐久性と完全性を向上させる。"
       },
-      "IconName": "IndustryPrecisionToolingTalentGroup",
-      "SkillID": "IndustrySkill",
-      "Level": 3
+      "ID": "IndustryPrecisionToolingTalentGroup",
+      "Skill": "Industry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Press On: Mechanics": {
       "Name": {
@@ -1649,9 +1821,11 @@
         "French": "Réduit le coût de fabrication de la presse à vis et augmente sa vitesse de fabrication.",
         "Japanese": "スクリュープレスのクラフトレシピコストを削減し、製作速度を向上させる。"
       },
-      "IconName": "MechanicsPressOnTalentGroup",
-      "SkillID": "MechanicsSkill",
-      "Level": 3
+      "ID": "MechanicsPressOnTalentGroup",
+      "Skill": "Mechanics",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Prime Examples: Butchery": {
       "Name": {
@@ -1668,9 +1842,11 @@
         "French": "Réduction du coût en ressources de la recette spécifique et augmentation de la vitesse de fabrication des recettes de boucherie.",
         "Japanese": "特定のレシピの資源コストを削減し、肉加工レシピのクラフト速度を向上させる。"
       },
-      "IconName": "ButcheryPrimeExamplesTalentGroup",
-      "SkillID": "ButcherySkill",
-      "Level": 6
+      "ID": "ButcheryPrimeExamplesTalentGroup",
+      "Skill": "Butchery",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Quality Control: Carpentry": {
       "Name": {
@@ -1687,9 +1863,11 @@
         "French": "Réduis la consommation d'énergie et le coût de main-d'œuvre des recettes de la scierie.",
         "Japanese": "製材所のレシピにおける電力消費量と人件費を削減する。"
       },
-      "IconName": "CarpentryQualityControlTalentGroup",
-      "SkillID": "CarpentrySkill",
-      "Level": 6
+      "ID": "CarpentryQualityControlTalentGroup",
+      "Skill": "Carpentry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Quality Of Life: Electronics": {
       "Name": {
@@ -1706,9 +1884,11 @@
         "French": "Réduis le coût des éléments de logement.",
         "Japanese": "住宅アイテムのコストを削減する。"
       },
-      "IconName": "ElectronicsQualityOfLifeTalentGroup",
-      "SkillID": "ElectronicsSkill",
-      "Level": 6
+      "ID": "ElectronicsQualityOfLifeTalentGroup",
+      "Skill": "Electronics",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Quality Repairs: Blacksmith": {
       "Name": {
@@ -1725,9 +1905,11 @@
         "French": "Réduit la perte d'intégrité lors des réparations.",
         "Japanese": "修理時の耐久度減少を抑える。"
       },
-      "IconName": "BlacksmithQualityRepairsTalentGroup",
-      "SkillID": "BlacksmithSkill",
-      "Level": 3
+      "ID": "BlacksmithQualityRepairsTalentGroup",
+      "Skill": "Blacksmith",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Refined Processing: Fertilizers": {
       "Name": {
@@ -1744,9 +1926,11 @@
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
       },
-      "IconName": "FertilizersRefinedProcessingTalentGroup",
-      "SkillID": "FertilizersSkill",
-      "Level": 3
+      "ID": "FertilizersRefinedProcessingTalentGroup",
+      "Skill": "Fertilizers",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Refined Scraps: Advanced Cooking": {
       "Name": {
@@ -1763,9 +1947,11 @@
         "French": "Débloque la recette de raffinage du suif.",
         "Japanese": "獣脂の精製レシピをアンロックする。"
       },
-      "IconName": "AdvancedCookingRefinedScrapsTalentGroup",
-      "SkillID": "AdvancedCookingSkill",
-      "Level": 3
+      "ID": "AdvancedCookingRefinedScrapsTalentGroup",
+      "Skill": "Advanced Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Riveter: Shipwright": {
       "Name": {
@@ -1782,9 +1968,11 @@
         "French": "Réduis le coût en ressources des plaques de coque par niveau de talent.",
         "Japanese": "タレントレベルごとに、船体シートの資源コストを削減する。"
       },
-      "IconName": "ShipwrightRiveterTalentGroup",
-      "SkillID": "ShipwrightSkill",
-      "Level": 3
+      "ID": "ShipwrightRiveterTalentGroup",
+      "Skill": "Shipwright",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Roadworks: Basic Engineering": {
       "Name": {
@@ -1801,9 +1989,11 @@
         "French": "Débloque la recette d'asphalte.",
         "Japanese": "アスファルトのレシピをアンロックする。"
       },
-      "IconName": "BasicEngineeringRoadworksTalentGroup",
-      "SkillID": "BasicEngineeringSkill",
-      "Level": 6
+      "ID": "BasicEngineeringRoadworksTalentGroup",
+      "Skill": "Basic Engineering",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Roasted: Campfire Cooking": {
       "Name": {
@@ -1820,9 +2010,11 @@
         "French": "Débloque la recette « Rôti au feu de camp ».",
         "Japanese": "焚火ローストのレシピをアンロック"
       },
-      "IconName": "CampfireCookingRoastedTalentGroup",
-      "SkillID": "CampfireCookingSkill",
-      "Level": 3
+      "ID": "CampfireCookingRoastedTalentGroup",
+      "Skill": "Campfire Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Robotic Assistance: Industry": {
       "Name": {
@@ -1839,9 +2031,11 @@
         "French": "Réduction du coût en ressources des recettes industrielles dans la chaîne de montage robotisée et augmentation de la vitesse de fabrication au prix d'une consommation d'énergie considérablement accrue.",
         "Japanese": "ロボット組立ラインにおける産業レシピの資源コストを削減し、電力消費量を大幅に増加させる代わりにクラフト速度を向上させた。"
       },
-      "IconName": "IndustryRoboticAssistanceTalentGroup",
-      "SkillID": "IndustrySkill",
-      "Level": 6
+      "ID": "IndustryRoboticAssistanceTalentGroup",
+      "Skill": "Industry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Rolling Steel: Advanced Smelting": {
       "Name": {
@@ -1858,9 +2052,11 @@
         "French": "Réduis les coûts de certaines recettes et diminue les coûts de main-d'œuvre pour les recettes de fusion avancée.",
         "Japanese": "特定のレシピのコストを削減し、高度な精錬レシピの人件費を削減する。"
       },
-      "IconName": "AdvancedSmeltingRollingSteelTalentGroup",
-      "SkillID": "AdvancedSmeltingSkill",
-      "Level": 6
+      "ID": "AdvancedSmeltingRollingSteelTalentGroup",
+      "Skill": "Advanced Smelting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Rope Maker: Shipwright": {
       "Name": {
@@ -1877,9 +2073,11 @@
         "French": "Augmente la vitesse de fabrication et réduit les coûts de main-d'œuvre liés aux cordes.",
         "Japanese": "クラフト速度を向上させ、ロープの労働コストを削減する。"
       },
-      "IconName": "ShipwrightRopeMakerTalentGroup",
-      "SkillID": "ShipwrightSkill",
-      "Level": 6
+      "ID": "ShipwrightRopeMakerTalentGroup",
+      "Skill": "Shipwright",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Scrapped But Useful: Butchery": {
       "Name": {
@@ -1896,9 +2094,11 @@
         "French": "Augmente le rendement de la recette « Viande de rebut ».",
         "Japanese": "「スクラップミート」のレシピの収量を増やす。"
       },
-      "IconName": "ButcheryScrappedButUsefulTalentGroup",
-      "SkillID": "ButcherySkill",
-      "Level": 3
+      "ID": "ButcheryScrappedButUsefulTalentGroup",
+      "Skill": "Butchery",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Seed Sorting: Farming": {
       "Name": {
@@ -1915,9 +2115,11 @@
         "French": "Augmente la vitesse de fabrication des recettes d'agriculture.",
         "Japanese": "農業のクラフト速度を上げる。"
       },
-      "IconName": "FarmingSeedSortingTalentGroup",
-      "SkillID": "FarmingSkill",
-      "Level": 3
+      "ID": "FarmingSeedSortingTalentGroup",
+      "Skill": "Farming",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Set In Stone: Masonry": {
       "Name": {
@@ -1934,9 +2136,11 @@
         "French": "Réduis le coût des blocs.",
         "Japanese": "ブロックのコストを削減する。"
       },
-      "IconName": "MasonrySetInStoneTalentGroup",
-      "SkillID": "MasonrySkill",
-      "Level": 3
+      "ID": "MasonrySetInStoneTalentGroup",
+      "Skill": "Masonry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Shaping Up: Mechanics": {
       "Name": {
@@ -1953,9 +2157,11 @@
         "French": "Réduit le coût des recettes du Shaper et augmente sa vitesse de fabrication.",
         "Japanese": "シェイパーのクラフトレシピコストを削減し、クラフト速度を向上させる。"
       },
-      "IconName": "MechanicsShapingUpTalentGroup",
-      "SkillID": "MechanicsSkill",
-      "Level": 3
+      "ID": "MechanicsShapingUpTalentGroup",
+      "Skill": "Mechanics",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Sharp Blades: Advanced Masonry": {
       "Name": {
@@ -1972,9 +2178,11 @@
         "French": "Augmente la consommation d'énergie et la vitesse de fabrication à la table de maçonnerie avancée.",
         "Japanese": "高度な石工台で、電力使用量とクラフト速度を向上させることができる。"
       },
-      "IconName": "AdvancedMasonrySharpBladesTalentGroup",
-      "SkillID": "AdvancedMasonrySkill",
-      "Level": 6
+      "ID": "AdvancedMasonrySharpBladesTalentGroup",
+      "Skill": "Advanced Masonry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Ship Builder: Shipwright": {
       "Name": {
@@ -1991,9 +2199,11 @@
         "French": "Augmente la vitesse de fabrication et réduit les coûts de main-d'œuvre des véhicules du charpentier de marine.",
         "Japanese": "造船技術で作る乗り物の製作速度を上げ、労働コストを減らします。"
       },
-      "IconName": "ShipwrightShipBuilderTalentGroup",
-      "SkillID": "ShipwrightSkill",
-      "Level": 6
+      "ID": "ShipwrightShipBuilderTalentGroup",
+      "Skill": "Shipwright",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Side Dishes: Campfire Cooking": {
       "Name": {
@@ -2010,9 +2220,11 @@
         "French": "Réduit le coût des ressources pour les salades.",
         "Japanese": "サラダの資源コストを削減する。"
       },
-      "IconName": "CampfireCookingSideDishesTalentGroup",
-      "SkillID": "CampfireCookingSkill",
-      "Level": 6
+      "ID": "CampfireCookingSideDishesTalentGroup",
+      "Skill": "Campfire Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Skilled Labor: Industry": {
       "Name": {
@@ -2029,9 +2241,11 @@
         "French": "Réduit le coût des ressources pour les véhicules, mais augmente les coûts de main-d'œuvre.",
         "Japanese": "車両の資源コストを削減するが、労働コストは増加する。"
       },
-      "IconName": "IndustrySkilledLaborTalentGroup",
-      "SkillID": "IndustrySkill",
-      "Level": 3
+      "ID": "IndustrySkilledLaborTalentGroup",
+      "Skill": "Industry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Smooth Stone: Advanced Masonry": {
       "Name": {
@@ -2048,9 +2262,11 @@
         "French": "Réduis le coût de main-d'œuvre de toutes les recettes de maçonnerie avancée.",
         "Japanese": "すべての高度な石工レシピの労働コストを削減する。"
       },
-      "IconName": "AdvancedMasonrySmoothStoneTalentGroup",
-      "SkillID": "AdvancedMasonrySkill",
-      "Level": 6
+      "ID": "AdvancedMasonrySmoothStoneTalentGroup",
+      "Skill": "Advanced Masonry",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Softwood Expert: Composites": {
       "Name": {
@@ -2067,9 +2283,11 @@
         "French": "Réduit le coût des ressources du bois d'œuvre composite de résineux.",
         "Japanese": "軟質木材複合材の資源コストを削減する。"
       },
-      "IconName": "CompositesSoftwoodExpertTalentGroup",
-      "SkillID": "CompositesSkill",
-      "Level": 3
+      "ID": "CompositesSoftwoodExpertTalentGroup",
+      "Skill": "Composites",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Something Fishy: Cooking": {
       "Name": {
@@ -2086,9 +2304,11 @@
         "French": "Coût des ressources réduit pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減した。"
       },
-      "IconName": "CookingSomethingFishyTalentGroup",
-      "SkillID": "CookingSkill",
-      "Level": 6
+      "ID": "CookingSomethingFishyTalentGroup",
+      "Skill": "Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Steel Processing: Advanced Smelting": {
       "Name": {
@@ -2105,9 +2325,11 @@
         "French": "Augmente la vitesse de fabrication de toutes les recettes de fusion avancée et réduit le coût en ressources de certaines recettes.",
         "Japanese": "すべての「高度な精錬」レシピのクラフト速度を向上させ、特定のレシピの資源コストを削減する。"
       },
-      "IconName": "AdvancedSmeltingSteelProcessingTalentGroup",
-      "SkillID": "AdvancedSmeltingSkill",
-      "Level": 6
+      "ID": "AdvancedSmeltingSteelProcessingTalentGroup",
+      "Skill": "Advanced Smelting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Stew Gourmand: Campfire Cooking": {
       "Name": {
@@ -2124,9 +2346,11 @@
         "French": "Réduit le coût en ressources des ragoûts.",
         "Japanese": "シチューの資源コストを削減する。"
       },
-      "IconName": "CampfireCookingStewGourmandTalentGroup",
-      "SkillID": "CampfireCookingSkill",
-      "Level": 6
+      "ID": "CampfireCookingStewGourmandTalentGroup",
+      "Skill": "Campfire Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Stone Mixing: Masonry": {
       "Name": {
@@ -2143,9 +2367,11 @@
         "French": "Coût réduit et vitesse de fabrication augmentée pour certaines recettes.",
         "Japanese": "特定のレシピについて、コストが削減され、クラフト速度が向上した。"
       },
-      "IconName": "MasonryStoneMixingTalentGroup",
-      "SkillID": "MasonrySkill",
-      "Level": 3
+      "ID": "MasonryStoneMixingTalentGroup",
+      "Skill": "Masonry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Stuff It: Advanced Baking": {
       "Name": {
@@ -2162,9 +2388,11 @@
         "French": "Augmente la vitesse de fabrication pour certaines recettes.",
         "Japanese": "特定のレシピのクラフト速度が上がる。"
       },
-      "IconName": "AdvancedBakingStuffItTalentGroup",
-      "SkillID": "AdvancedBakingSkill",
-      "Level": 6
+      "ID": "AdvancedBakingStuffItTalentGroup",
+      "Skill": "Advanced Baking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Sub Terrain Sourced: Advanced Masonry": {
       "Name": {
@@ -2181,9 +2409,11 @@
         "French": "Réduis le coût des ressources pour certaines recettes.",
         "Japanese": "特定のレシピの資源コストを削減する。"
       },
-      "IconName": "AdvancedMasonrySubTerrainSourcedTalentGroup",
-      "SkillID": "AdvancedMasonrySkill",
-      "Level": 3
+      "ID": "AdvancedMasonrySubTerrainSourcedTalentGroup",
+      "Skill": "Advanced Masonry",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Sugar Rush: Milling": {
       "Name": {
@@ -2200,9 +2430,11 @@
         "French": "Augmente la vitesse de fabrication et la réduction des ressources des recettes de sucre.",
         "Japanese": "クラフト速度の向上と、シュガーのレシピにおける資源消費量の削減。"
       },
-      "IconName": "MillingSugarRushTalentGroup",
-      "SkillID": "MillingSkill",
-      "Level": 3
+      "ID": "MillingSugarRushTalentGroup",
+      "Skill": "Milling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 5
     },
     "Sustainable Practice: Fertilizers": {
       "Name": {
@@ -2219,9 +2451,11 @@
         "French": "Augmente le rendement de +1 en fabriquant des engrais",
         "Japanese": "肥料をクラフトすることで収穫量を+1増加させる"
       },
-      "IconName": "FertilizersSustainablePracticeTalentGroup",
-      "SkillID": "FertilizersSkill",
-      "Level": 6
+      "ID": "FertilizersSustainablePracticeTalentGroup",
+      "Skill": "Fertilizers",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Sweeping Hands: Mining": {
       "Name": {
@@ -2238,9 +2472,11 @@
         "French": "Ramasser des roches permet également de ramasser des roches similaires autour.",
         "Japanese": "岩を拾うときにエリアにある同種の岩も一緒に拾おうとします。"
       },
-      "IconName": "MiningSweepingHandsTalentGroup",
-      "SkillID": "MiningSkill",
-      "Level": 6
+      "ID": "MiningSweepingHandsTalentGroup",
+      "Skill": "Mining",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Sweet: Baking": {
       "Name": {
@@ -2257,9 +2493,11 @@
         "French": "Le coût des pâtisseries a été réduit, mais celui des tartes a augmenté.",
         "Japanese": "ペイストリーの資源コストは下げたが、パイのコストは上げた。"
       },
-      "IconName": "BakingSweetTalentGroup",
-      "SkillID": "BakingSkill",
-      "Level": 6
+      "ID": "BakingSweetTalentGroup",
+      "Skill": "Baking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Synthetic Materials: Oil Drilling": {
       "Name": {
@@ -2276,9 +2514,11 @@
         "French": "Coût de fabrication réduit pour certaines recettes spécifiques.",
         "Japanese": "特定のレシピのクラフトコストを削減した。"
       },
-      "IconName": "OilDrillingSyntheticMaterialsTalentGroup",
-      "SkillID": "OilDrillingSkill",
-      "Level": 3
+      "ID": "OilDrillingSyntheticMaterialsTalentGroup",
+      "Skill": "Oil Drilling",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tailored Glass: Glassworking": {
       "Name": {
@@ -2295,9 +2535,11 @@
         "French": "Réduction des ressources pour la recette de la fibre de verre.",
         "Japanese": "グラスファイバーのレシピにおける資源削減。"
       },
-      "IconName": "GlassworkingTailoredGlassTalentGroup",
-      "SkillID": "GlassworkingSkill",
-      "Level": 6
+      "ID": "GlassworkingTailoredGlassTalentGroup",
+      "Skill": "Glassworking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Take Out: Advanced Cooking": {
       "Name": {
@@ -2314,9 +2556,11 @@
         "French": "Augmente la vitesse de fabrication et réduis la consommation de ressources pour certaines recettes.",
         "Japanese": "特定のレシピについて、クラフト速度の向上と資源消費量の削減を行う。"
       },
-      "IconName": "AdvancedCookingTakeOutTalentGroup",
-      "SkillID": "AdvancedCookingSkill",
-      "Level": 6
+      "ID": "AdvancedCookingTakeOutTalentGroup",
+      "Skill": "Advanced Cooking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Efficiency: Gathering": {
       "Name": {
@@ -2333,9 +2577,11 @@
         "French": "Réduit de 20 % le coût calorique de l'utilisation d'un outil de ce type.",
         "Japanese": "関連した道具を使用するときの消費カロリーが20%下がります。"
       },
-      "IconName": "GatheringToolEfficiencyTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 3
+      "ID": "GatheringToolEfficiencyTalentGroup",
+      "Skill": "Gathering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Efficiency: Logging": {
       "Name": {
@@ -2352,9 +2598,11 @@
         "French": "Réduit de 20 % le coût calorique de l'utilisation d'un outil de ce type.",
         "Japanese": "関連した道具を使用するときの消費カロリーが20%下がります。"
       },
-      "IconName": "LoggingToolEfficiencyTalentGroup",
-      "SkillID": "LoggingSkill",
-      "Level": 3
+      "ID": "LoggingToolEfficiencyTalentGroup",
+      "Skill": "Logging",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Efficiency: Mining": {
       "Name": {
@@ -2371,9 +2619,11 @@
         "French": "Réduit de 20 % le coût calorique de l'utilisation d'un outil de ce type.",
         "Japanese": "関連した道具を使用するときの消費カロリーが20%下がります。"
       },
-      "IconName": "MiningToolEfficiencyTalentGroup",
-      "SkillID": "MiningSkill",
-      "Level": 3
+      "ID": "MiningToolEfficiencyTalentGroup",
+      "Skill": "Mining",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Strength: Gathering": {
       "Name": {
@@ -2390,9 +2640,11 @@
         "French": "Augmente de 1 les dégâts des outils associés.",
         "Japanese": "関連道具のダメージを1増加させます。"
       },
-      "IconName": "GatheringToolStrengthTalentGroup",
-      "SkillID": "GatheringSkill",
-      "Level": 3
+      "ID": "GatheringToolStrengthTalentGroup",
+      "Skill": "Gathering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Strength: Logging": {
       "Name": {
@@ -2409,9 +2661,11 @@
         "French": "Augmente de 1 les dégâts des outils associés.",
         "Japanese": "関連道具のダメージを1増加させます。"
       },
-      "IconName": "LoggingToolStrengthTalentGroup",
-      "SkillID": "LoggingSkill",
-      "Level": 3
+      "ID": "LoggingToolStrengthTalentGroup",
+      "Skill": "Logging",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Tool Strength: Mining": {
       "Name": {
@@ -2428,9 +2682,11 @@
         "French": "Augmente de 1 les dégâts des outils associés.",
         "Japanese": "関連道具のダメージを1増加させます。"
       },
-      "IconName": "MiningToolStrengthTalentGroup",
-      "SkillID": "MiningSkill",
-      "Level": 3
+      "ID": "MiningToolStrengthTalentGroup",
+      "Skill": "Mining",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Top It: Advanced Baking": {
       "Name": {
@@ -2447,9 +2703,11 @@
         "French": "Augmente la vitesse de fabrication pour certaines recettes.",
         "Japanese": "特定のレシピのクラフト速度が上がる。"
       },
-      "IconName": "AdvancedBakingTopItTalentGroup",
-      "SkillID": "AdvancedBakingSkill",
-      "Level": 6
+      "ID": "AdvancedBakingTopItTalentGroup",
+      "Skill": "Advanced Baking",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Urban Traveller: Self Improvement": {
       "Name": {
@@ -2466,9 +2724,11 @@
         "French": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt.",
         "Japanese": "Roads speed you up on foot: +2.5% on dirt, +5% on stone and +10% on asphalt."
       },
-      "IconName": "SelfImprovementUrbanTravellerTalentGroup",
-      "SkillID": "SelfImprovementSkill",
-      "Level": 6
+      "ID": "SelfImprovementUrbanTravellerTalentGroup",
+      "Skill": "Self Improvement",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Using Bellows: Smelting": {
       "Name": {
@@ -2485,9 +2745,11 @@
         "French": "Augmente la vitesse de fabrication de la fonderie et du haut fourneau, mais augmente aussi la pollution.",
         "Japanese": "ブルメリーと高炉のクラフト速度を上げるが、汚染も増加する。"
       },
-      "IconName": "SmeltingUsingBellowsTalentGroup",
-      "SkillID": "SmeltingSkill",
-      "Level": 6
+      "ID": "SmeltingUsingBellowsTalentGroup",
+      "Skill": "Smelting",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Using Scraps: Campfire Cooking": {
       "Name": {
@@ -2504,9 +2766,11 @@
         "French": "Débloque la recette « Render Fat ».",
         "Japanese": "「Render Fat」のレシピをアンロックする。"
       },
-      "IconName": "CampfireCookingUsingScrapsTalentGroup",
-      "SkillID": "CampfireCookingSkill",
-      "Level": 3
+      "ID": "CampfireCookingUsingScrapsTalentGroup",
+      "Skill": "Campfire Cooking",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Vehicular Design: Basic Engineering": {
       "Name": {
@@ -2523,9 +2787,11 @@
         "French": "Réduis le coût des ressources pour les recettes de roues.",
         "Japanese": "車輪のレシピにかかる資源コストを削減する。"
       },
-      "IconName": "BasicEngineeringVehicularDesignTalentGroup",
-      "SkillID": "BasicEngineeringSkill",
-      "Level": 6
+      "ID": "BasicEngineeringVehicularDesignTalentGroup",
+      "Skill": "Basic Engineering",
+      "Level": 6,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Wateristheway: Basic Engineering": {
       "Name": {
@@ -2542,9 +2808,11 @@
         "French": "Réduit le coût en ressources des roues hydrauliques et augmente la vitesse de fabrication.",
         "Japanese": "水車の資源コストを削減し、クラフト速度を向上させる。"
       },
-      "IconName": "BasicEngineeringWateristhewayTalentGroup",
-      "SkillID": "BasicEngineeringSkill",
-      "Level": 3
+      "ID": "BasicEngineeringWateristhewayTalentGroup",
+      "Skill": "Basic Engineering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Windequalsenergy: Basic Engineering": {
       "Name": {
@@ -2561,9 +2829,11 @@
         "French": "Réduit le coût en ressources des moulins à vent et augmente la vitesse de fabrication.",
         "Japanese": "風車の資源コストを削減し、クラフト速度を向上させる。"
       },
-      "IconName": "BasicEngineeringWindequalsenergyTalentGroup",
-      "SkillID": "BasicEngineeringSkill",
-      "Level": 3
+      "ID": "BasicEngineeringWindequalsenergyTalentGroup",
+      "Skill": "Basic Engineering",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     },
     "Wood Burner: Logging": {
       "Name": {
@@ -2580,9 +2850,11 @@
         "French": "Augmente le rendement de toutes les recettes de charbon de bois.",
         "Japanese": "すべての木炭レシピの生産量が増加する。"
       },
-      "IconName": "LoggingWoodBurnerTalentGroup",
-      "SkillID": "LoggingSkill",
-      "Level": 3
+      "ID": "LoggingWoodBurnerTalentGroup",
+      "Skill": "Logging",
+      "Level": 3,
+      "StarCost": 1,
+      "MaxTalentLevel": 1
     }
   }
 }

@@ -60,16 +60,19 @@ namespace Eco.Mods.EcoWikiDataExporter
 
 
 
-                        }    
+                        }
 
-                            TalentData talentdata = new TalentData
+                        var skill = (Skill)Item.Get(talentGroup.OwningSkill);
+                        TalentData talentdata = new TalentData
                         {
                             Name = Localization(TalentName),
                             Description = Localization(CleanText(talentGroup.GetDescription.NotTranslated)),
-                            IconName = talentGroup.IconName,
-                            SkillID = talentGroup.OwningSkill.Name,
-                            Level = talentGroup.Level
-                            
+                            ID = talentGroup.Name,
+                            Skill = skill.DisplayName.NotTranslated,
+                            Level = talentGroup.Level,
+                            StarCost = talentGroup.StarCost,
+                            MaxTalentLevel = talentGroup.MaxTalentLevel,
+
                         };
 
                         TalentDataList.Add(TalentName, talentdata);

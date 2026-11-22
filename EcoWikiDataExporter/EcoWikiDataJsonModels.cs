@@ -130,9 +130,11 @@ namespace Eco.Mods.EcoWikiDataExporter
         {
             public TranslateData Name { get; set; }
             public TranslateData Description { get; set; }
-            public string IconName { get; set; }
-            public string SkillID { get; set; }
+            public string ID { get; set; }
+            public string Skill { get; set; }
             public int Level { get; set; }
+            public int StarCost { get; set; }
+            public int MaxTalentLevel { get; set; }
         }
 
         public class ItemData
