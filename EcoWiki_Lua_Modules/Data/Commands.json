@@ -7044,6 +7044,20 @@
         "Arg5": "age,Single"
       }
     },
+    "/sim spawntreesonroots": {
+      "Command": "spawntreesonroots",
+      "Level": "Admin",
+      "ShortCut": "treeroots",
+      "Parent": "sim",
+      "Description": {
+        "English": "Spawns every tree at 5 growths from sapling to grown, all at one height, each on the dirt its roots take there, held up by one granite column under the trunk",
+        "Russian": "Spawns every tree at 5 growths from sapling to grown, all at one height, each on the dirt its roots take there, held up by one granite column under the trunk",
+        "German": "Spawns every tree at 5 growths from sapling to grown, all at one height, each on the dirt its roots take there, held up by one granite column under the trunk",
+        "French": "Spawns every tree at 5 growths from sapling to grown, all at one height, each on the dirt its roots take there, held up by one granite column under the trunk",
+        "Japanese": "Spawns every tree at 5 growths from sapling to grown, all at one height, each on the dirt its roots take there, held up by one granite column under the trunk"
+      },
+      "Parameters": {}
+    },
     "/sim toggleanimalnotifications": {
       "Command": "toggleanimalnotifications",
       "Level": "Admin",
@@ -7530,6 +7544,36 @@
       },
       "Parameters": {}
     },
+    "/structural forms": {
+      "Command": "forms",
+      "Level": "DevTier",
+      "ShortCut": "siforms",
+      "Parent": "structural",
+      "Description": {
+        "English": "Lay the block forms in front of you (toward +x and +z), each with its four turns and cubes joined through every face it leaves open, every rule on, and report what fell: a face closed by mistake. No filter: the forms closing a face; \\'all\\': every form; else part of a form\\'s name.",
+        "Russian": "Lay the block forms in front of you (toward +x and +z), each with its four turns and cubes joined through every face it leaves open, every rule on, and report what fell: a face closed by mistake. No filter: the forms closing a face; \\'all\\': every form; else part of a form\\'s name.",
+        "German": "Lay the block forms in front of you (toward +x and +z), each with its four turns and cubes joined through every face it leaves open, every rule on, and report what fell: a face closed by mistake. No filter: the forms closing a face; \\'all\\': every form; else part of a form\\'s name.",
+        "French": "Lay the block forms in front of you (toward +x and +z), each with its four turns and cubes joined through every face it leaves open, every rule on, and report what fell: a face closed by mistake. No filter: the forms closing a face; \\'all\\': every form; else part of a form\\'s name.",
+        "Japanese": "Lay the block forms in front of you (toward +x and +z), each with its four turns and cubes joined through every face it leaves open, every rule on, and report what fell: a face closed by mistake. No filter: the forms closing a face; \\'all\\': every form; else part of a form\\'s name."
+      },
+      "Parameters": {
+        "Arg1": "filter,String"
+      }
+    },
+    "/structural formsclear": {
+      "Command": "formsclear",
+      "Level": "DevTier",
+      "ShortCut": "siformsclear",
+      "Parent": "structural",
+      "Description": {
+        "English": "Take down the form gallery (the stone pad stays).",
+        "Russian": "Take down the form gallery (the stone pad stays).",
+        "German": "Take down the form gallery (the stone pad stays).",
+        "French": "Take down the form gallery (the stone pad stays).",
+        "Japanese": "Take down the form gallery (the stone pad stays)."
+      },
+      "Parameters": {}
+    },
     "/structural map": {
       "Command": "map",
       "Level": "Admin",
@@ -7972,6 +8016,90 @@
       },
       "Parameters": {}
     },
+    "/test explosivesclaims": {
+      "Command": "explosivesclaims",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Blasts dynamite on unclaimed land, own claims and next to someone else\\'s claim.",
+        "Russian": "Blasts dynamite on unclaimed land, own claims and next to someone else\\'s claim.",
+        "German": "Blasts dynamite on unclaimed land, own claims and next to someone else\\'s claim.",
+        "French": "Blasts dynamite on unclaimed land, own claims and next to someone else\\'s claim.",
+        "Japanese": "Blasts dynamite on unclaimed land, own claims and next to someone else\\'s claim."
+      },
+      "Parameters": {}
+    },
+    "/test explosivesdetonator": {
+      "Command": "explosivesdetonator",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Links detonators to own and foreign mining charges, with and without an ignore-auth law.",
+        "Russian": "Links detonators to own and foreign mining charges, with and without an ignore-auth law.",
+        "German": "Links detonators to own and foreign mining charges, with and without an ignore-auth law.",
+        "French": "Links detonators to own and foreign mining charges, with and without an ignore-auth law.",
+        "Japanese": "Links detonators to own and foreign mining charges, with and without an ignore-auth law."
+      },
+      "Parameters": {}
+    },
+    "/test explosivesignoreauthlaw": {
+      "Command": "explosivesignoreauthlaw",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Blasts dynamite on foreign claims inside a town with ignore-auth laws on each explosion action.",
+        "Russian": "Blasts dynamite on foreign claims inside a town with ignore-auth laws on each explosion action.",
+        "German": "Blasts dynamite on foreign claims inside a town with ignore-auth laws on each explosion action.",
+        "French": "Blasts dynamite on foreign claims inside a town with ignore-auth laws on each explosion action.",
+        "Japanese": "Blasts dynamite on foreign claims inside a town with ignore-auth laws on each explosion action."
+      },
+      "Parameters": {}
+    },
+    "/test explosivesothertown": {
+      "Command": "explosivesothertown",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Blasts dynamite on a town border: a town\\'s ignore-auth law never unlocks the other town.",
+        "Russian": "Blasts dynamite on a town border: a town\\'s ignore-auth law never unlocks the other town.",
+        "German": "Blasts dynamite on a town border: a town\\'s ignore-auth law never unlocks the other town.",
+        "French": "Blasts dynamite on a town border: a town\\'s ignore-auth law never unlocks the other town.",
+        "Japanese": "Blasts dynamite on a town border: a town\\'s ignore-auth law never unlocks the other town."
+      },
+      "Parameters": {}
+    },
+    "/test explosivesvehicles": {
+      "Command": "explosivesvehicles",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Blasts dynamite next to an own and a foreign vehicle on unclaimed land.",
+        "Russian": "Blasts dynamite next to an own and a foreign vehicle on unclaimed land.",
+        "German": "Blasts dynamite next to an own and a foreign vehicle on unclaimed land.",
+        "French": "Blasts dynamite next to an own and a foreign vehicle on unclaimed land.",
+        "Japanese": "Blasts dynamite next to an own and a foreign vehicle on unclaimed land."
+      },
+      "Parameters": {}
+    },
+    "/test fallingtablekeepsoneupgrade": {
+      "Command": "fallingtablekeepsoneupgrade",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Digs out the floor under an upgraded carpentry table and checks the upgrade isn\\'t duplicated.",
+        "Russian": "Digs out the floor under an upgraded carpentry table and checks the upgrade isn\\'t duplicated.",
+        "German": "Digs out the floor under an upgraded carpentry table and checks the upgrade isn\\'t duplicated.",
+        "French": "Digs out the floor under an upgraded carpentry table and checks the upgrade isn\\'t duplicated.",
+        "Japanese": "Digs out the floor under an upgraded carpentry table and checks the upgrade isn\\'t duplicated."
+      },
+      "Parameters": {}
+    },
     "/test foldouts": {
       "Command": "foldouts",
       "Level": "DevTier",
@@ -8206,6 +8334,20 @@
         "German": "Schalte qamode an/aus.",
         "French": "Active/désactive mode Assurance Qualité.",
         "Japanese": "qamodeのオン/オフを切り替えてください。"
+      },
+      "Parameters": {}
+    },
+    "/test replacematerial": {
+      "Command": "replacematerial",
+      "Level": "DevTier",
+      "ShortCut": "",
+      "Parent": "test",
+      "Description": {
+        "English": "Wears a cloth belt, builds a hewn log block and replaces it with mortared stone using the hammer.",
+        "Russian": "Wears a cloth belt, builds a hewn log block and replaces it with mortared stone using the hammer.",
+        "German": "Wears a cloth belt, builds a hewn log block and replaces it with mortared stone using the hammer.",
+        "French": "Wears a cloth belt, builds a hewn log block and replaces it with mortared stone using the hammer.",
+        "Japanese": "Wears a cloth belt, builds a hewn log block and replaces it with mortared stone using the hammer."
       },
       "Parameters": {}
     },

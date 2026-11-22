@@ -2007,6 +2007,24 @@
         "Steam Tractor"
       ]
     },
+    "Explosive": {
+      "ID": "Explosive",
+      "Name": {
+        "English": "Explosive",
+        "Russian": "Explosive",
+        "German": "Explosive",
+        "French": "Explosive",
+        "Japanese": "Explosive"
+      },
+      "Hidden": false,
+      "IsVisibleInTooltip": true,
+      "IsVisibleInEcopedia": true,
+      "IsVisibleInFilter": false,
+      "Items": [
+        "Dynamite",
+        "Mining Charge"
+      ]
+    },
     "Explosives": {
       "ID": "Explosives",
       "Name": {
@@ -5464,6 +5482,54 @@
         "Window Shutters Right",
         "Wood Plaque",
         "Wood Window Planter"
+      ]
+    },
+    "Paintable": {
+      "ID": "Paintable",
+      "Name": {
+        "English": "Paintable",
+        "Russian": "Paintable",
+        "German": "Paintable",
+        "French": "Paintable",
+        "Japanese": "Paintable"
+      },
+      "Hidden": false,
+      "IsVisibleInTooltip": true,
+      "IsVisibleInEcopedia": true,
+      "IsVisibleInFilter": false,
+      "Items": [
+        "Blacksmith Table",
+        "Baker Sign",
+        "Biowaste Sorter",
+        "Carpenter Sign",
+        "Construction Scrap Sorter",
+        "Engineer Sign",
+        "Farmer Sign",
+        "Food Sign",
+        "Garbage Sorter",
+        "Hand Plow",
+        "Industrial Waste Sorter",
+        "Mason Sign",
+        "Masonry Table",
+        "Metal Scrap Sorter",
+        "Paint Mixer",
+        "Power Hammer",
+        "Powered Cart",
+        "Residual Waste Sorter",
+        "Scorpion",
+        "Shipwright Sign",
+        "Skid Steer",
+        "Small Wood Cart",
+        "Steam Tractor",
+        "Steam Truck",
+        "Storage Chest",
+        "Store Sign",
+        "Tailor Sign",
+        "Truck",
+        "Wall Mounted Chest",
+        "Wheelbarrow",
+        "Wood Cart",
+        "Wood Shop Cart"
       ]
     },
     "Painter": {

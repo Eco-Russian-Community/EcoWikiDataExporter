@@ -213,14 +213,17 @@
       "AvatarSlot": "Waist",
       "StartClothing": false,
       "Hidden": false,
-      "FlatStats": {}
+      "FlatStats": {
+        "CarriedSlots": "1"
+      }
     },
     "Cloth Cape": {
       "AvatarSlot": "Back",
       "StartClothing": false,
       "Hidden": false,
       "FlatStats": {
-        "MovementSpeed": "2",
+        "MovementSpeed": "0.5",
+        "JumpHeight": "0.5",
         "CalorieRate": "-0.2",
         "BackpackSlots": "-8"
       }
@@ -607,7 +610,9 @@
       "AvatarSlot": "Waist",
       "StartClothing": false,
       "Hidden": false,
-      "FlatStats": {}
+      "FlatStats": {
+        "CarriedSlots": "1"
+      }
     },
     "Square Jaw": {
       "AvatarSlot": "Face",
