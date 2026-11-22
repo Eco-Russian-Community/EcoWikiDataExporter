@@ -4,6 +4,7 @@ using Eco.Core.Plugins;
 using Eco.Core.Plugins.Interfaces;
 using Eco.Core.Utils;
 using Eco.Gameplay.Blocks;
+using Eco.Gameplay.Bonuses;
 using Eco.Gameplay.Components;
 using Eco.Gameplay.DynamicValues;
 using Eco.Gameplay.Items;
@@ -67,12 +68,13 @@ namespace Eco.Mods.EcoWikiDataExporter
                     if (!RecipesDataList.ContainsKey(RecipeID))
                     {
                         var skill = recipe.RequiredSkills.FirstOrDefault();
-                        string requiredskill = skill != null ? Item.Get(skill.SkillType).Name : "nil";
+                        string requiredskill = skill != null ? Item.Get(skill.SkillType).DisplayName.NotTranslated : "nil";
                         int requiredskilllevel = skill?.Level ?? 0;
 
                         var module = recipe.RequiredModules.FirstOrDefault();
                         string requiredmodule = module != null ? Item.CreatingItem(module.ModuleType).DisplayName.NotTranslated : "nil";
-                        string requirestalent = recipe.RequiresTalentUnlock ? recipe.RequiredTalentName : "nil";
+                        var talents = BonusManager.FindUnlockingTalents(recipe).ToList();
+                        string requirestalent = recipe.RequiresTalentUnlock ? talents[0].TalentGroupType.Name : "nil";
 
                         SortedDictionary<string, RecipeIngredientData> IngredientsList = new SortedDictionary<string, RecipeIngredientData>();
                         foreach (var recipeingredient in recipevariant.Ingredients)
