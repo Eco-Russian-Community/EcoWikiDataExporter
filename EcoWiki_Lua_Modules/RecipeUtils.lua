@@ -134,10 +134,10 @@ function p.RecipeRequiredSkill(SkillDataString)
 	local StringCount = 1
 	local SkillsData = mw.loadData('Module:SkillData')
 	
-	local SkillID = SkillData[1]
+	local SkillName = SkillData[1]
 	local SkillLevel = SkillData[2]
-    local SkillName
-	if ((SkillID == "") or (SkillID == "nil")) then SkillName = 'None' else SkillName = Utils.SkillSearchByID(SkillID) end
+
+	if ((SkillName == "") or (SkillName == "nil")) then SkillName = 'None' end
 	if (SkillName == "None") then SkillCell = IconUtils.main{ name = Utils.Translate("None"), id = 'NoSkillLabor', size = 48, style = 2 } else SkillCell = IconUtils.main{ name = SkillsData.skills[SkillName].Name[Lang], id = SkillsData.skills[SkillName].SkillID, size = 48, style = 2, link = SkillsData.skills[SkillName].Name[Lang]} .. " " .. SkillLevel end
 	
 	return SkillCell
